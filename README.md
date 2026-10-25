@@ -65,7 +65,7 @@ The following platforms provide reference points for understanding digital const
 These references support the project's state-of-art research and are not necessarily direct technical dependencies. 
 
 ## Research Team 
-
+Ahmed Belahcen | Chloe Hraibeh | Nandini Rathod
 
 
   

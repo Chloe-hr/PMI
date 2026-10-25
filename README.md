@@ -2,6 +2,9 @@
 ## AI-Assisted Change Impact Analysis for Construction Projects
 IAAC | MASTER IN AI FOR ARCHITECTURE AND BUSINESS INNOVATION
 
+<img width="932" height="386" alt="image" src="https://github.com/user-attachments/assets/40d3d864-b13b-4a75-935a-3851bae10099" />
+
+
 ## Overview
 PMI is a research and development project exploring how Artificial Intelligence can support construction project management by identifying, interpreting and tracing the potential consequences of architectural design changes. 
 Construction projects involve interconnected information across 3D models, material specifications, quantities, budgets and construction schedules. When a design changes, understanding it's downstream effects often requires manually reviewing multiple datasets and project documents. 
@@ -61,6 +64,7 @@ The following platforms provide reference points for understanding digital const
 - Buildots (https://buildots.com/) - Construction progress monitoring.
 - Madaster (https://madaster.com/) - Material information and circular construction.
 - IfcOpenShell (https://ifcopenshell.org/) - Open-source IFC processing.
+- IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/Duplex_A_20110907.ifc
 
 These references support the project's state-of-art research and are not necessarily direct technical dependencies. 
 

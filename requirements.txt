@@ -1,1 +1,26 @@
+# IFC processing
+ifcopenshell
 
+# Data processing and numerical computing
+pandas
+numpy
+scipy
+openpyxl
+
+# Matching and evaluation
+rapidfuzz
+sentence-transformers
+scikit-learn
+
+# Visualization and image processing
+matplotlib
+pillow
+
+# Jupyter notebooks
+jupyterlab
+ipykernel
+
+# Testing
+pytest
+
+  

@@ -1,0 +1,98 @@
+[
+  {
+    "project_id": "SYN-BRG-001",
+    "version_id": "SYN-BRG-001-V0",
+    "representation": "as_provided",
+    "structurally_valid": true,
+    "dependency_compliant": false,
+    "conflict_count": 2
+  },
+  {
+    "project_id": "SYN-BRG-001",
+    "version_id": "SYN-BRG-001-V0",
+    "representation": "derived",
+    "structurally_valid": true,
+    "dependency_compliant": true,
+    "conflict_count": 0
+  },
+  {
+    "project_id": "SYN-BRG-001",
+    "version_id": "SYN-BRG-001-V1",
+    "representation": "as_provided",
+    "structurally_valid": true,
+    "dependency_compliant": false,
+    "conflict_count": 4
+  },
+  {
+    "project_id": "SYN-BRG-001",
+    "version_id": "SYN-BRG-001-V1",
+    "representation": "derived",
+    "structurally_valid": true,
+    "dependency_compliant": true,
+    "conflict_count": 0
+  },
+  {
+    "project_id": "SYN-BRG-001",
+    "version_id": "SYN-BRG-001-V2",
+    "representation": "as_provided",
+    "structurally_valid": true,
+    "dependency_compliant": false,
+    "conflict_count": 7
+  },
+  {
+    "project_id": "SYN-BRG-001",
+    "version_id": "SYN-BRG-001-V2",
+    "representation": "derived",
+    "structurally_valid": true,
+    "dependency_compliant": true,
+    "conflict_count": 0
+  },
+  {
+    "project_id": "SYN-BLD-001",
+    "version_id": "SYN-BLD-001-V0",
+    "representation": "as_provided",
+    "structurally_valid": true,
+    "dependency_compliant": false,
+    "conflict_count": 18
+  },
+  {
+    "project_id": "SYN-BLD-001",
+    "version_id": "SYN-BLD-001-V0",
+    "representation": "derived",
+    "structurally_valid": true,
+    "dependency_compliant": true,
+    "conflict_count": 0
+  },
+  {
+    "project_id": "SYN-BLD-001",
+    "version_id": "SYN-BLD-001-V1",
+    "representation": "as_provided",
+    "structurally_valid": true,
+    "dependency_compliant": false,
+    "conflict_count": 15
+  },
+  {
+    "project_id": "SYN-BLD-001",
+    "version_id": "SYN-BLD-001-V1",
+    "representation": "derived",
+    "structurally_valid": true,
+    "dependency_compliant": true,
+    "conflict_count": 0
+  },
+  {
+    "project_id": "SYN-BLD-001",
+    "version_id": "SYN-BLD-001-V2",
+    "representation": "as_provided",
+    "structurally_valid": true,
+    "dependency_compliant": false,
+    "conflict_count": 15
+  },
+  {
+    "project_id": "SYN-BLD-001",
+    "version_id": "SYN-BLD-001-V2",
+    "representation": "derived",
+    "structurally_valid": true,
+    "dependency_compliant": true,
+    "conflict_count": 0
+  }
+]

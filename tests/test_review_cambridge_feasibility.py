@@ -7,6 +7,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "training"))
+sys.path.insert(0, str(ROOT / "tests"))
+from checksum_utils import assert_frozen  # noqa: E402  (exact, else line-ending-equivalent)
 from review_cambridge_feasibility import (Groups, MINIMAL_FEATURES, OUT, build_group_proposals,
     compare_shared, eligibility_record, feature_policy, snapshot_signature)
 from audit_cambridge import hash_file
@@ -134,7 +136,7 @@ class CambridgeFeasibilityTests(unittest.TestCase):
         manifest = json.loads((OUT / "input_review_manifest.json").read_text())
         for name in ("models/duration_v1/model.pt", "data/processed/stage2/verification_report.md",
                      "data/processed/stage2/cambridge_audit/audit_summary.json", "scripts/schedule_engine.py", "app.py"):
-            self.assertEqual(hash_file(ROOT / name), manifest["source_files"][name])
+            assert_frozen(self, ROOT / name, manifest["source_files"][name])
 
 
 if __name__ == "__main__":

@@ -1,0 +1,22 @@
+{
+  "seed": 23051,
+  "split_manifest": "split_manifest_conservative.csv",
+  "split_manifest_sha256": "549e6e701413ee1f4c0e0799b0a4c601e948defbab6b71707a13328e437a3714",
+  "source_dataset": {
+    "archive_sha256": "b4001bb901bbe82017ee6eaabca515bb94010db3bccb2aba318738b1781e5cef",
+    "raw_json_sha256": "e32f311e05c73b8b891b25149d85c95f27536d739f97d17bc52624fbc5ef8f47"
+  },
+  "source_hashes": {
+    "feature_matrix.csv": "4ccdfdb66134cf3d9d3696f5473ce14cbc5276acab71b33a3a5fe41293ae7325",
+    "exploratory_targets.csv": "51b0d2d68a482792e6933108378005496958e18c6ae606b533ee97a59b3f616a"
+  },
+  "python": "3.14.7",
+  "numpy": "2.5.4",
+  "pandas": "3.1.0",
+  "scikit_learn": "1.9.1",
+  "pytorch": "2.15.0+cpu",
+  "scipy": "1.18.1",
+  "hardware": "CPU",
+  "model_selection": "grouped five fold development only",
+  "heldout_evaluations": 1
+}

@@ -1,0 +1,158 @@
+[
+  {
+    "file": "SYN-BLD-001-V0/as_provided.ifc",
+    "source_model": "PMI_SYN-BLD-001.ifc",
+    "inherited_schema_errors": 167,
+    "output_schema_errors": 167,
+    "new_schema_errors": 0,
+    "express_rules_checked": false,
+    "attributes": {
+      "Coordinates": 165,
+      "DirectionRatios": 2
+    }
+  },
+  {
+    "file": "SYN-BLD-001-V0/derived.ifc",
+    "source_model": "PMI_SYN-BLD-001.ifc",
+    "inherited_schema_errors": 167,
+    "output_schema_errors": 167,
+    "new_schema_errors": 0,
+    "express_rules_checked": false,
+    "attributes": {
+      "Coordinates": 165,
+      "DirectionRatios": 2
+    }
+  },
+  {
+    "file": "SYN-BLD-001-V1/as_provided.ifc",
+    "source_model": "PMI_SYN-BLD-001.ifc",
+    "inherited_schema_errors": 167,
+    "output_schema_errors": 167,
+    "new_schema_errors": 0,
+    "express_rules_checked": false,
+    "attributes": {
+      "Coordinates": 165,
+      "DirectionRatios": 2
+    }
+  },
+  {
+    "file": "SYN-BLD-001-V1/derived.ifc",
+    "source_model": "PMI_SYN-BLD-001.ifc",
+    "inherited_schema_errors": 167,
+    "output_schema_errors": 167,
+    "new_schema_errors": 0,
+    "express_rules_checked": false,
+    "attributes": {
+      "Coordinates": 165,
+      "DirectionRatios": 2
+    }
+  },
+  {
+    "file": "SYN-BLD-001-V2/as_provided.ifc",
+    "source_model": "PMI_SYN-BLD-001.ifc",
+    "inherited_schema_errors": 167,
+    "output_schema_errors": 167,
+    "new_schema_errors": 0,
+    "express_rules_checked": false,
+    "attributes": {
+      "Coordinates": 165,
+      "DirectionRatios": 2
+    }
+  },
+  {
+    "file": "SYN-BLD-001-V2/derived.ifc",
+    "source_model": "PMI_SYN-BLD-001.ifc",
+    "inherited_schema_errors": 167,
+    "output_schema_errors": 167,
+    "new_schema_errors": 0,
+    "express_rules_checked": false,
+    "attributes": {
+      "Coordinates": 165,
+      "DirectionRatios": 2
+    }
+  },
+  {
+    "file": "SYN-BRG-001-V0/as_provided.ifc",
+    "source_model": "PMI_SYN-BRG-001.ifc",
+    "inherited_schema_errors": 118,
+    "output_schema_errors": 118,
+    "new_schema_errors": 0,
+    "express_rules_checked": false,
+    "attributes": {
+      "Coordinates": 114,
+      "DirectionRatios": 2,
+      "YDim": 1,
+      "NominalValue": 1
+    }
+  },
+  {
+    "file": "SYN-BRG-001-V0/derived.ifc",
+    "source_model": "PMI_SYN-BRG-001.ifc",
+    "inherited_schema_errors": 118,
+    "output_schema_errors": 118,
+    "new_schema_errors": 0,
+    "express_rules_checked": false,
+    "attributes": {
+      "Coordinates": 114,
+      "DirectionRatios": 2,
+      "YDim": 1,
+      "NominalValue": 1
+    }
+  },
+  {
+    "file": "SYN-BRG-001-V1/as_provided.ifc",
+    "source_model": "PMI_SYN-BRG-001.ifc",
+    "inherited_schema_errors": 118,
+    "output_schema_errors": 118,
+    "new_schema_errors": 0,
+    "express_rules_checked": false,
+    "attributes": {
+      "Coordinates": 114,
+      "DirectionRatios": 2,
+      "YDim": 1,
+      "NominalValue": 1
+    }
+  },
+  {
+    "file": "SYN-BRG-001-V1/derived.ifc",
+    "source_model": "PMI_SYN-BRG-001.ifc",
+    "inherited_schema_errors": 118,
+    "output_schema_errors": 118,
+    "new_schema_errors": 0,
+    "express_rules_checked": false,
+    "attributes": {
+      "Coordinates": 114,
+      "DirectionRatios": 2,
+      "YDim": 1,
+      "NominalValue": 1
+    }
+  },
+  {
+    "file": "SYN-BRG-001-V2/as_provided.ifc",
+    "source_model": "PMI_SYN-BRG-001.ifc",
+    "inherited_schema_errors": 118,
+    "output_schema_errors": 118,
+    "new_schema_errors": 0,
+    "express_rules_checked": false,
+    "attributes": {
+      "Coordinates": 114,
+      "DirectionRatios": 2,
+      "YDim": 1,
+      "NominalValue": 1
+    }
+  },
+  {
+    "file": "SYN-BRG-001-V2/derived.ifc",
+    "source_model": "PMI_SYN-BRG-001.ifc",
+    "inherited_schema_errors": 118,
+    "output_schema_errors": 118,
+    "new_schema_errors": 0,
+    "express_rules_checked": false,
+    "attributes": {
+      "Coordinates": 114,
+      "DirectionRatios": 2,
+      "YDim": 1,
+      "NominalValue": 1
+    }
+  }
+]

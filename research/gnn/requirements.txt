@@ -1,0 +1,9 @@
+# Stage 3.5 duration GNN (research only - NOT needed by the Streamlit app)
+#   python -m pip install -r requirements.txt -r research/gnn/requirements.txt
+# Tested: Python 3.14.7, torch 2.15.0 (CPU), torch-geometric 2.8.1, scikit-learn 1.9.1, openpyxl 3.1.5
+# On Linux, install the CPU build of torch to avoid multi-GB CUDA downloads:
+#   python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.6
+torch_geometric>=2.6
+scikit-learn>=1.6
+openpyxl>=3.1

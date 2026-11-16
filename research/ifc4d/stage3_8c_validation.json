@@ -1,0 +1,46 @@
+{
+  "audit_date": "2026-11-16",
+  "stage": "3.8C",
+  "project_version_representations": 12,
+  "unique_tasks": 47,
+  "unique_elements": 93,
+  "full_suite": {
+    "tests": 118,
+    "skipped": 1,
+    "seconds": 36.14,
+    "result": "OK"
+  },
+  "browser": {
+    "gantt_pointer_selection": true,
+    "task_to_geometry_highlights": true,
+    "globalid_selector_to_task": true,
+    "direct_mesh_click_selection": false,
+    "project_switch": true,
+    "snapshot_switch": true,
+    "representation_switch": true,
+    "synthetic_progress_layer": true,
+    "browser": "Microsoft Edge / Playwright",
+    "screenshots": 4
+  },
+  "input_sha256": {
+    "construction_dataset_v1.xlsx": "a46509c8747c2448d2f5cc0fffea1dafc4c63b5f5efe81e8f7f59e6cb7e3d2c3",
+    "PMI_SYN-BRG-001.ifc": "73229ba8983b43700fa1ebfe5c890f1149e90927ecf4b42373ecbaa1c91916a9",
+    "PMI_SYN-BLD-001.ifc": "62f46a568ab893c1baaa0f04ee3b023e2b0b39d5442a583a69698ba6fc227b14"
+  },
+  "stage3_8b_artifacts_unchanged": true,
+  "stage3_8b_implementation_unchanged": true,
+  "frozen_gnn_artifacts_unchanged": 53,
+  "frozen_app_sha256": "f741710249919c12b751e9fe9823665278d04b88b9e5a660f829b3325ad3842d",
+  "screenshots_sha256": {
+    "bridge_v0_as_provided.png": "d6626eac35765786e929fd0b442ed97a6d8081310ed9391a2c24be846b70164e",
+    "building_synthetic_progress.png": "c57d83bf2b5f1e41e7054765ca212217e24480b6709ea79f59253f0702bf41b7",
+    "building_v0_derived.png": "45a2879007b646f794133a90f95283b0f103e63e815f43c601dbc04020f64e1c",
+    "building_v2_conflicts.png": "959b1be07a1d9b79778a2664fd0d6c20b6bb5e45706e783f239b39d4e98e2802"
+  },
+  "versions": {
+    "streamlit": "1.66.1",
+    "plotly": "7.1.0",
+    "ifcopenshell": "0.9.0.post1",
+    "playwright": "1.65.2"
+  }
+}

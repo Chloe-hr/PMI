@@ -1,0 +1,8 @@
+Stage 2.3E real run - start 2026-11-12T18:38:43+01:00 - 1977a64 + working tree
+python: Python 3.14.7
+        model     n  groups  mae_days  rmse_days        r2  median_absolute_error_days  activity_weighted_mae_days  macro_group_mae_days
+       median 36027      99 49.313185 123.651333 -0.145538                    8.000000                   49.313185             33.300891
+        ridge 36027      99 50.078887 106.323725  0.153022                   24.020020                   50.078887             29.546238
+random_forest 36027      99 62.435707 114.756748  0.013338                   42.629069                   62.435707             25.803244
+          mlp 36027      99 53.093066 117.219645 -0.029467                   24.195299                   53.093066             33.191767
+exit=0 end 2026-11-12T18:59:12+01:00

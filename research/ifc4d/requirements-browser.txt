@@ -1,0 +1,2 @@
+# Optional screenshot/browser acceptance tool; uses the installed Microsoft Edge browser.
+playwright==1.65.2

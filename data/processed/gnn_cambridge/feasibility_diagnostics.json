@@ -1,0 +1,59 @@
+{
+  "scope": "development projects only; locked test projects were skipped while streaming",
+  "development_projects": 163,
+  "development_blocks": 70,
+  "nodes": 305681,
+  "labelled_nodes": 144110,
+  "unlabelled_descriptions_masked_outcome_phrase": 339,
+  "largest_project_nodes": 34407,
+  "counts": {
+    "relationship_records": 502318,
+    "type_PR_FF": 43534,
+    "type_PR_FS": 412679,
+    "fs_pairs_with_actuals": 242668,
+    "fs_successor_started_before_predecessor_finished": 48834,
+    "fs_successor_started_more_than_1d_early": 35788,
+    "type_PR_SS": 43657,
+    "type_PR_SF": 2447,
+    "relationship_map_missing": 30770,
+    "intra_project_edges": 494853,
+    "unresolved_or_cross_project_dropped": 7465,
+    "type_PR_FF1": 1
+  },
+  "fs_violation_rate": 0.2012379052862347,
+  "fs_violation_rate_gt_1d": 0.14747721166367217,
+  "by_completion_status": {
+    "not_complete": {
+      "activities": 105983,
+      "relationship_map_missing": 7955,
+      "intra_predecessors": 202218,
+      "missing_map_rate": 0.07505920760876744,
+      "mean_intra_predecessors": 1.90802298481832
+    },
+    "complete": {
+      "activities": 199698,
+      "relationship_map_missing": 22815,
+      "intra_predecessors": 292635,
+      "missing_map_rate": 0.11424751374575609,
+      "mean_intra_predecessors": 1.4653877354805758
+    }
+  },
+  "labelled_with_predecessor": 0.9165359794601347,
+  "labelled_with_successor": 0.9214558323502879,
+  "labelled_isolated": 0.047678856429116644,
+  "spearman_in_degree_vs_target": 0.03538883863832427,
+  "spearman_out_degree_vs_target": 0.07721367518031787,
+  "median_target_isolated_vs_connected": [
+    7.375,
+    8.375
+  ],
+  "projects_with_cycles": 34,
+  "nodes_in_cycles": 2651,
+  "isolated_labelled_by_fold": {
+    "0": 0.0597,
+    "1": 0.0099,
+    "2": 0.0215,
+    "3": 0.0471,
+    "4": 0.0177
+  }
+}

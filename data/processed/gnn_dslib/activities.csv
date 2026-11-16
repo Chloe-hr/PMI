@@ -1,0 +1,2733 @@
+activity_id,name,planned_days,predecessors,actual_days,project_id
+2,Werfinstallatie,425.0,,385.0,C2013-03
+10,Verdiep +3,13.0,,13.0,C2013-03
+11,Verdiep +4,13.0,,13.0,C2013-03
+12,Verdiep +5,13.0,,13.0,C2013-03
+13,Verdiep +6,15.0,12,15.0,C2013-03
+14,Verdiep +7,15.0,,15.0,C2013-03
+15,Verdiep +8,15.0,,15.375,C2013-03
+16,Verdiep +9,15.0,,15.0,C2013-03
+17,Verdiep +10,15.0,,15.0,C2013-03
+18,Verdiep +2,13.0,,13.0,C2013-03
+19,Verdiep +1,13.0,,13.0,C2013-03
+20,Verdiep glk,30.0,,30.0,C2013-03
+21,Buitentrappen (2 fazen),24.0,,39.0,C2013-03
+765,Gevels inbegrepen natuursteen (start = landmeter),155.0,,179.0,C2013-03
+764,Gevels Wind & waterdicht +3 t/m +10,19.0,,19.0,C2013-03
+46,Metselwerk,10.0,,34.0,C2013-03
+48,HVAC Groepen,3.0,,3.0,C2013-03
+50,Balkons : wachtslabben,7.0,,7.0,C2013-03
+51,Balkons: horizontaal definitief,5.0,,5.0,C2013-03
+52,Boven Schachten,5.0,,5.0,C2013-03
+53,"Metselwerk, helling, dampscherm, slabben",18.0,,18.0,C2013-03
+54,"Helling, dampscherm, definitief",15.0,,15.0,C2013-03
+55,Definitief,22.0,51,34.0,C2013-03
+56,Piste renigingsmachine op dak,20.0,54,20.0,C2013-03
+57,Renigingsmachine,5.0,,5.0,C2013-03
+58,Metselwerk (behalve gaslokaal),40.0,,67.0,C2013-03
+59,Sluiten technische schachten,22.0,,22.0,C2013-03
+61,Pleisterwerken,33.0,59,46.0,C2013-03
+62,Chapes,39.0,,49.0,C2013-03
+63,Vloeren & faience,35.0,,88.0,C2013-03
+64,Binnenschrijnwerk,50.0,,79.0,C2013-03
+65,Tapijt,36.0,,33.0,C2013-03
+66,Smeedwerk,25.0,,47.0,C2013-03
+67,Schilderwerken,40.0,,88.0,C2013-03
+68,Einde opkuisen,10.0,67,10.0,C2013-03
+69,Voorlopige receptie,10.0,68,10.0,C2013-03
+752,Verdiep +3,256.0,,121.0,C2013-03
+753,Verdiep +4,253.0,,130.0,C2013-03
+754,Verdiep +5,250.0,,125.0,C2013-03
+755,Verdiep +6,247.0,,169.0,C2013-03
+756,Verdiep +7,244.0,,128.0,C2013-03
+757,Verdiep +8,241.0,,123.0,C2013-03
+758,Verdiep +9,235.0,,129.0,C2013-03
+759,Verdiep  +10,232.0,,110.0,C2013-03
+760,Technische lokaal +10,87.0,,86.0,C2013-03
+761,Verdiep  +2,216.0,,93.0,C2013-03
+762,Verdiep  +1,215.0,,66.0,C2013-03
+763,Verdiep  glk,214.0,,66.0,C2013-03
+744,KGL1 - werflift montage,52.0,,75.0,C2013-03
+745,KGL1 werflift,116.0,744,66.0,C2013-03
+746,KGL1 opkuisen,10.0,745,10.0,C2013-03
+748,KPL 1,41.0,,45.0,C2013-03
+749,KPL 2,41.0,,42.0,C2013-03
+750,KPL 3,41.0,,43.0,C2013-03
+751,KPL 4,41.0,,23.0,C2013-03
+1,KEUKENTOREN  IN WERKDAGEN (ADMIN BEDIENDEN),333.0,,445.0,C2013-04
+2,UITZETTEN HOOFDASSEN,1.0,1,1.0,C2013-04
+3,AFGRAVEN TEELAARDE,4.0,2,4.0,C2013-04
+4,AANLEGGEN RIOLERING EN WERFWEG,4.0,3,4.0,C2013-04
+5,WERFINRICHTING  EN ELEKTR. AANSLUITING,5.0,4,5.0,C2013-04
+6,INSTALLATIE SNELOPBOUWKRAAN/TORENKRAAN/WERFLIFT,305.0,23,410.0,C2013-04
+10,AANGEPASTE PLANNEN UITSPARINGEN VOOR TECHNIEKEN (coördinatie studie),5.0,1,5.0,C2013-04
+11,BETON EN WAPENING WANDEN KOKERS  A tot F,1.0,1,1.0,C2013-04
+12,BETON EN WAPENING PREFABTRAPPEN,1.0,1,1.0,C2013-04
+13,BETON EN WAPENING FUNDERINGSZOLEN EN PLATEN + WACHTSTAVEN WANDEN,1.0,1,1.0,C2013-04
+14,BETON EN WAPENING KELDER WANDEN + PLAAT BOVEN KELDER,1.0,,1.0,C2013-04
+15,"BETON EN WAPENING PLAAT BOVEN  GLVL , +1 ,+2, +3, +4",1.0,,1.0,C2013-04
+16,"BETON EN WAPENING PLAAT BOVEN  GLVL , +5 ,+6, +7, +8",1.0,,1.0,C2013-04
+17,"BETON EN WAPENING PLAAT BOVEN  GLVL , +9 ,+10, +11, +12, +13 , DAKPLAN",1.0,,1.0,C2013-04
+20,BOREN SCHROEFPALEN GEBOUW + KRAANSOKKEL,7.0,4,7.0,C2013-04
+21,INSTALLATIE BEMALING BOUWPUT,2.0,20,2.0,C2013-04
+22,BEMALING,40.0,21,40.0,C2013-04
+23,UITGRAVING KELDER EN ZOLEN,3.0,21,3.0,C2013-04
+24,ZUIVERHEIDSBETON,1.0,23,1.0,C2013-04
+25,AFSCHIETEN PAALKOPPEN,3.0,24,3.0,C2013-04
+26,BEKISTEN FUNDERINGSPLAAT KELDER + WATERKEERPLATEN,4.0,25,4.0,C2013-04
+27,WAPENING FUNDERINGSPLAAT KELDER,3.0,,3.0,C2013-04
+28,RIOLERING IN FUNDERINGSPLAAT,2.0,,2.0,C2013-04
+29,BETON FUNDERINGSPLAAT KELDER  te vlinderen,1.0,28,1.0,C2013-04
+30,BETON KELDERWANDEN,11.0,29,10.0,C2013-04
+31,WATERDICHTE ROK OP KELDERWANDEN,3.0,30,3.0,C2013-04
+32,AANVULLING KELDER,3.0,31,3.0,C2013-04
+33,BETON BORDES KOKER A,1.0,30,1.0,C2013-04
+34,ZUIVERHEIDSBETON PLATEN EN ZOOL GLVL,1.0,32,1.0,C2013-04
+35,BEKISTEN PLATEN EN ZOOL BOVEN KELDER+RIOLERINGSBUIZEN IN ZOOL,5.0,30,5.0,C2013-04
+36,WAPENING  PLATEN EN ZOOL BOVEN KELDER,4.0,,4.0,C2013-04
+37,BETON PLATEN EN ZOOL BOVEN KELDER,1.0,36,1.0,C2013-04
+39,STUDIE EN PLANNEN VOORLEGGEN + VOORLEGGEN STALEN IN GETINTE BETON,5.0,,5.0,C2013-04
+40,PRODUCTIE DEUVELKOPPELPLATEN,5.0,,5.0,C2013-04
+41,PRODUCTIE PREFABWANDEN 11 dagen per verdiep (incl hydrofoberen),155.0,,160.0,C2013-04
+42,KEURING EERSTE ELEMENTEN -WIT-ZWART-GRIJS,1.0,41,1.0,C2013-04
+44,WANDEN KOKER A,1.0,37,2.0,C2013-04
+45,WANDEN KOKER F,1.0,44,1.0,C2013-04
+46,WANDEN KOKER B  tot E,2.0,45,1.0,C2013-04
+47,BEKISTEN TUSSENBORDES KOKER A (zwart),1.0,44,1.0,C2013-04
+48,BEKISTEN TUSSENBORDES KOKER F,1.0,45,1.0,C2013-04
+49,PL. WERKVLOEREN KOKERS B tot E,1.0,46,1.0,C2013-04
+50,BETON  DRAAGWAND KOKER A en F,2.0,45,2.0,C2013-04
+51,BETON DRAAGWAND KOKER B tot E,1.0,46,1.0,C2013-04
+52,BEKISTEN PLAAT KOKER A  (zwart),1.0,50,1.0,C2013-04
+53,BEKISTEN PLAAT KOKER F,1.0,50,1.0,C2013-04
+54,BEKISTEN RANDBALK PLAAT,3.0,50,2.0,C2013-04
+55,BEKISTEN PLAAT (met tafels),3.0,54,2.0,C2013-04
+56,WAPENING VLOERPLATEN,3.0,55,2.0,C2013-04
+57,BETON VLOERPLATEN ( grof vlinderen),1.0,56,1.0,C2013-04
+58,PLAATSEN PREFABTRAPPEN + veiligheid                                        $,1.0,57,1.0,C2013-04
+60,WANDEN KOKER A,1.0,58,1.0,C2013-04
+61,WANDEN KOKER F,1.0,60,1.0,C2013-04
+62,WANDEN KOKER B  tot E,2.0,61,2.0,C2013-04
+63,BEKISTEN TUSSENBORDES KOKER A (zwart),1.0,60,1.0,C2013-04
+64,BEKISTEN TUSSENBORDES KOKER F,1.0,61,1.0,C2013-04
+65,PL. WERKVLOEREN KOKERS B tot E,1.0,62,1.0,C2013-04
+66,BETON  DRAAGWAND KOKER A en F,2.0,61,2.0,C2013-04
+67,BETON DRAAGWAND KOKER B tot E,1.0,62,1.0,C2013-04
+68,BEKISTEN PLAAT KOKER A  (zwart),1.0,66,1.0,C2013-04
+69,BEKISTEN PLAAT KOKER F,1.0,66,1.0,C2013-04
+70,BEKISTEN RANDBALK PLAAT,3.0,66,1.0,C2013-04
+71,BEKISTEN PLAAT (met tafels),3.0,70,1.0,C2013-04
+72,WAPENING VLOERPLATEN,3.0,71,1.0,C2013-04
+73,BETON VLOERPLATEN (grof vlinderen),1.0,72,1.0,C2013-04
+74,PLAATSEN PREFABTRAPPEN + veiligheid,1.0,73,1.0,C2013-04
+76,WANDEN KOKER A,1.0,74,1.0,C2013-04
+77,WANDEN KOKER F,1.0,76,1.0,C2013-04
+78,WANDEN KOKER B  tot E,2.0,77,2.0,C2013-04
+79,BEKISTEN TUSSENBORDES KOKER A (zwart),1.0,76,1.0,C2013-04
+80,BEKISTEN TUSSENBORDES KOKER F,1.0,77,1.0,C2013-04
+81,PL. WERKVLOEREN KOKERS B tot E,1.0,78,1.0,C2013-04
+82,BETON  DRAAGWAND KOKER A en F,2.0,77,2.0,C2013-04
+83,BETON DRAAGWAND KOKER B tot E,1.0,78,1.0,C2013-04
+84,BEKISTEN PLAAT KOKER A  (zwart),1.0,82,1.0,C2013-04
+85,BEKISTEN PLAAT KOKER F,1.0,82,1.0,C2013-04
+86,BEKISTEN RANDBALK PLAAT,3.0,82,1.0,C2013-04
+87,BEKISTEN PLAAT (met tafels),3.0,86,1.0,C2013-04
+88,WAPENING VLOERPLATEN,3.0,87,1.0,C2013-04
+89,BETON VLOERPLATEN (grof vlinderen),1.0,88,1.0,C2013-04
+90,PLAATSEN PREFABTRAPPEN + veiligheid,1.0,89,1.0,C2013-04
+92,WANDEN KOKER A,1.0,90,1.0,C2013-04
+93,WANDEN KOKER F,1.0,92,1.0,C2013-04
+94,WANDEN KOKER B  tot E,2.0,93,2.0,C2013-04
+95,BEKISTEN TUSSENBORDES KOKER A (zwart),1.0,92,1.0,C2013-04
+96,BEKISTEN TUSSENBORDES KOKER F,1.0,93,1.0,C2013-04
+97,PL. WERKVLOEREN KOKERS B tot E,1.0,94,1.0,C2013-04
+98,BETON  DRAAGWAND KOKER A en F,2.0,93,2.0,C2013-04
+99,BETON DRAAGWAND KOKER B tot E,1.0,94,1.0,C2013-04
+100,BEKISTEN PLAAT KOKER A  (zwart),1.0,98,1.0,C2013-04
+101,BEKISTEN PLAAT KOKER F,1.0,98,1.0,C2013-04
+102,BEKISTEN RANDBALK PLAAT,3.0,98,1.0,C2013-04
+103,BEKISTEN PLAAT (met tafels),3.0,102,1.0,C2013-04
+104,WAPENING VLOERPLATEN,3.0,103,1.0,C2013-04
+105,BETON VLOERPLATEN (grof vlinderen),1.0,104,1.0,C2013-04
+106,PLAATSEN PREFABTRAPPEN + veiligheid,1.0,105,1.0,C2013-04
+108,WANDEN KOKER A,1.0,106,1.0,C2013-04
+109,WANDEN KOKER F,1.0,108,1.0,C2013-04
+110,WANDEN KOKER B  tot E,2.0,109,2.0,C2013-04
+111,BEKISTEN TUSSENBORDES KOKER A (zwart),1.0,108,1.0,C2013-04
+112,BEKISTEN TUSSENBORDES KOKER F,1.0,109,1.0,C2013-04
+113,PL. WERKVLOEREN KOKERS B tot E,1.0,110,1.0,C2013-04
+114,BETON  DRAAGWAND KOKER A en F,2.0,109,2.0,C2013-04
+115,BETON DRAAGWAND KOKER B tot E,1.0,110,1.0,C2013-04
+116,BEKISTEN PLAAT KOKER A  (zwart),1.0,114,1.0,C2013-04
+117,BEKISTEN PLAAT KOKER F,1.0,114,1.0,C2013-04
+118,BEKISTEN RANDBALK PLAAT,3.0,114,1.0,C2013-04
+119,BEKISTEN PLAAT (met tafels),3.0,118,1.0,C2013-04
+120,WAPENING VLOERPLATEN,3.0,119,1.0,C2013-04
+121,BETON VLOERPLATEN (grof vlinderen),1.0,120,1.0,C2013-04
+122,PLAATSEN PREFABTRAPPEN + veiligheid,1.0,121,1.0,C2013-04
+124,WANDEN KOKER A,1.0,122,1.0,C2013-04
+125,WANDEN KOKER F,1.0,124,1.0,C2013-04
+126,WANDEN KOKER B  tot E,2.0,125,2.0,C2013-04
+127,BEKISTEN TUSSENBORDES KOKER A (zwart),1.0,124,1.0,C2013-04
+128,BEKISTEN TUSSENBORDES KOKER F,1.0,125,1.0,C2013-04
+129,PL. WERKVLOEREN KOKERS B tot E,1.0,126,1.0,C2013-04
+130,BETON  DRAAGWAND KOKER A en F,2.0,125,2.0,C2013-04
+131,BETON DRAAGWAND KOKER B tot E,1.0,126,1.0,C2013-04
+132,BEKISTEN PLAAT KOKER A  (zwart),1.0,130,1.0,C2013-04
+133,BEKISTEN PLAAT KOKER F,1.0,130,1.0,C2013-04
+134,BEKISTEN RANDBALK PLAAT,3.0,130,1.0,C2013-04
+135,BEKISTEN PLAAT (met tafels),3.0,134,1.0,C2013-04
+136,WAPENING VLOERPLATEN,3.0,135,1.0,C2013-04
+137,BETON VLOERPLATEN (grof vlinderen),1.0,136,1.0,C2013-04
+138,PLAATSEN PREFABTRAPPEN + veiligheid,1.0,137,1.0,C2013-04
+140,WANDEN KOKER A,1.0,138,1.0,C2013-04
+141,WANDEN KOKER F,1.0,140,1.0,C2013-04
+142,WANDEN KOKER B  tot E,2.0,141,2.0,C2013-04
+143,BEKISTEN TUSSENBORDES KOKER A (zwart),1.0,140,1.0,C2013-04
+144,BEKISTEN TUSSENBORDES KOKER F,1.0,141,1.0,C2013-04
+145,PL. WERKVLOEREN KOKERS B tot E,1.0,142,1.0,C2013-04
+146,BETON  DRAAGWAND KOKER A en F,2.0,141,2.0,C2013-04
+147,BETON DRAAGWAND KOKER B tot E,1.0,142,1.0,C2013-04
+148,BEKISTEN PLAAT KOKER A  (zwart),1.0,146,1.0,C2013-04
+149,BEKISTEN PLAAT KOKER F,1.0,146,1.0,C2013-04
+150,BEKISTEN RANDBALK PLAAT,3.0,146,1.0,C2013-04
+151,BEKISTEN PLAAT (met tafels),3.0,150,1.0,C2013-04
+152,WAPENING VLOERPLATEN,3.0,151,1.0,C2013-04
+153,BETON VLOERPLATEN (grof vlinderen),1.0,152,1.0,C2013-04
+154,PLAATSEN PREFABTRAPPEN + veiligheid,1.0,153,1.0,C2013-04
+156,WANDEN KOKER A,1.0,154,1.0,C2013-04
+157,WANDEN KOKER F,1.0,156,1.0,C2013-04
+158,WANDEN KOKER B  tot E,2.0,157,2.0,C2013-04
+159,BEKISTEN TUSSENBORDES KOKER A (zwart),1.0,156,1.0,C2013-04
+160,BEKISTEN TUSSENBORDES KOKER F,1.0,157,1.0,C2013-04
+161,PL. WERKVLOEREN KOKERS B tot E,1.0,158,1.0,C2013-04
+162,BETON  DRAAGWAND KOKER A en F,2.0,157,2.0,C2013-04
+163,BETON DRAAGWAND KOKER B tot E,1.0,158,1.0,C2013-04
+164,BEKISTEN PLAAT KOKER A  (zwart),1.0,162,1.0,C2013-04
+165,BEKISTEN PLAAT KOKER F,1.0,162,1.0,C2013-04
+166,BEKISTEN RANDBALK PLAAT,3.0,162,3.0,C2013-04
+167,BEKISTEN PLAAT (met tafels),3.0,166,3.0,C2013-04
+168,WAPENING VLOERPLATEN,3.0,167,3.0,C2013-04
+169,BETON VLOERPLATEN (grof vlinderen),1.0,168,1.0,C2013-04
+170,PLAATSEN PREFABTRAPPEN + veiligheid,1.0,169,1.0,C2013-04
+172,WANDEN KOKER A,1.0,170,1.0,C2013-04
+173,WANDEN KOKER F,1.0,172,1.0,C2013-04
+174,WANDEN KOKER B  tot E,2.0,173,2.0,C2013-04
+175,BEKISTEN TUSSENBORDES KOKER A (zwart),1.0,172,1.0,C2013-04
+176,BEKISTEN TUSSENBORDES KOKER F,1.0,173,1.0,C2013-04
+177,PL. WERKVLOEREN KOKERS B tot E,1.0,174,1.0,C2013-04
+178,BETON  DRAAGWAND KOKER A en F,2.0,173,2.0,C2013-04
+179,BETON DRAAGWAND KOKER B tot E,1.0,174,1.0,C2013-04
+180,BEKISTEN PLAAT KOKER A  (zwart),1.0,178,1.0,C2013-04
+181,BEKISTEN PLAAT KOKER F,1.0,178,1.0,C2013-04
+182,BEKISTEN RANDBALK PLAAT,3.0,178,3.0,C2013-04
+183,BEKISTEN PLAAT (met tafels),3.0,182,3.0,C2013-04
+184,WAPENING VLOERPLATEN,3.0,183,3.0,C2013-04
+185,BETON VLOERPLATEN (grof vlinderen),1.0,184,1.0,C2013-04
+186,PLAATSEN PREFABTRAPPEN + veiligheid,1.0,185,1.0,C2013-04
+188,WANDEN KOKER A,1.0,186,1.0,C2013-04
+189,WANDEN KOKER F,1.0,188,1.0,C2013-04
+190,WANDEN KOKER B  tot E,2.0,189,2.0,C2013-04
+191,BEKISTEN TUSSENBORDES KOKER A (zwart),1.0,188,1.0,C2013-04
+192,BEKISTEN TUSSENBORDES KOKER F,1.0,189,1.0,C2013-04
+193,PL. WERKVLOEREN KOKERS B tot E,1.0,190,1.0,C2013-04
+194,BETON  DRAAGWAND KOKER A en F,2.0,189,2.0,C2013-04
+195,BETON DRAAGWAND KOKER B tot E,1.0,190,1.0,C2013-04
+196,BEKISTEN PLAAT KOKER A  (zwart),1.0,194,1.0,C2013-04
+197,BEKISTEN PLAAT KOKER F,1.0,194,1.0,C2013-04
+198,BEKISTEN RANDBALK PLAAT,3.0,194,3.0,C2013-04
+199,BEKISTEN PLAAT (met tafels),3.0,198,3.0,C2013-04
+200,WAPENING VLOERPLATEN,3.0,199,3.0,C2013-04
+201,BETON VLOERPLATEN (grof vlinderen),1.0,200,1.0,C2013-04
+202,PLAATSEN PREFABTRAPPEN + veiligheid,1.0,201,1.0,C2013-04
+204,WANDEN KOKER A,1.0,202,1.0,C2013-04
+205,WANDEN KOKER F,1.0,204,1.0,C2013-04
+206,WANDEN KOKER B  tot E,2.0,205,2.0,C2013-04
+207,BEKISTEN TUSSENBORDES KOKER A (zwart),1.0,204,1.0,C2013-04
+208,BEKISTEN TUSSENBORDES KOKER F,1.0,205,1.0,C2013-04
+209,PL. WERKVLOEREN KOKERS B tot E,1.0,206,1.0,C2013-04
+210,BETON  DRAAGWAND KOKER A en F,2.0,205,2.0,C2013-04
+211,BETON DRAAGWAND KOKER B tot E,1.0,206,1.0,C2013-04
+212,BEKISTEN PLAAT KOKER A  (zwart),1.0,210,1.0,C2013-04
+213,BEKISTEN PLAAT KOKER F,1.0,210,1.0,C2013-04
+214,BEKISTEN RANDBALK PLAAT,3.0,210,3.0,C2013-04
+215,BEKISTEN PLAAT (met tafels),3.0,214,3.0,C2013-04
+216,WAPENING VLOERPLATEN,3.0,215,3.0,C2013-04
+217,BETON VLOERPLATEN (grof vlinderen),1.0,216,1.0,C2013-04
+218,PLAATSEN PREFABTRAPPEN + veiligheid,1.0,217,1.0,C2013-04
+220,WANDEN KOKER A,1.0,218,1.0,C2013-04
+221,WANDEN KOKER F,1.0,220,1.0,C2013-04
+222,WANDEN KOKER B  tot E,2.0,221,2.0,C2013-04
+223,BEKISTEN TUSSENBORDES KOKER A (zwart),1.0,220,1.0,C2013-04
+224,BEKISTEN TUSSENBORDES KOKER F,1.0,221,1.0,C2013-04
+225,PL. WERKVLOEREN KOKERS B tot E,1.0,222,1.0,C2013-04
+226,BETON  DRAAGWAND KOKER A en F,2.0,221,2.0,C2013-04
+227,BETON DRAAGWAND KOKER B tot E,1.0,222,1.0,C2013-04
+228,BEKISTEN PLAAT KOKER A  (zwart),1.0,226,1.0,C2013-04
+229,BEKISTEN PLAAT KOKER F,1.0,226,1.0,C2013-04
+230,BEKISTEN RANDBALK PLAAT,3.0,226,3.0,C2013-04
+231,BEKISTEN PLAAT (met tafels),3.0,230,3.0,C2013-04
+232,WAPENING VLOERPLATEN,3.0,231,3.0,C2013-04
+233,BETON VLOERPLATEN (grof vlinderen),1.0,232,1.0,C2013-04
+234,PLAATSEN PREFABTRAPPEN + veiligheid,1.0,233,1.0,C2013-04
+236,WANDEN KOKER A,1.0,234,1.0,C2013-04
+237,WANDEN KOKER F,1.0,236,1.0,C2013-04
+238,WANDEN KOKER B  tot E,1.0,237,1.0,C2013-04
+239,BEKISTEN TUSSENBORDES KOKER A (zwart),1.0,236,1.0,C2013-04
+240,BEKISTEN TUSSENBORDES KOKER F,1.0,237,1.0,C2013-04
+241,PL. WERKVLOEREN KOKERS B tot E,1.0,238,1.0,C2013-04
+242,BETON  DRAAGWAND KOKER A en F,2.0,237,2.0,C2013-04
+243,BETON DRAAGWAND KOKER B tot E,1.0,238,1.0,C2013-04
+244,BEKISTEN PLAAT KOKER A  (zwart),1.0,242,1.0,C2013-04
+245,BEKISTEN PLAAT KOKER F,1.0,242,1.0,C2013-04
+246,BEKISTEN RANDBALK PLAAT,3.0,242,3.0,C2013-04
+247,BEKISTEN PLAAT (met tafels),3.0,246,3.0,C2013-04
+248,WAPENING VLOERPLATEN,3.0,247,3.0,C2013-04
+249,BETON VLOERPLATEN (grof vlinderen),1.0,248,1.0,C2013-04
+250,PLAATSEN PREFABTRAPPEN + veiligheid,1.0,249,1.0,C2013-04
+252,WANDEN KOKER A,1.0,250,1.0,C2013-04
+253,WANDEN KOKER F,1.0,252,1.0,C2013-04
+254,WANDEN KOKER B  tot E,2.0,253,2.0,C2013-04
+255,BEKISTEN TUSSENBORDES KOKER A (zwart),1.0,252,1.0,C2013-04
+256,BEKISTEN TUSSENBORDES KOKER F,1.0,253,1.0,C2013-04
+257,PL. WERKVLOEREN KOKERS B tot E,1.0,254,1.0,C2013-04
+258,BETON  DRAAGWAND KOKER A en F,2.0,253,2.0,C2013-04
+259,BETON DRAAGWAND KOKER B tot E,1.0,254,1.0,C2013-04
+260,BEKISTEN PLAAT KOKER A  (zwart),1.0,258,1.0,C2013-04
+261,BEKISTEN PLAAT KOKER F,1.0,258,1.0,C2013-04
+262,BEKISTEN RANDBALK PLAAT,3.0,258,3.0,C2013-04
+263,BEKISTEN PLAAT (met tafels) deels met stelling  8m hoog,4.0,262,4.0,C2013-04
+264,WAPENING VLOERPLATEN,3.0,263,3.0,C2013-04
+265,BETON VLOERPLATEN (grof vlinderen),1.0,264,1.0,C2013-04
+266,PLAATSEN PREFABTRAPPEN + veiligheid,1.0,265,1.0,C2013-04
+268,WANDEN KOKER A,1.0,266,1.0,C2013-04
+269,WANDEN KOKER F,1.0,268,1.0,C2013-04
+270,BETON  DRAAGWAND KOKER  F,2.0,269,2.0,C2013-04
+271,BEKISTEN DAKPLAAT KOKER F,2.0,270,2.0,C2013-04
+272,HELLINGSBETON DAK enkel boven kokers,2.0,271,2.0,C2013-04
+273,ONTKISTEN PLATEN 13de EN 14de VERDIEPING,4.0,265,4.0,C2013-04
+456,werfinrichting,10.0,,10.0,C2013-06
+458,installatie bronbemaling,5.0,,5.0,C2013-06
+459,bronbemaling,150.0,458;456,150.0,C2013-06
+460,grondwerken toren,10.0,458,10.0,C2013-06
+461,voorbereiding secanspalen parking,10.0,458,10.0,C2013-06
+462,secanspalen parking,10.0,461,10.0,C2013-06
+463,grondwerken parking,23.0,462,23.0,C2013-06
+464,ankers secanspalen eerste rij,5.0,463,5.0,C2013-06
+457,ankers secanspalen tweede rij,5.0,463,5.0,C2013-06
+465,funderingsplaat gebouw,15.0,460,15.0,C2013-06
+466,trekankers funderingsplaat parking,8.0,463,8.0,C2013-06
+467,funderingsplaat parking,15.0,466,15.0,C2013-06
+1,radier torengebouw,21.0,460,21.0,C2013-06
+2,opstellen torenkraan TK2,2.0,1,2.0,C2013-06
+3,berlinerwand parking + einde grondwerken,15.0,,15.0,C2013-06
+4,trekankers parking,8.0,3,8.0,C2013-06
+5,radier parking,15.0,4,15.0,C2013-06
+6,opstellen torenkraan TK1 in parking,5.0,5,5.0,C2013-06
+475,40 ruwbouw boven -2 toren,15.0,1;465,53.0,C2013-06
+476,45 ruwbouw boven -2 parking,20.0,467;5,28.0,C2013-06
+477,50 ruwbouw boven -1 toren,15.0,475,56.0,C2013-06
+478,55 ruwbouw boven -1 parking,20.0,476,42.0,C2013-06
+479,60 ruwbouw boven gelijkvloers,10.0,477,21.0,C2013-06
+480,70 ruwbouw boven +1,10.0,479,14.0,C2013-06
+481,80 ruwbouw boven +2,10.0,480,10.0,C2013-06
+482,90 ruwbouw boven +3,10.0,481,8.0,C2013-06
+483,100 ruwbouw boven +4,10.0,482,8.0,C2013-06
+484,110 ruwbouw boven +5,10.0,483,8.0,C2013-06
+485,120 ruwbouw boven +6,10.0,484,8.0,C2013-06
+486,130 ruwbouw boven +7,10.0,485,8.0,C2013-06
+487,140 ruwbouw boven +8,10.0,486,8.0,C2013-06
+488,150 ruwbouw boven +9,10.0,487,8.0,C2013-06
+489,160 ruwbouw boven +10,10.0,488,8.0,C2013-06
+490,170 ruwbouw boven +11,10.0,489,8.0,C2013-06
+491,180 ruwbouw boven +12,10.0,490,8.0,C2013-06
+492,190 ruwbouw boven +13,10.0,491,8.0,C2013-06
+493,200 ruwbouw boven +14,10.0,492,8.0,C2013-06
+182,hellingsbeton,5.0,493,5.0,C2013-06
+183,dakwerken niveau +2,5.0,490,10.0,C2013-06
+184,dakwerken gebouw,15.0,185,15.0,C2013-06
+185,installatie gevelreiniging,5.0,182,10.0,C2013-06
+186,dakwerken parkingdak,25.0,478,20.0,C2013-06
+187,beschermbeton dak,10.0,186,10.0,C2013-06
+188,montage hefsteigers,10.0,,10.0,C2013-06
+189,gevel 0 - 2,60.0,484,20.0,C2013-06
+190,gevel 3-5,27.5,188,42.0,C2013-06
+191,gevel 6-9,27.5,190,22.0,C2013-06
+192,gevel 9-boven,70.0,493;191,33.0,C2013-06
+193,afbouw steigers,15.0,192,15.0,C2013-06
+274,pleisterwerken,5.0,226;275,5.0,C2013-06
+275,traceren plafond + boren ophangpunten,3.0,227,3.0,C2013-06
+276,technieken in vals plafond,15.0,275;228,15.0,C2013-06
+277,gk strook gevel structuur,3.0,229,3.0,C2013-06
+278,structuur vp,4.0,260;261;277,4.0,C2013-06
+279,technieken in vloer,5.0,278,5.0,C2013-06
+280,chape,10.0,279,10.0,C2013-06
+281,plaatsen convectoren,10.0,280,10.0,C2013-06
+282,afwerking vloeren,10.0,281,10.0,C2013-06
+283,uitplamuren kolommen,2.0,233,2.0,C2013-06
+284,metselwerken,10.0,259,10.0,C2013-06
+285,binnenwanden,4.0,288,7.0,C2013-06
+286,sanitaire wanden,3.0,398,4.0,C2013-06
+287,binnenschrijnwerk,4.0,266;185;267;263,6.0,C2013-06
+288,dichtleggen vp + gkstrook,8.0,,8.0,C2013-06
+289,natuursteen inkomhal,10.0,288,10.0,C2013-06
+290,schilderwerken,10.0,287;285;289,15.0,C2013-06
+291,auditorium - verder te detailleren,80.0,284,80.0,C2013-06
+292,opkuis,5.0,291,5.0,C2013-06
+258,pleisterwerken,5.0,274,5.0,C2013-06
+259,traceren plafond + boren ophangpunten,3.0,275,3.0,C2013-06
+260,technieken in vals plafond,15.0,259,15.0,C2013-06
+261,gk strook gevel structuur,3.0,189,3.0,C2013-06
+262,structuur vp,4.0,260;261;230,4.0,C2013-06
+263,vloergoten + verhoogde vloer + bekabeling,10.0,262,10.0,C2013-06
+264,plaatsen convectoren,10.0,262,10.0,C2013-06
+265,uitplamuren kolommen,2.0,259,2.0,C2013-06
+266,metselwerken,10.0,259,10.0,C2013-06
+267,binnenwanden,4.0,270,7.0,C2013-06
+268,sanitaire wanden,3.0,286,3.0,C2013-06
+269,binnenschrijnwerk,4.0,266;268;267;263,6.0,C2013-06
+270,dichtleggen vp + gkstrook,8.0,,8.0,C2013-06
+271,schilderwerken,10.0,269;285;270;267,13.0,C2013-06
+272,tapijt,3.0,271,3.0,C2013-06
+273,opkuis,5.0,271;272,3.0,C2013-06
+414,tegels,10.0,183,10.0,C2013-06
+415,bekleding kernen,20.0,414,20.0,C2013-06
+194,pleisterwerken,5.0,195;183,5.0,C2013-06
+195,traceren plafond + boren ophangpunten,3.0,485,3.0,C2013-06
+196,technieken in vals plafond,15.0,195,25.0,C2013-06
+197,gk strook gevel structuur,3.0,190,3.0,C2013-06
+198,structuur vp,4.0,196;197,4.0,C2013-06
+199,vloergoten + verhoogde vloer + bekabeling,10.0,198,10.0,C2013-06
+200,plaatsen convectoren,10.0,198,10.0,C2013-06
+201,uitplamuren kolommen,2.0,195,2.0,C2013-06
+202,metselwerken,10.0,195,10.0,C2013-06
+203,binnenwanden,4.0,190;206,4.0,C2013-06
+204,sanitaire wanden,3.0,,3.0,C2013-06
+205,binnenschrijnwerk,4.0,202;199,4.0,C2013-06
+206,dichtleggen vp + gkstrook,8.0,199,8.0,C2013-06
+207,schilderwerken,10.0,205;206,10.0,C2013-06
+208,tapijt,3.0,207,3.0,C2013-06
+209,opkuis,5.0,208,5.0,C2013-06
+210,pleisterwerken,5.0,195;190,5.0,C2013-06
+211,traceren plafond + boren ophangpunten,3.0,195,3.0,C2013-06
+212,technieken in vals plafond,15.0,195;211,15.0,C2013-06
+213,gk strook gevel structuur,3.0,191,3.0,C2013-06
+214,structuur vp,4.0,196;197;212,4.0,C2013-06
+215,vloergoten + verhoogde vloer + bekabeling,10.0,198,10.0,C2013-06
+216,plaatsen convectoren,10.0,214,10.0,C2013-06
+217,uitplamuren kolommen,2.0,195,2.0,C2013-06
+218,metselwerken,10.0,195,10.0,C2013-06
+219,binnenwanden,4.0,190;222,6.0,C2013-06
+220,sanitaire wanden,3.0,,3.0,C2013-06
+221,binnenschrijnwerk,4.0,215;218,6.0,C2013-06
+222,dichtleggen vp + gkstrook,8.0,199,8.0,C2013-06
+223,schilderwerken,10.0,206;221,15.0,C2013-06
+224,tapijt,3.0,223;207,3.0,C2013-06
+225,opkuis,5.0,224,5.0,C2013-06
+226,pleisterwerken,5.0,194;491;227,5.0,C2013-06
+227,traceren plafond + boren ophangpunten,3.0,487,3.0,C2013-06
+228,technieken in vals plafond,15.0,227;196,15.0,C2013-06
+229,gk strook gevel structuur,3.0,191;197,3.0,C2013-06
+230,structuur vp,4.0,228;198,4.0,C2013-06
+231,vloergoten + verhoogde vloer + bekabeling,10.0,230;199,10.0,C2013-06
+232,plaatsen convectoren,10.0,230,10.0,C2013-06
+233,uitplamuren kolommen,2.0,227,2.0,C2013-06
+234,metselwerken,10.0,227,10.0,C2013-06
+235,sanitaire wanden,3.0,220,3.0,C2013-06
+236,binnenwanden,4.0,190;238,6.0,C2013-06
+237,binnenschrijnwerk,4.0,234;231,6.0,C2013-06
+238,dichtleggen vp + gkstrook,8.0,206,8.0,C2013-06
+239,schilderwerken,10.0,237;238,15.0,C2013-06
+240,tapijt,3.0,239,3.0,C2013-06
+241,opkuis,5.0,240,5.0,C2013-06
+242,pleisterwerken,5.0,210,5.0,C2013-06
+243,traceren plafond + boren ophangpunten,3.0,227,3.0,C2013-06
+244,technieken in vals plafond,15.0,243,15.0,C2013-06
+245,gk strook gevel structuur,3.0,213,3.0,C2013-06
+246,structuur vp,4.0,228;245;229,4.0,C2013-06
+247,vloergoten + verhoogde vloer + bekabeling,10.0,246;215,10.0,C2013-06
+248,plaatsen convectoren,10.0,246,10.0,C2013-06
+249,uitplamuren kolommen,2.0,227,2.0,C2013-06
+250,metselwerken,10.0,227,10.0,C2013-06
+251,binnenwanden,4.0,191;254,7.0,C2013-06
+252,sanitaire wanden,3.0,235,3.0,C2013-06
+253,binnenschrijnwerk,4.0,250;247,6.0,C2013-06
+254,dichtleggen vp + gkstrook,8.0,222,8.0,C2013-06
+255,schilderwerken,10.0,253;238,15.0,C2013-06
+256,tapijt,3.0,239;255,3.0,C2013-06
+257,opkuis,5.0,256,5.0,C2013-06
+293,pleisterwerken,5.0,226;274,5.0,C2013-06
+294,traceren plafond + boren ophangpunten,3.0,243;489,3.0,C2013-06
+295,technieken in vals plafond,15.0,294;276,15.0,C2013-06
+296,gk strook gevel structuur,3.0,276,3.0,C2013-06
+297,structuur vp,4.0,295,4.0,C2013-06
+298,vloergoten + verhoogde vloer + bekabeling,10.0,231;297,10.0,C2013-06
+299,plaatsen convectoren,10.0,297,10.0,C2013-06
+300,uitplamuren kolommen,2.0,294;283,2.0,C2013-06
+301,metselwerken,10.0,294,10.0,C2013-06
+302,sanitaire wanden,3.0,252,3.0,C2013-06
+303,binnenwanden,4.0,305;191,7.0,C2013-06
+304,binnenschrijnwerk,4.0,301;298,6.0,C2013-06
+305,dichtleggen vp + gkstrook,8.0,238,8.0,C2013-06
+306,schilderwerken,10.0,304;305,15.0,C2013-06
+307,tapijt,3.0,306,3.0,C2013-06
+308,opkuis,5.0,307,5.0,C2013-06
+309,pleisterwerken,5.0,242,5.0,C2013-06
+310,traceren plafond + boren ophangpunten,3.0,243;489,3.0,C2013-06
+311,technieken in vals plafond,15.0,310,15.0,C2013-06
+312,gk strook gevel structuur,3.0,245,3.0,C2013-06
+313,structuur vp,4.0,295;312;296,4.0,C2013-06
+314,vloergoten + verhoogde vloer + bekabeling,10.0,313;247,10.0,C2013-06
+315,plaatsen convectoren,10.0,313,10.0,C2013-06
+316,uitplamuren kolommen,2.0,294,2.0,C2013-06
+317,metselwerken,10.0,294,10.0,C2013-06
+318,binnenwanden,4.0,321;191,7.0,C2013-06
+319,sanitaire wanden,3.0,302,3.0,C2013-06
+320,binnenschrijnwerk,4.0,317;314,6.0,C2013-06
+321,dichtleggen vp + gkstrook,8.0,254,8.0,C2013-06
+322,schilderwerken,10.0,320;305,15.0,C2013-06
+323,tapijt,3.0,306;322,3.0,C2013-06
+324,opkuis,5.0,323,5.0,C2013-06
+325,pleisterwerken,5.0,293,5.0,C2013-06
+326,traceren plafond + boren ophangpunten,3.0,310;490,3.0,C2013-06
+327,technieken in vals plafond,15.0,326,15.0,C2013-06
+328,gk strook gevel structuur,3.0,296,3.0,C2013-06
+329,structuur vp,4.0,327;328,4.0,C2013-06
+330,vloergoten + verhoogde vloer + bekabeling,10.0,329;298,10.0,C2013-06
+331,plaatsen convectoren,10.0,329,10.0,C2013-06
+332,uitplamuren kolommen,2.0,326,2.0,C2013-06
+333,metselwerken,10.0,326,10.0,C2013-06
+334,sanitaire wanden,3.0,319,3.0,C2013-06
+335,binnenwanden,4.0,337,7.0,C2013-06
+336,binnenschrijnwerk,4.0,330;333,6.0,C2013-06
+337,dichtleggen vp + gkstrook,8.0,305,8.0,C2013-06
+338,schilderwerken,10.0,336;337,15.0,C2013-06
+339,tapijt,3.0,338,3.0,C2013-06
+340,opkuis,5.0,338,5.0,C2013-06
+341,pleisterwerken,5.0,309,5.0,C2013-06
+342,traceren plafond + boren ophangpunten,3.0,326;491,3.0,C2013-06
+343,technieken in vals plafond,15.0,342,15.0,C2013-06
+344,gk strook gevel structuur,3.0,312,3.0,C2013-06
+345,structuur vp,4.0,327;344;328,4.0,C2013-06
+346,vloergoten + verhoogde vloer + bekabeling,10.0,329;314,10.0,C2013-06
+347,plaatsen convectoren,10.0,345,10.0,C2013-06
+348,uitplamuren kolommen,2.0,326,2.0,C2013-06
+349,metselwerken,10.0,326,10.0,C2013-06
+350,binnenwanden,4.0,353,7.0,C2013-06
+351,sanitaire wanden,3.0,334,3.0,C2013-06
+352,binnenschrijnwerk,4.0,349;346,6.0,C2013-06
+353,dichtleggen vp + gkstrook,8.0,321,8.0,C2013-06
+354,schilderwerken,10.0,352;337,15.0,C2013-06
+355,tapijt,3.0,338;354,3.0,C2013-06
+356,opkuis,5.0,355,5.0,C2013-06
+357,pleisterwerken,5.0,325;192,5.0,C2013-06
+358,traceren plafond + boren ophangpunten,3.0,342;492,3.0,C2013-06
+359,technieken in vals plafond,15.0,358,15.0,C2013-06
+360,gk strook gevel structuur,3.0,277,3.0,C2013-06
+361,structuur vp,4.0,359;360,4.0,C2013-06
+362,vloergoten + verhoogde vloer + bekabeling,10.0,361,10.0,C2013-06
+363,plaatsen convectoren,10.0,361,10.0,C2013-06
+364,uitplamuren kolommen,2.0,358,2.0,C2013-06
+365,metselwerken,10.0,358,10.0,C2013-06
+366,sanitaire wanden,3.0,351,3.0,C2013-06
+367,binnenwanden,4.0,369,8.0,C2013-06
+368,binnenschrijnwerk,4.0,362;365,6.0,C2013-06
+369,dichtleggen vp + gkstrook,8.0,288,8.0,C2013-06
+370,schilderwerken,10.0,369;368,15.0,C2013-06
+371,tapijt,3.0,370,3.0,C2013-06
+372,opkuis,5.0,371,5.0,C2013-06
+373,pleisterwerken,5.0,341,5.0,C2013-06
+374,traceren plafond + boren ophangpunten,3.0,358;493,3.0,C2013-06
+375,technieken in vals plafond,15.0,374,15.0,C2013-06
+376,gk strook gevel structuur,3.0,261,3.0,C2013-06
+377,structuur vp,4.0,359;360;376,4.0,C2013-06
+378,vloergoten + verhoogde vloer + bekabeling,10.0,377;263,10.0,C2013-06
+379,plaatsen convectoren,10.0,377,10.0,C2013-06
+380,uitplamuren kolommen,2.0,358,2.0,C2013-06
+381,metselwerken,10.0,358,10.0,C2013-06
+382,binnenwanden,4.0,385,7.0,C2013-06
+383,sanitaire wanden,3.0,366,3.0,C2013-06
+384,binnenschrijnwerk,4.0,381;378,6.0,C2013-06
+385,dichtleggen vp + gkstrook,8.0,270,8.0,C2013-06
+386,schilderwerken,10.0,369;384,15.0,C2013-06
+387,tapijt,3.0,370;386,3.0,C2013-06
+388,opkuis,5.0,387,5.0,C2013-06
+389,pleisterwerken,5.0,192;357,5.0,C2013-06
+390,traceren plafond + boren ophangpunten,3.0,187,3.0,C2013-06
+391,technieken in vals plafond,15.0,390,15.0,C2013-06
+392,gk strook gevel structuur,3.0,360,3.0,C2013-06
+393,structuur vp,4.0,391;392,4.0,C2013-06
+394,vloergoten + verhoogde vloer + bekabeling,10.0,393;362,10.0,C2013-06
+395,plaatsen convectoren,10.0,393,10.0,C2013-06
+396,uitplamuren kolommen,2.0,390,2.0,C2013-06
+397,metselwerken,10.0,390,10.0,C2013-06
+398,sanitaire wanden,3.0,383,3.0,C2013-06
+399,binnenwanden,4.0,401;192,7.0,C2013-06
+400,binnenschrijnwerk,4.0,394;397,6.0,C2013-06
+401,dichtleggen vp + gkstrook,8.0,369,8.0,C2013-06
+402,schilderwerken,10.0,401;400;399,15.0,C2013-06
+403,tapijt,3.0,402,3.0,C2013-06
+404,verhoorkamer,13.0,403,13.0,C2013-06
+405,opkuis,5.0,404,5.0,C2013-06
+406,vlottende vloeren,15.0,,15.0,C2013-06
+407,polybetons,5.0,406,5.0,C2013-06
+408,machines techn. Ruimtes,10.0,407,10.0,C2013-06
+409,cv operationeel,0.0,,,C2013-06
+410,metselwerken,10.0,408,15.0,C2013-06
+411,technieken aansluiten,45.0,408;493,45.0,C2013-06
+412,binnenschrijnwerk,4.0,411,6.0,C2013-06
+413,schilderwerken,10.0,412;386,10.0,C2013-06
+469,buitenaanleg,50.0,192,50.0,C2013-06
+470,afregelen niveaus faze 1 tem +6,20.0,,20.0,C2013-06
+471,opleveringen faze 1,20.0,470,20.0,C2013-06
+472,afregelen niveaus faze +2,20.0,,20.0,C2013-06
+473,opleveringen faze 2,25.0,,25.0,C2013-06
+62,Voorafgaande activiteiten,1.0,,1.0,C2013-07
+61,Werfinrichting,1.0,62,1.0,C2013-07
+2,Fundering,7.0,61,7.0,C2013-07
+3,Metselwerken,32.0,2,36.0,C2013-07
+4,Dorpels,1.0,3,1.0,C2013-07
+5,Parement levering,1.0,3,1.0,C2013-07
+7,Voegen schoorsteen-niet aanwezig + eggen schrijnwerk,1.0,3,1.0,C2013-07
+8,Volledige ruwbouw,2.0,15,2.0,C2013-07
+10,Koppels,1.0,3,1.0,C2013-07
+11,Volledige kapconstructie,6.0,3,4.0,C2013-07
+13,Zinkwerken,2.0,11,1.0,C2013-07
+14,Onderdak,1.0,13,1.0,C2013-07
+15,Plaatsing pannen,3.0,14,2.0,C2013-07
+18,Opmeting schrijnwerk,1.0,4;11,1.0,C2013-07
+19,Plaatsing schrijnwerk,2.0,18,2.0,C2013-07
+21,Opmeting poort,1.0,4;11,1.0,C2013-07
+22,Plaatsing poort,1.0,21,1.0,C2013-07
+23,Ruwbouw sanitair en cv,4.0,14,4.0,C2013-07
+25,Ruwbouw elektriciteit,4.0,23,4.0,C2013-07
+26,Ruwbouw ventilatie,1.0,23,1.0,C2013-07
+27,Dakisolatie,2.0,15;25,2.0,C2013-07
+28,Pleisterwerken,20.0,27;19,22.0,C2013-07
+30,Opstop voegen,1.0,28,1.0,C2013-07
+31,1-ste laag,1.0,30;28,1.0,C2013-07
+32,2-de laag,1.0,31,1.0,C2013-07
+33,Plaatsing baden / douche's (1 inloopdouche voorzien),1.0,28,1.0,C2013-07
+63,Verdichting inloopdouche plaatsen,1.0,34,1.0,C2013-07
+34,Chape,1.0,28;33,1.0,C2013-07
+36,Bevloering beneden+badkamer boven-wc boven,8.0,32;34;63,8.0,C2013-07
+37,Faiences boven,5.0,36,9.0,C2013-07
+39,Afwerking elektriciteit,3.0,36;22,3.0,C2013-07
+40,Keuring,1.0,39,1.0,C2013-07
+41,Afwerking ventilatie,1.0,39;59,1.0,C2013-07
+43,Opmeting binnenschrijnwerk,1.0,36,1.0,C2013-07
+44,Plaatsing binnenschrijnwerk,3.0,43,3.0,C2013-07
+46,Opmeting trap,1.0,36,1.0,C2013-07
+47,Plaatsing trap,1.0,46,1.0,C2013-07
+49,Opmeting zoldertrap,1.0,36,1.0,C2013-07
+50,Plaatsing zoldertrap,1.0,49,1.0,C2013-07
+52,Opmeting keukenmeubilair,1.0,36,1.0,C2013-07
+53,Plaatsing keukenmeubilair,3.0,52,5.0,C2013-07
+55,Opmeting badmeubel,1.0,37,1.0,C2013-07
+56,Plaatsing badmeubel,1.0,55,1.0,C2013-07
+58,Aanvraag offertes,1.0,2,1.0,C2013-07
+59,Uitvoering aansluitingen,1.0,40,1.0,C2013-07
+60,Afwerking sanitair en cv,3.0,59;53,3.0,C2013-07
+1,Bouwvergunning,1.0,3,1.0,C2013-08
+3,Technische bespreking,1.0,4,1.0,C2013-08
+4,Ondertekening definitief contract,1.0,5,1.0,C2013-08
+5,Bestelling technisch bureau,1.0,10,1.0,C2013-08
+6,Bestelling projectleiders,1.0,10,1.0,C2013-08
+7,Funderingen,6.0,10,6.0,C2013-08
+8,Schrijnwerk (levering),1.0,10,1.0,C2013-08
+10,Montage houten kit,10.0,,12.0,C2013-08
+11,Schrijnwerk (plaatsing),1.0,10;8,1.0,C2013-08
+13,Glas,1.0,11,1.0,C2013-08
+14,Stelling (opbouw),1.0,10,1.0,C2013-08
+16,Stelling (afbraak),1.0,39,1.0,C2013-08
+17,Muurisolatie,5.0,11,4.0,C2013-08
+19,Pur,1.0,13;22;23,1.0,C2013-08
+20,Elektriciteit (eerste fase),5.0,10,5.0,C2013-08
+22,Sanitair - ventilatie (eerste fase),5.0,10,7.5,C2013-08
+23,Verwarming (eerste fase),5.0,10,7.5,C2013-08
+24,Vloerverwarming,3.0,19;10,3.0,C2013-08
+25,Chape,1.0,24;19,2.0,C2013-08
+26,Goten,2.0,32,2.0,C2013-08
+28,Afleiders,1.0,26;29;38,1.0,C2013-08
+29,Metselwerken,15.0,17,30.0,C2013-08
+30,Voegwerken,2.0,29,3.0,C2013-08
+31,Stabilisé,1.0,30,1.0,C2013-08
+32,Pannenlatten,1.0,10,2.0,C2013-08
+34,Pannen,3.0,26;32,5.0,C2013-08
+55,Pannen (fase 2),1.0,34,1.0,C2013-08
+35,Vloeren (eerste fase),3.0,25,1.0,C2013-08
+38,Afwerking (intern),20.0,35,25.0,C2013-08
+54,Trappen,1.0,38,1.0,C2013-08
+39,Afwerking (extern),4.0,29,4.0,C2013-08
+40,Houten terras,2.0,31;38,2.0,C2013-08
+41,Maatwerk,2.0,38,2.0,C2013-08
+42,Gips,3.0,35,12.0,C2013-08
+43,Opstop gips,2.0,38,2.0,C2013-08
+44,Vloeren (tweede fase),2.0,38,2.0,C2013-08
+45,Elektriciteit (tweede fase),2.0,38,2.0,C2013-08
+47,Sanitair - ventilatie (tweede fase),2.0,44;38,2.0,C2013-08
+48,Verwarming (tweede fase),2.0,38,2.0,C2013-08
+49,Oplevering,1.0,38;39;40;41;42;43;44;45;47;48,1.0,C2013-08
+52,Parket,4.0,49,2.0,C2013-08
+53,Oplevering,0.0,,,C2013-08
+62,Werfinrichting,1.0,,1.0,C2013-09
+63,Grondwerken,5.0,62,5.0,C2013-09
+64,Funderingen,15.0,63,15.0,C2013-09
+65,Wanden op V0,20.0,64,20.0,C2013-09
+66,Afdekking V0,15.0,65,15.0,C2013-09
+67,Wanden op V1,20.0,66,20.0,C2013-09
+68,Afdekking V1,10.0,67,10.0,C2013-09
+69,Wanden op V2,10.0,68,10.0,C2013-09
+1,Afdekking V2,5.0,69,10.0,C2013-09
+2,Gevelmetselwerk,35.0,1,35.0,C2013-09
+3,Voegwerk,20.0,,20.0,C2013-09
+4,Opmeten dorpels,1.0,,1.0,C2013-09
+5,Plaatsen dorpels,5.0,2;4,5.0,C2013-09
+6,Plaatsen bordessen + prefabtrappen,5.0,,5.0,C2013-09
+7,Plaatsen RW afvoerbuizen + voorlopige aansluiting,5.0,6,5.0,C2013-09
+8,Dakopstanden,20.0,1,5.0,C2013-09
+9,Technieken / leidingen in dak,32.0,8,5.0,C2013-09
+10,Schuimbeton,5.0,9,5.0,C2013-09
+11,Isolatie + roofing platte daken,20.0,10,20.0,C2013-09
+12,Opmeten ramen en deuren,1.0,2,1.0,C2013-09
+13,Plaatsen ramen en deuren,5.0,12;5,10.0,C2013-09
+14,Plaatsen gipsblokken_blok 1,5.0,11,10.0,C2013-09
+15,Plaatsen gipsblokken_blok 2,5.0,14,10.0,C2013-09
+16,Plaatsen gipsblokken_blok 3,5.0,15,10.0,C2013-09
+17,Plaatsen gipsblokken_blok 4,5.0,16,10.0,C2013-09
+18,Voorbereidingen elektriciteit / sanitair / HVAC_blok 1,5.0,11;14,5.0,C2013-09
+19,Voorbereidingen elektriciteit / sanitair / HVAC_blok 2,5.0,15,5.0,C2013-09
+20,Voorbereidingen elektriciteit / sanitair / HVAC_blok 3,5.0,16,5.0,C2013-09
+21,Voorbereidingen elektriciteit / sanitair / HVAC_blok 4,5.0,17,5.0,C2013-09
+22,Plaatsen elektriciteit / sanitair / HVAC_blok 1,10.0,13;18,10.0,C2013-09
+23,Plaatsen elektriciteit / sanitair / HVAC_blok 2,10.0,19;22,10.0,C2013-09
+24,Plaatsen elektriciteit / sanitair / HVAC_blok 3,10.0,20;23,10.0,C2013-09
+25,Plaatsen elektriciteit / sanitair / HVAC_blok 4,10.0,21;24,10.0,C2013-09
+26,Opmeten keukens_blok 1,1.0,22,1.0,C2013-09
+27,Opmeten keukens_blok 2,1.0,23,1.0,C2013-09
+28,Opmeten keukens_blok 3,1.0,24,1.0,C2013-09
+29,Opmeten keukens_blok 4,1.0,25,1.0,C2013-09
+30,Pleisterwerken_blok 1,6.0,22,15.0,C2013-09
+31,Pleisterwerken_blok 2,6.0,23;30,10.0,C2013-09
+32,Pleisterwerken_blok 3,6.0,24;31,15.0,C2013-09
+33,Pleisterwerken_blok 4,6.0,25;32,10.0,C2013-09
+34,Schuimbeton_blok 1,2.5,30,1.0,C2013-09
+35,Schuimbeton_blok 2,2.5,31,1.0,C2013-09
+36,Schuimbeton_blok 3,2.5,32,1.0,C2013-09
+37,Schuimbeton_blok 4,2.5,33,1.0,C2013-09
+38,Chape_blok 1,2.5,34,10.0,C2013-09
+39,Chape_blok 2,2.5,35,10.0,C2013-09
+40,Chape_blok 3,2.5,36,10.0,C2013-09
+41,Chape_blok 4,2.5,37,10.0,C2013-09
+42,Opmeten binnendeuren_blok 1,1.0,38,1.0,C2013-09
+43,Opmeten binnendeuren_blok 2,1.0,39,1.0,C2013-09
+44,Opmeten binnendeuren_blok 3,1.0,40,1.0,C2013-09
+45,Opmeten binnendeuren_blok 4,1.0,41,1.0,C2013-09
+46,Vloerafwerking_blok 1,7.5,38,10.0,C2013-09
+47,Vloerafwerking_blok 2,7.0,39;46,10.0,C2013-09
+48,Vloerafwerking_blok 3,7.0,40,10.0,C2013-09
+49,Vloerafwerking_blok 4,7.0,41;48,10.0,C2013-09
+50,Plaatsen badkamers_blok 1,10.0,39;46,5.0,C2013-09
+51,Plaatsen badkamers_blok 2,10.0,47,5.0,C2013-09
+52,Plaatsen badkamers_blok 3,10.0,41;48,5.0,C2013-09
+53,Plaatsen badkamers_blok 4,10.0,49,5.0,C2013-09
+54,Plaatsen keukens_blok 1,10.0,38;26,5.0,C2013-09
+55,Plaatsen keukens_blok 2,10.0,39;27,5.0,C2013-09
+56,Plaatsen keukens_blok 3,10.0,40;28,5.0,C2013-09
+57,Plaatsen keukens_blok 4,10.0,41;29,5.0,C2013-09
+58,Plaatsen binnendeuren_blok 1,5.0,42;46,10.0,C2013-09
+59,Plaatsen binnendeuren_blok 2,5.0,43;47,10.0,C2013-09
+60,Plaatsen binnendeuren_blok 3,5.0,44;48,10.0,C2013-09
+61,Plaatsen binnendeuren_blok 4,5.0,45;49,10.0,C2013-09
+70,Schilderwerken,30.0,58;59;60;61,30.0,C2013-09
+71,Opkuis,10.0,70,10.0,C2013-09
+1,Begin,0.0,,,C2013-12
+2,Werfinstallatie,10.0,1,10.0,C2013-12
+3,Afbraak jongveestal,5.0,2,15.0,C2013-12
+31,Bijkomende sloopwerken,15.0,,15.0,C2013-12
+5,Omleggen elektrische kabel,1.0,2,3.0,C2013-12
+6,Grondwerken,5.0,2;3;5,4.0,C2013-12
+7,Aanvulling afbraak jongveestal,5.0,3;6,3.0,C2013-12
+8,Plaatfundering-ondergronds,10.0,7,8.0,C2013-12
+9,Funderingswanden,20.0,8,17.0,C2013-12
+10,Draagvloeren,10.0,9,5.0,C2013-12
+11,Wederaanvulling-binnen,2.0,10,5.0,C2013-12
+12,Plaatfundering op volle grond,5.0,11,10.0,C2013-12
+32,Betonnen binnenwanden,5.0,12,10.0,C2013-12
+14,Wederaanvulling-buiten,3.0,12,5.0,C2013-12
+15,Structuurelementen-staal,5.0,14,10.0,C2013-12
+16,Structuurelementen-gewapend beton,5.0,15,5.0,C2013-12
+33,Dakstructuur,5.0,12,5.0,C2013-12
+18,Dakwerken,10.0,16,6.0,C2013-12
+19,"Buitenramen, -deuren, -poorten",10.0,18,4.0,C2013-12
+20,Gevelbekledingen,10.0,19,9.0,C2013-12
+34,Elektrische windzeilen,10.0,20,5.0,C2013-12
+35,Poort melkveestal,15.0,20,15.0,C2013-12
+23,Rioleringen,10.0,20,15.0,C2013-12
+24,Omgevingswerken,20.0,23,10.0,C2013-12
+26,Bedrijfsvloeren,5.0,,5.0,C2013-12
+27,Hekkens,15.0,26,10.0,C2013-12
+28,Sanitair,20.0,27,15.0,C2013-12
+29,Brandbestrijding,20.0,27,15.0,C2013-12
+30,Einde,0.0,24;28;29,,C2013-12
+3,Diversen,87.0,,87.0,C2013-13
+10,Regiewerken,87.0,,21.0,C2013-13
+11,Zuivere OA (1),87.0,,87.0,C2013-13
+4,Zuivere OA (2),110.0,,110.0,C2013-13
+1,Verplaatsbare wanden (1),103.0,3;10;11;4,103.0,C2013-13
+5,Coördinatie OA,80.0,3;10;11;4,22.0,C2013-13
+2,Verplaatsbare wanden (2),1.0,3;10;11;4,1.0,C2013-13
+6,Coördinatie opmerkingen,48.0,1,20.0,C2013-13
+8,Systeemwanden,48.0,1,22.0,C2013-13
+9,Opmerkingen,3.0,1,3.0,C2013-13
+7,Verplaatsbare wanden (3),25.0,6;8;9,22.0,C2013-13
+1,Verplaatsbare wanden (1),1.0,,1.0,C2013-14
+2,Verplaatsbare wanden (2),1.0,,1.0,C2013-14
+4,Systeemwanden,63.0,,22.0,C2013-14
+3,Zuivere OA (1),1.0,1;2,1.0,C2013-14
+5,Akoestische dammen,2.0,3,2.0,C2013-14
+9,Plafonds + AKD,2.0,3,2.0,C2013-14
+6,Verplaatsbare wanden (3),4.0,5;9,4.0,C2013-14
+7,Verplaatsbare wanden (4),18.0,6,18.0,C2013-14
+8,Zuivere OA (2),17.0,4;7,17.0,C2013-14
+16,Diversen,98.0,,21.0,C2013-15
+10,Opmerkingen oplevering,65.0,16,42.0,C2013-15
+6,Gipswanden,32.0,,70.0,C2013-15
+1,Vaste plafonds (1),33.0,,70.0,C2013-15
+9,Plafonds + AKD,63.0,,22.0,C2013-15
+3,Akoestische dammen (1),4.0,,4.0,C2013-15
+8,Schrijnwerk diversen,9.0,3,9.0,C2013-15
+11,Vaste plafonds (2),30.0,1;6,21.0,C2013-15
+2,Metalen plafonds verdieping 3,35.0,1;6,35.0,C2013-15
+13,Extra ploeg metalen plafonds verdieping 2,9.0,1;6,9.0,C2013-15
+12,Akoestische dammen (2),5.0,8,5.0,C2013-15
+4,Verplaatsbare wanden (1),12.0,9;11;2;13;12,12.0,C2013-15
+14,Systeemwanden,12.0,9;11;2;13;12,12.0,C2013-15
+5,Verplaatsbare wanden (2),12.0,9;11;2;13;12,12.0,C2013-15
+7,Deuren,9.0,4;14;5,9.0,C2013-15
+15,Schrijnwerk,9.0,4;14;5,9.0,C2013-15
+17,MEERWERK,0.125,,115.0,C2013-15
+9,Verplaatsbare wanden (1),88.0,,87.0,C2013-16
+1,Akoestische dammen,16.0,9,75.0,C2013-16
+2,Verplaatsbare wanden (2),60.0,9,60.0,C2013-16
+4,Zuivere OA,67.0,9,67.0,C2013-16
+3,Verplaatsbare wanden (3),91.0,1;2,87.0,C2013-16
+10,Meerwerken 1,0.125,,20.0,C2013-16
+11,meerwerken 2,0.125,,20.0,C2013-16
+1,Vaste plafonds,89.0,,22.0,C2013-17
+2,Metalen plafonds,89.0,,62.0,C2013-17
+4,Verplaatsbare wanden (1),151.0,1;2,22.0,C2013-17
+6,Gipswanden,22.0,1;2,81.0,C2013-17
+9,Zuivere OA (1),1.0,6,1.0,C2013-17
+10,Démontage plafonds,7.0,6,7.0,C2013-17
+12,Uitregelen verhoogde vloer,3.0,10,3.0,C2013-17
+11,Plaatsen tapijt,5.0,12,5.0,C2013-17
+21,Zuivere OA (2),67.0,12,22.0,C2013-17
+13,Plaatsen meubilair,3.0,11,3.0,C2013-17
+14,Leveren en plaatsen glas,1.0,13,1.0,C2013-17
+3,Akoestische dammen,2.0,12,2.0,C2013-17
+20,Verplaatsbare wanden (2),9.0,3,9.0,C2013-17
+5,Verplaatsbare wanden (3),9.0,3,9.0,C2013-17
+7,Deuren,3.0,3,3.0,C2013-17
+8,Schrijnwerk diversen,3.0,3,3.0,C2013-17
+17,Schilderwerken,41.0,14;1;2;20;5;7;8,22.0,C2013-17
+19,Bijkomende werken,3.0,17,3.0,C2013-17
+15,Afwerkingen,71.0,20;5;7;8,65.0,C2013-17
+22,Diversen,77.0,20;5;7;8,22.0,C2013-17
+16,Aanpassingswerken meubilair,61.0,13,0.125,C2013-17
+18,Verplaatsen versteviging schermen,3.0,15,3.0,C2013-17
+23,MEERWERKEN,0.125,,85.0,C2013-17
+1,Mixed-use Building,0.0,,,C2014-01
+2,Date clé 1,0.0,,,C2014-01
+3,Date clé 2,0.0,,,C2014-01
+4,Date clé 3,0.0,,,C2014-01
+5,Date clé 4,0.0,,,C2014-01
+7,Date clé 1,0.0,24,,C2014-01
+8,Date clé 2,0.0,37,,C2014-01
+9,Date clé 3,0.0,47;51,,C2014-01
+10,Date clé 4,0.0,64,,C2014-01
+12,Notification de la commande,0.0,,,C2014-01
+13,Préparation du chantier,31.0,12,31.0,C2014-01
+14,Début des travaux,0.0,12,,C2014-01
+15,Installation de chantier,10.0,14;13,10.0,C2014-01
+16,Démolitions et etançonnages,104.0,14,107.0,C2014-01
+17,Montage,17.0,16,16.0,C2014-01
+18,Démontage,5.0,17;52,5.0,C2014-01
+20,Radier sciences,22.0,16,22.0,C2014-01
+21,Radier industries,12.0,20,10.0,C2014-01
+22,Sous-sol -3,28.0,21,32.0,C2014-01
+23,Sous-sol -2,26.0,22,21.0,C2014-01
+24,Sous-sol -1,31.0,23,20.0,C2014-01
+26,Rez,20.0,24,16.0,C2014-01
+27,Etage +1,20.0,26,16.0,C2014-01
+28,Etage +2,23.0,27,15.0,C2014-01
+29,Etage +3,21.0,28,18.0,C2014-01
+30,Etage +4,20.0,29,16.0,C2014-01
+31,Etage +5,20.0,30,15.0,C2014-01
+32,Etage +6,20.0,31,24.0,C2014-01
+33,Etage +7,20.0,32,19.0,C2014-01
+34,Etage +8,20.0,33,19.0,C2014-01
+35,Etage +9,22.0,34,19.0,C2014-01
+36,Etage +10,21.0,35,19.0,C2014-01
+37,Etage +11 Toiture,20.0,36,19.0,C2014-01
+40,Maçonneries sous-sols,53.0,26,35.0,C2014-01
+41,Maçonneries hors sol,130.0,29;37,124.0,C2014-01
+43,Techniques sous-sols,93.0,40,169.0,C2014-01
+44,Techniques hors sol,172.0,41,211.0,C2014-01
+45,Unités terminales,81.0,44,0.125,C2014-01
+47,Etanchéités 1ère phase (hors eau),36.0,36,33.0,C2014-01
+48,Etanchéités,64.0,36;37;47,61.0,C2014-01
+49,Finitions,20.0,48,20.0,C2014-01
+51,Menuiseries extérieures,141.0,28,118.0,C2014-01
+52,Parements,141.0,51,137.0,C2014-01
+53,Finitions,31.0,52,30.0,C2014-01
+55,Etanchéité provisoire +4,5.0,31;44,5.0,C2014-01
+56,Etanchéité provisoire +8,5.0,35,5.0,C2014-01
+57,Parachèvements sous-sols,92.0,43,96.0,C2014-01
+58,Parachèvements hors sol,194.0,44,177.0,C2014-01
+59,Finitions,13.0,45;58,10.0,C2014-01
+61,Abords,41.0,53,41.0,C2014-01
+62,Mise en état de réception,29.0,61;53;49;57;59,23.0,C2014-01
+63,Réserve pour intempéries et aléas,20.0,62,23.0,C2014-01
+64,Fin des travaux prêt pour RP,0.0,63,,C2014-01
+1,Sondering,1.0,,1.0,C2014-05
+2,Inrichting,1.0,1,1.0,C2014-05
+3,Bouwput + Kelders,15.0,5,25.0,C2014-05
+4,Bouw rioleringen,15.0,3,20.0,C2014-05
+5,Afbraakwerken,10.0,2,15.0,C2014-05
+6,Ruwbouw,70.0,4,90.0,C2014-05
+7,Wachtgevel,15.0,6,15.0,C2014-05
+8,Dakisolatie,10.0,7,10.0,C2014-05
+9,Dakbedekking & Zinkwerk,30.0,7,25.0,C2014-05
+10,Buitenschrijnwerk,20.0,6,20.0,C2014-05
+11,Sanitaire technieken,25.0,9,30.0,C2014-05
+12,Electriciteitstechnieken,25.0,9,20.0,C2014-05
+13,Ventilatietechnieken,10.0,9,15.0,C2014-05
+14,Trappen en Deuren,5.0,16,5.0,C2014-05
+15,Keukens,5.0,16,10.0,C2014-05
+16,Pleisterwerken,10.0,22,10.0,C2014-05
+17,Buitenpleisterwerk,15.0,10,15.0,C2014-05
+18,Afwerking Ventilatie,5.0,16,10.0,C2014-05
+19,Plaatsen Sanitaire Toestellen & Radiatoren,10.0,16,15.0,C2014-05
+20,Afwerking,10.0,16,10.0,C2014-05
+21,Chapewerken,10.0,10;11;12;13,10.0,C2014-05
+22,Vloeren,10.0,21,10.0,C2014-05
+23,Buitenaanleg,5.0,4,10.0,C2014-05
+24,Schilderwerken,5.0,14;15;18;19;20,5.0,C2014-05
+25,Opkuis,1.0,24,2.0,C2014-05
+1,Sondering,1.0,,1.0,C2014-06
+2,Inrichting,1.0,1,1.0,C2014-06
+3,Bouwput + Paalfunderingen,25.0,6,30.0,C2014-06
+4,Bouw Kelders + Ondergrondse parkeergarage,50.0,3,90.0,C2014-06
+5,Afbraakwerken,20.0,2,20.0,C2014-06
+6,Voorbereidingen,5.0,5,5.0,C2014-06
+7,Ruwbouw,165.0,4,180.0,C2014-06
+8,Dakstructuur,20.0,7,15.0,C2014-06
+9,Dakisolatie,10.0,8,10.0,C2014-06
+10,Dakbedekking & Zinkwerk,20.0,8,15.0,C2014-06
+11,Plaatsen Ramen,45.0,7,35.0,C2014-06
+12,Sanitaire technieken,70.0,10,74.0,C2014-06
+13,Elektriciteitstechnieken,70.0,10,78.0,C2014-06
+14,Ventilatietechnieken,40.0,10,60.0,C2014-06
+15,Deuren,40.0,17,40.0,C2014-06
+16,Keukens,52.0,17,55.0,C2014-06
+17,Pleisterwerken,25.0,24,25.0,C2014-06
+18,Buitenpleisterwerk,20.0,11,20.0,C2014-06
+19,Afwerking Ventilatie,20.0,17,20.0,C2014-06
+20,Plaatsen Sanitaire Toestellen & Radiatoren,50.0,17,50.0,C2014-06
+21,Afwerking,25.0,17,25.0,C2014-06
+22,Liften,10.0,10,10.0,C2014-06
+23,Chapewerken,30.0,11;12;13;14,34.0,C2014-06
+24,Vloeren,50.0,23,50.0,C2014-06
+25,Tuinaanleg,5.0,16;19;20;21,8.0,C2014-06
+26,Parking,5.0,16;19;20;21,5.0,C2014-06
+27,Brievenbussen,1.0,16;19;20;21,1.0,C2014-06
+28,Schilderwerken,5.0,25;26;27,3.0,C2014-06
+29,Opkuis,3.0,28,3.0,C2014-06
+1,Sondering,1.0,,1.0,C2014-07
+2,Inrichting,1.0,1,1.0,C2014-07
+3,Bouwput + Kelders,20.0,5,30.0,C2014-07
+4,Bouw rioleringen,30.0,3,40.0,C2014-07
+5,Afbraakwerken,20.0,2,35.0,C2014-07
+6,Ruwbouw,90.0,4,100.0,C2014-07
+7,Dakstructuur,30.0,6,35.0,C2014-07
+8,Dakisolatie,20.0,7,20.0,C2014-07
+9,Dakbedekking & Zinkwerk,30.0,7,30.0,C2014-07
+10,Plaatsen Ramen,15.0,6,30.0,C2014-07
+11,Sanitaire technieken,50.0,9,55.0,C2014-07
+12,Elektriciteitstechnieken,50.0,9,50.0,C2014-07
+13,Ventilatietechnieken,30.0,9,35.0,C2014-07
+14,Trappen en Deuren,20.0,16,25.0,C2014-07
+15,Keukens,20.0,16,30.0,C2014-07
+16,Pleisterwerken,20.0,22,20.0,C2014-07
+17,Buitenpleisterwerk,15.0,10,20.0,C2014-07
+18,Afwerking Ventilatie,10.0,16,10.0,C2014-07
+19,Plaatsen Sanitaire Toestellen & Radiatoren,20.0,16,15.0,C2014-07
+20,Afwerking,15.0,16,15.0,C2014-07
+21,Chapewerken,15.0,10;11;12;13,20.0,C2014-07
+22,Vloeren,20.0,21,20.0,C2014-07
+23,Tuinaanleg,10.0,4,15.0,C2014-07
+24,Schilderwerken,5.0,14;15;18;19;20,10.0,C2014-07
+25,Opkuis,1.0,24,3.0,C2014-07
+1,Werfinrichting,2.0,,3.0,C2014-08
+2,Ontmanteling,25.0,1,35.0,C2014-08
+3,Ruwbouw Aanpassingen,20.0,2,25.0,C2014-08
+4,Valleidingen in schachten,10.0,3,10.0,C2014-08
+5,Dakisolatie 6de verdieping,5.0,4,10.0,C2014-08
+6,Herstelling Liften,5.0,11;30,5.0,C2014-08
+7,Uitzetten wanden,10.0,3,15.0,C2014-08
+8,Leidingen Technieken,10.0,7,5.0,C2014-08
+9,Dekvloer (Chapewerken),5.0,8,5.0,C2014-08
+10,Gyproc fase 1,20.0,9,25.0,C2014-08
+11,Elektriciteit in wanden,10.0,10,15.0,C2014-08
+12,Sanitair in wanden,10.0,10,15.0,C2014-08
+13,Gyproc fase 2 (dichten wanden),10.0,9;11;12,10.0,C2014-08
+14,Pleisterwerken,5.0,13,5.0,C2014-08
+15,Plaatsen Sanitaire Installaties,5.0,14,10.0,C2014-08
+16,Stenen vloeren en Faiences,15.0,15,15.0,C2014-08
+17,Technieken Ventilatie,10.0,16,10.0,C2014-08
+18,Buitenschrijnwerk,10.0,16,15.0,C2014-08
+19,Terrassen,15.0,17;18,10.0,C2014-08
+20,Gyproc: Vals plafond,15.0,17;18,15.0,C2014-08
+21,Parket,10.0,19;20,15.0,C2014-08
+22,Binnenschrijnwerk,10.0,21,15.0,C2014-08
+23,Keukens,20.0,21,25.0,C2014-08
+24,Afwerken Elektriciteit en Sanitair,10.0,22;23,15.0,C2014-08
+25,Opkuis,3.0,24,5.0,C2014-08
+26,Uitzetten wanden,5.0,7,10.0,C2014-08
+27,Leidingen Technieken,5.0,8;26,10.0,C2014-08
+28,Dekvloer (Chapewerken),5.0,27,5.0,C2014-08
+29,Gyproc fase 1,10.0,28,15.0,C2014-08
+30,Elektriciteit in wanden,5.0,29,5.0,C2014-08
+31,Gyproc fase 2 (dichten wanden),5.0,28;30,10.0,C2014-08
+32,Pleisterwerken,5.0,31,5.0,C2014-08
+33,Stenen vloeren en Faiences,5.0,32,10.0,C2014-08
+34,Buitenschrijnwerk,5.0,33,5.0,C2014-08
+35,Gyproc: Vals plafond,10.0,34,10.0,C2014-08
+36,Binnenschrijnwerk,5.0,35,10.0,C2014-08
+37,Brievenbussen,5.0,35,5.0,C2014-08
+38,Afwerken Elektriciteit,5.0,37,5.0,C2014-08
+39,Opkuis,2.0,38,2.0,C2014-08
+1,werfinstallatie,10.0,,10.0,C2015-01
+2,Afbraak jongveestal,5.0,,15.0,C2015-01
+3,omleggen elektrische kabel,1.0,,3.0,C2015-01
+4,Bijkomende sloopwerken,0.125,,15.0,C2015-01
+5,Grondwerken,5.0,1,2.0,C2015-01
+6,Aanvulling afbraak jongveestal,5.0,2;5,2.875,C2015-01
+7,plaatfundering-ondergronds,10.0,6,10.0,C2015-01
+8,funderingswanden,20.0,7,15.0,C2015-01
+9,Draagvloeren,10.0,8,5.0,C2015-01
+10,wederaanvulling-binnen,2.0,9,3.0,C2015-01
+11,Plaatfundering op volle grond,5.0,10,9.0,C2015-01
+12,wederaanvulling-buiten,3.0,11,3.0,C2015-01
+13,betonnen binnenwanden,0.125,,10.0,C2015-01
+14,Structuurelementen-staal,5.0,12,8.0,C2015-01
+15,structuurelementen-gew.beton,5.0,14,5.0,C2015-01
+16,Dakstructuur,0.125,,5.0,C2015-01
+17,Dakwerken,10.0,15,7.0,C2015-01
+18,"Buitenramen, -deuren, -poorten",10.0,17,6.0,C2015-01
+19,Gevelbekledingen,10.0,18,9.0,C2015-01
+20,Rioleringen,10.0,19,23.0,C2015-01
+21,Omgevingeswerken,20.0,20,7.875,C2015-01
+22,Elektrische windzeilen,0.125,,2.0,C2015-01
+23,Binnenplaatafwerking,10.0,17,0.125,C2015-01
+24,Bedrijfsvloeren,5.0,23,0.875,C2015-01
+25,Hekkens,15.0,24,11.0,C2015-01
+26,Sanitair,20.0,25,12.0,C2015-01
+27,Brandbestrijding,20.0,25,20.0,C2015-01
+1,Dakwerken,5.0,,5.0,C2015-04
+2,Schrijnwerk,5.0,1,5.0,C2015-04
+3,Ventilatie,5.0,2,5.0,C2015-04
+4,Sanitair,5.0,3,5.0,C2015-04
+5,Elektriciteit,5.0,4,5.0,C2015-04
+6,Sanitair,5.0,,5.0,C2015-04
+7,Isolatie zolder,5.0,4,5.0,C2015-04
+8,Elektriciteit,5.0,7,5.0,C2015-04
+9,Sanitair,5.0,,5.0,C2015-04
+10,Elektriciteit,5.0,9,5.0,C2015-04
+11,Sanitair,5.0,,5.0,C2015-04
+12,Elektriciteit,5.0,11,5.0,C2015-04
+13,Sanitair,5.0,,5.0,C2015-04
+14,Isolatie zolder,5.0,6,5.0,C2015-04
+15,Isolatie chap/pure,5.0,10,5.0,C2015-04
+16,Elektriciteit,5.0,13,5.0,C2015-04
+17,Sanitair,5.0,,5.0,C2015-04
+18,Isolatie zolder,5.0,11,5.0,C2015-04
+19,Chap,5.0,15,5.0,C2015-04
+20,Elektriciteit,5.0,17,5.0,C2015-04
+21,Sanitair,5.0,,5.0,C2015-04
+22,Bevloering en faience,5.0,19,5.0,C2015-04
+23,Elektriciteit,5.0,21,5.0,C2015-04
+24,Sanitair,5.0,,5.0,C2015-04
+25,Elektriciteit,5.0,22,5.0,C2015-04
+26,Isolatie chap/pure,5.0,20,5.0,C2015-04
+27,Sanitair,5.0,25,5.0,C2015-04
+28,Chape,5.0,26,5.0,C2015-04
+29,Parket,5.0,27,5.0,C2015-04
+30,Vloer,5.0,28,10.0,C2015-04
+31,Isolatie chape/pure,5.0,25,5.0,C2015-04
+32,Ventilatie,5.0,25,5.0,C2015-04
+33,Elektriciteit,5.0,30,5.0,C2015-04
+34,Vloer,5.0,30,5.0,C2015-04
+35,Chape,5.0,31,5.0,C2015-04
+36,Schrijnwerk,5.0,29,5.0,C2015-04
+37,Sanitair,5.0,33,5.0,C2015-04
+38,Elektriciteit,5.0,34,30.0,C2015-04
+39,Vloer,5.0,35,5.0,C2015-04
+40,Keuken,5.0,36,5.0,C2015-04
+41,Parket,5.0,37,5.0,C2015-04
+42,Sanitair,5.0,38,5.0,C2015-04
+43,Elektriciteit,5.0,39,20.0,C2015-04
+44,Ventilatie,5.0,38,20.0,C2015-04
+45,Sanitair,5.0,43,10.0,C2015-04
+46,Schrijnwerk,5.0,41,20.0,C2015-04
+47,Parket,5.0,42,5.0,C2015-04
+48,Ventilatie,5.0,43,10.0,C2015-04
+49,Keuken,5.0,46,10.0,C2015-04
+50,Schrijnwerk,5.0,47,5.0,C2015-04
+51,Parket,5.0,45,10.0,C2015-04
+52,Keuken,5.0,50,5.0,C2015-04
+53,Schrijnwerk,5.0,51,5.0,C2015-04
+54,Keuken,5.0,53,5.0,C2015-04
+55,Plakwerken,5.0,54,0.125,C2015-04
+56,Plakwerken deel 2,20.0,55,0.125,C2015-04
+1,Dakwerken,5.0,,5.0,C2015-05
+2,Sanitair,5.0,1,5.0,C2015-05
+3,Dakwerken,5.0,1,5.0,C2015-05
+4,Elektriciteit,5.0,2,5.0,C2015-05
+5,Ventilatie,5.0,3,5.0,C2015-05
+6,Plakwerken,15.0,4,15.0,C2015-05
+7,Sanitair,5.0,3,5.0,C2015-05
+8,Plakwerken,35.0,6,35.0,C2015-05
+9,Isolatie zolder,5.0,8,5.0,C2015-05
+10,Sanitair,5.0,7,5.0,C2015-05
+11,Sanitair,5.0,10,5.0,C2015-05
+12,Elektriciteit,5.0,10,5.0,C2015-05
+13,Sanitair,5.0,,5.0,C2015-05
+14,Elektriciteit,5.0,11,5.0,C2015-05
+15,Plakwerken,15.0,12,15.0,C2015-05
+16,Isolatie chape/pure,5.0,13,5.0,C2015-05
+17,Elektriciteit,5.0,14,10.0,C2015-05
+18,Isolatie zolder,5.0,15,5.0,C2015-05
+19,Chape,5.0,16,5.0,C2015-05
+20,Sanitair,5.0,,5.0,C2015-05
+21,Vloer,5.0,19,5.0,C2015-05
+22,Isolatie chap/pure,5.0,20,5.0,C2015-05
+23,Sanitair,5.0,,5.0,C2015-05
+24,Plakwerk,20.0,8,20.0,C2015-05
+25,Vloer,5.0,21,5.0,C2015-05
+26,Chape,5.0,22,5.0,C2015-05
+27,Isolatie chap/pure,5.0,23,5.0,C2015-05
+28,Elektriciteit,5.0,25,5.0,C2015-05
+29,Vloer,5.0,26,5.0,C2015-05
+30,Chape,5.0,27,5.0,C2015-05
+31,Elektriciteit,5.0,29,5.0,C2015-05
+32,Vloer,5.0,30,30.0,C2015-05
+33,Sanitair,5.0,,5.0,C2015-05
+34,Sanitair,5.0,28,25.0,C2015-05
+35,Elektriciteit,5.0,32,5.0,C2015-05
+36,Vloer,5.0,32,5.0,C2015-05
+37,Isolatie chap/pure,5.0,33,5.0,C2015-05
+38,Keuken,5.0,34,5.0,C2015-05
+39,Sanitair,5.0,31,5.0,C2015-05
+40,Elektriciteit,5.0,36,5.0,C2015-05
+41,Chape,5.0,37,5.0,C2015-05
+42,Isolatie chap/pure,5.0,34,25.0,C2015-05
+43,Keuken,5.0,39,5.0,C2015-05
+44,Sanitair,5.0,35,20.0,C2015-05
+45,Vloer,5.0,41,5.0,C2015-05
+46,Chape,5.0,42,25.0,C2015-05
+47,Keuken,5.0,44,10.0,C2015-05
+48,Sanitair,5.0,40,10.0,C2015-05
+49,Vloer,5.0,45;46,5.0,C2015-05
+50,Chape,5.0,42,5.0,C2015-05
+51,Keuken,5.0,48,10.0,C2015-05
+52,Elektriciteit,5.0,45,5.0,C2015-05
+53,Vloer,5.0,50;49,10.0,C2015-05
+54,Sanitair,5.0,40,5.0,C2015-05
+55,Elektriciteit,5.0,53,20.0,C2015-05
+56,Vloer,5.0,53,5.0,C2015-05
+57,Keuken,5.0,54,5.0,C2015-05
+58,Sanitair,5.0,52,5.0,C2015-05
+59,Elektriciteit,5.0,56,5.0,C2015-05
+60,Keuken,5.0,58,5.0,C2015-05
+61,Sanitair,5.0,55,5.0,C2015-05
+62,Keuken,5.0,61,5.0,C2015-05
+63,Sanitair,5.0,59,5.0,C2015-05
+64,Keuken,5.0,63,5.0,C2015-05
+1,Spanten,10.0,,10.0,C2015-06
+2,Isolatie chap/pure,5.0,,5.0,C2015-06
+3,Plakwerken,5.0,,5.0,C2015-06
+4,Schrijnwerk,10.0,,10.0,C2015-06
+5,Schrijnwerk deel 2,5.0,,5.0,C2015-06
+6,Chape,5.0,2,5.0,C2015-06
+7,Sanitair,10.0,3,10.0,C2015-06
+8,Elektriciteit,5.0,5,5.0,C2015-06
+9,Spanten,10.0,1,10.0,C2015-06
+10,Dakconstructie,10.0,1,10.0,C2015-06
+11,Isolatie chap/pure,10.0,7,10.0,C2015-06
+12,Chape,10.0,11,10.0,C2015-06
+13,Elektriciteit,5.0,4;7,5.0,C2015-06
+14,Ruwbouw,45.0,,75.0,C2015-06
+15,Sanitair,10.0,8,10.0,C2015-06
+16,Ruwbouw deel 2,50.0,14,85.0,C2015-06
+17,Dakconstructie,10.0,9,10.0,C2015-06
+18,Schrijnwerk,10.0,10;19,10.0,C2015-06
+19,Elektriciteit,5.0,6,5.0,C2015-06
+20,Vloer,10.0,12,10.0,C2015-06
+21,Isolatie zolder,5.0,13,5.0,C2015-06
+22,Sanitair,5.0,13,5.0,C2015-06
+23,Elektriciteit deel 2,10.0,15,10.0,C2015-06
+24,Elektriciteit,5.0,18;15,5.0,C2015-06
+25,Vloer,10.0,12,10.0,C2015-06
+26,Plakwerken,5.0,21,5.0,C2015-06
+27,Isolatie zolder,10.0,23,10.0,C2015-06
+28,Schrijnwerk,30.0,17,20.0,C2015-06
+29,Sanitair,10.0,24;18,10.0,C2015-06
+30,Elektriciteit,10.0,20;25,10.0,C2015-06
+31,Isolatie zolder,5.0,24,5.0,C2015-06
+32,Schrijnwerk,15.0,17,5.0,C2015-06
+33,Elektriciteit,10.0,29,10.0,C2015-06
+34,Keuken,5.0,29,5.0,C2015-06
+35,Schrijnwerk,10.0,30,10.0,C2015-06
+36,Sanitair,5.0,26,5.0,C2015-06
+37,Plakwerk,5.0,31,5.0,C2015-06
+38,Isolatie zolder,5.0,33,5.0,C2015-06
+39,Sanitair,10.0,35,10.0,C2015-06
+40,Isolatie chap/pure,5.0,36,5.0,C2015-06
+41,Sanitair,5.0,27,5.0,C2015-06
+42,Keuken,10.0,39,10.0,C2015-06
+43,Schrijnwerk,5.0,32,5.0,C2015-06
+44,Plakwerken,10.0,38,10.0,C2015-06
+45,Sanitair,5.0,37,10.0,C2015-06
+46,Isolatie chap/pure,5.0,41,5.0,C2015-06
+47,Elektriciteit,5.0,43,5.0,C2015-06
+48,Vloer,10.0,40,10.0,C2015-06
+49,Isolatie chap/pure,5.0,45,5.0,C2015-06
+50,Sanitair,10.0,47,20.0,C2015-06
+51,Spanten,10.0,14,25.0,C2015-06
+52,Chape,10.0,49;46,10.0,C2015-06
+53,Elektriciteit,5.0,28,5.0,C2015-06
+54,Ruwbouw,50.0,14,75.0,C2015-06
+55,Isolatie chape/pure,5.0,45,5.0,C2015-06
+56,Elektriciteit,5.0,50,5.0,C2015-06
+57,Isolatie chap/pure,5.0,50,5.0,C2015-06
+58,Vloer,10.0,52,10.0,C2015-06
+59,Sanitair,5.0,53,5.0,C2015-06
+60,Vloer deel 2,15.0,52,15.0,C2015-06
+61,Spanten,10.0,16,5.0,C2015-06
+62,Chape,5.0,57,5.0,C2015-06
+63,Dakwerken,10.0,51,10.0,C2015-06
+64,Plakwerken,5.0,56,5.0,C2015-06
+65,Isolatie chap/pure,5.0,50,5.0,C2015-06
+66,Schrijnwerk,30.0,56;51,30.0,C2015-06
+67,Elektriciteit,5.0,58;59,10.0,C2015-06
+68,Vloer,10.0,55,10.0,C2015-06
+69,Dakwerken,10.0,61;51,60.0,C2015-06
+70,Chape,5.0,65,5.0,C2015-06
+71,Sanitair,5.0,66,5.0,C2015-06
+72,Isolatie zolder,5.0,67,5.0,C2015-06
+73,Elektriciteit,10.0,60,5.0,C2015-06
+74,Sanitair,5.0,64;66,10.0,C2015-06
+75,Vloer,10.0,70,10.0,C2015-06
+76,Elektriciteit,5.0,68,5.0,C2015-06
+77,keuken,10.0,71,5.0,C2015-06
+78,Plakwerken,5.0,72,5.0,C2015-06
+79,Schrijnwerk,10.0,73,15.0,C2015-06
+80,Schrijnwerk deel 2,25.0,69,15.0,C2015-06
+81,Schrijnwerk deel 3,15.0,69,5.0,C2015-06
+82,Schrijnwerk deel 4,30.0,69,5.0,C2015-06
+83,Isolatie chap/pure,5.0,74,5.0,C2015-06
+84,Schrijnwerk,5.0,76,5.0,C2015-06
+85,Sanitair,10.0,73,20.0,C2015-06
+86,Ruwbouw,60.0,,80.0,C2015-06
+87,Chape,5.0,83,5.0,C2015-06
+88,Elektriciteit,5.0,75,5.0,C2015-06
+89,Sanitair,5.0,84,5.0,C2015-06
+90,Keuken,10.0,85,25.0,C2015-06
+91,Vloer,10.0,87,10.0,C2015-06
+92,Schrijnwerk,5.0,88,5.0,C2015-06
+93,Keuken,5.0,89,5.0,C2015-06
+94,Isolatie chap/pure,5.0,89,5.0,C2015-06
+95,Elektriciteit,5.0,81,5.0,C2015-06
+96,Sanitair,5.0,92,5.0,C2015-06
+97,Chape,5.0,94,5.0,C2015-06
+98,Elektriciteit,5.0,91;80;96,5.0,C2015-06
+99,Keuken,5.0,96,5.0,C2015-06
+100,Vloer,10.0,97,5.0,C2015-06
+101,Spanten,10.0,54,10.0,C2015-06
+102,Ruwbouw,70.0,54,40.0,C2015-06
+103,Schrijnwerk,5.0,98,5.0,C2015-06
+104,Sanitair,5.0,98,5.0,C2015-06
+105,Isolatie zolder,5.0,98,5.0,C2015-06
+106,Elektriciteit,5.0,82,5.0,C2015-06
+107,Elektriciteit,5.0,66,5.0,C2015-06
+108,Sanitair,5.0,107,5.0,C2015-06
+109,Elektriciteit,5.0,108,5.0,C2015-06
+110,Sanitair,10.0,103;106,50.0,C2015-06
+111,Isolatie zolder,5.0,109,5.0,C2015-06
+112,Elektriciteit,5.0,100;104,5.0,C2015-06
+113,Dakconstructie,10.0,101,10.0,C2015-06
+114,Plakwerk,5.0,105,5.0,C2015-06
+115,Keuken,5.0,110,5.0,C2015-06
+116,Plakwerk,5.0,111,5.0,C2015-06
+117,Schrijnwerk,5.0,112,5.0,C2015-06
+118,Isolatie zolder,10.0,112,10.0,C2015-06
+119,Elektriciteit,10.0,110,20.0,C2015-06
+120,Sanitair,5.0,117;114,5.0,C2015-06
+121,Schrijnwerk,20.0,113,20.0,C2015-06
+122,Plakwerk,10.0,118,10.0,C2015-06
+123,Schrijnwerk deel 2,30.0,113,20.0,C2015-06
+124,Isolatie zolder,10.0,119,10.0,C2015-06
+125,Sanitair,5.0,116,5.0,C2015-06
+126,Keuken,5.0,120,5.0,C2015-06
+127,Isolatie chap/pure,5.0,120,5.0,C2015-06
+128,Spanten,10.0,86,10.0,C2015-06
+129,Isolatie chap/pure,5.0,125,5.0,C2015-06
+130,Sanitair,10.0,122,10.0,C2015-06
+131,Chape,5.0,127,5.0,C2015-06
+132,Plakwerk,10.0,124,10.0,C2015-06
+133,Chape,5.0,129,5.0,C2015-06
+134,Isolatie chap/pure,10.0,130,10.0,C2015-06
+135,Vloer,10.0,131,10.0,C2015-06
+136,Dakwerken,10.0,128,10.0,C2015-06
+137,Sanitair,10.0,132,10.0,C2015-06
+138,Vloer,10.0,133,10.0,C2015-06
+139,Elektriciteit,5.0,121,5.0,C2015-06
+140,Chape,10.0,134,10.0,C2015-06
+141,Isolatie chap/pure,10.0,137,5.0,C2015-06
+142,Sanitair,5.0,139,5.0,C2015-06
+143,Vloer,10.0,140,10.0,C2015-06
+144,Elektriciteit,5.0,135,5.0,C2015-06
+145,Schrijnwerk,25.0,136,20.0,C2015-06
+146,Chape,10.0,141,5.0,C2015-06
+147,Elektriciteit,5.0,138;142;123,25.0,C2015-06
+148,Vloer,10.0,140;146,20.0,C2015-06
+149,Schrijnwerk,5.0,144,5.0,C2015-06
+150,Isolatie zolder,5.0,147,5.0,C2015-06
+151,Elektriciteit,10.0,143,10.0,C2015-06
+152,Sanitair,5.0,149,10.0,C2015-06
+153,Vloer,10.0,146,10.0,C2015-06
+154,Schrijnwerk,5.0,147,5.0,C2015-06
+155,Plakwerk,5.0,150,5.0,C2015-06
+156,Schrijnwerk,10.0,151,10.0,C2015-06
+157,Elektriciteit,10.0,152;148,20.0,C2015-06
+158,Keuken,5.0,152,5.0,C2015-06
+159,Sanitair,5.0,154;156,15.0,C2015-06
+160,Schrijnwerk,5.0,157,5.0,C2015-06
+161,Isolatie zolder,5.0,157,5.0,C2015-06
+162,Keuken,5.0,159,5.0,C2015-06
+163,Sanitair,5.0,155;156,5.0,C2015-06
+164,Keuken,10.0,159,10.0,C2015-06
+165,Sanitair deel 2,10.0,160,10.0,C2015-06
+166,Spanten,10.0,102,10.0,C2015-06
+167,Isolatie chap/pure,5.0,163,5.0,C2015-06
+168,Keuken,10.0,165,10.0,C2015-06
+169,Chape,5.0,167,5.0,C2015-06
+170,Sanitair,5.0,161,5.0,C2015-06
+171,Dakwerken,10.0,166,10.0,C2015-06
+172,Vloer,10.0,169,10.0,C2015-06
+173,Isolatie chap/pure,5.0,170,5.0,C2015-06
+174,Chape,5.0,173,5.0,C2015-06
+175,Schrijnwerk,30.0,171,35.0,C2015-06
+176,Elektriciteit,5.0,172,5.0,C2015-06
+177,Vloer,10.0,174,10.0,C2015-06
+178,Schrijnwerk,5.0,176,5.0,C2015-06
+179,Sanitair,5.0,178,5.0,C2015-06
+180,Elektriciteit,5.0,177,5.0,C2015-06
+181,Keuken,5.0,179,5.0,C2015-06
+182,Schrijnwerk,5.0,180,5.0,C2015-06
+183,Sanitair,5.0,182,5.0,C2015-06
+184,Keuken,5.0,183,5.0,C2015-06
+1,Voorlopige plint,2.0,,2.0,C2015-08
+2,prefabplint inkom sluiten,2.0,8,2.0,C2015-08
+3,sandwich laagbouw,5.0,,5.0,C2015-08
+4,dakdekking voorbereiding,3.0,,3.0,C2015-08
+5,start dakdekking,12.0,,12.0,C2015-08
+6,maken resterende doorvoerer,3.0,,3.0,C2015-08
+7,diverse dakdoorvoeren,1.0,,1.0,C2015-08
+8,welfsels tellerlokaal,1.0,,1.0,C2015-08
+9,andere welfsels,1.0,,1.0,C2015-08
+10,afmontage staal hoogbouw,1.0,9,1.0,C2015-08
+11,randbeveiliging tussenvloeren,1.0,9,1.0,C2015-08
+12,Aanvullen en grondwerken,1.0,,1.0,C2015-08
+13,sandwichpanelen inkom,5.0,,5.0,C2015-08
+14,netten demonteren lage zone,1.0,,1.0,C2015-08
+15,beveiliging hoge dak,1.0,,1.0,C2015-08
+16,welfsels traphal,1.0,27,1.0,C2015-08
+17,steeldeck hoogbouw-inkom,2.0,,2.0,C2015-08
+18,dakbedekking hoogbouw,6.0,,2.0,C2015-08
+20,regenwaterafvoer laagbouw,1.0,,1.0,C2015-08
+21,regenwaterafvoer hoogbouw,2.0,,2.0,C2015-08
+23,Wachtbuizen,1.0,,1.0,C2015-08
+24,grondwerken,1.0,,1.0,C2015-08
+25,metselwerken tellerlokaal,11.0,,11.0,C2015-08
+26,metselwerken kantoren,7.0,,7.0,C2015-08
+27,metselwerken traphal,33.0,,33.0,C2015-08
+28,prefab bordessen,10.0,,10.0,C2015-08
+29,trapsledes,1.0,27,1.0,C2015-08
+30,welfsels traphal,2.0,29,2.0,C2015-08
+31,voegwerken metselwerken,3.0,30,3.0,C2015-08
+32,schilderwerken metselwerken,3.0,60,3.0,C2015-08
+33,koepsels traphal,1.0,30,1.0,C2015-08
+34,koepsels laag dak,1.0,33,1.0,C2015-08
+35,riolering overloop,1.0,24,1.0,C2015-08
+36,riolering overloop recup,1.0,35,1.0,C2015-08
+37,riolering inkom,1.0,26,1.0,C2015-08
+38,arduinen dorpels,1.0,,1.0,C2015-08
+39,atelier alu,5.0,,5.0,C2015-08
+40,plaatsing alu,2.0,,2.0,C2015-08
+41,plaatsing glas deel 1,1.0,40,1.0,C2015-08
+42,opmeting restant,1.0,,1.0,C2015-08
+43,plaatsing alu restant,1.0,42,1.0,C2015-08
+44,alu raam,2.0,43,2.0,C2015-08
+45,plaatsing glas restant,1.0,43,1.0,C2015-08
+46,sectionaal poorten,2.0,63,2.0,C2015-08
+47,poorten berging en tellerlokaal,1.0,46,1.0,C2015-08
+48,RF behandeling laagbouw,2.0,41,2.0,C2015-08
+49,RF behandeling hoogbouw,2.0,45,2.0,C2015-08
+50,Retouche staalconstructie,1.0,48,1.0,C2015-08
+53,druklaag welfsels kelder,1.0,,1.0,C2015-08
+54,grondwerk inkomzone,1.0,8,1.0,C2015-08
+55,ondervloer inkom,1.0,54,1.0,C2015-08
+56,arduin inkom,1.0,55,1.0,C2015-08
+57,overige arduinen dorpels,2.0,56,2.0,C2015-08
+58,polivloer tellerlokaal,1.0,,1.0,C2015-08
+59,polivloer berging,1.0,58,1.0,C2015-08
+60,vloerisolatie,3.0,59,3.0,C2015-08
+61,folie en vloerverwarming,5.0,60,5.0,C2015-08
+62,druklaag welfsels,6.0,,6.0,C2015-08
+63,polivloer winkel en inkom,1.0,61,1.0,C2015-08
+64,nabehandeling polivloer,2.0,63,2.0,C2015-08
+65,binnenwand berging,3.0,,3.0,C2015-08
+67,opruimen werfkeet,1.0,,1.0,C2015-08
+68,riolering naar hangar,2.0,67,2.0,C2015-08
+69,nutsleidingen ondergronds,1.0,,1.0,C2015-08
+70,riolering bestrating,1.0,69,1.0,C2015-08
+71,funderingskoffer,1.0,,1.0,C2015-08
+72,fijnnivelleren funderingskoffer,1.0,71,1.0,C2015-08
+73,klinkerverharding,1.0,72,1.0,C2015-08
+74,Asfaltverharding,2.0,,2.0,C2015-08
+75,herkwerken,1.0,74,1.0,C2015-08
+76,Afwerken groenzones,16.0,,16.0,C2015-08
+78,opruimen voorterrein,2.0,,2.0,C2015-08
+79,grondwerken/braakwerken,5.0,78,5.0,C2015-08
+80,herinrichting werf,1.0,,1.0,C2015-08
+81,plaatsing riolering,2.0,,2.0,C2015-08
+82,nutsleidingen fase 1,1.0,,1.0,C2015-08
+83,nutsleidingen fase 2,1.0,,1.0,C2015-08
+84,riolering bestrating,1.0,,1.0,C2015-08
+85,funderingskoffer,1.0,,1.0,C2015-08
+86,fijnniverllerinn funderingskoffer,1.0,,1.0,C2015-08
+87,klinkerverharding,1.0,,1.0,C2015-08
+88,asfaltverharding,1.0,,1.0,C2015-08
+89,herkwerken,1.0,,1.0,C2015-08
+90,afwerken groenzones,1.0,,1.0,C2015-08
+92,voorbereid werk wanden,5.0,,5.0,C2015-08
+93,technieken in holle wanden,3.0,92,3.0,C2015-08
+94,wanden sluiten,5.0,93,5.0,C2015-08
+95,wanden afwerken,5.0,93,5.0,C2015-08
+96,technieken boven gyproc,2.0,92,2.0,C2015-08
+97,technieken boven plafond,1.0,96,1.0,C2015-08
+98,gyproc plafond,3.0,96,3.0,C2015-08
+99,pur isolatie,1.0,98,1.0,C2015-08
+100,folie en vloerverwarming,2.0,99,2.0,C2015-08
+101,chappewerken,2.0,100,2.0,C2015-08
+102,vloer tegelwerken,4.0,101,4.0,C2015-08
+103,vloertegelplinten,1.0,102,1.0,C2015-08
+104,binnendeuren,2.0,101,2.0,C2015-08
+105,afwerking met plinten,1.0,104,1.0,C2015-08
+106,schilderwerken,5.0,101,5.0,C2015-08
+107,afbouw technieken wanden,2.0,106,2.0,C2015-08
+108,plaatsing keuken,1.0,102,1.0,C2015-08
+109,plaatsing wandtegels keuken,1.0,108,1.0,C2015-08
+110,plaatsing wandtegels sanitair,4.0,102,4.0,C2015-08
+111,restant raster en plafondtegel,3.0,110,3.0,C2015-08
+112,afbouw plafonds,2.0,111,2.0,C2015-08
+113,afbouw sanitair,2.0,110,2.0,C2015-08
+114,inrichting kantoren,5.0,113,5.0,C2015-08
+116,technieken in betonblokken,2.0,,2.0,C2015-08
+117,pleisterwerken betonblokken,3.0,,3.0,C2015-08
+118,voorbereidend werk gyproc,2.0,48,2.0,C2015-08
+119,technieken in wanden,2.0,118,2.0,C2015-08
+120,technieken plafonds,2.0,119,2.0,C2015-08
+121,wanden dicht,1.0,119,1.0,C2015-08
+122,vloerisolatie,1.0,99,1.0,C2015-08
+123,folie en vloerverwarming,2.0,61,5.0,C2015-08
+124,chappevloer,1.0,101,1.0,C2015-08
+125,wanden afwerken,2.0,121,5.0,C2015-08
+126,vloertegelwerken,3.0,110,3.0,C2015-08
+127,afwerking met plinten,1.0,126,1.0,C2015-08
+128,binnendeuren,1.0,126,1.0,C2015-08
+129,restant plinten,1.0,128,1.0,C2015-08
+130,schilderwerken,3.0,126,3.0,C2015-08
+131,plafondraster,2.0,130,2.0,C2015-08
+132,afbouw technieken,2.0,131,2.0,C2015-08
+133,inrichting kantoren gvl,3.0,132,3.0,C2015-08
+135,sandwich deel 1,2.0,55,6.0,C2015-08
+136,vloerisolatie,1.0,145,1.0,C2015-08
+137,folie en vloerverwarming,1.0,136,5.0,C2015-08
+138,polivloer inkom,1.0,63,1.0,C2015-08
+139,sandwich deel 2,2.0,138,2.0,C2015-08
+140,voorbereid werk gyproc,3.0,139,3.0,C2015-08
+141,technieken in wanden,2.0,140,2.0,C2015-08
+142,wanden dicht,1.0,141,1.0,C2015-08
+143,wanden afwerken,2.0,142,2.0,C2015-08
+144,technieken boven plafonds,2.0,140,2.0,C2015-08
+145,plafond sanitair,3.0,143,3.0,C2015-08
+146,wandtegelwerken sanitair,3.0,145,3.0,C2015-08
+147,binnnenschrijnwerk,1.0,146,1.0,C2015-08
+148,schilderwerk binnenschrijnwerk,2.0,147,2.0,C2015-08
+149,schilderwerk wanden,2.0,145,2.0,C2015-08
+150,afbouw sanitaire ruimten,2.0,,2.0,C2015-08
+152,technieken ingewerkt in beton,2.0,116,2.0,C2015-08
+153,technieken in spouw,1.0,152,3.0,C2015-08
+154,raam en deur in traphal,1.0,155,1.0,C2015-08
+155,pleisterwerk betonblokken,5.0,152,5.0,C2015-08
+156,tegelplinten betontrappen,2.0,102,2.0,C2015-08
+157,vloertegels inkom en plinten,2.0,155,2.0,C2015-08
+158,opmeting leuning,1.0,,1.0,C2015-08
+159,plaatsing leuningen,1.0,158,1.0,C2015-08
+160,rolstoellift,4.0,159,4.0,C2015-08
+161,plafondraster en bekleding,2.0,155,2.0,C2015-08
+162,schilderwerk pleisterwerk,4.0,155,4.0,C2015-08
+163,plafondtegels,1.0,162,1.0,C2015-08
+165,inrichting winkel,10.0,64,10.0,C2015-08
+166,inrichting kantoor,5.0,165,5.0,C2015-08
+167,ontmanteling bestaande winkel,5.0,166,5.0,C2015-08
+168,sloop bestaande winkel,5.0,167,5.0,C2015-08
+169,voorlopige wand te behouden,2.0,168,2.0,C2015-08
+170,uitzetten assen en grondwerk,1.0,168,1.0,C2015-08
+171,inzagen van bestaande beton,2.0,170,1.0,C2015-08
+172,uitzetten paalfundering,1.0,171,1.0,C2015-08
+173,maken van paalfundering,2.0,172,2.0,C2015-08
+174,akoestisch doormeten,1.0,173,1.0,C2015-08
+175,maken van fundering,2.0,174,2.0,C2015-08
+176,staalconstructie fase 2,2.0,175,2.0,C2015-08
+177,houten spanten,2.0,176,2.0,C2015-08
+178,afmontage staal,2.0,177,3.0,C2015-08
+179,prefabplinten,2.0,178,2.0,C2015-08
+180,voorbereidingen wand,2.0,179,2.0,C2015-08
+181,sandwichwand,4.0,180,4.0,C2015-08
+182,veiligheidsnetten,2.0,178,2.0,C2015-08
+183,dakplaten plaatsen,3.0,182,3.0,C2015-08
+184,dakbedekking,10.0,181,10.0,C2015-08
+185,plaatsing rookluiken,2.0,184,2.0,C2015-08
+186,plaatsing rookscherm,2.0,185,2.0,C2015-08
+187,grondwerk blinde vlek,2.0,179,2.0,C2015-08
+188,ondervloer tussen gebouwen,3.0,179,3.0,C2015-08
+189,technieken onder dak,7.0,,7.0,C2015-08
+190,uitvullaag,2.0,184,2.0,C2015-08
+191,stellen dillatieprofielen,3.0,190,2.0,C2015-08
+192,folie en vloerverwarming,5.0,190,5.0,C2015-08
+193,polybetonvloer,1.0,192,1.0,C2015-08
+194,afwerkingsformule beton,1.0,193,1.0,C2015-08
+195,afwerkingslaag beton,20.0,193,1.0,C2015-08
+196,afbouw technieken dak,5.0,195,5.0,C2015-08
+197,winkelinrichting,5.0,195,5.0,C2015-08
+1,Opruiming beplanting + massieven (OA),1.0,,1.0,C2015-29
+2,Afgraven teelaarde + bergen  (OA),3.0,1,3.25,C2015-29
+3,Aanleg werfpiste +  werkvloer voor paalfundering (OA),3.0,2,3.0,C2015-29
+4,Inplanting van de hoofdassen (OA),2.0,3,2.5,C2015-29
+5,Plaatsen werfinrichting,0.625,4,0.625,C2015-29
+6,Funderingspalen + palen torenkraan (OA),8.0,5,8.0,C2015-29
+7,Uitgraven funderingsplaat torenkraan,0.125,6,0.125,C2015-29
+8,Afschieten paalkoppen torenkraan,0.25,6,0.375,C2015-29
+9,Plaatsen bekisting funderingsplaat torenkraan,0.125,6,0.25,C2015-29
+10,Plaatsen wapening funderingsplaat torenkraan,0.125,6,0.125,C2015-29
+11,Storten funderingsplaat torenkraan,0.125,6,0.125,C2015-29
+12,Plaatsen torenkraan (OA),1.0,11,1.0,C2015-29
+13,Uitgraven paalkoppen en funderingsbalken + bergen grond,9.0,6,8.625,C2015-29
+14,Afschieten paalkoppen + afvoeren grond,8.0,13,8.0,C2015-29
+15,Plaatsen aardingslus,0.375,14,0.375,C2015-29
+16,Uitgraven riolering onderbouw,2.0,13,2.0,C2015-29
+17,Plaatsen riolering onderbouw,7.0,16,7.0,C2015-29
+18,Plaatsen verloren bekisting paalkoppen en funderingsbalken,22.0,17,24.0,C2015-29
+19,Aanvullen fundering + riolering,19.0,18;17,19.0,C2015-29
+20,Plaatsing wapening paalkoppen + funderingsbalken,35.0,18,35.0,C2015-29
+21,Storten paalkoppen + funderingsbalken,5.0,19;20,6.0,C2015-29
+22,Plaatsen randbekisting vloerplaat,0.375,21,0.375,C2015-29
+23,Wapenen vloerplaat,14.0,22,14.0,C2015-29
+24,Storten en verdichten vloerplaat,2.0,23,2.0,C2015-29
+25,Ontkisten vloerplaat,0.125,24,0.25,C2015-29
+26,Plaatsen holle wanden,1.0,25,1.0,C2015-29
+27,Plaatsen verbindingswapening holle wanden,0.125,26,0.125,C2015-29
+28,Plaatsen prefabkolommen,0.5,27,0.625,C2015-29
+29,Plaatsen mortelsilo (OA),0.25,28,0.25,C2015-29
+30,Storten en trillen holle wanden,1.0,27;28,1.0,C2015-29
+31,Metsen binnenmetselwerk,0.375,27;29,0.375,C2015-29
+32,Plaatsen prefabbalken,4.0,30;28,4.0,C2015-29
+33,Plaatsen voorgespannen welfsels,0.125,32,0.125,C2015-29
+34,Plaatsen wapening op voorgespannen welfsel,0.875,33,0.875,C2015-29
+35,"Storten, trillen en afreien druklaag",0.875,34,0.875,C2015-29
+36,Plaatsen waterdichting ondergrondse holle wanden,0.625,32,0.5,C2015-29
+37,Plaatsen stelling voor gevelmetselwerk (0A),0.375,36,0.375,C2015-29
+38,Metsen gevelmetselwerk (inclusief plaatsen spouwisolatie),3.0,37,3.125,C2015-29
+39,Wegnemen stelling,2.0,38,2.0,C2015-29
+40,Plaatsen schuimbeton (OA),2.0,35,2.125,C2015-29
+41,Dakopbouw fase 1 (OA),4.0,35;40,4.0,C2015-29
+42,Dakopbouw fase 2 (OA),4.0,41,4.0,C2015-29
+43,Plaatsen prefabkolommen (OA),7.0,25,7.0,C2015-29
+44,Plaatsen prefab balken (OA),3.0,43,3.0,C2015-29
+45,Plaasten I liggers (OA),7.0,44,7.0,C2015-29
+46,Plaatsen staalstructuur (OA),10.0,45,10.0,C2015-29
+47,Metsen binnenmetselwerk,5.5,45;31,6.0,C2015-29
+48,Plaatsen veiligheidsnetten,1.0,45;46,1.5,C2015-29
+49,Plaatsen steeldeck (OA),10.0,48,10.5,C2015-29
+50,Plaatsen bekisting plinten,1.875,49,2.0,C2015-29
+51,Plaatsen wapening plinten,1.0,50,1.0,C2015-29
+52,Storten en trillen plinten,0.125,51,0.25,C2015-29
+53,Ontkisten plinten,1.0,52,1.0,C2015-29
+54,Plaatsen binnendozen (OA),5.0,49;53,5.0,C2015-29
+55,Isoleren loods (OA),10.0,54,10.25,C2015-29
+56,Plaatsen beplating (OA),1.0,55,1.25,C2015-29
+57,Plaatsen regenwaterafvoersysteem (OA),8.0,49,8.0,C2015-29
+58,Dakdichting fase 1 (OA),7.0,49;57;56,7.0,C2015-29
+59,Dakdichting fase 2 (OA),1.0,58;42,1.0,C2015-29
+60,Plaatsen prefbabkolommen verdiep -1 fase 1,0.5,34,0.5,C2015-29
+61,Plaatsen verloren bekisting ter plaatse gestorte kolommen,0.5,60,0.5,C2015-29
+62,Plaatsen wapening ter plaatse gestorte kolommen verdiep -1,0.125,61,0.25,C2015-29
+63,Storten en trillen ter plaatse gestorte kolommen verdiep -1,0.125,62,0.125,C2015-29
+64,Plaatsen prefbabalken verdiep -1 fase 1,0.125,60,0.125,C2015-29
+65,Plaatsen stempels + bekisting ter plaatse gestorte balken verdiep -1,0.5,64;63,0.5,C2015-29
+66,Plaatsen wapening/HEB ter plaatse gestorte balken verdiep -1,1.625,65,2.0,C2015-29
+67,Storten en trillen ter plaatse gestorte balken verdiep -1,0.375,66,0.5,C2015-29
+68,Ontkisten ter plaatse gestorte balken verdiep -1,0.25,67,0.25,C2015-29
+69,Metsen binnenmetselwerk (niet dragend) verdiep -1,0.75,60;47,1.0,C2015-29
+70,Plaatsen binnenbekisting wanden verdiep -1 fase 1,20.0,66,20.0,C2015-29
+71,Plaatsen wapening wanden verdiep -1 fase 1,2.0,70,2.0,C2015-29
+72,Plaatsen buitenbekisting wanden verdiep -1 fase 1,1.75,71,2.0,C2015-29
+73,Storten en trillen wanden verdiep -1 fase 1,2.5,72,2.5,C2015-29
+74,Ontkisten wanden verdiep -1 fase 1,0.625,73,0.5,C2015-29
+75,Plaatsen voorgespannen welfsels verdiep -1 fase 1,3.25,68;74,3.5,C2015-29
+76,Plaatsen wapening verdiepingsvloer verdiep -1 fase 1,3.0,75,3.0,C2015-29
+77,Plaatsen bekisting bordes buitenzijde verdiep -1,1.625,76;75,1.5,C2015-29
+78,Plaatsen wapening bordes buitenzijde verdiep -1,1.625,77;76,1.625,C2015-29
+79,Storten en trillen druklaag + bordes verdiep -1 fase 1,0.125,78,0.125,C2015-29
+80,Plaatsen prefbabkolommen verdiep -1 fase 2,0.125,71,0.125,C2015-29
+81,Plaatsen prefbabalken verdiep -1 fase 2,1.25,80,1.375,C2015-29
+82,Plaatsen binnenbekisting wanden verdiep -1 fase 2,0.25,74;81,0.25,C2015-29
+83,Plaatsen wapening wanden verdiep -1 fase 2,0.25,82,0.25,C2015-29
+84,Plaatsen buitenbekisting wanden verdiep -1 fase 2,1.625,83,1.5,C2015-29
+85,Storten en trillen wanden verdiep -1 fase 2,0.5,84,0.5,C2015-29
+86,Ontkisten wanden verdiep -1 fase 2,2.0,85,2.0,C2015-29
+87,Plaatsen voorgespannen welfsels verdiep -1 fase 2,0.75,86;79,0.75,C2015-29
+88,Plaatsen wapening verdiepingsvloer verdiep -1 fase 2,0.875,87,0.875,C2015-29
+89,Storten en trillen druklaag verdiep -1 fase 2,0.625,88,0.625,C2015-29
+90,Plaatsen stempels + bekisting bordessen traphal verdiep -1,0.125,86,0.125,C2015-29
+91,Plaatsen wapening bordessen traphal verdiep -1,0.75,90,1.0,C2015-29
+92,Storten en trillen bordessen traphal verdiep -1,0.125,91;89,0.125,C2015-29
+93,Ontkisten bordessen traphal verdiep -1,0.25,92,0.375,C2015-29
+94,Plaatsen prefabtrappen verdiep -1,0.125,93,0.125,C2015-29
+95,Plaatsen prefbabkolommen verdiep 0 fase 1,0.25,79,0.25,C2015-29
+96,Plaatsen verloren bekisting ter plaatste gestorte kolommen verdiep 0,0.25,95,0.25,C2015-29
+97,Plaatsen wapening ter plaatste gestorte kolommen verdiep 0,1.125,96,1.5,C2015-29
+98,Storten en trillen ter plaatste gestorte kolommen verdiep 0,0.125,97,0.125,C2015-29
+99,Plaatsen prefbabalken verdiep 0 fase 1,0.25,98;95,0.25,C2015-29
+100,Plaatsen stempels + bekisting ter plaatse gestorte balken verdiep 0,0.75,97;99,1.0,C2015-29
+101,Plaatsen wapening/HEB ter plaatse gestorte balken verdiep 0,0.125,100,0.125,C2015-29
+102,Storten en trillen ter plaatse gestorte balken verdiep 0,0.125,101,0.25,C2015-29
+103,Ontkisten ter plaatse gestorte balken verdiep 0,0.375,102,0.375,C2015-29
+104,Metsen binnenmetselwerk (niet dragend) verdiep 0,5.125,99;69;47,5.375,C2015-29
+105,Plaatsen binnenbekisting wanden verdiep 0 fase 1,2.5,101,2.375,C2015-29
+106,Plaatsen wapening wanden verdiep 0 fase 1,1.625,105,1.625,C2015-29
+107,Plaatsen buitenbekisting wanden verdiep 0 fase 1,2.625,106,2.375,C2015-29
+108,Storten en trillen wanden verdiep 0 fase 1,0.625,107,0.625,C2015-29
+109,Ontkisten wanden verdiep 0 fase 1,3.375,108,3.375,C2015-29
+110,Plaatsen voorgespannen welfsels verdiep 0 fase 1,1.0,103;109,1.0,C2015-29
+111,Plaatsen wapening verdiepingsvloer verdiep 0 fase 1,1.0,110,1.0,C2015-29
+112,Storten en trillen druklaag verdiep 0 fase 1,0.75,111,0.75,C2015-29
+113,Plaatsen prefbabkolommen verdiep 0 fase 2,0.125,106,0.125,C2015-29
+114,Plaatsen prefbabalken verdiep 0 fase 2,0.25,113,0.25,C2015-29
+115,Plaatsen binnenbekisting wanden verdiep 0 fase 2,0.125,109;114,0.25,C2015-29
+116,Plaatsen wapening wanden verdiep 0 fase 2,0.25,115,0.25,C2015-29
+117,Plaatsen buitenbekisting wanden verdiep 0 fase 2,1.0,116,1.0,C2015-29
+118,Storten en trillen wanden verdiep 0 fase 2,0.625,117,0.5,C2015-29
+119,Ontkisten wanden verdiep 0 fase 2,1.0,118,1.0,C2015-29
+120,Plaatsen voorgespannen welfsels verdiep 0 fase 2,0.25,119;118,0.25,C2015-29
+121,Plaatsen wapening verdiepingsvloer verdiep 0 fase 2,1.0,120,1.0,C2015-29
+122,Storten en trillen druklaag verdiep 0 fase 2,0.5,121,0.75,C2015-29
+123,Plaatsen stempels + bekisting bordessen traphal verdiep 0,0.5,119,0.5,C2015-29
+124,Plaatsen wapening bordessen traphal verdiep 0,0.375,123,0.5,C2015-29
+125,Storten en trillen bordessen traphal verdiep 0,1.0,124;122,1.0,C2015-29
+126,Ontkisten bordessen traphal verdiep 0,1.0,125,1.0,C2015-29
+127,Plaatsen prefabtrappen verdiep 0,0.125,126;94,0.125,C2015-29
+128,Plaatsen prefbabkolommen verdiep 1 fase 1,0.375,122,0.5,C2015-29
+129,Plaatsen prefbabalken verdiep 1 fase 1,0.125,128,0.125,C2015-29
+130,Plaatsen stempels + bekisting ter plaatse gestorte balken verdiep 1,0.25,129,0.25,C2015-29
+131,Plaatsen wapening/HEB ter plaatse gestorte balken verdiep 1,0.25,130,0.125,C2015-29
+132,Storten en trillen ter plaatse gestorte balken verdiep 1,0.5,131,0.5,C2015-29
+133,Ontkisten ter plaatse gestorte balken verdiep 1,0.125,132,0.125,C2015-29
+134,Metsen binnenmetselwerk (niet dragend) verdiep 1,0.125,128;104,0.125,C2015-29
+135,Plaatsen binnenbekisting wanden verdiep 1 fase 1,0.25,131,0.5,C2015-29
+136,Plaatsen wapening wanden verdiep 1 fase 1,10.0,135,10.0,C2015-29
+137,Plaatsen buitenbekisting wanden verdiep 1 fase 1,2.375,136,2.5,C2015-29
+138,Storten en trillen wanden verdiep 1 fase 1,0.625,137,0.625,C2015-29
+139,Ontkisten wanden verdiep 1 fase 1,3.0,138,3.375,C2015-29
+140,Plaatsen voorgespannen welfsels verdiep 1 fase 1,1.0,133;139,1.0,C2015-29
+141,Plaatsen wapening verdiepingsvloer verdiep 1 fase 1,1.0,140,1.0,C2015-29
+142,Storten en trillen druklaag verdiep 1 fase 1,0.75,141,1.0,C2015-29
+143,Plaatsen prefbabkolommen verdiep 1 fase 2,0.125,136,0.125,C2015-29
+144,Plaatsen prefbabalken verdiep 1 fase 2,0.25,143,0.25,C2015-29
+145,Plaatsen binnenbekisting wanden verdiep 1 fase 2,0.75,139;143,1.0,C2015-29
+146,Plaatsen wapening wanden verdiep 1 fase 2,0.5,145,0.5,C2015-29
+147,Plaatsen buitenbekisting wanden verdiep 1 fase 2,0.75,146,1.0,C2015-29
+148,Storten en trillen wanden verdiep 1 fase 2,0.125,147,0.125,C2015-29
+149,Ontkisten wanden verdiep 1 fase 2,1.0,148,1.375,C2015-29
+150,Plaatsen voorgespannen welfsels verdiep 1 fase 2,0.5,149;142,0.5,C2015-29
+151,Plaatsen wapening verdiepingsvloer verdiep 1 fase 2,0.5,150,0.5,C2015-29
+152,Storten en trillen druklaag verdiep 1 fase 2,3.0,151,3.0,C2015-29
+153,Plaatsen stempels + bekisting bordessen traphal verdiep 1,1.0,149,1.0,C2015-29
+154,Plaatsen wapening bordessen traphal verdiep 1,1.0,153,1.0,C2015-29
+155,Storten en trillen bordessen traphal verdiep 1,0.125,154,0.125,C2015-29
+156,Ontkisten bordessen traphal verdiep 1,0.375,155,0.375,C2015-29
+157,Plaatsen prefabtrappen verdiep 1,0.125,156;127,0.25,C2015-29
+158,Plaatsen prefbabkolommen verdiep 2 fase 1,0.25,142,0.5,C2015-29
+159,Plaatsen prefbabalken verdiep 2 fase 1,0.125,158,0.125,C2015-29
+160,Plaatsen stempels + bekisting ter plaatse gestorte balken verdiep 2,0.5,159,0.625,C2015-29
+161,Plaatsen wapening/HEB ter plaatse gestorte balken verdiep 2,0.25,160,0.25,C2015-29
+162,Storten en trillen ter plaatse gestorte balken verdiep 2,0.125,161,0.25,C2015-29
+163,Ontkisten ter plaatse gestorte balken verdiep 2,0.25,162,0.25,C2015-29
+164,Metsen binnenmetselwerk (niet dragend) verdiep 2,15.0,158;134,15.0,C2015-29
+165,Plaatsen binnenbekisting wanden verdiep 2 fase 1,2.25,161,2.5,C2015-29
+166,Plaatsen wapening wanden verdiep 2 fase 1,1.625,165,1.75,C2015-29
+167,Plaatsen buitenbekisting wanden verdiep 2 fase 1,2.0,166,2.0,C2015-29
+168,Storten en trillen wanden verdiep 2 fase 1,0.875,167,0.875,C2015-29
+169,Ontkisten wanden verdiep 2 fase 1,3.0,168,3.375,C2015-29
+170,Plaatsen voorgespannen welfsels verdiep 2 fase 1,1.0,163;169,1.0,C2015-29
+171,Plaatsen wapening verdiepingsvloer verdiep 2 fase 1,1.0,170,1.0,C2015-29
+172,Storten en trillen druklaag verdiep 2 fase 1,0.75,171,1.0,C2015-29
+173,Plaatsen prefbabkolommen verdiep 2 fase 2,0.125,166,0.125,C2015-29
+174,Plaatsen prefbabalken verdiep 2 fase 2,0.125,173,0.25,C2015-29
+175,Plaatsen binnenbekisting wanden verdiep 2 fase 2,0.5,169;174,0.5,C2015-29
+176,Plaatsen wapening wanden verdiep 2 fase 2,0.375,175,0.5,C2015-29
+177,Plaatsen buitenbekisting wanden verdiep 2 fase 2,0.5,176,0.5,C2015-29
+178,Storten en trillen wanden verdiep 2 fase 2,0.125,177,0.125,C2015-29
+179,Ontkisten wanden verdiep 2 fase 2,0.625,178,0.5,C2015-29
+180,Plaatsen voorgespannen welfsels verdiep 2 fase 2,0.625,179;173,0.625,C2015-29
+181,Plaatsen wapening verdiepingsvloer verdiep 2 fase 2,0.625,180,0.625,C2015-29
+182,Storten en trillen druklaag verdiep 2 fase 2,0.5,181,0.75,C2015-29
+183,Plaatsen stempels + bekisting bordessen traphal verdiep 2,1.0,179;157,1.0,C2015-29
+184,Plaatsen wapening bordessen traphal verdiep 2,1.0,183,1.0,C2015-29
+185,Storten en trillen bordessen traphal verdiep 2,0.125,184;182,0.25,C2015-29
+186,Ontkisten bordessen traphal verdiep 2,0.375,185,0.625,C2015-29
+187,Metsen opstand dak,4.5,186;164,4.5,C2015-29
+188,Wegnemen mortelsilo (OA),1.0,187,1.0,C2015-29
+189,Plaatsen stelling voor gevelmetselwerk (0A),6.0,143,1.5,C2015-29
+190,Metsen gevelmetselwerk (inclusief plaatsen isolatie),20.25,189;31,20.25,C2015-29
+191,Wegnemen stelling (0A),4.0,190,4.0,C2015-29
+192,Plaatsen blauwe hardsteen + isolatieblokken,7.0,190,8.0,C2015-29
+193,Voegen binnenmetselwerk zichtbaar,20.0,190,21.0,C2015-29
+194,Plaatsen onderstructuur voor vezelcementplaten (OA),12.0,187,12.0,C2015-29
+195,Plaatsen spouwisolatie voor vezelcementplaten (OA),8.0,194,10.0,C2015-29
+196,Plaatsen vezelcementplaten (OA) + sandwichpanelen (OA),25.0,195,24.625,C2015-29
+197,Plaatsen schuimbeton (OA) + dakisolatiesysteem (OA),5.0,196,5.0,C2015-29
+198,Plaatsen staalstructuur bovendaks (OA),5.0,197,5.0,C2015-29
+199,Ontkisten verloren bekisting ronde kolommen,0.125,198,0.125,C2015-29
+200,Dakopbouw fase 1 (OA),4.0,199,3.0,C2015-29
+201,Dakopbouw fase 2 (OA),4.0,200,3.0,C2015-29
+202,Wegnemen torenkraan,1.0,201,1.0,C2015-29
+203,Plaatsen groen dak,5.0,200,5.0,C2015-29
+204,Plaatsen buitentrap,10.0,193;203,10.0,C2015-29
+1,grondwerken,8.0,,8.0,C2015-30
+2,fundering,5.0,,8.0,C2015-30
+3,rioleringswerken,7.0,,7.0,C2015-30
+4,regenputten,2.0,,2.0,C2015-30
+5,wanden gelijkvloers,5.0,2,5.0,C2015-30
+6,predallen + vloerplaat,5.0,5,5.0,C2015-30
+7,wanden 1e verdiep,5.0,6,5.0,C2015-30
+8,predallen + vloerplaat,5.0,7,5.0,C2015-30
+9,wanden 2e verdiep,5.0,8,5.0,C2015-30
+11,gevel,60.0,6,57.0,C2015-30
+12,plaatsen blauwe hardsteen,5.0,,5.0,C2015-30
+13,schoorsteen,10.0,9,12.0,C2015-30
+14,plaatsen betonnen trappen,2.0,,2.0,C2015-30
+15,houten dakstructuur,5.0,9,5.0,C2015-30
+16,hellingsbeton,5.0,15,5.0,C2015-30
+17,dakisolatie,5.0,16,8.0,C2015-30
+18,membranen + koepels plaatsen,2.0,17,5.0,C2015-30
+19,dakrandprofielen,5.0,18,8.0,C2015-30
+20,kroonlijsten,5.0,18,5.0,C2015-30
+21,afwerking dakverdichting,5.0,,4.0,C2015-30
+41,opmeten buitenschrijnwerk,1.25,12,1.0,C2015-30
+22,plaatsen buitendeuren en ramen,10.0,41,12.0,C2015-30
+23,buitentrapleuningen,2.0,14,2.0,C2015-30
+24,andere afwerkingen,5.0,,5.0,C2015-30
+25,pleisterwerken,20.0,22,15.0,C2015-30
+42,PUR + chape,10.0,25,8.0,C2015-30
+26,binnenvloeren,10.0,42,10.0,C2015-30
+27,plaatsen plinten,5.0,26,10.0,C2015-30
+28,plaatsen binnendeuren,15.0,26,10.0,C2015-30
+29,keukens,15.0,26,15.0,C2015-30
+30,venstertabletten + faience,5.0,,8.0,C2015-30
+31,sanitair,20.0,,25.0,C2015-30
+33,CLV,20.0,25,18.0,C2015-30
+34,ventilatie,20.0,35,18.0,C2015-30
+35,electriciteitsnet + toebehoren,60.0,,37.0,C2015-30
+36,tegels buiten,5.0,,5.0,C2015-30
+37,plaatsen brievenbussen,2.0,,2.0,C2015-30
+38,plaatsen afsluiting,3.0,,3.0,C2015-30
+39,fietsrekken,1.0,,1.0,C2015-30
+40,afwerking omgevingswerken,5.0,,5.0,C2015-30
+1,afbraak,10.0,,8.0,C2015-31
+2,onderbouw - metselwerk,1.0,1,1.0,C2015-31
+3,onderbouw - isolatie,1.0,1,1.0,C2015-31
+4,riolering,10.0,6,10.0,C2015-31
+5,fundering,20.0,4,20.0,C2015-31
+6,grondwerken,15.0,1,14.0,C2015-31
+7,bovenbouw - metselwerk,125.0,2;3;5,125.0,C2015-31
+8,bovenbouw - isolatie,25.0,7,23.0,C2015-31
+9,dakwerken,90.0,7,89.0,C2015-31
+10,buitenverdichting,20.0,7,19.0,C2015-31
+11,gevelbekleding,30.0,,30.0,C2015-31
+12,buitentrappen,3.0,7,2.0,C2015-31
+13,sanitair,60.0,7,57.0,C2015-31
+14,verwarmingsinstallaties,25.0,7,25.0,C2015-31
+15,electriciteit,70.0,7,45.0,C2015-31
+16,ventilatie,25.0,7,26.0,C2015-31
+17,liftinstallatie,10.0,7,10.0,C2015-31
+18,pleisterwerken,45.0,13;14;15;16,25.0,C2015-31
+19,binnenplaatafwerking,30.0,13;14;15;16,30.0,C2015-31
+20,vloeren,25.0,18;19,25.0,C2015-31
+21,binnendeuren &amp;amp;amp;amp; - ramen,20.0,20,20.0,C2015-31
+22,binnentrappen,10.0,20,10.0,C2015-31
+23,keukeninstallatie,20.0,20,19.125,C2015-31
+24,vast meubilair &amp;amp;amp;amp; faience,10.0,21;22;23,10.0,C2015-31
+25,buitenverharding,15.0,6,15.0,C2015-31
+26,buitenafsluiting,20.0,,21.0,C2015-31
+27,brievenbussen,2.0,,2.0,C2015-31
+28,fietsenrekken,2.0,,2.0,C2015-31
+29,tuinaanleg,30.0,6,25.0,C2015-31
+1,werfinrichting,10.0,,10.0,C2015-32
+2,aanvraag verslag Bom.be,22.0,,22.0,C2015-32
+3,grondwerken + bom detectie,21.0,,14.875,C2015-32
+4,paalfundering,10.0,3,8.0,C2015-32
+5,afkappen palen,5.0,4,5.0,C2015-32
+6,rioleringwerken onder fundering,5.0,4,5.0,C2015-32
+7,"funderingsplaat (bekisten, ijzer, beton)",20.0,4,18.0,C2015-32
+8,montage kraan,1.0,,1.0,C2015-32
+9,kelderwanden,15.0,7,15.0,C2015-32
+10,kolommen + balken + metalen profielen kelder,10.0,9,5.0,C2015-32
+11,metselwerk kelderverdieping,10.0,10,10.0,C2015-32
+12,afdek kelder + balken,10.0,11,10.0,C2015-32
+13,wanden gelijkvloers,12.0,12,5.0,C2015-32
+14,binnenzetten bouwmaterialen,3.0,,2.0,C2015-32
+15,verwarming helling,1.0,,1.0,C2015-32
+16,helling - vloer en wanden,15.0,,10.0,C2015-32
+17,afdek gelijkvloers (vloerplaat 1ste) + balken,10.0,13,5.0,C2015-32
+18,wanden 1ste verdiep,12.0,17,4.0,C2015-32
+19,binnenzetten bouwmaterialen,3.0,,3.0,C2015-32
+20,afdek 1ste verdiep (vloerplaat 2de) + balken,10.0,18,5.0,C2015-32
+21,stelling plaatsen,10.0,22,5.0,C2015-32
+22,gevelmetselwerk + blauwe hardsteen,75.0,20,41.0,C2015-32
+23,wanden 2de verdiep,12.0,20,5.0,C2015-32
+24,binnenzetten bouwmaterialen,3.0,,2.0,C2015-32
+25,prefabmontage,70.0,23,42.0,C2015-32
+26,afdek 2de verdiep (dakplaat) + balken,10.0,23,10.0,C2015-32
+27,dakranden Ytong,5.0,26,5.0,C2015-32
+28,Hellingsbeton + dakverdichting,10.0,27,7.0,C2015-32
+29,dakverdicting-eindlaag,5.0,28,7.0,C2015-32
+30,binnenwanden niv 0/1/2,30.0,28,18.0,C2015-32
+53,leiding technieken - sanitair,30.0,30,33.0,C2015-32
+31,leidingen technieken - electriciteit,30.0,30,30.0,C2015-32
+32,chape,30.0,31;53,18.0,C2015-32
+33,pleisterwerken,30.0,32,20.0,C2015-32
+34,leuningen,10.0,37,10.0,C2015-32
+35,voegwerken,20.0,22,15.0,C2015-32
+36,dakverdichting boven trapzalen,5.0,25,3.0,C2015-32
+37,stelling afbreken,2.0,22,2.0,C2015-32
+38,afbreken torenkraan,1.0,25,1.0,C2015-32
+39,buitenaanleg - ABM,20.0,38,20.0,C2015-32
+40,tegelwerken,30.0,32,19.0,C2015-32
+41,buitenschrijnwerk,10.0,22,8.0,C2015-32
+42,binnenschrijnwerk,35.0,40,30.0,C2015-32
+43,schilderwerk,40.0,33,25.0,C2015-32
+44,keukens,20.0,40,15.0,C2015-32
+45,lift,15.0,,15.0,C2015-32
+46,afwerken technieken - sanitair,20.0,40,15.0,C2015-32
+54,afwerken technieken - electriciteit,20.0,40,20.0,C2015-32
+47,algemene opkuis,11.0,46;54,11.0,C2015-32
+48,datum contract zonder VAA,0.0,,,C2015-32
+49,in orde brengen punten voor voorlopige oplevering,32.0,,32.0,C2015-32
+50,oplevering contract + VAA-1-43 KD,1.0,,1.0,C2015-32
+51,buitenaanleg - bouwheer,1.0,,1.0,C2015-32
+1,afbraak,60.0,,98.0,C2015-35
+2,gesloten ruwbouw,483.0,1,669.0,C2015-35
+3,voltooiing,345.0,2,329.0,C2015-35
+4,electrische installaties,345.0,3,409.0,C2015-35
+5,HVAC,248.0,3,325.0,C2015-35
+6,sanitaire installaties,345.0,3,389.0,C2015-35
+7,liftinstallatie,248.0,3,244.0,C2015-35
+8,keukeninstallaties,248.0,3,74.0,C2015-35
+9,vast meubilair,128.0,4;6,231.0,C2015-35
+10,omgevingswerken,40.0,1,35.0,C2015-35
+1,Plaatsbeschrijving,1.0,,1.0,C2016-06
+2,Opstellen URS,5.0,,5.0,C2016-06
+3,Werfinrichting / stofwanden,10.0,1,10.0,C2016-06
+4,Risk Assessment,5.0,2,5.0,C2016-06
+5,Uitzetten van de werf,6.0,2,6.0,C2016-06
+6,Validation Master Plan,80.0,,80.0,C2016-06
+7,Metselwerken / Betonwerken,19.0,3;5,19.0,C2016-06
+8,Voorbereiding technieken,27.0,3;5,27.0,C2016-06
+9,Voeding werfzone,1.0,3;5,1.0,C2016-06
+10,Plaatsen afvoeren,5.0,3;5,5.0,C2016-06
+11,Afbraak en/of omleggen bestaand bord,2.0,9,2.0,C2016-06
+12,Groepen plaatsen,10.0,3,10.0,C2016-06
+13,Plaatsen toevoerleiding vanuit verd -1 naar verd +1,5.0,,5.0,C2016-06
+14,Kanalen,20.0,7,20.0,C2016-06
+15,Plaatsen waterinstallatie in Techn Ruimte,20.0,17,20.0,C2016-06
+17,Pleisterwerken,15.0,7,15.0,C2016-06
+18,Plaatsen nieuwe centrale op niv -2,5.0,7,5.0,C2016-06
+16,plaatsen stalen poutrellen ter versteviging,2.0,46,2.0,C2016-06
+19,demonteren plafonds niv 0,3.0,5;27,3.0,C2016-06
+20,maken doorvoeren niv +1 -> gvl,5.0,,5.0,C2016-06
+21,Kabels naar bord verd -2,4.0,,4.0,C2016-06
+22,Plaatsen toevoerleidingen + isolatie,30.0,,30.0,C2016-06
+23,Plaatsen leidingen,31.0,,31.0,C2016-06
+24,plaatsen afvoeren en aansluiten op niv 0,20.0,20,20.0,C2016-06
+25,Maken doorvoeren dak -> niv +1,2.0,20,2.0,C2016-06
+26,Aanpassingswerken dak,5.0,25,5.0,C2016-06
+27,Chape,5.0,17,5.0,C2016-06
+28,Piping,30.0,27,30.0,C2016-06
+29,Bekabeling,30.0,28,30.0,C2016-06
+30,Kabelgoten,11.0,,11.0,C2016-06
+31,Plaatsen leidingen,11.0,,11.0,C2016-06
+32,gipskartonwanden 1e zijde,13.0,,13.0,C2016-06
+33,dichtleggen plafond niv 0,1.0,24,1.0,C2016-06
+34,Alu buitenramen / roosters,7.0,,7.0,C2016-06
+35,Technieken in gipswanden,14.0,32,14.0,C2016-06
+36,Leidingen trekken + inbouwbakjes,19.0,27,19.0,C2016-06
+37,Plaatsen brandleiding + koppelingen,10.0,22,10.0,C2016-06
+38,structuur voorzetwanden,4.0,32,4.0,C2016-06
+39,Beglaasde binnenramen,5.0,41,5.0,C2016-06
+40,Buitenzonnewering,4.0,34,4.0,C2016-06
+41,"gipskartonwanden 2e zijde, incl plamuren",15.0,38,15.0,C2016-06
+42,Afmonteren data aansluitingen,12.0,32,12.0,C2016-06
+43,Plaatsen leidingen branddetectie,9.0,38,9.0,C2016-06
+44,Technieken boven valse plafonds,20.0,35,20.0,C2016-06
+45,Dichtzetten voorzetwanden,2.0,41,2.0,C2016-06
+46,Laufervloer,2.0,,2.0,C2016-06
+47,Afwerken dagkanten ramen,5.0,45,5.0,C2016-06
+48,Hygienische coating Technische Ruimte,5.0,12,5.0,C2016-06
+49,Wandbekleding binnenzijde gevel,4.0,50;47,4.0,C2016-06
+50,Bekleden cleanroomwanden,15.0,,15.0,C2016-06
+51,Plaatsen metalen deuromlijstingen,4.0,32,4.0,C2016-06
+52,Beloopbaar verlaagd plafond Cleanroom,15.0,,15.0,C2016-06
+53,"Plaatsen schakelaars, stopcontacten",19.0,50,19.0,C2016-06
+54,Verlaagde plafonds,4.0,,4.0,C2016-06
+55,Plaatsen verlichtingsarmaturen,27.0,50,27.0,C2016-06
+56,Plaatsen elektr borden,3.0,50,3.0,C2016-06
+57,Aansluiten elektr bord,15.0,56,15.0,C2016-06
+58,"Plaatsen kranenwerk, toestellen",15.0,50,15.0,C2016-06
+59,Afwerking,10.0,50,10.0,C2016-06
+60,Afgewerkte cleanroomwanden,0.0,50,,C2016-06
+61,Schilderwerken,13.0,50,13.0,C2016-06
+62,Plaatsen sokkels meubilair,3.0,,3.0,C2016-06
+63,Elektronische borden,3.0,50,3.0,C2016-06
+64,Testen deel 1,5.0,59,5.0,C2016-06
+65,Harsgebonden bedrijfsvloer,10.0,50,10.0,C2016-06
+66,"Synthetische vinyl vloerbekleding, incl plinten",2.0,65,2.0,C2016-06
+67,Meubilair,14.0,65,14.0,C2016-06
+68,Plaatsen toestellen,24.0,65,24.0,C2016-06
+69,Data rack,2.0,65,2.0,C2016-06
+70,Aansluiten data rack,9.0,69,9.0,C2016-06
+71,Aansluiten toestellen,15.0,68,15.0,C2016-06
+72,"plaatsen sirenes, bord, brandmelders, …",24.0,70,24.0,C2016-06
+73,Verbinding data en telefonie,5.0,70,5.0,C2016-06
+74,Spiegel,1.0,67,1.0,C2016-06
+75,Wand-en hoekbescherming,5.0,67,5.0,C2016-06
+76,Algemene afwerkingen,10.0,75,10.0,C2016-06
+77,Testen deel 2,2.0,73,2.0,C2016-06
+78,Testen deel 3,1.0,77,1.0,C2016-06
+79,Keuringen en testen installatie,14.0,82,14.0,C2016-06
+80,Testen deel 4,5.0,71,5.0,C2016-06
+81,Plaatsen tabletten,5.0,,5.0,C2016-06
+82,Signalisatie,5.0,76;61,5.0,C2016-06
+83,Eerste Rondgang der werken,5.0,84,5.0,C2016-06
+84,Eindschoonmaak,5.0,82,5.0,C2016-06
+85,Wegwerken  eventuele opmerkingen,8.0,83,8.0,C2016-06
+86,Filters plaatsen + afwerking,10.0,85,10.0,C2016-06
+87,"Plaatsen toebehoren (zeepdispensers, handdoekdispensers,…)",10.0,67,10.0,C2016-06
+88,Opstellen systeem validatie IQ/OQ protocol templates Cleanroom & HVAC,5.0,85,5.0,C2016-06
+89,Start validation,0.0,88,,C2016-06
+90,Verwijderen werfinrichting,5.0,85,5.0,C2016-06
+91,Plaatsen deurbladen,1.0,67,1.0,C2016-06
+92,Certificatietesten Cleanroom & HVAC,5.0,88,5.0,C2016-06
+93,Nazicht uitvoering IQ/OQ + rapport Cleanroom & HVAC,10.0,92,10.0,C2016-06
+94,Opstellen systeem validatie templates IQ/OQ/PQ protocol,5.0,,5.0,C2016-06
+95,Nakijken van uitgevoerde testen door uitvoerders,5.0,92;94,5.0,C2016-06
+96,Opstellen systeemvalidatierapporten IQ/OQ/PQ,5.0,95,5.0,C2016-06
+97,Ondersteuning ontwikkeling SOP's,20.0,96,20.0,C2016-06
+98,Verwijderen werfburelen,5.0,97,5.0,C2016-06
+3,Assembly,2.0,,2.0,C2016-07
+4,Rent,155.0,3,168.0,C2016-07
+5,Take-down,1.0,4,1.0,C2016-07
+8,Section 1,8.0,,8.0,C2016-07
+9,Section 2,11.0,8,10.0,C2016-07
+10,Section 3,14.0,9,12.0,C2016-07
+11,Section 4,9.0,10,8.0,C2016-07
+12,Section 5,8.0,11,11.0,C2016-07
+13,Section 6,7.0,12,8.0,C2016-07
+14,Section 7,12.0,13,9.0,C2016-07
+16,Section 8,11.0,14,8.0,C2016-07
+17,Section 9,7.0,16,8.0,C2016-07
+18,Section 10,7.0,17,7.0,C2016-07
+19,Section 11,9.0,18,8.0,C2016-07
+20,Section 12,11.0,19,11.0,C2016-07
+21,Section 13,8.0,20,8.0,C2016-07
+22,Section 14,7.0,21,7.0,C2016-07
+23,Section 15,7.0,22,7.0,C2016-07
+24,Section 16,9.0,23,8.0,C2016-07
+25,Section 17,11.0,24,7.0,C2016-07
+27,Section 18,8.0,25,8.0,C2016-07
+28,Section 19,7.0,27,7.0,C2016-07
+29,Section 20,7.0,28,7.0,C2016-07
+30,Section 21,9.0,29,9.0,C2016-07
+31,Section 22,11.0,30,8.0,C2016-07
+32,Section 31,9.0,119,7.0,C2016-07
+33,Section 32,12.0,32,7.0,C2016-07
+34,Section 33,9.0,33,8.0,C2016-07
+35,Section 34,8.0,34,8.0,C2016-07
+37,Section 23,8.0,31,8.0,C2016-07
+38,Section 24,7.0,37,7.0,C2016-07
+39,Section 35,7.0,35,7.0,C2016-07
+40,Section 36,12.0,39,7.0,C2016-07
+41,Section 37,11.0,40,7.0,C2016-07
+42,Section 38,7.0,41,7.0,C2016-07
+43,Section 39,7.0,42,7.0,C2016-07
+44,Section 40,9.0,43,8.0,C2016-07
+45,Section 41,11.0,44,7.0,C2016-07
+46,Section 42,8.0,45,7.0,C2016-07
+47,Section 43,7.0,46,7.0,C2016-07
+48,Section 45,9.0,120,7.0,C2016-07
+49,Section 47,8.0,121,7.0,C2016-07
+50,Section 49,7.0,122,8.0,C2016-07
+52,Section 87,7.0,94,8.0,C2016-07
+53,Section 89,9.0,95,8.0,C2016-07
+54,Section 91,8.0,96,8.0,C2016-07
+55,Section 93,7.0,97,7.0,C2016-07
+56,Section 95,11.0,98,8.0,C2016-07
+58,Section 25,7.0,38,7.0,C2016-07
+59,Section 26,9.0,58,7.0,C2016-07
+60,Section 101,8.0,103,8.0,C2016-07
+61,Section 102,7.0,60,7.0,C2016-07
+62,Section 103,7.0,61,7.0,C2016-07
+63,Section 104,9.0,62,8.0,C2016-07
+64,Section 105,12.0,63,8.0,C2016-07
+65,Section 106,9.0,64,8.0,C2016-07
+67,Section 52,8.0,106,8.0,C2016-07
+68,Section 54,10.0,107,8.0,C2016-07
+69,Section 56,8.0,108,8.0,C2016-07
+70,Section 58,7.0,109,7.0,C2016-07
+71,Section 60,11.0,110,8.0,C2016-07
+72,Section 62,7.0,111,7.0,C2016-07
+73,Section 64,9.0,112,7.0,C2016-07
+74,Section 66,8.0,113,8.0,C2016-07
+75,Section 68,7.0,114,7.0,C2016-07
+76,Section 70,11.0,115,7.0,C2016-07
+77,Section 72,7.0,84,7.0,C2016-07
+78,Section 76,8.0,87,7.0,C2016-07
+79,Section 78,7.0,88,7.0,C2016-07
+80,Section 80,11.0,89,8.0,C2016-07
+81,Section 81,8.0,80,8.0,C2016-07
+83,Section 27,11.0,59,11.0,C2016-07
+84,Section 71,8.0,76,8.0,C2016-07
+85,Section 73,7.0,77,7.0,C2016-07
+86,Section 74,9.0,85,9.0,C2016-07
+87,Section 75,11.0,86,11.0,C2016-07
+88,Section 77,7.0,78,7.0,C2016-07
+89,Section 79,9.0,79,9.0,C2016-07
+90,Section 82,7.0,81,7.0,C2016-07
+91,Section 83,7.0,90,7.0,C2016-07
+92,Section 84,9.0,91,9.0,C2016-07
+93,Section 85,11.0,92,11.0,C2016-07
+94,Section 86,8.0,93,8.0,C2016-07
+95,Section 88,7.0,52,7.0,C2016-07
+96,Section 90,11.0,53,11.0,C2016-07
+97,Section 92,7.0,54,7.0,C2016-07
+98,Section 94,9.0,55,9.0,C2016-07
+99,Section 96,8.0,56,8.0,C2016-07
+100,Section 97,7.0,99,7.0,C2016-07
+101,Section 98,7.0,100,7.0,C2016-07
+102,Section 99,9.0,101,8.0,C2016-07
+103,Section 100,11.0,102,8.0,C2016-07
+105,Section 50,12.0,50,12.0,C2016-07
+106,Section 51,11.0,105,11.0,C2016-07
+107,Section 53,7.0,67,7.0,C2016-07
+108,Section 55,12.0,68,12.0,C2016-07
+109,Section 57,7.0,69,7.0,C2016-07
+110,Section 59,9.0,70,9.0,C2016-07
+111,Section 61,8.0,71,8.0,C2016-07
+112,Section 63,7.0,72,7.0,C2016-07
+113,Section 65,11.0,73,8.0,C2016-07
+114,Section 67,7.0,74,8.0,C2016-07
+115,Section 69,9.0,75,8.0,C2016-07
+117,Section 28,8.0,83,8.0,C2016-07
+118,Section 29,7.0,117,7.0,C2016-07
+119,Section 30,7.0,118,8.0,C2016-07
+120,Section 44,7.0,47,7.0,C2016-07
+121,Section 46,11.0,48,11.0,C2016-07
+122,Section 48,7.0,49,7.0,C2016-07
+134,Snagging,19.0,,19.0,C2016-07
+135,Handover,0.0,,,C2016-07
+1,"Werfinrichting, werftoiletten",5.0,,4.0,C2016-11
+2,Voorbereiding oplevering,1.0,,1.0,C2016-11
+3,Transportkosten,3.0,,1.0,C2016-11
+4,Rijtijden ploegen,1.0,,1.0,C2016-11
+5,Magazijn,4.0,,2.0,C2016-11
+6,Studiekosten projectontwikkelaar,12.0,,10.0,C2016-11
+7,Studiekosten aannemer,22.0,,22.0,C2016-11
+8,Funderingen,24.0,1;2;3;4;5;6;7,28.0,C2016-11
+9,GEWA/Metselwerk,17.0,8,16.0,C2016-11
+10,Gewelven/Structuur,3.0,9,3.0,C2016-11
+11,Uitbranden GEWA,1.0,9,1.0,C2016-11
+12,Isolatie,6.0,10;11,6.0,C2016-11
+13,Parament,27.0,12,27.0,C2016-11
+14,Ytong/gipswanden,4.0,13,4.0,C2016-11
+15,Dorpels,1.0,14,1.0,C2016-11
+16,Voegwerk,7.0,14,8.0,C2016-11
+17,Stelling,4.0,15;16,4.0,C2016-11
+18,Daktimmer traditioneel / prefabkap,15.0,17,16.0,C2016-11
+19,Dakdekken,4.0,18,4.0,C2016-11
+20,Goten & afleiders,1.0,19,2.0,C2016-11
+21,Zonnepanelen,1.0,19,1.0,C2016-11
+22,Oversteken / gevelbekleding,4.0,19,4.0,C2016-11
+23,Afdichting/Groendaken/Plat dak,8.0,22,8.0,C2016-11
+24,Dakvlakramen,3.0,22,5.0,C2016-11
+25,Kader buitenschrijnwerk Wachtbuizen,4.0,23;24,4.0,C2016-11
+26,Buitenschrijnwerk plaatsen,5.0,25,5.0,C2016-11
+27,Elastische voegen,1.0,26,1.0,C2016-11
+28,Ballustrades/trapleuningen,1.0,26,1.0,C2016-11
+29,Poort,1.0,26,1.0,C2016-11
+30,Plakwerken,10.0,49,9.0,C2016-11
+31,Chapes,13.0,30,16.0,C2016-11
+32,Vloerisolatie,2.0,42,3.0,C2016-11
+33,Tegelwerken,11.0,32,14.0,C2016-11
+34,Buisbek/zoldluik/platen zold/stijl,1.0,33,3.0,C2016-11
+35,Binnendeuren/Uitbekledingen,4.0,33,4.0,C2016-11
+36,Trap,8.0,33,8.0,C2016-11
+37,Luchtdichten,2.0,33,3.0,C2016-11
+38,"Keuken (laminaat, kasten)",7.0,33,7.0,C2016-11
+39,UZL,3.0,26,3.0,C2016-11
+40,Betonplexplaten,3.0,26,1.0,C2016-11
+41,Slijpen technieken / boringen,5.0,39;40,5.0,C2016-11
+42,Bad en douche,1.0,31,3.0,C2016-11
+43,Leidingen ventilatie,3.0,41,4.0,C2016-11
+44,Leidingen san/CV/WP,4.0,43,4.0,C2016-11
+45,Leidingen vloerverwarming,4.0,44,4.0,C2016-11
+46,Afwerken ventilatie,2.0,33,1.0,C2016-11
+47,Afwerken sanitair,2.0,46,4.0,C2016-11
+48,Afwerken CV/WP,4.0,47,3.0,C2016-11
+49,Leidingen electro,4.0,45,4.0,C2016-11
+50,Afwerken electro,5.0,48,3.0,C2016-11
+51,Verlichting,1.0,50,1.0,C2016-11
+52,Programmatie domotica,1.0,50,1.0,C2016-11
+53,"Diepsondering, bron en aansluiting",9.0,50,9.0,C2016-11
+54,Karweien,1.0,50,1.0,C2016-11
+55,Opkuis werk (afvoer puin en afval),5.0,51;52;53;54,6.0,C2016-11
+1,Werfinrichting/Werftoiletten,2.0,,3.0,C2016-12
+2,Voorbereiding oplevering,1.0,,1.0,C2016-12
+3,Transportkosten,6.0,,6.0,C2016-12
+4,Magazijn,5.0,,5.0,C2016-12
+5,Studiekosten projectontwikkelaar,14.0,,15.0,C2016-12
+6,Studiekosten aannemer,27.0,,25.0,C2016-12
+7,Funderingen,30.0,1;2;3;4;5;6,28.0,C2016-12
+8,Gewa/Metselwerk,22.0,7,21.0,C2016-12
+9,Gewelven/Structuur,4.0,8,5.0,C2016-12
+10,Uitbranden GEWA,1.0,8,1.0,C2016-12
+11,Isolatie,5.0,9;10,5.0,C2016-12
+12,Parament,34.0,11,34.0,C2016-12
+13,Ytong/Gipswanden,3.0,12,3.0,C2016-12
+14,Dorpels,2.0,13,2.0,C2016-12
+15,Voegwerk,8.0,13,8.0,C2016-12
+16,Stelling,5.0,14;15,4.0,C2016-12
+17,Karweien,1.0,16,1.0,C2016-12
+18,Daktimmer traditioneel/prefabkap,20.0,17,20.0,C2016-12
+19,Dakdekken,5.0,18,4.0,C2016-12
+20,Goten en afleiders,2.0,19,2.0,C2016-12
+21,Zonnepanelen,1.0,19,1.0,C2016-12
+22,Afdichting/groendaken/plat dak,6.0,20,3.0,C2016-12
+23,Dakvlakramen,9.0,20,9.0,C2016-12
+24,Karwei dakwerk,6.0,20,6.0,C2016-12
+25,Kader buitenschrijnwerk Wachtbuizen,1.0,22,1.0,C2016-12
+26,Buitenschrijnwerk plaatsen,8.0,25,8.0,C2016-12
+27,Elastische voegen,1.0,26,1.0,C2016-12
+28,Ballustrades/Trapleuningen,3.0,26,3.0,C2016-12
+29,Poort,3.0,26,3.0,C2016-12
+30,Karwei binnenschrijnwerk,1.0,26,1.0,C2016-12
+31,Plakwerken,10.0,50,12.0,C2016-12
+32,Chapes,12.0,31,14.0,C2016-12
+33,Vloerisolatie,2.0,43,2.0,C2016-12
+34,Tegelwerken,21.0,33,22.0,C2016-12
+35,Buisbek/Zoldluik/Platen zold/Stijl,3.0,34,3.0,C2016-12
+36,Binnendeuren/uitbekledingen,5.0,34,6.0,C2016-12
+37,Trap,8.0,34,8.0,C2016-12
+38,Luchtdichten,2.0,34,2.0,C2016-12
+39,"Keuken (laminaat, kasten)",10.0,34,10.0,C2016-12
+40,UZL,3.0,26,3.0,C2016-12
+41,Betonplexplaten,3.0,26,2.0,C2016-12
+42,Slijpen technieken/boringen,5.0,40;41,5.0,C2016-12
+43,Bad en douche,1.0,32,1.0,C2016-12
+44,Leidingen ventilatie,3.0,42,5.0,C2016-12
+45,Leidingen san/WP/CV,4.0,44,7.0,C2016-12
+46,Leidingen vloerverwarming,4.0,45,5.0,C2016-12
+47,Afwerken ventilatie,2.0,34,2.0,C2016-12
+48,Afwerken sanitair,2.0,47,2.0,C2016-12
+49,Afwerken CV/WP,4.0,48,3.0,C2016-12
+50,Leidingen electro,4.0,46,4.0,C2016-12
+51,Afwerken electro,5.0,49,4.0,C2016-12
+52,Verlichting,2.0,51,2.0,C2016-12
+53,"Diepsondering, bron en aansluiting",3.0,51,3.0,C2016-12
+54,Karweien,2.0,51,2.0,C2016-12
+55,Opkuis werf (afvoer puin & afval),5.0,52;53;54,5.0,C2016-12
+56,Grondafvoer,1.0,52;53;54,1.0,C2016-12
+57,Opritten en terassen,20.0,55;56,20.0,C2016-12
+58,Tuinaanleg,20.0,55;56,20.0,C2016-12
+59,Schilderwerken,25.0,52;53;54,25.0,C2016-12
+1,Werfinrichting/Werftoiletten,5.0,,5.0,C2016-13
+2,Voorbereiding oplevering,2.0,,3.0,C2016-13
+3,Studiekosten projectontwikkelaar,9.0,,13.0,C2016-13
+4,Passief,8.0,,3.0,C2016-13
+5,Funderingen,27.0,1;2;3;4,32.0,C2016-13
+6,GEWA/Metselwerken,20.0,5,17.0,C2016-13
+7,Gewelven/Structuur,17.0,6,16.0,C2016-13
+8,Uitbranden GEWA,2.0,6,2.0,C2016-13
+9,Isolatie,11.0,7;8,9.0,C2016-13
+10,Parament,41.0,9,49.0,C2016-13
+11,Ytong/Gipswanden,3.0,10,3.0,C2016-13
+12,Dorpels,4.0,11,6.0,C2016-13
+13,Voegwerk,11.0,11,11.0,C2016-13
+14,Stelling,7.0,12;13,5.0,C2016-13
+15,Karweien,1.0,14,1.0,C2016-13
+16,Daktimmer traditioneel/prefabkap,38.0,15,35.0,C2016-13
+17,Dakdekken,9.0,16,14.0,C2016-13
+18,Goten & afleiders,3.0,17,7.0,C2016-13
+19,Kader buitenschrijnwerk / Wachtbuizen,2.0,18,1.0,C2016-13
+20,Buitenschrijnwerk plaatsen,9.0,19,12.0,C2016-13
+21,Elastische voegen,3.0,20,2.0,C2016-13
+22,Poort,4.0,20,5.0,C2016-13
+23,Karwei buitenschrijnwerk,3.0,20,3.0,C2016-13
+24,Plakwerken,12.0,43,15.0,C2016-13
+25,Chapes,5.0,24,10.0,C2016-13
+26,Vloerisolatie,6.0,36,5.0,C2016-13
+27,Tegelwerken,15.0,26,15.0,C2016-13
+28,Buisbek/Zoldluik/Platen zold/Stijl,3.0,27,2.0,C2016-13
+29,Binnendeuren/Uitbekledingen,5.0,27,5.0,C2016-13
+30,Trap,3.0,27,3.0,C2016-13
+31,Luchtdichten,9.0,27,7.0,C2016-13
+32,Karweiploeg,2.0,27,2.0,C2016-13
+33,UZL,3.0,20,4.0,C2016-13
+34,Betonplexplaten,2.0,20,2.0,C2016-13
+35,Slijpen technieken/boringen,5.0,33;34,5.0,C2016-13
+36,Bad en douche,1.0,25,2.0,C2016-13
+37,Leidingen ventilatie,3.0,35,2.0,C2016-13
+38,Leidingen san/WP/CV,4.0,37,4.0,C2016-13
+39,Leidingen vloerverwarming,6.0,38,5.0,C2016-13
+40,Afwerken ventilatie,2.0,27,1.0,C2016-13
+41,Afwerken sanitair,3.0,40,4.0,C2016-13
+42,Afwerken CV/WP,4.0,41,5.0,C2016-13
+43,Leidingen electro,4.0,39,4.0,C2016-13
+44,Afwerken electro,5.0,42,8.0,C2016-13
+45,Verlichting,2.0,44,2.0,C2016-13
+46,"Diepsondering, bron en aansluiting",5.0,44,5.0,C2016-13
+47,Karweien,5.0,44,6.0,C2016-13
+48,Opkuis werf (afvoer puin en afval),5.0,45;46;47,5.0,C2016-13
+50,Grondafvoer,6.0,45;46;47,6.0,C2016-13
+51,Schilderwerken,10.0,45;46;47,10.0,C2016-13
+52,Rest,5.0,51,5.0,C2016-13
+1,Werfinrichting,3.0,,6.0,C2016-14
+2,Transportkosten,7.0,,8.0,C2016-14
+3,Rijtijden ploegen,8.0,,7.0,C2016-14
+4,Studiekosten,11.0,,10.0,C2016-14
+5,Funderingen,30.0,1;2;3;4,30.0,C2016-14
+6,Gewa/metselwerk,19.0,5,19.0,C2016-14
+7,Gewelven/Structuur,7.0,6,7.0,C2016-14
+8,Uitbranden GEWA,1.0,6,1.0,C2016-14
+9,Isolatie,5.0,7;8,6.0,C2016-14
+10,Parament,35.0,9,33.0,C2016-14
+11,Ytong,4.0,10,5.0,C2016-14
+12,Dorpels,3.0,11,2.0,C2016-14
+13,Voegwerk,6.0,11,7.0,C2016-14
+14,Stelling,4.0,12;13,9.0,C2016-14
+15,Crepi+Isolatie,2.0,14,1.0,C2016-14
+16,Karweien,1.0,15,4.0,C2016-14
+17,Daktimmer traditioneel/prefabkap,35.0,16,34.0,C2016-14
+18,Dakdekken,20.0,17,18.0,C2016-14
+19,Goten & Afleiders,3.0,18,3.0,C2016-14
+20,Oversteken/Gevelbekleding,16.0,18,12.0,C2016-14
+21,Dakvlakramen,1.0,20,1.0,C2016-14
+22,Buitenschrijnwerk plaatsen,15.0,21,16.0,C2016-14
+23,Plakwerken,12.0,41,12.0,C2016-14
+24,Chapes/uitvullingen,5.0,23,5.0,C2016-14
+25,Vloerisolatie,10.0,35,10.0,C2016-14
+26,Tegelwerken,7.0,25,7.0,C2016-14
+27,Voorbereiding+Gyplat,8.0,26,6.0,C2016-14
+28,Buisbek/Zoldluik/Platen zold/Stijl,4.0,26,4.0,C2016-14
+29,Binnendeuren/Uitbekleding,4.0,27;28,3.0,C2016-14
+30,Trap,6.0,27;28,6.0,C2016-14
+31,Luchtdichten,10.0,27;28,12.0,C2016-14
+32,UZL,3.0,22,3.0,C2016-14
+33,Betonplexplaten,1.0,22,1.0,C2016-14
+34,Slijpen technieken/Boringen,4.0,32;33,7.0,C2016-14
+35,Bad &amp; douche,1.0,24,1.0,C2016-14
+36,Leidingen vent,3.0,34,2.0,C2016-14
+37,Leidingen san/WP/CV,5.0,36,6.0,C2016-14
+38,Afwerken ventilatie,2.0,26,3.0,C2016-14
+39,Afwerken sanitair,3.0,38,1.0,C2016-14
+40,Afwerken CV/WP,2.0,39,1.0,C2016-14
+41,Leidingen electro,4.0,37,3.0,C2016-14
+42,Afwerken electro,4.0,40,3.0,C2016-14
+43,Zonneboiler,1.0,42,2.0,C2016-14
+44,PV panelen,3.0,42,3.0,C2016-14
+45,Verlichting,1.0,42,1.0,C2016-14
+46,Karweien,9.0,42,8.0,C2016-14
+47,Opkuis werf (afvoeren puin & afval),5.0,46,5.0,C2016-14
+48,Rest,31.0,47,31.0,C2016-14
+1,Transportkosten,3.0,,10.0,C2016-15
+2,Studiekosten,19.0,,10.0,C2016-15
+3,Funderingen,27.0,1;2,31.0,C2016-15
+4,Gewa/Metselwerk,23.0,3,26.0,C2016-15
+5,Gewelven/Structuur,8.0,4,3.0,C2016-15
+6,Uitbranden GEWA,2.0,4,2.0,C2016-15
+7,Isolatie,8.0,5;6,8.0,C2016-15
+8,Parament,23.0,7,25.0,C2016-15
+9,Ytong,8.0,8,14.0,C2016-15
+10,Dorpels,2.0,9,4.0,C2016-15
+11,Voegwerk,8.0,9,5.0,C2016-15
+12,Stelling,9.0,9,11.0,C2016-15
+13,Karweien,1.0,10;11;12,2.0,C2016-15
+1,F1 ventilatie,5.0,,5.0,C2016-16
+2,F1 san/cv,5.0,1,5.0,C2016-16
+3,F1 elektr,5.0,2,5.0,C2016-16
+4,Aansluiting water,5.0,3,5.0,C2016-16
+5,Dakisolatie,10.0,3,10.0,C2016-16
+6,F1 pleister,5.0,5,5.0,C2016-16
+7,Opm keuken,5.0,6,5.0,C2016-16
+25,F2 san/cv,5.0,6,5.0,C2016-16
+8,F2 ventilatie,5.0,7;25,5.0,C2016-16
+9,Vloerisolatie,5.0,7;25,5.0,C2016-16
+10,Chape,5.0,9,5.0,C2016-16
+11,Opm Binnenschr,5.0,10,5.0,C2016-16
+12,F2 elektr,5.0,10,5.0,C2016-16
+13,openen E/G/W,5.0,12,5.0,C2016-16
+14,F3 san/cv,5.0,13,5.0,C2016-16
+15,Vloerwerken,5.0,14,5.0,C2016-16
+16,Trappen,5.0,15,5.0,C2016-16
+17,Binnenschrijnwerk,5.0,16,5.0,C2016-16
+18,Keuken,5.0,17,5.0,C2016-16
+19,Afw ventilatie,5.0,18,5.0,C2016-16
+20,Afw elektr,5.0,18,5.0,C2016-16
+21,Afw san/cv,5.0,19;20,5.0,C2016-16
+26,Afw vloer,5.0,19,5.0,C2016-16
+24,Afw pleister,5.0,19;20,5.0,C2016-16
+1,F1 ventilatie,5.0,,5.0,C2016-17
+2,F1 san/cv,5.0,1,5.0,C2016-17
+3,F1 elektr,5.0,2,5.0,C2016-17
+4,Aansluiting water,5.0,3,5.0,C2016-17
+5,Dakisolatie,10.0,3,10.0,C2016-17
+6,F1 pleister,5.0,5,5.0,C2016-17
+7,Opm keuken,5.0,6,5.0,C2016-17
+25,F2 san/cv,5.0,6,5.0,C2016-17
+8,F2 ventilatie,5.0,7;25,5.0,C2016-17
+9,Vloerisolatie,5.0,7;25,5.0,C2016-17
+10,Chape,5.0,9,5.0,C2016-17
+11,Opm Binnenschr,5.0,10,5.0,C2016-17
+12,F2 elektr,5.0,10,5.0,C2016-17
+13,openen E/G/W,1.0,12,1.0,C2016-17
+14,F3 san/cv,5.0,13,5.0,C2016-17
+15,Vloerwerken,5.0,14,5.0,C2016-17
+16,Trappen,5.0,15,5.0,C2016-17
+17,Binnenschrijnwerk,5.0,16,5.0,C2016-17
+18,Keuken,5.0,17,5.0,C2016-17
+19,Afw ventilatie,5.0,18,5.0,C2016-17
+20,Afw elektr,5.0,18,5.0,C2016-17
+21,Afw san/cv,5.0,19;20,5.0,C2016-17
+26,Afw vloer,5.0,19,5.0,C2016-17
+24,Afw pleister,5.0,19;20,5.0,C2016-17
+1,F1 ventilatie,5.0,,5.0,C2016-18
+2,F1 san/cv,5.0,1,5.0,C2016-18
+3,F1 elektr,5.0,2,5.0,C2016-18
+4,Aansluiting water,5.0,3,5.0,C2016-18
+5,Dakisolatie,5.0,3,5.0,C2016-18
+6,F1 pleister,10.0,5,10.0,C2016-18
+7,Opm keuken,5.0,6,5.0,C2016-18
+25,F2 san/cv,5.0,6,5.0,C2016-18
+8,F2 ventilatie,5.0,7;25,5.0,C2016-18
+9,Vloerisolatie,5.0,7;25,5.0,C2016-18
+27,Vloerverwarming,5.0,9,5.0,C2016-18
+10,Chape,5.0,27,5.0,C2016-18
+11,Opm Binnenschr,5.0,10,5.0,C2016-18
+12,F2 elektr,5.0,10,5.0,C2016-18
+13,openen E/G/W,1.0,12,1.0,C2016-18
+14,F3 san/cv,5.0,13,5.0,C2016-18
+15,Vloerwerken,5.0,14,5.0,C2016-18
+16,Trappen,5.0,15,5.0,C2016-18
+17,Binnenschrijnwerk,5.0,16,5.0,C2016-18
+18,Keuken,5.0,17,5.0,C2016-18
+19,Afw ventilatie,5.0,18,5.0,C2016-18
+20,Afw elektr,5.0,18,5.0,C2016-18
+21,Afw san/cv,5.0,19;20,5.0,C2016-18
+26,Afw vloer,5.0,19,5.0,C2016-18
+24,Afw pleister,5.0,19;20,5.0,C2016-18
+1,F1 ventilatie,5.0,,5.0,C2016-19
+2,F1 san/cv,5.0,1,5.0,C2016-19
+3,F1 elektr,5.0,2,5.0,C2016-19
+4,Aansluiting water,5.0,3,5.0,C2016-19
+5,Dakisolatie,5.0,3,5.0,C2016-19
+6,F1 pleister,10.0,5,10.0,C2016-19
+7,Opm keuken,5.0,6,5.0,C2016-19
+25,F2 san/cv,5.0,6,5.0,C2016-19
+8,F2 ventilatie,5.0,7;25,5.0,C2016-19
+9,Vloerisolatie,5.0,7;25,5.0,C2016-19
+27,Vloerverwarming,5.0,9,5.0,C2016-19
+10,Chape,5.0,27,5.0,C2016-19
+11,Opm Binnenschr,5.0,10,5.0,C2016-19
+12,F2 elektr,5.0,10,5.0,C2016-19
+13,openen E/G/W,1.0,12,1.0,C2016-19
+14,F3 san/cv,5.0,13,5.0,C2016-19
+15,Vloerwerken,5.0,14,5.0,C2016-19
+16,Trappen,5.0,15,5.0,C2016-19
+17,Binnenschrijnwerk,5.0,16,5.0,C2016-19
+18,Keuken,5.0,17,5.0,C2016-19
+19,Afw ventilatie,5.0,18,5.0,C2016-19
+20,Afw elektr,5.0,18,5.0,C2016-19
+21,Afw san/cv,5.0,19;20,5.0,C2016-19
+26,Afw vloer,5.0,19,5.0,C2016-19
+24,Afw pleister,5.0,19;20,5.0,C2016-19
+1,F1 ventilatie,5.0,,5.0,C2016-20
+2,F1 san/cv,5.0,1,5.0,C2016-20
+3,F1 elektr,5.0,2,5.0,C2016-20
+4,Aansluiting water,5.0,3,5.0,C2016-20
+5,Dakisolatie,5.0,3,5.0,C2016-20
+6,F1 pleister,10.0,5,10.0,C2016-20
+7,Opm keuken,5.0,6,5.0,C2016-20
+25,F2 san/cv,5.0,6,5.0,C2016-20
+8,F2 ventilatie,5.0,7;25,5.0,C2016-20
+9,Vloerisolatie,5.0,7;25,5.0,C2016-20
+27,Vloerverwarming,5.0,9,5.0,C2016-20
+10,Chape,5.0,27,5.0,C2016-20
+11,Opm Binnenschr,5.0,10,5.0,C2016-20
+12,F2 elektr,5.0,10,5.0,C2016-20
+13,openen E/G/W,1.0,12,1.0,C2016-20
+14,F3 san/cv,5.0,13,5.0,C2016-20
+15,Vloerwerken,5.0,14,5.0,C2016-20
+16,Trappen,5.0,15,5.0,C2016-20
+17,Binnenschrijnwerk,5.0,16,5.0,C2016-20
+18,Keuken,5.0,17,5.0,C2016-20
+19,Afw ventilatie,5.0,18,5.0,C2016-20
+20,Afw elektr,5.0,18,5.0,C2016-20
+21,Afw san/cv,5.0,19;20,5.0,C2016-20
+26,Afw vloer,5.0,19,5.0,C2016-20
+24,Afw pleister,5.0,19;20,5.0,C2016-20
+1,F1 ventilatie,5.0,,5.0,C2016-21
+2,F1 san/cv,5.0,1,5.0,C2016-21
+3,F1 elektr,5.0,2,5.0,C2016-21
+4,Aansluiting water,5.0,3,5.0,C2016-21
+5,Dakisolatie,10.0,3,10.0,C2016-21
+6,F1 pleister,10.0,5,10.0,C2016-21
+7,Opm keuken,5.0,6,5.0,C2016-21
+25,F2 san/cv,5.0,6,5.0,C2016-21
+8,F2 ventilatie,5.0,7;25,5.0,C2016-21
+9,Vloerisolatie,5.0,7;25,5.0,C2016-21
+10,Chape,5.0,9,5.0,C2016-21
+11,Opm Binnenschr,5.0,10,5.0,C2016-21
+12,F2 elektr,5.0,10,5.0,C2016-21
+13,openen E/G/W,1.0,12,1.0,C2016-21
+14,F3 san/cv,5.0,13,5.0,C2016-21
+15,Vloerwerken,5.0,14,5.0,C2016-21
+16,Trappen,5.0,15,5.0,C2016-21
+17,Binnenschrijnwerk,5.0,16,5.0,C2016-21
+18,Keuken,5.0,17,5.0,C2016-21
+19,Afw ventilatie,10.0,18,10.0,C2016-21
+20,Afw elektr,10.0,18,10.0,C2016-21
+21,Afw san/cv,10.0,19;20,10.0,C2016-21
+26,Afw vloer,10.0,19,10.0,C2016-21
+24,Afw pleister,10.0,19;20,10.0,C2016-21
+1,F1 ventilatie,5.0,,5.0,C2016-22
+2,F1 san/cv,5.0,1,5.0,C2016-22
+3,F1 elektr,5.0,2,5.0,C2016-22
+4,Aansluiting water,5.0,3,5.0,C2016-22
+5,Dakisolatie,10.0,3,10.0,C2016-22
+6,F1 pleister,10.0,5,10.0,C2016-22
+7,Opm keuken,5.0,6,5.0,C2016-22
+25,F2 san/cv,5.0,6,5.0,C2016-22
+8,F2 ventilatie,5.0,7;25,5.0,C2016-22
+9,Vloerisolatie,5.0,7;25,5.0,C2016-22
+10,Chape,5.0,9,5.0,C2016-22
+11,Opm Binnenschr,5.0,10,5.0,C2016-22
+12,F2 elektr,5.0,10,5.0,C2016-22
+13,openen E/G/W,1.0,12,1.0,C2016-22
+14,F3 san/cv,5.0,13,5.0,C2016-22
+15,Vloerwerken,5.0,14,5.0,C2016-22
+16,Trappen,5.0,15,5.0,C2016-22
+17,Binnenschrijnwerk,5.0,16,5.0,C2016-22
+18,Keuken,5.0,17,5.0,C2016-22
+19,Afw ventilatie,10.0,18,10.0,C2016-22
+20,Afw elektr,10.0,18,10.0,C2016-22
+21,Afw san/cv,10.0,19;20,10.0,C2016-22
+26,Afw vloer,10.0,19,10.0,C2016-22
+24,Afw pleister,10.0,19;20,10.0,C2016-22
+1,F1 ventilatie,5.0,,5.0,C2016-23
+2,F1 san/cv,5.0,1,5.0,C2016-23
+3,F1 elektr,5.0,2,5.0,C2016-23
+4,Aansluiting water,5.0,3,5.0,C2016-23
+5,Dakisolatie,10.0,3,10.0,C2016-23
+6,F1 pleister,10.0,5,10.0,C2016-23
+7,Opm keuken,5.0,6,5.0,C2016-23
+25,F2 san/cv,5.0,6,5.0,C2016-23
+8,F2 ventilatie,5.0,7;25,5.0,C2016-23
+9,Vloerisolatie,5.0,7;25,5.0,C2016-23
+10,Chape,5.0,9,5.0,C2016-23
+11,Opm Binnenschr,5.0,10,5.0,C2016-23
+12,F2 elektr,5.0,10,5.0,C2016-23
+13,openen E/G/W,1.0,12,1.0,C2016-23
+14,F3 san/cv,5.0,13,5.0,C2016-23
+15,Vloerwerken,5.0,14,5.0,C2016-23
+16,Trappen,5.0,15,5.0,C2016-23
+17,Binnenschrijnwerk,5.0,16,5.0,C2016-23
+18,Keuken,5.0,17,5.0,C2016-23
+19,Afw ventilatie,10.0,18,10.0,C2016-23
+20,Afw elektr,10.0,18,10.0,C2016-23
+21,Afw san/cv,10.0,19;20,10.0,C2016-23
+26,Afw vloer,10.0,19,10.0,C2016-23
+24,Afw pleister,10.0,19;20,10.0,C2016-23
+1,F1 ventilatie,5.0,,5.0,C2016-24
+2,F1 san/cv,5.0,1,5.0,C2016-24
+3,F1 elektr,5.0,2,5.0,C2016-24
+4,Aansluiting water,5.0,3,5.0,C2016-24
+5,Dakisolatie,10.0,3,10.0,C2016-24
+6,F1 pleister,10.0,5,10.0,C2016-24
+7,Opm keuken,5.0,6,5.0,C2016-24
+25,F2 san/cv,5.0,6,5.0,C2016-24
+8,F2 ventilatie,5.0,7;25,5.0,C2016-24
+9,Vloerisolatie,5.0,7;25,5.0,C2016-24
+10,Chape,5.0,9,5.0,C2016-24
+11,Opm Binnenschr,5.0,10,5.0,C2016-24
+12,F2 elektr,5.0,10,5.0,C2016-24
+13,openen E/G/W,1.0,12,1.0,C2016-24
+14,F3 san/cv,5.0,13,5.0,C2016-24
+15,Vloerwerken,5.0,14,5.0,C2016-24
+16,Trappen,5.0,15,5.0,C2016-24
+17,Binnenschrijnwerk,5.0,16,5.0,C2016-24
+18,Keuken,5.0,17,5.0,C2016-24
+19,Afw ventilatie,10.0,18,10.0,C2016-24
+20,Afw elektr,10.0,18,10.0,C2016-24
+21,Afw san/cv,10.0,19;20,10.0,C2016-24
+26,Afw vloer,10.0,19,10.0,C2016-24
+24,Afw pleister,10.0,19;20,10.0,C2016-24
+1,F1 ventilatie,5.0,,5.0,C2016-25
+2,F1 san/cv,5.0,1,5.0,C2016-25
+3,F1 elektr,5.0,2,5.0,C2016-25
+4,Aansluiting water,5.0,3,5.0,C2016-25
+5,Dakisolatie,10.0,3,10.0,C2016-25
+6,F1 pleister,10.0,5,10.0,C2016-25
+7,Opm keuken,5.0,6,5.0,C2016-25
+25,F2 san/cv,5.0,6,5.0,C2016-25
+8,F2 ventilatie,5.0,7;25,5.0,C2016-25
+9,Vloerisolatie,5.0,7;25,5.0,C2016-25
+10,Chape,5.0,9,5.0,C2016-25
+11,Opm Binnenschr,5.0,10,5.0,C2016-25
+12,F2 elektr,5.0,10,5.0,C2016-25
+13,openen E/G/W,1.0,12,1.0,C2016-25
+14,F3 san/cv,5.0,13,5.0,C2016-25
+15,Vloerwerken,5.0,14,5.0,C2016-25
+16,Trappen,5.0,15,5.0,C2016-25
+17,Binnenschrijnwerk,5.0,16,5.0,C2016-25
+18,Keuken,5.0,17,5.0,C2016-25
+19,Afw ventilatie,5.0,18,5.0,C2016-25
+20,Afw elektr,5.0,18,5.0,C2016-25
+21,Afw san/cv,5.0,19;20,5.0,C2016-25
+26,Afw vloer,5.0,19,5.0,C2016-25
+24,Afw pleister,5.0,19;20,5.0,C2016-25
+1,F1 ventilatie,5.0,,5.0,C2016-26
+2,F1 san/cv,5.0,1,5.0,C2016-26
+3,F1 elektr,5.0,2,5.0,C2016-26
+4,Aansluiting water,5.0,3,5.0,C2016-26
+5,Dakisolatie,10.0,3,10.0,C2016-26
+6,F1 pleister,10.0,5,10.0,C2016-26
+7,Opm keuken,5.0,6,5.0,C2016-26
+25,F2 san/cv,5.0,6,5.0,C2016-26
+8,F2 ventilatie,5.0,7;25,5.0,C2016-26
+9,Vloerisolatie,5.0,7;25,5.0,C2016-26
+10,Chape,5.0,9,5.0,C2016-26
+11,Opm Binnenschr,5.0,10,5.0,C2016-26
+12,F2 elektr,5.0,10,5.0,C2016-26
+13,openen E/G/W,1.0,12,1.0,C2016-26
+14,F3 san/cv,5.0,13,5.0,C2016-26
+15,Vloerwerken,5.0,14,5.0,C2016-26
+16,Trappen,5.0,15,5.0,C2016-26
+17,Binnenschrijnwerk,5.0,16,5.0,C2016-26
+18,Keuken,5.0,17,5.0,C2016-26
+19,Afw ventilatie,5.0,18,5.0,C2016-26
+20,Afw elektr,5.0,18,5.0,C2016-26
+21,Afw san/cv,5.0,19;20,5.0,C2016-26
+26,Afw vloer,5.0,19,5.0,C2016-26
+24,Afw pleister,5.0,19;20,5.0,C2016-26
+2,rooien bomen en struiken terrein + afvoer,5.0,,5.0,C2016-27
+3,"werfinrichting : hekkens, keten, signalisatie",5.0,2,6.0,C2016-27
+6,"afbraak herenhuis, scheimuur midden",15.0,2;3,18.0,C2016-27
+8,voorafgraving terrein voor beschoeiing + geleidebalken,20.0,2;3,20.0,C2016-27
+9,installatie bemaling rondom bouwput,3.0,8,4.0,C2016-27
+10,werfinstallatie beschoeiing,2.0,8,3.0,C2016-27
+11,uitvoering beschoeiing tussen as Ab-Hb (zone blok B),12.0,10,14.0,C2016-27
+12,uitvoering beschoeiing tussen as Aa-Ab (zone blok A),10.0,11,11.0,C2016-27
+13,uitgraving bouwput zone as Ab-Hb,8.0,11,8.0,C2016-27
+14,uitgraving bouwput zone as Aa-Ab,15.0,12,15.0,C2016-27
+15,uitgraving inrit garage,4.0,14,4.0,C2016-27
+16,werfinstallatie palenmachine,2.0,14,2.0,C2016-27
+17,uitvoering funderingspalen tussen as Ab-Hb,5.0,16,7.0,C2016-27
+18,uitvoering funderingspalen tussen as Aa-Ab,5.0,17,7.0,C2016-27
+19,Uitgraven paalkoppen as Ab-Hb,2.0,17,3.0,C2016-27
+20,Uitgraven paalkoppen as Aa-Ab,5.0,19,7.0,C2016-27
+1,betonnen paalkoppen tss as Ab-Hb,6.0,,5.0,C2016-28
+2,betonneren paalkoppen tss as Aa-Ab,10.0,,12.0,C2016-28
+3,plaatsen riolering onder radier tss as Ab-Hb,3.0,1,4.0,C2016-28
+4,plaatsen riolering onder radier tss as Aa-Ab,5.0,2,6.0,C2016-28
+5,fijnnivelleren en zuiverheidsbeton vloer tss as Ab-Hb,2.0,3,2.0,C2016-28
+6,fijnnivelleren en zuiverheidsbeton vloer tss as Aa-Ab,2.0,4,2.0,C2016-28
+7,"vlechten, storten, pollieren kelder vloerplaat tss as Ab-Hb",8.0,5,9.0,C2016-28
+8,"vlechten, storten, pollieren kelder vloerplaat tss as Aa-Ab",12.0,6,13.0,C2016-28
+9,kelderwand buitenomtrek tss as Ab-Hb,10.0,7,10.0,C2016-28
+10,kelderwand buitenomtrek tss as Aa-Ab,15.0,8,15.0,C2016-28
+11,binnenwanden in beton tss as Ab-Hb,5.0,9,4.0,C2016-28
+12,binnenwanden in beton tss as Aa-Ab,10.0,10,9.0,C2016-28
+13,kolommen en balken tss as Ab-Hb,10.0,11,13.0,C2016-28
+14,kolommen en balken tss as Aa-Ab,10.0,12,13.0,C2016-28
+15,predallen + opstort tss as Ab-Hb,6.0,13,10.0,C2016-28
+16,welfsels + opstort tss as Aa-Ab,7.0,14,6.0,C2016-28
+17,ontkisten kelder en proper maken,5.0,16,5.0,C2016-28
+18,uitvoeren van metselwerken kelder,10.0,17,12.0,C2016-28
+19,opkuis voor start techniekers,5.0,18,5.0,C2016-28
+1,kolommen gelijkvloers blok A,10.0,,10.0,C2016-29
+2,wanden gelijkvloers blok A,15.0,1,15.0,C2016-29
+3,balken/liggers boven gelijkvloers blok A,25.0,2,29.0,C2016-29
+4,afdek gelijkvloers blok A welfsels + opstort druklaag,12.0,3,12.0,C2016-29
+5,kolommen +1 blok A,5.0,4,5.0,C2016-29
+6,wanden kernen +1 blok A,10.0,5,10.0,C2016-29
+7,dragend metselwerk snelbouw +1 blok A,18.0,4,22.0,C2016-29
+8,balken/liggers boven +1 blok A,5.0,7,6.0,C2016-29
+9,afdek verdieping +1 blok A welfsels + opstort druklaag,6.0,8,6.0,C2016-29
+10,kolommen +2 blok A,5.0,9,5.0,C2016-29
+11,wanden kernen +2 blok A,5.0,10,5.0,C2016-29
+12,dragend metselwerk snelbouw +2 blok A,16.0,10,20.0,C2016-29
+13,balken/liggers boven +2 blok A,9.0,12,10.0,C2016-29
+14,afdek verdieping +2 blok A welfsels + opstort druklaag,6.0,13,6.0,C2016-29
+15,kolommen +3 blok A,3.0,14,3.0,C2016-29
+16,wanden kernen +3 blok A,3.0,15,3.0,C2016-29
+17,dragend metselwerk snelbouw +3 blok A,16.0,14,16.0,C2016-29
+18,balken/liggers boven +3 blok A,9.0,17,10.0,C2016-29
+19,afdek verdieping +3 blok A welfsels + opstort druklaag,6.0,18,6.0,C2016-29
+1,kolommen gelijkvloers blok B,5.0,,5.0,C2016-30
+2,wanden gelijkvloers blok B,5.0,1,4.0,C2016-30
+3,dragend metselwerk snelbouw gelijkvloers blok B,15.0,2,17.0,C2016-30
+4,balken/liggers boven gelijkvloers blok B,9.0,3,10.0,C2016-30
+5,afdek gelijkvloers blok B welfsels + opstort druklaag,5.0,4,5.0,C2016-30
+6,kolommen +1 blok B,5.0,5,5.0,C2016-30
+7,wanden kernen +1 blok B,5.0,6,4.0,C2016-30
+8,dragend metselwerk snelbouw +1 blok B,15.0,7,17.0,C2016-30
+9,balken/liggers boven +1 blok B,9.0,8,10.0,C2016-30
+10,afdek verdieping +1 blok B welfsels + opstort druklaag,6.0,9,6.0,C2016-30
+11,platen tpg d=17 en d=21 boven +1,4.0,10,4.0,C2016-30
+12,kolommen +2 blok B,5.0,10,5.0,C2016-30
+13,wanden kernen +2 blok B,5.0,12,4.0,C2016-30
+14,dragend metselwerk snelbouw +2 blok B,15.0,12,17.0,C2016-30
+15,balken/liggers boven +2 blok B,9.0,14,10.0,C2016-30
+16,afdek verdieping +2 blok B welfsels + opstort druklaag,6.0,15,6.0,C2016-30
+17,platen tpg d=17 en d=21 boven +2,4.0,16,4.0,C2016-30
+18,kolommen +3 blok B,3.0,16,3.0,C2016-30
+19,wanden kernen +3 blok B,3.0,18,4.0,C2016-30
+20,dragend metselwerk snelbouw +3 blok B,7.0,18,9.0,C2016-30
+21,balken/liggers boven +3 blok B,3.0,20,3.0,C2016-30
+22,afdek verdieping +3 blok B welfsels + opstort druklaag,5.0,21,5.0,C2016-30
+23,platen tpg d=15 boven +3,3.0,22,3.0,C2016-30
+1,pleisterwerken wanden 0A,15.0,,17.0,C2016-31
+2,pleisterwerken plafonds 0A,5.0,1,7.0,C2016-31
+3,lichte scheidingswanden 0A,10.0,2,10.0,C2016-31
+4,gespoten PU isolatie en uitvullingen 0A,3.0,3,5.0,C2016-31
+5,chape 0A,5.0,4,5.0,C2016-31
+6,plaatsen keramische tegels 0A,10.0,5,10.0,C2016-31
+7,plaatsen faience 0A,10.0,6,10.0,C2016-31
+8,verlaagde plafonds 0A,20.0,5,20.0,C2016-31
+9,zachte vloerbekleding 0A,12.0,5,15.0,C2016-31
+10,binnenschrijnwerk 0A,8.0,9,10.0,C2016-31
+11,schilderwerken wanden en plafonds 0A,20.0,9,25.0,C2016-31
+12,binnenmeubilair 0A,10.0,9,10.0,C2016-31
+13,pleisterwerken wanden 1A,10.0,1,10.0,C2016-31
+14,pleisterwerken plafonds 1A,15.0,13,15.0,C2016-31
+15,lichte scheidingswanden 1A,10.0,14,10.0,C2016-31
+16,vloer uitvullingen 1A,3.0,15,5.0,C2016-31
+17,chape 1A,5.0,16,5.0,C2016-31
+18,plaatsen keramische tegels 1A,10.0,17,10.0,C2016-31
+19,plaatsen faience 1A,10.0,18,10.0,C2016-31
+20,zachte vloerbekleding 1A,12.0,17,15.0,C2016-31
+21,binnenschrijnwerk 1A,8.0,20,10.0,C2016-31
+22,schilderwerken wanden en plafonds 1A,20.0,20,25.0,C2016-31
+23,binnenmeubilair 1A,10.0,20,10.0,C2016-31
+1,pleisterwerken wanden 2A,15.0,,17.0,C2016-32
+2,pleisterwerken plafonds 2A,10.0,1,12.0,C2016-32
+3,lichte scheidingswanden 2A,10.0,2,10.0,C2016-32
+4,vloer uitvullingen 2A,3.0,3,5.0,C2016-32
+5,chape 2A,5.0,4,5.0,C2016-32
+6,plaatsen keramische tegels 2A,10.0,5,10.0,C2016-32
+7,plaatsen faience 2A,10.0,6,10.0,C2016-32
+8,zachte vloerbekleding 2A,12.0,5,15.0,C2016-32
+9,binnenschrijnwerk 2A,8.0,8,10.0,C2016-32
+10,schilderwerken wanden en plafonds 2A,20.0,8,25.0,C2016-32
+11,binnenmeubilair 2A,10.0,8,10.0,C2016-32
+12,pleisterwerken wanden 3A,10.0,5,10.0,C2016-32
+13,pleisterwerken plafonds 3A,5.0,12,5.0,C2016-32
+14,lichte scheidingswanden 3A,10.0,13,10.0,C2016-32
+15,vloer uitvullingen 3A,3.0,14,5.0,C2016-32
+16,chape 3A,3.0,15,5.0,C2016-32
+17,plaatsen keramische tegels 3A,8.0,16,10.0,C2016-32
+18,plaatsen faience 3A,8.0,17,10.0,C2016-32
+19,zachte vloerbekleding 3A,10.0,16,10.0,C2016-32
+20,binnenschrijnwerk 3A,8.0,19,10.0,C2016-32
+21,schilderwerken wanden en plafonds 3A,10.0,19,10.0,C2016-32
+22,binnenmeubilair 3A,8.0,19,10.0,C2016-32
+1,pleisterwerken wanden 0 B,15.0,,18.0,C2016-33
+2,pleisterwerken plafonds 0 B,5.0,1,7.0,C2016-33
+3,lichte scheidingswanden 0 B,10.0,2,10.0,C2016-33
+4,gespoten PU isolaie en uitvullingen 0 B,3.0,3,5.0,C2016-33
+5,chape 0 B,5.0,4,5.0,C2016-33
+6,plaatsen keramsiche tegels 0 B,10.0,5,10.0,C2016-33
+7,plaatsen faience 0 B,10.0,6,10.0,C2016-33
+8,verlaagde plafonds 0 B,20.0,5,20.0,C2016-33
+9,zachte vloerbekleding 0 B,10.0,5,10.0,C2016-33
+10,binnenschrijnwerk 0 B,8.0,9,10.0,C2016-33
+11,schilderwerken wanden en plafonds 0 B,20.0,9,25.0,C2016-33
+12,binnenmeubilair 0 B,10.0,9,10.0,C2016-33
+13,pleisterwerken wanden 1 B,15.0,5,18.0,C2016-33
+14,pleisterwerken plafonds 1 B,10.0,13,12.0,C2016-33
+15,lichte scheidingswanden 1 B,10.0,14,10.0,C2016-33
+16,vloer uitvullingen 1 B,3.0,15,5.0,C2016-33
+17,chape 1 B,5.0,16,5.0,C2016-33
+18,plaatsen keramsiche tegels 1 B,10.0,17,10.0,C2016-33
+19,plaatsen faience 1 B,10.0,18,10.0,C2016-33
+20,zachte vloerbekleding 1 B,10.0,17,10.0,C2016-33
+21,binnenschrijnwerk 1B,8.0,20,10.0,C2016-33
+22,schilderwerken wanden en plafonds 1B,20.0,20,25.0,C2016-33
+24,binnenmeubilair 1B,10.0,20,10.0,C2016-33
+1,pleisterwerken wanden 2B,15.0,,17.0,C2016-34
+2,pleisterwerken plafonds 2B,10.0,1,12.0,C2016-34
+3,lichte scheidingswanden 2B,10.0,2,10.0,C2016-34
+4,vloer uitvullingen 2B,3.0,3,5.0,C2016-34
+5,chape 2B,5.0,4,5.0,C2016-34
+6,plaatsen keramische tegels 2B,10.0,5,10.0,C2016-34
+7,plaatsen faience 2B,10.0,6,10.0,C2016-34
+8,zachte vloerbekleding 2B,10.0,5,10.0,C2016-34
+9,binnenschrijnwerk 2B,8.0,8,10.0,C2016-34
+10,schilderwerken wanden en plafonds 2B,20.0,8,25.0,C2016-34
+11,binnenmeubilair 2B,10.0,8,10.0,C2016-34
+12,pleisterwerken wanden 3B,10.0,2,10.0,C2016-34
+13,pleisterwerken plafonds 3B,5.0,12,5.0,C2016-34
+14,lichte scheidingswanden 3B,5.0,13,5.0,C2016-34
+15,vloer uitvullingen 3B,3.0,14,5.0,C2016-34
+16,chape 3B,3.0,15,5.0,C2016-34
+17,plaatsen keramische tegels 3B,8.0,16,10.0,C2016-34
+18,plaatsen faience 3B,8.0,17,10.0,C2016-34
+19,zachte vloerbekleding 3B,5.0,16,5.0,C2016-34
+20,binnenschrijnwerk 3B,8.0,19,10.0,C2016-34
+21,schilderwerken wanden en plafonds 3B,15.0,19,15.0,C2016-34
+22,binnenmeubilair 3B,8.0,19,10.0,C2016-34
+23,opkuis voor oplevering blok B,5.0,21,5.0,C2016-34

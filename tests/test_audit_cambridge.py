@@ -9,6 +9,8 @@ import ijson
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "training"))
+sys.path.insert(0, str(ROOT / "tests"))
+from checksum_utils import assert_frozen  # noqa: E402  (exact, else line-ending-equivalent)
 from audit_cambridge import (ACD, DATES, FEATURES, GROWTH, ODE, OUT, PROGRESS, FieldAudit,
     RejectDuplicateKeys, audit_activity, date_value, elapsed, field_policy, hash_file, numeric,
     iter_projects, pointer, source_mapping, weather_flags)
@@ -111,7 +113,12 @@ class CambridgeAuditTests(unittest.TestCase):
         self.assertIn("mean_temperature_outside_min_max", flags)
         self.assertEqual(weather["Mean_Monthly_Temperature"], "211.9")
 
-    @unittest.skipUnless((OUT / "audit_summary.json").exists(), "Run the full Cambridge audit first")
+    @unittest.skipUnless(
+        (OUT / "audit_summary.json").is_file()
+        and (OUT / "activity_label_audit.csv").is_file()
+        and (OUT / "activity_label_audit.csv").stat().st_size > 0,
+        "Run `python training/audit_cambridge.py` first; activity_label_audit.csv is Git-ignored generated output",
+    )
     def test_generated_counts_candidates_and_preserved_artifacts(self):
         summary = json.loads((OUT / "audit_summary.json").read_text())
         self.assertEqual(summary["project_records"], 299)
@@ -148,7 +155,7 @@ class CambridgeAuditTests(unittest.TestCase):
         hashes = json.loads((OUT / "protected_hashes.json").read_text())
         for path in ("data/raw/cambridge/JPF_Anonymised_Project_Data.json.zip", "models/duration_v1/model.pt",
                      "data/processed/stage2/verification_report.md", "scripts/schedule_engine.py", "app.py"):
-            self.assertEqual(hash_file(ROOT / path), hashes[path])
+            assert_frozen(self, ROOT / path, hashes[path])
 
 
 class CounterForCandidates:

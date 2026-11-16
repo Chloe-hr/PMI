@@ -1,0 +1,68 @@
+{
+  "source": "synthetic",
+  "projects": 120,
+  "independent_groups": 120,
+  "labelled_activities": 2510,
+  "folds": 5,
+  "metrics": {
+    "plan": {
+      "MAE_days": 4.083,
+      "MedAE_days": 3.138,
+      "MdAPE_pct": 24.31,
+      "MAE_log_ratio": 0.2986,
+      "mean_project_MAE_days": 4.045
+    },
+    "median": {
+      "MAE_days": 2.341,
+      "MedAE_days": 1.719,
+      "MdAPE_pct": 14.9,
+      "MAE_log_ratio": 0.1635,
+      "mean_project_MAE_days": 2.397
+    },
+    "category": {
+      "MAE_days": 1.81,
+      "MedAE_days": 1.188,
+      "MdAPE_pct": 9.4,
+      "MAE_log_ratio": 0.1161,
+      "mean_project_MAE_days": 1.828
+    },
+    "mlp": {
+      "MAE_days": 1.633,
+      "MedAE_days": 1.09,
+      "MdAPE_pct": 8.61,
+      "MAE_log_ratio": 0.1064,
+      "mean_project_MAE_days": 1.653
+    },
+    "gnn": {
+      "MAE_days": 0.795,
+      "MedAE_days": 0.531,
+      "MdAPE_pct": 4.44,
+      "MAE_log_ratio": 0.0531,
+      "mean_project_MAE_days": 0.791
+    }
+  },
+  "gnn_vs_best_baseline": {
+    "baseline": "mlp",
+    "mean_diff_MAE_days_per_project": -0.863,
+    "bootstrap_95ci": [
+      -0.938,
+      -0.796
+    ],
+    "gnn_better": true
+  },
+  "args": {
+    "source": "synthetic",
+    "folds": 5,
+    "epochs": 150,
+    "patience": 30,
+    "lr": 0.003,
+    "hidden": 64,
+    "layers": 3,
+    "seed": 42,
+    "out": null
+  },
+  "versions": {
+    "python": "3.14.7",
+    "torch": "2.15.0+cpu"
+  }
+}

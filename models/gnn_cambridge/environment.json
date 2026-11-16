@@ -1,0 +1,19 @@
+{
+  "python": "3.14.7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "torch_threads": 16,
+  "git_commit": "cc38083b41380150f75e7ca709da094b2617a00d",
+  "git_working_tree_dirty": true,
+  "packages": {
+    "torch": "2.15.0+cpu",
+    "torch_geometric": "2.8.1",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "ijson": "3.6.0",
+    "networkx": "3.7"
+  }
+}

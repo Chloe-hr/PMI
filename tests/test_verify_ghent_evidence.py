@@ -1,6 +1,9 @@
 import csv
+import hashlib
 import json
+import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -9,8 +12,101 @@ sys.path.insert(0, str(ROOT / "training"))
 from prepare_ghent_delays import OUT, SOURCE, load_verification, process_records, read_source
 from verify_ghent_evidence import duration_match, field_counts, investigate_ratios, parse_duration, sha
 
+TEXT_SUFFIXES = {
+    ".bat", ".cfg", ".css", ".csv", ".html", ".ini", ".js", ".json", ".jsonl",
+    ".md", ".p2x", ".ps1", ".py", ".rtf", ".sh", ".toml", ".txt", ".xml",
+    ".yaml", ".yml",
+}
+
+
+def byte_sha(content: bytes) -> str:
+    return hashlib.sha256(content).hexdigest()
+
+
+def normalized_text_sha(content: bytes) -> str:
+    """Return a diagnostic hash with CRLF normalized, without changing the file."""
+    return byte_sha(content.replace(b"\r\n", b"\n"))
+
+
+def preservation_result(path: Path, expected: str, frozen_content: bytes | None = None) -> str:
+    """Classify exact preservation, verified line-ending drift, or a real mismatch."""
+    path = Path(path)
+    current = path.read_bytes()
+
+    # This byte-exact comparison against the unchanged manifest hash is authoritative.
+    if byte_sha(current) == expected:
+        return "exact"
+
+    if path.suffix.lower() not in TEXT_SUFFIXES or frozen_content is None:
+        return "mismatch"
+
+    # Only trust a normalization baseline whose exact bytes match the frozen hash. Git stores text
+    # with LF but the freeze may have hashed a CRLF checkout, so the stored blob's CRLF and LF forms
+    # are tried too - a form is accepted only if it reproduces the frozen hash byte for byte.
+    lf_form = frozen_content.replace(b"\r\n", b"\n")
+    candidates = (frozen_content, lf_form, lf_form.replace(b"\n", b"\r\n"))
+    verified = next((c for c in candidates if byte_sha(c) == expected), None)
+    if verified is None:
+        return "mismatch"
+    if normalized_text_sha(current) == normalized_text_sha(verified):
+        return "line-ending-only"
+    return "mismatch"
+
+
+def frozen_git_content(path: Path) -> bytes | None:
+    """Return HEAD's blob only when it independently matches the frozen hash later."""
+    relative = Path(path).resolve().relative_to(ROOT).as_posix()
+    try:
+        return subprocess.check_output(
+            ["git", "show", f"HEAD:{relative}"], cwd=ROOT, stderr=subprocess.DEVNULL
+        )
+    except (subprocess.CalledProcessError, ValueError):
+        return None
+
 
 class VerifyGhentEvidenceTests(unittest.TestCase):
+    def test_exact_hashes_and_diagnostic_line_ending_comparison(self):
+        with tempfile.TemporaryDirectory() as folder:
+            text_file = Path(folder) / "notes.txt"
+            lf_content = b"first line\nsecond line\n"
+            crlf_content = b"first line\r\nsecond line\r\n"
+            text_file.write_bytes(crlf_content)
+            crlf_expected = byte_sha(crlf_content)
+            self.assertEqual(preservation_result(text_file, crlf_expected), "exact")
+            text_file.write_bytes(lf_content)
+            lf_expected = byte_sha(lf_content)
+            self.assertEqual(preservation_result(text_file, lf_expected), "exact")
+
+            # A verified frozen LF blob permits a diagnostic equivalence result.
+            self.assertEqual(
+                preservation_result(text_file, crlf_expected, frozen_content=crlf_content),
+                "line-ending-only",
+            )
+            # Git keeps the LF blob while the freeze hashed CRLF: the CRLF form of the blob is verified.
+            self.assertEqual(
+                preservation_result(text_file, crlf_expected, frozen_content=lf_content),
+                "line-ending-only",
+            )
+            modified_content = b"first line\nchanged line\n"
+            text_file.write_bytes(modified_content)
+            self.assertEqual(
+                preservation_result(text_file, crlf_expected, frozen_content=crlf_content),
+                "mismatch",
+            )
+
+            binary_file = Path(folder) / "payload.bin"
+            binary_file.write_bytes(b"first line\nsecond line\n")
+            binary_lf_hash = byte_sha(binary_file.read_bytes())
+            binary_file.write_bytes(b"first line\r\nsecond line\r\n")
+            self.assertEqual(
+                preservation_result(
+                    binary_file,
+                    binary_lf_hash,
+                    frozen_content=b"first line\nsecond line\n",
+                ),
+                "mismatch",
+            )
+
     def test_duration_parser_requires_explicit_units_and_conversion(self):
         self.assertIsNone(parse_duration("8h", None))
         self.assertIsNone(parse_duration(8, 8))
@@ -70,7 +166,11 @@ class VerifyGhentEvidenceTests(unittest.TestCase):
         self.assertGreater(len(hashes), 300)
         for path, expected in hashes.items():
             with self.subTest(path=path):
-                self.assertEqual(sha(ROOT / path), expected)
+                file_path = ROOT / path
+                result = preservation_result(
+                    file_path, expected, frozen_content=frozen_git_content(file_path)
+                )
+                self.assertIn(result, {"exact", "line-ending-only"})
 
 
 if __name__ == "__main__":

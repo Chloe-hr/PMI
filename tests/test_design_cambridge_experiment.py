@@ -8,6 +8,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "training"))
+sys.path.insert(0, str(ROOT / "tests"))
+from checksum_utils import assert_frozen  # noqa: E402  (exact, else line-ending-equivalent)
 from design_cambridge_experiment import (FEATURES, KEYS, OUT, SCENARIOS, TARGET,
     allocate_blocks, assert_disjoint, canonical, composite_key, development_folds,
     hash_file, load_records, split_records, unique_rows, verify_frozen, write_csv)
@@ -194,11 +196,11 @@ class CambridgeExperimentDesignTests(unittest.TestCase):
             self.assertTrue(all(r["verified_ground_truth"] == "False" and float(r[TARGET]) > 0 for r in rows))
         freeze = json.loads((OUT / "design_freeze.json").read_text())
         for name, digest in freeze["outputs"].items():
-            self.assertEqual(hash_file(OUT / name), digest)
+            assert_frozen(self, OUT / name, digest)
         for name in ("models/duration_v1/model.pt", "app.py", "scripts/schedule_engine.py",
                      "data/processed/stage2/verification_report.md",
                      "data/processed/stage2/cambridge_feasibility/feasibility_summary.json"):
-            self.assertEqual(hash_file(ROOT / name), freeze["protected_inputs"][name])
+            assert_frozen(self, ROOT / name, freeze["protected_inputs"][name])
 
 
 if __name__ == "__main__":

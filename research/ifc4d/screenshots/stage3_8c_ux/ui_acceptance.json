@@ -1,0 +1,24 @@
+{
+  "viewport": {
+    "width": 1920,
+    "height": 1400
+  },
+  "project_and_version_controls": true,
+  "original_and_recalculated_dates_match": true,
+  "gantt_pointer_selection": true,
+  "exact_task_to_model_highlights": true,
+  "revision_affected_model_highlights": true,
+  "source_conflicts_visible": 15,
+  "source_derived_overlay": true,
+  "synthetic_progress": true,
+  "scenarios_are_pending": true,
+  "final_programme_disabled": true,
+  "technical_details_accessible": true,
+  "direct_mesh_click_selection": false,
+  "side_by_side_layout": true,
+  "horizontal_overflow": false,
+  "sticky_project_version_controls": true,
+  "selected_priority_matches_final_placeholder": true,
+  "screenshots": 6,
+  "browser": "Microsoft Edge / Playwright"
+}

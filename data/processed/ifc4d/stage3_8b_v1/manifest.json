@@ -1,0 +1,46 @@
+{
+  "policy": "reconciliation-v1",
+  "input_sha256": {
+    "construction_dataset_v1.xlsx": "a46509c8747c2448d2f5cc0fffea1dafc4c63b5f5efe81e8f7f59e6cb7e3d2c3",
+    "PMI_SYN-BRG-001.ifc": "73229ba8983b43700fa1ebfe5c890f1149e90927ecf4b42373ecbaa1c91916a9",
+    "PMI_SYN-BLD-001.ifc": "62f46a568ab893c1baaa0f04ee3b023e2b0b39d5442a583a69698ba6fc227b14"
+  },
+  "implementation_sha256": {
+    "pipeline.py": "a5d736d6df7426dc330bbaa71cb1cb8f33abdd26a7576a54d5eab65ec6b961d8",
+    "schedule_semantics.md": "243654e35c02070de3167b461ae803392656d047f763f07acf5b0b33f74e3ec5"
+  },
+  "output_sha256": {
+    "round_trip_validation.json": "2250bef536a752f2abe2d7cf041cc2cba98bd1cf90e409430a65eaf3abb3346b",
+    "schedule_conflicts.csv": "98e1db1a34e68708320568b0137a859b844001a43c37cb843e6fc62669eb27e4",
+    "schedule_conflicts.json": "b195a262aa3fdb8103242ce99e002dea8083a6e9157c2f2f5afcbebd2fc9012d",
+    "schedule_validation.json": "25036d315df981ca42531c1fc70eea905fc3bfd63d29feb57dd4e2cb356bced3",
+    "source_records.json": "69575392d9b08b6555dc3060dab77f8342990fa9b2e10d996d239f922823f0d1",
+    "SYN-BLD-001-V0/as_provided.ifc": "f382ff19272431f11664596566a64c3139685c3e84b859524af7c69ce408c436",
+    "SYN-BLD-001-V0/dependencies.csv": "152aa29ff14b40b7a884a7b86c39c454e32a0d5109bb59645e400d4fc723a9c8",
+    "SYN-BLD-001-V0/derived.ifc": "907a2eee5dceb75232225bd21c14f308a63342a624ae7cf7f12670dd34dba92a",
+    "SYN-BLD-001-V0/derived_schedule.csv": "c7c37d0b4f88151090f6738b3b2409cc30a6a2657b4b13baf5524408eb2bf790",
+    "SYN-BLD-001-V1/as_provided.ifc": "71ed717a06ed233e0b2707bcc7cdb219f4217a49c98e6bcb25a7456435969331",
+    "SYN-BLD-001-V1/dependencies.csv": "152aa29ff14b40b7a884a7b86c39c454e32a0d5109bb59645e400d4fc723a9c8",
+    "SYN-BLD-001-V1/derived.ifc": "58a30e1c9141c2ea784916bb067918608780165b230a9326394ba92eb22a33aa",
+    "SYN-BLD-001-V1/derived_schedule.csv": "6bcca0bd538f1a905c1c7ceb10b6cdc357938f4bf8aa98d48435dfae119d5c63",
+    "SYN-BLD-001-V2/as_provided.ifc": "f26969a99a89a6f48f83e481d25d5cc07dee13a46dd9183840be0c85ced982fc",
+    "SYN-BLD-001-V2/dependencies.csv": "152aa29ff14b40b7a884a7b86c39c454e32a0d5109bb59645e400d4fc723a9c8",
+    "SYN-BLD-001-V2/derived.ifc": "5c6bd51844e6cdee7d0ad19853954314c12ec0917fa974305406916cf66b6f19",
+    "SYN-BLD-001-V2/derived_schedule.csv": "8b15ba5baa19b5ab1be92c8007f6cce85a6105de7bdbbeedec67f6769f0d14de",
+    "SYN-BRG-001-V0/as_provided.ifc": "b94e88d342b22ef1f88204b5beb0520153e77d8bdf07bb2ed7ed6ed7b486dce2",
+    "SYN-BRG-001-V0/dependencies.csv": "328e0375f8ba032ff5c323647a056fc9d67a1ec80437cb1e59ee9d9f7b4f2993",
+    "SYN-BRG-001-V0/derived.ifc": "dcc53934e115e6208c0078872a8f64e28919b9d889f093623a4f6a487eab4ef3",
+    "SYN-BRG-001-V0/derived_schedule.csv": "d746bcb1c8fd081ac1e95be3ea1dc9c532c6339cd2b717faf4ab570a0336c611",
+    "SYN-BRG-001-V1/as_provided.ifc": "cfe2f87cc01dd993af0531ec1542119fb53a7dc5911b8c17db55a6226d25adb5",
+    "SYN-BRG-001-V1/dependencies.csv": "328e0375f8ba032ff5c323647a056fc9d67a1ec80437cb1e59ee9d9f7b4f2993",
+    "SYN-BRG-001-V1/derived.ifc": "dbae15ca688a3752bb7fadd104fe6b5593ca7b3b45c25c4fa88977c57e3a5314",
+    "SYN-BRG-001-V1/derived_schedule.csv": "9e515aeedb36fc3a599b708bec181ba695f22b149e7a69636e053642b1c428f3",
+    "SYN-BRG-001-V2/as_provided.ifc": "f35b0272f7d6b0dde58d1d6345d1c886e927a8ced4cf38efe5da081c081a3935",
+    "SYN-BRG-001-V2/dependencies.csv": "328e0375f8ba032ff5c323647a056fc9d67a1ec80437cb1e59ee9d9f7b4f2993",
+    "SYN-BRG-001-V2/derived.ifc": "2ead84a971192bfca5039d051f1ee5f4561b49846f49e3b1d401edcaf40d01fd",
+    "SYN-BRG-001-V2/derived_schedule.csv": "ba0b96d1abe8803e3ba420d6161e53aec4d480cbcc3d273e495c559aa98cff14",
+    "task_ifc_mapping.csv": "8d1f1f37230a3f9e0dfae9e8c510e06e732988b2b872d70493b5d3c6383f725a"
+  },
+  "complete": true,
+  "round_trip_passed": true
+}

@@ -1,0 +1,61 @@
+{
+  "protocol_version": "PMI-Stage3.7-cambridge-gnn-v1",
+  "frozen_on": "2026-11-16",
+  "status": "frozen before any model fitting; changes require a new protocol_version recorded as an exploratory experiment",
+  "data": {
+    "split_manifest": "data/processed/stage2/cambridge_experiment_design/split_manifest_conservative.csv",
+    "rows_used": "split == 'train' only (144,110 rows, 70 conservative blocks); locked test projects are never materialised",
+    "graph_cache": "data/processed/gnn_cambridge (research/gnn/cambridge_graph.py)",
+    "graph_unit": "one graph per development project_key (163 graphs)",
+    "edge_policy": "intra-project Predecessor_ID -> activity, all relationship types as one directed relation, plus its reverse; lag, GMM topic, dates unused",
+    "node_policy": "all exported activities of the project; labels on frozen eligible development rows only"
+  },
+  "features": ["activity_description", "project_type", "uk_region"],
+  "node_featurizer": {
+    "text": "TfidfVectorizer(max_features=50000, ngram_range=(1,2), min_df=2, max_df=0.98, sublinear_tf=True) -> TruncatedSVD(128, n_iter=5, random_state=fold seed) -> StandardScaler",
+    "context": "OneHotEncoder(handle_unknown='ignore') on project_type, uk_region",
+    "fit_on": "all nodes of the fold's fitting projects (outer-training blocks minus inner-stopping blocks)"
+  },
+  "target": "reported_completed_activity_elapsed_calendar_days",
+  "target_transform": "train on log1p(days); predict expm1(output) clipped at 0",
+  "models": {
+    "graphsage": {
+      "class": "research/gnn/cambridge_model.py::CambridgeSAGE(use_graph=True)",
+      "encoder": "Linear(n_in, 64) + ReLU + Dropout",
+      "graph_layers": 2,
+      "conv": "per layer: SAGEConv(64,64, mean) over predecessor->successor + SAGEConv(64,64, mean) over successor->predecessor, summed, ReLU, dropout, residual, LayerNorm",
+      "hidden": 64,
+      "head": "Linear(64,64) + ReLU + Linear(64,1)",
+      "dropout": 0.2
+    },
+    "no_graph": {
+      "class": "research/gnn/cambridge_model.py::CambridgeSAGE(use_graph=False)",
+      "definition": "identical architecture, parameters, inputs, optimiser, batches, seeds and stopping; edge set emptied so no neighbour information"
+    }
+  },
+  "optimizer": {"name": "AdamW", "lr": 0.003, "weight_decay": 0.0001},
+  "loss": "L1 on log1p(days), mean over labelled nodes in the batch",
+  "batch_size_graphs": 8,
+  "max_epochs": 150,
+  "early_stopping": {
+    "monitor": "L1 on log1p(days) over labelled nodes of the inner-stopping projects",
+    "inner_stopping_blocks": "Stage 2.3E rule: outer-training blocks sorted by sha256('23051' + block_id); first max(1, n_blocks // 10)",
+    "patience": 15,
+    "min_delta": 0.0001,
+    "restore_best": true,
+    "outer_validation_loss": "logged per epoch for curves only; never used for stopping or selection"
+  },
+  "seeds": [23051, 23052, 23053],
+  "primary_predictions": "per model, mean of log1p predictions over the three seeds, then expm1 and clip at 0",
+  "torch_threads": 16,
+  "folds": "the five frozen development_validation_fold values; each fold validated once by models trained on the other four",
+  "baselines": {
+    "median": "median target of all labelled outer-training rows (as Stage 2.3E)",
+    "ridge": "Stage 2.3E preprocessor (TF-IDF 50k (1,2)-gram + one-hot) and Ridge(solver='lsqr', max_iter=2000) on raw days over all labelled outer-training rows; alpha per fold reused from Stage 2.3E training_config.json ridge_alpha_by_fold = [10, 10, 10, 10, 1] (development-selected; not re-tuned)"
+  },
+  "primary_metric": "mean block MAE in days: mean over the 70 development blocks of each block's out-of-fold activity MAE",
+  "secondary_metrics": ["activity-level MAE", "RMSE", "R2", "median absolute error", "mean-of-fold macro block MAE (Stage 2.3E selection statistic)", "per-fold and per-block metrics", "stratified by connectivity"],
+  "uncertainty": {"method": "block bootstrap of the 70 development blocks, paired across models", "resamples": 2000, "seed": 23051, "interval": "95% percentile"},
+  "success_criterion": "GraphSAGE is judged to add value only if (a) its mean block MAE is below the matched no-graph model's with the paired 95% block-bootstrap CI of (GraphSAGE - no_graph) entirely below 0, AND (b) its mean block MAE is below both the median and ridge baselines. Otherwise the result is reported as no evidence that exported schedule logic improves prediction.",
+  "locked_test_blocks": "not evaluated in this stage"
+}

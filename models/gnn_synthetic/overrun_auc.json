@@ -1,0 +1,43 @@
+{
+  "activities": 2510,
+  "overrun_share": 0.892,
+  "overrun_definition": "actual_days > 1.05 x planned_days",
+  "methods": {
+    "category": {
+      "per_fold": {
+        "0": 0.845,
+        "1": 0.863,
+        "2": 0.857,
+        "3": 0.92,
+        "4": 0.898
+      },
+      "min_fold": 0.845,
+      "max_fold": 0.92,
+      "pooled": 0.869
+    },
+    "mlp": {
+      "per_fold": {
+        "0": 0.874,
+        "1": 0.896,
+        "2": 0.876,
+        "3": 0.924,
+        "4": 0.894
+      },
+      "min_fold": 0.874,
+      "max_fold": 0.924,
+      "pooled": 0.889
+    },
+    "gnn": {
+      "per_fold": {
+        "0": 0.983,
+        "1": 0.969,
+        "2": 0.972,
+        "3": 0.972,
+        "4": 0.969
+      },
+      "min_fold": 0.969,
+      "max_fold": 0.983,
+      "pooled": 0.973
+    }
+  }
+}

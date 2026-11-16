@@ -1,0 +1,12 @@
+{
+  "gantt_pointer_selection": true,
+  "task_to_geometry_highlights": true,
+  "globalid_selector_to_task": true,
+  "direct_mesh_click_selection": false,
+  "project_switch": true,
+  "snapshot_switch": true,
+  "representation_switch": true,
+  "synthetic_progress_layer": true,
+  "browser": "Microsoft Edge / Playwright",
+  "screenshots": 4
+}

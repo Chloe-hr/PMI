@@ -1,0 +1,218 @@
+{
+  "audit_date": "2026-11-16",
+  "action": "Preservation only; no training, protocol change, commit or push",
+  "files": {
+    "data/processed/gnn_cambridge/edges.csv": {
+      "bytes": 13797576,
+      "sha256": "355f60116c9fe53ac09c87a90b3fc1b128f9508c3a4f2785fe53f76b73922717"
+    },
+    "data/processed/gnn_cambridge/feasibility_diagnostics.json": {
+      "bytes": 1890,
+      "sha256": "2af2f31a729413ec79613a6c3d520bfe1483751d0bf989c0331cf33523bdd856"
+    },
+    "data/processed/gnn_cambridge/graph_manifest.json": {
+      "bytes": 1023,
+      "sha256": "c36c8e5132dc8d8c03288edaabdd29c98b8af081c6c43f056b38d28abce63162"
+    },
+    "data/processed/gnn_cambridge/nodes.csv": {
+      "bytes": 41971836,
+      "sha256": "7f9d976efe48daa2e58989435c4bbb8400a26355e9c85921f2d2034e9639d7aa"
+    },
+    "models/gnn_cambridge/block_metrics.csv": {
+      "bytes": 13966,
+      "sha256": "926999add23bb14c8d7213a44d0f8ddb9682aa72bc66dd72ffcff1684f468f8a"
+    },
+    "models/gnn_cambridge/checkpoints/featurizer_fold0.joblib": {
+      "bytes": 20403989,
+      "sha256": "9c5b52c2c859587e92d5998282682d80e8036c3ea51afdefd560e9fce17615a4"
+    },
+    "models/gnn_cambridge/checkpoints/featurizer_fold1.joblib": {
+      "bytes": 24315373,
+      "sha256": "45a01d332be313c625c31234a0be446b8c189a7b2aaaba9355a41c49fbb8c5cc"
+    },
+    "models/gnn_cambridge/checkpoints/featurizer_fold2.joblib": {
+      "bytes": 24313803,
+      "sha256": "d1f761d3e8abeca16ce1c6e3f9ae254f1ab58e32befe3c8e9e0f776f87a1b32d"
+    },
+    "models/gnn_cambridge/checkpoints/featurizer_fold3.joblib": {
+      "bytes": 24322780,
+      "sha256": "edb6c050fe2bd5664720d5fd1c9f28246d1d0627063d0b33adfb2a143ca32331"
+    },
+    "models/gnn_cambridge/checkpoints/featurizer_fold4.joblib": {
+      "bytes": 24312236,
+      "sha256": "5314ea0382a76beabecff5318af98e1454da40d5a513fe4c8b9ec51a151e3654"
+    },
+    "models/gnn_cambridge/checkpoints/graphsage_fold0_seed23051.pt": {
+      "bytes": 194521,
+      "sha256": "c296b7d31cf56e06dce3877778867a73c4822e32c23bf706ae35eb2e43597cd5"
+    },
+    "models/gnn_cambridge/checkpoints/graphsage_fold0_seed23052.pt": {
+      "bytes": 194521,
+      "sha256": "ed7e08bd1a14ad7886ec33c2da3ee19175003ddcf2077d70ee7b7db445a6db36"
+    },
+    "models/gnn_cambridge/checkpoints/graphsage_fold0_seed23053.pt": {
+      "bytes": 194521,
+      "sha256": "8ef62c3859359dcd18e38164542a028cdefb5fde12266573dd22e502aa5dd2b6"
+    },
+    "models/gnn_cambridge/checkpoints/graphsage_fold1_seed23051.pt": {
+      "bytes": 196057,
+      "sha256": "aa0ae3323ffe944ba74d494aa74f671c8ecad598365e84cfd0eabbf78a2365c0"
+    },
+    "models/gnn_cambridge/checkpoints/graphsage_fold1_seed23052.pt": {
+      "bytes": 196057,
+      "sha256": "f0dc9695e9fd795bb1985e6e38a086ea9afd522b8004d9afdc68fdd13002e6d0"
+    },
+    "models/gnn_cambridge/checkpoints/graphsage_fold1_seed23053.pt": {
+      "bytes": 196057,
+      "sha256": "e301a0c19c6dd33a6608c84ec75fbe51f87e621fd1da2c840be0244fd263ea51"
+    },
+    "models/gnn_cambridge/checkpoints/graphsage_fold2_seed23051.pt": {
+      "bytes": 195801,
+      "sha256": "8538864ad2387d696003cb517ce11cf2f086a7733d207d60c13c082acb7ef15d"
+    },
+    "models/gnn_cambridge/checkpoints/graphsage_fold2_seed23052.pt": {
+      "bytes": 195801,
+      "sha256": "4e23edb4e2a821f87e249b28c1e70830d3b099a9844747b4c60c27781171b08f"
+    },
+    "models/gnn_cambridge/checkpoints/graphsage_fold2_seed23053.pt": {
+      "bytes": 195801,
+      "sha256": "222f99e246c904a2ca346c1936d1de346a6bdbd16438797a34b8c4eb42d12dfd"
+    },
+    "models/gnn_cambridge/checkpoints/graphsage_fold3_seed23051.pt": {
+      "bytes": 196057,
+      "sha256": "6fde7c724ce90a585888450fd2b0f852c5e558fef8507e176602977a02628575"
+    },
+    "models/gnn_cambridge/checkpoints/graphsage_fold3_seed23052.pt": {
+      "bytes": 196057,
+      "sha256": "13e137f3aa70384d8d772ed668a01061e6ebedd0924e45d77a7481f037d33a59"
+    },
+    "models/gnn_cambridge/checkpoints/graphsage_fold3_seed23053.pt": {
+      "bytes": 196057,
+      "sha256": "ed76171be14517ccd007145c0a8ea956839e3269c813cca43b40fa25294049be"
+    },
+    "models/gnn_cambridge/checkpoints/graphsage_fold4_seed23051.pt": {
+      "bytes": 196057,
+      "sha256": "913718f18776eb9611cfd069208c32c67efe567760338689469c19b3ad6a4576"
+    },
+    "models/gnn_cambridge/checkpoints/graphsage_fold4_seed23052.pt": {
+      "bytes": 196057,
+      "sha256": "4ee69485c98e680a9a45c86135a0ee15dcd7a694eb164f9ad00864deb41eb159"
+    },
+    "models/gnn_cambridge/checkpoints/graphsage_fold4_seed23053.pt": {
+      "bytes": 196057,
+      "sha256": "69831351c64c5ac03745721ce33d63b9e36d33fd450160af3a4c4a10661a88a0"
+    },
+    "models/gnn_cambridge/checkpoints/no_graph_fold0_seed23051.pt": {
+      "bytes": 194493,
+      "sha256": "2e0ffdd7da0b768af2dcc0e495026d68cc4611e3f6a94af56854aab93a1ba40e"
+    },
+    "models/gnn_cambridge/checkpoints/no_graph_fold0_seed23052.pt": {
+      "bytes": 194493,
+      "sha256": "5f9d167740da448e0eb3d473cbb4fc87535b6c1d707f6f341a0e5b6f63c704fc"
+    },
+    "models/gnn_cambridge/checkpoints/no_graph_fold0_seed23053.pt": {
+      "bytes": 194493,
+      "sha256": "6368f4c58f1d3d94bde2ee237ec5bbfa1fd49e901c08b356635ddbfa8da9e258"
+    },
+    "models/gnn_cambridge/checkpoints/no_graph_fold1_seed23051.pt": {
+      "bytes": 196029,
+      "sha256": "333bc35d52cac4cf5781735c888081b5ed1357c6d38580bf61bf5d6ea5f3649f"
+    },
+    "models/gnn_cambridge/checkpoints/no_graph_fold1_seed23052.pt": {
+      "bytes": 196029,
+      "sha256": "e2fb04cbe845145aa4ddeebc7d41676b0a41b0017b4e50f03c0f68575733a263"
+    },
+    "models/gnn_cambridge/checkpoints/no_graph_fold1_seed23053.pt": {
+      "bytes": 196029,
+      "sha256": "1d391ccb46fb672bb7f03ef22f08f65878e80a9f931e6ee7da31b09afbe0ca72"
+    },
+    "models/gnn_cambridge/checkpoints/no_graph_fold2_seed23051.pt": {
+      "bytes": 195773,
+      "sha256": "66fb37f160bf4038b43bd732d643d073c223ff26256ed540b60646874fcb4017"
+    },
+    "models/gnn_cambridge/checkpoints/no_graph_fold2_seed23052.pt": {
+      "bytes": 195773,
+      "sha256": "cdc54200f1c6872c6fde2b6bc034c1c9545277a1f9663dc022b283c4bcfbf581"
+    },
+    "models/gnn_cambridge/checkpoints/no_graph_fold2_seed23053.pt": {
+      "bytes": 195773,
+      "sha256": "af87cc99dc1de8eedfbce87ced5842e0fa7147e3eb38371dd1f6511789aeb1d2"
+    },
+    "models/gnn_cambridge/checkpoints/no_graph_fold3_seed23051.pt": {
+      "bytes": 196029,
+      "sha256": "dd86892be9a91857929f461e027af070c994ebcd85befc4cbfce93f240e6fe58"
+    },
+    "models/gnn_cambridge/checkpoints/no_graph_fold3_seed23052.pt": {
+      "bytes": 196029,
+      "sha256": "c79149d624c2894f10d680286a4f8237f9e679b54331d35bd941b7bf0d698ebc"
+    },
+    "models/gnn_cambridge/checkpoints/no_graph_fold3_seed23053.pt": {
+      "bytes": 196029,
+      "sha256": "eb912ed1d37d0d4f77b1303358bf7f4fe764a3ee2e4af7f539b2bb0e28e85d03"
+    },
+    "models/gnn_cambridge/checkpoints/no_graph_fold4_seed23051.pt": {
+      "bytes": 196029,
+      "sha256": "507d4c64b1be291dd88b2ef02d083c91f0ed39dfdee68b49a2abdc03cba75f24"
+    },
+    "models/gnn_cambridge/checkpoints/no_graph_fold4_seed23052.pt": {
+      "bytes": 196029,
+      "sha256": "138df4727fa4933606bf7c15d607df400f8c51d0dd605869211455852a3ca8dd"
+    },
+    "models/gnn_cambridge/checkpoints/no_graph_fold4_seed23053.pt": {
+      "bytes": 196029,
+      "sha256": "02cee5ad6fe12e4e743957c2f6a293b0425071bafbaafdee2dd2505357b93f3c"
+    },
+    "models/gnn_cambridge/environment.json": {
+      "bytes": 523,
+      "sha256": "d77c5eb34f2e9da894410de349ae0f78a56425ded386d0bdcefa03161040458f"
+    },
+    "models/gnn_cambridge/fold_metrics.csv": {
+      "bytes": 2730,
+      "sha256": "76c9930979b04fed527f1d3d3f6027e557acf5784fc75c0f17f4bd23518f8789"
+    },
+    "models/gnn_cambridge/loss_curves.csv": {
+      "bytes": 76358,
+      "sha256": "b8ce5801378761a86883fe4aef538ece927843c642e409a82e8f672224aec425"
+    },
+    "models/gnn_cambridge/metrics.json": {
+      "bytes": 6172,
+      "sha256": "b6567c8dedb8a7994002bf55230c49cc961c14161e1cfafb14a5119af0878c77"
+    },
+    "models/gnn_cambridge/model_comparison.csv": {
+      "bytes": 651,
+      "sha256": "8c87a2b869a75b85c13c7cbbacf0a3fa6454b1147269c110d57c579045520a1b"
+    },
+    "models/gnn_cambridge/oof_predictions.csv": {
+      "bytes": 33078202,
+      "sha256": "4077c19be8edcb67aced5c5cb6952ebe298f19c9327d3872c7d25cfbcb52729f"
+    },
+    "models/gnn_cambridge/provenance.json": {
+      "bytes": 1285,
+      "sha256": "760bb4de4ef25f51f7ffef2303a5542f1a2a20e6d1136191dee48a4c28d4b322"
+    },
+    "models/gnn_cambridge/run_log.txt": {
+      "bytes": 3883,
+      "sha256": "79bb8ffe891a680cb31ce2f0d15611035796694d1c9c4568b3d2731d16b85c9c"
+    },
+    "models/gnn_cambridge/seed_metrics.csv": {
+      "bytes": 968,
+      "sha256": "13c714e92a9fce46c885ce4358e3d3f57af95ef2a218382252a74122ac261e29"
+    },
+    "models/gnn_cambridge/training_config.json": {
+      "bytes": 4771,
+      "sha256": "ef427ff44245195189fdee3c664fe0eeaa5b7b7421b8e6cba2aa00d3308cb15f"
+    },
+    "models/gnn_cambridge/training_runs.csv": {
+      "bytes": 1347,
+      "sha256": "b2f73e907e6476f82575ad7cd3683a78748d71002b995ce0b69ecb67889dc160"
+    },
+    "research/gnn/cambridge_protocol.json": {
+      "bytes": 4495,
+      "sha256": "ca2ae92ee8a65b82033daf6831fbcd8f056bd0507a277448598a5ad1e97993a1"
+    },
+    "research/gnn/cambridge_training_protocol.md": {
+      "bytes": 6052,
+      "sha256": "1a6ca331b12299d390634d03db2601457ddead2042af7e458cdbd8141e18c1be"
+    }
+  }
+}

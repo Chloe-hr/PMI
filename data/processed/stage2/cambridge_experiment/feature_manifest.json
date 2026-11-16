@@ -1,0 +1,11 @@
+{
+  "allowed_features": [
+    "activity_description",
+    "project_type",
+    "uk_region"
+  ],
+  "target": "reported_completed_activity_elapsed_calendar_days",
+  "target_unit": "naive elapsed calendar days",
+  "excluded_predictors": "all identifiers, dates, duration/progress/outcome fields, WBS, topics, embeddings, float, concurrency, weather, market data",
+  "provenance": "exported features; original prediction-time availability unverified"
+}

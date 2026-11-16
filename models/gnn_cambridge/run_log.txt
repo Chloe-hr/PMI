@@ -1,0 +1,68 @@
+Stage 3.7 run start 2026-11-16T18:26:10+0100 protocol sha256 ca2ae92ee8a65b82033daf6831fbcd8f056bd0507a277448598a5ad1e97993a1 smoke=False
+fold 0 no_graph  seed 23051: best epoch 26/41  (39s)
+fold 0 no_graph  seed 23052: best epoch 45/60  (83s)
+fold 0 no_graph  seed 23053: best epoch 35/50  (126s)
+fold 0 graphsage seed 23051: best epoch 15/30  (147s)
+fold 0 graphsage seed 23052: best epoch 15/30  (167s)
+fold 0 graphsage seed 23053: best epoch 12/27  (186s)
+fold 0: fit 65 / stop 6 / val 92 projects; stop blocks ['C-12e0942f43a2', 'C-3505a09e641e', 'C-785bddd8d653', 'C-8abeb553dd39', 'C-c083384d6d8d', 'C-faa42bbd095e']
+fold 1 no_graph  seed 23051: best epoch 19/34  (247s)
+fold 1 no_graph  seed 23052: best epoch 3/18  (275s)
+fold 1 no_graph  seed 23053: best epoch 41/56  (361s)
+fold 1 graphsage seed 23051: best epoch 28/43  (432s)
+fold 1 graphsage seed 23052: best epoch 11/26  (471s)
+fold 1 graphsage seed 23053: best epoch 2/17  (496s)
+fold 1: fit 154 / stop 6 / val 3 projects; stop blocks ['C-12e0942f43a2', 'C-3505a09e641e', 'C-785bddd8d653', 'C-8abeb553dd39', 'C-c083384d6d8d', 'C-faa42bbd095e']
+fold 2 no_graph  seed 23051: best epoch 22/37  (568s)
+fold 2 no_graph  seed 23052: best epoch 4/19  (601s)
+fold 2 no_graph  seed 23053: best epoch 13/28  (639s)
+fold 2 graphsage seed 23051: best epoch 24/39  (699s)
+fold 2 graphsage seed 23052: best epoch 4/19  (743s)
+fold 2 graphsage seed 23053: best epoch 20/35  (818s)
+fold 2: fit 156 / stop 6 / val 1 projects; stop blocks ['C-12e0942f43a2', 'C-3505a09e641e', 'C-785bddd8d653', 'C-8abeb553dd39', 'C-c083384d6d8d', 'C-faa42bbd095e']
+fold 3 no_graph  seed 23051: best epoch 13/28  (884s)
+fold 3 no_graph  seed 23052: best epoch 4/19  (911s)
+fold 3 no_graph  seed 23053: best epoch 1/16  (941s)
+fold 3 graphsage seed 23051: best epoch 23/38  (1022s)
+fold 3 graphsage seed 23052: best epoch 4/19  (1054s)
+fold 3 graphsage seed 23053: best epoch 7/22  (1098s)
+fold 3: fit 128 / stop 3 / val 32 projects; stop blocks ['C-3505a09e641e', 'C-8abeb553dd39', 'C-faa42bbd095e']
+fold 4 no_graph  seed 23051: best epoch 19/34  (1178s)
+fold 4 no_graph  seed 23052: best epoch 36/51  (1265s)
+fold 4 no_graph  seed 23053: best epoch 25/40  (1332s)
+fold 4 graphsage seed 23051: best epoch 18/33  (1390s)
+fold 4 graphsage seed 23052: best epoch 19/34  (1441s)
+fold 4 graphsage seed 23053: best epoch 26/41  (1500s)
+fold 4: fit 125 / stop 3 / val 35 projects; stop blocks ['C-0c0c824c86d3', 'C-785bddd8d653', 'C-c083384d6d8d']
+    model      n  blocks  mean_block_mae_days  activity_mae_days  rmse_days        r2  median_absolute_error_days  mean_of_fold_macro_block_mae_days
+   median 144110      70            50.840746          39.899545 106.583234 -0.123346                    7.333333                          44.538192
+    ridge 144110      70            47.012891          53.674335  98.325906  0.043970                   31.441188                          54.939591
+ no_graph 144110      70            44.379914          38.131223 101.315404 -0.015048                    9.272306                          40.321117
+graphsage 144110      70            41.590178          37.579090  99.863070  0.013844                    8.857232                          38.586192
+{
+ "graphsage_minus_median": {
+  "point": -9.250568571635213,
+  "ci95": [
+   -12.912440099636573,
+   -6.824949684444748
+  ],
+  "share_of_blocks_graphsage_better": 0.9285714285714286
+ },
+ "graphsage_minus_ridge": {
+  "point": -5.422712922266044,
+  "ci95": [
+   -8.723119788336467,
+   -1.8139018424166031
+  ],
+  "share_of_blocks_graphsage_better": 0.7285714285714285
+ },
+ "graphsage_minus_no_graph": {
+  "point": -2.7897365116196156,
+  "ci95": [
+   -4.207578977958009,
+   -1.762673568796763
+  ],
+  "share_of_blocks_graphsage_better": 0.8714285714285714
+ }
+}
+success criterion met: True  runtime 1505s

@@ -218,3 +218,26 @@ must follow locked primary results because their training rows may include the
 primary holdout. `design_freeze.json` checksums protected inputs and outputs;
 reruns verify the existing design rather than silently choosing another split.
 No model fitting, tuning, prediction evaluation or verified-label release occurs.
+
+## Stage 2.3E — Cambridge exploratory model training
+
+After reviewing the Stage 2.3C feasibility report, Stage 2.3D design report,
+frozen protocol, feature contract and conservative manifest, install
+`training/requirements-cambridge-experiment.txt` in the project's Python
+environment and run:
+
+```powershell
+python training/train_cambridge_experiment.py
+python -m unittest discover -s tests -p test_train_cambridge_experiment.py -v
+```
+
+The entry point verifies Stage 2.3D frozen hashes, composite-key uniqueness,
+one-to-one feature/target/split joins, target validity, exact feature allowlist
+and the frozen conservative assignment before fitting. It evaluates median,
+TF-IDF/one-hot Ridge, a controlled 128-component Random Forest and a small
+PyTorch MLP. Development validation keeps conservative blocks intact and all
+text/category transforms are fold-local. Held-out results and models are saved
+under `data/processed/stage2/cambridge_experiment/` and
+`models/cambridge_duration_v1/`. The experiment remains retrospective and
+exploratory: exported feature timing is uncertain, the target is reported
+elapsed calendar time, and zero Cambridge labels are independently verified.

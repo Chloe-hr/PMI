@@ -1,0 +1,51 @@
+{
+  "_readme": [
+    "Stage 3.2 task-generation rules. Edit this file, not the code.",
+    "classification: first rule whose conditions all match wins. Conditions: ifc_class (list), materials_any (substring, case-insensitive), materials_none, has_parent (true/false).",
+    "basis: volume_m3 | area_m2 | length_m | count | none (none = element is linked to the task but adds no work, e.g. stair stringers counted via the stair).",
+    "rate: units installed per crew-day. ALL RATES ARE ASSUMED PLACEHOLDERS - replace with validated productivity data before quoting durations.",
+    "dependencies (finish-to-start): same = predecessors on the same storey; below = the same package on the nearest LOWER storey that has it; global = every task of that package anywhere."
+  ],
+  "status": "ASSUMED - illustrative productivity, not validated",
+  "missing_quantity_days": 0.5,
+  "classification": [
+    {"package": "STR", "ifc_class": ["IfcStairFlight", "IfcMember", "IfcRailing"], "has_parent": true, "basis": "none"},
+    {"package": "ROF", "ifc_class": ["IfcSlab"], "has_parent": true, "basis": "none"},
+    {"package": "FTG", "ifc_class": ["IfcFooting", "IfcPile"], "basis": "volume_m3", "rate": 4},
+    {"package": "FWL", "ifc_class": ["IfcWall"], "materials_any": ["Concrete - Cast"], "basis": "volume_m3", "rate": 4},
+    {"package": "GSL", "ifc_class": ["IfcSlab"], "materials_any": ["Concrete"], "basis": "volume_m3", "rate": 8},
+    {"package": "TFL", "ifc_class": ["IfcSlab"], "materials_any": ["Dimensional Lumber", "Sheathing"], "basis": "area_m2", "rate": 15},
+    {"package": "STL", "ifc_class": ["IfcBeam", "IfcColumn"], "basis": "count", "rate": 4},
+    {"package": "STR", "ifc_class": ["IfcStair"], "basis": "count", "rate": 0.5},
+    {"package": "EXW", "ifc_class": ["IfcWall", "IfcCurtainWall"], "materials_any": ["Masonry - Brick"], "basis": "area_m2", "rate": 6},
+    {"package": "IBW", "ifc_class": ["IfcWall"], "materials_any": ["Masonry - Concrete Block"], "basis": "area_m2", "rate": 10},
+    {"package": "PRT", "ifc_class": ["IfcWall"], "materials_any": ["Stud"], "basis": "area_m2", "rate": 20},
+    {"package": "ROF", "ifc_class": ["IfcRoof"], "basis": "area_m2", "rate": 15},
+    {"package": "WIN", "ifc_class": ["IfcWindow"], "basis": "count", "rate": 4},
+    {"package": "DOR", "ifc_class": ["IfcDoor"], "basis": "count", "rate": 5},
+    {"package": "FLF", "ifc_class": ["IfcSlab"], "materials_any": ["Ceramic Tile"], "basis": "area_m2", "rate": 8},
+    {"package": "FLF", "ifc_class": ["IfcSlab"], "materials_any": ["Wood - Flooring"], "basis": "area_m2", "rate": 20},
+    {"package": "CLG", "ifc_class": ["IfcCovering"], "basis": "area_m2", "rate": 20},
+    {"package": "STR", "ifc_class": ["IfcRailing"], "basis": "length_m", "rate": 10},
+    {"package": "FIT", "ifc_class": ["IfcFurnishingElement"], "basis": "count", "rate": 12}
+  ],
+  "packages": {
+    "MOB": {"name": "Site mobilisation",              "phase": "Preliminaries",  "fixed_days": 5},
+    "FTG": {"name": "Footings",                       "phase": "Substructure",   "min_days": 2, "global": ["MOB"]},
+    "FWL": {"name": "Foundation walls",               "phase": "Substructure",   "min_days": 2, "same": ["FTG"]},
+    "GSL": {"name": "Ground-bearing concrete slab",   "phase": "Substructure",   "min_days": 2, "below": ["FWL", "FTG"]},
+    "STL": {"name": "Steel frame",                    "phase": "Superstructure", "min_days": 1, "same": ["GSL"], "below": ["STL", "TFL"]},
+    "TFL": {"name": "Timber floor structure",         "phase": "Superstructure", "min_days": 2, "below": ["STL", "EXW", "IBW"]},
+    "EXW": {"name": "External cavity walls",          "phase": "Envelope",       "min_days": 2, "same": ["GSL", "TFL", "STL", "ROF"], "below": ["EXW"]},
+    "IBW": {"name": "Internal blockwork walls",       "phase": "Superstructure", "min_days": 1, "same": ["GSL", "TFL"], "below": ["IBW"]},
+    "ROF": {"name": "Roof construction",              "phase": "Envelope",       "min_days": 3, "below": ["EXW", "IBW", "STL", "TFL"]},
+    "STR": {"name": "Stairs and railings",            "phase": "Superstructure", "min_days": 1, "same": ["GSL", "STL"]},
+    "WIN": {"name": "Window installation",            "phase": "Envelope",       "min_days": 1, "same": ["EXW"]},
+    "PRT": {"name": "Stud partitions",                "phase": "Interiors",      "min_days": 1, "same": ["EXW", "TFL", "GSL"], "global": ["ROF"]},
+    "DOR": {"name": "Door installation",              "phase": "Interiors",      "min_days": 1, "same": ["PRT", "IBW"]},
+    "CLG": {"name": "Ceilings",                       "phase": "Interiors",      "min_days": 1, "same": ["PRT"]},
+    "FLF": {"name": "Floor finishes",                 "phase": "Interiors",      "min_days": 1, "same": ["PRT", "CLG"]},
+    "FIT": {"name": "Fit-out and furnishing",         "phase": "Interiors",      "min_days": 1, "same": ["FLF", "DOR", "CLG"]},
+    "HND": {"name": "Final inspection and handover",  "phase": "Handover",       "fixed_days": 5, "after_all": true}
+  }
+}

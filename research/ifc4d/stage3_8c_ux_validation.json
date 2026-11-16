@@ -1,0 +1,52 @@
+{
+  "stage": "3.8C-UX",
+  "date": "2026-11-16",
+  "full_suite": {
+    "tests": 123,
+    "skipped": 1,
+    "result": "OK",
+    "seconds": 43.935
+  },
+  "browser_acceptance": {
+    "viewport": {
+      "width": 1920,
+      "height": 1400
+    },
+    "project_and_version_controls": true,
+    "original_and_recalculated_dates_match": true,
+    "gantt_pointer_selection": true,
+    "exact_task_to_model_highlights": true,
+    "revision_affected_model_highlights": true,
+    "source_conflicts_visible": 15,
+    "source_derived_overlay": true,
+    "synthetic_progress": true,
+    "scenarios_are_pending": true,
+    "final_programme_disabled": true,
+    "technical_details_accessible": true,
+    "direct_mesh_click_selection": false,
+    "side_by_side_layout": true,
+    "horizontal_overflow": false,
+    "sticky_project_version_controls": true,
+    "selected_priority_matches_final_placeholder": true,
+    "screenshots": 6,
+    "browser": "Microsoft Edge / Playwright"
+  },
+  "frozen_app_sha256": "f741710249919c12b751e9fe9823665278d04b88b9e5a660f829b3325ad3842d",
+  "stage3_8b_artifact_hashes_verified": 30,
+  "stage3_8b_implementation_unchanged": true,
+  "original_input_sha256": {
+    "construction_dataset_v1.xlsx": "a46509c8747c2448d2f5cc0fffea1dafc4c63b5f5efe81e8f7f59e6cb7e3d2c3",
+    "PMI_SYN-BRG-001.ifc": "73229ba8983b43700fa1ebfe5c890f1149e90927ecf4b42373ecbaa1c91916a9",
+    "PMI_SYN-BLD-001.ifc": "62f46a568ab893c1baaa0f04ee3b023e2b0b39d5442a583a69698ba6fc227b14"
+  },
+  "gnn_preserved_files_verified": 53,
+  "previous_stage3_8c_screenshots_unchanged": true,
+  "screenshot_sha256": {
+    "bridge_workspace.png": "e250e816154e10119ebb26e905388bf87a32e35217179e5811aea1b1d70583e4",
+    "building_revision_workspace.png": "cf190f0fe964adc9bd7bd4f8fd6b6f0314b4de7fc647083dd256a83e3d59e4dd",
+    "recalculated_progress.png": "e802fd043989ba30059bcdf9b5eaf74c2d31b72a41c05dfd5d0f999c01fc2e13",
+    "revision_impacts.png": "7aa6a63d71ff46440fb76e27aab5792730332763cbd99e48f758693df7c9a919",
+    "scenario_and_final_programme.png": "aa251c70b0ea82b100e2daf430e63112b3579808b6ff2f4c12ba2577c254ef45",
+    "sequence_issues.png": "db6cc0c7e41d6d0a5c61a4fb22dd791050daad3153fe16faedfa019f3a184f7f"
+  }
+}

@@ -1,0 +1,13 @@
+Stage 2.3E pre-run verification - 2026-11-12T18:38:27+01:00
+[PASS] 1. Raw Cambridge JSON matches frozen checksum: sha256 e32f311e05c73b8b... vs frozen e32f311e05c73b8b...
+[PASS] 2. Stage 2.3C/2.3D artifacts match frozen manifests: 2.3D outputs 12/12 exact; design_freeze.protected_inputs: 644 exact, 31 EOL-equiv, 0 changed, absent ['data/processed/stage2/cambridge_audit/activity_label_audit.csv']; feasibility input_review_manifest: 404 exact, 27 EOL-equiv, 0 changed, absent ['data/processed/stage2/cambridge_audit/activity_label_audit.csv']; audit protected_hashes: 393 exact, 27 EOL-equiv, 0 changed, absent 0 | only known git-ignored audit CSV absent (not used by 2.3E)
+[PASS] 3. Frozen train/test split unchanged: train 144,110 rows / 70 blocks; test 36,027 rows / 99 blocks; blocks crossing split: 0; dominant block 99,636 rows all train
+[PASS] 4. Locked test blocks unused for fitting/selection/tuning/validation: 5 CV folds draw only from 144,110 development rows (overlap with test: 0); config locked (training_config.json written) before first test transform; test data only transformed/predicted after final fits
+[PASS] 5. Smoke run used only development data: smoke loader kept split=='train' rows only, relabelled dev fold 4 as pseudo-holdout, wrote to a deleted temp dir; logged 'real held-out rows used: 0'
+[PASS] 6. Required packages installed (project .venv): C:\Users\Chloe\PMI\PMI\.venv\Scripts\python.exe | {'numpy': '2.5.4', 'pandas': '3.1.0', 'scipy': '1.18.1', 'sklearn': '1.9.1', 'matplotlib': '3.11.2', 'torch': '2.15.0+cpu', 'joblib': '1.6.0', 'tabulate': '0.10.0'}
+[PASS] 7. Script matches frozen design: features == frozen allowlist: ok; 5 frozen dev folds used as-is: ok; dominant block = its own fold (withheld separately, not split): ok; selection metric = mean macro-block MAE: ok; transforms fitted inside folds: ok; metrics MAE/RMSE/macro-block/per-block: ok; target = frozen reported elapsed calendar days: ok; fixed seed: ok | model families/hyperparameters are not fixed by the 2.3D freeze; they are fixed in code (RF/MLP) or chosen on dev only (Ridge alpha)
+[PASS] 8. No real test-set results exist yet: result artifacts present: none; output dir holds ['experiment_report.md', 'experiment_report_pre_run.md', 'preflight_verification_log.txt']; models/cambridge_duration_v1 exists: False
+[PASS] 9. Disk space and write permissions: 653.3 GB free; write test in output and models dirs: True
+
+9/9 checks passed
+exit=0

@@ -1,0 +1,8 @@
+# Everything needed to run the full test suite:  python -m pip install -r requirements-test.txt
+#   (python -m unittest discover -s tests)
+-r requirements.txt
+-r research/gnn/requirements.txt
+-r training/requirements.txt
+-r training/requirements-evidence.txt
+-r training/requirements-cambridge-audit.txt
+-r training/requirements-cambridge-experiment.txt

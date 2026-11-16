@@ -1,0 +1,226 @@
+{
+  "protocol_sha256": "ca2ae92ee8a65b82033daf6831fbcd8f056bd0507a277448598a5ad1e97993a1",
+  "comparison": [
+    {
+      "model": "median",
+      "n": 144110,
+      "blocks": 70,
+      "mean_block_mae_days": 50.84074634877931,
+      "activity_mae_days": 39.899544599418654,
+      "rmse_days": 106.58323398560934,
+      "r2": -0.12334555652964019,
+      "median_absolute_error_days": 7.333333333333334,
+      "mean_of_fold_macro_block_mae_days": 44.53819218270546
+    },
+    {
+      "model": "ridge",
+      "n": 144110,
+      "blocks": 70,
+      "mean_block_mae_days": 47.01289069941014,
+      "activity_mae_days": 53.67433515842075,
+      "rmse_days": 98.3259060888987,
+      "r2": 0.04397004763371448,
+      "median_absolute_error_days": 31.441187540690102,
+      "mean_of_fold_macro_block_mae_days": 54.93959112199768
+    },
+    {
+      "model": "no_graph",
+      "n": 144110,
+      "blocks": 70,
+      "mean_block_mae_days": 44.379914288763715,
+      "activity_mae_days": 38.13122328158989,
+      "rmse_days": 101.31540405707935,
+      "r2": -0.015047921153717114,
+      "median_absolute_error_days": 9.272305681393714,
+      "mean_of_fold_macro_block_mae_days": 40.32111713201244
+    },
+    {
+      "model": "graphsage",
+      "n": 144110,
+      "blocks": 70,
+      "mean_block_mae_days": 41.5901777771441,
+      "activity_mae_days": 37.57909035820072,
+      "rmse_days": 99.86306969814079,
+      "r2": 0.013844484611782448,
+      "median_absolute_error_days": 8.857231891045346,
+      "mean_of_fold_macro_block_mae_days": 38.58619208269752
+    }
+  ],
+  "bootstrap": {
+    "models": {
+      "pred_median": {
+        "point": 50.84074634877931,
+        "ci95": [
+          32.49472898841716,
+          80.1911801951918
+        ]
+      },
+      "pred_ridge": {
+        "point": 47.01289069941014,
+        "ci95": [
+          31.414829964593665,
+          70.6592977918184
+        ]
+      },
+      "pred_no_graph": {
+        "point": 44.379914288763715,
+        "ci95": [
+          27.315446320847983,
+          71.84520104462845
+        ]
+      },
+      "pred_graphsage": {
+        "point": 41.5901777771441,
+        "ci95": [
+          24.903314348857286,
+          68.29756422650264
+        ]
+      }
+    },
+    "paired_differences": {
+      "graphsage_minus_median": {
+        "point": -9.250568571635213,
+        "ci95": [
+          -12.912440099636573,
+          -6.824949684444748
+        ],
+        "share_of_blocks_graphsage_better": 0.9285714285714286
+      },
+      "graphsage_minus_ridge": {
+        "point": -5.422712922266044,
+        "ci95": [
+          -8.723119788336467,
+          -1.8139018424166031
+        ],
+        "share_of_blocks_graphsage_better": 0.7285714285714285
+      },
+      "graphsage_minus_no_graph": {
+        "point": -2.7897365116196156,
+        "ci95": [
+          -4.207578977958009,
+          -1.762673568796763
+        ],
+        "share_of_blocks_graphsage_better": 0.8714285714285714
+      }
+    }
+  },
+  "gnn_vs_no_graph": {
+    "mean_days": 0.2404604868768721,
+    "median_days": -0.1755310620330719,
+    "mean_abs_days": 6.245933727119036,
+    "p05_p95_days": [
+      -14.720691805920378,
+      15.0043728354274
+    ],
+    "spearman_predictions": 0.8641066067456897,
+    "share_activities_graphsage_closer": 0.5241829158281868,
+    "by_connectivity": [
+      {
+        "connectivity": "isolated (0)",
+        "n": 6871,
+        "mae_median": 152.42515039053023,
+        "mae_ridge": 136.41143112140054,
+        "mae_no_graph": 144.2536512595687,
+        "mae_graphsage": 143.39405846493815
+      },
+      {
+        "connectivity": "1-2",
+        "n": 68861,
+        "mae_median": 32.15874535497435,
+        "mae_ridge": 48.67118708878129,
+        "mae_no_graph": 30.786724749220966,
+        "mae_graphsage": 30.305284996084342
+      },
+      {
+        "connectivity": "3-5",
+        "n": 55112,
+        "mae_median": 34.883253823527035,
+        "mae_ridge": 49.81243086451936,
+        "mae_no_graph": 33.43935392542702,
+        "mae_graphsage": 32.82410951785426
+      },
+      {
+        "connectivity": "6+",
+        "n": 13266,
+        "mae_median": 42.63839252810024,
+        "mae_ridge": 52.835533885037876,
+        "mae_no_graph": 40.78165406386125,
+        "mae_graphsage": 40.28400286027195
+      }
+    ]
+  },
+  "stage23e_baseline_reproduction": [
+    {
+      "model": "median",
+      "fold": 0,
+      "stage37_mae": 43.19131903322538,
+      "stage23e_mae": 43.19131903322538,
+      "abs_diff": 0.0
+    },
+    {
+      "model": "median",
+      "fold": 1,
+      "stage37_mae": 17.03453842341631,
+      "stage23e_mae": 17.03453842341631,
+      "abs_diff": 0.0
+    },
+    {
+      "model": "median",
+      "fold": 2,
+      "stage37_mae": 61.44841430722512,
+      "stage23e_mae": 61.44841430722512,
+      "abs_diff": 0.0
+    },
+    {
+      "model": "median",
+      "fold": 3,
+      "stage37_mae": 44.53418838056356,
+      "stage23e_mae": 44.53418838056356,
+      "abs_diff": 0.0
+    },
+    {
+      "model": "median",
+      "fold": 4,
+      "stage37_mae": 25.232017082983063,
+      "stage23e_mae": 25.232017082983063,
+      "abs_diff": 0.0
+    },
+    {
+      "model": "ridge",
+      "fold": 0,
+      "stage37_mae": 52.38374557626142,
+      "stage23e_mae": 52.38374557626142,
+      "abs_diff": 0.0
+    },
+    {
+      "model": "ridge",
+      "fold": 1,
+      "stage37_mae": 34.120443429694774,
+      "stage23e_mae": 34.120443429694774,
+      "abs_diff": 0.0
+    },
+    {
+      "model": "ridge",
+      "fold": 2,
+      "stage37_mae": 96.60243585534202,
+      "stage23e_mae": 96.60243585534202,
+      "abs_diff": 0.0
+    },
+    {
+      "model": "ridge",
+      "fold": 3,
+      "stage37_mae": 84.65673597441983,
+      "stage23e_mae": 84.65673597441983,
+      "abs_diff": 0.0
+    },
+    {
+      "model": "ridge",
+      "fold": 4,
+      "stage37_mae": 37.29043392201605,
+      "stage23e_mae": 37.29043392201605,
+      "abs_diff": 0.0
+    }
+  ],
+  "success_criterion_met": true,
+  "runtime_seconds": 1505
+}

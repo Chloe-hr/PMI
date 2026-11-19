@@ -1,0 +1,12 @@
+"ID","Risk or assumption","Owner","Status","Decision or mitigation"
+"R01","Section A pending","BIM lead","Open","Gate real-model release on verified quantity, units and alignment evidence"
+"R02","Catalogue regional and historical transfer","Estimator","Open","Disclose geography and date; approve any localization"
+"R03","Bundled BC3 labor and cost overlap","Estimator","Open","Reconcile component scope and hours before scheduling/costing"
+"R04","Strength, staging and reshoring need field approval","Structural engineer","Open","Preserve hard release holds"
+"R05","GlobalIds may be regenerated or reused","BIM lead","Open","Require reviewed crosswalk and provenance"
+"R06","Diesel and reusable formwork factors missing","LCA lead","Open","Show explicit gaps; optimize only comparable scope"
+"R07","Short horizon or tick may exclude feasible plans","Planner","Proposed","Record granularity, horizon and bounds"
+"R08","No linked engineering and actual durations","Research lead","NO-GO","Keep correction disabled pending grouped validation"
+"R09","External source and data distribution terms","Maintainer","Open","Pin revisions, audit notices and data terms before adopting"
+"R10","Truncated approval-gate attachment","Reviewer","Open","Unit test proposal supplied; confirm any additional requested gate items"
+

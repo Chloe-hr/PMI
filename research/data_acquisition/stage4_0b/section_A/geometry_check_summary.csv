@@ -1,0 +1,28 @@
+path,ifc_class,sampled,tessellated_ok,compared_with_authored_volume,within_2pct,ratio_min,ratio_max
+data/raw/4DBenchmarkBim.ifc,IfcColumn,40,40,40,40,1.0,1.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,32,32,32,32,1.0,1.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,40,40,40,40,1.0,1.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcBeam,4,4,0,0,,
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcColumn,4,4,0,0,,
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcSlab,4,4,0,0,,
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,40,40,0,0,,
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,40,40,0,0,,
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,40,40,0,0,,
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,40,40,0,0,,
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,40,40,0,0,,
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,37,37,0,0,,
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,40,40,0,0,,
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,30,30,0,0,,
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,40,40,0,0,,
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,40,40,5,5,0.9988,1.0005
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcFooting,13,13,11,11,1.0,1.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcSlab,12,12,0,0,,
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,40,40,8,8,0.9841,1.0009
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,40,40,0,0,,
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,23,23,0,0,,
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,40,40,0,0,,
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,40,40,0,0,,
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,40,40,35,35,0.9995,1.0005
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,23,23,0,0,,
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,40,40,40,40,0.9998,1.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,40,40,40,40,0.9998,1.0002

@@ -1,0 +1,746 @@
+{
+ "path": "data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc",
+ "bytes": 45350171,
+ "sha256": "d96de653e4812ea9110e06ce7c79f774658af392b7cf73b62337cf62eae4cbb4",
+ "schema": "IFC2X3",
+ "header_originating_system": "Autodesk Revit 24.0.4.427 (CHS) - IFC 24.0.4.427",
+ "header_preprocessor": "ODA SDAI 23.12",
+ "header_timestamp": "2025-02-15T15:00:04+08:00",
+ "header_author": [
+  ""
+ ],
+ "header_organization": [
+  ""
+ ],
+ "header_description": [
+  "ViewDefinition [CoordinationView_V2.0]",
+  "RevitIdentifiers [VersionGUID: f1722f61-c0c5-4f21-8f7a-6f3194186350, NumberOfSaves: 5]",
+  "CoordinateReference [CoordinateBase: \u5171\u4eab\u5750\u6807]"
+ ],
+ "applications": [
+  "Autodesk Revit 2024 (CHS) 2024"
+ ],
+ "project_name": [
+  "Project Number"
+ ],
+ "project_longname": [
+  "Project Name"
+ ],
+ "site_names": [
+  "\u8868\u9762:105545"
+ ],
+ "site_refs": [
+  [
+   [
+    42,
+    59,
+    27,
+    599999
+   ],
+   [
+    -71,
+    -27,
+    -39,
+    -599999
+   ]
+  ]
+ ],
+ "site_address": [
+  null
+ ],
+ "building_names": [
+  ""
+ ],
+ "storeys": [
+  {
+   "name": "01 - Entry Level",
+   "elevation": 0.0
+  },
+  {
+   "name": "02 - Floor",
+   "elevation": 3800.0000000015098
+  },
+  {
+   "name": "03 - Floor",
+   "elevation": 7599.999999999942
+  },
+  {
+   "name": "Roof",
+   "elevation": 11399.999999999942
+  },
+  {
+   "name": "Parapet",
+   "elevation": 12000.0
+  }
+ ],
+ "units": [
+  {
+   "type": "LENGTHUNIT",
+   "kind": "SI",
+   "prefix": "MILLI",
+   "name": "METRE"
+  },
+  {
+   "type": "AREAUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "SQUARE_METRE"
+  },
+  {
+   "type": "VOLUMEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "CUBIC_METRE"
+  },
+  {
+   "type": "PLANEANGLEUNIT",
+   "kind": "conversion",
+   "name": "DEGREE",
+   "factor": 0.017453292519943278,
+   "base": "RADIAN"
+  },
+  {
+   "type": "MASSUNIT",
+   "kind": "SI",
+   "prefix": "KILO",
+   "name": "GRAM"
+  },
+  {
+   "type": "TIMEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "SECOND"
+  },
+  {
+   "type": "FREQUENCYUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "HERTZ"
+  },
+  {
+   "type": "THERMODYNAMICTEMPERATUREUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "DEGREE_CELSIUS"
+  },
+  {
+   "type": "ELECTRICCURRENTUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "AMPERE"
+  },
+  {
+   "type": "ELECTRICVOLTAGEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "VOLT"
+  },
+  {
+   "type": "POWERUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "WATT"
+  },
+  {
+   "type": "FORCEUNIT",
+   "kind": "SI",
+   "prefix": "KILO",
+   "name": "NEWTON"
+  },
+  {
+   "type": "ILLUMINANCEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "LUX"
+  },
+  {
+   "type": "LUMINOUSFLUXUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "LUMEN"
+  },
+  {
+   "type": "LUMINOUSINTENSITYUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "CANDELA"
+  },
+  {
+   "type": "PRESSUREUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "PASCAL"
+  }
+ ],
+ "length_unit_scale_to_m": 0.001,
+ "areaunit_scale_to_si": 1.0,
+ "volumeunit_scale_to_si": 1.0,
+ "massunit_scale_to_si": 1000.0,
+ "ifcroot_count": 32395,
+ "globalid_duplicates": 0,
+ "globalid_invalid_format": 0,
+ "entity_counts": {
+  "IfcFooting": 0,
+  "IfcPile": 0,
+  "IfcColumn": 176,
+  "IfcBeam": 37,
+  "IfcSlab": 30,
+  "IfcWall": 146,
+  "IfcCurtainWall": 34,
+  "IfcMember": 3308,
+  "IfcPlate": 1349,
+  "IfcStair": 10,
+  "IfcStairFlight": 20,
+  "IfcRamp": 0,
+  "IfcRoof": 6,
+  "IfcCovering": 65,
+  "IfcDoor": 100,
+  "IfcWindow": 24,
+  "IfcRailing": 35,
+  "IfcBuildingElementProxy": 115,
+  "IfcReinforcingBar": 0,
+  "IfcReinforcingMesh": 0,
+  "IfcTendon": 0,
+  "IfcSpace": 116,
+  "IfcOpeningElement": 123,
+  "IfcBuildingStorey": 5,
+  "IfcElementAssembly": 1,
+  "IfcWallStandardCase": 139,
+  "IfcElement_total": 5724
+ },
+ "relationship_counts": {
+  "IfcRelContainedInSpatialStructure": 8,
+  "IfcRelAggregates": 56,
+  "IfcRelAssociatesMaterial": 62,
+  "IfcRelDefinesByType": 792,
+  "IfcRelDefinesByProperties": 11708,
+  "IfcRelConnectsElements": 266,
+  "IfcRelConnectsPathElements": 266,
+  "IfcRelConnectsWithRealizingElements": 0,
+  "IfcRelSpaceBoundary": 0,
+  "IfcRelVoidsElement": 123,
+  "IfcRelFillsElement": 107,
+  "IfcRelNests": 0,
+  "IfcRelAssignsToProduct": 0,
+  "IfcRelAssignsToProcess": 0,
+  "IfcRelAssignsToControl": 0,
+  "IfcRelAssignsToResource": 0,
+  "IfcRelAssignsToGroup": 83,
+  "IfcRelSequence": 0,
+  "IfcRelAssociatesClassification": 8,
+  "IfcRelInterferesElements": "n/a in schema"
+ },
+ "classification_systems": [
+  "Uniformat 1998"
+ ],
+ "schedule": {
+  "IfcTask": 0,
+  "IfcTaskTime": 0,
+  "IfcWorkSchedule": 0,
+  "IfcWorkPlan": 0,
+  "IfcScheduleTimeControl": 0,
+  "IfcLaborResource": 0,
+  "IfcConstructionEquipmentResource": 0,
+  "IfcCrewResource": 0,
+  "IfcConstructionMaterialResource": 0,
+  "IfcLagTime": 0,
+  "TaskTime_with_ScheduleStart": 0,
+  "TaskTime_with_ScheduleFinish": 0,
+  "TaskTime_with_ScheduleDuration": 0,
+  "TaskTime_with_ActualStart": 0,
+  "TaskTime_with_ActualFinish": 0,
+  "TaskTime_with_ActualDuration": 0,
+  "sequence_types": {},
+  "sequence_with_lag": 0,
+  "products_assigned_to_tasks": 0,
+  "task_names_sample": [],
+  "date_sample": []
+ },
+ "element_classes": {
+  "IfcFooting": {
+   "n": 0
+  },
+  "IfcPile": {
+   "n": 0
+  },
+  "IfcColumn": {
+   "n": 176,
+   "with_storey": 176,
+   "with_material": 176,
+   "with_concrete_material": 170,
+   "with_masonry_material": 0,
+   "with_type": 176,
+   "with_body_geometry": 176,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "MappedRepresentation": 176
+   },
+   "predefined": {
+    "None": 176
+   },
+   "material_names": {
+    "Concrete - Cast-in-Place Concrete": 170,
+    "Metal - Steel - 345 MPa": 6
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcBeam": {
+   "n": 37,
+   "with_storey": 37,
+   "with_material": 37,
+   "with_concrete_material": 12,
+   "with_masonry_material": 0,
+   "with_type": 37,
+   "with_body_geometry": 37,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "MappedRepresentation": 23,
+    "SweptSolid": 14
+   },
+   "predefined": {
+    "None": 37
+   },
+   "material_names": {
+    "<Unnamed>": 23,
+    "Concrete - Precast Concrete - 35 MPa": 12,
+    "Metal - Steel - 345 MPa": 2
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcSlab": {
+   "n": 30,
+   "with_storey": 30,
+   "with_material": 25,
+   "with_concrete_material": 9,
+   "with_masonry_material": 0,
+   "with_type": 20,
+   "with_body_geometry": 30,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "SweptSolid": 20,
+    "Brep": 10
+   },
+   "predefined": {
+    "FLOOR": 17,
+    "LANDING": 10,
+    "ROOF": 3
+   },
+   "material_names": {
+    "Metal - Sunscreen": 12,
+    "Concrete - Cast-in-Place Concrete": 9,
+    "Default Roof": 3,
+    "Carpet (1)": 2,
+    "Concrete - Cast In Situ": 2,
+    "<Unnamed>": 1,
+    "Wood - Flooring": 1
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcWall": {
+   "n": 146,
+   "with_storey": 146,
+   "with_material": 146,
+   "with_concrete_material": 20,
+   "with_masonry_material": 16,
+   "with_type": 146,
+   "with_body_geometry": 146,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "Clipping": 114,
+    "SweptSolid": 25,
+    "Brep": 7
+   },
+   "predefined": {
+    "None": 146
+   },
+   "material_names": {
+    "Plasterboard": 374,
+    "Metal - Stud Layer": 122,
+    "Insulation / Thermal Barriers - External Wall Insulation": 16,
+    "Masonry - Concrete Block": 16,
+    "Default Wall": 4,
+    "Concrete - Cast-in-Place Concrete": 4
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcMember": {
+   "n": 3308,
+   "with_storey": 3308,
+   "with_material": 3292,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 3276,
+   "with_body_geometry": 3308,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "MappedRepresentation": 3276,
+    "SweptSolid": 18,
+    "Brep": 14
+   },
+   "predefined": {
+    "None": 3308
+   },
+   "material_names": {
+    "Metal - Aluminium, Black-Anodized": 3276,
+    "Metal - Paint Finish - Paint Cafe Matte": 16
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcStair": {
+   "n": 10,
+   "with_storey": 10,
+   "with_material": 0,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 0,
+   "with_body_geometry": 0,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {},
+   "predefined": {
+    "None": 10
+   },
+   "material_names": {},
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcRoof": {
+   "n": 6,
+   "with_storey": 6,
+   "with_material": 3,
+   "with_concrete_material": 1,
+   "with_masonry_material": 0,
+   "with_type": 3,
+   "with_body_geometry": 1,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "Brep": 1
+   },
+   "predefined": {
+    "None": 6
+   },
+   "material_names": {
+    "Default Roof": 2,
+    "Roofing - EPDM Membrane": 1,
+    "Insulation / Thermal Barriers - Rigid insulation": 1,
+    "Concrete - Cast In Situ": 1
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcCovering": {
+   "n": 65,
+   "with_storey": 65,
+   "with_material": 65,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 65,
+   "with_body_geometry": 65,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "SweptSolid": 65
+   },
+   "predefined": {
+    "CEILING": 65
+   },
+   "material_names": {
+    "Default": 60,
+    "Ceiling Tile 600 x 600": 60,
+    "Metal - Stud Layer": 5,
+    "Plasterboard": 5
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcBuildingElementProxy": {
+   "n": 115,
+   "with_storey": 115,
+   "with_material": 105,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 115,
+   "with_body_geometry": 115,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "MappedRepresentation": 105,
+    "Brep": 10
+   },
+   "predefined": {
+    "None": 115
+   },
+   "material_names": {
+    "SHADE SUPPORT": 40,
+    "<Unnamed>": 35,
+    "Parking Stripe": 27,
+    "Default Mass": 2,
+    "Ceramic - Tan": 2,
+    "Metal - Steel - ASTM A992": 1
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 68,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 68,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcReinforcingBar": {
+   "n": 0
+  },
+  "IfcReinforcingMesh": {
+   "n": 0
+  },
+  "IfcPlate": {
+   "n": 1349,
+   "with_storey": 1349,
+   "with_material": 1349,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 1349,
+   "with_body_geometry": 1349,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "MappedRepresentation": 1349
+   },
+   "predefined": {
+    "None": 1349
+   },
+   "material_names": {
+    "Glass": 1190,
+    "Stone - Granite": 159
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  }
+ },
+ "audit_seconds": 4.4
+}

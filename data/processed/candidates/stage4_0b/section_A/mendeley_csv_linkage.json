@@ -1,0 +1,62 @@
+[
+ {
+  "project": "BIM_meeting_room_data",
+  "csv": "ifc_space_centroids_data.csv",
+  "distinct_names": 1770,
+  "match_ifc_element_name": 1644,
+  "match_unique_ifc_name": 1625,
+  "ifc_elements": 1682,
+  "ifc_distinct_names": 1644,
+  "ifc_unique_names": 1625
+ },
+ {
+  "project": "BIM_meeting_room_data",
+  "csv": "spatial_relationships_detailed.csv",
+  "distinct_names": 718,
+  "match_ifc_element_name": 716,
+  "match_unique_ifc_name": 697,
+  "ifc_elements": 1682,
+  "ifc_distinct_names": 1644,
+  "ifc_unique_names": 1625
+ },
+ {
+  "project": "BIM_residential_building_data",
+  "csv": "ifc_space_centroids_data.csv",
+  "distinct_names": 6715,
+  "match_ifc_element_name": 6715,
+  "match_unique_ifc_name": 6634,
+  "ifc_elements": 7278,
+  "ifc_distinct_names": 6779,
+  "ifc_unique_names": 6698
+ },
+ {
+  "project": "BIM_residential_building_data",
+  "csv": "spatial_relationships_detailed.csv",
+  "distinct_names": 5850,
+  "match_ifc_element_name": 5850,
+  "match_unique_ifc_name": 5770,
+  "ifc_elements": 7278,
+  "ifc_distinct_names": 6779,
+  "ifc_unique_names": 6698
+ },
+ {
+  "project": "rac_advanced_sample_project_data",
+  "csv": "ifc_space_centroids_data.csv",
+  "distinct_names": 5789,
+  "match_ifc_element_name": 5643,
+  "match_unique_ifc_name": 5600,
+  "ifc_elements": 5724,
+  "ifc_distinct_names": 5643,
+  "ifc_unique_names": 5600
+ },
+ {
+  "project": "rac_advanced_sample_project_data",
+  "csv": "spatial_relationships_detailed.csv",
+  "distinct_names": 4057,
+  "match_ifc_element_name": 3941,
+  "match_unique_ifc_name": 3907,
+  "ifc_elements": 5724,
+  "ifc_distinct_names": 5643,
+  "ifc_unique_names": 5600
+ }
+]

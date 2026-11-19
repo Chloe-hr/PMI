@@ -1,0 +1,333 @@
+{
+ "path": "data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/JORDAHL-Gevelderagers.ifc",
+ "bytes": 3644500,
+ "sha256": "c75fb3b550589597f54583920fde05a44d90bf92f41e4e172c3c98677d552ec1",
+ "schema": "IFC2X3",
+ "header_originating_system": "20140905_0730(x64) - Exporter 2015.0.2014.0905 - Default UI",
+ "header_preprocessor": "The EXPRESS Data Manager Version 5.02.0100.07 : 28 Aug 2013",
+ "header_timestamp": "2015-04-20T13:34:00",
+ "header_author": [
+  ""
+ ],
+ "header_organization": [
+  ""
+ ],
+ "header_description": [
+  "ViewDefinition [CoordinationView]"
+ ],
+ "applications": [
+  "Autodesk Revit 2015 (ENU) 2015"
+ ],
+ "project_name": [
+  "00.0000"
+ ],
+ "project_longname": [
+  "vul hier de projectomschrijving in"
+ ],
+ "site_names": [
+  "Default"
+ ],
+ "site_refs": [
+  [
+   [
+    52,
+    22,
+    58,
+    799999
+   ],
+   [
+    4,
+    54,
+    57,
+    599999
+   ]
+  ]
+ ],
+ "site_address": [
+  null
+ ],
+ "building_names": [
+  ""
+ ],
+ "storeys": [
+  {
+   "name": "00",
+   "elevation": -1.7977064523287e-10
+  },
+  {
+   "name": "01",
+   "elevation": 3000.0
+  }
+ ],
+ "units": [
+  {
+   "type": "LENGTHUNIT",
+   "kind": "SI",
+   "prefix": "MILLI",
+   "name": "METRE"
+  },
+  {
+   "type": "AREAUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "SQUARE_METRE"
+  },
+  {
+   "type": "VOLUMEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "CUBIC_METRE"
+  },
+  {
+   "type": "PLANEANGLEUNIT",
+   "kind": "conversion",
+   "name": "DEGREE",
+   "factor": 0.0174532925199433,
+   "base": "RADIAN"
+  },
+  {
+   "type": "MASSUNIT",
+   "kind": "SI",
+   "prefix": "KILO",
+   "name": "GRAM"
+  },
+  {
+   "type": "TIMEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "SECOND"
+  },
+  {
+   "type": "FREQUENCYUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "HERTZ"
+  },
+  {
+   "type": "THERMODYNAMICTEMPERATUREUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "DEGREE_CELSIUS"
+  },
+  {
+   "type": "ELECTRICCURRENTUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "AMPERE"
+  },
+  {
+   "type": "ELECTRICVOLTAGEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "VOLT"
+  },
+  {
+   "type": "POWERUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "WATT"
+  },
+  {
+   "type": "FORCEUNIT",
+   "kind": "SI",
+   "prefix": "KILO",
+   "name": "NEWTON"
+  },
+  {
+   "type": "ILLUMINANCEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "LUX"
+  },
+  {
+   "type": "LUMINOUSFLUXUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "LUMEN"
+  },
+  {
+   "type": "LUMINOUSINTENSITYUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "CANDELA"
+  },
+  {
+   "type": "PRESSUREUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "PASCAL"
+  }
+ ],
+ "length_unit_scale_to_m": 0.001,
+ "areaunit_scale_to_si": 1.0,
+ "volumeunit_scale_to_si": 1.0,
+ "massunit_scale_to_si": 1000.0,
+ "ifcroot_count": 1418,
+ "globalid_duplicates": 0,
+ "globalid_invalid_format": 0,
+ "entity_counts": {
+  "IfcFooting": 0,
+  "IfcPile": 0,
+  "IfcColumn": 0,
+  "IfcBeam": 0,
+  "IfcSlab": 0,
+  "IfcWall": 0,
+  "IfcCurtainWall": 0,
+  "IfcMember": 0,
+  "IfcPlate": 0,
+  "IfcStair": 0,
+  "IfcStairFlight": 0,
+  "IfcRamp": 0,
+  "IfcRoof": 0,
+  "IfcCovering": 0,
+  "IfcDoor": 0,
+  "IfcWindow": 0,
+  "IfcRailing": 0,
+  "IfcBuildingElementProxy": 42,
+  "IfcReinforcingBar": 0,
+  "IfcReinforcingMesh": 0,
+  "IfcTendon": 0,
+  "IfcSpace": 0,
+  "IfcOpeningElement": 0,
+  "IfcBuildingStorey": 2,
+  "IfcElementAssembly": 0,
+  "IfcWallStandardCase": 0,
+  "IfcElement_total": 42
+ },
+ "relationship_counts": {
+  "IfcRelContainedInSpatialStructure": 2,
+  "IfcRelAggregates": 3,
+  "IfcRelAssociatesMaterial": 8,
+  "IfcRelDefinesByType": 0,
+  "IfcRelDefinesByProperties": 679,
+  "IfcRelConnectsElements": 0,
+  "IfcRelConnectsPathElements": 0,
+  "IfcRelConnectsWithRealizingElements": 0,
+  "IfcRelSpaceBoundary": 0,
+  "IfcRelVoidsElement": 0,
+  "IfcRelFillsElement": 0,
+  "IfcRelNests": 0,
+  "IfcRelAssignsToProduct": 0,
+  "IfcRelAssignsToProcess": 0,
+  "IfcRelAssignsToControl": 0,
+  "IfcRelAssignsToResource": 0,
+  "IfcRelAssignsToGroup": 0,
+  "IfcRelSequence": 0,
+  "IfcRelAssociatesClassification": 0,
+  "IfcRelInterferesElements": "n/a in schema"
+ },
+ "classification_systems": [
+  "Uniformat 1998"
+ ],
+ "schedule": {
+  "IfcTask": 0,
+  "IfcTaskTime": 0,
+  "IfcWorkSchedule": 0,
+  "IfcWorkPlan": 0,
+  "IfcScheduleTimeControl": 0,
+  "IfcLaborResource": 0,
+  "IfcConstructionEquipmentResource": 0,
+  "IfcCrewResource": 0,
+  "IfcConstructionMaterialResource": 0,
+  "IfcLagTime": 0,
+  "TaskTime_with_ScheduleStart": 0,
+  "TaskTime_with_ScheduleFinish": 0,
+  "TaskTime_with_ScheduleDuration": 0,
+  "TaskTime_with_ActualStart": 0,
+  "TaskTime_with_ActualFinish": 0,
+  "TaskTime_with_ActualDuration": 0,
+  "sequence_types": {},
+  "sequence_with_lag": 0,
+  "products_assigned_to_tasks": 0,
+  "task_names_sample": [],
+  "date_sample": []
+ },
+ "element_classes": {
+  "IfcFooting": {
+   "n": 0
+  },
+  "IfcPile": {
+   "n": 0
+  },
+  "IfcColumn": {
+   "n": 0
+  },
+  "IfcBeam": {
+   "n": 0
+  },
+  "IfcSlab": {
+   "n": 0
+  },
+  "IfcWall": {
+   "n": 0
+  },
+  "IfcMember": {
+   "n": 0
+  },
+  "IfcStair": {
+   "n": 0
+  },
+  "IfcRoof": {
+   "n": 0
+  },
+  "IfcCovering": {
+   "n": 0
+  },
+  "IfcBuildingElementProxy": {
+   "n": 42,
+   "with_storey": 42,
+   "with_material": 42,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 0,
+   "with_body_geometry": 42,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "MappedRepresentation": 42
+   },
+   "predefined": {
+    "None": 42
+   },
+   "material_names": {
+    "S235JR": 41,
+    "Mortel_FIS_SB_390S": 6,
+    "S355JR": 1
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 42,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 42,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 35,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcReinforcingBar": {
+   "n": 0
+  },
+  "IfcReinforcingMesh": {
+   "n": 0
+  },
+  "IfcPlate": {
+   "n": 0
+  }
+ },
+ "audit_seconds": 0.2
+}

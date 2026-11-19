@@ -1,0 +1,13 @@
+dataset_id,dataset,status,A_bim_extraction,B_bim_to_task,C_dependency_inference,D_ifc4d_export_verification,E_productivity_reference,F_cost_reference,G_environmental,H_supervised_learning,I_independent_validation,J_unsuitable,rationale
+D1,"BCCA - Base de Costes de la Construccion de Andalucia, Dic-2023 V02",Downloaded,N,N,N,N,Y,Y,N,N,N,N,"Catalogue person-h and equipment-h per unit for all target RC items except curing; direct unit costs reproduce to +/-0.02 EUR. Estimates, not observations; no crew sizes."
+D2,CERP Banco de items de construccion v0.11.0 (Spain bundle),Downloaded,N,N,N,N,Partial,Partial,N,N,N,N,Same source as D1; cross-check only.
+D3,OEKOBAUDAT release 2024-III (full data-stock CSV export),Downloaded,N,N,N,N,N,N,Y,N,N,N,"GWP per declared unit with explicit modules for concrete, rebar, steel, timber, plywood, transport, electricity, site processes. No formwork systems or diesel fuel."
+D4,Project Portfolio Dataset (Thiele et al. 2020),Downloaded,N,N,Partial,N,Partial,Partial,N,N,Partial,N,"Real planned networks, production rates and planned vs actual cost accounts, but civil works (not RC buildings), AUD, no activity actual durations, no IFC. Not eligible for H: target cannot be computed per activity."
+D5,RestageIFC v1.0.0 (Reference Construction Site Aachen),Already available locally,Y,Partial,N,Partial,N,N,N,N,Partial,N,"Genuine IFC4 with element-to-phase assignment and phase actual finish dates; no sequence, starts or durations."
+D6,"DSLIB v3.4 (Ghent OR&S), buildings subset",Already available locally,N,N,Partial,N,N,Partial,N,N,Partial,N,"Real building networks with resources, calendars and tracking; no quantities or IFC; Stage 3.5 showed no model beat plan."
+D7,Cambridge JPF anonymised project data,Already available locally (not opened),N,N,Partial,N,N,N,N,N,N,N,Locked-test protected; reported elapsed calendar days; precedence may include execution edits (Stage 4.0A).
+D8,CYPE Generador de Precios (Spain),Manual download required,N,N,N,N,Pending,Pending,Pending,N,N,N,CYPE not acquired; licence must be cleared before use.
+D9,ITeC BEDEC (construction + environmental),Restricted,N,N,N,N,Pending,Pending,Pending,N,N,N,BEDEC not acquired; subscription or student licence needed.
+D10,EC3 / Building Transparency,Restricted,N,N,N,N,N,N,Pending,N,N,N,EC3 not acquired; API licence needed.
+D11,DDC CWICR open construction cost database,Unsuitable,N,N,N,N,N,N,N,N,N,Y,Non-commercial licence; non-Spanish norms.
+D12,"Estimated-vs-actual labour hours (Kalasapudi et al. 2025, Frontiers Built Env.)",Unavailable,N,N,N,N,N,N,N,N,N,Y,No public data.

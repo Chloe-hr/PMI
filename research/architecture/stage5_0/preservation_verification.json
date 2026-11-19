@@ -1,0 +1,43 @@
+{
+    "stage":  "5.0",
+    "head":  "35be0f82e6edbab029eb011929ed89938e3519b9",
+    "scope":  "Architecture deliverables in research/architecture/stage5_0",
+    "tracked_worktree_diff_empty":  true,
+    "staged_diff_empty":  true,
+    "preexisting_untracked_status_before_and_after":  [
+                                                          "?? data/processed/candidates/",
+                                                          "?? research/data_acquisition/"
+                                                      ],
+    "scripts_experiments_data_apps_rewritten":  false,
+    "cambridge_locked_records_parsed":  false,
+    "existing_model_training_or_inference_run":  false,
+    "python_environments_modified":  false,
+    "production_modules_implemented":  false,
+    "ortools_distribution_inventory":  {
+                                           ".venv":  "absent",
+                                           ".venv-planning":  "9.15.6755",
+                                           "native_runtime_smoke_test":  "deferred"
+                                       },
+    "validation_scope":  "Package inventory, JSON and CSV parsing, embedded diagram and local link checks, Git status and tracked diffs.",
+    "limitations":  "Existing untracked and ignored files were not exhaustively hashed. Research experiments and production tests were not rerun.",
+    "deliverable_sha256":  {
+                               "canonical_data_contracts.md":  "86135d0841c270707c95706d6ee32621f3b7daec642e9308c2d0654369616d45",
+                               "canonical_schemas.json":  "4e6cb638352b2b0ec140d5b77f2955081048c6ca865beb1a11aa513a8715a8b3",
+                               "construction_knowledge_specification.md":  "a436dbcba8e459b189d3cf4f9df593b4292e7eb47cfc6ea16b13d9bb139433aa",
+                               "cost_carbon_evaluation_specification.md":  "678168f76a2f4b04a20f7de51e1fd9d4e677f53f6670e5feb688c4e8f63b083c",
+                               "data_flow.mmd":  "fb5159bfc61dae31af820a7f9662c490d6accbd810c16e54cf9f8ed122507e1a",
+                               "engineering_estimation_specification.md":  "4aa95b5bebf5a0a6a573ce409d3ecc567fbe6ebafb4794dcd122b78de555c1cf",
+                               "existing_code_migration_matrix.csv":  "307951cf3ee565874d2321b63f44d1c8118df86d02ba3a0dc4d07f933d845896",
+                               "implementation_roadmap.md":  "d0f344d7bc2e1fb4d9ff0d5eef45683e60f5e34bd591edea7f608cf08e4c1d07",
+                               "repository_reuse_matrix.csv":  "57cd2c2f64ad9fa9749798e50d0b7397e68ea157d5c28022ca87f2ec443c3f61",
+                               "revision_propagation_specification.md":  "0d0d4be94e28fdb5738fda3fff1552f49d68c8af876a9ab48fb2fd7ac8296cd2",
+                               "risk_and_assumption_register.csv":  "3923c19536b84b1419dcf79ff75447ac6439bde9577120e9cdf0ee61cc2ada5f",
+                               "scenario_optimization_specification.md":  "c4e15b2c0dec1da7f5971b426c6e8df78dcd6d4ed80cd49ef0958c25a953c146",
+                               "scheduling_engine_specification.md":  "43dca206d8be88a54945ba39f53f2d2c3832ea846ae843a22f468f4e6ce1e146",
+                               "stage5_0_architecture.html":  "1d380c467a6552aaee7a93cfdaf117fd5d1f40e9b5cb6de5ac2c272f01d2c357",
+                               "stage5_0_architecture.md":  "7076eb770853198783494fdd8d737a40df6d15fd7abfa6adaf752b26513cb48d",
+                               "system_architecture.mmd":  "f22d7c1db11eb842912d562cbe8a9b9c815ca6da62cd603b3b7ee2f7ea382733",
+                               "user_input_schema.csv":  "135d769024d83d3b6a84c25b87e67d4f7b37461193b8c19174bc618f87e4319b",
+                               "validation_strategy.md":  "5a3a7f0c6dc5a5a9a971acb9c370a5e736ace6cf29b20f3b7119ad04dff06d15"
+                           }
+}

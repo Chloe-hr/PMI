@@ -1,0 +1,250 @@
+{
+ "path": "data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/WILLEMSEN-Hoogbouw dakpannen.ifc",
+ "bytes": 5305982,
+ "sha256": "6df4b3cc3ff09c911d2d76e4887a669d52f3bdc448ea4b7b4158e703e5086dea",
+ "schema": "IFC2X3",
+ "header_originating_system": "AutoCAD Architecture 2014 - English Build 7.5.17.0",
+ "header_preprocessor": "EXPRESS Data Manager stand alone and remote client system - Version 5.00.0310.07.32mod Sep 15 2011",
+ "header_timestamp": "2015-06-16T11:25:22",
+ "header_author": [
+  "Jacob"
+ ],
+ "header_organization": [
+  "",
+  ""
+ ],
+ "header_description": [
+  "ViewDefinition [CoordinationView_V2.0, FMHandOverAddonView, ConceptDesignBIM_2010]",
+  "ExchangeRequirement[Architecture]"
+ ],
+ "applications": [
+  "AutoCAD Architecture 2014 - English 7.5.17.0"
+ ],
+ "project_name": [
+  "1372_HSB_HoogbouwDakpannen"
+ ],
+ "project_longname": [
+  "1372_HSB_HoogbouwDakpannen"
+ ],
+ "site_names": [
+  "Site"
+ ],
+ "site_refs": [
+  [
+   null,
+   null
+  ]
+ ],
+ "site_address": [
+  null
+ ],
+ "building_names": [
+  "1372_HSB_HoogbouwDakpannen"
+ ],
+ "storeys": [],
+ "units": [
+  {
+   "type": "LENGTHUNIT",
+   "kind": "SI",
+   "prefix": "MILLI",
+   "name": "METRE"
+  },
+  {
+   "type": "AREAUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "SQUARE_METRE"
+  },
+  {
+   "type": "VOLUMEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "CUBIC_METRE"
+  },
+  {
+   "type": "PLANEANGLEUNIT",
+   "kind": "conversion",
+   "name": "degree",
+   "factor": 0.0174532925199433,
+   "base": "RADIAN"
+  },
+  {
+   "type": "TIMEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "SECOND"
+  },
+  {
+   "type": "MASSUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "GRAM"
+  }
+ ],
+ "length_unit_scale_to_m": 0.001,
+ "areaunit_scale_to_si": 1.0,
+ "volumeunit_scale_to_si": 1.0,
+ "massunit_scale_to_si": 1.0,
+ "ifcroot_count": 295,
+ "globalid_duplicates": 0,
+ "globalid_invalid_format": 0,
+ "entity_counts": {
+  "IfcFooting": 0,
+  "IfcPile": 0,
+  "IfcColumn": 0,
+  "IfcBeam": 0,
+  "IfcSlab": 0,
+  "IfcWall": 0,
+  "IfcCurtainWall": 0,
+  "IfcMember": 0,
+  "IfcPlate": 0,
+  "IfcStair": 0,
+  "IfcStairFlight": 0,
+  "IfcRamp": 0,
+  "IfcRoof": 0,
+  "IfcCovering": 0,
+  "IfcDoor": 0,
+  "IfcWindow": 0,
+  "IfcRailing": 0,
+  "IfcBuildingElementProxy": 277,
+  "IfcReinforcingBar": 0,
+  "IfcReinforcingMesh": 0,
+  "IfcTendon": 0,
+  "IfcSpace": 0,
+  "IfcOpeningElement": 0,
+  "IfcBuildingStorey": 0,
+  "IfcElementAssembly": 0,
+  "IfcWallStandardCase": 0,
+  "IfcElement_total": 277
+ },
+ "relationship_counts": {
+  "IfcRelContainedInSpatialStructure": 1,
+  "IfcRelAggregates": 2,
+  "IfcRelAssociatesMaterial": 0,
+  "IfcRelDefinesByType": 0,
+  "IfcRelDefinesByProperties": 6,
+  "IfcRelConnectsElements": 0,
+  "IfcRelConnectsPathElements": 0,
+  "IfcRelConnectsWithRealizingElements": 0,
+  "IfcRelSpaceBoundary": 0,
+  "IfcRelVoidsElement": 0,
+  "IfcRelFillsElement": 0,
+  "IfcRelNests": 0,
+  "IfcRelAssignsToProduct": 0,
+  "IfcRelAssignsToProcess": 0,
+  "IfcRelAssignsToControl": 0,
+  "IfcRelAssignsToResource": 0,
+  "IfcRelAssignsToGroup": 0,
+  "IfcRelSequence": 0,
+  "IfcRelAssociatesClassification": 0,
+  "IfcRelInterferesElements": "n/a in schema"
+ },
+ "classification_systems": [],
+ "schedule": {
+  "IfcTask": 0,
+  "IfcTaskTime": 0,
+  "IfcWorkSchedule": 0,
+  "IfcWorkPlan": 0,
+  "IfcScheduleTimeControl": 0,
+  "IfcLaborResource": 0,
+  "IfcConstructionEquipmentResource": 0,
+  "IfcCrewResource": 0,
+  "IfcConstructionMaterialResource": 0,
+  "IfcLagTime": 0,
+  "TaskTime_with_ScheduleStart": 0,
+  "TaskTime_with_ScheduleFinish": 0,
+  "TaskTime_with_ScheduleDuration": 0,
+  "TaskTime_with_ActualStart": 0,
+  "TaskTime_with_ActualFinish": 0,
+  "TaskTime_with_ActualDuration": 0,
+  "sequence_types": {},
+  "sequence_with_lag": 0,
+  "products_assigned_to_tasks": 0,
+  "task_names_sample": [],
+  "date_sample": []
+ },
+ "element_classes": {
+  "IfcFooting": {
+   "n": 0
+  },
+  "IfcPile": {
+   "n": 0
+  },
+  "IfcColumn": {
+   "n": 0
+  },
+  "IfcBeam": {
+   "n": 0
+  },
+  "IfcSlab": {
+   "n": 0
+  },
+  "IfcWall": {
+   "n": 0
+  },
+  "IfcMember": {
+   "n": 0
+  },
+  "IfcStair": {
+   "n": 0
+  },
+  "IfcRoof": {
+   "n": 0
+  },
+  "IfcCovering": {
+   "n": 0
+  },
+  "IfcBuildingElementProxy": {
+   "n": 277,
+   "with_storey": 0,
+   "with_material": 0,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 0,
+   "with_body_geometry": 277,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "Brep": 277
+   },
+   "predefined": {
+    "None": 277
+   },
+   "material_names": {},
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcReinforcingBar": {
+   "n": 0
+  },
+  "IfcReinforcingMesh": {
+   "n": 0
+  },
+  "IfcPlate": {
+   "n": 0
+  }
+ },
+ "audit_seconds": 0.3
+}

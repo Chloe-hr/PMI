@@ -1,0 +1,12 @@
+dataset,A_bim_extraction,B_bim_to_task,C_dependency_inference,D_ifc4d_export_verification,I_independent_validation,J_unsuitable,rationale
+SCH design + as-planned (DataSetSchependomlaan),Y,Y,Partial,Y,Partial,N,"Real built project; authored quantities validated by geometry; 3,505 elements assigned to 125 Synchro tasks with planned dates and 42 sequences; no actual dates; GUIDs regenerated between design and Synchro model."
+RestageIFC,Y,Partial,N,Partial,Y,N,Independent real demonstrator; footings with quantities; 12 phase tasks with ActualFinish only.
+4DBenchmarkBim + Schedules.xlsx,Y,Partial,Partial,Partial,Partial,N,Complete authored quantities; external planned schedules GUID-linked; provenance undocumented; not a real project.
+Mendeley MEN-RES,Y,N,N,N,Partial,N,Large RC model without authored quantities - tests geometry-derived path; spatial CSV relations are geometric only.
+Mendeley MEN-RAC,Y,N,N,N,Partial,N,"Vendor sample; robustness test only, not real-project validation."
+Mendeley MEN-MTG,Y,N,N,N,N,N,Very small; unit-test model.
+SCH subcontractor models,Partial,N,N,N,N,N,Discipline models of the same building; two V_L_Constructief.ifc copies have unverifiable provenance.
+buildingSMART specification models,Partial,N,N,Partial,N,N,Concept fixtures (e.g. reinforcing-assembly 34 bars): parser/unit tests only.
+buildingSMART certification datasets,Partial,N,N,Partial,N,N,Simple scenes for exporter certification; parser tests only.
+Tekla test frames,Partial,N,N,N,N,N,Steel/structural frames with BaseQuantities; no project context.
+PMI synthetic models,N,N,N,Partial,N,Y,Synthetic; must not be used as real validation.

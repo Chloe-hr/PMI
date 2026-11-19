@@ -1,0 +1,401 @@
+{
+ "path": "data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/MULTICOM-trappen+bordessen.ifc",
+ "bytes": 339672,
+ "sha256": "ee0290c62dd543548f11fd4f10e4b670c729d1d42c60db67f5d32a937d9a419a",
+ "schema": "IFC2X3",
+ "header_originating_system": "Tekla Structures 20.1 Service Release 3, IFC Export Version: 4.0.0.0 Feb 17 2015",
+ "header_preprocessor": "IFC Database Version:Work",
+ "header_timestamp": "2015-04-16T13:23:21",
+ "header_author": [
+  "Johan-PC\\Johan"
+ ],
+ "header_organization": [
+  "Structural Designer"
+ ],
+ "header_description": [
+  "ViewDefinition[CoordinationView_V2.0, QuantityTakeOffAddOnView]"
+ ],
+ "applications": [
+  "Tekla Structures 20.1 Service Release 3"
+ ],
+ "project_name": [
+  "Schependomlaan Nijmegen"
+ ],
+ "project_longname": [
+  null
+ ],
+ "site_names": [
+  "Undefined"
+ ],
+ "site_refs": [
+  [
+   null,
+   null
+  ]
+ ],
+ "site_address": [
+  null
+ ],
+ "building_names": [
+  "Undefined"
+ ],
+ "storeys": [
+  {
+   "name": "Undefined",
+   "elevation": 0.0
+  }
+ ],
+ "units": [
+  {
+   "type": "LENGTHUNIT",
+   "kind": "SI",
+   "prefix": "MILLI",
+   "name": "METRE"
+  },
+  {
+   "type": "AREAUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "SQUARE_METRE"
+  },
+  {
+   "type": "VOLUMEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "CUBIC_METRE"
+  },
+  {
+   "type": "MASSUNIT",
+   "kind": "SI",
+   "prefix": "KILO",
+   "name": "GRAM"
+  },
+  {
+   "type": "TIMEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "SECOND"
+  },
+  {
+   "type": "PLANEANGLEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "RADIAN"
+  },
+  {
+   "type": "SOLIDANGLEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "STERADIAN"
+  },
+  {
+   "type": "THERMODYNAMICTEMPERATUREUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "DEGREE_CELSIUS"
+  },
+  {
+   "type": "LUMINOUSINTENSITYUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "LUMEN"
+  }
+ ],
+ "length_unit_scale_to_m": 0.001,
+ "areaunit_scale_to_si": 1.0,
+ "volumeunit_scale_to_si": 1.0,
+ "massunit_scale_to_si": 1000.0,
+ "ifcroot_count": 950,
+ "globalid_duplicates": 0,
+ "globalid_invalid_format": 0,
+ "entity_counts": {
+  "IfcFooting": 0,
+  "IfcPile": 0,
+  "IfcColumn": 0,
+  "IfcBeam": 57,
+  "IfcSlab": 18,
+  "IfcWall": 0,
+  "IfcCurtainWall": 0,
+  "IfcMember": 0,
+  "IfcPlate": 3,
+  "IfcStair": 0,
+  "IfcStairFlight": 0,
+  "IfcRamp": 0,
+  "IfcRoof": 0,
+  "IfcCovering": 36,
+  "IfcDoor": 0,
+  "IfcWindow": 0,
+  "IfcRailing": 0,
+  "IfcBuildingElementProxy": 0,
+  "IfcReinforcingBar": 0,
+  "IfcReinforcingMesh": 0,
+  "IfcTendon": 0,
+  "IfcSpace": 0,
+  "IfcOpeningElement": 0,
+  "IfcBuildingStorey": 1,
+  "IfcElementAssembly": 45,
+  "IfcWallStandardCase": 0,
+  "IfcElement_total": 231
+ },
+ "relationship_counts": {
+  "IfcRelContainedInSpatialStructure": 1,
+  "IfcRelAggregates": 48,
+  "IfcRelAssociatesMaterial": 6,
+  "IfcRelDefinesByType": 12,
+  "IfcRelDefinesByProperties": 282,
+  "IfcRelConnectsElements": 36,
+  "IfcRelConnectsPathElements": 0,
+  "IfcRelConnectsWithRealizingElements": 36,
+  "IfcRelSpaceBoundary": 0,
+  "IfcRelVoidsElement": 0,
+  "IfcRelFillsElement": 0,
+  "IfcRelNests": 0,
+  "IfcRelAssignsToProduct": 0,
+  "IfcRelAssignsToProcess": 0,
+  "IfcRelAssignsToControl": 0,
+  "IfcRelAssignsToResource": 0,
+  "IfcRelAssignsToGroup": 0,
+  "IfcRelSequence": 0,
+  "IfcRelAssociatesClassification": 0,
+  "IfcRelInterferesElements": "n/a in schema"
+ },
+ "classification_systems": [],
+ "schedule": {
+  "IfcTask": 0,
+  "IfcTaskTime": 0,
+  "IfcWorkSchedule": 0,
+  "IfcWorkPlan": 0,
+  "IfcScheduleTimeControl": 0,
+  "IfcLaborResource": 0,
+  "IfcConstructionEquipmentResource": 0,
+  "IfcCrewResource": 0,
+  "IfcConstructionMaterialResource": 0,
+  "IfcLagTime": 0,
+  "TaskTime_with_ScheduleStart": 0,
+  "TaskTime_with_ScheduleFinish": 0,
+  "TaskTime_with_ScheduleDuration": 0,
+  "TaskTime_with_ActualStart": 0,
+  "TaskTime_with_ActualFinish": 0,
+  "TaskTime_with_ActualDuration": 0,
+  "sequence_types": {},
+  "sequence_with_lag": 0,
+  "products_assigned_to_tasks": 0,
+  "task_names_sample": [],
+  "date_sample": []
+ },
+ "element_classes": {
+  "IfcFooting": {
+   "n": 0
+  },
+  "IfcPile": {
+   "n": 0
+  },
+  "IfcColumn": {
+   "n": 0
+  },
+  "IfcBeam": {
+   "n": 57,
+   "with_storey": 57,
+   "with_material": 57,
+   "with_concrete_material": 15,
+   "with_masonry_material": 0,
+   "with_type": 57,
+   "with_body_geometry": 57,
+   "with_any_qto": 57,
+   "qto_set_names": {
+    "BaseQuantities": 57
+   },
+   "rep_types": {
+    "Brep": 57
+   },
+   "predefined": {
+    "None": 57
+   },
+   "material_names": {
+    "STEEL/St52-3": 36,
+    "CONCRETE/C45/55": 15,
+    "Undefined/3500": 6
+   },
+   "qto_net_volume": 57,
+   "pset_net_volume": 57,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 57,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 57,
+   "pset_length": 57,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 57,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 57,
+   "flat_height": 0,
+   "qto_weight": 51,
+   "pset_weight": 51,
+   "flat_weight": 0
+  },
+  "IfcSlab": {
+   "n": 18,
+   "with_storey": 18,
+   "with_material": 18,
+   "with_concrete_material": 18,
+   "with_masonry_material": 0,
+   "with_type": 18,
+   "with_body_geometry": 18,
+   "with_any_qto": 18,
+   "qto_set_names": {
+    "BaseQuantities": 18
+   },
+   "rep_types": {
+    "Brep": 18
+   },
+   "predefined": {
+    "FLOOR": 18
+   },
+   "material_names": {
+    "CONCRETE/C45/55": 18
+   },
+   "qto_net_volume": 18,
+   "pset_net_volume": 18,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 18,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 18,
+   "flat_length": 0,
+   "qto_width": 18,
+   "pset_width": 18,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 18,
+   "flat_height": 0,
+   "qto_weight": 18,
+   "pset_weight": 18,
+   "flat_weight": 0
+  },
+  "IfcWall": {
+   "n": 0
+  },
+  "IfcMember": {
+   "n": 0
+  },
+  "IfcStair": {
+   "n": 0
+  },
+  "IfcRoof": {
+   "n": 0
+  },
+  "IfcCovering": {
+   "n": 36,
+   "with_storey": 36,
+   "with_material": 36,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 0,
+   "with_body_geometry": 0,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {},
+   "predefined": {
+    "NOTDEFINED": 36
+   },
+   "material_names": {
+    "Undefined/Undefined": 36
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcBuildingElementProxy": {
+   "n": 0
+  },
+  "IfcReinforcingBar": {
+   "n": 0
+  },
+  "IfcReinforcingMesh": {
+   "n": 0
+  },
+  "IfcPlate": {
+   "n": 3,
+   "with_storey": 3,
+   "with_material": 3,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 3,
+   "with_body_geometry": 3,
+   "with_any_qto": 3,
+   "qto_set_names": {
+    "BaseQuantities": 3
+   },
+   "rep_types": {
+    "Brep": 3
+   },
+   "predefined": {
+    "None": 3
+   },
+   "material_names": {
+    "MISCELLANEOUS/RUBBER_HARD": 3
+   },
+   "qto_net_volume": 3,
+   "pset_net_volume": 3,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 3,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 3,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 3,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 3,
+   "flat_length": 0,
+   "qto_width": 3,
+   "pset_width": 3,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 3,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 3,
+   "flat_weight": 0
+  }
+ },
+ "audit_seconds": 0.1
+}

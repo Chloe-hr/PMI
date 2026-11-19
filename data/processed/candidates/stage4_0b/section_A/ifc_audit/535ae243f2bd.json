@@ -1,0 +1,216 @@
+{
+ "path": "data/raw/IFC4.x-specification-models-main/models/mapped-geometric-shape/mapped-shape-with-transformation/mapped-shape-with-transformation.ifc",
+ "bytes": 6748,
+ "sha256": "92b95e00e087b6a5ff5d3662a20861874f47932aa5d816ac1e558730b98099f9",
+ "schema": "IFC4X3",
+ "header_originating_system": "redacted - redacted - 3.14159",
+ "header_preprocessor": "redacted",
+ "header_timestamp": "2011-11-07T18:00:00",
+ "header_author": [
+  "redacted"
+ ],
+ "header_organization": [
+  "redacted"
+ ],
+ "header_description": [
+  "ViewDefinition [NotAssigned]",
+  "Comment [manual creation of example file]"
+ ],
+ "applications": [
+  "redacted redacted"
+ ],
+ "project_name": [
+  "proxy with transformed mapped representation"
+ ],
+ "project_longname": [
+  null
+ ],
+ "site_names": [],
+ "site_refs": [],
+ "site_address": [],
+ "building_names": [
+  "Test Building"
+ ],
+ "storeys": [],
+ "units": [
+  {
+   "type": "LENGTHUNIT",
+   "kind": "SI",
+   "prefix": "MILLI",
+   "name": "METRE"
+  },
+  {
+   "type": "PLANEANGLEUNIT",
+   "kind": "conversion",
+   "name": "degree",
+   "factor": 0.017453293,
+   "base": "RADIAN"
+  }
+ ],
+ "length_unit_scale_to_m": 0.001,
+ "areaunit_scale_to_si": 1,
+ "volumeunit_scale_to_si": 1,
+ "massunit_scale_to_si": 1,
+ "ifcroot_count": 8,
+ "globalid_duplicates": 0,
+ "globalid_invalid_format": 0,
+ "entity_counts": {
+  "IfcFooting": 0,
+  "IfcPile": 0,
+  "IfcColumn": 0,
+  "IfcBeam": 0,
+  "IfcSlab": 0,
+  "IfcWall": 0,
+  "IfcCurtainWall": 0,
+  "IfcMember": 0,
+  "IfcPlate": 0,
+  "IfcStair": 0,
+  "IfcStairFlight": 0,
+  "IfcRamp": 0,
+  "IfcRoof": 0,
+  "IfcCovering": 0,
+  "IfcDoor": 0,
+  "IfcWindow": 0,
+  "IfcRailing": 0,
+  "IfcBuildingElementProxy": 1,
+  "IfcReinforcingBar": 0,
+  "IfcReinforcingMesh": 0,
+  "IfcTendon": 0,
+  "IfcSpace": 0,
+  "IfcOpeningElement": 0,
+  "IfcBuildingStorey": 0,
+  "IfcElementAssembly": 0,
+  "IfcWallStandardCase": "n/a",
+  "IfcElement_total": 1
+ },
+ "relationship_counts": {
+  "IfcRelContainedInSpatialStructure": 1,
+  "IfcRelAggregates": 1,
+  "IfcRelAssociatesMaterial": 0,
+  "IfcRelDefinesByType": 1,
+  "IfcRelDefinesByProperties": 0,
+  "IfcRelConnectsElements": 0,
+  "IfcRelConnectsPathElements": 0,
+  "IfcRelConnectsWithRealizingElements": 0,
+  "IfcRelSpaceBoundary": 0,
+  "IfcRelVoidsElement": 0,
+  "IfcRelFillsElement": 0,
+  "IfcRelNests": 0,
+  "IfcRelAssignsToProduct": 0,
+  "IfcRelAssignsToProcess": 0,
+  "IfcRelAssignsToControl": 0,
+  "IfcRelAssignsToResource": 0,
+  "IfcRelAssignsToGroup": 0,
+  "IfcRelSequence": 0,
+  "IfcRelAssociatesClassification": 0,
+  "IfcRelInterferesElements": 0
+ },
+ "classification_systems": [],
+ "schedule": {
+  "IfcTask": 0,
+  "IfcTaskTime": 0,
+  "IfcWorkSchedule": 0,
+  "IfcWorkPlan": 0,
+  "IfcScheduleTimeControl": 0,
+  "IfcLaborResource": 0,
+  "IfcConstructionEquipmentResource": 0,
+  "IfcCrewResource": 0,
+  "IfcConstructionMaterialResource": 0,
+  "IfcLagTime": 0,
+  "TaskTime_with_ScheduleStart": 0,
+  "TaskTime_with_ScheduleFinish": 0,
+  "TaskTime_with_ScheduleDuration": 0,
+  "TaskTime_with_ActualStart": 0,
+  "TaskTime_with_ActualFinish": 0,
+  "TaskTime_with_ActualDuration": 0,
+  "sequence_types": {},
+  "sequence_with_lag": 0,
+  "products_assigned_to_tasks": 0,
+  "task_names_sample": [],
+  "date_sample": []
+ },
+ "element_classes": {
+  "IfcFooting": {
+   "n": 0
+  },
+  "IfcPile": {
+   "n": 0
+  },
+  "IfcColumn": {
+   "n": 0
+  },
+  "IfcBeam": {
+   "n": 0
+  },
+  "IfcSlab": {
+   "n": 0
+  },
+  "IfcWall": {
+   "n": 0
+  },
+  "IfcMember": {
+   "n": 0
+  },
+  "IfcStair": {
+   "n": 0
+  },
+  "IfcRoof": {
+   "n": 0
+  },
+  "IfcCovering": {
+   "n": 0
+  },
+  "IfcBuildingElementProxy": {
+   "n": 1,
+   "with_storey": 0,
+   "with_material": 0,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 1,
+   "with_body_geometry": 1,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "MappedRepresentation": 1
+   },
+   "predefined": {
+    "None": 1
+   },
+   "material_names": {},
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcReinforcingBar": {
+   "n": 0
+  },
+  "IfcReinforcingMesh": {
+   "n": 0
+  },
+  "IfcPlate": {
+   "n": 0
+  }
+ },
+ "audit_seconds": 0.0
+}

@@ -1,0 +1,540 @@
+{
+ "path": "data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/V_L_Constructief.ifc",
+ "bytes": 941642,
+ "sha256": "b780050d03e072b89e76e541e5d795f26d1a144dbe1e4718264b6f291820be3b",
+ "schema": "IFC2X3",
+ "header_originating_system": "20130308_1515(x64) - Exporter 2014.0.2013.0308 - Default UI",
+ "header_preprocessor": "The EXPRESS Data Manager Version 5.01.0100.02.64mod : 6 Jun 2012",
+ "header_timestamp": "2015-03-02T15:09:57",
+ "header_author": [],
+ "header_organization": [],
+ "header_description": [
+  "ViewDefinition [CoordinationView]"
+ ],
+ "applications": [
+  "Autodesk Revit 2014 (ENU) 2014",
+  "Not Defined Not Defined"
+ ],
+ "project_name": [
+  "09035"
+ ],
+ "project_longname": [
+  "10 appartementen Schependomlaan te Nijmegen"
+ ],
+ "site_names": [
+  "Default"
+ ],
+ "site_refs": [
+  [
+   null,
+   null
+  ]
+ ],
+ "site_address": [
+  null
+ ],
+ "building_names": [
+  null
+ ],
+ "storeys": [
+  {
+   "name": "Bk Putvloer",
+   "elevation": null
+  },
+  {
+   "name": "Bk fundering",
+   "elevation": null
+  },
+  {
+   "name": "Begane grondvloer",
+   "elevation": null
+  },
+  {
+   "name": "1e Verdiepingvloer",
+   "elevation": null
+  },
+  {
+   "name": "2e Verdiepingvloer",
+   "elevation": null
+  },
+  {
+   "name": "3e Verdiepingsvloer",
+   "elevation": null
+  },
+  {
+   "name": "Dakvloer",
+   "elevation": null
+  },
+  {
+   "name": "aanzicht dakvloer",
+   "elevation": null
+  },
+  {
+   "name": "Dak lift",
+   "elevation": null
+  }
+ ],
+ "units": [
+  {
+   "type": "PLANEANGLEUNIT",
+   "kind": "conversion",
+   "name": "DEGREE",
+   "factor": 0.0174532925239284,
+   "base": "RADIAN"
+  },
+  {
+   "type": "AREAUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "SQUARE_METRE"
+  },
+  {
+   "type": "LENGTHUNIT",
+   "kind": "SI",
+   "prefix": "MILLI",
+   "name": "METRE"
+  },
+  {
+   "type": "MASSUNIT",
+   "kind": "SI",
+   "prefix": "KILO",
+   "name": "GRAM"
+  },
+  {
+   "type": "POWERUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "WATT"
+  },
+  {
+   "type": "PRESSUREUNIT",
+   "kind": "SI",
+   "prefix": "KILO",
+   "name": "PASCAL"
+  },
+  {
+   "type": "FORCEUNIT",
+   "kind": "SI",
+   "prefix": "KILO",
+   "name": "NEWTON"
+  },
+  {
+   "type": "ELECTRICCURRENTUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "AMPERE"
+  },
+  {
+   "type": "THERMODYNAMICTEMPERATUREUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "KELVIN"
+  },
+  {
+   "type": "TIMEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "SECOND"
+  },
+  {
+   "type": "VOLUMEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "CUBIC_METRE"
+  }
+ ],
+ "length_unit_scale_to_m": 0.001,
+ "areaunit_scale_to_si": 1.0,
+ "volumeunit_scale_to_si": 1.0,
+ "massunit_scale_to_si": 1000.0,
+ "ifcroot_count": 1189,
+ "globalid_duplicates": 0,
+ "globalid_invalid_format": 0,
+ "entity_counts": {
+  "IfcFooting": 1,
+  "IfcPile": 0,
+  "IfcColumn": 32,
+  "IfcBeam": 152,
+  "IfcSlab": 29,
+  "IfcWall": 296,
+  "IfcCurtainWall": 0,
+  "IfcMember": 0,
+  "IfcPlate": 0,
+  "IfcStair": 0,
+  "IfcStairFlight": 0,
+  "IfcRamp": 0,
+  "IfcRoof": 22,
+  "IfcCovering": 0,
+  "IfcDoor": 0,
+  "IfcWindow": 0,
+  "IfcRailing": 0,
+  "IfcBuildingElementProxy": 0,
+  "IfcReinforcingBar": 0,
+  "IfcReinforcingMesh": 0,
+  "IfcTendon": 0,
+  "IfcSpace": 0,
+  "IfcOpeningElement": 49,
+  "IfcBuildingStorey": 9,
+  "IfcElementAssembly": 0,
+  "IfcWallStandardCase": 296,
+  "IfcElement_total": 581
+ },
+ "relationship_counts": {
+  "IfcRelContainedInSpatialStructure": 9,
+  "IfcRelAggregates": 5,
+  "IfcRelAssociatesMaterial": 362,
+  "IfcRelDefinesByType": 45,
+  "IfcRelDefinesByProperties": 40,
+  "IfcRelConnectsElements": 0,
+  "IfcRelConnectsPathElements": 0,
+  "IfcRelConnectsWithRealizingElements": 0,
+  "IfcRelSpaceBoundary": 0,
+  "IfcRelVoidsElement": 49,
+  "IfcRelFillsElement": 0,
+  "IfcRelNests": 0,
+  "IfcRelAssignsToProduct": 0,
+  "IfcRelAssignsToProcess": 0,
+  "IfcRelAssignsToControl": 0,
+  "IfcRelAssignsToResource": 0,
+  "IfcRelAssignsToGroup": 0,
+  "IfcRelSequence": 0,
+  "IfcRelAssociatesClassification": 1,
+  "IfcRelInterferesElements": "n/a in schema"
+ },
+ "classification_systems": [
+  "UniFormat 1998"
+ ],
+ "schedule": {
+  "IfcTask": 0,
+  "IfcTaskTime": 0,
+  "IfcWorkSchedule": 0,
+  "IfcWorkPlan": 0,
+  "IfcScheduleTimeControl": 0,
+  "IfcLaborResource": 0,
+  "IfcConstructionEquipmentResource": 0,
+  "IfcCrewResource": 0,
+  "IfcConstructionMaterialResource": 0,
+  "IfcLagTime": 0,
+  "TaskTime_with_ScheduleStart": 0,
+  "TaskTime_with_ScheduleFinish": 0,
+  "TaskTime_with_ScheduleDuration": 0,
+  "TaskTime_with_ActualStart": 0,
+  "TaskTime_with_ActualFinish": 0,
+  "TaskTime_with_ActualDuration": 0,
+  "sequence_types": {},
+  "sequence_with_lag": 0,
+  "products_assigned_to_tasks": 0,
+  "task_names_sample": [],
+  "date_sample": []
+ },
+ "element_classes": {
+  "IfcFooting": {
+   "n": 1,
+   "with_storey": 1,
+   "with_material": 1,
+   "with_concrete_material": 1,
+   "with_masonry_material": 0,
+   "with_type": 0,
+   "with_body_geometry": 1,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "SweptSolid": 1
+   },
+   "predefined": {
+    "NOTDEFINED": 1
+   },
+   "material_names": {
+    "beton": 1
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcPile": {
+   "n": 0
+  },
+  "IfcColumn": {
+   "n": 32,
+   "with_storey": 32,
+   "with_material": 32,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 32,
+   "with_body_geometry": 32,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "MappedRepresentation": 32
+   },
+   "predefined": {
+    "None": 32
+   },
+   "material_names": {
+    "hout": 21,
+    "staal": 11
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcBeam": {
+   "n": 152,
+   "with_storey": 152,
+   "with_material": 152,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 0,
+   "with_body_geometry": 152,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "MappedRepresentation": 110,
+    "SweptSolid": 28,
+    "Clipping": 12,
+    "Brep": 2
+   },
+   "predefined": {
+    "None": 152
+   },
+   "material_names": {
+    "hout": 128,
+    "staal": 24
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcSlab": {
+   "n": 29,
+   "with_storey": 29,
+   "with_material": 29,
+   "with_concrete_material": 27,
+   "with_masonry_material": 0,
+   "with_type": 0,
+   "with_body_geometry": 29,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "SweptSolid": 29
+   },
+   "predefined": {
+    "None": 29
+   },
+   "material_names": {
+    "beton_C20/25": 22,
+    "prefabbeton": 11,
+    "cementdekvloer": 3,
+    "isolatie_vloer": 3,
+    "isolatie_dak": 2,
+    "luchtspouw": 2,
+    "dak_zink": 1,
+    "dak_schild": 1
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcWall": {
+   "n": 296,
+   "with_storey": 296,
+   "with_material": 296,
+   "with_concrete_material": 12,
+   "with_masonry_material": 268,
+   "with_type": 296,
+   "with_body_geometry": 296,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "MappedRepresentation": 140,
+    "SweptSolid": 95,
+    "Clipping": 61
+   },
+   "predefined": {
+    "None": 296
+   },
+   "material_names": {
+    "kalkzandsteen": 148,
+    "metselwerk": 120,
+    "gipsplaat": 32,
+    "hout": 16,
+    "beton_C20/25": 12
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcMember": {
+   "n": 0
+  },
+  "IfcStair": {
+   "n": 0
+  },
+  "IfcRoof": {
+   "n": 22,
+   "with_storey": 22,
+   "with_material": 20,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 0,
+   "with_body_geometry": 20,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "Brep": 16,
+    "MappedRepresentation": 4
+   },
+   "predefined": {
+    "None": 22
+   },
+   "material_names": {
+    "isolatie_dak": 20
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcCovering": {
+   "n": 0
+  },
+  "IfcBuildingElementProxy": {
+   "n": 0
+  },
+  "IfcReinforcingBar": {
+   "n": 0
+  },
+  "IfcReinforcingMesh": {
+   "n": 0
+  },
+  "IfcPlate": {
+   "n": 0
+  }
+ },
+ "audit_seconds": 0.2
+}

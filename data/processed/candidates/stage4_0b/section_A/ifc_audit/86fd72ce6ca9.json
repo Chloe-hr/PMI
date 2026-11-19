@@ -1,0 +1,367 @@
+{
+ "path": "data/raw/Certification-datasets-main/IFC 2.3.0.1 (IFC 2x3 TC1)/Simple-Scene/Building-Architecture.ifc",
+ "bytes": 92542,
+ "sha256": "c4db65ba847f6b369a95d6c54fa11f4750cbe6d59f021934e8923d8d578e5885",
+ "schema": "IFC2X3",
+ "header_originating_system": "BIM_Tools - Sketchup_IFC_manager - 5.6.0",
+ "header_preprocessor": "Sketchup-IFC-manager 5.6.0 / SketchUp 2026 (26.2.242)",
+ "header_timestamp": "2026-06-23T11:53:12",
+ "header_author": [
+  ""
+ ],
+ "header_organization": [
+  ""
+ ],
+ "header_description": [
+  "ViewDefinition [CoordinationView_V2.0]"
+ ],
+ "applications": [
+  "IFC manager for sketchup 5.6.0"
+ ],
+ "project_name": [
+  "ifc silly sample scene - project"
+ ],
+ "project_longname": [
+  null
+ ],
+ "site_names": [
+  "environment - site"
+ ],
+ "site_refs": [
+  [
+   null,
+   null
+  ]
+ ],
+ "site_address": [
+  null
+ ],
+ "building_names": [
+  "Single-family house"
+ ],
+ "storeys": [
+  {
+   "name": "00 groundfloor",
+   "elevation": 0.0
+  }
+ ],
+ "units": [
+  {
+   "type": "LENGTHUNIT",
+   "kind": "SI",
+   "prefix": "MILLI",
+   "name": "METRE"
+  },
+  {
+   "type": "AREAUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "SQUARE_METRE"
+  },
+  {
+   "type": "VOLUMEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "CUBIC_METRE"
+  }
+ ],
+ "length_unit_scale_to_m": 0.001,
+ "areaunit_scale_to_si": 1.0,
+ "volumeunit_scale_to_si": 1.0,
+ "massunit_scale_to_si": 1,
+ "ifcroot_count": 87,
+ "globalid_duplicates": 0,
+ "globalid_invalid_format": 0,
+ "entity_counts": {
+  "IfcFooting": 0,
+  "IfcPile": 0,
+  "IfcColumn": 0,
+  "IfcBeam": 0,
+  "IfcSlab": 3,
+  "IfcWall": 4,
+  "IfcCurtainWall": 0,
+  "IfcMember": 0,
+  "IfcPlate": 0,
+  "IfcStair": 0,
+  "IfcStairFlight": 0,
+  "IfcRamp": 0,
+  "IfcRoof": 1,
+  "IfcCovering": 0,
+  "IfcDoor": 0,
+  "IfcWindow": 0,
+  "IfcRailing": 0,
+  "IfcBuildingElementProxy": 5,
+  "IfcReinforcingBar": 0,
+  "IfcReinforcingMesh": 0,
+  "IfcTendon": 0,
+  "IfcSpace": 2,
+  "IfcOpeningElement": 0,
+  "IfcBuildingStorey": 1,
+  "IfcElementAssembly": 0,
+  "IfcWallStandardCase": 0,
+  "IfcElement_total": 14
+ },
+ "relationship_counts": {
+  "IfcRelContainedInSpatialStructure": 3,
+  "IfcRelAggregates": 5,
+  "IfcRelAssociatesMaterial": 9,
+  "IfcRelDefinesByType": 15,
+  "IfcRelDefinesByProperties": 8,
+  "IfcRelConnectsElements": 0,
+  "IfcRelConnectsPathElements": 0,
+  "IfcRelConnectsWithRealizingElements": 0,
+  "IfcRelSpaceBoundary": 0,
+  "IfcRelVoidsElement": 0,
+  "IfcRelFillsElement": 0,
+  "IfcRelNests": 0,
+  "IfcRelAssignsToProduct": 0,
+  "IfcRelAssignsToProcess": 0,
+  "IfcRelAssignsToControl": 0,
+  "IfcRelAssignsToResource": 0,
+  "IfcRelAssignsToGroup": 1,
+  "IfcRelSequence": 0,
+  "IfcRelAssociatesClassification": 1,
+  "IfcRelInterferesElements": "n/a in schema"
+ },
+ "classification_systems": [
+  "CCI Construction 1.0"
+ ],
+ "schedule": {
+  "IfcTask": 0,
+  "IfcTaskTime": 0,
+  "IfcWorkSchedule": 0,
+  "IfcWorkPlan": 0,
+  "IfcScheduleTimeControl": 0,
+  "IfcLaborResource": 0,
+  "IfcConstructionEquipmentResource": 0,
+  "IfcCrewResource": 0,
+  "IfcConstructionMaterialResource": 0,
+  "IfcLagTime": 0,
+  "TaskTime_with_ScheduleStart": 0,
+  "TaskTime_with_ScheduleFinish": 0,
+  "TaskTime_with_ScheduleDuration": 0,
+  "TaskTime_with_ActualStart": 0,
+  "TaskTime_with_ActualFinish": 0,
+  "TaskTime_with_ActualDuration": 0,
+  "sequence_types": {},
+  "sequence_with_lag": 0,
+  "products_assigned_to_tasks": 0,
+  "task_names_sample": [],
+  "date_sample": []
+ },
+ "element_classes": {
+  "IfcFooting": {
+   "n": 0
+  },
+  "IfcPile": {
+   "n": 0
+  },
+  "IfcColumn": {
+   "n": 0
+  },
+  "IfcBeam": {
+   "n": 0
+  },
+  "IfcSlab": {
+   "n": 3,
+   "with_storey": 1,
+   "with_material": 3,
+   "with_concrete_material": 1,
+   "with_masonry_material": 0,
+   "with_type": 3,
+   "with_body_geometry": 3,
+   "with_any_qto": 3,
+   "qto_set_names": {
+    "Qto_SlabBaseQuantities": 3
+   },
+   "rep_types": {
+    "Brep": 3
+   },
+   "predefined": {
+    "None": 3
+   },
+   "material_names": {
+    "composite_element_roof": 2,
+    "concrete_reinforced_in-situ": 1
+   },
+   "qto_net_volume": 3,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 3,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 3,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcWall": {
+   "n": 4,
+   "with_storey": 4,
+   "with_material": 4,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 4,
+   "with_body_geometry": 4,
+   "with_any_qto": 4,
+   "qto_set_names": {
+    "Qto_WallBaseQuantities": 4
+   },
+   "rep_types": {
+    "Brep": 4
+   },
+   "predefined": {
+    "None": 4
+   },
+   "material_names": {
+    "stone_sand-lime": 3,
+    "gypsum_fiber-board_panel": 1
+   },
+   "qto_net_volume": 4,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 4,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 4,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 4,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcMember": {
+   "n": 0
+  },
+  "IfcStair": {
+   "n": 0
+  },
+  "IfcRoof": {
+   "n": 1,
+   "with_storey": 0,
+   "with_material": 0,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 0,
+   "with_body_geometry": 0,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {},
+   "predefined": {
+    "None": 1
+   },
+   "material_names": {},
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcCovering": {
+   "n": 0
+  },
+  "IfcBuildingElementProxy": {
+   "n": 5,
+   "with_storey": 1,
+   "with_material": 5,
+   "with_concrete_material": 0,
+   "with_masonry_material": 0,
+   "with_type": 5,
+   "with_body_geometry": 4,
+   "with_any_qto": 0,
+   "qto_set_names": {},
+   "rep_types": {
+    "Brep": 4
+   },
+   "predefined": {
+    "None": 5
+   },
+   "material_names": {
+    "stone_sand-lime": 1,
+    "virtual_spatial-zone": 1,
+    "bulk-material_sand-coarse_generic": 1,
+    "virtual_white": 1,
+    "virtual_black": 1
+   },
+   "qto_net_volume": 0,
+   "pset_net_volume": 0,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 0,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 0,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 0,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcReinforcingBar": {
+   "n": 0
+  },
+  "IfcReinforcingMesh": {
+   "n": 0
+  },
+  "IfcPlate": {
+   "n": 0
+  }
+ },
+ "audit_seconds": 0.0
+}

@@ -1,0 +1,25 @@
+flowchart LR
+    IFC[Local IFC] --> A[IFC adapter]
+    H[Future host-specific adapters] -.-> A
+    A --> B[BIM snapshot and takeoff]
+    B --> K[Construction knowledge]
+    C[Local reference providers] --> K
+    K --> E[Engineering estimation]
+    C --> E
+    U[Planner inputs and approvals] --> K
+    U --> P[CPM and CP-SAT planning]
+    E --> P
+    B --> R[Revision comparison]
+    R --> K
+    R --> P
+    P --> V[Cost and carbon evaluation]
+    C --> V
+    V --> O[Scenario selection]
+    O --> X[IFC4D export]
+    E -. "Future approval required" .-> M[Optional duration correction]
+    M -.-> P
+    B --> S[Local versioned evidence store]
+    V --> S
+    P --> S
+    S --> UI[Local application]
+

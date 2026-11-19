@@ -1,0 +1,863 @@
+file,ifc_class,global_id,name,authored_net_volume_m3,authored_gross_volume_m3,authored_reference,geom_volume_m3,geom_total_surface_m2,geom_closed_mesh,ratio_geom_to_authored,geom_status,seconds
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,03LjPhAPb7YwcCfCKjoBp0,HEB220,,,,0.002159,0.336056,,,ok,0.06
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,03akWG6jD5YvV25Iim327M,K80/80/4,,,,0.00439,2.197312,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,0I7LtwbrXFA9_X5BhUfkIk,"K152,4/12,5",,,,0.004887,2.485024,,,ok,0.02
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,0MManSxITCBR5hqtmVQft$,balusters,,,,0.001394,0.301051,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,0PwN5MKCnENu413RHBr2sB,balusters,,,,0.001393,0.300849,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,0RXt3SWyX7NQmQgLj8MtLn,balusters,,,,0.001394,0.301051,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,0_1$ZiaxXBKAoIe0SzFsy4,HEB220,,,,0.002159,0.336056,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,0dAofjIyHFM9KgIhqrn1sO,HEB220,,,,0.002159,0.336056,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,11mo33UpLFjwOcPbSdqngd,K80/80/4,,,,0.003308,1.656192,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,13VGtZxGT04gWQa7ANTKuD,HEB220,,,,0.002159,0.336056,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,159QrTsQb9zu88XvB88A2Z,balusters,,,,0.001393,0.300849,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,1C_2jEzdDEK8Xv0nCzYd1Q,balusters,,,,0.001393,0.300849,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,1CsGhnRaDAb86NCoCwC08x,K80/80/4,,,,0.003308,1.656192,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,1L$7w_vsP2O9IsnEN5d1nZ,balusters,,,,0.001394,0.301051,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,1NYbVKmtL3YP2AXrmS9FLZ,HEA180,,,,0.004357,1.064838,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,1e5jDbsmzDIxa_hKrQ03J4,K80/80/4,,,,0.00439,2.197312,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,2MZ_55Sir09gB7BB1JSjYM,HEB220,,,,0.002159,0.336056,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,2Ut36uLtj0Jh3lOXK1Cyx8,K80/80/4,,,,0.00439,2.197312,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,2n3hZ9D9H7_hLXKsBS_jtw,K80/80/4,,,,0.00439,2.197312,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,3OrWvPz0L53vVLOcg_Vn3G,K80/80/4,,,,0.003308,1.656192,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,3WwF3ZUyL3_uOcvhLTlqWJ,balusters,,,,0.001393,0.300849,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,3ZRYiyNFH08hTnlj_xBf6i,K80/80/4,,,,0.003308,1.656192,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,3o_mcdn_vDavgeLjgPBtk_,balusters,,,,0.001394,0.301051,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,00IbOoI7nFSxfp71ZyLBPm,fund_strook,0.36625,0.36625,NetVolume,0.36625,4.1625,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,02SVgZJNDEAAHLzfjkFeZE,staallatei ??,0.0011572285831,0.0011572285831,NetVolume,0.001157,0.714574,,0.9998,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,0EV1tBRrXBFB54GuiZ9KNi,stripstaal 80/8,0.0003967998149,0.0003967998149,NetVolume,0.000397,0.1104,,1.0005,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,0KNmVKmh519eKhcfjdm0L1,staallatei,0.0011572285831,0.0011572285831,NetVolume,0.001157,0.714574,,0.9998,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,0RXteokS174O1MF_ZesSRJ,stripstaal 80/8,0.0034924784065,0.0034924784065,NetVolume,0.003492,0.961712,,0.9999,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,0aWtcM$1j1$wMs6qq3amY0,fund_opstort,0.185031,0.185031,NetVolume,0.185031,2.9955,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,0fpGnSq1XBN9W48n_kM8JD,staallatei ??,0.000752198579014,0.000752198579014,NetVolume,0.000752,0.465013,,0.9997,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,0jNuu$i_rD2eUoRxpITzh5,fund_opstort,0.272890799658,0.272890799658,NetVolume,0.272891,3.10982,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,0mG1Qo1Nb4HAfQgPiP4n0Y,staallatei ??,0.000752198579014,0.000752198579014,NetVolume,0.000752,0.465013,,0.9997,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,0pwbcyQ8v6mRtN2Pp6uYo8,HEA220,,,,0.099204,14.640892,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,0thyQFjPX45OCdLCm3UMpK,liftputwand,0.223146,0.223146,NetVolume,0.223146,3.474,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,11gA5Dui92yhHMbdm2nIvn,stripstaal 80/8,0.00285111262829,0.00285111262829,NetVolume,0.002851,0.785336,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,15yxQAL$f43P0u1dI$k5aM,HEA180,,,,0.002772,0.680664,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,1ARCkaiqTCdheZNfSbvLCm,fund_opstort,0.0394580095822,0.0394580095822,NetVolume,0.039458,0.878965,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,1Jt7say5DBTPG$0$gegcAf,hoeklijn bordes,0.00257132649353,0.00257132649353,NetVolume,0.00257,0.527459,,0.9995,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,1OnyTz3nHAl89yfXGn_mxA,liftputwand,0.506999993956,0.506999993956,NetVolume,0.507,5.33,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,1W3I3R2x19bfOBW_WD4sxL,fund_strook,1.1115,1.1115,NetVolume,1.1115,12.897,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,1a49H1hof5wg_s62YvIj$u,fund_strook,16.6108800511,16.6108800511,NetVolume,16.61088,76.0408,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,1dcFLM2Of1FP3qxcp09zLO,staallatei ??,0.000752198579014,0.000752198579014,NetVolume,0.000752,0.465013,,0.9997,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,1jxOIPWGn7Rfxz4k0FeFEJ,stripstaal 80/8,0.00393791814542,0.00393791814542,NetVolume,0.003938,1.084208,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,1o34KGWg5AnRTiJOhwQVdk,fund_opstort,0.1611225,0.1611225,NetVolume,0.161122,3.2658,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,1vP2sJ$_v9XRPftfJxtqWr,stripstaal 80/8,0.00349247837332,0.00349247837332,NetVolume,0.003492,0.961712,,0.9999,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,21JedoyDf1jg7ixONhPH5B,fund_opstort,0.340263,0.340263,NetVolume,0.340263,5.3923,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,25jnbRuOH3yR0Vnxbrf4Ey,fund_strook,0.36,0.36,NetVolume,0.36,4.08,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,2BhHYCsB186eQstC61zld8,staallatei ??,0.0018730836198,0.0018730836198,NetVolume,0.001873,1.152583,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,2HlSnEsQL1iQ5gLavb9Pta,HEA220,,,,0.071717,14.994212,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,2K7JRliz9F8R2WKcFfDhY9,fund_strook,0.117340401035,0.117340401035,NetVolume,0.11734,1.678802,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,2SNH8$CzP0tQ4Ndlfu37pR,fund_opstort,0.388773,0.388773,NetVolume,0.388773,6.1413,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,2Y889Xoon1RAy$xAEV_pJp,staallatei ??,0.0011572285831,0.0011572285831,NetVolume,0.001157,0.714574,,0.9998,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,2f0$QVByX6ugBTFoMIOEvG,fund_opstort,0.238140000296,0.238140000296,NetVolume,0.23814,2.8539,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,2i_cekBh9Av8P5LKYyoUPb,liftputwand,0.223146,0.223146,NetVolume,0.223146,3.474,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,2onr4hRYf5AOPdEOcMaAGr,fund_strook,1.28,1.28,NetVolume,1.28,13.3,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,2ua9M0savE3ho4zejCeSAN,staallatei ??,0.0011572285831,0.0011572285831,NetVolume,0.001157,0.714574,,0.9998,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,37_P0I4rjCSP6yY7b9oPCb,fund_opstort,1.1906999997,1.1906999997,NetVolume,1.1907,13.1355,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,3EDZcM$kn05hoHQ$Z2Vy3d,fund_strook,0.150774587722,0.150774587722,NetVolume,0.150775,2.077139,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,3MpbjSJ79AF8GSoW6uAzc0,fund_opstort,0.0333357835219,0.0333357835219,NetVolume,0.033336,0.755092,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,3S7g662RP9xumMzv4I5k23,HEA220,,,,0.067716,14.158311,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,3SXKMDKGbFJ8igoQRlAZ6R,stripstaal 80/8,0.0003967998149,0.0003967998149,NetVolume,0.000397,0.1104,,1.0005,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,3Vnlo777D6sear4VnH98Ey,fund_strook,2.53682,2.53682,NetVolume,2.53682,14.0362,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,3doFsyD$TAtOoTUzw7BC1v,HEA180,,,,0.023723,5.758621,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,0$5GRLLgn7I8ZPcI7rOsbG,dekvloer,0.849666586525,0.849666586525,NetVolume,0.849667,20.0279,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,06YbFx9M15FBLOYIMVt2$r,vloerveld,1.33740002634,1.33740002634,NetVolume,1.3374,45.831601,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,0AWsnDjX10P8BR94gyNj2o,vloerveld,1.37700002965,1.37700002965,NetVolume,1.377,47.178001,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,0EHLW2CirCPANVPbmTwDe0,dakelement,0.000221051522848,0.000221051522848,NetVolume,0.000221,0.032635,,0.9998,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,0IjlUMbxXBUhcjfKxT2apw,dekvloer,0.293498108252,0.293498108252,NetVolume,0.293498,7.18656,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,0MI_2HZ992Bx$nIp0Ts0HN,dekvloer,1.44065810563,1.44065810563,NetVolume,1.440658,65.493815,,1.0,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,0QENsgqy1AHgG_7VgYdbwc,vloerveld,1.3562999854,1.3562999854,NetVolume,1.3563,46.5288,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,0SX7yPVRb06hAYFrxAJ8KC,dakvloer,0.460673760265,0.520914001353,NetVolume,0.460674,17.41948,,1.0,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,0bxMIwnGLCbgjsQk43tTK$,sporenkap,0.696630335652,0.696630335652,NetVolume,0.69663,21.49447,,1.0,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,0m0I4KgsXEGRQe2Tq5guRM,dakisolatie,0.145781138068,0.145781138068,NetVolume,0.145781,3.582902,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,0tr9H3L4z0bgmFmHrjfIlm,sporenkap,1.18989936765,1.18989936765,NetVolume,1.189899,16.264721,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,13klpZHlDB8wG49s9DUIV8,dekvloer,4.92397472049,4.92397472049,NetVolume,4.923975,221.936613,,1.0,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,19ymqVSczESeP2KD$erpa8,sporenkap,0.862142203334,0.862142203334,NetVolume,0.862142,11.862557,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,1ERFleB4fBBfBOswxk$Xdp,dekvloer,1.18168515811,1.18168515811,NetVolume,1.181685,53.86412,,1.0,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,1K_rplvXD0rO3a2dNEYcoq,sporenkap,0.0279206332311,0.0279206332311,NetVolume,0.027921,1.096092,,1.0,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,1TcxEYnb1DneRMQvN9jV_3,dekvloer,4.84002980743,4.84002980743,NetVolume,4.84003,218.27621,,1.0,ok,0.02
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,1YpnSB4hH71g3zKepeErHS,vloer_V0,2.1714264001,2.1714264001,NetVolume,2.171426,17.459844,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,1dCrpUZmvC4umTbPe7ddOk,vloerveld,0.516068420147,0.516068420147,NetVolume,0.516068,18.095153,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,1hiPVVgU11kOxHw3SC63rG,vloer_V0,0.662566237618,0.662566237618,NetVolume,0.662566,11.654529,,1.0,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,1pSInisE96t8p52fxSGYjG,vloer_V0,2.81942770715,2.81942770715,NetVolume,2.819428,22.93749,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,1vpshNcXb0UeBNhC5kKbgC,vloer_V0,0.528712684114,0.528712684114,NetVolume,0.528713,8.01916,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,208bKcFObBc8ucwRJqscKk,sporenkap,2.34054463211,2.70785873573,NetVolume,2.340545,71.063481,,1.0,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,23jZ8BYuD3JQAc1sRY1ypr,vloerveld,1.3563,1.3563,NetVolume,1.3563,46.5288,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,26QGTgi0r7xhS4C$UZx$YZ,plat dak,3.46070114875,3.46070114875,NetVolume,3.460701,44.653629,,1.0,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,2EK7acXG14vgx_QU1OeZ7J,vloer_V0,0.288153577461,0.288153577461,NetVolume,0.288154,3.66064,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,2KYFELha55M8mkz2cp9hbD,sporenkap,0.216250342815,0.216250342815,NetVolume,0.21625,11.478889,,1.0,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,2OE9tlHI938fd8O3mI3mRz,dekvloer,0.555282772374,0.555282772374,NetVolume,0.555283,25.883082,,1.0,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,2S1cg7ETr61vJ48aHPK75L,vloer_V0,2.92107617244,2.92107617244,NetVolume,2.921076,23.211661,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,2ZCCQn6f5CnA2EvHQZH92C,dekvloer,0.841505352067,0.841505352067,NetVolume,0.841505,19.864633,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,2ah3ltN7nCQ9VF6L1zEK1m,vloerveld,1.03751995556,1.03751995556,NetVolume,1.03752,35.635678,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,2dWeqcZXj94QwNPbNEIcDK,vloer_V0,1.05674222854,1.05674222854,NetVolume,1.056742,9.3771,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,2jfgBlXC5DqAtt9Imu_ZDa,vloer_V0,0.793166055149,0.793166055149,NetVolume,0.793166,7.522332,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,2ppWtuzIb52xZcr932qIAx,plat dak,3.21966910244,3.21966910244,NetVolume,3.219669,41.633398,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,2rJ_D9OD15OxfhleuqX8IK,dak dakkapel,0.172954044363,0.172954044363,NetVolume,0.172954,6.358482,,1.0,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,2wdkOxZDD4qQGeJ0R9Eu_y,sporenkap,0.235570529201,0.235570529201,NetVolume,0.235571,12.370334,,1.0,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,3$gsVev9X1F8KTRxQi7mEd,vloer_V0,0.528731558941,0.528731558941,NetVolume,0.528732,4.843896,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,37UC2ejVH0mQsQEsti1ePj,dekvloer,0.588498044576,0.588498044576,NetVolume,0.588498,14.134164,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,3DoyKCgjn75uJSw08MNRdX,dekvloer,0.0802434892208,0.0802434892208,NetVolume,0.080243,2.158667,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,3JnGo5kRD3kv3Rkne47JeJ,sporenkap,0.257725972377,0.257725972377,NetVolume,0.257726,3.804374,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,3PMBte07rF1u4WPaQp467x,dekvloer,0.510113554413,0.510113554413,NetVolume,0.510114,12.532113,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,0$SpH8S2n2ufDBhk$ljbCs,binnenwand,0.448812503,0.448812503,NetVolume,0.448813,4.94931,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,03_CVBI75Aj86591do_EB_,HSB-element,0.305539879341,0.305539879341,NetVolume,0.30554,12.913449,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,09VD$Lqi93x9JCZ1tfrTrL,buitenblad,0.057701104405,0.057701104405,NetVolume,0.057701,1.876922,,1.0,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,0FepsNa9T4UhJymkj5VxYZ,buitenblad,0.193531100986,0.193531100986,NetVolume,0.193531,4.707315,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,0MTC1GonbDHhxIHc0o_Hwo,separatiewand,0.170445435879,0.349260426243,NetVolume,0.170445,5.75446,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,0RrPQ1pTz1IBZvY9bQxtJH,buitenblad,0.311958791515,0.311958791515,NetVolume,0.311959,7.073133,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,0Z4DuejWD50xg4CFcjidlO,binnenblad,1.16183384076,1.62641500384,NetVolume,1.161834,14.013904,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,0cr6SQeNT879fCrehfWeM7,binnenwand,1.30950452,1.30950452,NetVolume,1.309505,14.364664,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,0j5C6LoLTDdevKXyVVZKEr,separatiewand,0.431097637535,0.431097637535,NetVolume,0.431098,13.014629,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,0qjLt6tpjDu8lujp9gCtYe,binnenblad,2.27727243377,3.20643475993,NetVolume,2.277272,26.400088,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,0yfAXMIyTD4OemjMEjshON,knieschot,0.499417522492,0.499417522492,NetVolume,0.499418,15.949589,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,14SQKeTXT0bxeTGZbdgN$9,separatiewand,0.1773695,0.1773695,NetVolume,0.177369,5.578,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,1CTGUsNkD2iQBMpcLlMjAY,binnenblad,3.69000627377,4.61916859993,NetVolume,3.690006,40.645816,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,1HTsnt8sHE9vtJiO2XDVSy,buitenblad,0.186186014411,0.186186014411,NetVolume,0.186186,4.27012,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,1Ozn_$8IX7DAmUpaIvALf9,buitenblad,0.0888000070269,0.0888000070269,NetVolume,0.0888,2.192,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,1VtXJdt4L7kv9XQ9k2M6LK,separatiewand,0.3615682,0.3615682,NetVolume,0.361568,10.97676,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,1_5se9Bjn1rgHwEb$U1XcT,buitenblad,0.0655740084048,0.0655740084048,NetVolume,0.065574,2.124114,,1.0,ok,0.01
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,1e1zdP$AzC4AbSnq$yxhNh,binnenwand,0.613489910493,0.613489910493,NetVolume,0.61349,11.327992,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,1ir2UHdQfEdfEBkNwAW_9u,buitenblad,0.08712,0.08712,NetVolume,0.08712,2.1284,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,1nk4MALuvFOBEQoHF5$rG7,separatiewand,0.423789792789,0.423789792789,NetVolume,0.42379,12.80044,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,1tE5Pvx2b1b91s5G2OMYFP,separatiewand,0.406436637312,0.406436637312,NetVolume,0.406437,12.291829,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,20cjtlT5j2yRhg3KCrPNR1,buitenblad,0.0186719988447,0.0186719988447,NetVolume,0.018672,0.57704,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,24_ACX2uf3DQHvDbd2z98c,opgaand werk,0.0466590079619,0.0466590079619,NetVolume,0.046659,1.22978,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,2D4tEzzn96KxhitMgTCmsY,opgaand werk,0.0329012264409,0.0329012264409,NetVolume,0.032901,0.906746,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,2Igex6onTAmfhouHOSUg8V,buitenblad,0.419070018574,0.419070018574,NetVolume,0.41907,9.2054,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,2OPGVjLwDF0wVnNywHUUlT,binnenblad,2.59254579689,3.05712695997,NetVolume,2.592546,28.44092,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,2UekXAS9D7Axk7JFozbAzY,liftwand,1.879776,1.879776,NetVolume,1.879776,20.105184,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,2ZiBjkwkb9Tw6JeNNhNy0C,separatiewand,0.309680852472,0.309680852472,NetVolume,0.309681,9.455971,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,2dez8YjPv64QJPWa_Ut4T2,binnenblad,2.5925458,3.05712695997,NetVolume,2.592546,28.44092,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,2jijIuzvzCMOBIhgOoeHnJ,buitenblad,0.0132259991817,0.0132259991817,NetVolume,0.013226,0.45412,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,2tetrk$QnA49mTczDExu06,separatiewand,0.105690000025,0.105690000025,NetVolume,0.10569,2.7338,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,3$8ejY9wb5C8Jjn_NcmDw8,liftwand,1.0593,1.0593,NetVolume,1.0593,11.8902,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,34dgUlG_HFa9U89iOrk_fk,buitenblad,0.175199983537,0.175199983537,NetVolume,0.1752,4.13,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,3CZIhaS2X1axbTF8juS7Mz,zijwang dakk,0.00183928427573,0.00183928427573,NetVolume,0.001839,0.123363,,0.9998,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,3ID8ceKyb379nQYi3vIepA,buitenblad,0.0175100035288,0.0175100035288,NetVolume,0.01751,0.5902,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,3PxcgMX$j6XBsE4BpxQwRG,binnenblad,0.400267,0.400267,NetVolume,0.400267,5.81838,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,3YDoxP1AL2yOJ5bNO5Jiuq,zijwang dakk,0.00183970862661,0.00183970862661,NetVolume,0.00184,0.099012,,1.0002,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,3bBEEvVlvEOPrWs5bUkDsC,separatiewand,0.974516,0.974516,NetVolume,0.974516,20.75152,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,3hnrJo__H1th0M6JbxK0Qr,buitenblad,0.20854000664,0.20854000664,NetVolume,0.20854,4.869293,,1.0,ok,0.0
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,3oyt7VQ65F5h4Da$jUkdcw,buitenblad,0.042185,0.042185,NetVolume,0.042185,1.1887,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm0G,Columns_Rectangular:450x450mm:326185,0.809999999999998,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.01
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm0H,Columns_Rectangular:450x450mm:326184,0.809999999999999,8718.76743753487,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm0I,Columns_Rectangular:450x450mm:326187,0.809999999999999,8718.76743753487,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm0J,Columns_Rectangular:450x450mm:326186,0.809999999999999,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm0K,Columns_Rectangular:450x450mm:326189,0.809999999999998,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm0L,Columns_Rectangular:450x450mm:326188,0.809999999999999,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm0M,Columns_Rectangular:450x450mm:326191,0.809999999999999,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm0N,Columns_Rectangular:450x450mm:326190,0.809999999999999,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm0U,Columns_Rectangular:450x450mm:326183,0.809999999999999,8718.76743753487,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm2_,Columns_Rectangular:450x450mm:326279,0.809999999999999,8718.76743753487,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm2m,Columns_Rectangular:450x450mm:326281,0.809999999999998,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm2n,Columns_Rectangular:450x450mm:326280,0.809999999999999,8718.76743753487,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm2o,Columns_Rectangular:450x450mm:326283,0.809999999999999,8718.76743753487,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm2p,Columns_Rectangular:450x450mm:326282,0.809999999999999,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm2q,Columns_Rectangular:450x450mm:326285,0.809999999999998,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm2r,Columns_Rectangular:450x450mm:326284,0.809999999999999,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm2s,Columns_Rectangular:450x450mm:326287,0.809999999999999,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm2t,Columns_Rectangular:450x450mm:326286,0.809999999999999,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm3G,Columns_Rectangular:450x450mm:326377,0.809999999999998,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm3H,Columns_Rectangular:450x450mm:326376,0.809999999999998,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm3I,Columns_Rectangular:450x450mm:326379,0.809999999999999,8718.76743753487,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm3J,Columns_Rectangular:450x450mm:326378,0.809999999999998,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm3K,Columns_Rectangular:450x450mm:326381,0.809999999999998,8718.76743753485,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm3L,Columns_Rectangular:450x450mm:326380,0.809999999999998,8718.76743753485,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm3M,Columns_Rectangular:450x450mm:326383,0.809999999999998,8718.76743753485,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm3N,Columns_Rectangular:450x450mm:326382,0.809999999999998,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm3U,Columns_Rectangular:450x450mm:326375,0.809999999999998,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm5_,Columns_Rectangular:450x450mm:326471,0.809999999999999,8718.76743753487,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm5m,Columns_Rectangular:450x450mm:326473,0.809999999999998,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm5n,Columns_Rectangular:450x450mm:326472,0.809999999999999,8718.76743753487,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm5o,Columns_Rectangular:450x450mm:326475,0.809999999999999,8718.76743753487,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm5p,Columns_Rectangular:450x450mm:326474,0.809999999999999,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm5q,Columns_Rectangular:450x450mm:326477,0.809999999999998,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm5r,Columns_Rectangular:450x450mm:326476,0.809999999999999,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm5s,Columns_Rectangular:450x450mm:326479,0.809999999999999,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm5t,Columns_Rectangular:450x450mm:326478,0.809999999999999,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm6G,Columns_Rectangular:450x450mm:326569,0.809999999999998,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm6H,Columns_Rectangular:450x450mm:326568,0.809999999999999,8718.76743753487,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm6I,Columns_Rectangular:450x450mm:326571,0.809999999999999,8718.76743753487,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcColumn,2QUZHvxvTDdvGHPJrzsm6J,Columns_Rectangular:450x450mm:326570,0.809999999999999,8718.76743753486,NetVolume,0.81,7.605,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm0R,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326178,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm0Y,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326171,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm0j,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326164,11.7500000000001,11.7500000000001,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm0q,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326157,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm12,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326267,11.7499999999999,11.7499999999999,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm1D,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326260,11.7500000000001,11.7500000000001,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm1K,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326253,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm2x,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326274,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm3R,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326370,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm3Y,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326363,11.7499999999999,11.7499999999999,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm3j,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326356,11.7500000000001,11.7500000000001,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm3q,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326349,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm42,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326459,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm4D,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326452,11.7500000000001,11.7500000000001,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm4K,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326445,11.7500000000001,11.7500000000001,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm5x,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326466,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm6R,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326562,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm6Y,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326555,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm6j,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326548,11.7500000000001,11.7500000000001,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm6q,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326541,11.7500000000001,11.7500000000001,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm9T,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:325732,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm9a,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:325725,11.7499999999999,11.7499999999999,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm9l,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:325718,11.7500000000001,11.7500000000001,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsm9s,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:325711,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsmO3,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326714,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsmOA,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326707,11.7500000000001,11.7500000000001,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsmOL,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326700,11.7500000000001,11.7500000000001,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsmPu,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:326721,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsmtS,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:325605,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsmtd,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:325598,11.7499999999999,11.7499999999999,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsmtf,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:325584,11.75,11.75,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcSlab,2QUZHvxvTDdvGHPJrzsmtk,Floor:Floor-Grnd-Susp_65Scr-80Ins-100Blk-75PC:325591,11.7500000000001,11.7500000000001,NetVolume,11.75,59.4,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm08,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326193,4.75599999999998,4755.99999999998,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm09,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326192,5.278,5278.0,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm0A,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326195,4.756,4756.0,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm0B,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326194,5.27800000000006,5278.00000000006,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm0C,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326197,4.75600000000002,4756.00000000002,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm0D,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326196,5.278,5278.0,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm0E,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326199,4.756,4756.0,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm0F,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326198,5.278,5278.0,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm2e,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326289,4.75599999999998,4755.99999999998,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm2f,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326288,5.278,5278.0,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm2g,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326291,4.756,4756.0,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm2h,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326290,5.27800000000006,5278.00000000006,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm2i,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326293,4.75600000000002,4756.00000000002,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm2j,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326292,5.278,5278.0,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm2k,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326295,4.756,4756.0,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm2l,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326294,5.278,5278.0,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm38,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326385,4.75599999999998,4755.99999999998,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm39,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326384,5.27800000000001,5278.0,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm3A,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326387,4.756,4756.0,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm3B,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326386,5.27800000000006,5278.00000000006,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm3C,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326389,4.75600000000002,4756.00000000002,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm3D,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326388,5.278,5278.0,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm3E,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326391,4.756,4756.0,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm3F,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326390,5.278,5278.0,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm5e,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326481,4.75599999999998,4755.99999999998,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm5f,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326480,5.278,5278.0,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm5g,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326483,4.756,4756.0,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm5h,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326482,5.27800000000006,5278.00000000006,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm5i,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326485,4.75600000000002,4756.00000000002,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm5j,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326484,5.278,5278.0,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm5k,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326487,4.756,4756.0,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm5l,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326486,5.278,5278.0,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm68,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326577,4.75599999999998,4755.99999999998,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm69,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326576,5.278,5278.0,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm6A,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326579,4.756,4756.0,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm6B,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326578,5.27800000000006,5278.00000000006,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm6C,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326581,4.75600000000002,4756.00000000002,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm6D,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326580,4.800341,5278.0,NetVolume,4.800341,39.6424,,1.0,ok,0.01
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm6E,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326583,4.756,4756.0,NetVolume,4.756,37.498,,1.0,ok,0.0
+data/raw/4DBenchmarkBim.ifc,IfcWall,2QUZHvxvTDdvGHPJrzsm6F,Basic Wall:Wall-Ext_102Bwk-75Ins-100LBlk-12P:326582,5.278,5278.0,NetVolume,5.278,41.359,,1.0,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcFooting,05hYJfrx99v$KeaCnnTUNB,CONC-FD01-01,0.7065,,NetVolume,0.7065,7.836,,1.0,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcFooting,09J4bp0hv5_BOMO9CdP7EZ,CONC-FT04,0.7175,,NetVolume,0.7175,16.54,,1.0,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcFooting,0DsVDPLpH6KOwWtouTiq1m,CONC-FT03,0.7175,,NetVolume,0.7175,16.54,,1.0,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcFooting,0NGT9y7SpfDud7r849Kn59,CONC-FD02-04,0.798,,NetVolume,0.798,8.812,,1.0,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcFooting,0g_W9iOufFWejrv4shNTnH,STL0-00-FDN,,,,0.048,0.8,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcFooting,14NfYSj9HFgPIaBXPMbcKs,STL0-00-FDN,,,,0.048,0.8,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcFooting,1jk_Qel3LAay24H0HaZeHK,CONC-FD02-03,0.798,,NetVolume,0.798,8.812,,1.0,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcFooting,1vJ6T4GPwJNkZjYeMo3VJP,CONC-FD01-03,0.7065,,NetVolume,0.7065,7.836,,1.0,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcFooting,1yKwjIZ_16yen0qjvtfq4q,CONC-FT01,0.3437,,NetVolume,0.3437,7.996,,1.0,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcFooting,2SvFsCR8vDt9A3iOfFZodL,CONC-FT02,0.7175,,NetVolume,0.7175,16.54,,1.0,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcFooting,2V$gBSLEVfmW_GDcpFG0o5,CONC-FD02-02,0.798,,NetVolume,0.798,8.812,,1.0,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcFooting,3G577H6DtZaC$9Th1Wg8hG,CONC-FD01-04,0.7065,,NetVolume,0.7065,7.836,,1.0,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcFooting,3Ya_OnFeXfHU6C2X5wKiOa,CONC-FD01-02,0.7065,,NetVolume,0.7065,7.836,,1.0,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,010_wuZfz4HvlApjTErWcn,STL-00-HEB120_1.89,,,,0.006455,1.30792,,,ok,0.08
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,04FbnHSOr0bu$T5CofZlyQ,STL-00-HEB120_0.22,,,,0.000724,0.15322,,,ok,0.1
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,06_Yc3p154oQ2sv_EOBvzo,STL-00-HEB120_0.22,,,,0.000724,0.15322,,,ok,0.09
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,0ApnnPqkz8iOXJ_Cz$e0QQ,STL-00-HEB120_0.22,,,,0.000724,0.15322,,,ok,0.09
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,0FicFioMjEYBYJOT81bZD_,STL2-00-BEAM-HEB,,,,0.000731,0.154592,,,ok,0.08
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,0NIbK9N$1DN9aCrvmcydPq,STL2-00-BEAM-HEB,,,,0.000731,0.154592,,,ok,0.08
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,0Ss7aSPGbC7PgZoGcDoFTa,STL1-01-BEAM-FacadeSupport,,,,0.003102,1.265566,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,0XGyTlF9j4YRHmjP3ELBQm,STL-00-HEB120_0.22,,,,0.000724,0.15322,,,ok,0.08
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,0c9d3bTF11rvsz8MckgQVc,STL1-00-BEAM-HEB,,,,0.000724,0.15322,,,ok,0.1
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,0kF_3I9i5AFvZtYChI5bgv,TIM-01-BSH05-3,0.013,0.013,NetVolume,0.013005,0.51328,,1.0004,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,0n0SjNcCz1EwkMzPD45$9Y,STL-01-HEB120-1.89,,,,0.006455,1.30792,,,ok,0.03
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,0p2ktUFgj9iAGdPYhV9mi$,TIM-01-BSH01,0.1476,0.1786,NetVolume,0.14761,4.15424,,1.0001,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,0u5NeaWfj3IuacpJN1ghPG,STL1-00-BEAM-HEB,,,,0.000724,0.15322,,,ok,0.09
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,0zJRLo65z9i92CaP85FH2V,STL2-00-BEAM-HEB,,,,0.006468,1.310665,,,ok,0.03
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,157JfPkFjBA8c59MdJRp$S,STL2-00-BEAM-HEB,,,,0.008579,1.736134,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,1Ailyo_8z3FRk4Wrs5htpO,TIM-01-BEAM,0.0246,0.0246,NetVolume,0.024576,1.0432,,0.999,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,1E8IysKr120uHGqo91ZjWR,STL-01-HEB120-1.89,,,,0.006455,1.30792,,,ok,0.03
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,1L6agx_vPEkeE7kkGvVhAl,STL1-01-BEAM-HEB,,,,0.003595,0.731478,,,ok,0.03
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,1Qwq4$KGrBb9vIBt72vGtu,STL2-00-BEAM-HEB,,,,0.003609,0.734223,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,1Ur2mIsuH3Iw_JqZuuOtsG,STL1-00-BEAM-HEB,,,,0.01675,3.38311,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,1i0xhLw5D3fuyK4p9ySMqO,STL-01-HEB123-1.05,,,,0.003595,0.731478,,,ok,0.03
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,1njEvjgUL0KhmxaqyLdKz8,STL2-00-BEAM-HEB,,,,0.008579,1.736134,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,1rTcgQksPDIPPaXHwaUQBq,STL1-01-BEAM-HEB,,,,0.006455,1.30792,,,ok,0.03
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,1z6Y$3_7v09OZ3cGE$7goa,STL-00-HEB120_4.92,,,,0.01675,3.38311,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,244tHA5nbFZ96MXPmfKDO6,TIM-01-BSH06-3,0.0284,0.0284,NetVolume,0.028365,1.08928,,0.9988,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,26BIawVw10wPPFu08XJWLx,STL1-01-BEAM-HEB,,,,0.003595,0.731478,,,ok,0.04
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,28ltUuRMv8sRKu9kM6$kvu,STL-00-HEB120_0.22,,,,0.000724,0.15322,,,ok,0.08
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,2E3zzOMybDdBmVnlGgI36W,STL-02-BEAM-IPE,,,,0.002403,0.747826,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,2LWqwj7Fz4WASjhe30xiZR,STL2-00-BEAM-HEB,,,,0.003609,0.734223,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,2T$mC90KL3$OKKCzUnB9G_,STL-00-HEB120_0.22,,,,0.000724,0.15322,,,ok,0.09
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,2VAMhDl4b8AeuM5AMqfEAH,STL-01-HEB123-1.05,,,,0.003595,0.731478,,,ok,0.03
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,2ZwMk0knP3ABxxKC7823Im,STL-00-HEB120_0.22,,,,0.000724,0.15322,,,ok,0.09
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,2eCwXMJZr9uunUkTkmwSHN,STL-01-HEB123-1.05,,,,0.003595,0.731478,,,ok,0.04
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,2hfl6Oxgj3gubmP80RB$sV,STL1-00-BEAM-HEB,,,,0.000724,0.15322,,,ok,0.1
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,2kPci2DEj8r9lGzbXTth9D,STL2-00-BEAM-HEB,,,,0.000731,0.154592,,,ok,0.09
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,2rTcxth_54_gLMMvmUdGi7,STL-00-HEB120_0.22,,,,0.000724,0.15322,,,ok,0.09
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,2uZojoxr58AgmT89X6zuOU,STL1-00-BEAM-HEB,,,,0.000724,0.15322,,,ok,0.1
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,2yEOdHFrfBle8EeBTcMqcr,STL1-00-BEAM-HEB,,,,0.01675,3.38311,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,32pz2Mssz8TwduPmSuw4lH,TIM-01-BSH04-Edge,0.0655,0.0655,NetVolume,0.065536,1.6896,,1.0005,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,3BpVPUTWz5y9buwLSLTlbr,STL1-00-BEAM-HEB,,,,0.006455,1.30792,,,ok,0.03
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcSlab,0DyTaJTCXFExxHX7luGK74,STL1-00-FLR,,,,0.010368,0.451201,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcSlab,0Hcrz$0Fn7KgIG4rdD7EFo,CONC1-00-SLB,,,,0.4848,6.212,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcSlab,0KAciU2K966gK2uF1_Wg1u,STL1-01-FLR,,,,0.180575,6.451199,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcSlab,0KgpCsVN1Equ6m_$40pVzR,STL1-00-FLR,,,,0.240768,6.595201,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcSlab,0dFuVjm995IBbWRP0$FX8D,STL1-01-FLR,,,,0.180575,6.4512,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcSlab,14pJQ1XZjD4vq48OZ$yl7G,STL1-01-FLR,,,,0.007776,0.403201,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcSlab,1P6czxu5fDavlgA57dOOoj,STL1-00-FLR,,,,0.010368,0.451201,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcSlab,1X7n0eLVr8Qv28DTA4gJMa,CONC1-00-SLB,,,,0.4848,6.212,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcSlab,1t_1mfEuzFhOP_f4yhJ$VB,STL1-01-FLR,,,,0.007776,0.4032,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcSlab,1weyTYP1j5axc2A5uOeIWr,STL1-00-FLR,,,,0.010368,0.4512,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcSlab,37Wv5oSmXFfha7vgxmsG9d,STL1-00-FLR,,,,0.240768,6.595202,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcSlab,3WSgxu9sH6kQltxBq6bCtQ,STL1-01-FLR,,,,0.007776,0.403199,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,00FIahdNX5Yh0KzyBoDbyE,STL1-00-WA,,,,0.601927,11.10721,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,00hLwuPCT17Qbxigv$Luhs,TRAP,,,,0.012181,0.777552,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,0DoZbvSp15N88iC8GYulx8,TIM-01-PLT-3S,0.0319,0.0319,NetVolume,0.031869,3.313855,,0.999,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,0KQFfNR_T63eeEyb6TpR56,TRAP,,,,0.004322,0.320056,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,0P$oqhkiz9nOXDy1lJe99r,TIM-01-PLT-3S,0.0315,0.0317,NetVolume,0.031527,3.283728,,1.0009,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,0T1nVTxS1Eoh6sm1Rmbjp5,TIM-01-PLT-3S,0.0315,0.0317,NetVolume,0.031527,3.283728,,1.0009,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,0Vfp1U7gz2OBGbaHlKZDPS,TRAP,,,,0.005798,0.416556,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,0a2$4AvqL8kB014w8sBRPU,TIM-01-Uni_Q3_123,,,,0.105048,5.49605,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,0bq1oh8m53qv8Yg1LAFcrV,TRAP,,,,0.006607,0.44528,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,0pQm2uySD8mhSopOf_sx_n,TRAP,,,,0.01013,0.646624,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,0sDjBWkDL9Eug6IwjfVaV7,TRAP,,,,0.010063,0.656496,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,0tVyNtIfDD7QMT6cQdFd2B,TIM-01-Uni_Q3_123,,,,0.108822,5.651248,,,ok,0.02
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,0yu1RlXWT74hzAH8eF2810,TIM-01-Uni_Q3_123,,,,0.108822,5.651248,,,ok,0.02
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,16HlSo0LrBRPbL7E2Rt2Aa,TRAP,,,,0.004404,0.31944,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,1ERFbfTUn6W9cH$UFgHdsY,CONC1-00-WA,,,,0.006607,0.44528,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,1HY3gNfQT2WeTnvC90RUi6,TRAP,,,,0.006607,0.44528,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,1LUMTQKFLCivhQTIW7l9XB,TRAP,,,,0.004322,0.320056,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,1UEpYLFMD03Oi5b4q$HrqN,TRAP,,,,0.007944,0.53544,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,1Z3VLjvVbEbRPUC98Rzh4C,TIM-01-PLT-3S,0.007,0.007,NetVolume,0.006986,0.802008,,0.998,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,1cL_zigvn9FvpczpmIWPfc,TRAP,,,,0.007944,0.53544,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,1h7yR$gmL7SOvPZBH9w1z0,TRAP,,,,0.002713,0.20446,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,1iDOqsiXn9PxSRsEp9f9pi,TIM-00-WA-B2,0.2561,0.4983,NetVolume,0.256084,7.085548,,0.9999,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,1kUJmWelb40B0s$445HMgn,TIM-01-Uni_Q3_123,,,,0.050166,2.7078,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,1oKhu9TFb5RBpUQ3vgdy0j,TRAP,,,,0.004808,0.34542,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,1sXAD8OZvDGh8km7VtomNo,TRAP,,,,0.004189,0.30096,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,1tzZev$wLAOecmYOtIkrie,TRAP,,,,0.016863,1.054577,,,ok,0.02
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,26wb9ZmPvEtBzXjvtjemt6,TRAP,,,,0.013607,0.869896,,,ok,0.02
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,2OlDiIp09Ed9IH4ffHtFfC,TRAP,,,,0.004808,0.34542,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,2_Awjzy5vjDQTcwWkFPSZE,CONC-00-WA-02,0.796205162,,NetVolume,0.796205,11.51476,,1.0,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,2bIsvhWPnDV8iNUjejRVG1,TRAP,,,,0.01013,0.646624,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,2d9eMzg6D6fA6y8$4$RJB9,TIM-00-WA-B1,0.9589,1.3713,NetVolume,0.95893,25.419454,,1.0,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,2fIm2R1fn9d9rdxF6zF94L,TRAP,,,,0.005303,0.380988,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,2ix02uR0X5NudNYA8cl7F5,TIM-01-PLT-3S,,,,0.01047,1.149416,,,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,2k_ROf1kz28A3pISRX$YUA,TRAP,,,,0.004404,0.31944,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,2teYu6QATBk9VA2Q8POQjS,TRAP,,,,0.007944,0.53544,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,2wuhsKEFz5YeP16_twPfJr,TRAP,,,,0.004404,0.31944,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,3$gLEYOkb6tBLuSna_aRNv,TRAP,,,,0.008368,0.545952,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,38SyudRdD2MfIYzRnnxLN$,TRAP,,,,0.004808,0.34542,,,ok,0.01
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,3HHth8ZUXEGPHxQXWHao2s,TIM-01-PLT-3S,0.0027,0.0027,NetVolume,0.002657,0.3138,,0.9841,ok,0.0
+data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,3TPs5SE7b8xBZAsXyIWaVn,TRAP,,,,0.004189,0.30096,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcColumn,21FT_vhPf9CPV9SPV7Mp_3,混凝土_矩形_柱:柱_矩形柱_610×610:2410647,,,,1.544215,10.8702,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcColumn,21FT_vhPf9CPV9SPV7Mp_A,混凝土_矩形_柱:柱_矩形柱_610×610:2410654,,,,1.544215,10.8702,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcColumn,21FT_vhPf9CPV9SPV7Mpz1,混凝土_矩形_柱:柱_矩形柱_650×650:2410581,,,,1.753375,11.635,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcColumn,21FT_vhPf9CPV9SPV7MpzF,混凝土_矩形_柱:柱_矩形柱_650×650:2410587,,,,1.753375,11.635,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcBeam,21FT_vhPf9CPV9SPV7MpmG,混凝土_矩形_梁:混凝土梁_矩形梁-_300x500:2411268,,,,0.136196,1.896242,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcBeam,21FT_vhPf9CPV9SPV7MpmM,混凝土_矩形_梁:混凝土梁_矩形梁-_300x500:2411266,,,,0.594467,7.570068,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcBeam,21FT_vhPf9CPV9SPV7MpuK,混凝土_矩形_梁:混凝土梁_矩形梁-_300x500:2410752,,,,0.316186,4.124689,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcBeam,21FT_vhPf9CPV9SPV7Mpx3,混凝土_矩形_梁:混凝土梁_矩形梁-_300x500:2410967,,,,1.04685,13.171,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcSlab,21FT_vhPf9CPV9SPV7Mpq1,楼板:地面_木地板_地2:2411029,,,,4.443036,179.637106,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcSlab,21FT_vhPf9CPV9SPV7Mpr3,楼板:板_普通板_150-C30:2411095,,,,13.385785,184.234658,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcSlab,21FT_vhPf9CPV9SPV7Mpt5,楼板:地面_木地板_地2:2411217,,,,4.461928,180.39631,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcSlab,21FT_vhPf9CPV9SPV7MpxZ,楼板:板_普通板_150-C30:2410999,,,,13.329107,183.468454,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,0FuwMSpIX4BAcAh97aAj7l,基本墙:基墙_加气混凝土砌块墙_150:2485211,,,,1.13714,17.427431,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,0FuwMSpIX4BAcAh97aAjQw,基本墙:基墙_乳胶漆面层_白色乳胶漆:2485390,,,,0.014093,1.480238,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7MoTO,基本墙:基墙_轻钢龙骨隔墙_50:2412620,,,,0.11105,4.916,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7MoTQ,基本墙:基墙_乳胶漆面层_白色乳胶漆:2412622,,,,0.02739,2.9182,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Morm,基本墙:基墙_乳胶漆面层_白色乳胶漆:2415204,,,,0.15596,15.8748,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mp$L,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410689,,,,0.078541,8.059526,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mp$N,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410691,,,,0.03984,4.1692,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mp_2,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410646,,,,0.05229,5.4202,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mp_5,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410641,,,,0.02573,2.7514,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mp_9,基本墙:基墙_加气混凝土砌块墙_150:2410653,,,,4.028906,57.663119,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mp_P,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410637,,,,0.052868,5.513475,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mp_R,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410639,,,,0.019461,2.106983,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mp_V,基本墙:基墙_轻钢龙骨隔墙_50:2410635,,,,0.056578,2.673124,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mp_g,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410686,,,,0.02432,2.5968,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7MpmO,基本墙:基墙_轻钢龙骨隔墙_50:2411276,,,,0.048478,2.350772,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7MpmQ,基本墙:基墙_轻钢龙骨隔墙_50:2411278,,,,0.064325,3.019,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpq$,基本墙:踢脚线:2411051,,,,0.000491,0.20455,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpq9,基本墙:踢脚线:2411037,,,,0.000375,0.1565,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7MpqB,基本墙:踢脚线:2411039,,,,0.000349,0.14565,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7MpqF,基本墙:踢脚线:2411035,,,,0.000375,0.1565,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpqa,基本墙:踢脚线:2411056,,,,0.000491,0.20455,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpqc,基本墙:踢脚线:2411058,,,,0.005929,2.45205,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpqm,基本墙:踢脚线:2411044,,,,0.004946,2.04595,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpqo,基本墙:踢脚线:2411046,,,,0.000368,0.1534,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpqq,基本墙:踢脚线:2411040,,,,0.001046,0.433906,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpqs,基本墙:踢脚线:2411042,,,,0.000491,0.20455,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpqu,基本墙:踢脚线:2411052,,,,0.000181,0.07644,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpqw,基本墙:踢脚线:2411054,,,,0.00018,0.0759,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpqy,基本墙:踢脚线:2411048,,,,0.001046,0.43395,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mps$,基本墙:基墙_乳胶漆面层_白色乳胶漆:2411179,,,,0.098664,10.174861,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpso,基本墙:基墙_乳胶漆面层_白色乳胶漆:2411174,,,,0.00555,0.706,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpv$,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410859,,,,0.190225,19.356358,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7MpvX,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410869,,,,0.101639,10.400016,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpv_,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410858,,,,0.098776,10.118826,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpvc,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410866,,,,0.051998,5.390878,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpvu,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410860,,,,0.05692,5.8856,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpvw,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410862,,,,0.537188,54.244668,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpvz,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410857,,,,0.575716,58.336668,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7Mpz0,基本墙:基墙_加气混凝土砌块墙_150:2410580,,,,0.617039,9.737064,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,21FT_vhPf9CPV9SPV7MpzM,基本墙:基墙_加气混凝土砌块墙_150:2410562,,,,3.991859,57.318331,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,1TBvJAHUjBUgUB_0Fr4wQ4,M_Concrete-Round-Column:450mm:201280,,,,0.290028,2.900738,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,1TBvJAHUjBUgUB_0Fr4wR_,M_W-Wide Flange-Column:W250X49.1:201274,,,,0.019771,3.919979,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,1TBvJAHUjBUgUB_0Fr4wRw,M_Concrete-Round-Column:450mm:201278,,,,0.290028,2.900738,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc780,M_Concrete-Round-Column:300mm:141270,,,,0.267446,3.718305,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc784,M_Concrete-Round-Column:300mm:141266,,,,0.267446,3.718305,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc789,M_Concrete-Round-Column:300mm:141279,,,,0.267446,3.718305,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc78G,M_Concrete-Round-Column:300mm:141254,,,,0.267446,3.718305,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc78P,M_Concrete-Round-Column:300mm:141263,,,,0.267446,3.718305,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc78T,M_Concrete-Round-Column:300mm:141259,,,,0.267446,3.718305,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc78X,M_Concrete-Round-Column:300mm:141303,,,,0.267446,3.718305,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc78b,M_Concrete-Round-Column:300mm:141299,,,,0.267446,3.718305,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc78h,M_Concrete-Round-Column:300mm:141309,,,,0.267446,3.718305,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc78m,M_Concrete-Round-Column:300mm:141286,,,,0.267446,3.718305,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc78q,M_Concrete-Round-Column:300mm:141282,,,,0.267446,3.718305,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc78u,M_Concrete-Round-Column:300mm:141294,,,,0.267446,3.718305,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc78z,M_Concrete-Round-Column:300mm:141291,,,,0.267446,3.718305,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc794,M_Concrete-Round-Column:300mm:141202,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc79A,M_Concrete-Round-Column:300mm:141212,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc79E,M_Concrete-Round-Column:300mm:141208,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc79I,M_Concrete-Round-Column:300mm:141188,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc79M,M_Concrete-Round-Column:300mm:141184,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc79Q,M_Concrete-Round-Column:300mm:141196,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc79V,M_Concrete-Round-Column:300mm:141193,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc79a,M_Concrete-Round-Column:300mm:141234,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc79e,M_Concrete-Round-Column:300mm:141246,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc79i,M_Concrete-Round-Column:300mm:141242,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc79n,M_Concrete-Round-Column:300mm:141223,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc79s,M_Concrete-Round-Column:300mm:141216,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc79x,M_Concrete-Round-Column:300mm:141229,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc7C4,M_Concrete-Round-Column:300mm:141010,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc7CA,M_Concrete-Round-Column:300mm:141020,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc7CF,M_Concrete-Round-Column:300mm:141017,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc7CM,M_Concrete-Round-Column:300mm:140992,,,,0.486769,6.652124,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc7CQ,M_Concrete-Round-Column:300mm:141004,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc7D0,M_Concrete-Round-Column:300mm:140950,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc7DA,M_Concrete-Round-Column:300mm:140956,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc7DE,M_Concrete-Round-Column:300mm:140952,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc7DY,M_Concrete-Round-Column:300mm:140980,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc7Dd,M_Concrete-Round-Column:300mm:140977,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,3wh27gpDH7bg434tPIc7Dm,M_Concrete-Round-Column:300mm:140966,,,,0.256889,3.577086,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,06GVsrmW10LvbOdVaoTb$3,M_Precast-Rectangular Beam:300 RB 600:218753,,,,1.05219,10.881901,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,06GVsrmW10LvbOdVaoTb$O,M_Precast-Rectangular Beam:300 RB 600:218778,,,,1.177054,12.13054,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,06GVsrmW10LvbOdVaoTb$k,M_Precast-Rectangular Beam:300 RB 600:218796,,,,1.152072,11.880721,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,06GVsrmW10LvbOdVaoTb$u,M_Precast-Rectangular Beam:300 RB 600:218810,,,,1.23334,12.6934,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,06GVsrmW10LvbOdVaoTb_4,M_Precast-Rectangular Beam:300 RB 600:218822,,,,3.633948,36.69948,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,06GVsrmW10LvbOdVaoTb_X,M_Precast-Rectangular Beam:300 RB 600:218851,,,,3.53502,35.710198,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,06GVsrmW10LvbOdVaoTb_m,M_Precast-Rectangular Beam:300 RB 600:218866,,,,2.029896,20.658963,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,06GVsrmW10LvbOdVaoTbpu,M_Precast-Rectangular Beam:300 RB 600:218554,,,,11.852546,118.88546,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,06GVsrmW10LvbOdVaoTbv2,M_Precast-Rectangular Beam:300 RB 600:218880,,,,6.65991,66.959099,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,06GVsrmW10LvbOdVaoTbvC,M_Precast-Rectangular Beam:300 RB 600:218894,,,,9.67743,97.134304,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,06GVsrmW10LvbOdVaoTbyK,M_Precast-Rectangular Beam:300 RB 600:218710,,,,2.025324,20.61324,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,06GVsrmW10LvbOdVaoTbyh,M_Precast-Rectangular Beam:300 RB 600:218729,,,,8.783942,88.199419,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQ$,M_K-Series Bar Joist-Angle Web:8K1:201339,,,,0.009133,3.378393,,,ok,0.18
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQP,M_W-Wide Flange:W310X28.3:201309,,,,0.00581,1.558064,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQQ,M_W-Wide Flange:W310X28.3:201310,,,,0.053811,14.368213,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQY,M_K-Series Bar Joist-Angle Web:8K1:201318,,,,0.008688,3.213541,,,ok,0.17
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQZ,M_K-Series Bar Joist-Angle Web:8K1:201319,,,,0.007909,2.923827,,,ok,0.15
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQ_,M_K-Series Bar Joist-Angle Web:8K1:201338,,,,0.00842,3.111439,,,ok,0.16
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQe,M_K-Series Bar Joist-Angle Web:8K1:201324,,,,0.005567,2.052854,,,ok,0.11
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQg,M_K-Series Bar Joist-Angle Web:8K1:201326,,,,0.00537,1.983222,,,ok,0.11
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQh,M_K-Series Bar Joist-Angle Web:8K1:201327,,,,0.005195,1.914089,,,ok,0.1
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQi,M_K-Series Bar Joist-Angle Web:8K1:201320,,,,0.007239,2.672141,,,ok,0.14
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQj,M_K-Series Bar Joist-Angle Web:8K1:201321,,,,0.006703,2.475625,,,ok,0.13
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQk,M_K-Series Bar Joist-Angle Web:8K1:201322,,,,0.00625,2.308512,,,ok,0.12
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQl,M_K-Series Bar Joist-Angle Web:8K1:201323,,,,0.005873,2.168198,,,ok,0.12
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQm,M_K-Series Bar Joist-Angle Web:8K1:201332,,,,0.0055,2.028964,,,ok,0.11
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQn,M_K-Series Bar Joist-Angle Web:8K1:201333,,,,0.005784,2.136987,,,ok,0.11
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQo,M_K-Series Bar Joist-Angle Web:8K1:201334,,,,0.006139,2.269496,,,ok,0.12
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQp,M_K-Series Bar Joist-Angle Web:8K1:201335,,,,0.006568,2.428128,,,ok,0.13
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQq,M_K-Series Bar Joist-Angle Web:8K1:201328,,,,0.005124,1.889032,,,ok,0.1
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQr,M_K-Series Bar Joist-Angle Web:8K1:201329,,,,0.005114,1.885704,,,ok,0.1
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQs,M_K-Series Bar Joist-Angle Web:8K1:201330,,,,0.005167,1.904055,,,ok,0.1
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQt,M_K-Series Bar Joist-Angle Web:8K1:201331,,,,0.005322,1.966423,,,ok,0.11
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQu,M_K-Series Bar Joist-Angle Web:8K1:201340,,,,0.009133,3.378393,,,ok,0.18
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQv,M_K-Series Bar Joist-Angle Web:8K1:201341,,,,0.009133,3.378393,,,ok,0.18
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQy,M_K-Series Bar Joist-Angle Web:8K1:201336,,,,0.007077,2.615233,,,ok,0.14
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,1TBvJAHUjBUgUB_0Fr4wQz,M_K-Series Bar Joist-Angle Web:8K1:201337,,,,0.007677,2.834109,,,ok,0.15
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,00__tAz8_Z$i4WWVg2PKqj,楼梯:150mm max riser 300mm tread:180746:1,,,,0.145677,6.201738,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,03n7do5bYE2iPD97mVLzxi,楼梯:150mm max riser 300mm tread:172987:1,,,,0.133309,5.664895,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,0DSJ1rqxHAlwyjXg0lw1M2,基本屋顶:Generic - 400mm:142430,,,,11.119538,64.759294,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,0DSJ1rqxHAlwyjXg4lw1M2,基本屋顶:Generic - 400mm:142430,,,,11.119538,64.759294,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,0UmHcM1C3p6iau5_2hM5d4,楼梯:150mm max riser 300mm tread:172987:1,,,,0.133309,5.664895,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,1TBvJAHUjBUgUB_07r4wRg,基本屋顶:Generic - 75mm:201262,,,,5.332351,145.458144,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,1fIVuvFffDJRV_SJESOtCD,楼板:Hollow Core Plank - Concrete Topping:139829,,,,433.740894,3353.252818,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,1fIVuvFffDJRV_SJESOtCZ,楼板:Hollow Core Plank - Concrete Topping:139803,,,,435.261667,3365.141528,,,ok,0.03
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,2BnsL48VZZ6EwJHNAOzN4a,楼梯:150mm max riser 300mm tread:173290:1,,,,0.145677,6.201738,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,2PFq80OiF0bm8stF9RMvJs,楼梯:150mm max riser 300mm tread:181700:1,,,,0.133309,5.664895,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,2UMN_OQKrAshZl3dHPujq_,楼板:Standard Timber-Wood Finish:156686,,,,33.515901,492.11185,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,2ujlWXj31n64nX_HrU_Dps,楼梯:150mm max riser 300mm tread:180746:1,,,,0.145677,6.201738,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,2zA80d1$oawxujwGoGvlIT,楼梯:150mm max riser 300mm tread:173290:1,,,,0.145677,6.201738,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,2zu80DWQ9NaADTOlKrEreT,楼梯:150mm max riser 300mm tread:181184:1,,,,0.145677,6.201738,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,36YFAb2ehb9GOZcg6yL$Lq,楼梯:150mm max riser 300mm tread:181700:1,,,,0.133309,5.664895,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,3Sm8Z_REj5gPyqnjeULhYC,楼板:Metal Sunscreen:201218,,,,0.073616,11.772151,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,3Sm8Z_REj5gPyqnjeULhfl,楼板:Metal Sunscreen:200929,,,,0.459696,73.384951,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,3Sm8Z_REj5gPyqnjeULhic,楼板:Metal Sunscreen:201128,,,,0.073616,11.772151,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,3Sm8Z_REj5gPyqnjeULhiq,楼板:Metal Sunscreen:201146,,,,0.459696,73.384951,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,3Sm8Z_REj5gPyqnjeULhj2,楼板:Metal Sunscreen:201164,,,,0.266656,42.578551,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,3Sm8Z_REj5gPyqnjeULhjD,楼板:Metal Sunscreen:201155,,,,0.073616,11.772151,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,3Sm8Z_REj5gPyqnjeULhjR,楼板:Metal Sunscreen:201173,,,,0.073616,11.772151,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,3Sm8Z_REj5gPyqnjeULhj_,楼板:Metal Sunscreen:201200,,,,0.073616,11.772151,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,3Sm8Z_REj5gPyqnjeULhjf,楼板:Metal Sunscreen:201191,,,,0.459696,73.384951,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,3Sm8Z_REj5gPyqnjeULhjt,楼板:Metal Sunscreen:201209,,,,0.266656,42.578551,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,3Sm8Z_REj5gPyqnjeULhlG,楼板:Metal Sunscreen:201054,,,,0.073616,11.772151,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,3Sm8Z_REj5gPyqnjeULhlu,楼板:Metal Sunscreen:201078,,,,0.266656,42.578551,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,3V$FMCDUfCoPwUaHMPfteW,建筑地坪:Pad 1:130737,,,,527.978211,3608.281578,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,3a58fQxqD2numVo$eTOgS$,楼板:Concrete- 100mm:212675,,,,175.992737,3549.330351,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,3xzageQjmI4J25ZEPIanFo,楼梯:150mm max riser 300mm tread:181184:1,,,,0.145677,6.201738,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,1Rlu17Ctf6ZvZdq3UgKRVD,基本墙:Interior - 138mm Partition (1-hr):187479,,,,0.810504,13.141786,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2Tt7$hRrHBKvoaUIFPAzZX,基本墙:Interior - 138mm Partition (1-hr):144051,,,,2.327948,37.401109,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2Tt7$hRrHBKvoaUIFPAzbc,基本墙:Interior - 138mm Partition (1-hr):144180,,,,3.726882,57.649675,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2Tt7$hRrHBKvoaUIFPAzkW,基本墙:Interior - 138mm Partition (1-hr):143858,,,,6.684829,104.422608,,,ok,0.03
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2Tt7$hRrHBKvoaUIFPAzpC,基本墙:Interior - 138mm Partition (1-hr):145054,,,,1.084214,17.249127,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2Tt7$hRrHBKvoaUIFPAzrf,基本墙:Interior - 138mm Partition (1-hr):145211,,,,1.511412,23.659747,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuYdn,基本墙:Parapet Wall:168129,,,,1.914661,19.934764,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuZO5,基本墙:Parapet Wall:167733,,,,6.476663,66.603515,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuZW0,基本墙:Interior - 138mm Partition (1-hr):164144,,,,4.011803,61.829709,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuZZ_,基本墙:Interior - 138mm Partition (1-hr):164302,,,,4.269082,64.946885,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuZn5,基本墙:Interior - 138mm Partition (1-hr):165237,,,,1.238384,19.587181,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuZny,基本墙:Interior - 138mm Partition (1-hr):165196,,,,4.310134,65.561291,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuZvH,基本墙:Interior - 138mm Partition (1-hr):165729,,,,0.244948,4.705312,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuZvK,基本墙:Interior - 138mm Partition (1-hr):165732,,,,0.683673,12.839522,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuZva,基本墙:Interior - 138mm Partition (1-hr):165716,,,,0.23343,4.499567,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuZvp,基本墙:Interior - 138mm Partition (1-hr):165699,,,,0.669384,12.275576,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPui5B,基本墙:Interior - 138mm Partition (1-hr):161915,,,,0.727169,12.77164,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuiUL,基本墙:Interior - 138mm Partition (1-hr):163493,,,,4.28224,65.14381,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuiW_,基本墙:Interior - 138mm Partition (1-hr):160014,,,,1.743701,27.145535,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuic8,基本墙:Interior - 138mm Partition (1-hr):159928,,,,2.92253,44.835275,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuihB,基本墙:Interior - 138mm Partition (1-hr):160763,,,,1.077114,17.142595,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuikh,基本墙:Interior - 138mm Partition (1-hr):160411,,,,2.178709,33.673345,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuisf,基本墙:Interior - 138mm Partition (1-hr):160921,,,,1.033785,16.492385,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuj4r,基本墙:Interior - 138mm Partition (1-hr):157701,,,,1.133418,17.9875,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuj4u,基本墙:Interior - 138mm Partition (1-hr):157704,,,,2.837952,43.56608,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuj5V,基本墙:Interior - 138mm Partition (1-hr):157807,,,,17.912165,273.540189,,,ok,0.03
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuj5a,基本墙:Interior - 138mm Partition (1-hr):157780,,,,1.238384,19.587181,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuj6$,基本墙:Interior - 138mm Partition (1-hr):157839,,,,1.218384,19.287855,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuj6Y,基本墙:Interior - 138mm Partition (1-hr):157842,,,,3.050698,46.71163,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuj6s,基本墙:Interior - 138mm Partition (1-hr):157830,,,,1.218385,19.287855,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuj6v,基本墙:Interior - 138mm Partition (1-hr):157833,,,,3.940887,62.554377,,,ok,0.05
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPujDv,基本墙:Interior - 138mm Partition (1-hr):158281,,,,3.980795,60.715815,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPujFq,基本墙:Interior - 138mm Partition (1-hr):158404,,,,3.980795,60.715815,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPujJu,基本墙:Interior - 138mm Partition (1-hr):159176,,,,2.692786,41.387695,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPujTb,基本墙:Interior - 138mm Partition (1-hr):159317,,,,3.97137,60.574385,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPujYO,基本墙:Generic - 225mm Concrete:156072,,,,3.591,37.68,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPujxC,基本墙:Interior - 138mm Partition (1-hr):157692,,,,1.133418,17.9875,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPujxF,基本墙:Interior - 138mm Partition (1-hr):157695,,,,3.628343,57.894299,,,ok,0.04
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPujxw,基本墙:Interior - 138mm Partition (1-hr):157642,,,,1.084214,17.249126,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,2UMN_OQKrAshZl3dHPuk00,基本墙:Interior - 138mm Partition (1-hr):153904,,,,3.98361,60.758061,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,04Z2pDbq59gubXi5cneOnX,HW-L形柱:GBZ11-550X550:834937,,,,0.765,8.345,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,04Z2pDbq59gubXi5cneOoP,HW-T形柱:GBZ12-800X600:834945,,,,1.188,11.1,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNM$3,矩形柱:GBZ5-400x200:648849,,,,0.224,3.52,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNMyJ,矩形柱:GBZ5-400x200:648769,,,,0.224,3.52,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNMzF,矩形柱:GBZ3-600x200:648733,,,,0.336,4.72,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNg1P,L形柱:GBZ1c-500x500:665867,,,,0.448,5.92,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNg6f,矩形柱:GBZ7-750x200:665851,,,,0.42,5.62,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNg7l,L形柱:GBZ1c-500x500:665789,,,,0.448,5.92,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNgKc,L形柱:GBZ1-500X500:666740,,,,0.448,5.92,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNgN0,T形柱:GBZ2-800x500:666770,,,,0.616,7.72,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNgQ$,矩形柱:GBZ5-400x200:667629,,,,0.224,3.52,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNgQv,矩形柱:GBZ3-600x200:667627,,,,0.336,4.72,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNh$z,T形柱:GBZ2-800x500:669359,,,,0.614009,7.800375,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNhCq,T形柱:GBZ2-800x500:670310,,,,0.615004,7.760188,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNhFK,矩形柱:GBZ3-600x200:670342,,,,0.336,4.72,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNh_H,矩形柱:GBZ7-750x200:669379,,,,0.42,5.62,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNhb7,T形柱:GBZ2-800x500:667669,,,,0.616,7.72,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNhe6,L形柱:GBZ1a-500X500:668500,,,,0.448,5.92,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNhfW,矩形柱:GBZ3-600x200:668466,,,,0.336,4.72,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNhhS,矩形柱:GBZ7-750x200:668558,,,,0.42,5.62,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0CQnC65I52bQtPZXPSNhvL,矩形柱:GBZ3-600x200:669447,,,,0.336,4.72,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,0SXV7UAJz3pu3f7rQS0JVS,HW-矩形柱:GBZ5-400x250:820387,,,,0.36,4.88,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,1B2furSEDDEAtxNkj87MRV,HW-L形柱:GBZ11a-600X600:816068,,,,0.972,9.18,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,1CImphf5nA4uKJThgjSiGd,T形柱:GBZ4-200x700:987634,,,,0.672,8.32,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,1CImphf5nA4uKJThgjSiqB,T形柱:GBZ4-200x700:989406,,,,0.672,8.32,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,1CImphf5nA4uKJThgjSisp,L形柱:GBZ11-500X500:989286,,,,0.448,5.92,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,1R8tRY98z0MOWDFcNI9esm,L形柱:GBZ1c-500x500:549808,,,,0.448,5.92,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,1R8tRY98z0MOWDFcNI9hKP,T形柱:GBZ8-500X1000:547609,,,,0.728,8.92,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,1Td3wbdGLFD9e8EJ6N10oP,L形柱:GBZ11-500X500:974001,,,,0.448,5.92,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,1lfXMh4Xr58gG6j3wm_O$d,HW-矩形柱:GBZ3a-300X600:835872,,,,1.035,10.71,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,1lfXMh4Xr58gG6j3wm_O_R,HW-矩形柱:GBZ5a-250X400:835932,,,,0.575,7.675,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,1lfXMh4Xr58gG6j3wm_Op1,HW-T形柱:GBZ2-1600X600:836102,,,,3.19125,26.41,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,1lfXMh4Xr58gG6j3wm_Opt,HW-矩形柱:GBZ5a-250X400:836144,,,,0.575,7.675,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,1wS54vnf535eOWVuQt6JL6,矩形柱:GBZ5-400x200:673836,,,,0.256,4.0,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,2mkj161jPBu8DYtJL$xyG6,矩形柱:GBZ5-400x200:538547,,,,0.224,3.52,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,2mkj161jPBu8DYtJL$xyI0,矩形柱:GBZ7-750x200:538421,,,,0.42,5.62,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,2mkj161jPBu8DYtJL$xyJ8,矩形柱:GBZ5-400x200:538493,,,,0.223004,3.560188,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,3hJfDDzBrBbwUsGRrT9HSY,T形柱:GBZ2-1600X500:499294,,,,1.062009,12.600375,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,3hJfDDzBrBbwUsGRrT9Idk,矩形柱:GBZ5a-400x200:499858,,,,0.224,3.52,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,3hJfDDzBrBbwUsGRrT9JrF,L形柱:GBZ1a-900X500:504883,,,,0.672,8.32,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,04Z2pDbq59gubXi5cneOpX,混凝土 - 矩形梁:LL1-250X400:835065,,,,0.15,2.15,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,04Z2pDbq59gubXi5cneOyN,混凝土 - 矩形梁:LL3-250x400:835087,,,,0.1,1.5,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNM$i,混凝土 - 矩形梁:LL6-200X500:648894,,,,0.15,2.3,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNM_M,混凝土 - 矩形梁:LL3-200X400:648900,,,,0.124,2.02,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNM_m,混凝土 - 矩形梁:LLK2-200X400:648930,,,,0.292007,4.540099,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNg24,混凝土 - 矩形梁:LL6-200X500:666070,,,,0.15,2.3,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNg2a,混凝土 - 矩形梁:LL1-200X400:666102,,,,0.152,2.44,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNgD4,混凝土 - 矩形梁:LL3-200X400:666134,,,,0.12,1.96,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNgDm,混凝土 - 矩形梁:LLK2-200X400:666146,,,,0.2324,3.646,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNgGh,混凝土 - 矩形梁:LL3-200X400:667001,,,,0.12,1.96,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNgJ9,混凝土 - 矩形梁:LL7-200X500:667035,,,,0.15,2.3,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNgJr,混凝土 - 矩形梁:LL4-200X400:667047,,,,0.08,1.36,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNh5K,混凝土 - 矩形梁:LLK2-200X400:669702,,,,0.232,3.64,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNh5u,混凝土 - 矩形梁:LL4-200X400:669738,,,,0.08,1.36,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNh8p,混凝土 - 矩形梁:LL7-200X500:670561,,,,0.150029,2.300401,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNhBF,混凝土 - 矩形梁:LL5-200X500:670621,,,,0.12,1.88,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNhBp,混凝土 - 矩形梁:LL6-200X500:670625,,,,0.15,2.3,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNhXI,混凝土 - 矩形梁:LLK2-200X400:667904,,,,0.232,3.64,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNhXw,混凝土 - 矩形梁:LL3-200X400:667944,,,,0.12,1.96,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNhci,混凝土 - 矩形梁:LL1-200X400:667902,,,,0.152,2.44,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNhqX,混凝土 - 矩形梁:LL3-200X400:668787,,,,0.12,1.96,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNhqz,混凝土 - 矩形梁:LL7-200X500:668783,,,,0.15,2.3,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNhtT,混凝土 - 矩形梁:LL5-200X500:668815,,,,0.11873,1.86222,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNhwW,混凝土 - 矩形梁:LL7-200X500:669682,,,,0.15,2.3,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,0CQnC65I52bQtPZXPSNhww,混凝土 - 矩形梁:LL5-200X500:669672,,,,0.12,1.88,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,1GPDHHgR5DEALccBc2A7IS,混凝土 - 矩形梁:LL8-200X400:987151,,,,0.088,1.48,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,1lfXMh4Xr58gG6j3wm_OnV,混凝土 - 矩形梁:LL1-250X400:836248,,,,0.11,1.63,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,1lfXMh4Xr58gG6j3wm_OyV,混凝土 - 矩形梁:LL1-250X400:836056,,,,0.135,2.055,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,1lfXMh4Xr58gG6j3wm_Ozp,混凝土 - 矩形梁:LL3-250x400:836020,,,,0.110029,1.630372,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,1lsY3yxlbA782W85szEZZX,混凝土 - 矩形梁:LL1-250X400:830255,,,,0.15,2.15,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,1wS54vnf535eOWVuQt6I1m,混凝土 - 矩形梁:LLK2-200X400:679194,,,,0.2,3.16,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,2cXeH1oUL3_RnPwCiVXHyR,混凝土 - 矩形梁:LL1-250X400:833653,,,,0.15,2.15,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,2mkj161jPBu8DYtJL$xymR,混凝土 - 矩形梁:LL4-200X400:540590,,,,0.08,1.36,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,2mkj161jPBu8DYtJL$xysE,混凝土 - 矩形梁:LL3-200X400:540219,,,,0.12,1.96,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,2mkj161jPBu8DYtJL$xyto,混凝土 - 矩形梁:LLK2-200X400:540231,,,,0.291709,4.535637,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,3YjUsSXFj2ae0q7yNc5aTx,混凝土 - 矩形梁:LL7-200X500:578443,,,,0.15,2.3,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,3YjUsSXFj2ae0q7yNc5blI,混凝土 - 矩形梁:LL7-200X500:577314,,,,0.150029,2.300401,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,3YjUsSXFj2ae0q7yNc5dIY,混凝土 - 矩形梁:LLK2-200X400:581714,,,,0.292007,4.540099,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,3hJfDDzBrBbwUsGRrT9LPn,混凝土 - 矩形梁:LLK2-200X400:515853,,,,0.2,3.16,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,3hJfDDzBrBbwUsGRrT9Mlm,混凝土 - 矩形梁:LLK2-200X400:516748,,,,0.291985,4.539777,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0CQnC65I52bQtPZXPSNM7f,楼板:结构-120mm:649403,,,,0.552096,10.233701,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0CQnC65I52bQtPZXPSNgC4,楼板:结构-70mm:666198,,,,1.360624,40.177018,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0CQnC65I52bQtPZXPSNgFm,楼板:结构-130mm:666274,,,,0.215439,4.042405,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0CQnC65I52bQtPZXPSNgTV,楼板:结构-70mm:667149,,,,1.241097,36.719933,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0CQnC65I52bQtPZXPSNh7D,楼板:结构-70mm:669855,,,,1.379751,40.807475,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0CQnC65I52bQtPZXPSNhLN,楼板:结构-70mm:670725,,,,1.360582,40.133731,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0CQnC65I52bQtPZXPSNhYb,楼板:结构-70mm:668151,,,,1.241097,36.719933,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0CQnC65I52bQtPZXPSNhnb,楼板:结构-130mm:668983,,,,0.215439,4.042405,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0PFytyFkv7mvDwpWTnh_3H,楼板:结构-70mm:1072672,,,,0.07056,2.3016,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0PFytyFkv7mvDwpWTnh_AP,楼板:结构-70mm:1072232,,,,0.07056,2.3016,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0PFytyFkv7mvDwpWTnh_D3,楼板:结构-70mm:1072562,,,,0.07056,2.3016,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0PFytyFkv7mvDwpWTnh_G0,楼板:结构-70mm:1071857,,,,0.07056,2.3016,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0PFytyFkv7mvDwpWTnh_Mk,楼板:结构-70mm:1071967,,,,0.07056,2.3016,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0V14pra5f1K853C_8ysl01,楼板:厨房100mm铺地砖防水面层:964654,,,,0.562031,12.200642,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0V14pra5f1K853C_8ysl_L,楼板:厨房100mm铺地砖防水面层:964538,,,,0.562031,12.200642,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,0fFmxaUjnF6O6okRycnI0I,楼板:结构-160mm:835410,,,,5.412498,71.792223,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,1ESyiDkK59ouWx3xqm2OeH,楼板:建筑板-120mm:792043,,,,0.710371,13.111478,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,1ZYJGfcOv35fKozx6g84GX,现场浇注楼梯:楼梯:1101140 Landing 1,,,,0.361707,7.660983,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,1ZYJGfcOv35fKozx6g84Vm,楼板:结构-100:1101494,,,,0.129585,3.186699,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,1lfXMh4Xr58gG6j3wm_Osq,楼板:结构-160mm:836467,,,,3.0316,40.734998,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,1lfXMh4Xr58gG6j3wm_OwQ,楼板:结构-160mm:835677,,,,3.054943,41.106757,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,26QRM2wU50HgKXlvA7A1fB,楼板:结构-70mm:613275,,,,2.446675,71.739,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,26QRM2wU50HgKXlvA7A1nC,楼板:结构-70mm:613788,,,,1.379751,40.807475,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,26QRM2wU50HgKXlvA7A1qv,楼板:结构-130mm:613609,,,,0.215439,4.042405,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,2mkj161jPBu8DYtJL$xzrO,楼板:结构-70mm:536301,,,,0.07056,2.3016,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,2oYk3yRazFbw9LE37Hb$Jy,楼板:厨房100mm铺地砖防水面层:961566,,,,0.562031,12.200642,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,3O5u5uEVT3HRuTxMdDxEnb,楼板:主卧次卧100mm复合地板:995891,,,,1.60017,33.903368,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,3O5u5uEVT3HRuTxMdDxEsB,楼板:主卧次卧100mm复合地板:996317,,,,1.60017,33.903368,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,3O5u5uEVT3HRuTxMdDxEwV,楼板:晾晒空间100mm铺地砖防水面层:995529,,,,0.502,11.139997,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,3O5u5uEVT3HRuTxMdDxF0W,楼板:主卧次卧100mm复合地板:994934,,,,1.111695,23.693863,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,3O5u5uEVT3HRuTxMdDxF5L,楼板:卫生间90mm陶瓷锦砖防水面层:995075,,,,0.331875,8.077001,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,3O5u5uEVT3HRuTxMdDxF96,楼板:餐厅走道玄关100mm铺地砖隔声楼面:994320,,,,0.960999,20.499972,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,3O5u5uEVT3HRuTxMdDxFDk,楼板:主卧次卧100mm复合地板:994616,,,,1.023699,21.793956,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,3O5u5uEVT3HRuTxMdDxFIN,楼板:卫生间90mm陶瓷锦砖防水面层:993985,,,,0.391004,9.633983,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,3O5u5uEVT3HRuTxMdDxFMz,楼板:主卧次卧100mm复合地板:994283,,,,1.60017,33.903368,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,3O5u5uEVT3HRuTxMdDxFR5,楼板:餐厅走道玄关100mm铺地砖隔声楼面:993427,,,,3.601759,75.115128,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,3O5u5uEVT3HRuTxMdDxFVW,楼板:卫生间90mm陶瓷锦砖防水面层:993718,,,,0.391004,9.633983,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,3O5u5uEVT3HRuTxMdDxF_0,楼板:晾晒空间100mm铺地砖防水面层:991702,,,,0.502,11.139997,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,3O5u5uEVT3HRuTxMdDxFe0,楼板:厨房100mm铺地砖防水面层:992342,,,,0.562031,12.200642,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,3O5u5uEVT3HRuTxMdDxFkP,楼板:餐厅走道玄关100mm铺地砖隔声楼面:992719,,,,3.601759,75.115128,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,04Z2pDbq59gubXi5cneOp$,基本墙:Q1-250mm:835047,,,,2.1375,20.087502,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,04Z2pDbq59gubXi5cneOzJ,基本墙:Q1-250mm:835147,,,,0.539998,6.419987,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,0CQnC65I52bQtPZXPSNM7r,基本墙:Q1-200mm:649383,,,,0.924,11.019998,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,0CQnC65I52bQtPZXPSNgM8,基本墙:Q1-200mm:666842,,,,0.923929,11.019914,,,ok,0.04
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,0CQnC65I52bQtPZXPSNhaT,基本墙:Q1-200mm:667727,,,,1.708,19.42,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,0CQnC65I52bQtPZXPSNhu1,基本墙:Q1-200mm:669523,,,,1.708,19.42,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,0JCNGhJmP6cAU0pYR_241H,常规模型 96:常规模型 6:1158173,,,,0.144936,6.505204,,,ok,0.05
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,0JCNGhJmP6cAU0pYR_24VG,常规模型 88:常规模型 6:1158044,,,,0.144936,6.505204,,,ok,0.05
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,0dnOttYbT3ygsyK9p74rvb,基本墙:蒸压加气混凝土条板隔墙-100mm:763328,,,,0.395137,9.390771,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,0dnOttYbT3ygsyK9p74t73,基本墙:蒸压加气混凝土条板隔墙-100mm:756326,,,,0.000582,0.526221,,,ok,0.03
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,0tGOeLNtz2UObeowuNO$L8,基本墙:蒸压加气混凝土砌块250mm:1024000,,,,1.48125,15.324999,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,1CImphf5nA4uKJThgjSiVG,基本墙:Q1-200mm:987653,,,,1.12,13.120002,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,1CImphf5nA4uKJThgjSisx,基本墙:蒸压加气混凝土砌块100mm:989294,,,,0.195,5.06,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,1R8tRY98z0MOWDFcNI9Ygx,基本墙:Q1-200mm:574651,,,,1.708,19.42,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,1Td3wbdGLFD9e8EJ6N10eD,基本墙:外墙:973349,,,,2.688,69.568008,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,1Z32Qwhr9EQ9FAQ66fAhfm,基本墙:蒸压加气混凝土条板隔墙-100mm:779302,,,,1.02255,21.755,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,1Z32Qwhr9EQ9FAQ66fAhlF,基本墙:蒸压加气混凝土砌块-200mm:779673,,,,0.3,4.6,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,1Z32Qwhr9EQ9FAQ66fAhr$,基本墙:蒸压加气混凝土砌块-200mm:779049,,,,0.12431,2.623046,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,1lfXMh4Xr58gG6j3wm_O_h,基本墙:Q2-300mm:835948,,,,2.607938,23.266317,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,1lfXMh4Xr58gG6j3wm_Onx,基本墙:Q1-200mm:836284,,,,2.3,26.1,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,1lfXMh4Xr58gG6j3wm_Oyt,基本墙:Q1-250mm:836080,,,,0.862498,10.074979,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,1nKdjgegzEkRueoSvhzjRs,基本墙:结构墙-300mm -深褐色:1015179,,,,1.272,15.079998,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,1nKdjgegzEkRueoSvhzlwV,常规模型 49:常规模型 6:1005026,,,,0.144936,6.505204,,,ok,0.05
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,1vQVm2oSn0E8y72aBqjFaJ,基本墙:蒸压加气混凝土条板隔墙-100mm:990709,,,,0.140529,4.254646,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,1vQVm2oSn0E8y72aBqjFfT,基本墙:蒸压加气混凝土条板隔墙-100mm:990907,,,,0.520651,11.33702,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,2PMniPsnX6rfkWmqODjm3_,基本墙:蒸压加气混凝土砌块-200mm:867947,,,,1.7224,20.71,,,ok,0.01
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,2SgG6jGaD0TARhsTW$wgf8,基本墙:蒸压加气混凝土条板隔墙-100mm:990252,,,,0.520649,11.336979,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,2SgG6jGaD0TARhsTW$wgti,基本墙:蒸压加气混凝土条板隔墙-50mm:990088,,,,0.060075,2.715,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,2aer9FXTDFKP_PnVvPRDyE,基本墙:蒸压加气混凝土条板隔墙-100mm:982751,,,,0.520651,11.33702,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,2cXeH1oUL3_RnPwCiVXH_e,基本墙:Q1-250mm:833734,,,,0.36,4.88,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,2dQ813yQf89ONvZ8wYe5JW,基本墙:蒸压加气混凝土条板隔墙-100mm:990560,,,,0.520651,11.337022,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,2iNiWh511AYxO0DVgz184$,基本墙:外墙 -米黄色:997382,,,,0.62696,16.575828,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,2iNiWh511AYxO0DVgz184t,基本墙:外墙 -米黄色:997390,,,,0.62696,16.575828,,,ok,0.02
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,2mC8MdSXzFsPVZeZdvPgQy,基本墙:Q4-300mm:827147,,,,3.36375,26.49,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,2mkj161jPBu8DYtJL$xykW,基本墙:Q1-200mm:538645,,,,0.14,2.62,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,3O5u5uEVT3HRuTxMdDxC5H,基本墙:蒸压加气混凝土条板隔墙-50mm:990983,,,,0.060075,2.715,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,3O5u5uEVT3HRuTxMdDxEwG,基本墙:蒸压加气混凝土条板隔墙-100mm:995526,,,,0.2136,4.966,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,3O5u5uEVT3HRuTxMdDxFaa,基本墙:蒸压加气混凝土条板隔墙-100mm:993138,,,,0.213671,4.967466,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,3hJfDDzBrBbwUsGRrT9KmQ,基本墙:Q2-200mm:509286,,,,0.30792,4.419141,,,ok,0.0
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,3ihoE1Q5rByfvf8xbqsZ6g,基本墙:蒸压加气混凝土条板隔墙-100mm:692959,,,,1.02255,21.755,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,02WUemOwr2_OacqKsqoKQe,K80/80/4_(#373820),,,,0.003308,1.656192,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,05OQDdgs53vheydKRQ5oSp,balusters_(#734382),,,,0.001394,0.301049,,,ok,0.02
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,0Efuey12H6FPv9Y6VQe0Np,HEB220_(#796965),,,,0.002159,0.336056,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,0opKvn$Kn92Ba4iSG3fr1O,HEB220_(#796793),,,,0.002159,0.336056,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,1INQK35Fr6svvemgEC5lb3,balusters_(#731877),,,,0.001393,0.300847,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,1KL7epqoT8nBX1xchX2VLG,HEB220_(#796621),,,,0.002159,0.336056,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,1SrTDKsxHBiQZ0Mf0wFQjg,K80/80/4_(#96928),,,,0.00439,2.197312,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,1X9r8GGlL6vgiLrcpHgb77,balusters_(#734290),,,,0.001393,0.300847,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,1pQ12lBrLDAwKd3Ht3owRz,HEB220_(#786318),,,,0.002159,0.336056,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,1y_UtPM950gOVxQi0e4jJ3,K80/80/4_(#418933),,,,0.003308,1.656192,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,20lXcjrev4dx5uwiwcMI3U,balusters_(#733899),,,,0.001393,0.300847,,,ok,0.02
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,21ZsmR1Mn0gR7CxhpatUXH,K80/80/4_(#54097),,,,0.00439,2.197312,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,28iGOAB4L2VARaniZOboqL,HEA180_(#419554),,,,0.004357,1.064838,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,2LpkQ0bbn6kQuRiiUXpap$,K80/80/4_(#313043),,,,0.003308,1.656192,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,2O09s1CPX5GR4lx$acabJc,"K152,4/12,5_(#42541)",,,,0.004887,2.485024,,,ok,0.03
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,2PXnpw6jTD$hRhNn0s2C6_,HEB220_(#796449),,,,0.002159,0.336056,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,2b$_mtp3PC1e3qY2l19Y2w,balusters_(#733600),,,,0.001394,0.301049,,,ok,0.02
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,2h2syGAWr1h9XBf4JKxO_$,balusters_(#734980),,,,0.001394,0.301049,,,ok,0.02
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,30jl1edBvBPfebRtaHDGsW,K80/80/4_(#96764),,,,0.00439,2.197312,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,3DidM0BvXC8A0EOxsKrNC7,K80/80/4_(#383266),,,,0.003308,1.656192,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,3F9obV8i1Ftw1lNx$KsHKp,balusters_(#734681),,,,0.001393,0.300847,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,3Fk7zTycf9ehrJpzoRhyDE,K80/80/4_(#54265),,,,0.00439,2.197312,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,3XWigLhEf1Nx3aD7Qf6l8G,balusters_(#734198),,,,0.001394,0.301049,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,0072BkD$fDP9svdiwlWliC,HEA220_(#989657),,,,0.067716,14.158312,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,06pbOYRBH47ggM7v8Z4QIY,fund_opstort_(#9933),,,,0.033336,0.755092,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,0B0Q1ghLnCxvbIfuSwz9wK,liftputwand_(#9435),,,,0.507,5.33,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,0NA_WA$Vz56ebibBvXTCAx,staallatei ??_(#296251),,,,0.000752,0.465013,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,0PeQJ7XO5FCez3vnkBjyBq,fund_opstort_(#3094),,,,0.161123,3.2658,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,0VHbn4bVf7iOqD4KIp1EkT,fund_opstort_(#2801),,,,0.185031,2.9955,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,0fqMgB66D5ghqNQ_PcyJzD,staallatei ??_(#295591),,,,0.001157,0.714574,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,0tDHTIAFHAExG9bv38sVSZ,staallatei ??_(#498643),,,,0.001157,0.714574,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,0wc9xUAq1D8gPTinpIsyhl,fund_strook_(#6129),,,,0.35235,4.0518,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,13QTm8v1f0xgK97x0ONTHQ,hoeklijn bordes_(#599104),,,,0.00257,0.527508,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,16FVmRsQb85vEIXQ_DW6Lp,liftputwand_(#478),,,,0.125235,2.0163,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,1Auz_7ZqL7AAig2gL0Pvj2,liftputwand_(#4582),,,,0.223146,3.474,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,1EkLgLcpL7Xh2Ujn5sza1f,hoeklijn bordes_(#287992),,,,0.00257,0.527508,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,1JvhXgKdrA9f$ihQ6BVwRu,staallatei ??_(#499083),,,,0.001157,0.714574,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,1Mf8LrlnDF0xbzfYfBIyj6,fund_opstort_(#2967),,,,0.340263,5.3923,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,1UP3VfHvHA_gIZN9WnsRQ9,fund_opstort_(#3260),,,,1.84149,21.8791,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,1cCLRMnSDBSgsvWBhFtU_C,HEA180_(#696350),,,,0.002772,0.680664,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,1hKluOE6bDMhJ0clWE$jN$,fund_opstort_(#4914),,,,0.390443,4.8226,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,1naZcReNz7PvhQAmj6Jq3I,liftputwand_(#4278),,,,0.223146,3.474,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,1qWfbRwbT55R6UZM54lizh,stripstaal 80/8_(#738386),,,,0.000397,0.1104,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,1t2w6GPuT4hxRI4oWpzqsF,hoeklijn bordes_(#313305),,,,0.00257,0.527508,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,1zQYOrUqP5TAaFPeCmMGH$,fund_strook_(#11249),,,,0.7095,8.341,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,21ColbAuv9Zw7JF05ieMXg,staal halfspant_(#616331),,,,0.002063,0.253752,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,28n152n4TDhfCgPSt939HS,fund_strook_(#10099),,,,0.11734,1.678802,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,2CbRGCrHHAVhOahgXUdmJv,fund_opstort_(#3946),,,,0.039458,0.878965,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,2IGwSZD4XD0v_U7kK$pAw4,fund_opstort_(#2465),,,,2.012094,19.86018,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,2OwZUPMe9A_OUbNu4p$vK$,fund_opstort_(#1655),,,,0.088357,1.3044,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,2_RPGurtHDWvGWEyfSnyy2,HEA180_(#698107),,,,0.023723,5.758621,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,2feLeCaq51VhN$mUrgaKfE,stripstaal 80/8_(#738554),,,,0.000397,0.1104,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,2nIX6Ii5r5thLY4vdkyK64,betonlatei_(#707716),,,,0.085,1.63,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,2sm5UhjjP0NvfUsdScXytC,staallatei_(#196691),,,,0.001157,0.714574,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,2wRDzVfR9EwhluR32nQMBE,fund_strook_(#13187),,,,0.150775,2.077139,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,36OAgfylj3i8B$_ULHcQpS,fund_strook_(#11380),,,,1.1115,12.897,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,3E2$yTPJnDYRkEL8oF2ny5,staallatei ??_(#298011),,,,0.001157,0.714574,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,3IVPmAwpjD_BddoGZSdPVq,HEA180_(#696528),,,,0.002772,0.680664,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,3P7_03M9j4qfTpY82oA7qG,fund_strook_(#11761),,,,0.344,4.012,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,3QPQ0M3XLDPQT3whn6YFzl,fund_strook_(#12181),,,,0.344,4.012,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,3VWt6e5xX0QQNjKh6N8IFF,fund_opstort_(#8439),,,,0.039458,0.878965,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,3a7rERGcH42uCPJ5KdfkXU,HEB220_(#990931),,,,0.007313,1.097258,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,3chAZP2urEphTNqEJGiwF1,fund_opstort_(#23464),,,,0.388773,6.1413,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,0$B25rGK5B6eNl0ABKfDcA,prefab balkon_(#661390),,,,0.794102,8.944891,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,0B0i407en55u5wK3vcogkv,dekvloer_(#564110),,,,0.640226,15.398884,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,0K0jZX5sr5X902ymOtBcjh,sporenkap_(#440542),,,,0.062795,2.397753,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,0M7LGkeqH9Iew8pHUXBW1k,dak dakkapel_(#778448),,,,0.965172,15.694443,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,0Q$4njmzvCVAmF$RuCztvV,vloerveld_(#782295),,,,1.485,50.85,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,0Xj8EFNGP6Z8pqEwga41uD,dekvloer_(#883034),,,,3.782624,170.74679,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,0dC84HL7L9jQjaJrXGOlGr,dekvloer_(#240574),,,,0.564536,13.47936,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,0fzORJLYrENAgMB8OLjsOO,vloer_V0_(#36555),,,,2.171426,17.459844,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,0jNFrN6dH92RBTOZmIKFmW,plat dak_(#699294),,,,3.460701,44.653628,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,0mH6E_Hd10jQooCrpSIM72,dekvloer_(#61507),,,,0.518201,12.633188,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,0qZPdq8bbC5RjNclnNVfyC,gootconstructie_(#440134),,,,0.415188,10.322764,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,0uS$tE2Ev4JuyQYSjkkTMS,vloerveld_(#604034),,,,1.3563,46.5288,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,0y_1JK34L0S9UbeV6I5FfW,dekvloer_(#239582),,,,0.637788,15.274308,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,12ZjsATRDFReOezU0yxRuU,vloerveld_(#782446),,,,1.430781,49.111101,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,16m5u7wR99KQ_6omnGpYqt,spouwisolatie_(#843182),,,,0.148564,2.711499,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,1B5CUaozvD0fIlYgOxOoKr,vloerveld_(#604173),,,,0.15552,5.7468,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,1HdZSWPLD4jQVyucbKIHhv,vloerveld_(#782732),,,,1.25766,43.1688,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,1SZzryfSDFOvzxnRysRDiW,sporenkap_(#800029),,,,2.685195,81.850252,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,1UXcTqQ4fEL9TNKOFHs6cw,vloer_V0_(#34089),,,,3.160836,25.05126,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,1Z9jhi0_TAhgfRjYwB7pGE,vloerveld_(#783478),,,,1.221492,41.9368,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,1b0DWnqPHDXwj$brtZalry,sporenkap_(#861311),,,,1.359479,42.483955,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,1em7tGcDLAYhc36KY4ngv1,plafond_(#811565),,,,0.196667,4.292698,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,1jGPE_m8HFvuDyQMHt6r8P,vloer_V0_(#38211),,,,0.367609,4.000066,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,1mxtkANs9AIxzJfMD63Vpg,dakisolatie_(#797314),,,,0.145781,3.582902,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,1tlRVPawH3$wkBWpre762q,vloer_V0_(#34622),,,,1.705423,24.399444,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,204yhYTyXB9RoXYX4jVyl1,dakvloer_(#988126),,,,0.991473,34.204552,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,27OXjbvNj2Eu9aSbkEqSNx,vloerveld_(#782593),,,,1.275058,43.825049,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,2FbKQGA1LD9gZ1z1HbX$xs,vloer_V0_(#38625),,,,1.922076,15.54666,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,2LcFDUf1PBJPasceenEGF9,vloer_V0_(#36003),,,,2.833164,22.53714,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,2T58Q1pAP3CAiCZN0WJmfY,dekvloer_(#557102),,,,0.115036,2.96531,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,2YKfa7ZEn0vh1MHp1vCPlP,dekvloer_(#522690),,,,0.564387,13.555156,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,2dljI_2vL6u95oyWMcI5ss,vloerveld_(#320077),,,,0.396333,14.040289,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,2hI0ldtkv9dA1HH6UF1NJ$,vloerveld_(#783014),,,,1.333383,45.9515,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,2q1hNROZ90y9r0s2DKle7K,vloer_V0_(#42867),,,,0.106128,2.6369,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,2u21sJRdT0Me24l6eBI1mv,vloer_V0_(#37383),,,,2.171426,17.459844,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,30jSkX$tjBEeqQuzhSL0OU,vloerveld_(#604888),,,,1.377,47.178,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,34HAwEQ2H7bw2aYHzDRd$G,dekvloer_(#221652),,,,0.588498,14.134165,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,38LmlQQRH0qQXWi4jy1laF,vloer_V0_(#39279),,,,0.528732,4.843896,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,3DsioGn3j7EwXbSwu1cX4$,dekvloer_(#752212),,,,0.842436,38.593952,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,3HYlG_VlbDuxKXxMpRWZ6_,vloer_V0_(#35589),,,,2.921076,23.211662,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,0$AcAYUPP2$QPnfHcRBtcj,HSB-element_(#383736),,,,0.035418,1.708277,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,04iScL2Kn3cv3CSwJZjP8B,buitenblad_(#693650),,,,0.042185,1.1887,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,090AJIP5v5lfwCtTvD43M7,buitenblad_(#69932),,,,0.0132,0.428,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,0H1MCEKm17yOfvoqf0Ggro,knieschot_(#852861),,,,0.044062,3.925853,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,0PicWqayL1yh7c3S_lCXHa,spouwisolatie_(#988860),,,,0.231839,6.857626,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,0U$jn7OXX23eAgzMQt_QwM,separatiewand_(#540347),,,,0.404332,8.92704,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,0_ZLdMJDn81O6gaWcsA8xA,opgaand werk_(#21044),,,,0.44931,10.8502,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,0hO0qF5M1DvAZ0w8mLQoGE,separatiewand_(#526820),,,,0.44883,13.91376,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,0p2NIRWMH3AQ$Lzg6Gf8__,separatiewand_(#884070),,,,0.36585,8.129,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,0uy7z2IUf33AZ8IbNtgOt8,binnenblad_(#27645),,,,1.357274,15.98468,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,12coIr0ez7DBxWzujlCd3J,buitenblad_(#154608),,,,0.0378,1.082,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,1AS5IWZnP6q8vLG4XSO3k9,buitenblad_(#151504),,,,0.11616,2.7572,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,1EOIzFzg5BbhKZKqGjejer,separatiewand_(#886262),,,,0.13821,3.4082,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,1JMhCfhCH6tAp5AycdPv90,binnenblad_(#454374),,,,1.597369,18.405752,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,1NkTtW$pz0hev1oQHyBTAw,separatiewand_(#898270),,,,0.54471,11.838205,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,1V3hVJioTBi9UrXQM9C8F3,knieschot_(#875014),,,,0.140636,12.366205,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,1b33UyDQP86RJSEXZ2pmzt,HSB-element_(#382736),,,,0.0514,3.162094,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,1f9ryZDbLAQhztXywuJjTY,HSB-element_(#360145),,,,0.288875,8.426342,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,1lwimHBy5Akg4TAfP8GO7s,zijwang dakk_(#455332),,,,0.102518,3.344212,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,1ta0l08$T7QRXIISl7NMm$,separatiewand_(#216521),,,,0.602975,13.0465,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,1y6ZFrU6HDDOn4EJWX4AMx,separatiewand_(#210395),,,,0.76693,16.9886,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,242fm2EOH2fAIscQ1QB9u1,buitenblad_(#629438),,,,0.08833,2.1546,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,2A1oTXhTL2DhJTqBb5V6gf,buitenblad_(#168675),,,,0.165,3.97,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,2GewgmOv5BDuHyyugLQFq3,buitenblad_(#393170),,,,0.013226,0.45412,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,2OlOGa2dLBCQPfTNehEdNZ,buitenblad_(#403467),,,,0.299962,6.823241,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,2UsuW1PNf64er7jm4Dr5OS,HSB-element_(#386231),,,,0.0514,3.162092,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,2bwbX1D1XARBfofMf2OOEb,buitenblad_(#351863),,,,0.021322,1.200943,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,2je0Pq0hv8zv4f7rHg6dYb,buitenblad_(#397445),,,,0.02057,0.6874,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,2qAJRLSDH1mRzHry$41TLy,buitenblad_(#107584),,,,0.263973,6.024492,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,2w61otjs5CqewcPHCpJdcb,buitenblad_(#390221),,,,0.08712,2.1284,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,3$iLCyTLb5JwiMuaFCmJA5,buitenblad_(#651146),,,,0.299585,6.696701,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,358wEhlsX0$BDmI7_k3GV6,binnenblad_(#337281),,,,0.255174,3.733001,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,3B_JtEaIP61vhDS6S61at7,HSB-element_(#89436),,,,0.028572,1.98542,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,3I6WFLMoH4BQnVbrxp8YFH,buitenblad_(#119665),,,,0.04356,1.1852,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,3QRSFTS7r9xxL90rDUu7c0,buitenblad_(#82941),,,,0.072882,2.02674,,,ok,0.01
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,3VlnC7dc97dO6MEL6ot9DA,opgaand werk_(#17704),,,,0.1581,3.884,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,3bDpFy13r2NfkeIFQ0G_MM,buitenblad_(#631138),,,,0.08833,2.1546,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,3if_wcL31DKQqoZVoDBXrf,separatiewand_(#750215),,,,0.071517,2.85492,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,3moPDBSqT9tQAX9t$XC0Mf,binnenblad_(#337098),,,,1.161834,14.013904,,,ok,0.0
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,3sDUiUZg54Yh$cnk3AYEx8,HSB-element_(#89870),,,,0.032858,2.646676,,,ok,0.01

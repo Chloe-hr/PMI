@@ -1,0 +1,452 @@
+{
+ "path": "data/raw/4DBenchmarkBim.ifc",
+ "bytes": 749650,
+ "sha256": "b7a22edca5094f9e53ee9210a957ed1622af354759478c506219ee344fa82fe6",
+ "schema": "IFC4",
+ "header_originating_system": "22.0.2.392 - Exporter 22.0.2.392 - Alternate UI 22.0.2.392",
+ "header_preprocessor": "The EXPRESS Data Manager Version 5.02.0100.07 : 28 Aug 2013",
+ "header_timestamp": "2022-06-09T16:38:13",
+ "header_author": [
+  ""
+ ],
+ "header_organization": [
+  ""
+ ],
+ "header_description": [
+  "ViewDefinition [DesignTransferView_V1.0]"
+ ],
+ "applications": [
+  "Autodesk Revit 2022 (ENG) 2022"
+ ],
+ "project_name": [
+  "Project Number"
+ ],
+ "project_longname": [
+  "Project Name"
+ ],
+ "site_names": [
+  "Default"
+ ],
+ "site_refs": [
+  [
+   [
+    51,
+    30,
+    23,
+    112487
+   ],
+   [
+    0,
+    -7,
+    -37,
+    -956022
+   ]
+  ]
+ ],
+ "site_address": [
+  null
+ ],
+ "building_names": [
+  ""
+ ],
+ "storeys": [
+  {
+   "name": "Level 0",
+   "elevation": 0.0
+  },
+  {
+   "name": "Level 1",
+   "elevation": 4000.0
+  },
+  {
+   "name": "Level 2",
+   "elevation": 8470.0
+  },
+  {
+   "name": "Level 3",
+   "elevation": 12940.0
+  },
+  {
+   "name": "Level 4",
+   "elevation": 17410.0
+  },
+  {
+   "name": "Level 5",
+   "elevation": 21880.0
+  },
+  {
+   "name": "Level 6",
+   "elevation": 26349.9999999999
+  },
+  {
+   "name": "Level 7",
+   "elevation": 30819.9999999999
+  }
+ ],
+ "units": [
+  {
+   "type": "LENGTHUNIT",
+   "kind": "SI",
+   "prefix": "MILLI",
+   "name": "METRE"
+  },
+  {
+   "type": "AREAUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "SQUARE_METRE"
+  },
+  {
+   "type": "VOLUMEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "CUBIC_METRE"
+  },
+  {
+   "type": "PLANEANGLEUNIT",
+   "kind": "conversion",
+   "name": "DEGREE",
+   "factor": 0.0174532925199433,
+   "base": "RADIAN"
+  },
+  {
+   "type": "MASSUNIT",
+   "kind": "SI",
+   "prefix": "KILO",
+   "name": "GRAM"
+  },
+  {
+   "type": "TIMEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "SECOND"
+  },
+  {
+   "type": "FREQUENCYUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "HERTZ"
+  },
+  {
+   "type": "THERMODYNAMICTEMPERATUREUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "DEGREE_CELSIUS"
+  },
+  {
+   "type": "ELECTRICCURRENTUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "AMPERE"
+  },
+  {
+   "type": "ELECTRICVOLTAGEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "VOLT"
+  },
+  {
+   "type": "POWERUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "WATT"
+  },
+  {
+   "type": "FORCEUNIT",
+   "kind": "SI",
+   "prefix": "KILO",
+   "name": "NEWTON"
+  },
+  {
+   "type": "ILLUMINANCEUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "LUX"
+  },
+  {
+   "type": "LUMINOUSFLUXUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "LUMEN"
+  },
+  {
+   "type": "LUMINOUSINTENSITYUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "CANDELA"
+  },
+  {
+   "type": "PRESSUREUNIT",
+   "kind": "SI",
+   "prefix": null,
+   "name": "PASCAL"
+  }
+ ],
+ "length_unit_scale_to_m": 0.001,
+ "areaunit_scale_to_si": 1.0,
+ "volumeunit_scale_to_si": 1.0,
+ "massunit_scale_to_si": 1000.0,
+ "ifcroot_count": 3672,
+ "globalid_duplicates": 0,
+ "globalid_invalid_format": 0,
+ "entity_counts": {
+  "IfcFooting": 0,
+  "IfcPile": 0,
+  "IfcColumn": 63,
+  "IfcBeam": 0,
+  "IfcSlab": 32,
+  "IfcWall": 56,
+  "IfcCurtainWall": 0,
+  "IfcMember": 0,
+  "IfcPlate": 0,
+  "IfcStair": 0,
+  "IfcStairFlight": 0,
+  "IfcRamp": 0,
+  "IfcRoof": 0,
+  "IfcCovering": 0,
+  "IfcDoor": 0,
+  "IfcWindow": 1,
+  "IfcRailing": 0,
+  "IfcBuildingElementProxy": 0,
+  "IfcReinforcingBar": 0,
+  "IfcReinforcingMesh": 0,
+  "IfcTendon": 0,
+  "IfcSpace": 0,
+  "IfcOpeningElement": 1,
+  "IfcBuildingStorey": 8,
+  "IfcElementAssembly": 0,
+  "IfcWallStandardCase": 0,
+  "IfcElement_total": 153
+ },
+ "relationship_counts": {
+  "IfcRelContainedInSpatialStructure": 8,
+  "IfcRelAggregates": 3,
+  "IfcRelAssociatesMaterial": 156,
+  "IfcRelDefinesByType": 97,
+  "IfcRelDefinesByProperties": 1510,
+  "IfcRelConnectsElements": 0,
+  "IfcRelConnectsPathElements": 0,
+  "IfcRelConnectsWithRealizingElements": 0,
+  "IfcRelSpaceBoundary": 0,
+  "IfcRelVoidsElement": 1,
+  "IfcRelFillsElement": 1,
+  "IfcRelNests": 0,
+  "IfcRelAssignsToProduct": 0,
+  "IfcRelAssignsToProcess": 0,
+  "IfcRelAssignsToControl": 0,
+  "IfcRelAssignsToResource": 0,
+  "IfcRelAssignsToGroup": 0,
+  "IfcRelSequence": 0,
+  "IfcRelAssociatesClassification": 0,
+  "IfcRelInterferesElements": 0
+ },
+ "classification_systems": [
+  "Uniformat 1998"
+ ],
+ "schedule": {
+  "IfcTask": 0,
+  "IfcTaskTime": 0,
+  "IfcWorkSchedule": 0,
+  "IfcWorkPlan": 0,
+  "IfcScheduleTimeControl": 0,
+  "IfcLaborResource": 0,
+  "IfcConstructionEquipmentResource": 0,
+  "IfcCrewResource": 0,
+  "IfcConstructionMaterialResource": 0,
+  "IfcLagTime": 0,
+  "TaskTime_with_ScheduleStart": 0,
+  "TaskTime_with_ScheduleFinish": 0,
+  "TaskTime_with_ScheduleDuration": 0,
+  "TaskTime_with_ActualStart": 0,
+  "TaskTime_with_ActualFinish": 0,
+  "TaskTime_with_ActualDuration": 0,
+  "sequence_types": {},
+  "sequence_with_lag": 0,
+  "products_assigned_to_tasks": 0,
+  "task_names_sample": [],
+  "date_sample": []
+ },
+ "element_classes": {
+  "IfcFooting": {
+   "n": 0
+  },
+  "IfcPile": {
+   "n": 0
+  },
+  "IfcColumn": {
+   "n": 63,
+   "with_storey": 63,
+   "with_material": 63,
+   "with_concrete_material": 63,
+   "with_masonry_material": 0,
+   "with_type": 63,
+   "with_body_geometry": 63,
+   "with_any_qto": 63,
+   "qto_set_names": {
+    "Qto_ColumnBaseQuantities": 63
+   },
+   "rep_types": {
+    "MappedRepresentation": 63
+   },
+   "predefined": {
+    "COLUMN": 63
+   },
+   "material_names": {
+    "Concrete": 63
+   },
+   "qto_net_volume": 63,
+   "pset_net_volume": 63,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 63,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 0,
+   "pset_net_area": 0,
+   "flat_net_area": 0,
+   "qto_gross_area": 63,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 63,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 0,
+   "pset_width": 63,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 63,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcBeam": {
+   "n": 0
+  },
+  "IfcSlab": {
+   "n": 32,
+   "with_storey": 32,
+   "with_material": 32,
+   "with_concrete_material": 32,
+   "with_masonry_material": 32,
+   "with_type": 32,
+   "with_body_geometry": 32,
+   "with_any_qto": 32,
+   "qto_set_names": {
+    "Qto_SlabBaseQuantities": 32
+   },
+   "rep_types": {
+    "SweptSolid": 32
+   },
+   "predefined": {
+    "FLOOR": 32
+   },
+   "material_names": {
+    "Concrete, Sand/Cement Screed": 32,
+    "Vapor Retarder": 32,
+    "Rigid insulation": 32,
+    "Air": 32,
+    "Damp-proofing": 32,
+    "Concrete Masonry, Floor Block": 32,
+    "Concrete, Precast": 32
+   },
+   "qto_net_volume": 32,
+   "pset_net_volume": 32,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 32,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 32,
+   "pset_net_area": 32,
+   "flat_net_area": 0,
+   "qto_gross_area": 32,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 0,
+   "pset_length": 0,
+   "flat_length": 0,
+   "qto_width": 32,
+   "pset_width": 32,
+   "flat_width": 0,
+   "qto_height": 0,
+   "pset_height": 0,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcWall": {
+   "n": 56,
+   "with_storey": 56,
+   "with_material": 56,
+   "with_concrete_material": 56,
+   "with_masonry_material": 56,
+   "with_type": 56,
+   "with_body_geometry": 56,
+   "with_any_qto": 56,
+   "qto_set_names": {
+    "Qto_WallBaseQuantities": 56
+   },
+   "rep_types": {
+    "SweptSolid": 56
+   },
+   "predefined": {
+    "NOTDEFINED": 56
+   },
+   "material_names": {
+    "Brick, Common": 56,
+    "Fiberglass Batt": 56,
+    "Concrete Masonry Units _Low Density": 56,
+    "Plaster": 56
+   },
+   "qto_net_volume": 56,
+   "pset_net_volume": 56,
+   "flat_net_volume": 0,
+   "qto_gross_volume": 56,
+   "pset_gross_volume": 0,
+   "flat_gross_volume": 0,
+   "qto_net_area": 56,
+   "pset_net_area": 56,
+   "flat_net_area": 0,
+   "qto_gross_area": 56,
+   "pset_gross_area": 0,
+   "flat_gross_area": 0,
+   "qto_length": 56,
+   "pset_length": 56,
+   "flat_length": 0,
+   "qto_width": 56,
+   "pset_width": 56,
+   "flat_width": 0,
+   "qto_height": 56,
+   "pset_height": 56,
+   "flat_height": 0,
+   "qto_weight": 0,
+   "pset_weight": 0,
+   "flat_weight": 0
+  },
+  "IfcMember": {
+   "n": 0
+  },
+  "IfcStair": {
+   "n": 0
+  },
+  "IfcRoof": {
+   "n": 0
+  },
+  "IfcCovering": {
+   "n": 0
+  },
+  "IfcBuildingElementProxy": {
+   "n": 0
+  },
+  "IfcReinforcingBar": {
+   "n": 0
+  },
+  "IfcReinforcingMesh": {
+   "n": 0
+  },
+  "IfcPlate": {
+   "n": 0
+  }
+ },
+ "audit_seconds": 0.1
+}

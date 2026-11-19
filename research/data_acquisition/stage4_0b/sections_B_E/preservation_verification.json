@@ -1,0 +1,48 @@
+{
+  "generated": "2026-11-19 12:23 UTC",
+  "baseline_file": "research/data_acquisition/stage4_0b/sections_B_E/preservation/baseline_sha256_before_stage4_0b.txt",
+  "checks": [
+    {
+      "check": "protected files vs pre-task SHA-256 baseline (models/, data/processed/ excl. candidates, research/evaluation, research/gnn, data/raw excl. candidates, data/*.csv|json)",
+      "total": 1601,
+      "unchanged": 1601,
+      "changed": [],
+      "missing": []
+    },
+    {
+      "check": "Stage 4.0A baseline (342 files) still identical",
+      "total": 342,
+      "unchanged": 342,
+      "changed_or_missing": []
+    },
+    {
+      "check": "git: no tracked file modified",
+      "tracked_modifications": [],
+      "untracked_new": [
+        "data/processed/candidates/",
+        "research/data_acquisition/"
+      ]
+    },
+    {
+      "check": "Cambridge locked-test records not parsed",
+      "result": "data/raw/cambridge/ only hashed byte-wise in baseline; no JSON parse in 4.0B scripts"
+    },
+    {
+      "check": "No training/inference/fitting",
+      "result": "scripts contain parsing, counting and arithmetic recomputation only"
+    },
+    {
+      "check": "Download integrity",
+      "files_checked": 41,
+      "failures": 0
+    }
+  ],
+  "discrepancies": [
+    "Thiele article describes 6 projects; Figshare v2 contains 8 project workbooks (P17, P18 added).",
+    "BCCA local filenames initially saved with \"x20\" in place of spaces (download-loop decoding bug); renamed to server names before hashing; content unchanged.",
+    "Figshare MD5 first reported as mismatching in shell (CR in TSV); re-verified 9/9 OK in Python.",
+    "BCCA inner RAR: 4 of 5 extracted files are byte-identical duplicates of earlier downloads (recorded in duplicate_of column).",
+    "CERP masonry BOM labour (1.05 h/m2) omits labour nested in mortar auxiliary that BCCA expansion includes (1.096 h/m2)."
+  ],
+  "all_protected_unchanged": true
+}

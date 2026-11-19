@@ -1,0 +1,17 @@
+quantity,model,category,evidence
+Concrete volume (m3),SCH-design,A,"NetVolume authored (BaseQuantities/ArchiCADQuantities) for 174/174 beams, 278/279 slabs, 883/934 walls; concrete identified by material name (86 beams ""Beton gewapend - ihw/prefab"", 115 slabs). Columns are steel. Layered slabs/walls require per-layer split."
+Concrete volume (m3),SCH-asplanned,A,Same quantities flattened by Synchro into SynchroResourceProperty keys (e.g. 879/880 walls NetVolume); materials not exported (0 elements with material).
+Concrete volume (m3),B4D,A,"Qto_*BaseQuantities NetVolume for 63/63 columns, 32/32 slabs, 56/56 walls; geometry matches 112/112 sampled within 2%. Walls/slabs are multi-layer (CMU, brick, insulation) - element volume is NOT concrete volume."
+Concrete volume (m3),RST,A (partial) / B,"NetVolume for 11/13 footings, 22/191 beams, 22/92 walls, 0/12 slabs; remaining elements tessellate (105/105 sampled) - derivable from geometry."
+Concrete volume (m3),MEN-RES,B,"No IfcElementQuantity or volume property. Geometry tessellates 160/160 sampled; concrete identified by material name (766/1008 columns, 355/573 beams, 1,070/1,687 walls). Join/overlap deductions must be checked."
+Concrete volume (m3),MEN-RAC,B,No authored quantities; geometry tessellates 147/147; concrete material on 170/176 columns.
+Concrete volume (m3),MEN-MTG,B,"No authored quantities; 4 columns, 4 beams, 2 slabs with concrete material; geometry tessellates 52/52."
+Formwork contact area (m2),ALL,C,"No model authors formwork area. Element side/surface areas exist (e.g. SCH NetSideArea, ArchiCAD side areas) but formwork = formed faces only: excludes top faces, faces against soil, other elements, precast units and openings rules. Requires engineering rules per element type and method, approved by a PMI user."
+Reinforcement mass (kg),SCH/MEN/RST/B4D,D,No IfcReinforcingBar/Mesh in any main model (6 bars only in one SCH subcontractor model; 35 in buildingSMART fixtures). No reinforcement weight properties on concrete elements. Generic steel ratios must NOT be used to fabricate values; requires a structural/rebar model or user-entered design ratios clearly labelled as assumptions.
+Excavation volume (m3),RST,C,"13 IfcFooting with geometry/NetVolume, but no terrain, ground levels, soil data, working space or slope rules in the IFC."
+Excavation volume (m3),SCH,C,"Storey ""-1 fundering"" exists in design model; no IfcFooting, no terrain/excavation geometry."
+Excavation volume (m3),MEN/B4D,D,No foundations or site geometry.
+Backfill volume (m3),ALL,D,Requires excavation geometry minus buried volumes; neither ground model nor excavation boundary present in any model (C at best for RST with user excavation assumptions).
+Masonry area (m2),SCH-design,A,"Wall NetSideArea/GrossSideArea authored for 932/934 walls; masonry identified by material name on 555 walls (layer names include ""Metselwerk - kalkzandsteen"" and ""mw-baksteen"")."
+Masonry area (m2),B4D,A (with caveat),Wall NetSideArea authored 56/56; walls are multi-layer (brick + CMU) - area per masonry layer equals wall side area only if layer is continuous.
+Masonry area (m2),MEN-MTG/RES/RAC,C,No authored areas; masonry material on 17 (MTG) and 16 (RAC) walls; side area from geometry requires face selection (total surface area is not wall face area).

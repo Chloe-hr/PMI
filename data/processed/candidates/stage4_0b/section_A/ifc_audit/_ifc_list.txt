@@ -1,0 +1,160 @@
+data/raw/4DBenchmarkBim.ifc
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc
+data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc
+data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc
+data/raw/Certification-datasets-main/IFC 2.3.0.1 (IFC 2x3 TC1)/Simple-Scene/Building-Architecture.ifc
+data/raw/Certification-datasets-main/IFC 2.3.0.1 (IFC 2x3 TC1)/Simple-Scene/Building-Hvac.ifc
+data/raw/Certification-datasets-main/IFC 2.3.0.1 (IFC 2x3 TC1)/Simple-Scene/Building-Landscaping.ifc
+data/raw/Certification-datasets-main/IFC 2.3.0.1 (IFC 2x3 TC1)/Simple-Scene/Building-Structural.ifc
+data/raw/Certification-datasets-main/IFC 2.3.0.1 (IFC 2x3 TC1)/Simple-Scene/Infra-Bridge.ifc
+data/raw/Certification-datasets-main/IFC 2.3.0.1 (IFC 2x3 TC1)/Simple-Scene/Infra-Electrical.ifc
+data/raw/Certification-datasets-main/IFC 2.3.0.1 (IFC 2x3 TC1)/Simple-Scene/Infra-Landscaping.ifc
+data/raw/Certification-datasets-main/IFC 2.3.0.1 (IFC 2x3 TC1)/Simple-Scene/Infra-Plumbing.ifc
+data/raw/Certification-datasets-main/IFC 2.3.0.1 (IFC 2x3 TC1)/Simple-Scene/Infra-Rail.ifc
+data/raw/Certification-datasets-main/IFC 2.3.0.1 (IFC 2x3 TC1)/Simple-Scene/Infra-Road.ifc
+data/raw/Certification-datasets-main/IFC 4.0.2.1 (IFC 4 ADD2 TC1)/ISO Spec - ReferenceView_V1.2/basin-tessellation.ifc
+data/raw/Certification-datasets-main/IFC 4.0.2.1 (IFC 4 ADD2 TC1)/ISO Spec - ReferenceView_V1.2/column-straight-rectangle-tessellation.ifc
+data/raw/Certification-datasets-main/IFC 4.0.2.1 (IFC 4 ADD2 TC1)/ISO Spec - ReferenceView_V1.2/tessellated-item.ifc
+data/raw/Certification-datasets-main/IFC 4.0.2.1 (IFC 4 ADD2 TC1)/ISO Spec - ReferenceView_V1.2/tessellation-with-individual-colors.ifc
+data/raw/Certification-datasets-main/IFC 4.0.2.1 (IFC 4 ADD2 TC1)/ISO Spec - ReferenceView_V1.2/wall-with-opening-and-window.ifc
+data/raw/Certification-datasets-main/IFC 4.0.2.1 (IFC 4 ADD2 TC1)/Simple-Scene/Building-Architecture.ifc
+data/raw/Certification-datasets-main/IFC 4.0.2.1 (IFC 4 ADD2 TC1)/Simple-Scene/Building-Hvac.ifc
+data/raw/Certification-datasets-main/IFC 4.0.2.1 (IFC 4 ADD2 TC1)/Simple-Scene/Building-Landscaping.ifc
+data/raw/Certification-datasets-main/IFC 4.0.2.1 (IFC 4 ADD2 TC1)/Simple-Scene/Building-Structural.ifc
+data/raw/Certification-datasets-main/IFC 4.0.2.1 (IFC 4 ADD2 TC1)/Simple-Scene/Infra-Bridge.ifc
+data/raw/Certification-datasets-main/IFC 4.0.2.1 (IFC 4 ADD2 TC1)/Simple-Scene/Infra-Electrical.ifc
+data/raw/Certification-datasets-main/IFC 4.0.2.1 (IFC 4 ADD2 TC1)/Simple-Scene/Infra-Landscaping.ifc
+data/raw/Certification-datasets-main/IFC 4.0.2.1 (IFC 4 ADD2 TC1)/Simple-Scene/Infra-Plumbing.ifc
+data/raw/Certification-datasets-main/IFC 4.0.2.1 (IFC 4 ADD2 TC1)/Simple-Scene/Infra-Rail.ifc
+data/raw/Certification-datasets-main/IFC 4.0.2.1 (IFC 4 ADD2 TC1)/Simple-Scene/Infra-Road.ifc
+data/raw/Certification-datasets-main/IFC 4.3.2.0 (IFC 4.3 ADD2)/Simple-Scene/Building-Architecture.ifc
+data/raw/Certification-datasets-main/IFC 4.3.2.0 (IFC 4.3 ADD2)/Simple-Scene/Building-Hvac.ifc
+data/raw/Certification-datasets-main/IFC 4.3.2.0 (IFC 4.3 ADD2)/Simple-Scene/Building-Landscaping.ifc
+data/raw/Certification-datasets-main/IFC 4.3.2.0 (IFC 4.3 ADD2)/Simple-Scene/Building-Structural.ifc
+data/raw/Certification-datasets-main/IFC 4.3.2.0 (IFC 4.3 ADD2)/Simple-Scene/Infra-Bridge.ifc
+data/raw/Certification-datasets-main/IFC 4.3.2.0 (IFC 4.3 ADD2)/Simple-Scene/Infra-Electrical.ifc
+data/raw/Certification-datasets-main/IFC 4.3.2.0 (IFC 4.3 ADD2)/Simple-Scene/Infra-Landscaping.ifc
+data/raw/Certification-datasets-main/IFC 4.3.2.0 (IFC 4.3 ADD2)/Simple-Scene/Infra-Plumbing.ifc
+data/raw/Certification-datasets-main/IFC 4.3.2.0 (IFC 4.3 ADD2)/Simple-Scene/Infra-Rail.ifc
+data/raw/Certification-datasets-main/IFC 4.3.2.0 (IFC 4.3 ADD2)/Simple-Scene/Infra-Road.ifc
+data/raw/IFC4.x-specification-models-main/models/advanced-geometric-shape/basin-advanced-brep/basin-advanced-brep.ifc
+data/raw/IFC4.x-specification-models-main/models/advanced-geometric-shape/basin-faceted-brep/basin-faceted-brep.ifc
+data/raw/IFC4.x-specification-models-main/models/advanced-geometric-shape/basin-tessellation/basin-tessellation.ifc
+data/raw/IFC4.x-specification-models-main/models/advanced-geometric-shape/bath-csg-solid/bath-csg-solid.ifc
+data/raw/IFC4.x-specification-models-main/models/advanced-geometric-shape/cube-advanced-brep/cube-advanced-brep.ifc
+data/raw/IFC4.x-specification-models-main/models/alignment-geometries-and-linear-positioning/fixed-reference-swept-area-solid/fixed-reference-swept-area-solid.ifc
+data/raw/IFC4.x-specification-models-main/models/alignment-geometries-and-linear-positioning/linear-placement-of-signal/linear-placement-of-signal.ifc
+data/raw/IFC4.x-specification-models-main/models/alignment-geometries-and-linear-positioning/sectioned-solid-horizontal/sectioned-solid-horizontal.ifc
+data/raw/IFC4.x-specification-models-main/models/alignment-geometries-and-linear-positioning/segmented-reference-curve/segmented-reference-curve.ifc
+data/raw/IFC4.x-specification-models-main/models/basic-geometric-shape/brep-model/brep-model.ifc
+data/raw/IFC4.x-specification-models-main/models/basic-geometric-shape/csg-primitive/csg-primitive.ifc
+data/raw/IFC4.x-specification-models-main/models/basic-geometric-shape/extruded-solid/extruded-solid.ifc
+data/raw/IFC4.x-specification-models-main/models/basic-geometric-shape/surface-model/surface-model.ifc
+data/raw/IFC4.x-specification-models-main/models/basic-geometric-shape/triangulated-item/triangulated-item.ifc
+data/raw/IFC4.x-specification-models-main/models/building-elements/beam-extruded-solid/beam-extruded-solid.ifc
+data/raw/IFC4.x-specification-models-main/models/building-elements/beam-parametric-cross-section/beam-parametric-cross-section.ifc
+data/raw/IFC4.x-specification-models-main/models/building-elements/beam-revolved-solid/beam-revolved-solid.ifc
+data/raw/IFC4.x-specification-models-main/models/building-elements/beam-varying-cardinal-points/beam-varying-cardinal-points.ifc
+data/raw/IFC4.x-specification-models-main/models/building-elements/beam-varying-extrusion-paths/beam-varying-extrusion-paths.ifc
+data/raw/IFC4.x-specification-models-main/models/building-elements/beam-varying-profiles/beam-varying-profiles.ifc
+data/raw/IFC4.x-specification-models-main/models/building-elements/column-extruded-solid/column-extruded-solid.ifc
+data/raw/IFC4.x-specification-models-main/models/building-elements/reinforcing-assembly/reinforcing-assembly.ifc
+data/raw/IFC4.x-specification-models-main/models/building-elements/reinforcing-stirrup/reinforcing-stirrup.ifc
+data/raw/IFC4.x-specification-models-main/models/building-elements/slab-extrusion/slab-extruded-solid.ifc
+data/raw/IFC4.x-specification-models-main/models/building-elements/slab-openings/slab-openings.ifc
+data/raw/IFC4.x-specification-models-main/models/building-elements/wall-extrusion/wall-extruded-solid.ifc
+data/raw/IFC4.x-specification-models-main/models/construction-scheduling/construction-scheduling-task/construction-scheduling-task.ifc
+data/raw/IFC4.x-specification-models-main/models/mapped-geometric-shape/mapped-shape-with-multiple-items/mapped-shape-with-multiple-items.ifc
+data/raw/IFC4.x-specification-models-main/models/mapped-geometric-shape/mapped-shape-with-transformation/mapped-shape-with-transformation.ifc
+data/raw/IFC4.x-specification-models-main/models/mapped-geometric-shape/mapped-shape-without-transformation/mapped-shape-without-transformation.ifc
+data/raw/IFC4.x-specification-models-main/models/placements-and-gis-referencing/geographic-referencing-gk/geographic-referencing-gk.ifc
+data/raw/IFC4.x-specification-models-main/models/placements-and-gis-referencing/geographic-referencing-rigid-operation/geographic-referencing-rigid-operation.ifc
+data/raw/IFC4.x-specification-models-main/models/placements-and-gis-referencing/geographic-referencing-utm/geographic-referencing-utm.ifc
+data/raw/IFC4.x-specification-models-main/models/placements-and-gis-referencing/grid-placement/grid-placement.ifc
+data/raw/IFC4.x-specification-models-main/models/structural-analysis-model/structural-curve-member/structural-curve-member.ifc
+data/raw/IFC4.x-specification-models-main/models/tessellated-shape-with-style/tessellation-with-blob-texture/tessellation-with-blob-texture.ifc
+data/raw/IFC4.x-specification-models-main/models/tessellated-shape-with-style/tessellation-with-image-texture/tessellation-with-image-texture.ifc
+data/raw/IFC4.x-specification-models-main/models/tessellated-shape-with-style/tessellation-with-individual-colors/tessellation-with-individual-colors.ifc
+data/raw/IFC4.x-specification-models-main/models/tessellated-shape-with-style/tessellation-with-pixel-texture/tessellation-with-pixel-texture.ifc
+data/raw/IFC4.x-specification-models-main/models/tessellated-shape/beam-curved-i-shape-tessellated/beam-curved-i-shape-tessellated.ifc
+data/raw/IFC4.x-specification-models-main/models/tessellated-shape/beam-straight-i-shape-tessellated/beam-straight-i-shape-tessellated.ifc
+data/raw/IFC4.x-specification-models-main/models/tessellated-shape/column-straight-rectangle-tessellation/column-straight-rectangle-tessellation.ifc
+data/raw/IFC4.x-specification-models-main/models/tessellated-shape/polygonal-face-tessellation/polygonal-face-tessellation.ifc
+data/raw/IFC4.x-specification-models-main/models/tessellated-shape/slab-tessellated-unique-vertices/slab-tessellated-unique-vertices.ifc
+data/raw/IFC4.x-specification-models-main/models/trimmed-curve-parameters/curve-parameters-in-degrees/curve-parameters-in-degrees.ifc
+data/raw/IFC4.x-specification-models-main/models/trimmed-curve-parameters/curve-parameters-in-radians/curve-parameters-in-radians.ifc
+data/raw/INDUSTRIAL CONSTRUCTION/IND-001.ifc
+data/raw/Models and algorithm for construction scheduling/out-complicated.ifc
+data/raw/Models and algorithm for construction scheduling/out-moderate.ifc
+data/raw/Models and algorithm for construction scheduling/out-simple.ifc
+data/raw/Models and algorithm for construction scheduling/out-ultra complicated.ifc
+data/raw/Restage_IP_ALL_MULTI_001.ifc
+data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc
+data/raw/SCHEPENDOMLAAN/As Planned models/Week 26 26 june IFC Schependomlaan incl planningsdata.ifc
+data/raw/SCHEPENDOMLAAN/As Planned models/Week 27 3 july IFC Schependomlaan incl planningsdata.ifc
+data/raw/SCHEPENDOMLAAN/As Planned models/Week 28 10 july IFC Schependomlaan incl planningsdata.ifc
+data/raw/SCHEPENDOMLAAN/As Planned models/Week 29 17 july IFC Schependomlaan incl planningsdata.ifc
+data/raw/SCHEPENDOMLAAN/As Planned models/Week 30 24 july IFC Schependomlaan incl planningsdata.ifc
+data/raw/SCHEPENDOMLAAN/As Planned models/Week 37 11 sept IFC Schependomlaan incl planningsdata.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/BALKONHEKKEN 23-9-2015.IFC
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/BERNTS-Staalconstructie.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/FEK - Balkonhekken en borstweringsleuningen.IFC
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/FEK - Franse balkonhekken en doorvalbeveiliging.IFC
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/FEK - Traphekken.IFC
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/GEELEN-Breedplaat V1.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/GEELEN-Breedplaat V2.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/GEELEN-Breedplaat V3.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/GEELEN-Dakvloer.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/HB_Nutsvoorzieningen.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/JORDAHL-Gevelderagers.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/MULTICOM-balkons.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/MULTICOM-banden.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/MULTICOM-trappen+bordessen.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/BERNTS-Staalconstructie.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/FEK-Leuningen en hekwerken.IFC
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/GEELEN-Breedplaat V1.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/GEELEN-Breedplaat V2.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/GEELEN-Breedplaat V3.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/GEELEN-Dakvloer.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/HB_Nutsvoorzieningen.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/JORDAHL-Gevelderagers.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/MULTICOM-Prefab.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/V_L_Constructief.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/WAARDO-Kanaalplaatvloer.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/XELLA-1e verdieping.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/XELLA-Begane grond.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/YTONG-Algemeen.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/YTONG-Kavel 01.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/YTONG-Kavel 02.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/YTONG-Kavel 03.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/YTONG-Kavel 04.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/YTONG-Kavel 05.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/YTONG-Kavel 06.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/YTONG-Kavel 07.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/YTONG-Kavel 08.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/YTONG-Kavel 09.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/ProjectData/YTONG-Kavel 10.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/V_L_Constructief.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/WAARDO-Kanaalplaatvloer.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/WILLEMSEN-Hoogbouw dakpannen.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/WILLEMSEN-Hoogbouw.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/WILLEMSEN-Laagbouw.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/WILLEMSEN-laagbouw dakpannen.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/XELLA-1e verdieping.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/XELLA-2e verdieping.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/XELLA-3e verdieping.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/XELLA-Begane grond.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/YTONG-Algemeen.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/YTONG-Kavel 01.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/YTONG-Kavel 02.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/YTONG-Kavel 03.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/YTONG-Kavel 04.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/YTONG-Kavel 05.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/YTONG-Kavel 06.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/YTONG-Kavel 07.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/YTONG-Kavel 08.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/YTONG-Kavel 09.ifc
+data/raw/SCHEPENDOMLAAN/Coordination model and subcontractors models/BIMsight Projectdata1/YTONG-Kavel 10.ifc
+data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc
+data/raw/beam bridge-texas midrise/PMI_SYN-BLD-001.ifc
+data/raw/beam bridge-texas midrise/PMI_SYN-BRG-001.ifc

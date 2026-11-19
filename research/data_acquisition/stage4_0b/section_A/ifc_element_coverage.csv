@@ -1,0 +1,112 @@
+model_key,path,ifc_class,count,with_storey,storey_pct,with_type,with_body_geometry,with_any_ifcelementquantity,body_representation_types,predefined_types
+MEN-MTG,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcFooting,0,0,,0,0,0,{},{}
+MEN-MTG,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcColumn,4,4,100%,4,4,0,"{""MappedRepresentation"": 4}","{""None"": 4}"
+MEN-MTG,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcBeam,4,4,100%,4,4,0,"{""SweptSolid"": 4}","{""None"": 4}"
+MEN-MTG,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcSlab,4,4,100%,4,4,0,"{""SweptSolid"": 4}","{""FLOOR"": 4}"
+MEN-MTG,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcWall,91,91,100%,91,91,0,"{""SweptSolid"": 75, ""Brep"": 16}","{""None"": 91}"
+MEN-MTG,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcMember,50,50,100%,50,50,0,"{""MappedRepresentation"": 50}","{""None"": 50}"
+MEN-MTG,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcStair,0,0,,0,0,0,{},{}
+MEN-MTG,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcRoof,0,0,,0,0,0,{},{}
+MEN-MTG,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcCovering,6,6,100%,6,6,0,"{""SweptSolid"": 6}","{""CEILING"": 4, ""NOTDEFINED"": 2}"
+MEN-MTG,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcReinforcingBar,0,0,,0,0,0,{},{}
+MEN-MTG,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcReinforcingMesh,0,0,,0,0,0,{},{}
+MEN-MTG,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_meeting_room_data/BIM_meeting_room.ifc,IfcBuildingElementProxy,1364,1364,100%,1364,1364,0,"{""MappedRepresentation"": 1360, ""SweptSolid"": 4}","{""None"": 1364}"
+MEN-RES,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcFooting,0,0,,0,0,0,{},{}
+MEN-RES,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcColumn,1008,1008,100%,1008,1008,0,"{""MappedRepresentation"": 1008}","{""None"": 1008}"
+MEN-RES,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBeam,573,573,100%,573,573,0,"{""SweptSolid"": 557, ""Brep"": 16}","{""None"": 573}"
+MEN-RES,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcSlab,836,836,100%,836,836,0,"{""SweptSolid"": 810, ""Brep"": 26}","{""FLOOR"": 809, ""LANDING"": 26, ""BASESLAB"": 1}"
+MEN-RES,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcWall,1687,1687,100%,1687,1687,0,"{""SweptSolid"": 1210, ""Clipping"": 438, ""Brep"": 39}","{""None"": 1687}"
+MEN-RES,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcMember,168,168,100%,168,168,0,"{""MappedRepresentation"": 168}","{""None"": 168}"
+MEN-RES,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcStair,26,26,100%,0,0,0,{},"{""None"": 26}"
+MEN-RES,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcRoof,0,0,,0,0,0,{},{}
+MEN-RES,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcCovering,0,0,,0,0,0,{},{}
+MEN-RES,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcReinforcingBar,0,0,,0,0,0,{},{}
+MEN-RES,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcReinforcingMesh,0,0,,0,0,0,{},{}
+MEN-RES,data/raw/BIM Spatial Models for Construction Dependency Inf/BIM_residential_building_data/BIM_residential_building.ifc,IfcBuildingElementProxy,1166,1166,100%,1166,1166,0,"{""MappedRepresentation"": 1166}","{""None"": 1166}"
+MEN-RAC,data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcFooting,0,0,,0,0,0,{},{}
+MEN-RAC,data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcColumn,176,176,100%,176,176,0,"{""MappedRepresentation"": 176}","{""None"": 176}"
+MEN-RAC,data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBeam,37,37,100%,37,37,0,"{""MappedRepresentation"": 23, ""SweptSolid"": 14}","{""None"": 37}"
+MEN-RAC,data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcSlab,30,30,100%,20,30,0,"{""SweptSolid"": 20, ""Brep"": 10}","{""FLOOR"": 17, ""LANDING"": 10, ""ROOF"": 3}"
+MEN-RAC,data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcWall,146,146,100%,146,146,0,"{""Clipping"": 114, ""SweptSolid"": 25, ""Brep"": 7}","{""None"": 146}"
+MEN-RAC,data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcMember,3308,3308,100%,3276,3308,0,"{""MappedRepresentation"": 3276, ""SweptSolid"": 18, ""Brep"": 14}","{""None"": 3308}"
+MEN-RAC,data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcStair,10,10,100%,0,0,0,{},"{""None"": 10}"
+MEN-RAC,data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcRoof,6,6,100%,3,1,0,"{""Brep"": 1}","{""None"": 6}"
+MEN-RAC,data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcCovering,65,65,100%,65,65,0,"{""SweptSolid"": 65}","{""CEILING"": 65}"
+MEN-RAC,data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcReinforcingBar,0,0,,0,0,0,{},{}
+MEN-RAC,data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcReinforcingMesh,0,0,,0,0,0,{},{}
+MEN-RAC,data/raw/BIM Spatial Models for Construction Dependency Inf/rac_advanced_sample_project_data/rac_advanced_sample_project.ifc,IfcBuildingElementProxy,115,115,100%,115,115,0,"{""MappedRepresentation"": 105, ""Brep"": 10}","{""None"": 115}"
+SCH-design,data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcFooting,0,0,,0,0,0,{},{}
+SCH-design,data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcColumn,23,23,100%,23,23,23,"{""MappedRepresentation"": 21, ""Brep"": 2}","{""None"": 23}"
+SCH-design,data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBeam,174,174,100%,174,174,174,"{""Brep"": 103, ""SweptSolid"": 39, ""MappedRepresentation"": 32}","{""None"": 174}"
+SCH-design,data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcSlab,279,279,100%,279,279,279,"{""Brep"": 146, ""SweptSolid"": 130, ""MappedRepresentation"": 3}","{""FLOOR"": 217, ""ROOF"": 62}"
+SCH-design,data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcWall,934,934,100%,934,930,934,"{""Brep"": 646, ""SweptSolid"": 282, ""MappedRepresentation"": 2}","{""None"": 934}"
+SCH-design,data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcMember,9,9,100%,9,9,9,"{""MappedRepresentation"": 9}","{""None"": 9}"
+SCH-design,data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcStair,9,9,100%,0,9,9,"{""MappedRepresentation"": 9}","{""None"": 9}"
+SCH-design,data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcRoof,0,0,,0,0,0,{},{}
+SCH-design,data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcCovering,1262,1262,100%,1262,1214,1262,"{""Brep"": 746, ""MappedRepresentation"": 316, ""SweptSolid"": 148, ""SurfaceModel"": 2, ""Clipping"": 2}","{""None"": 1163, ""INSULATION"": 99}"
+SCH-design,data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcReinforcingBar,0,0,,0,0,0,{},{}
+SCH-design,data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcReinforcingMesh,0,0,,0,0,0,{},{}
+SCH-design,data/raw/SCHEPENDOMLAAN/Design model IFC/IFC Schependomlaan.ifc,IfcBuildingElementProxy,27,27,100%,27,27,27,"{""SweptSolid"": 15, ""MappedRepresentation"": 12}","{""None"": 27}"
+SCH-asplanned,data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcFooting,0,0,,0,0,0,{},{}
+SCH-asplanned,data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcColumn,23,23,100%,0,23,0,"{""Brep"": 23}","{""None"": 23}"
+SCH-asplanned,data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBeam,174,174,100%,0,174,0,"{""Brep"": 174}","{""None"": 174}"
+SCH-asplanned,data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcSlab,279,279,100%,0,279,0,"{""Brep"": 279}","{""None"": 279}"
+SCH-asplanned,data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcWall,880,880,100%,0,880,0,"{""Brep"": 880}","{""None"": 880}"
+SCH-asplanned,data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcMember,9,9,100%,0,9,0,"{""Brep"": 9}","{""None"": 9}"
+SCH-asplanned,data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcStair,9,9,100%,0,9,0,"{""Brep"": 9}","{""None"": 9}"
+SCH-asplanned,data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcRoof,0,0,,0,0,0,{},{}
+SCH-asplanned,data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcCovering,1214,1214,100%,0,1214,0,"{""Brep"": 1214}","{""None"": 1214}"
+SCH-asplanned,data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcReinforcingBar,0,0,,0,0,0,{},{}
+SCH-asplanned,data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcReinforcingMesh,0,0,,0,0,0,{},{}
+SCH-asplanned,data/raw/SCHEPENDOMLAAN/As Planned models/IFC Schependomlaan incl planningsdata.ifc,IfcBuildingElementProxy,86,86,100%,0,86,0,"{""Brep"": 86}","{""None"": 86}"
+RST,data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcFooting,13,13,100%,0,13,11,"{""Tessellation"": 9, ""SweptSolid"": 4}","{""USERDEFINED"": 9, ""PAD_FOOTING"": 4}"
+RST,data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcColumn,0,0,,0,0,0,{},{}
+RST,data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBeam,191,191,100%,169,191,22,"{""CSG"": 71, ""Clipping"": 70, ""SweptSolid"": 28, ""Tessellation"": 22}","{""None"": 169, ""BEAM"": 22}"
+RST,data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcSlab,12,12,100%,0,12,0,"{""Tessellation"": 12}","{""FLOOR"": 12}"
+RST,data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcWall,92,92,100%,0,92,32,"{""Tessellation"": 92}","{""MOVABLE"": 55, ""NOTDEFINED"": 15, ""USERDEFINED"": 10, ""SOLIDWALL"": 9, ""STANDARD"": 3}"
+RST,data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcMember,82,74,90%,14,80,70,"{""Tessellation"": 66, ""SweptSolid"": 12, ""CSG"": 2}","{""NOTDEFINED"": 47, ""None"": 14, ""RAFTER"": 10, ""PURLIN"": 8, ""PLATE"": 3}"
+RST,data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcStair,2,0,0%,2,0,0,{},"{""USERDEFINED"": 2}"
+RST,data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcRoof,5,3,60%,2,5,2,"{""Tessellation"": 5}","{""GABLE_ROOF"": 3, ""USERDEFINED"": 1, ""NOTDEFINED"": 1}"
+RST,data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcCovering,32,32,100%,0,32,0,"{""Tessellation"": 32}","{""CLADDING"": 32}"
+RST,data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcReinforcingBar,0,0,,0,0,0,{},{}
+RST,data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcReinforcingMesh,12,12,100%,0,12,0,"{""Tessellation"": 12}","{""NOTDEFINED"": 12}"
+RST,data/raw/Restage_IP_ALL_MULTI_001.ifc,IfcBuildingElementProxy,32,8,25%,24,32,32,"{""MappedRepresentation"": 24, ""SweptSolid"": 8}","{""USERDEFINED"": 17, ""PROVISIONFORVOID"": 8, ""None"": 6, ""COMPLEX"": 1}"
+B4D,data/raw/4DBenchmarkBim.ifc,IfcFooting,0,0,,0,0,0,{},{}
+B4D,data/raw/4DBenchmarkBim.ifc,IfcColumn,63,63,100%,63,63,63,"{""MappedRepresentation"": 63}","{""COLUMN"": 63}"
+B4D,data/raw/4DBenchmarkBim.ifc,IfcBeam,0,0,,0,0,0,{},{}
+B4D,data/raw/4DBenchmarkBim.ifc,IfcSlab,32,32,100%,32,32,32,"{""SweptSolid"": 32}","{""FLOOR"": 32}"
+B4D,data/raw/4DBenchmarkBim.ifc,IfcWall,56,56,100%,56,56,56,"{""SweptSolid"": 56}","{""NOTDEFINED"": 56}"
+B4D,data/raw/4DBenchmarkBim.ifc,IfcMember,0,0,,0,0,0,{},{}
+B4D,data/raw/4DBenchmarkBim.ifc,IfcStair,0,0,,0,0,0,{},{}
+B4D,data/raw/4DBenchmarkBim.ifc,IfcRoof,0,0,,0,0,0,{},{}
+B4D,data/raw/4DBenchmarkBim.ifc,IfcCovering,0,0,,0,0,0,{},{}
+B4D,data/raw/4DBenchmarkBim.ifc,IfcReinforcingBar,0,0,,0,0,0,{},{}
+B4D,data/raw/4DBenchmarkBim.ifc,IfcReinforcingMesh,0,0,,0,0,0,{},{}
+B4D,data/raw/4DBenchmarkBim.ifc,IfcBuildingElementProxy,0,0,,0,0,0,{},{}
+SPEC (46 files),(group),IfcColumn,33,25,,,33,0,,
+SPEC (46 files),(group),IfcBeam,41,10,,,41,0,,
+SPEC (46 files),(group),IfcSlab,4,1,,,4,0,,
+SPEC (46 files),(group),IfcWall,5,4,,,5,0,,
+SPEC (46 files),(group),IfcReinforcingBar,35,0,,,35,0,,
+SPEC (46 files),(group),IfcBuildingElementProxy,13,2,,,13,0,,
+CERT (35 files),(group),IfcFooting,27,3,,,27,0,,
+CERT (35 files),(group),IfcColumn,22,0,,,22,21,,
+CERT (35 files),(group),IfcBeam,42,0,,,42,33,,
+CERT (35 files),(group),IfcSlab,82,3,,,82,70,,
+CERT (35 files),(group),IfcWall,37,25,,,37,24,,
+CERT (35 files),(group),IfcMember,54,0,,,54,0,,
+CERT (35 files),(group),IfcRoof,6,0,,,0,0,,
+CERT (35 files),(group),IfcBuildingElementProxy,325,3,,,323,0,,
+TEK (4 files),(group),IfcColumn,174,174,,,174,174,,
+TEK (4 files),(group),IfcBeam,272,272,,,272,272,,
+SYN (3 files),(group),IfcBuildingElementProxy,175,175,,,175,0,,
+SCH-sub (59 files),(group),IfcFooting,2,2,,,2,0,,
+SCH-sub (59 files),(group),IfcColumn,182,182,,,182,118,,
+SCH-sub (59 files),(group),IfcBeam,3272,2852,,,3272,2542,,
+SCH-sub (59 files),(group),IfcSlab,516,516,,,386,328,,
+SCH-sub (59 files),(group),IfcWall,1332,1332,,,594,2,,
+SCH-sub (59 files),(group),IfcMember,36,36,,,36,36,,
+SCH-sub (59 files),(group),IfcRoof,44,44,,,40,0,,
+SCH-sub (59 files),(group),IfcCovering,196,196,,,0,0,,
+SCH-sub (59 files),(group),IfcReinforcingBar,6,6,,,6,0,,
+SCH-sub (59 files),(group),IfcBuildingElementProxy,7808,1488,,,6974,0,,

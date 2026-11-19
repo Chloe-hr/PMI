@@ -1,0 +1,47 @@
+{
+  "generated": "2026-11-19 12:56 UTC",
+  "checks": [
+    {
+      "check": "Protected files vs Stage 4.0B pre-task baseline (includes every IFC under data/raw except candidates/)",
+      "total": 1601,
+      "changed_or_missing": []
+    },
+    {
+      "check": "Stage 4.0A baseline (342 files)",
+      "total": 342,
+      "changed_or_missing": []
+    },
+    {
+      "check": "Sections B-E deliverables not modified by Section A",
+      "files": 22,
+      "latest_mtime_utc": "2026-11-19T12:23:39.771735+00:00",
+      "result": "latest modification precedes Section A recovery start (2026-11-19 ~12:40 UTC)"
+    },
+    {
+      "check": "git: no tracked file modified",
+      "tracked_modifications": [],
+      "untracked": [
+        "data/processed/candidates/",
+        "research/architecture/",
+        "research/data_acquisition/"
+      ]
+    },
+    {
+      "check": "IFC files opened read-only",
+      "result": "ifcopenshell.open() in memory; no write calls in audit_ifc.py / geometry_check.py"
+    },
+    {
+      "check": "Cambridge locked-test records",
+      "result": "not accessed"
+    },
+    {
+      "check": "No training, inference, scheduling or frontend changes",
+      "result": "scripts only parse, count, tessellate and hash"
+    },
+    {
+      "check": "No duplicate downloads",
+      "result": "Mendeley (18 files) and GitHub repositories already local and verified; only 3 Mendeley metadata JSON files downloaded"
+    }
+  ],
+  "all_protected_unchanged": true
+}

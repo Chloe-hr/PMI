@@ -1,0 +1,17 @@
+flowchart TD
+    I[IFC bytes and schema] --> S[Source digest and model version]
+    S --> E[Version-scoped element IDs and IFC GlobalIds]
+    E --> Q[Quantity and material records]
+    Q --> L[Allocation links and measured operations]
+    T[Approved zone and method templates] --> L
+    L --> W[Work packages and activities]
+    W --> D[Demand by trade and equipment]
+    C[Versioned catalogue coefficients] --> D
+    D --> P[Productive time plus separate release constraints]
+    P --> G[Validated schedule and CPM result]
+    A[Calendar and real progress] --> G
+    G --> F[Scenarios with cost carbon and coverage]
+    R[Old and new versions plus reviewed identity] --> L
+    F --> X[Selected schedule to task and product IFC mapping]
+    X --> Z[Derived IFC and round-trip report]
+

@@ -1,0 +1,12 @@
+stage4_0a_limitation,resolution,evidence
+Mendeley MLP overfitting,Cannot be resolved through data acquisition alone,New data does not extend the 40-row Mendeley set; the architecture move away from project-level MLP is a design decision.
+Unverified historical duration units,Unresolved,Mendeley and Cambridge units are not clarified by any acquired source; D4 Program Links duration unit is also not stated.
+Lack of physical construction quantities in Cambridge GraphSAGE,Unresolved,No acquired dataset links quantities to Cambridge activities; merging unrelated data is not defensible.
+Lack of crew and productivity features,Partially addressed,D1 supplies catalogue person-h/equipment-h per unit for RC items; crew sizes remain missing everywhere.
+Weak generalization,Cannot be resolved through data acquisition alone,No new linked training records were found; generalization needs more independent projects with comparable targets.
+Lack of independently verified actual duration labels,Unresolved,D4 has no activity actuals; D5 has phase finish dates only.
+Limited independent project validation,Partially addressed,"D4 adds 8 real projects (civil, not RC buildings); D5 one IFC demonstrator with phase finishes."
+Missing relationships between BIM elements and construction activities,Partially addressed,D5 contains element-to-phase assignments (phase level only).
+Limited evidence supporting cost predictions,Partially addressed,"D1 gives reproducible reference unit costs (Andalucia); D4 gives planned vs actual cost accounts (civil, AUD). Reference prices are not outcomes."
+Missing environmental evaluation data,Partially addressed,"D3 provides GWP per lifecycle module for most target materials; formwork systems, diesel and Spanish-specific data gaps remain."
+Missing resource-constrained scheduling information,Partially addressed,"Calendars and resource availability examples exist (D4, D6), not for Spanish RC projects; crew sizes and site capacity must come from PMI users."

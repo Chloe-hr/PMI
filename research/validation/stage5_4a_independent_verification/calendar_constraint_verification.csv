@@ -1,0 +1,49 @@
+﻿activity,check,passed,detail
+C-REBAR,working_minutes_only,True,2027-01-04
+C-REBAR,no_weekend_or_holiday,True,
+C-FORM,working_minutes_only,True,2027-01-04
+C-FORM,no_weekend_or_holiday,True,
+C-INSP,working_minutes_only,True,2027-01-04
+C-INSP,no_weekend_or_holiday,True,
+C-INSP,inspection_30_working_min_one_inspector,True,
+C-POUR,working_minutes_only,True,2027-01-04
+C-POUR,no_weekend_or_holiday,True,
+C-POUR,inside_delivery_window_0800_1400,True,2027-01-04T09:45+01:00..2027-01-04T10:00+01:00
+C-STRIKE,elapsed_from_pour_finish,True,1440 elapsed min
+C-STRIKE,strength_release_explicit_event,True,hypothetical_pass_at_minimum
+C-STRIP,strip_after_strike_and_cure,True,2027-01-05T10:00+01:00
+C-CURE,elapsed_from_pour_finish,True,1440 elapsed min
+C-STRIP,working_minutes_only,True,2027-01-05
+C-STRIP,no_weekend_or_holiday,True,
+B-FORM,working_minutes_only,True,2027-01-05
+B-FORM,no_weekend_or_holiday,True,
+B-REBAR,working_minutes_only,True,2027-01-05
+B-REBAR,no_weekend_or_holiday,True,
+B-INSP,working_minutes_only,True,2027-01-05
+B-INSP,no_weekend_or_holiday,True,
+B-INSP,inspection_30_working_min_one_inspector,True,
+B-POUR,working_minutes_only,True,2027-01-05
+B-POUR,no_weekend_or_holiday,True,
+B-POUR,inside_delivery_window_0800_1400,True,2027-01-05T13:00+01:00..2027-01-05T13:15+01:00
+B-STRIKE,elapsed_from_pour_finish,True,10080 elapsed min
+B-STRIKE,strength_release_explicit_event,True,hypothetical_pass_at_minimum
+B-STRIP,strip_after_strike_and_cure,True,2027-01-14T15:00+01:00
+B-CURE,elapsed_from_pour_finish,True,1440 elapsed min
+S-FORM,working_minutes_only,True,2027-01-07
+S-FORM,no_weekend_or_holiday,True,
+S-REBAR,working_minutes_only,True,2027-01-07
+S-REBAR,no_weekend_or_holiday,True,
+S-INSP,working_minutes_only,True,2027-01-07
+S-INSP,no_weekend_or_holiday,True,
+S-INSP,inspection_30_working_min_one_inspector,True,
+S-POUR,working_minutes_only,True,2027-01-07
+S-POUR,no_weekend_or_holiday,True,
+S-POUR,inside_delivery_window_0800_1400,True,2027-01-07T12:30+01:00..2027-01-07T13:15+01:00
+S-STRIKE,elapsed_from_pour_finish,True,10080 elapsed min
+S-STRIKE,strength_release_explicit_event,True,hypothetical_pass_at_minimum
+S-STRIP,strip_after_strike_and_cure,True,2027-01-14T13:15+01:00
+S-CURE,elapsed_from_pour_finish,True,1440 elapsed min
+S-STRIP,working_minutes_only,True,2027-01-14
+S-STRIP,no_weekend_or_holiday,True,
+B-STRIP,working_minutes_only,True,2027-01-14
+B-STRIP,no_weekend_or_holiday,True,

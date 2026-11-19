@@ -1,0 +1,7 @@
+﻿tick_minutes,status,original_productive_minutes,scheduled_productive_minutes,rounding_allowance_minutes,inspection_minutes,project_completion,makespan_elapsed_minutes,critical_activities,calendar_checks_passed,resource_conflicts,independent_agreement,grid_aligned_to_shift_and_delivery_boundaries,median_runtime_ms,max_runtime_ms,note
+1,calculated,622.32,628,5.68,90,2027-01-14T15:21+01:00,14841,S-FORM S-REBAR S-INSP S-POUR S-STRIKE S-STRIP B-STRIP,64/64,0,True,True,1.8,1.91,
+5,calculated,622.32,645,22.68,90,2027-01-14T15:30+01:00,14850,S-FORM S-REBAR S-INSP S-POUR S-STRIKE S-STRIP B-STRIP,64/64,0,True,True,1.65,1.83,
+15,calculated,622.32,705,82.68,90,2027-01-14T16:00+01:00,14880,S-FORM S-REBAR S-INSP S-POUR S-STRIKE S-STRIP B-STRIP,64/64,0,True,True,1.62,1.71,
+7,calculated,622.32,672,49.68,105,2027-01-14T15:42+01:00,14861,S-FORM S-REBAR S-INSP S-POUR S-STRIKE S-STRIP B-STRIP,64/64,0,False,False,1.5,1.65,
+45,calculated,622.32,900,277.68,135,2027-01-18T13:00+01:00,20430,S-POUR S-STRIKE S-STRIP B-STRIP,64/64,0,False,False,1.62,2.46,
+60,calculated,622.32,900,277.68,180,2027-01-18T12:00+01:00,20400,S-POUR S-STRIKE S-STRIP B-STRIP,64/64,0,True,True,1.66,1.91,

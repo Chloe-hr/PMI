@@ -1,0 +1,6240 @@
+{
+  "_meta": {
+    "stage": "5.4B reference cases (Task 4)",
+    "status": "HYPOTHETICAL software test inputs; no engineering approval implied",
+    "generator": "scripts/build_cpsat_reference_cases.py",
+    "independent_of": "pmi_core and OR-Tools"
+  },
+  "conventions": {
+    "time_axis": "Integer ticks from project_start (local Europe/Madrid, +01:00 in the horizon). Tick i covers [start + i*tick, start + (i+1)*tick).",
+    "resolution": "5-minute tick is the proposed default for new cases; R0-15 retains the existing 15-minute regression. Every calendar boundary is a multiple of the tick.",
+    "rounding": "Durations and lags are rounded UP to whole ticks; raw minutes are kept in duration_minutes.",
+    "activity_calendar": "Intersection of the calendars of all renewable resources the activity uses; the project calendar when it uses none; then intersected with allowed_hours.",
+    "elapsed_hold": "No resources, no calendar. Runs through nights, weekends and holidays.",
+    "reservation": "kind=reservation resources are occupied continuously (calendar 'continuous') from from_activity start to to_activity finish, including holds and non-working time.",
+    "supply": "Concrete supply is a renewable rate resource (m3/h) on its own delivery calendar; each pour demands its drawn rate for its whole duration. Duration = volume / min(placement, supply rate).",
+    "split": "split_allowed activities work every available tick of their calendar from their start until complete (no voluntary pause inside an available window); segment rules then accept or reject the start. A solver that additionally permits voluntary pauses may only match or improve the objective; none of these cases has contention that would benefit from it.",
+    "statuses": {
+      "OPTIMAL": "Feasible and proven optimal by the stated method.",
+      "FEASIBLE (not optimal)": "Satisfies every constraint but a better schedule exists.",
+      "INFEASIBLE": "Proven that no schedule satisfies the constraints.",
+      "MODEL_INVALID": "Input incomplete or inconsistent; reject before solving."
+    }
+  },
+  "general_acceptance_criteria": [
+    "Expected status: OPTIMAL cases must return OPTIMAL (FEASIBLE with the same objective is reported as 'feasible, optimality not proven' and fails the case). INFEASIBLE cases must return INFEASIBLE or a preflight rejection with the stated code, never UNKNOWN or a relaxed schedule. MODEL_INVALID cases must be rejected before the solver is invoked.",
+    "Objective: makespan in minutes from project_start equals optimal_makespan_minutes exactly.",
+    "Schedule: dates may differ from reference_schedule only where unique_optimal_schedule is false. Any returned schedule must be validated independently against all constraints below.",
+    "Durations: every productive or inspection activity occupies exactly ceil(duration_minutes / tick) ticks of working time; elapsed holds occupy exactly ceil(duration_minutes / tick) ticks of elapsed time.",
+    "Calendars: every occupied tick lies inside the calendar of every resource the activity uses (or the project calendar when it uses none) and inside allowed_hours where declared.",
+    "Capacity: at every tick, the sum of demands on each resource is at most its capacity on that tick (capacity is 0 outside the resource calendar). Reservations count from from_activity start to to_activity finish, continuously.",
+    "Precedence: successor start >= predecessor finish + lag (FS, elapsed).",
+    "Deadlines: every finish is at or before its latest_finish.",
+    "Interruption: only split_allowed activities may have more than one segment, with at most max_segments segments each of at least min_segment_minutes; resources are held only during segments."
+  ],
+  "cases": [
+    {
+      "case_id": "RC01",
+      "category": 1,
+      "title": "Three parallel activities compete for one formwork crew across a shift boundary",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_F": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "A",
+          "kind": "productive",
+          "duration_minutes": 228,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "B",
+          "kind": "productive",
+          "duration_minutes": 196,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "C",
+          "kind": "productive",
+          "duration_minutes": 167,
+          "resources": {
+            "CREW_F": 1
+          }
+        }
+      ],
+      "dependencies": [],
+      "objective": "minimize_makespan",
+      "notes": "Sum 600 scheduled min > 480 min shift. Non-interruptible. The shortest activity must go to day 2. Longest-first and shortest-first heuristics differ.",
+      "expected": {
+        "tick_minutes": 5,
+        "active_schedules_enumerated": 6,
+        "search_nodes": 16,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 1610,
+        "completion_local": "2027-01-12T10:50+01:00",
+        "distinct_optimal_active_schedules": 2,
+        "unique_optimal_schedule": false,
+        "reference_schedule": [
+          {
+            "id": "A",
+            "kind": "productive",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T11:50+01:00",
+            "segments": [
+              [
+                "2027-01-11T08:00+01:00",
+                "2027-01-11T11:50+01:00"
+              ]
+            ],
+            "raw_minutes": 228,
+            "scheduled_minutes": 230
+          },
+          {
+            "id": "B",
+            "kind": "productive",
+            "start": "2027-01-11T11:50+01:00",
+            "finish": "2027-01-11T15:10+01:00",
+            "segments": [
+              [
+                "2027-01-11T11:50+01:00",
+                "2027-01-11T15:10+01:00"
+              ]
+            ],
+            "raw_minutes": 196,
+            "scheduled_minutes": 200
+          },
+          {
+            "id": "C",
+            "kind": "productive",
+            "start": "2027-01-12T08:00+01:00",
+            "finish": "2027-01-12T10:50+01:00",
+            "segments": [
+              [
+                "2027-01-12T08:00+01:00",
+                "2027-01-12T10:50+01:00"
+              ]
+            ],
+            "raw_minutes": 167,
+            "scheduled_minutes": 170
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "CREW_F",
+            "holder": "A",
+            "units": 1,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T11:50+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "B",
+            "units": 1,
+            "start": "2027-01-11T11:50+01:00",
+            "finish": "2027-01-11T15:10+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "C",
+            "units": 1,
+            "start": "2027-01-12T08:00+01:00",
+            "finish": "2027-01-12T10:50+01:00"
+          }
+        ],
+        "peak_usage": {
+          "CREW_F": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          }
+        },
+        "feasible_not_optimal_example": {
+          "status": "FEASIBLE (not optimal)",
+          "makespan_minutes": 1670,
+          "completion_local": "2027-01-12T11:50+01:00",
+          "schedule": [
+            {
+              "id": "C",
+              "kind": "productive",
+              "start": "2027-01-11T08:00+01:00",
+              "finish": "2027-01-11T10:50+01:00",
+              "segments": [
+                [
+                  "2027-01-11T08:00+01:00",
+                  "2027-01-11T10:50+01:00"
+                ]
+              ],
+              "raw_minutes": 167,
+              "scheduled_minutes": 170
+            },
+            {
+              "id": "B",
+              "kind": "productive",
+              "start": "2027-01-11T10:50+01:00",
+              "finish": "2027-01-11T14:10+01:00",
+              "segments": [
+                [
+                  "2027-01-11T10:50+01:00",
+                  "2027-01-11T14:10+01:00"
+                ]
+              ],
+              "raw_minutes": 196,
+              "scheduled_minutes": 200
+            },
+            {
+              "id": "A",
+              "kind": "productive",
+              "start": "2027-01-12T08:00+01:00",
+              "finish": "2027-01-12T11:50+01:00",
+              "segments": [
+                [
+                  "2027-01-12T08:00+01:00",
+                  "2027-01-12T11:50+01:00"
+                ]
+              ],
+              "raw_minutes": 228,
+              "scheduled_minutes": 230
+            }
+          ]
+        },
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 1605,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": true
+        },
+        "acceptance_criteria": "general_acceptance_criteria apply; status and makespan must match; any constraint-valid optimal schedule is accepted"
+      }
+    },
+    {
+      "case_id": "RC02",
+      "category": 2,
+      "title": "Shared crane capacity with a dependent follow-on task",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_R1": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CREW_R2": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CRANE": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "L1",
+          "kind": "productive",
+          "duration_minutes": 88,
+          "resources": {
+            "CREW_R1": 1,
+            "CRANE": 1
+          }
+        },
+        {
+          "id": "L2",
+          "kind": "productive",
+          "duration_minutes": 117,
+          "resources": {
+            "CREW_R2": 1,
+            "CRANE": 1
+          }
+        },
+        {
+          "id": "L3",
+          "kind": "productive",
+          "duration_minutes": 58,
+          "resources": {
+            "CREW_R1": 1
+          }
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "L1",
+          "successor": "L3",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "notes": "Crane lower bound 90+120 = 210 min is attained only if L1 lifts first.",
+      "expected": {
+        "tick_minutes": 5,
+        "active_schedules_enumerated": 2,
+        "search_nodes": 9,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 210,
+        "completion_local": "2027-01-11T11:30+01:00",
+        "distinct_optimal_active_schedules": 1,
+        "unique_optimal_schedule": true,
+        "reference_schedule": [
+          {
+            "id": "L1",
+            "kind": "productive",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:30+01:00",
+            "segments": [
+              [
+                "2027-01-11T08:00+01:00",
+                "2027-01-11T09:30+01:00"
+              ]
+            ],
+            "raw_minutes": 88,
+            "scheduled_minutes": 90
+          },
+          {
+            "id": "L2",
+            "kind": "productive",
+            "start": "2027-01-11T09:30+01:00",
+            "finish": "2027-01-11T11:30+01:00",
+            "segments": [
+              [
+                "2027-01-11T09:30+01:00",
+                "2027-01-11T11:30+01:00"
+              ]
+            ],
+            "raw_minutes": 117,
+            "scheduled_minutes": 120
+          },
+          {
+            "id": "L3",
+            "kind": "productive",
+            "start": "2027-01-11T09:30+01:00",
+            "finish": "2027-01-11T10:30+01:00",
+            "segments": [
+              [
+                "2027-01-11T09:30+01:00",
+                "2027-01-11T10:30+01:00"
+              ]
+            ],
+            "raw_minutes": 58,
+            "scheduled_minutes": 60
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "CREW_R1",
+            "holder": "L1",
+            "units": 1,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:30+01:00"
+          },
+          {
+            "resource": "CRANE",
+            "holder": "L1",
+            "units": 1,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:30+01:00"
+          },
+          {
+            "resource": "CREW_R2",
+            "holder": "L2",
+            "units": 1,
+            "start": "2027-01-11T09:30+01:00",
+            "finish": "2027-01-11T11:30+01:00"
+          },
+          {
+            "resource": "CRANE",
+            "holder": "L2",
+            "units": 1,
+            "start": "2027-01-11T09:30+01:00",
+            "finish": "2027-01-11T11:30+01:00"
+          },
+          {
+            "resource": "CREW_R1",
+            "holder": "L3",
+            "units": 1,
+            "start": "2027-01-11T09:30+01:00",
+            "finish": "2027-01-11T10:30+01:00"
+          }
+        ],
+        "peak_usage": {
+          "CREW_R1": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "CREW_R2": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "CRANE": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          }
+        },
+        "feasible_not_optimal_example": {
+          "status": "FEASIBLE (not optimal)",
+          "makespan_minutes": 270,
+          "completion_local": "2027-01-11T12:30+01:00",
+          "schedule": [
+            {
+              "id": "L2",
+              "kind": "productive",
+              "start": "2027-01-11T08:00+01:00",
+              "finish": "2027-01-11T10:00+01:00",
+              "segments": [
+                [
+                  "2027-01-11T08:00+01:00",
+                  "2027-01-11T10:00+01:00"
+                ]
+              ],
+              "raw_minutes": 117,
+              "scheduled_minutes": 120
+            },
+            {
+              "id": "L1",
+              "kind": "productive",
+              "start": "2027-01-11T10:00+01:00",
+              "finish": "2027-01-11T11:30+01:00",
+              "segments": [
+                [
+                  "2027-01-11T10:00+01:00",
+                  "2027-01-11T11:30+01:00"
+                ]
+              ],
+              "raw_minutes": 88,
+              "scheduled_minutes": 90
+            },
+            {
+              "id": "L3",
+              "kind": "productive",
+              "start": "2027-01-11T11:30+01:00",
+              "finish": "2027-01-11T12:30+01:00",
+              "segments": [
+                [
+                  "2027-01-11T11:30+01:00",
+                  "2027-01-11T12:30+01:00"
+                ]
+              ],
+              "raw_minutes": 58,
+              "scheduled_minutes": 60
+            }
+          ]
+        },
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 205,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": true
+        },
+        "acceptance_criteria": "general_acceptance_criteria apply; schedule is unique and must match reference_schedule exactly"
+      }
+    },
+    {
+      "case_id": "RC03",
+      "category": 3,
+      "title": "Simultaneous multi-trade demand on a shared labourer pool",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "ENCOFRADOR": {
+          "capacity": 2,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "PEON": {
+          "capacity": 3,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "OFICIAL": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "FERRALLISTA": {
+          "capacity": 2,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "X",
+          "kind": "productive",
+          "duration_minutes": 118,
+          "resources": {
+            "ENCOFRADOR": 2,
+            "PEON": 1
+          }
+        },
+        {
+          "id": "Y",
+          "kind": "productive",
+          "duration_minutes": 88,
+          "resources": {
+            "PEON": 2,
+            "OFICIAL": 1
+          }
+        },
+        {
+          "id": "Z",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "FERRALLISTA": 2,
+            "PEON": 1
+          }
+        }
+      ],
+      "dependencies": [],
+      "objective": "minimize_makespan",
+      "notes": "Any two of X, Y, Z may overlap (PEON 3) but not all three (PEON 4 > 3). All trade demands of one activity are held simultaneously for its whole duration.",
+      "expected": {
+        "tick_minutes": 5,
+        "active_schedules_enumerated": 3,
+        "search_nodes": 16,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 150,
+        "completion_local": "2027-01-11T10:30+01:00",
+        "distinct_optimal_active_schedules": 2,
+        "unique_optimal_schedule": false,
+        "reference_schedule": [
+          {
+            "id": "X",
+            "kind": "productive",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T10:00+01:00",
+            "segments": [
+              [
+                "2027-01-11T08:00+01:00",
+                "2027-01-11T10:00+01:00"
+              ]
+            ],
+            "raw_minutes": 118,
+            "scheduled_minutes": 120
+          },
+          {
+            "id": "Y",
+            "kind": "productive",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:30+01:00",
+            "segments": [
+              [
+                "2027-01-11T08:00+01:00",
+                "2027-01-11T09:30+01:00"
+              ]
+            ],
+            "raw_minutes": 88,
+            "scheduled_minutes": 90
+          },
+          {
+            "id": "Z",
+            "kind": "productive",
+            "start": "2027-01-11T09:30+01:00",
+            "finish": "2027-01-11T10:30+01:00",
+            "segments": [
+              [
+                "2027-01-11T09:30+01:00",
+                "2027-01-11T10:30+01:00"
+              ]
+            ],
+            "raw_minutes": 57,
+            "scheduled_minutes": 60
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "ENCOFRADOR",
+            "holder": "X",
+            "units": 2,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T10:00+01:00"
+          },
+          {
+            "resource": "PEON",
+            "holder": "X",
+            "units": 1,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T10:00+01:00"
+          },
+          {
+            "resource": "PEON",
+            "holder": "Y",
+            "units": 2,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:30+01:00"
+          },
+          {
+            "resource": "OFICIAL",
+            "holder": "Y",
+            "units": 1,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:30+01:00"
+          },
+          {
+            "resource": "FERRALLISTA",
+            "holder": "Z",
+            "units": 2,
+            "start": "2027-01-11T09:30+01:00",
+            "finish": "2027-01-11T10:30+01:00"
+          },
+          {
+            "resource": "PEON",
+            "holder": "Z",
+            "units": 1,
+            "start": "2027-01-11T09:30+01:00",
+            "finish": "2027-01-11T10:30+01:00"
+          }
+        ],
+        "peak_usage": {
+          "ENCOFRADOR": {
+            "peak_units": 2,
+            "declared_capacity": 2
+          },
+          "PEON": {
+            "peak_units": 3,
+            "declared_capacity": 3
+          },
+          "OFICIAL": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "FERRALLISTA": {
+            "peak_units": 2,
+            "declared_capacity": 2
+          }
+        },
+        "feasible_not_optimal_example": {
+          "status": "FEASIBLE (not optimal)",
+          "makespan_minutes": 180,
+          "completion_local": "2027-01-11T11:00+01:00",
+          "schedule": [
+            {
+              "id": "Y",
+              "kind": "productive",
+              "start": "2027-01-11T08:00+01:00",
+              "finish": "2027-01-11T09:30+01:00",
+              "segments": [
+                [
+                  "2027-01-11T08:00+01:00",
+                  "2027-01-11T09:30+01:00"
+                ]
+              ],
+              "raw_minutes": 88,
+              "scheduled_minutes": 90
+            },
+            {
+              "id": "Z",
+              "kind": "productive",
+              "start": "2027-01-11T08:00+01:00",
+              "finish": "2027-01-11T09:00+01:00",
+              "segments": [
+                [
+                  "2027-01-11T08:00+01:00",
+                  "2027-01-11T09:00+01:00"
+                ]
+              ],
+              "raw_minutes": 57,
+              "scheduled_minutes": 60
+            },
+            {
+              "id": "X",
+              "kind": "productive",
+              "start": "2027-01-11T09:00+01:00",
+              "finish": "2027-01-11T11:00+01:00",
+              "segments": [
+                [
+                  "2027-01-11T09:00+01:00",
+                  "2027-01-11T11:00+01:00"
+                ]
+              ],
+              "raw_minutes": 118,
+              "scheduled_minutes": 120
+            }
+          ]
+        },
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 145,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": true
+        },
+        "acceptance_criteria": "general_acceptance_criteria apply; status and makespan must match; any constraint-valid optimal schedule is accepted"
+      }
+    },
+    {
+      "case_id": "RC04",
+      "category": 4,
+      "title": "Two pre-pour inspections share one inspector available 10:00-12:00",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_A": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CREW_B": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CREW_C": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "INSPECTOR": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": {
+            "working_windows": [
+              {
+                "weekday": 1,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 2,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 3,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 4,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 5,
+                "start": "10:00",
+                "end": "12:00"
+              }
+            ]
+          }
+        }
+      },
+      "activities": [
+        {
+          "id": "R1",
+          "kind": "productive",
+          "duration_minutes": 117,
+          "resources": {
+            "CREW_A": 1
+          }
+        },
+        {
+          "id": "R2",
+          "kind": "productive",
+          "duration_minutes": 108,
+          "resources": {
+            "CREW_B": 1
+          }
+        },
+        {
+          "id": "I1",
+          "kind": "inspection",
+          "duration_minutes": 30,
+          "resources": {
+            "INSPECTOR": 1
+          }
+        },
+        {
+          "id": "I2",
+          "kind": "inspection",
+          "duration_minutes": 30,
+          "resources": {
+            "INSPECTOR": 1
+          }
+        },
+        {
+          "id": "P1",
+          "kind": "productive",
+          "duration_minutes": 43,
+          "resources": {
+            "CREW_C": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        },
+        {
+          "id": "P2",
+          "kind": "productive",
+          "duration_minutes": 43,
+          "resources": {
+            "CREW_C": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "R1",
+          "successor": "I1",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "I1",
+          "successor": "P1",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "R2",
+          "successor": "I2",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "I2",
+          "successor": "P2",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "notes": "Inspections are working-time activities on the inspector's own calendar. They cannot start before 10:00 although the rebar finishes earlier.",
+      "expected": {
+        "tick_minutes": 5,
+        "active_schedules_enumerated": 4,
+        "search_nodes": 69,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 240,
+        "completion_local": "2027-01-11T12:00+01:00",
+        "distinct_optimal_active_schedules": 2,
+        "unique_optimal_schedule": false,
+        "reference_schedule": [
+          {
+            "id": "R1",
+            "kind": "productive",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T10:00+01:00",
+            "segments": [
+              [
+                "2027-01-11T08:00+01:00",
+                "2027-01-11T10:00+01:00"
+              ]
+            ],
+            "raw_minutes": 117,
+            "scheduled_minutes": 120
+          },
+          {
+            "id": "R2",
+            "kind": "productive",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:50+01:00",
+            "segments": [
+              [
+                "2027-01-11T08:00+01:00",
+                "2027-01-11T09:50+01:00"
+              ]
+            ],
+            "raw_minutes": 108,
+            "scheduled_minutes": 110
+          },
+          {
+            "id": "I1",
+            "kind": "inspection",
+            "start": "2027-01-11T10:00+01:00",
+            "finish": "2027-01-11T10:30+01:00",
+            "segments": [
+              [
+                "2027-01-11T10:00+01:00",
+                "2027-01-11T10:30+01:00"
+              ]
+            ],
+            "raw_minutes": 30,
+            "scheduled_minutes": 30
+          },
+          {
+            "id": "I2",
+            "kind": "inspection",
+            "start": "2027-01-11T10:30+01:00",
+            "finish": "2027-01-11T11:00+01:00",
+            "segments": [
+              [
+                "2027-01-11T10:30+01:00",
+                "2027-01-11T11:00+01:00"
+              ]
+            ],
+            "raw_minutes": 30,
+            "scheduled_minutes": 30
+          },
+          {
+            "id": "P1",
+            "kind": "productive",
+            "start": "2027-01-11T10:30+01:00",
+            "finish": "2027-01-11T11:15+01:00",
+            "segments": [
+              [
+                "2027-01-11T10:30+01:00",
+                "2027-01-11T11:15+01:00"
+              ]
+            ],
+            "raw_minutes": 43,
+            "scheduled_minutes": 45
+          },
+          {
+            "id": "P2",
+            "kind": "productive",
+            "start": "2027-01-11T11:15+01:00",
+            "finish": "2027-01-11T12:00+01:00",
+            "segments": [
+              [
+                "2027-01-11T11:15+01:00",
+                "2027-01-11T12:00+01:00"
+              ]
+            ],
+            "raw_minutes": 43,
+            "scheduled_minutes": 45
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "CREW_A",
+            "holder": "R1",
+            "units": 1,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T10:00+01:00"
+          },
+          {
+            "resource": "CREW_B",
+            "holder": "R2",
+            "units": 1,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:50+01:00"
+          },
+          {
+            "resource": "INSPECTOR",
+            "holder": "I1",
+            "units": 1,
+            "start": "2027-01-11T10:00+01:00",
+            "finish": "2027-01-11T10:30+01:00"
+          },
+          {
+            "resource": "INSPECTOR",
+            "holder": "I2",
+            "units": 1,
+            "start": "2027-01-11T10:30+01:00",
+            "finish": "2027-01-11T11:00+01:00"
+          },
+          {
+            "resource": "CREW_C",
+            "holder": "P1",
+            "units": 1,
+            "start": "2027-01-11T10:30+01:00",
+            "finish": "2027-01-11T11:15+01:00"
+          },
+          {
+            "resource": "CREW_C",
+            "holder": "P2",
+            "units": 1,
+            "start": "2027-01-11T11:15+01:00",
+            "finish": "2027-01-11T12:00+01:00"
+          }
+        ],
+        "peak_usage": {
+          "CREW_A": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "CREW_B": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "CREW_C": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "INSPECTOR": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          }
+        },
+        "feasible_not_optimal_example": {
+          "status": "FEASIBLE (not optimal)",
+          "makespan_minutes": 270,
+          "completion_local": "2027-01-11T12:30+01:00",
+          "schedule": [
+            {
+              "id": "R1",
+              "kind": "productive",
+              "start": "2027-01-11T08:00+01:00",
+              "finish": "2027-01-11T10:00+01:00",
+              "segments": [
+                [
+                  "2027-01-11T08:00+01:00",
+                  "2027-01-11T10:00+01:00"
+                ]
+              ],
+              "raw_minutes": 117,
+              "scheduled_minutes": 120
+            },
+            {
+              "id": "R2",
+              "kind": "productive",
+              "start": "2027-01-11T08:00+01:00",
+              "finish": "2027-01-11T09:50+01:00",
+              "segments": [
+                [
+                  "2027-01-11T08:00+01:00",
+                  "2027-01-11T09:50+01:00"
+                ]
+              ],
+              "raw_minutes": 108,
+              "scheduled_minutes": 110
+            },
+            {
+              "id": "I2",
+              "kind": "inspection",
+              "start": "2027-01-11T10:00+01:00",
+              "finish": "2027-01-11T10:30+01:00",
+              "segments": [
+                [
+                  "2027-01-11T10:00+01:00",
+                  "2027-01-11T10:30+01:00"
+                ]
+              ],
+              "raw_minutes": 30,
+              "scheduled_minutes": 30
+            },
+            {
+              "id": "I1",
+              "kind": "inspection",
+              "start": "2027-01-11T10:30+01:00",
+              "finish": "2027-01-11T11:00+01:00",
+              "segments": [
+                [
+                  "2027-01-11T10:30+01:00",
+                  "2027-01-11T11:00+01:00"
+                ]
+              ],
+              "raw_minutes": 30,
+              "scheduled_minutes": 30
+            },
+            {
+              "id": "P1",
+              "kind": "productive",
+              "start": "2027-01-11T11:00+01:00",
+              "finish": "2027-01-11T11:45+01:00",
+              "segments": [
+                [
+                  "2027-01-11T11:00+01:00",
+                  "2027-01-11T11:45+01:00"
+                ]
+              ],
+              "raw_minutes": 43,
+              "scheduled_minutes": 45
+            },
+            {
+              "id": "P2",
+              "kind": "productive",
+              "start": "2027-01-11T11:45+01:00",
+              "finish": "2027-01-11T12:30+01:00",
+              "segments": [
+                [
+                  "2027-01-11T11:45+01:00",
+                  "2027-01-11T12:30+01:00"
+                ]
+              ],
+              "raw_minutes": 43,
+              "scheduled_minutes": 45
+            }
+          ]
+        },
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 235,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": true
+        },
+        "acceptance_criteria": "general_acceptance_criteria apply; status and makespan must match; any constraint-valid optimal schedule is accepted"
+      }
+    },
+    {
+      "case_id": "RC05a",
+      "category": 5,
+      "title": "Reusable formwork: one set reserved from FORM start to STRIP finish",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_F": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CREW_C": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "FORMWORK_SET": {
+          "capacity": 1,
+          "kind": "reservation",
+          "calendar": "continuous"
+        }
+      },
+      "activities": [
+        {
+          "id": "E1-FORM",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "E1-POUR",
+          "kind": "productive",
+          "duration_minutes": 28,
+          "resources": {
+            "CREW_C": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        },
+        {
+          "id": "E1-CURE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 1440,
+          "resources": {}
+        },
+        {
+          "id": "E1-STRIP",
+          "kind": "productive",
+          "duration_minutes": 28,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "E2-FORM",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "E2-POUR",
+          "kind": "productive",
+          "duration_minutes": 28,
+          "resources": {
+            "CREW_C": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        },
+        {
+          "id": "E2-CURE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 1440,
+          "resources": {}
+        },
+        {
+          "id": "E2-STRIP",
+          "kind": "productive",
+          "duration_minutes": 28,
+          "resources": {
+            "CREW_F": 1
+          }
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "E1-FORM",
+          "successor": "E1-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "E1-POUR",
+          "successor": "E1-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "E1-CURE",
+          "successor": "E1-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "E2-FORM",
+          "successor": "E2-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "E2-POUR",
+          "successor": "E2-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "E2-CURE",
+          "successor": "E2-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "reservations": [
+        {
+          "id": "SET-E1",
+          "resource": "FORMWORK_SET",
+          "demand": 1,
+          "from_activity": "E1-FORM",
+          "to_activity": "E1-STRIP"
+        },
+        {
+          "id": "SET-E2",
+          "resource": "FORMWORK_SET",
+          "demand": 1,
+          "from_activity": "E2-FORM",
+          "to_activity": "E2-STRIP"
+        }
+      ],
+      "notes": "The set stays occupied through curing, nights and weekends; it is released only when stripping finishes. One set forces E2-FORM after E1-STRIP.",
+      "expected": {
+        "tick_minutes": 5,
+        "active_schedules_enumerated": 2,
+        "search_nodes": 17,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 3120,
+        "completion_local": "2027-01-13T12:00+01:00",
+        "distinct_optimal_active_schedules": 2,
+        "unique_optimal_schedule": false,
+        "reference_schedule": [
+          {
+            "id": "E1-FORM",
+            "kind": "productive",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:00+01:00",
+            "segments": [
+              [
+                "2027-01-11T08:00+01:00",
+                "2027-01-11T09:00+01:00"
+              ]
+            ],
+            "raw_minutes": 57,
+            "scheduled_minutes": 60
+          },
+          {
+            "id": "E1-POUR",
+            "kind": "productive",
+            "start": "2027-01-11T09:00+01:00",
+            "finish": "2027-01-11T09:30+01:00",
+            "segments": [
+              [
+                "2027-01-11T09:00+01:00",
+                "2027-01-11T09:30+01:00"
+              ]
+            ],
+            "raw_minutes": 28,
+            "scheduled_minutes": 30
+          },
+          {
+            "id": "E1-CURE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-11T09:30+01:00",
+            "finish": "2027-01-12T09:30+01:00",
+            "segments": [
+              [
+                "2027-01-11T09:30+01:00",
+                "2027-01-12T09:30+01:00"
+              ]
+            ],
+            "raw_minutes": 1440,
+            "scheduled_minutes": 1440
+          },
+          {
+            "id": "E1-STRIP",
+            "kind": "productive",
+            "start": "2027-01-12T09:30+01:00",
+            "finish": "2027-01-12T10:00+01:00",
+            "segments": [
+              [
+                "2027-01-12T09:30+01:00",
+                "2027-01-12T10:00+01:00"
+              ]
+            ],
+            "raw_minutes": 28,
+            "scheduled_minutes": 30
+          },
+          {
+            "id": "E2-FORM",
+            "kind": "productive",
+            "start": "2027-01-12T10:00+01:00",
+            "finish": "2027-01-12T11:00+01:00",
+            "segments": [
+              [
+                "2027-01-12T10:00+01:00",
+                "2027-01-12T11:00+01:00"
+              ]
+            ],
+            "raw_minutes": 57,
+            "scheduled_minutes": 60
+          },
+          {
+            "id": "E2-POUR",
+            "kind": "productive",
+            "start": "2027-01-12T11:00+01:00",
+            "finish": "2027-01-12T11:30+01:00",
+            "segments": [
+              [
+                "2027-01-12T11:00+01:00",
+                "2027-01-12T11:30+01:00"
+              ]
+            ],
+            "raw_minutes": 28,
+            "scheduled_minutes": 30
+          },
+          {
+            "id": "E2-CURE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-12T11:30+01:00",
+            "finish": "2027-01-13T11:30+01:00",
+            "segments": [
+              [
+                "2027-01-12T11:30+01:00",
+                "2027-01-13T11:30+01:00"
+              ]
+            ],
+            "raw_minutes": 1440,
+            "scheduled_minutes": 1440
+          },
+          {
+            "id": "E2-STRIP",
+            "kind": "productive",
+            "start": "2027-01-13T11:30+01:00",
+            "finish": "2027-01-13T12:00+01:00",
+            "segments": [
+              [
+                "2027-01-13T11:30+01:00",
+                "2027-01-13T12:00+01:00"
+              ]
+            ],
+            "raw_minutes": 28,
+            "scheduled_minutes": 30
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "CREW_F",
+            "holder": "E1-FORM",
+            "units": 1,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:00+01:00"
+          },
+          {
+            "resource": "CREW_C",
+            "holder": "E1-POUR",
+            "units": 1,
+            "start": "2027-01-11T09:00+01:00",
+            "finish": "2027-01-11T09:30+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "E1-STRIP",
+            "units": 1,
+            "start": "2027-01-12T09:30+01:00",
+            "finish": "2027-01-12T10:00+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "E2-FORM",
+            "units": 1,
+            "start": "2027-01-12T10:00+01:00",
+            "finish": "2027-01-12T11:00+01:00"
+          },
+          {
+            "resource": "CREW_C",
+            "holder": "E2-POUR",
+            "units": 1,
+            "start": "2027-01-12T11:00+01:00",
+            "finish": "2027-01-12T11:30+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "E2-STRIP",
+            "units": 1,
+            "start": "2027-01-13T11:30+01:00",
+            "finish": "2027-01-13T12:00+01:00"
+          },
+          {
+            "resource": "FORMWORK_SET",
+            "holder": "SET-E1",
+            "units": 1,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-12T10:00+01:00",
+            "continuous_from": "E1-FORM.start",
+            "continuous_to": "E1-STRIP.finish"
+          },
+          {
+            "resource": "FORMWORK_SET",
+            "holder": "SET-E2",
+            "units": 1,
+            "start": "2027-01-12T10:00+01:00",
+            "finish": "2027-01-13T12:00+01:00",
+            "continuous_from": "E2-FORM.start",
+            "continuous_to": "E2-STRIP.finish"
+          }
+        ],
+        "peak_usage": {
+          "CREW_F": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "CREW_C": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "FORMWORK_SET": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          }
+        },
+        "feasible_not_optimal_example": null,
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists.",
+        "brute_force_check": {
+          "skipped": "split activity or time-indexed search space above 3e6 start combinations; Method A alone proves optimality"
+        },
+        "acceptance_criteria": "general_acceptance_criteria apply; status and makespan must match; any constraint-valid optimal schedule is accepted"
+      }
+    },
+    {
+      "case_id": "RC05b",
+      "category": 5,
+      "title": "Reusable formwork: two sets allow overlap during curing",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_F": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CREW_C": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "FORMWORK_SET": {
+          "capacity": 2,
+          "kind": "reservation",
+          "calendar": "continuous"
+        }
+      },
+      "activities": [
+        {
+          "id": "E1-FORM",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "E1-POUR",
+          "kind": "productive",
+          "duration_minutes": 28,
+          "resources": {
+            "CREW_C": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        },
+        {
+          "id": "E1-CURE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 1440,
+          "resources": {}
+        },
+        {
+          "id": "E1-STRIP",
+          "kind": "productive",
+          "duration_minutes": 28,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "E2-FORM",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "E2-POUR",
+          "kind": "productive",
+          "duration_minutes": 28,
+          "resources": {
+            "CREW_C": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        },
+        {
+          "id": "E2-CURE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 1440,
+          "resources": {}
+        },
+        {
+          "id": "E2-STRIP",
+          "kind": "productive",
+          "duration_minutes": 28,
+          "resources": {
+            "CREW_F": 1
+          }
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "E1-FORM",
+          "successor": "E1-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "E1-POUR",
+          "successor": "E1-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "E1-CURE",
+          "successor": "E1-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "E2-FORM",
+          "successor": "E2-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "E2-POUR",
+          "successor": "E2-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "E2-CURE",
+          "successor": "E2-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "reservations": [
+        {
+          "id": "SET-E1",
+          "resource": "FORMWORK_SET",
+          "demand": 1,
+          "from_activity": "E1-FORM",
+          "to_activity": "E1-STRIP"
+        },
+        {
+          "id": "SET-E2",
+          "resource": "FORMWORK_SET",
+          "demand": 1,
+          "from_activity": "E2-FORM",
+          "to_activity": "E2-STRIP"
+        }
+      ],
+      "notes": "Same as RC05a with two formwork sets.",
+      "expected": {
+        "tick_minutes": 5,
+        "active_schedules_enumerated": 2,
+        "search_nodes": 251,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 1620,
+        "completion_local": "2027-01-12T11:00+01:00",
+        "distinct_optimal_active_schedules": 2,
+        "unique_optimal_schedule": false,
+        "reference_schedule": [
+          {
+            "id": "E1-FORM",
+            "kind": "productive",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:00+01:00",
+            "segments": [
+              [
+                "2027-01-11T08:00+01:00",
+                "2027-01-11T09:00+01:00"
+              ]
+            ],
+            "raw_minutes": 57,
+            "scheduled_minutes": 60
+          },
+          {
+            "id": "E1-POUR",
+            "kind": "productive",
+            "start": "2027-01-11T09:00+01:00",
+            "finish": "2027-01-11T09:30+01:00",
+            "segments": [
+              [
+                "2027-01-11T09:00+01:00",
+                "2027-01-11T09:30+01:00"
+              ]
+            ],
+            "raw_minutes": 28,
+            "scheduled_minutes": 30
+          },
+          {
+            "id": "E2-FORM",
+            "kind": "productive",
+            "start": "2027-01-11T09:00+01:00",
+            "finish": "2027-01-11T10:00+01:00",
+            "segments": [
+              [
+                "2027-01-11T09:00+01:00",
+                "2027-01-11T10:00+01:00"
+              ]
+            ],
+            "raw_minutes": 57,
+            "scheduled_minutes": 60
+          },
+          {
+            "id": "E1-CURE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-11T09:30+01:00",
+            "finish": "2027-01-12T09:30+01:00",
+            "segments": [
+              [
+                "2027-01-11T09:30+01:00",
+                "2027-01-12T09:30+01:00"
+              ]
+            ],
+            "raw_minutes": 1440,
+            "scheduled_minutes": 1440
+          },
+          {
+            "id": "E2-POUR",
+            "kind": "productive",
+            "start": "2027-01-11T10:00+01:00",
+            "finish": "2027-01-11T10:30+01:00",
+            "segments": [
+              [
+                "2027-01-11T10:00+01:00",
+                "2027-01-11T10:30+01:00"
+              ]
+            ],
+            "raw_minutes": 28,
+            "scheduled_minutes": 30
+          },
+          {
+            "id": "E2-CURE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-11T10:30+01:00",
+            "finish": "2027-01-12T10:30+01:00",
+            "segments": [
+              [
+                "2027-01-11T10:30+01:00",
+                "2027-01-12T10:30+01:00"
+              ]
+            ],
+            "raw_minutes": 1440,
+            "scheduled_minutes": 1440
+          },
+          {
+            "id": "E1-STRIP",
+            "kind": "productive",
+            "start": "2027-01-12T09:30+01:00",
+            "finish": "2027-01-12T10:00+01:00",
+            "segments": [
+              [
+                "2027-01-12T09:30+01:00",
+                "2027-01-12T10:00+01:00"
+              ]
+            ],
+            "raw_minutes": 28,
+            "scheduled_minutes": 30
+          },
+          {
+            "id": "E2-STRIP",
+            "kind": "productive",
+            "start": "2027-01-12T10:30+01:00",
+            "finish": "2027-01-12T11:00+01:00",
+            "segments": [
+              [
+                "2027-01-12T10:30+01:00",
+                "2027-01-12T11:00+01:00"
+              ]
+            ],
+            "raw_minutes": 28,
+            "scheduled_minutes": 30
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "CREW_F",
+            "holder": "E1-FORM",
+            "units": 1,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:00+01:00"
+          },
+          {
+            "resource": "CREW_C",
+            "holder": "E1-POUR",
+            "units": 1,
+            "start": "2027-01-11T09:00+01:00",
+            "finish": "2027-01-11T09:30+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "E2-FORM",
+            "units": 1,
+            "start": "2027-01-11T09:00+01:00",
+            "finish": "2027-01-11T10:00+01:00"
+          },
+          {
+            "resource": "CREW_C",
+            "holder": "E2-POUR",
+            "units": 1,
+            "start": "2027-01-11T10:00+01:00",
+            "finish": "2027-01-11T10:30+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "E1-STRIP",
+            "units": 1,
+            "start": "2027-01-12T09:30+01:00",
+            "finish": "2027-01-12T10:00+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "E2-STRIP",
+            "units": 1,
+            "start": "2027-01-12T10:30+01:00",
+            "finish": "2027-01-12T11:00+01:00"
+          },
+          {
+            "resource": "FORMWORK_SET",
+            "holder": "SET-E1",
+            "units": 1,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-12T10:00+01:00",
+            "continuous_from": "E1-FORM.start",
+            "continuous_to": "E1-STRIP.finish"
+          },
+          {
+            "resource": "FORMWORK_SET",
+            "holder": "SET-E2",
+            "units": 1,
+            "start": "2027-01-11T09:00+01:00",
+            "finish": "2027-01-12T11:00+01:00",
+            "continuous_from": "E2-FORM.start",
+            "continuous_to": "E2-STRIP.finish"
+          }
+        ],
+        "peak_usage": {
+          "CREW_F": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "CREW_C": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "FORMWORK_SET": {
+            "peak_units": 2,
+            "declared_capacity": 2
+          }
+        },
+        "feasible_not_optimal_example": null,
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 1615,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": "by Method A (attainment search above limit)"
+        },
+        "acceptance_criteria": "general_acceptance_criteria apply; status and makespan must match; any constraint-valid optimal schedule is accepted"
+      }
+    },
+    {
+      "case_id": "RC06",
+      "category": 6,
+      "title": "Resource-specific calendars: crane hire Tue/Thu mornings, ferrallista 07:00-15:00",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_F": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CRANE": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": {
+            "working_windows": [
+              {
+                "weekday": 2,
+                "start": "08:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 4,
+                "start": "08:00",
+                "end": "12:00"
+              }
+            ]
+          }
+        },
+        "FERRALLISTA": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": {
+            "working_windows": [
+              {
+                "weekday": 1,
+                "start": "07:00",
+                "end": "15:00"
+              },
+              {
+                "weekday": 2,
+                "start": "07:00",
+                "end": "15:00"
+              },
+              {
+                "weekday": 3,
+                "start": "07:00",
+                "end": "15:00"
+              },
+              {
+                "weekday": 4,
+                "start": "07:00",
+                "end": "15:00"
+              },
+              {
+                "weekday": 5,
+                "start": "07:00",
+                "end": "15:00"
+              }
+            ]
+          }
+        }
+      },
+      "activities": [
+        {
+          "id": "P",
+          "kind": "productive",
+          "duration_minutes": 297,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "L",
+          "kind": "productive",
+          "duration_minutes": 148,
+          "resources": {
+            "CREW_F": 1,
+            "CRANE": 1
+          }
+        },
+        {
+          "id": "M",
+          "kind": "productive",
+          "duration_minutes": 197,
+          "resources": {
+            "CRANE": 1
+          }
+        },
+        {
+          "id": "N",
+          "kind": "productive",
+          "duration_minutes": 148,
+          "resources": {
+            "FERRALLISTA": 1
+          }
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "P",
+          "successor": "L",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "L",
+          "successor": "M",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "P",
+          "successor": "N",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "notes": "An activity may only run when every resource it uses is on calendar. N works 07:00 on Tuesday, before the project shift starts. M cannot use the 90 min left on Tuesday's crane window and waits for Thursday.",
+      "expected": {
+        "tick_minutes": 5,
+        "active_schedules_enumerated": 1,
+        "search_nodes": 10,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 4520,
+        "completion_local": "2027-01-14T11:20+01:00",
+        "distinct_optimal_active_schedules": 1,
+        "unique_optimal_schedule": true,
+        "reference_schedule": [
+          {
+            "id": "P",
+            "kind": "productive",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T13:00+01:00",
+            "segments": [
+              [
+                "2027-01-11T08:00+01:00",
+                "2027-01-11T13:00+01:00"
+              ]
+            ],
+            "raw_minutes": 297,
+            "scheduled_minutes": 300
+          },
+          {
+            "id": "N",
+            "kind": "productive",
+            "start": "2027-01-12T07:00+01:00",
+            "finish": "2027-01-12T09:30+01:00",
+            "segments": [
+              [
+                "2027-01-12T07:00+01:00",
+                "2027-01-12T09:30+01:00"
+              ]
+            ],
+            "raw_minutes": 148,
+            "scheduled_minutes": 150
+          },
+          {
+            "id": "L",
+            "kind": "productive",
+            "start": "2027-01-12T08:00+01:00",
+            "finish": "2027-01-12T10:30+01:00",
+            "segments": [
+              [
+                "2027-01-12T08:00+01:00",
+                "2027-01-12T10:30+01:00"
+              ]
+            ],
+            "raw_minutes": 148,
+            "scheduled_minutes": 150
+          },
+          {
+            "id": "M",
+            "kind": "productive",
+            "start": "2027-01-14T08:00+01:00",
+            "finish": "2027-01-14T11:20+01:00",
+            "segments": [
+              [
+                "2027-01-14T08:00+01:00",
+                "2027-01-14T11:20+01:00"
+              ]
+            ],
+            "raw_minutes": 197,
+            "scheduled_minutes": 200
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "CREW_F",
+            "holder": "P",
+            "units": 1,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T13:00+01:00"
+          },
+          {
+            "resource": "FERRALLISTA",
+            "holder": "N",
+            "units": 1,
+            "start": "2027-01-12T07:00+01:00",
+            "finish": "2027-01-12T09:30+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "L",
+            "units": 1,
+            "start": "2027-01-12T08:00+01:00",
+            "finish": "2027-01-12T10:30+01:00"
+          },
+          {
+            "resource": "CRANE",
+            "holder": "L",
+            "units": 1,
+            "start": "2027-01-12T08:00+01:00",
+            "finish": "2027-01-12T10:30+01:00"
+          },
+          {
+            "resource": "CRANE",
+            "holder": "M",
+            "units": 1,
+            "start": "2027-01-14T08:00+01:00",
+            "finish": "2027-01-14T11:20+01:00"
+          }
+        ],
+        "peak_usage": {
+          "CREW_F": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "CRANE": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "FERRALLISTA": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          }
+        },
+        "feasible_not_optimal_example": null,
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 4515,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": "by Method A (attainment search above limit)"
+        },
+        "acceptance_criteria": "general_acceptance_criteria apply; schedule is unique and must match reference_schedule exactly"
+      }
+    },
+    {
+      "case_id": "RC07a",
+      "category": 7,
+      "title": "Impossible project deadline (RC01 by Monday 16:00)",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_F": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "A",
+          "kind": "productive",
+          "duration_minutes": 228,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "B",
+          "kind": "productive",
+          "duration_minutes": 196,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "C",
+          "kind": "productive",
+          "duration_minutes": 167,
+          "resources": {
+            "CREW_F": 1
+          }
+        }
+      ],
+      "dependencies": [],
+      "objective": "minimize_makespan",
+      "deadlines": [
+        {
+          "activity": "PROJECT",
+          "latest_finish": "2027-01-11T16:00"
+        }
+      ],
+      "expected": {
+        "tick_minutes": 5,
+        "active_schedules_enumerated": 6,
+        "search_nodes": 16,
+        "expected_status": "INFEASIBLE",
+        "preflight_code": "INFEASIBLE_DEADLINE",
+        "diagnostic": "Best makespan without deadlines is 1610 min (2027-01-12T10:50+01:00).",
+        "proof": "Method A: no active schedule meets the deadlines; left shifts never delay a finish, so no feasible schedule meets them.",
+        "optimal_makespan_minutes": null,
+        "unconstrained_optimal_makespan_minutes": 1610,
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 1605,
+          "schedules_found_below_optimum": 0
+        },
+        "acceptance_criteria": "general_acceptance_criteria apply; status INFEASIBLE with diagnostic INFEASIBLE_DEADLINE; no schedule returned"
+      }
+    },
+    {
+      "case_id": "RC07b",
+      "category": 7,
+      "title": "Tight but feasible deadline equal to the RC01 optimum",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_F": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "A",
+          "kind": "productive",
+          "duration_minutes": 228,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "B",
+          "kind": "productive",
+          "duration_minutes": 196,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "C",
+          "kind": "productive",
+          "duration_minutes": 167,
+          "resources": {
+            "CREW_F": 1
+          }
+        }
+      ],
+      "dependencies": [],
+      "objective": "minimize_makespan",
+      "deadlines": [
+        {
+          "activity": "PROJECT",
+          "latest_finish": "2027-01-12T10:50"
+        }
+      ],
+      "expected": {
+        "tick_minutes": 5,
+        "active_schedules_enumerated": 6,
+        "search_nodes": 16,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 1610,
+        "completion_local": "2027-01-12T10:50+01:00",
+        "distinct_optimal_active_schedules": 2,
+        "unique_optimal_schedule": false,
+        "reference_schedule": [
+          {
+            "id": "A",
+            "kind": "productive",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T11:50+01:00",
+            "segments": [
+              [
+                "2027-01-11T08:00+01:00",
+                "2027-01-11T11:50+01:00"
+              ]
+            ],
+            "raw_minutes": 228,
+            "scheduled_minutes": 230
+          },
+          {
+            "id": "B",
+            "kind": "productive",
+            "start": "2027-01-11T11:50+01:00",
+            "finish": "2027-01-11T15:10+01:00",
+            "segments": [
+              [
+                "2027-01-11T11:50+01:00",
+                "2027-01-11T15:10+01:00"
+              ]
+            ],
+            "raw_minutes": 196,
+            "scheduled_minutes": 200
+          },
+          {
+            "id": "C",
+            "kind": "productive",
+            "start": "2027-01-12T08:00+01:00",
+            "finish": "2027-01-12T10:50+01:00",
+            "segments": [
+              [
+                "2027-01-12T08:00+01:00",
+                "2027-01-12T10:50+01:00"
+              ]
+            ],
+            "raw_minutes": 167,
+            "scheduled_minutes": 170
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "CREW_F",
+            "holder": "A",
+            "units": 1,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T11:50+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "B",
+            "units": 1,
+            "start": "2027-01-11T11:50+01:00",
+            "finish": "2027-01-11T15:10+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "C",
+            "units": 1,
+            "start": "2027-01-12T08:00+01:00",
+            "finish": "2027-01-12T10:50+01:00"
+          }
+        ],
+        "peak_usage": {
+          "CREW_F": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          }
+        },
+        "feasible_not_optimal_example": null,
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 1605,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": true
+        },
+        "acceptance_criteria": "general_acceptance_criteria apply; status and makespan must match; any constraint-valid optimal schedule is accepted"
+      }
+    },
+    {
+      "case_id": "RC07c",
+      "category": 7,
+      "title": "Activity deadline forces a unique order (B by Monday 12:00)",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_F": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "A",
+          "kind": "productive",
+          "duration_minutes": 228,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "B",
+          "kind": "productive",
+          "duration_minutes": 196,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "C",
+          "kind": "productive",
+          "duration_minutes": 167,
+          "resources": {
+            "CREW_F": 1
+          }
+        }
+      ],
+      "dependencies": [],
+      "objective": "minimize_makespan",
+      "deadlines": [
+        {
+          "activity": "B",
+          "latest_finish": "2027-01-11T12:00"
+        }
+      ],
+      "expected": {
+        "tick_minutes": 5,
+        "active_schedules_enumerated": 6,
+        "search_nodes": 16,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 1610,
+        "completion_local": "2027-01-12T10:50+01:00",
+        "distinct_optimal_active_schedules": 1,
+        "unique_optimal_schedule": true,
+        "reference_schedule": [
+          {
+            "id": "B",
+            "kind": "productive",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T11:20+01:00",
+            "segments": [
+              [
+                "2027-01-11T08:00+01:00",
+                "2027-01-11T11:20+01:00"
+              ]
+            ],
+            "raw_minutes": 196,
+            "scheduled_minutes": 200
+          },
+          {
+            "id": "A",
+            "kind": "productive",
+            "start": "2027-01-11T11:20+01:00",
+            "finish": "2027-01-11T15:10+01:00",
+            "segments": [
+              [
+                "2027-01-11T11:20+01:00",
+                "2027-01-11T15:10+01:00"
+              ]
+            ],
+            "raw_minutes": 228,
+            "scheduled_minutes": 230
+          },
+          {
+            "id": "C",
+            "kind": "productive",
+            "start": "2027-01-12T08:00+01:00",
+            "finish": "2027-01-12T10:50+01:00",
+            "segments": [
+              [
+                "2027-01-12T08:00+01:00",
+                "2027-01-12T10:50+01:00"
+              ]
+            ],
+            "raw_minutes": 167,
+            "scheduled_minutes": 170
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "CREW_F",
+            "holder": "B",
+            "units": 1,
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T11:20+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "A",
+            "units": 1,
+            "start": "2027-01-11T11:20+01:00",
+            "finish": "2027-01-11T15:10+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "C",
+            "units": 1,
+            "start": "2027-01-12T08:00+01:00",
+            "finish": "2027-01-12T10:50+01:00"
+          }
+        ],
+        "peak_usage": {
+          "CREW_F": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          }
+        },
+        "feasible_not_optimal_example": {
+          "status": "FEASIBLE (not optimal)",
+          "makespan_minutes": 1670,
+          "completion_local": "2027-01-12T11:50+01:00",
+          "schedule": [
+            {
+              "id": "B",
+              "kind": "productive",
+              "start": "2027-01-11T08:00+01:00",
+              "finish": "2027-01-11T11:20+01:00",
+              "segments": [
+                [
+                  "2027-01-11T08:00+01:00",
+                  "2027-01-11T11:20+01:00"
+                ]
+              ],
+              "raw_minutes": 196,
+              "scheduled_minutes": 200
+            },
+            {
+              "id": "C",
+              "kind": "productive",
+              "start": "2027-01-11T11:20+01:00",
+              "finish": "2027-01-11T14:10+01:00",
+              "segments": [
+                [
+                  "2027-01-11T11:20+01:00",
+                  "2027-01-11T14:10+01:00"
+                ]
+              ],
+              "raw_minutes": 167,
+              "scheduled_minutes": 170
+            },
+            {
+              "id": "A",
+              "kind": "productive",
+              "start": "2027-01-12T08:00+01:00",
+              "finish": "2027-01-12T11:50+01:00",
+              "segments": [
+                [
+                  "2027-01-12T08:00+01:00",
+                  "2027-01-12T11:50+01:00"
+                ]
+              ],
+              "raw_minutes": 228,
+              "scheduled_minutes": 230
+            }
+          ]
+        },
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 1605,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": true
+        },
+        "acceptance_criteria": "general_acceptance_criteria apply; schedule is unique and must match reference_schedule exactly"
+      }
+    },
+    {
+      "case_id": "RC08a",
+      "category": 8,
+      "title": "Missing capacity for a demanded trade",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {},
+      "activities": [
+        {
+          "id": "A",
+          "kind": "productive",
+          "duration_minutes": 60,
+          "resources": {
+            "FERRALLISTA": 1
+          }
+        }
+      ],
+      "dependencies": [],
+      "objective": "minimize_makespan",
+      "expected": {
+        "tick_minutes": 5,
+        "expected_status": "MODEL_INVALID",
+        "preflight_code": "MISSING_INPUT",
+        "diagnostic": "No capacity declared for FERRALLISTA (A).",
+        "solver_invocation": "must not be invoked",
+        "proof": "Preflight rule: the declared input cannot satisfy the stated constraint.",
+        "optimal_makespan_minutes": null,
+        "acceptance_criteria": "general_acceptance_criteria apply; status MODEL_INVALID with diagnostic MISSING_INPUT; no schedule returned"
+      }
+    },
+    {
+      "case_id": "RC08b",
+      "category": 8,
+      "title": "Zero capacity for a demanded trade",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "FERRALLISTA": {
+          "capacity": 0,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "A",
+          "kind": "productive",
+          "duration_minutes": 60,
+          "resources": {
+            "FERRALLISTA": 1
+          }
+        }
+      ],
+      "dependencies": [],
+      "objective": "minimize_makespan",
+      "expected": {
+        "tick_minutes": 5,
+        "expected_status": "INFEASIBLE",
+        "preflight_code": "IMPOSSIBLE_CREW",
+        "diagnostic": "A needs 1 FERRALLISTA; capacity is 0.",
+        "solver_invocation": "preflight may reject; if invoked CP-SAT must return INFEASIBLE",
+        "proof": "Preflight rule: the declared input cannot satisfy the stated constraint.",
+        "optimal_makespan_minutes": null,
+        "acceptance_criteria": "general_acceptance_criteria apply; status INFEASIBLE with diagnostic IMPOSSIBLE_CREW; no schedule returned"
+      }
+    },
+    {
+      "case_id": "RC08c",
+      "category": 8,
+      "title": "Demand exceeds capacity in the only mode",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "FERRALLISTA": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "A",
+          "kind": "productive",
+          "duration_minutes": 60,
+          "resources": {
+            "FERRALLISTA": 2
+          }
+        }
+      ],
+      "dependencies": [],
+      "objective": "minimize_makespan",
+      "expected": {
+        "tick_minutes": 5,
+        "expected_status": "INFEASIBLE",
+        "preflight_code": "IMPOSSIBLE_CREW",
+        "diagnostic": "A needs 2 FERRALLISTA; capacity is 1.",
+        "solver_invocation": "preflight may reject; if invoked CP-SAT must return INFEASIBLE",
+        "proof": "Preflight rule: the declared input cannot satisfy the stated constraint.",
+        "optimal_makespan_minutes": null,
+        "acceptance_criteria": "general_acceptance_criteria apply; status INFEASIBLE with diagnostic IMPOSSIBLE_CREW; no schedule returned"
+      }
+    },
+    {
+      "case_id": "RC08d",
+      "category": 8,
+      "title": "Capacity declared but resource never on calendar within the horizon",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-15T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "INSPECTOR": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": {
+            "working_windows": [],
+            "note": "inspector unavailable"
+          }
+        }
+      },
+      "activities": [
+        {
+          "id": "A",
+          "kind": "inspection",
+          "duration_minutes": 30,
+          "resources": {
+            "INSPECTOR": 1
+          }
+        }
+      ],
+      "dependencies": [],
+      "objective": "minimize_makespan",
+      "expected": {
+        "tick_minutes": 5,
+        "expected_status": "INFEASIBLE",
+        "preflight_code": "NO_FIT",
+        "diagnostic": "A: 30 min exceeds every available uninterrupted window.",
+        "solver_invocation": "preflight may reject; if invoked CP-SAT must return INFEASIBLE",
+        "proof": "Preflight rule: the declared input cannot satisfy the stated constraint.",
+        "optimal_makespan_minutes": null,
+        "acceptance_criteria": "general_acceptance_criteria apply; status INFEASIBLE with diagnostic NO_FIT; no schedule returned"
+      }
+    },
+    {
+      "case_id": "RC09",
+      "category": 9,
+      "title": "Elapsed curing overlaps productive work and crosses a weekend",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-14T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_F": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CREW_C": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "E1-FORM",
+          "kind": "productive",
+          "duration_minutes": 118,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "E1-POUR",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "CREW_C": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        },
+        {
+          "id": "E1-CURE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 1440,
+          "resources": {}
+        },
+        {
+          "id": "E1-STRIP",
+          "kind": "productive",
+          "duration_minutes": 88,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "E2-FORM",
+          "kind": "productive",
+          "duration_minutes": 237,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "E2-POUR",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "CREW_C": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        },
+        {
+          "id": "E2-CURE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 1440,
+          "resources": {}
+        },
+        {
+          "id": "E2-STRIP",
+          "kind": "productive",
+          "duration_minutes": 88,
+          "resources": {
+            "CREW_F": 1
+          }
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "E1-FORM",
+          "successor": "E1-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "E1-POUR",
+          "successor": "E1-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "E1-CURE",
+          "successor": "E1-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "E2-FORM",
+          "successor": "E2-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "E2-POUR",
+          "successor": "E2-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "E2-CURE",
+          "successor": "E2-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "notes": "Curing reserves no crew; CREW_F forms E2 while E1 cures. Only one pour can fit before the Thursday 14:00 cut-off, so one strip lands on Monday.",
+      "expected": {
+        "tick_minutes": 5,
+        "active_schedules_enumerated": 2,
+        "search_nodes": 251,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 5850,
+        "completion_local": "2027-01-18T09:30+01:00",
+        "distinct_optimal_active_schedules": 2,
+        "unique_optimal_schedule": false,
+        "reference_schedule": [
+          {
+            "id": "E1-FORM",
+            "kind": "productive",
+            "start": "2027-01-14T08:00+01:00",
+            "finish": "2027-01-14T10:00+01:00",
+            "segments": [
+              [
+                "2027-01-14T08:00+01:00",
+                "2027-01-14T10:00+01:00"
+              ]
+            ],
+            "raw_minutes": 118,
+            "scheduled_minutes": 120
+          },
+          {
+            "id": "E1-POUR",
+            "kind": "productive",
+            "start": "2027-01-14T10:00+01:00",
+            "finish": "2027-01-14T11:00+01:00",
+            "segments": [
+              [
+                "2027-01-14T10:00+01:00",
+                "2027-01-14T11:00+01:00"
+              ]
+            ],
+            "raw_minutes": 57,
+            "scheduled_minutes": 60
+          },
+          {
+            "id": "E2-FORM",
+            "kind": "productive",
+            "start": "2027-01-14T10:00+01:00",
+            "finish": "2027-01-14T14:00+01:00",
+            "segments": [
+              [
+                "2027-01-14T10:00+01:00",
+                "2027-01-14T14:00+01:00"
+              ]
+            ],
+            "raw_minutes": 237,
+            "scheduled_minutes": 240
+          },
+          {
+            "id": "E1-CURE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-14T11:00+01:00",
+            "finish": "2027-01-15T11:00+01:00",
+            "segments": [
+              [
+                "2027-01-14T11:00+01:00",
+                "2027-01-15T11:00+01:00"
+              ]
+            ],
+            "raw_minutes": 1440,
+            "scheduled_minutes": 1440
+          },
+          {
+            "id": "E2-POUR",
+            "kind": "productive",
+            "start": "2027-01-15T08:00+01:00",
+            "finish": "2027-01-15T09:00+01:00",
+            "segments": [
+              [
+                "2027-01-15T08:00+01:00",
+                "2027-01-15T09:00+01:00"
+              ]
+            ],
+            "raw_minutes": 57,
+            "scheduled_minutes": 60
+          },
+          {
+            "id": "E2-CURE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-15T09:00+01:00",
+            "finish": "2027-01-16T09:00+01:00",
+            "segments": [
+              [
+                "2027-01-15T09:00+01:00",
+                "2027-01-16T09:00+01:00"
+              ]
+            ],
+            "raw_minutes": 1440,
+            "scheduled_minutes": 1440
+          },
+          {
+            "id": "E1-STRIP",
+            "kind": "productive",
+            "start": "2027-01-15T11:00+01:00",
+            "finish": "2027-01-15T12:30+01:00",
+            "segments": [
+              [
+                "2027-01-15T11:00+01:00",
+                "2027-01-15T12:30+01:00"
+              ]
+            ],
+            "raw_minutes": 88,
+            "scheduled_minutes": 90
+          },
+          {
+            "id": "E2-STRIP",
+            "kind": "productive",
+            "start": "2027-01-18T08:00+01:00",
+            "finish": "2027-01-18T09:30+01:00",
+            "segments": [
+              [
+                "2027-01-18T08:00+01:00",
+                "2027-01-18T09:30+01:00"
+              ]
+            ],
+            "raw_minutes": 88,
+            "scheduled_minutes": 90
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "CREW_F",
+            "holder": "E1-FORM",
+            "units": 1,
+            "start": "2027-01-14T08:00+01:00",
+            "finish": "2027-01-14T10:00+01:00"
+          },
+          {
+            "resource": "CREW_C",
+            "holder": "E1-POUR",
+            "units": 1,
+            "start": "2027-01-14T10:00+01:00",
+            "finish": "2027-01-14T11:00+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "E2-FORM",
+            "units": 1,
+            "start": "2027-01-14T10:00+01:00",
+            "finish": "2027-01-14T14:00+01:00"
+          },
+          {
+            "resource": "CREW_C",
+            "holder": "E2-POUR",
+            "units": 1,
+            "start": "2027-01-15T08:00+01:00",
+            "finish": "2027-01-15T09:00+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "E1-STRIP",
+            "units": 1,
+            "start": "2027-01-15T11:00+01:00",
+            "finish": "2027-01-15T12:30+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "E2-STRIP",
+            "units": 1,
+            "start": "2027-01-18T08:00+01:00",
+            "finish": "2027-01-18T09:30+01:00"
+          }
+        ],
+        "peak_usage": {
+          "CREW_F": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "CREW_C": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          }
+        },
+        "feasible_not_optimal_example": null,
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists.",
+        "brute_force_check": {
+          "skipped": "split activity or time-indexed search space above 3e6 start combinations; Method A alone proves optimality"
+        },
+        "acceptance_criteria": "general_acceptance_criteria apply; status and makespan must match; any constraint-valid optimal schedule is accepted"
+      }
+    },
+    {
+      "case_id": "RC10a",
+      "category": 10,
+      "title": "600 min activity, interruption authorized (max 2 segments, min 120 min)",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-15T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_F": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "PREP",
+          "kind": "productive",
+          "duration_minutes": 240,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "S",
+          "kind": "productive",
+          "duration_minutes": 597,
+          "resources": {
+            "CREW_F": 1
+          },
+          "interruption": "split_allowed",
+          "split": {
+            "min_segment_minutes": 120,
+            "max_segments": 2,
+            "authorization": "HYPOTHETICAL test authorization"
+          }
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "PREP",
+          "successor": "S",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "expected": {
+        "tick_minutes": 5,
+        "active_schedules_enumerated": 1,
+        "search_nodes": 3,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 4680,
+        "completion_local": "2027-01-18T14:00+01:00",
+        "distinct_optimal_active_schedules": 1,
+        "unique_optimal_schedule": true,
+        "reference_schedule": [
+          {
+            "id": "PREP",
+            "kind": "productive",
+            "start": "2027-01-15T08:00+01:00",
+            "finish": "2027-01-15T12:00+01:00",
+            "segments": [
+              [
+                "2027-01-15T08:00+01:00",
+                "2027-01-15T12:00+01:00"
+              ]
+            ],
+            "raw_minutes": 240,
+            "scheduled_minutes": 240
+          },
+          {
+            "id": "S",
+            "kind": "productive",
+            "start": "2027-01-15T12:00+01:00",
+            "finish": "2027-01-18T14:00+01:00",
+            "segments": [
+              [
+                "2027-01-15T12:00+01:00",
+                "2027-01-15T16:00+01:00"
+              ],
+              [
+                "2027-01-18T08:00+01:00",
+                "2027-01-18T14:00+01:00"
+              ]
+            ],
+            "raw_minutes": 597,
+            "scheduled_minutes": 600
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "CREW_F",
+            "holder": "PREP",
+            "units": 1,
+            "start": "2027-01-15T08:00+01:00",
+            "finish": "2027-01-15T12:00+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "S",
+            "units": 1,
+            "start": "2027-01-15T12:00+01:00",
+            "finish": "2027-01-15T16:00+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "S",
+            "units": 1,
+            "start": "2027-01-18T08:00+01:00",
+            "finish": "2027-01-18T14:00+01:00"
+          }
+        ],
+        "peak_usage": {
+          "CREW_F": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          }
+        },
+        "feasible_not_optimal_example": null,
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists.",
+        "brute_force_check": {
+          "skipped": "split activity or time-indexed search space above 3e6 start combinations; Method A alone proves optimality"
+        },
+        "acceptance_criteria": "general_acceptance_criteria apply; schedule is unique and must match reference_schedule exactly"
+      }
+    },
+    {
+      "case_id": "RC10b",
+      "category": 10,
+      "title": "Same 600 min activity without interruption authorization",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-15T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_F": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "PREP",
+          "kind": "productive",
+          "duration_minutes": 240,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "S",
+          "kind": "productive",
+          "duration_minutes": 597,
+          "resources": {
+            "CREW_F": 1
+          }
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "PREP",
+          "successor": "S",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "expected": {
+        "tick_minutes": 5,
+        "expected_status": "INFEASIBLE",
+        "preflight_code": "NO_FIT",
+        "diagnostic": "S: 597 min exceeds every available uninterrupted window.",
+        "solver_invocation": "preflight may reject; if invoked CP-SAT must return INFEASIBLE",
+        "proof": "Preflight rule: the declared input cannot satisfy the stated constraint.",
+        "optimal_makespan_minutes": null,
+        "acceptance_criteria": "general_acceptance_criteria apply; status INFEASIBLE with diagnostic NO_FIT; no schedule returned"
+      }
+    },
+    {
+      "case_id": "RC10c",
+      "category": 10,
+      "title": "Authorized split rejected by minimum segment length (min 300 min)",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-15T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_F": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "PREP",
+          "kind": "productive",
+          "duration_minutes": 240,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "S",
+          "kind": "productive",
+          "duration_minutes": 597,
+          "resources": {
+            "CREW_F": 1
+          },
+          "interruption": "split_allowed",
+          "split": {
+            "min_segment_minutes": 300,
+            "max_segments": 2,
+            "authorization": "HYPOTHETICAL test authorization"
+          }
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "PREP",
+          "successor": "S",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "expected": {
+        "tick_minutes": 5,
+        "active_schedules_enumerated": 1,
+        "search_nodes": 3,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 6060,
+        "completion_local": "2027-01-19T13:00+01:00",
+        "distinct_optimal_active_schedules": 1,
+        "unique_optimal_schedule": true,
+        "reference_schedule": [
+          {
+            "id": "PREP",
+            "kind": "productive",
+            "start": "2027-01-15T08:00+01:00",
+            "finish": "2027-01-15T12:00+01:00",
+            "segments": [
+              [
+                "2027-01-15T08:00+01:00",
+                "2027-01-15T12:00+01:00"
+              ]
+            ],
+            "raw_minutes": 240,
+            "scheduled_minutes": 240
+          },
+          {
+            "id": "S",
+            "kind": "productive",
+            "start": "2027-01-18T11:00+01:00",
+            "finish": "2027-01-19T13:00+01:00",
+            "segments": [
+              [
+                "2027-01-18T11:00+01:00",
+                "2027-01-18T16:00+01:00"
+              ],
+              [
+                "2027-01-19T08:00+01:00",
+                "2027-01-19T13:00+01:00"
+              ]
+            ],
+            "raw_minutes": 597,
+            "scheduled_minutes": 600
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "CREW_F",
+            "holder": "PREP",
+            "units": 1,
+            "start": "2027-01-15T08:00+01:00",
+            "finish": "2027-01-15T12:00+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "S",
+            "units": 1,
+            "start": "2027-01-18T11:00+01:00",
+            "finish": "2027-01-18T16:00+01:00"
+          },
+          {
+            "resource": "CREW_F",
+            "holder": "S",
+            "units": 1,
+            "start": "2027-01-19T08:00+01:00",
+            "finish": "2027-01-19T13:00+01:00"
+          }
+        ],
+        "peak_usage": {
+          "CREW_F": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          }
+        },
+        "feasible_not_optimal_example": null,
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists.",
+        "brute_force_check": {
+          "skipped": "split activity or time-indexed search space above 3e6 start combinations; Method A alone proves optimality"
+        },
+        "acceptance_criteria": "general_acceptance_criteria apply; schedule is unique and must match reference_schedule exactly"
+      }
+    },
+    {
+      "case_id": "RC11a",
+      "category": 11,
+      "title": "Concrete supply 6 m3/h shared by two pours, delivery window 08:00-14:00",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_C1": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CREW_C2": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "SUPPLY": {
+          "capacity": 6,
+          "unit": "m3/h",
+          "kind": "renewable",
+          "calendar": {
+            "working_windows": [
+              {
+                "weekday": 1,
+                "start": "08:00",
+                "end": "14:00"
+              },
+              {
+                "weekday": 2,
+                "start": "08:00",
+                "end": "14:00"
+              },
+              {
+                "weekday": 3,
+                "start": "08:00",
+                "end": "14:00"
+              },
+              {
+                "weekday": 4,
+                "start": "08:00",
+                "end": "14:00"
+              },
+              {
+                "weekday": 5,
+                "start": "08:00",
+                "end": "14:00"
+              }
+            ]
+          }
+        }
+      },
+      "activities": [
+        {
+          "id": "P1",
+          "kind": "productive",
+          "duration_minutes": 90,
+          "resources": {
+            "CREW_C1": 1,
+            "SUPPLY": 6
+          },
+          "not_before": "2027-01-11T12:00",
+          "derivation": "9.0 m3 / min(placement 10 m3/h, supply 6 m3/h) = 90 min"
+        },
+        {
+          "id": "P2",
+          "kind": "productive",
+          "duration_minutes": 45,
+          "resources": {
+            "CREW_C2": 1,
+            "SUPPLY": 6
+          },
+          "not_before": "2027-01-11T12:00",
+          "derivation": "4.5 m3 / min(10, 6) m3/h = 45 min"
+        }
+      ],
+      "dependencies": [],
+      "objective": "minimize_makespan",
+      "notes": "Supply is a cumulative rate resource on its own delivery calendar. Both pours draw 6 m3/h, so they are serial. Only 120 min of delivery remain after 12:00.",
+      "expected": {
+        "tick_minutes": 5,
+        "active_schedules_enumerated": 2,
+        "search_nodes": 5,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 1485,
+        "completion_local": "2027-01-12T08:45+01:00",
+        "distinct_optimal_active_schedules": 1,
+        "unique_optimal_schedule": true,
+        "reference_schedule": [
+          {
+            "id": "P1",
+            "kind": "productive",
+            "start": "2027-01-11T12:00+01:00",
+            "finish": "2027-01-11T13:30+01:00",
+            "segments": [
+              [
+                "2027-01-11T12:00+01:00",
+                "2027-01-11T13:30+01:00"
+              ]
+            ],
+            "raw_minutes": 90,
+            "scheduled_minutes": 90
+          },
+          {
+            "id": "P2",
+            "kind": "productive",
+            "start": "2027-01-12T08:00+01:00",
+            "finish": "2027-01-12T08:45+01:00",
+            "segments": [
+              [
+                "2027-01-12T08:00+01:00",
+                "2027-01-12T08:45+01:00"
+              ]
+            ],
+            "raw_minutes": 45,
+            "scheduled_minutes": 45
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "CREW_C1",
+            "holder": "P1",
+            "units": 1,
+            "start": "2027-01-11T12:00+01:00",
+            "finish": "2027-01-11T13:30+01:00"
+          },
+          {
+            "resource": "SUPPLY",
+            "holder": "P1",
+            "units": 6,
+            "start": "2027-01-11T12:00+01:00",
+            "finish": "2027-01-11T13:30+01:00"
+          },
+          {
+            "resource": "CREW_C2",
+            "holder": "P2",
+            "units": 1,
+            "start": "2027-01-12T08:00+01:00",
+            "finish": "2027-01-12T08:45+01:00"
+          },
+          {
+            "resource": "SUPPLY",
+            "holder": "P2",
+            "units": 6,
+            "start": "2027-01-12T08:00+01:00",
+            "finish": "2027-01-12T08:45+01:00"
+          }
+        ],
+        "peak_usage": {
+          "CREW_C1": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "CREW_C2": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "SUPPLY": {
+            "peak_units": 6,
+            "declared_capacity": 6
+          }
+        },
+        "feasible_not_optimal_example": {
+          "status": "FEASIBLE (not optimal)",
+          "makespan_minutes": 1530,
+          "completion_local": "2027-01-12T09:30+01:00",
+          "schedule": [
+            {
+              "id": "P2",
+              "kind": "productive",
+              "start": "2027-01-11T12:00+01:00",
+              "finish": "2027-01-11T12:45+01:00",
+              "segments": [
+                [
+                  "2027-01-11T12:00+01:00",
+                  "2027-01-11T12:45+01:00"
+                ]
+              ],
+              "raw_minutes": 45,
+              "scheduled_minutes": 45
+            },
+            {
+              "id": "P1",
+              "kind": "productive",
+              "start": "2027-01-12T08:00+01:00",
+              "finish": "2027-01-12T09:30+01:00",
+              "segments": [
+                [
+                  "2027-01-12T08:00+01:00",
+                  "2027-01-12T09:30+01:00"
+                ]
+              ],
+              "raw_minutes": 90,
+              "scheduled_minutes": 90
+            }
+          ]
+        },
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 1480,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": true
+        },
+        "acceptance_criteria": "general_acceptance_criteria apply; schedule is unique and must match reference_schedule exactly"
+      }
+    },
+    {
+      "case_id": "RC11b",
+      "category": 11,
+      "title": "Same pours with 12 m3/h supply (two trucks in parallel)",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_C1": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CREW_C2": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "SUPPLY": {
+          "capacity": 12,
+          "unit": "m3/h",
+          "kind": "renewable",
+          "calendar": {
+            "working_windows": [
+              {
+                "weekday": 1,
+                "start": "08:00",
+                "end": "14:00"
+              },
+              {
+                "weekday": 2,
+                "start": "08:00",
+                "end": "14:00"
+              },
+              {
+                "weekday": 3,
+                "start": "08:00",
+                "end": "14:00"
+              },
+              {
+                "weekday": 4,
+                "start": "08:00",
+                "end": "14:00"
+              },
+              {
+                "weekday": 5,
+                "start": "08:00",
+                "end": "14:00"
+              }
+            ]
+          }
+        }
+      },
+      "activities": [
+        {
+          "id": "P1",
+          "kind": "productive",
+          "duration_minutes": 90,
+          "resources": {
+            "CREW_C1": 1,
+            "SUPPLY": 6
+          },
+          "not_before": "2027-01-11T12:00"
+        },
+        {
+          "id": "P2",
+          "kind": "productive",
+          "duration_minutes": 45,
+          "resources": {
+            "CREW_C2": 1,
+            "SUPPLY": 6
+          },
+          "not_before": "2027-01-11T12:00"
+        }
+      ],
+      "dependencies": [],
+      "objective": "minimize_makespan",
+      "expected": {
+        "tick_minutes": 5,
+        "active_schedules_enumerated": 1,
+        "search_nodes": 5,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 330,
+        "completion_local": "2027-01-11T13:30+01:00",
+        "distinct_optimal_active_schedules": 1,
+        "unique_optimal_schedule": true,
+        "reference_schedule": [
+          {
+            "id": "P1",
+            "kind": "productive",
+            "start": "2027-01-11T12:00+01:00",
+            "finish": "2027-01-11T13:30+01:00",
+            "segments": [
+              [
+                "2027-01-11T12:00+01:00",
+                "2027-01-11T13:30+01:00"
+              ]
+            ],
+            "raw_minutes": 90,
+            "scheduled_minutes": 90
+          },
+          {
+            "id": "P2",
+            "kind": "productive",
+            "start": "2027-01-11T12:00+01:00",
+            "finish": "2027-01-11T12:45+01:00",
+            "segments": [
+              [
+                "2027-01-11T12:00+01:00",
+                "2027-01-11T12:45+01:00"
+              ]
+            ],
+            "raw_minutes": 45,
+            "scheduled_minutes": 45
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "CREW_C1",
+            "holder": "P1",
+            "units": 1,
+            "start": "2027-01-11T12:00+01:00",
+            "finish": "2027-01-11T13:30+01:00"
+          },
+          {
+            "resource": "SUPPLY",
+            "holder": "P1",
+            "units": 6,
+            "start": "2027-01-11T12:00+01:00",
+            "finish": "2027-01-11T13:30+01:00"
+          },
+          {
+            "resource": "CREW_C2",
+            "holder": "P2",
+            "units": 1,
+            "start": "2027-01-11T12:00+01:00",
+            "finish": "2027-01-11T12:45+01:00"
+          },
+          {
+            "resource": "SUPPLY",
+            "holder": "P2",
+            "units": 6,
+            "start": "2027-01-11T12:00+01:00",
+            "finish": "2027-01-11T12:45+01:00"
+          }
+        ],
+        "peak_usage": {
+          "CREW_C1": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "CREW_C2": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "SUPPLY": {
+            "peak_units": 12,
+            "declared_capacity": 12
+          }
+        },
+        "feasible_not_optimal_example": null,
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 325,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": true
+        },
+        "acceptance_criteria": "general_acceptance_criteria apply; schedule is unique and must match reference_schedule exactly"
+      }
+    },
+    {
+      "case_id": "R0-15",
+      "category": 0,
+      "title": "Controlled Stage 5.4A fixture with resource constraints enforced (15-min tick)",
+      "tick_minutes": 15,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-04T08:00",
+      "horizon_end": "2027-03-01T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": [
+          "2027-01-06"
+        ]
+      },
+      "resources": {
+        "OF. 1ª ENCOFRADOR": {
+          "capacity": 2,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "PEÓN ESPECIAL": {
+          "capacity": 3,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "OF. 1ª FERRALLISTA": {
+          "capacity": 2,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "OFICIAL 1ª": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "VIBRADOR": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "INSPECTOR": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "B-CURE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 1440,
+          "resources": {}
+        },
+        {
+          "id": "B-FORM",
+          "kind": "productive",
+          "duration_minutes": 57.12,
+          "resources": {
+            "OF. 1ª ENCOFRADOR": 2,
+            "PEÓN ESPECIAL": 1
+          }
+        },
+        {
+          "id": "B-INSP",
+          "kind": "inspection",
+          "duration_minutes": 30.0,
+          "resources": {
+            "INSPECTOR": 1
+          }
+        },
+        {
+          "id": "B-POUR",
+          "kind": "productive",
+          "duration_minutes": 14.4,
+          "resources": {
+            "PEÓN ESPECIAL": 2,
+            "OFICIAL 1ª": 1,
+            "VIBRADOR": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        },
+        {
+          "id": "B-REBAR",
+          "kind": "productive",
+          "duration_minutes": 34.8,
+          "resources": {
+            "OF. 1ª FERRALLISTA": 2
+          }
+        },
+        {
+          "id": "B-STRIKE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 10080,
+          "resources": {}
+        },
+        {
+          "id": "B-STRIP",
+          "kind": "productive",
+          "duration_minutes": 48.96,
+          "resources": {
+            "OF. 1ª ENCOFRADOR": 2,
+            "PEÓN ESPECIAL": 1
+          }
+        },
+        {
+          "id": "C-CURE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 1440,
+          "resources": {}
+        },
+        {
+          "id": "C-FORM",
+          "kind": "productive",
+          "duration_minutes": 36.0,
+          "resources": {
+            "OF. 1ª ENCOFRADOR": 2,
+            "PEÓN ESPECIAL": 1
+          }
+        },
+        {
+          "id": "C-INSP",
+          "kind": "inspection",
+          "duration_minutes": 30.0,
+          "resources": {
+            "INSPECTOR": 1
+          }
+        },
+        {
+          "id": "C-POUR",
+          "kind": "productive",
+          "duration_minutes": 8.64,
+          "resources": {
+            "PEÓN ESPECIAL": 2,
+            "OFICIAL 1ª": 1,
+            "VIBRADOR": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        },
+        {
+          "id": "C-REBAR",
+          "kind": "productive",
+          "duration_minutes": 19.2,
+          "resources": {
+            "OF. 1ª FERRALLISTA": 2
+          }
+        },
+        {
+          "id": "C-STRIKE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 1440,
+          "resources": {}
+        },
+        {
+          "id": "C-STRIP",
+          "kind": "productive",
+          "duration_minutes": 43.2,
+          "resources": {
+            "OF. 1ª ENCOFRADOR": 2,
+            "PEÓN ESPECIAL": 1
+          }
+        },
+        {
+          "id": "S-CURE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 1440,
+          "resources": {}
+        },
+        {
+          "id": "S-FORM",
+          "kind": "productive",
+          "duration_minutes": 171.6,
+          "resources": {
+            "OF. 1ª ENCOFRADOR": 2,
+            "PEÓN ESPECIAL": 1
+          }
+        },
+        {
+          "id": "S-INSP",
+          "kind": "inspection",
+          "duration_minutes": 30.0,
+          "resources": {
+            "INSPECTOR": 1
+          }
+        },
+        {
+          "id": "S-POUR",
+          "kind": "productive",
+          "duration_minutes": 43.2,
+          "resources": {
+            "PEÓN ESPECIAL": 2,
+            "OFICIAL 1ª": 1,
+            "VIBRADOR": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        },
+        {
+          "id": "S-REBAR",
+          "kind": "productive",
+          "duration_minutes": 51.6,
+          "resources": {
+            "OF. 1ª FERRALLISTA": 2
+          }
+        },
+        {
+          "id": "S-STRIKE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 10080,
+          "resources": {}
+        },
+        {
+          "id": "S-STRIP",
+          "kind": "productive",
+          "duration_minutes": 93.6,
+          "resources": {
+            "OF. 1ª ENCOFRADOR": 2,
+            "PEÓN ESPECIAL": 1
+          }
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "B-CURE",
+          "successor": "B-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-CURE",
+          "successor": "S-FORM",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-FORM",
+          "successor": "B-INSP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-FORM",
+          "successor": "B-REBAR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-INSP",
+          "successor": "B-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-POUR",
+          "successor": "B-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-POUR",
+          "successor": "B-STRIKE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-REBAR",
+          "successor": "B-INSP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-STRIKE",
+          "successor": "B-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-CURE",
+          "successor": "B-FORM",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-CURE",
+          "successor": "C-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-FORM",
+          "successor": "C-INSP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-INSP",
+          "successor": "C-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-POUR",
+          "successor": "C-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-POUR",
+          "successor": "C-STRIKE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-REBAR",
+          "successor": "C-FORM",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-REBAR",
+          "successor": "C-INSP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-STRIKE",
+          "successor": "C-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-STRIP",
+          "successor": "B-FORM",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-CURE",
+          "successor": "S-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-FORM",
+          "successor": "S-INSP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-FORM",
+          "successor": "S-REBAR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-INSP",
+          "successor": "S-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-POUR",
+          "successor": "S-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-POUR",
+          "successor": "S-STRIKE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-REBAR",
+          "successor": "S-INSP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-STRIKE",
+          "successor": "S-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-STRIP",
+          "successor": "B-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "brute_force": false,
+      "source": "research/implementation/stage5_3/scheduling_handover.json + research/planning/stage5_4_preparation/controlled_scheduling_inputs.json",
+      "notes": "Existing regression at 15 min; proposed default at 5 min.",
+      "expected": {
+        "tick_minutes": 15,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 14880,
+        "completion_local": "2027-01-14T16:00+01:00",
+        "unique_optimal_schedule": false,
+        "distinct_optimal_active_schedules": "not enumerated",
+        "reference_schedule": [
+          {
+            "id": "C-REBAR",
+            "kind": "productive",
+            "start": "2027-01-04T08:00+01:00",
+            "finish": "2027-01-04T08:30+01:00",
+            "segments": [
+              [
+                "2027-01-04T08:00+01:00",
+                "2027-01-04T08:30+01:00"
+              ]
+            ],
+            "raw_minutes": 19.2,
+            "scheduled_minutes": 30
+          },
+          {
+            "id": "C-FORM",
+            "kind": "productive",
+            "start": "2027-01-04T08:30+01:00",
+            "finish": "2027-01-04T09:15+01:00",
+            "segments": [
+              [
+                "2027-01-04T08:30+01:00",
+                "2027-01-04T09:15+01:00"
+              ]
+            ],
+            "raw_minutes": 36.0,
+            "scheduled_minutes": 45
+          },
+          {
+            "id": "C-INSP",
+            "kind": "inspection",
+            "start": "2027-01-04T09:15+01:00",
+            "finish": "2027-01-04T09:45+01:00",
+            "segments": [
+              [
+                "2027-01-04T09:15+01:00",
+                "2027-01-04T09:45+01:00"
+              ]
+            ],
+            "raw_minutes": 30.0,
+            "scheduled_minutes": 30
+          },
+          {
+            "id": "C-POUR",
+            "kind": "productive",
+            "start": "2027-01-04T09:45+01:00",
+            "finish": "2027-01-04T10:00+01:00",
+            "segments": [
+              [
+                "2027-01-04T09:45+01:00",
+                "2027-01-04T10:00+01:00"
+              ]
+            ],
+            "raw_minutes": 8.64,
+            "scheduled_minutes": 15
+          },
+          {
+            "id": "C-CURE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-04T10:00+01:00",
+            "finish": "2027-01-05T10:00+01:00",
+            "segments": [
+              [
+                "2027-01-04T10:00+01:00",
+                "2027-01-05T10:00+01:00"
+              ]
+            ],
+            "raw_minutes": 1440,
+            "scheduled_minutes": 1440
+          },
+          {
+            "id": "C-STRIKE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-04T10:00+01:00",
+            "finish": "2027-01-05T10:00+01:00",
+            "segments": [
+              [
+                "2027-01-04T10:00+01:00",
+                "2027-01-05T10:00+01:00"
+              ]
+            ],
+            "raw_minutes": 1440,
+            "scheduled_minutes": 1440
+          },
+          {
+            "id": "C-STRIP",
+            "kind": "productive",
+            "start": "2027-01-05T10:00+01:00",
+            "finish": "2027-01-05T10:45+01:00",
+            "segments": [
+              [
+                "2027-01-05T10:00+01:00",
+                "2027-01-05T10:45+01:00"
+              ]
+            ],
+            "raw_minutes": 43.2,
+            "scheduled_minutes": 45
+          },
+          {
+            "id": "B-FORM",
+            "kind": "productive",
+            "start": "2027-01-05T10:45+01:00",
+            "finish": "2027-01-05T11:45+01:00",
+            "segments": [
+              [
+                "2027-01-05T10:45+01:00",
+                "2027-01-05T11:45+01:00"
+              ]
+            ],
+            "raw_minutes": 57.12,
+            "scheduled_minutes": 60
+          },
+          {
+            "id": "B-REBAR",
+            "kind": "productive",
+            "start": "2027-01-05T11:45+01:00",
+            "finish": "2027-01-05T12:30+01:00",
+            "segments": [
+              [
+                "2027-01-05T11:45+01:00",
+                "2027-01-05T12:30+01:00"
+              ]
+            ],
+            "raw_minutes": 34.8,
+            "scheduled_minutes": 45
+          },
+          {
+            "id": "B-INSP",
+            "kind": "inspection",
+            "start": "2027-01-05T12:30+01:00",
+            "finish": "2027-01-05T13:00+01:00",
+            "segments": [
+              [
+                "2027-01-05T12:30+01:00",
+                "2027-01-05T13:00+01:00"
+              ]
+            ],
+            "raw_minutes": 30.0,
+            "scheduled_minutes": 30
+          },
+          {
+            "id": "B-POUR",
+            "kind": "productive",
+            "start": "2027-01-05T13:00+01:00",
+            "finish": "2027-01-05T13:15+01:00",
+            "segments": [
+              [
+                "2027-01-05T13:00+01:00",
+                "2027-01-05T13:15+01:00"
+              ]
+            ],
+            "raw_minutes": 14.4,
+            "scheduled_minutes": 15
+          },
+          {
+            "id": "B-CURE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-05T13:15+01:00",
+            "finish": "2027-01-06T13:15+01:00",
+            "segments": [
+              [
+                "2027-01-05T13:15+01:00",
+                "2027-01-06T13:15+01:00"
+              ]
+            ],
+            "raw_minutes": 1440,
+            "scheduled_minutes": 1440
+          },
+          {
+            "id": "B-STRIKE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-05T13:15+01:00",
+            "finish": "2027-01-12T13:15+01:00",
+            "segments": [
+              [
+                "2027-01-05T13:15+01:00",
+                "2027-01-12T13:15+01:00"
+              ]
+            ],
+            "raw_minutes": 10080,
+            "scheduled_minutes": 10080
+          },
+          {
+            "id": "S-FORM",
+            "kind": "productive",
+            "start": "2027-01-07T08:00+01:00",
+            "finish": "2027-01-07T11:00+01:00",
+            "segments": [
+              [
+                "2027-01-07T08:00+01:00",
+                "2027-01-07T11:00+01:00"
+              ]
+            ],
+            "raw_minutes": 171.6,
+            "scheduled_minutes": 180
+          },
+          {
+            "id": "S-REBAR",
+            "kind": "productive",
+            "start": "2027-01-07T11:00+01:00",
+            "finish": "2027-01-07T12:00+01:00",
+            "segments": [
+              [
+                "2027-01-07T11:00+01:00",
+                "2027-01-07T12:00+01:00"
+              ]
+            ],
+            "raw_minutes": 51.6,
+            "scheduled_minutes": 60
+          },
+          {
+            "id": "S-INSP",
+            "kind": "inspection",
+            "start": "2027-01-07T12:00+01:00",
+            "finish": "2027-01-07T12:30+01:00",
+            "segments": [
+              [
+                "2027-01-07T12:00+01:00",
+                "2027-01-07T12:30+01:00"
+              ]
+            ],
+            "raw_minutes": 30.0,
+            "scheduled_minutes": 30
+          },
+          {
+            "id": "S-POUR",
+            "kind": "productive",
+            "start": "2027-01-07T12:30+01:00",
+            "finish": "2027-01-07T13:15+01:00",
+            "segments": [
+              [
+                "2027-01-07T12:30+01:00",
+                "2027-01-07T13:15+01:00"
+              ]
+            ],
+            "raw_minutes": 43.2,
+            "scheduled_minutes": 45
+          },
+          {
+            "id": "S-CURE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-07T13:15+01:00",
+            "finish": "2027-01-08T13:15+01:00",
+            "segments": [
+              [
+                "2027-01-07T13:15+01:00",
+                "2027-01-08T13:15+01:00"
+              ]
+            ],
+            "raw_minutes": 1440,
+            "scheduled_minutes": 1440
+          },
+          {
+            "id": "S-STRIKE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-07T13:15+01:00",
+            "finish": "2027-01-14T13:15+01:00",
+            "segments": [
+              [
+                "2027-01-07T13:15+01:00",
+                "2027-01-14T13:15+01:00"
+              ]
+            ],
+            "raw_minutes": 10080,
+            "scheduled_minutes": 10080
+          },
+          {
+            "id": "S-STRIP",
+            "kind": "productive",
+            "start": "2027-01-14T13:15+01:00",
+            "finish": "2027-01-14T15:00+01:00",
+            "segments": [
+              [
+                "2027-01-14T13:15+01:00",
+                "2027-01-14T15:00+01:00"
+              ]
+            ],
+            "raw_minutes": 93.6,
+            "scheduled_minutes": 105
+          },
+          {
+            "id": "B-STRIP",
+            "kind": "productive",
+            "start": "2027-01-14T15:00+01:00",
+            "finish": "2027-01-14T16:00+01:00",
+            "segments": [
+              [
+                "2027-01-14T15:00+01:00",
+                "2027-01-14T16:00+01:00"
+              ]
+            ],
+            "raw_minutes": 48.96,
+            "scheduled_minutes": 60
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "OF. 1ª FERRALLISTA",
+            "holder": "C-REBAR",
+            "units": 2,
+            "start": "2027-01-04T08:00+01:00",
+            "finish": "2027-01-04T08:30+01:00"
+          },
+          {
+            "resource": "OF. 1ª ENCOFRADOR",
+            "holder": "C-FORM",
+            "units": 2,
+            "start": "2027-01-04T08:30+01:00",
+            "finish": "2027-01-04T09:15+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "C-FORM",
+            "units": 1,
+            "start": "2027-01-04T08:30+01:00",
+            "finish": "2027-01-04T09:15+01:00"
+          },
+          {
+            "resource": "INSPECTOR",
+            "holder": "C-INSP",
+            "units": 1,
+            "start": "2027-01-04T09:15+01:00",
+            "finish": "2027-01-04T09:45+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "C-POUR",
+            "units": 2,
+            "start": "2027-01-04T09:45+01:00",
+            "finish": "2027-01-04T10:00+01:00"
+          },
+          {
+            "resource": "OFICIAL 1ª",
+            "holder": "C-POUR",
+            "units": 1,
+            "start": "2027-01-04T09:45+01:00",
+            "finish": "2027-01-04T10:00+01:00"
+          },
+          {
+            "resource": "VIBRADOR",
+            "holder": "C-POUR",
+            "units": 1,
+            "start": "2027-01-04T09:45+01:00",
+            "finish": "2027-01-04T10:00+01:00"
+          },
+          {
+            "resource": "OF. 1ª ENCOFRADOR",
+            "holder": "C-STRIP",
+            "units": 2,
+            "start": "2027-01-05T10:00+01:00",
+            "finish": "2027-01-05T10:45+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "C-STRIP",
+            "units": 1,
+            "start": "2027-01-05T10:00+01:00",
+            "finish": "2027-01-05T10:45+01:00"
+          },
+          {
+            "resource": "OF. 1ª ENCOFRADOR",
+            "holder": "B-FORM",
+            "units": 2,
+            "start": "2027-01-05T10:45+01:00",
+            "finish": "2027-01-05T11:45+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "B-FORM",
+            "units": 1,
+            "start": "2027-01-05T10:45+01:00",
+            "finish": "2027-01-05T11:45+01:00"
+          },
+          {
+            "resource": "OF. 1ª FERRALLISTA",
+            "holder": "B-REBAR",
+            "units": 2,
+            "start": "2027-01-05T11:45+01:00",
+            "finish": "2027-01-05T12:30+01:00"
+          },
+          {
+            "resource": "INSPECTOR",
+            "holder": "B-INSP",
+            "units": 1,
+            "start": "2027-01-05T12:30+01:00",
+            "finish": "2027-01-05T13:00+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "B-POUR",
+            "units": 2,
+            "start": "2027-01-05T13:00+01:00",
+            "finish": "2027-01-05T13:15+01:00"
+          },
+          {
+            "resource": "OFICIAL 1ª",
+            "holder": "B-POUR",
+            "units": 1,
+            "start": "2027-01-05T13:00+01:00",
+            "finish": "2027-01-05T13:15+01:00"
+          },
+          {
+            "resource": "VIBRADOR",
+            "holder": "B-POUR",
+            "units": 1,
+            "start": "2027-01-05T13:00+01:00",
+            "finish": "2027-01-05T13:15+01:00"
+          },
+          {
+            "resource": "OF. 1ª ENCOFRADOR",
+            "holder": "S-FORM",
+            "units": 2,
+            "start": "2027-01-07T08:00+01:00",
+            "finish": "2027-01-07T11:00+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "S-FORM",
+            "units": 1,
+            "start": "2027-01-07T08:00+01:00",
+            "finish": "2027-01-07T11:00+01:00"
+          },
+          {
+            "resource": "OF. 1ª FERRALLISTA",
+            "holder": "S-REBAR",
+            "units": 2,
+            "start": "2027-01-07T11:00+01:00",
+            "finish": "2027-01-07T12:00+01:00"
+          },
+          {
+            "resource": "INSPECTOR",
+            "holder": "S-INSP",
+            "units": 1,
+            "start": "2027-01-07T12:00+01:00",
+            "finish": "2027-01-07T12:30+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "S-POUR",
+            "units": 2,
+            "start": "2027-01-07T12:30+01:00",
+            "finish": "2027-01-07T13:15+01:00"
+          },
+          {
+            "resource": "OFICIAL 1ª",
+            "holder": "S-POUR",
+            "units": 1,
+            "start": "2027-01-07T12:30+01:00",
+            "finish": "2027-01-07T13:15+01:00"
+          },
+          {
+            "resource": "VIBRADOR",
+            "holder": "S-POUR",
+            "units": 1,
+            "start": "2027-01-07T12:30+01:00",
+            "finish": "2027-01-07T13:15+01:00"
+          },
+          {
+            "resource": "OF. 1ª ENCOFRADOR",
+            "holder": "S-STRIP",
+            "units": 2,
+            "start": "2027-01-14T13:15+01:00",
+            "finish": "2027-01-14T15:00+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "S-STRIP",
+            "units": 1,
+            "start": "2027-01-14T13:15+01:00",
+            "finish": "2027-01-14T15:00+01:00"
+          },
+          {
+            "resource": "OF. 1ª ENCOFRADOR",
+            "holder": "B-STRIP",
+            "units": 2,
+            "start": "2027-01-14T15:00+01:00",
+            "finish": "2027-01-14T16:00+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "B-STRIP",
+            "units": 1,
+            "start": "2027-01-14T15:00+01:00",
+            "finish": "2027-01-14T16:00+01:00"
+          }
+        ],
+        "peak_usage": {
+          "OF. 1ª ENCOFRADOR": {
+            "peak_units": 2,
+            "declared_capacity": 2
+          },
+          "PEÓN ESPECIAL": {
+            "peak_units": 2,
+            "declared_capacity": 3
+          },
+          "OF. 1ª FERRALLISTA": {
+            "peak_units": 2,
+            "declared_capacity": 2
+          },
+          "OFICIAL 1ª": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "VIBRADOR": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "INSPECTOR": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          }
+        },
+        "feasible_not_optimal_example": null,
+        "proof": "Lower bound: precedence- and calendar-only earliest finish (resources relaxed). A resource-feasible schedule attains it, so it is optimal. Matches the independently verified Stage 5.4A CPM completion.",
+        "acceptance_criteria": "general_acceptance_criteria apply; status and makespan must match; any constraint-valid optimal schedule is accepted"
+      }
+    },
+    {
+      "case_id": "R0-5",
+      "category": 0,
+      "title": "Controlled Stage 5.4A fixture with resource constraints enforced (5-min tick)",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-04T08:00",
+      "horizon_end": "2027-03-01T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": [
+          "2027-01-06"
+        ]
+      },
+      "resources": {
+        "OF. 1ª ENCOFRADOR": {
+          "capacity": 2,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "PEÓN ESPECIAL": {
+          "capacity": 3,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "OF. 1ª FERRALLISTA": {
+          "capacity": 2,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "OFICIAL 1ª": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "VIBRADOR": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "INSPECTOR": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "B-CURE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 1440,
+          "resources": {}
+        },
+        {
+          "id": "B-FORM",
+          "kind": "productive",
+          "duration_minutes": 57.12,
+          "resources": {
+            "OF. 1ª ENCOFRADOR": 2,
+            "PEÓN ESPECIAL": 1
+          }
+        },
+        {
+          "id": "B-INSP",
+          "kind": "inspection",
+          "duration_minutes": 30.0,
+          "resources": {
+            "INSPECTOR": 1
+          }
+        },
+        {
+          "id": "B-POUR",
+          "kind": "productive",
+          "duration_minutes": 14.4,
+          "resources": {
+            "PEÓN ESPECIAL": 2,
+            "OFICIAL 1ª": 1,
+            "VIBRADOR": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        },
+        {
+          "id": "B-REBAR",
+          "kind": "productive",
+          "duration_minutes": 34.8,
+          "resources": {
+            "OF. 1ª FERRALLISTA": 2
+          }
+        },
+        {
+          "id": "B-STRIKE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 10080,
+          "resources": {}
+        },
+        {
+          "id": "B-STRIP",
+          "kind": "productive",
+          "duration_minutes": 48.96,
+          "resources": {
+            "OF. 1ª ENCOFRADOR": 2,
+            "PEÓN ESPECIAL": 1
+          }
+        },
+        {
+          "id": "C-CURE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 1440,
+          "resources": {}
+        },
+        {
+          "id": "C-FORM",
+          "kind": "productive",
+          "duration_minutes": 36.0,
+          "resources": {
+            "OF. 1ª ENCOFRADOR": 2,
+            "PEÓN ESPECIAL": 1
+          }
+        },
+        {
+          "id": "C-INSP",
+          "kind": "inspection",
+          "duration_minutes": 30.0,
+          "resources": {
+            "INSPECTOR": 1
+          }
+        },
+        {
+          "id": "C-POUR",
+          "kind": "productive",
+          "duration_minutes": 8.64,
+          "resources": {
+            "PEÓN ESPECIAL": 2,
+            "OFICIAL 1ª": 1,
+            "VIBRADOR": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        },
+        {
+          "id": "C-REBAR",
+          "kind": "productive",
+          "duration_minutes": 19.2,
+          "resources": {
+            "OF. 1ª FERRALLISTA": 2
+          }
+        },
+        {
+          "id": "C-STRIKE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 1440,
+          "resources": {}
+        },
+        {
+          "id": "C-STRIP",
+          "kind": "productive",
+          "duration_minutes": 43.2,
+          "resources": {
+            "OF. 1ª ENCOFRADOR": 2,
+            "PEÓN ESPECIAL": 1
+          }
+        },
+        {
+          "id": "S-CURE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 1440,
+          "resources": {}
+        },
+        {
+          "id": "S-FORM",
+          "kind": "productive",
+          "duration_minutes": 171.6,
+          "resources": {
+            "OF. 1ª ENCOFRADOR": 2,
+            "PEÓN ESPECIAL": 1
+          }
+        },
+        {
+          "id": "S-INSP",
+          "kind": "inspection",
+          "duration_minutes": 30.0,
+          "resources": {
+            "INSPECTOR": 1
+          }
+        },
+        {
+          "id": "S-POUR",
+          "kind": "productive",
+          "duration_minutes": 43.2,
+          "resources": {
+            "PEÓN ESPECIAL": 2,
+            "OFICIAL 1ª": 1,
+            "VIBRADOR": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        },
+        {
+          "id": "S-REBAR",
+          "kind": "productive",
+          "duration_minutes": 51.6,
+          "resources": {
+            "OF. 1ª FERRALLISTA": 2
+          }
+        },
+        {
+          "id": "S-STRIKE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 10080,
+          "resources": {}
+        },
+        {
+          "id": "S-STRIP",
+          "kind": "productive",
+          "duration_minutes": 93.6,
+          "resources": {
+            "OF. 1ª ENCOFRADOR": 2,
+            "PEÓN ESPECIAL": 1
+          }
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "B-CURE",
+          "successor": "B-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-CURE",
+          "successor": "S-FORM",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-FORM",
+          "successor": "B-INSP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-FORM",
+          "successor": "B-REBAR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-INSP",
+          "successor": "B-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-POUR",
+          "successor": "B-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-POUR",
+          "successor": "B-STRIKE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-REBAR",
+          "successor": "B-INSP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "B-STRIKE",
+          "successor": "B-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-CURE",
+          "successor": "B-FORM",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-CURE",
+          "successor": "C-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-FORM",
+          "successor": "C-INSP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-INSP",
+          "successor": "C-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-POUR",
+          "successor": "C-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-POUR",
+          "successor": "C-STRIKE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-REBAR",
+          "successor": "C-FORM",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-REBAR",
+          "successor": "C-INSP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-STRIKE",
+          "successor": "C-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "C-STRIP",
+          "successor": "B-FORM",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-CURE",
+          "successor": "S-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-FORM",
+          "successor": "S-INSP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-FORM",
+          "successor": "S-REBAR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-INSP",
+          "successor": "S-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-POUR",
+          "successor": "S-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-POUR",
+          "successor": "S-STRIKE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-REBAR",
+          "successor": "S-INSP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-STRIKE",
+          "successor": "S-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "S-STRIP",
+          "successor": "B-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "brute_force": false,
+      "source": "research/implementation/stage5_3/scheduling_handover.json + research/planning/stage5_4_preparation/controlled_scheduling_inputs.json",
+      "notes": "Existing regression at 15 min; proposed default at 5 min.",
+      "expected": {
+        "tick_minutes": 5,
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 14850,
+        "completion_local": "2027-01-14T15:30+01:00",
+        "unique_optimal_schedule": false,
+        "distinct_optimal_active_schedules": "not enumerated",
+        "reference_schedule": [
+          {
+            "id": "C-REBAR",
+            "kind": "productive",
+            "start": "2027-01-04T08:00+01:00",
+            "finish": "2027-01-04T08:20+01:00",
+            "segments": [
+              [
+                "2027-01-04T08:00+01:00",
+                "2027-01-04T08:20+01:00"
+              ]
+            ],
+            "raw_minutes": 19.2,
+            "scheduled_minutes": 20
+          },
+          {
+            "id": "C-FORM",
+            "kind": "productive",
+            "start": "2027-01-04T08:20+01:00",
+            "finish": "2027-01-04T09:00+01:00",
+            "segments": [
+              [
+                "2027-01-04T08:20+01:00",
+                "2027-01-04T09:00+01:00"
+              ]
+            ],
+            "raw_minutes": 36.0,
+            "scheduled_minutes": 40
+          },
+          {
+            "id": "C-INSP",
+            "kind": "inspection",
+            "start": "2027-01-04T09:00+01:00",
+            "finish": "2027-01-04T09:30+01:00",
+            "segments": [
+              [
+                "2027-01-04T09:00+01:00",
+                "2027-01-04T09:30+01:00"
+              ]
+            ],
+            "raw_minutes": 30.0,
+            "scheduled_minutes": 30
+          },
+          {
+            "id": "C-POUR",
+            "kind": "productive",
+            "start": "2027-01-04T09:30+01:00",
+            "finish": "2027-01-04T09:40+01:00",
+            "segments": [
+              [
+                "2027-01-04T09:30+01:00",
+                "2027-01-04T09:40+01:00"
+              ]
+            ],
+            "raw_minutes": 8.64,
+            "scheduled_minutes": 10
+          },
+          {
+            "id": "C-CURE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-04T09:40+01:00",
+            "finish": "2027-01-05T09:40+01:00",
+            "segments": [
+              [
+                "2027-01-04T09:40+01:00",
+                "2027-01-05T09:40+01:00"
+              ]
+            ],
+            "raw_minutes": 1440,
+            "scheduled_minutes": 1440
+          },
+          {
+            "id": "C-STRIKE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-04T09:40+01:00",
+            "finish": "2027-01-05T09:40+01:00",
+            "segments": [
+              [
+                "2027-01-04T09:40+01:00",
+                "2027-01-05T09:40+01:00"
+              ]
+            ],
+            "raw_minutes": 1440,
+            "scheduled_minutes": 1440
+          },
+          {
+            "id": "C-STRIP",
+            "kind": "productive",
+            "start": "2027-01-05T09:40+01:00",
+            "finish": "2027-01-05T10:25+01:00",
+            "segments": [
+              [
+                "2027-01-05T09:40+01:00",
+                "2027-01-05T10:25+01:00"
+              ]
+            ],
+            "raw_minutes": 43.2,
+            "scheduled_minutes": 45
+          },
+          {
+            "id": "B-FORM",
+            "kind": "productive",
+            "start": "2027-01-05T10:25+01:00",
+            "finish": "2027-01-05T11:25+01:00",
+            "segments": [
+              [
+                "2027-01-05T10:25+01:00",
+                "2027-01-05T11:25+01:00"
+              ]
+            ],
+            "raw_minutes": 57.12,
+            "scheduled_minutes": 60
+          },
+          {
+            "id": "B-REBAR",
+            "kind": "productive",
+            "start": "2027-01-05T11:25+01:00",
+            "finish": "2027-01-05T12:00+01:00",
+            "segments": [
+              [
+                "2027-01-05T11:25+01:00",
+                "2027-01-05T12:00+01:00"
+              ]
+            ],
+            "raw_minutes": 34.8,
+            "scheduled_minutes": 35
+          },
+          {
+            "id": "B-INSP",
+            "kind": "inspection",
+            "start": "2027-01-05T12:00+01:00",
+            "finish": "2027-01-05T12:30+01:00",
+            "segments": [
+              [
+                "2027-01-05T12:00+01:00",
+                "2027-01-05T12:30+01:00"
+              ]
+            ],
+            "raw_minutes": 30.0,
+            "scheduled_minutes": 30
+          },
+          {
+            "id": "B-POUR",
+            "kind": "productive",
+            "start": "2027-01-05T12:30+01:00",
+            "finish": "2027-01-05T12:45+01:00",
+            "segments": [
+              [
+                "2027-01-05T12:30+01:00",
+                "2027-01-05T12:45+01:00"
+              ]
+            ],
+            "raw_minutes": 14.4,
+            "scheduled_minutes": 15
+          },
+          {
+            "id": "B-CURE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-05T12:45+01:00",
+            "finish": "2027-01-06T12:45+01:00",
+            "segments": [
+              [
+                "2027-01-05T12:45+01:00",
+                "2027-01-06T12:45+01:00"
+              ]
+            ],
+            "raw_minutes": 1440,
+            "scheduled_minutes": 1440
+          },
+          {
+            "id": "B-STRIKE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-05T12:45+01:00",
+            "finish": "2027-01-12T12:45+01:00",
+            "segments": [
+              [
+                "2027-01-05T12:45+01:00",
+                "2027-01-12T12:45+01:00"
+              ]
+            ],
+            "raw_minutes": 10080,
+            "scheduled_minutes": 10080
+          },
+          {
+            "id": "S-FORM",
+            "kind": "productive",
+            "start": "2027-01-07T08:00+01:00",
+            "finish": "2027-01-07T10:55+01:00",
+            "segments": [
+              [
+                "2027-01-07T08:00+01:00",
+                "2027-01-07T10:55+01:00"
+              ]
+            ],
+            "raw_minutes": 171.6,
+            "scheduled_minutes": 175
+          },
+          {
+            "id": "S-REBAR",
+            "kind": "productive",
+            "start": "2027-01-07T10:55+01:00",
+            "finish": "2027-01-07T11:50+01:00",
+            "segments": [
+              [
+                "2027-01-07T10:55+01:00",
+                "2027-01-07T11:50+01:00"
+              ]
+            ],
+            "raw_minutes": 51.6,
+            "scheduled_minutes": 55
+          },
+          {
+            "id": "S-INSP",
+            "kind": "inspection",
+            "start": "2027-01-07T11:50+01:00",
+            "finish": "2027-01-07T12:20+01:00",
+            "segments": [
+              [
+                "2027-01-07T11:50+01:00",
+                "2027-01-07T12:20+01:00"
+              ]
+            ],
+            "raw_minutes": 30.0,
+            "scheduled_minutes": 30
+          },
+          {
+            "id": "S-POUR",
+            "kind": "productive",
+            "start": "2027-01-07T12:20+01:00",
+            "finish": "2027-01-07T13:05+01:00",
+            "segments": [
+              [
+                "2027-01-07T12:20+01:00",
+                "2027-01-07T13:05+01:00"
+              ]
+            ],
+            "raw_minutes": 43.2,
+            "scheduled_minutes": 45
+          },
+          {
+            "id": "S-CURE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-07T13:05+01:00",
+            "finish": "2027-01-08T13:05+01:00",
+            "segments": [
+              [
+                "2027-01-07T13:05+01:00",
+                "2027-01-08T13:05+01:00"
+              ]
+            ],
+            "raw_minutes": 1440,
+            "scheduled_minutes": 1440
+          },
+          {
+            "id": "S-STRIKE",
+            "kind": "elapsed_hold",
+            "start": "2027-01-07T13:05+01:00",
+            "finish": "2027-01-14T13:05+01:00",
+            "segments": [
+              [
+                "2027-01-07T13:05+01:00",
+                "2027-01-14T13:05+01:00"
+              ]
+            ],
+            "raw_minutes": 10080,
+            "scheduled_minutes": 10080
+          },
+          {
+            "id": "S-STRIP",
+            "kind": "productive",
+            "start": "2027-01-14T13:05+01:00",
+            "finish": "2027-01-14T14:40+01:00",
+            "segments": [
+              [
+                "2027-01-14T13:05+01:00",
+                "2027-01-14T14:40+01:00"
+              ]
+            ],
+            "raw_minutes": 93.6,
+            "scheduled_minutes": 95
+          },
+          {
+            "id": "B-STRIP",
+            "kind": "productive",
+            "start": "2027-01-14T14:40+01:00",
+            "finish": "2027-01-14T15:30+01:00",
+            "segments": [
+              [
+                "2027-01-14T14:40+01:00",
+                "2027-01-14T15:30+01:00"
+              ]
+            ],
+            "raw_minutes": 48.96,
+            "scheduled_minutes": 50
+          }
+        ],
+        "resource_occupancy": [
+          {
+            "resource": "OF. 1ª FERRALLISTA",
+            "holder": "C-REBAR",
+            "units": 2,
+            "start": "2027-01-04T08:00+01:00",
+            "finish": "2027-01-04T08:20+01:00"
+          },
+          {
+            "resource": "OF. 1ª ENCOFRADOR",
+            "holder": "C-FORM",
+            "units": 2,
+            "start": "2027-01-04T08:20+01:00",
+            "finish": "2027-01-04T09:00+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "C-FORM",
+            "units": 1,
+            "start": "2027-01-04T08:20+01:00",
+            "finish": "2027-01-04T09:00+01:00"
+          },
+          {
+            "resource": "INSPECTOR",
+            "holder": "C-INSP",
+            "units": 1,
+            "start": "2027-01-04T09:00+01:00",
+            "finish": "2027-01-04T09:30+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "C-POUR",
+            "units": 2,
+            "start": "2027-01-04T09:30+01:00",
+            "finish": "2027-01-04T09:40+01:00"
+          },
+          {
+            "resource": "OFICIAL 1ª",
+            "holder": "C-POUR",
+            "units": 1,
+            "start": "2027-01-04T09:30+01:00",
+            "finish": "2027-01-04T09:40+01:00"
+          },
+          {
+            "resource": "VIBRADOR",
+            "holder": "C-POUR",
+            "units": 1,
+            "start": "2027-01-04T09:30+01:00",
+            "finish": "2027-01-04T09:40+01:00"
+          },
+          {
+            "resource": "OF. 1ª ENCOFRADOR",
+            "holder": "C-STRIP",
+            "units": 2,
+            "start": "2027-01-05T09:40+01:00",
+            "finish": "2027-01-05T10:25+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "C-STRIP",
+            "units": 1,
+            "start": "2027-01-05T09:40+01:00",
+            "finish": "2027-01-05T10:25+01:00"
+          },
+          {
+            "resource": "OF. 1ª ENCOFRADOR",
+            "holder": "B-FORM",
+            "units": 2,
+            "start": "2027-01-05T10:25+01:00",
+            "finish": "2027-01-05T11:25+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "B-FORM",
+            "units": 1,
+            "start": "2027-01-05T10:25+01:00",
+            "finish": "2027-01-05T11:25+01:00"
+          },
+          {
+            "resource": "OF. 1ª FERRALLISTA",
+            "holder": "B-REBAR",
+            "units": 2,
+            "start": "2027-01-05T11:25+01:00",
+            "finish": "2027-01-05T12:00+01:00"
+          },
+          {
+            "resource": "INSPECTOR",
+            "holder": "B-INSP",
+            "units": 1,
+            "start": "2027-01-05T12:00+01:00",
+            "finish": "2027-01-05T12:30+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "B-POUR",
+            "units": 2,
+            "start": "2027-01-05T12:30+01:00",
+            "finish": "2027-01-05T12:45+01:00"
+          },
+          {
+            "resource": "OFICIAL 1ª",
+            "holder": "B-POUR",
+            "units": 1,
+            "start": "2027-01-05T12:30+01:00",
+            "finish": "2027-01-05T12:45+01:00"
+          },
+          {
+            "resource": "VIBRADOR",
+            "holder": "B-POUR",
+            "units": 1,
+            "start": "2027-01-05T12:30+01:00",
+            "finish": "2027-01-05T12:45+01:00"
+          },
+          {
+            "resource": "OF. 1ª ENCOFRADOR",
+            "holder": "S-FORM",
+            "units": 2,
+            "start": "2027-01-07T08:00+01:00",
+            "finish": "2027-01-07T10:55+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "S-FORM",
+            "units": 1,
+            "start": "2027-01-07T08:00+01:00",
+            "finish": "2027-01-07T10:55+01:00"
+          },
+          {
+            "resource": "OF. 1ª FERRALLISTA",
+            "holder": "S-REBAR",
+            "units": 2,
+            "start": "2027-01-07T10:55+01:00",
+            "finish": "2027-01-07T11:50+01:00"
+          },
+          {
+            "resource": "INSPECTOR",
+            "holder": "S-INSP",
+            "units": 1,
+            "start": "2027-01-07T11:50+01:00",
+            "finish": "2027-01-07T12:20+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "S-POUR",
+            "units": 2,
+            "start": "2027-01-07T12:20+01:00",
+            "finish": "2027-01-07T13:05+01:00"
+          },
+          {
+            "resource": "OFICIAL 1ª",
+            "holder": "S-POUR",
+            "units": 1,
+            "start": "2027-01-07T12:20+01:00",
+            "finish": "2027-01-07T13:05+01:00"
+          },
+          {
+            "resource": "VIBRADOR",
+            "holder": "S-POUR",
+            "units": 1,
+            "start": "2027-01-07T12:20+01:00",
+            "finish": "2027-01-07T13:05+01:00"
+          },
+          {
+            "resource": "OF. 1ª ENCOFRADOR",
+            "holder": "S-STRIP",
+            "units": 2,
+            "start": "2027-01-14T13:05+01:00",
+            "finish": "2027-01-14T14:40+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "S-STRIP",
+            "units": 1,
+            "start": "2027-01-14T13:05+01:00",
+            "finish": "2027-01-14T14:40+01:00"
+          },
+          {
+            "resource": "OF. 1ª ENCOFRADOR",
+            "holder": "B-STRIP",
+            "units": 2,
+            "start": "2027-01-14T14:40+01:00",
+            "finish": "2027-01-14T15:30+01:00"
+          },
+          {
+            "resource": "PEÓN ESPECIAL",
+            "holder": "B-STRIP",
+            "units": 1,
+            "start": "2027-01-14T14:40+01:00",
+            "finish": "2027-01-14T15:30+01:00"
+          }
+        ],
+        "peak_usage": {
+          "OF. 1ª ENCOFRADOR": {
+            "peak_units": 2,
+            "declared_capacity": 2
+          },
+          "PEÓN ESPECIAL": {
+            "peak_units": 2,
+            "declared_capacity": 3
+          },
+          "OF. 1ª FERRALLISTA": {
+            "peak_units": 2,
+            "declared_capacity": 2
+          },
+          "OFICIAL 1ª": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "VIBRADOR": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          },
+          "INSPECTOR": {
+            "peak_units": 1,
+            "declared_capacity": 1
+          }
+        },
+        "feasible_not_optimal_example": null,
+        "proof": "Lower bound: precedence- and calendar-only earliest finish (resources relaxed). A resource-feasible schedule attains it, so it is optimal. Matches the independently verified Stage 5.4A CPM completion.",
+        "acceptance_criteria": "general_acceptance_criteria apply; status and makespan must match; any constraint-valid optimal schedule is accepted"
+      }
+    }
+  ]
+}

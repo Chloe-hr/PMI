@@ -1,0 +1,59 @@
+{
+  "completion_independent": "2027-01-14T16:00+01:00",
+  "completion_production": "2027-01-14T16:00+01:00",
+  "makespan_independent": 14880,
+  "makespan_production": 14880,
+  "critical_independent": [
+    "S-FORM",
+    "S-REBAR",
+    "S-INSP",
+    "S-POUR",
+    "S-STRIKE",
+    "S-STRIP",
+    "B-STRIP"
+  ],
+  "critical_production": [
+    "S-FORM",
+    "S-REBAR",
+    "S-INSP",
+    "S-POUR",
+    "S-STRIKE",
+    "S-STRIP",
+    "B-STRIP"
+  ],
+  "activities": 21,
+  "activities_all_fields_match": 21,
+  "edges_production": 28,
+  "edges_independent": 28,
+  "edges_equal": true,
+  "edges_agent2": 25,
+  "edges_in_production_not_agent2": [
+    [
+      "B-CURE",
+      "B-STRIP"
+    ],
+    [
+      "B-FORM",
+      "B-INSP"
+    ],
+    [
+      "S-FORM",
+      "S-INSP"
+    ]
+  ],
+  "edges_in_agent2_not_production": [],
+  "all_edges_satisfied": true,
+  "calendar_checks": 48,
+  "calendar_checks_passed": 48,
+  "resource_over_capacity": {},
+  "resource_conflicts_production": [],
+  "cost_handover_total": 1172.5136,
+  "cost_schedule_total": 1172.5136,
+  "cost_sum_of_activity_lines": 1172.5136,
+  "timezone_production": "Europe/Madrid",
+  "holidays": [
+    "2027-01-06"
+  ],
+  "pending_approvals": 75,
+  "real_project_eligible": false
+}

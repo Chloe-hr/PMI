@@ -1,0 +1,303 @@
+{
+  "_meta": {
+    "contract": "PMI Stage 5.4B resource contract",
+    "version": "5.4B-R1-draft",
+    "status": "PROPOSED for Agent 1 implementation. Not an engineering approval. All 75 register approvals remain PENDING.",
+    "compatibility": {
+      "stage5_3": "5.3A (research/implementation/stage5_3/scheduling_handover.json, version 5.3A)",
+      "stage5_4": "5.4A (research/implementation/stage5_4a/scheduling_contract.json, version 5.4A)",
+      "reference_cases": "cpsat_reference_cases.json (Task 4)"
+    },
+    "mapping": "resource_contract_mapping.csv maps every field below to its Stage 5.3A, Stage 5.4A and Agent 2 preparation source.",
+    "time_axis": "Integer ticks from project_start as in 5.4A; tick must divide 60 and every calendar boundary (Task 3 finding N3)."
+  },
+
+  "principles": [
+    "P1 No engineering defaults. Every capacity, calendar, demand, crew mode, release condition, throughput, segment rule and lead time is an explicit input carrying an input_state. An absent value is MISSING, never zero, never unlimited and never a library default.",
+    "P2 Two occupancy bases. working_time occupancy exists only during an activity's working segments. continuous_elapsed reservations run without a calendar from a start event to a release event and include nights, weekends, holidays, curing and every other hold.",
+    "P3 Durations are owned by Stage 5.3A. A crew mode's duration is the 5.3A productive estimate for that exact mode. Stage 5.4B never rescales a duration from a different crew size.",
+    "P4 Cost is owned by Stage 5.3A. Resource occupancy and reservations add no cost. BCCA already prices formwork timber and props as amortised material coefficients, so reservations must not create a second cost line.",
+    "P5 Counts are not derived from cost coefficients. BCCA per_unit amortisation values (for example CE00200 prop 0.01 u/m2) are not physical piece counts and must not be used to size reusable-asset demand.",
+    "P6 Explicit none is distinct from missing. A resource declared with capacity 0 and the explicit_none flag means the method does not use it; an undeclared resource that a reference requires blocks the activity (5.3A behaviour).",
+    "P7 Blocking is conservative. A missing or insufficient input blocks the affected activity and every successor; the solver is not invoked with relaxed or substituted values."
+  ],
+
+  "enumerations": {
+    "input_state": {
+      "values": ["missing", "hypothetical_fixture", "user_provided_project", "independently_measured", "engineer_approved"],
+      "source": "5.3A scheduling_handover.json input_states",
+      "rule": "Real-project scheduling requires user_provided_project or better for every field, and engineer_approved for every field with approval_required = true. hypothetical_fixture is accepted only when scope = hypothetical_fixture_only."
+    },
+    "resource_class": {
+      "labour_trade": "Workers of one trade. Unit: worker (headcount). Renewable, working_time.",
+      "equipment": "Machines of one class (vibrator, crane, pump). Unit: machine. Renewable, working_time.",
+      "inspector": "Person or body authorised to perform an inspection. Unit: inspector. Renewable, working_time on its own calendar.",
+      "reusable_asset": "Formwork panel set, prop or shoring set. Unit: set or piece as declared. Renewable, continuous_elapsed reservation.",
+      "supply_source": "Concrete plant or delivery service. Unit: m3/h. Rate resource on a delivery calendar.",
+      "consumable_material": "Material consumed by quantity (concrete, steel, timber amortisation, release agent). Not capacity-constrained in 5.4B."
+    },
+    "occupancy_basis": {
+      "working_time": "Occupied on exactly the ticks of the activity's working segments; released between segments unless retention_during_gap = retain.",
+      "continuous_elapsed": "Occupied on every tick from start_event to the satisfied release condition, with no calendar."
+    },
+    "availability": {
+      "calendar": "Capacity applies only on ticks inside the resource calendar; capacity is 0 elsewhere.",
+      "continuous": "Capacity applies on every tick (physical assets on site). Mandatory for reusable_asset."
+    },
+    "event_kind": ["activity_start", "activity_finish", "elapsed_after_event", "inspection_pass", "strength_release", "explicit_recorded_event"],
+    "interruption": {
+      "values": ["non_interruptible", "split_allowed"],
+      "source": "5.4A scheduling_contract.json activities.interruption"
+    },
+    "execution_mode": {
+      "supported": ["simultaneous_fixed_crew"],
+      "unsupported": ["sequential_phases"],
+      "source": "5.3A engine.estimate execution_mode; any other value raises insufficient phase evidence"
+    }
+  },
+
+  "entities": {
+    "Resource": {
+      "description": "One capacity pool. Pools are shared by every activity that names them.",
+      "fields": {
+        "resource_id": {"type": "string", "required": true, "rule": "Stable, unique, ASCII identifier. Distinct from display_name."},
+        "display_name": {"type": "string", "required": true, "rule": "Source label, for example the BCCA trade name 'OF. 1ª ENCOFRADOR'."},
+        "resource_class": {"type": "enum", "enum_ref": "resource_class", "required": true},
+        "source_code": {"type": "string|null", "required": false, "rule": "BCCA labour or machine concept name/code when the resource is a catalogue trade or class."},
+        "unit": {"type": "string", "required": true, "allowed_by_class": {"labour_trade": ["worker"], "equipment": ["machine"], "inspector": ["inspector"], "reusable_asset": ["set", "piece"], "supply_source": ["m3/h"]}},
+        "capacity": {"type": "integer >= 0 (number > 0 for supply_source)", "required": true, "default": null, "on_missing": "MISSING_INPUT"},
+        "explicit_none": {"type": "boolean", "required": true, "rule": "true only with capacity 0; records that the method does not use this resource (5.3A explicit_none_equipment)."},
+        "availability": {"type": "enum", "enum_ref": "availability", "required": true, "rule": "reusable_asset must be continuous; all other classes must be calendar."},
+        "calendar_ref": {"type": "string|null", "required": "when availability = calendar", "default": null, "rule": "Explicit reference to a ResourceCalendar. 'PROJECT' is permitted only as an explicit choice, never as an implied fallback.", "on_missing": "MISSING_INPUT"},
+        "capacity_by_date": {"type": "object|null", "required": false, "rule": "Local ISO date to integer capacity override (for example reduced crew on a date). Absent means the declared capacity applies on calendar ticks."},
+        "input_state": {"type": "enum", "enum_ref": "input_state", "required": true},
+        "evidence_ref": {"type": "string|null", "required": "unless input_state = missing"},
+        "approval_required": {"type": "boolean", "required": true, "rule": "Set by the engineering register owner. This contract assigns none."}
+      }
+    },
+
+    "ResourceCalendar": {
+      "description": "Same structure as the 5.4A ProjectCalendar so that build_windows can be reused.",
+      "fields": {
+        "calendar_id": {"type": "string", "required": true},
+        "timezone": {"type": "IANA zone", "required": true},
+        "working_windows": {"type": "array of {weekday 1-7, start HH:MM, end HH:MM}", "required": true, "rule": "May be empty (resource never available); RC08d expects INFEASIBLE / NO_FIT then."},
+        "date_exceptions": {"type": "array of local ISO dates", "required": true, "rule": "Explicit empty list when there are none."},
+        "date_overrides": {"type": "object local ISO date -> windows", "required": false},
+        "input_state": {"type": "enum", "enum_ref": "input_state", "required": true}
+      }
+    },
+
+    "CrewMode": {
+      "description": "A fixed combination of trade and equipment units that executes one operation simultaneously.",
+      "fields": {
+        "mode_id": {"type": "string", "required": true, "rule": "Matches 5.3A crew_id (for example HYP-FORM)."},
+        "units": {"type": "object resource_id -> integer > 0", "required": true, "rule": "Every unit is occupied for the whole duration of every working segment (simultaneous occupancy)."},
+        "execution_mode": {"type": "enum", "enum_ref": "execution_mode", "required": true, "on_unsupported": "INSUFFICIENT_PHASE_EVIDENCE"},
+        "input_state": {"type": "enum", "enum_ref": "input_state", "required": true}
+      }
+    },
+
+    "ActivityResourceRequirement": {
+      "description": "Per activity: the eligible modes, each with the 5.3A duration estimated for that mode.",
+      "fields": {
+        "activity_id": {"type": "string", "required": true, "rule": "5.3A activity id (UUID)."},
+        "modes": {
+          "type": "array", "required": "for productive and inspection kinds", "rule": "At least one eligible mode. Multi-mode requires one 5.3A estimate per mode (P3).",
+          "items": {
+            "mode_id": {"type": "string", "required": true},
+            "productive_minutes": {"type": "number > 0", "required": true, "rule": "5.3A productive_hours x 60 for this mode; rounded up to the tick by the solver."},
+            "worker_hours_by_trade": {"type": "object", "required": true, "rule": "5.3A demand; used for the consistency check units x scheduled hours >= worker hours."},
+            "machine_hours_by_class": {"type": "object", "required": true},
+            "duration_basis": {"type": "string", "required": true, "rule": "5.3A duration_basis, kept for traceability."}
+          }
+        },
+        "occupancy_basis": {"type": "const working_time", "required": true},
+        "allowed_hours": {"type": "array of [HH:MM, HH:MM] | null", "required": false, "rule": "Activity-specific window intersected with the resource calendars. Kept for 5.4A parity; supply windows belong on the SupplySource calendar."},
+        "interruption": {"type": "SplitPolicy", "required": true}
+      }
+    },
+
+    "InspectorRequirement": {
+      "description": "An inspection is a working-time activity (5.4A kind = inspection) that occupies an inspector and produces a pass event.",
+      "fields": {
+        "activity_id": {"type": "string", "required": true},
+        "inspector_resource_id": {"type": "string", "required": true, "on_missing": "MISSING_INPUT"},
+        "units": {"type": "integer > 0", "required": true, "default": null},
+        "duration_minutes": {"type": "number > 0", "required": true, "rule": "Working minutes of inspector time."},
+        "pass_event_id": {"type": "string", "required": true, "rule": "Gates successors through an inspection_pass event."},
+        "pass_status": {"type": "enum", "values": ["hypothetical_pass", "recorded_pass", "failed", "missing"], "required": true, "rule": "missing projects a conditional schedule (5.4A strength-release pattern); failed blocks successors."},
+        "input_state": {"type": "enum", "enum_ref": "input_state", "required": true}
+      }
+    },
+
+    "Reservation": {
+      "description": "Continuous elapsed-time occupancy of a reusable asset from a start event to a release condition. Used for formwork panels, props and shoring.",
+      "fields": {
+        "reservation_id": {"type": "string", "required": true},
+        "resource_id": {"type": "string", "required": true, "rule": "Must reference a reusable_asset with availability continuous."},
+        "quantity": {"type": "integer > 0", "required": true, "default": null, "on_missing": "MISSING_INPUT", "rule": "Explicit piece or set count for this element (P5)."},
+        "element_ids": {"type": "array of IFC GlobalId", "required": true},
+        "start_event": {"type": "Event", "required": true, "rule": "Normally activity_start of the erection activity (FORM)."},
+        "release_condition": {"type": "ReleaseCondition", "required": true, "on_missing": "MISSING_INPUT"},
+        "occupancy_basis": {"type": "const continuous_elapsed", "required": true},
+        "covers_activities": {"type": "array of activity_id", "required": true, "rule": "Every working segment of these activities must lie inside the reservation interval (validation V8)."},
+        "input_state": {"type": "enum", "enum_ref": "input_state", "required": true},
+        "approval_required": {"type": "boolean", "required": true}
+      }
+    },
+
+    "ReleaseCondition": {
+      "description": "When a reservation ends. The reservation ends at the latest of all listed events plus the declared return lead time.",
+      "fields": {
+        "all_of": {"type": "array of Event", "required": true, "rule": "Typical panel release: activity_finish of its STRIP. Typical soffit prop release: activity_finish of the supported member's STRIP, plus any strength_release event."},
+        "return_lead_minutes": {"type": "number >= 0", "required": true, "default": null, "rule": "Explicit elapsed time before the asset can be reused (cleaning, transport). 0 must be stated, not assumed."},
+        "reshoring": {"type": "enum", "values": ["not_permitted", "approved_with_ref"], "required": true, "rule": "Back-propping or re-propping is excluded from the selected BCCA items. approved_with_ref requires a separate modelled activity and reservation."},
+        "input_state": {"type": "enum", "enum_ref": "input_state", "required": true}
+      }
+    },
+
+    "Event": {
+      "fields": {
+        "kind": {"type": "enum", "enum_ref": "event_kind", "required": true},
+        "activity_id": {"type": "string", "required": "for activity_start, activity_finish, inspection_pass"},
+        "event_id": {"type": "string", "required": "for strength_release and explicit_recorded_event", "rule": "Same identifiers and statuses as 5.4A hypothetical_strength_events / release_events."},
+        "elapsed_minutes": {"type": "number >= 0", "required": "for elapsed_after_event"},
+        "anchor": {"type": "Event", "required": "for elapsed_after_event"}
+      }
+    },
+
+    "SupplySource": {
+      "description": "Concrete supply and delivery throughput shared by every pour that draws from it.",
+      "fields": {
+        "resource_id": {"type": "string", "required": true},
+        "product": {"type": "string", "required": true, "rule": "Concrete designation, for example 5.3A concrete_specification HA-25/P/20/XC2."},
+        "rate_capacity_m3_h": {"type": "number > 0", "required": true, "default": null, "on_missing": "MISSING_INPUT"},
+        "calendar_ref": {"type": "string", "required": true, "rule": "Delivery window as a calendar (for example Mon-Fri 08:00-14:00)."},
+        "max_volume_per_day_m3": {"type": "number|null", "required": false, "rule": "Absent means no daily cap is modelled; it is not assumed unlimited for a real project unless input_state >= user_provided_project states it."},
+        "concurrent_with_placement": {"type": "boolean", "required": true, "rule": "Must be true for 5.3A to use the rate as a placement-duration bound."},
+        "input_state": {"type": "enum", "enum_ref": "input_state", "required": true}
+      }
+    },
+
+    "PourSupplyDemand": {
+      "fields": {
+        "activity_id": {"type": "string", "required": true},
+        "supply_resource_id": {"type": "string|null", "required": true, "rule": "null only when the activity's 5.3A record lists CONCRETE_DELIVERY in explicit_none_equipment (pre-staged supply)."},
+        "drawn_rate_m3_h": {"type": "number > 0", "required": "when supply_resource_id is set"},
+        "pump_resource_id": {"type": "string|null", "required": true, "rule": "null only when CONCRETE_PUMP is explicit none."},
+        "volume_m3": {"type": "number > 0", "required": true, "rule": "5.3A placed quantity (activity quantity, unit m3)."},
+        "duration_rule": "productive_minutes = 60 x volume / min(placement bound, drawn supply rate, pump rate), computed in 5.3A as capacity_bounds_hours throughput entries, never in 5.4B.",
+        "interruption": {"rule": "Pours are split_allowed only with an explicit cold-joint authorization reference; otherwise non_interruptible."}
+      }
+    },
+
+    "ConsumableDemand": {
+      "description": "Material consumption retained from 5.3A for cost and procurement. Not a scheduling capacity in 5.4B.",
+      "fields": {
+        "activity_id": {"type": "string", "required": true},
+        "code": {"type": "string", "required": true},
+        "unit": {"type": "string", "required": true},
+        "quantity": {"type": "number", "required": true},
+        "stock_or_delivery_schedule": {"type": "null", "rule": "Reserved. Stock-limited consumables are out of 5.4B scope; no constraint is generated."}
+      }
+    },
+
+    "SplitPolicy": {
+      "fields": {
+        "interruption": {"type": "enum", "enum_ref": "interruption", "required": true, "default": null},
+        "authorization_ref": {"type": "string", "required": "when split_allowed", "rule": "Approval id or hypothetical test reference. Absent -> SPLIT_NOT_AUTHORIZED and the activity is treated as non_interruptible."},
+        "max_segments": {"type": "integer >= 2", "required": "when split_allowed"},
+        "min_segment_minutes": {"type": "number > 0", "required": "when split_allowed"},
+        "retention_during_gap": {"type": "enum", "values": ["release", "retain"], "required": "when split_allowed", "rule": "release frees crew and equipment between segments; retain keeps them occupied continuously across the gap."},
+        "restart_overhead_minutes": {"type": "number >= 0", "required": "when split_allowed", "rule": "Explicit working minutes added to each segment after the first. 0 must be stated."},
+        "same_mode_on_restart": {"type": "boolean", "required": "when split_allowed"},
+        "voluntary_pause": {"type": "boolean", "required": "when split_allowed", "rule": "false: work continues whenever the calendar is open (Task 4 reference semantics). true: the solver may pause inside an open window."}
+      }
+    },
+
+    "CapacityPolicy": {
+      "description": "Preflight checks run before the solver. Codes reuse 5.4A SchedulingError codes where they exist.",
+      "rules": [
+        {"code": "MISSING_INPUT", "status": "MODEL_INVALID", "when": "A demanded resource, capacity, calendar, crew mode, reservation quantity, release condition or supply rate is absent or has input_state missing.", "action": "Block the activity and its successors. Do not invoke the solver for them.", "existing": "5.4A cpm.calculate MISSING_INPUT"},
+        {"code": "EXPLICIT_NONE_REQUIRED", "status": "MODEL_INVALID", "when": "A reference requires CRANE, CONCRETE_PUMP or CONCRETE_DELIVERY and the input neither declares it nor declares explicit none.", "action": "Block (5.3A raises 'Missing compatible ... supply or explicit none').", "existing": "5.3A engine._external_resources"},
+        {"code": "IMPOSSIBLE_CREW", "status": "INFEASIBLE", "when": "A mode demands more units than the pool's maximum capacity on every tick of the horizon, or capacity is 0 for a demanded non-none resource.", "action": "Reject the mode; if no mode remains, NO_ELIGIBLE_MODE.", "existing": "5.4A cpm.calculate IMPOSSIBLE_CREW"},
+        {"code": "NO_ELIGIBLE_MODE", "status": "INFEASIBLE", "when": "Every declared mode of an activity is rejected.", "action": "Block the activity and successors.", "existing": "new"},
+        {"code": "NO_FIT", "status": "INFEASIBLE", "when": "A non_interruptible activity exceeds every window of the intersected calendar, or a resource calendar is never open in the horizon.", "action": "Report; never split silently.", "existing": "5.4A calendar.fit_work NO_FIT"},
+        {"code": "SPLIT_NOT_AUTHORIZED", "status": "MODEL_INVALID", "when": "split_allowed without authorization_ref or segment rules.", "action": "Treat as non_interruptible and report.", "existing": "new"},
+        {"code": "RESERVATION_UNRELEASED", "status": "MODEL_INVALID", "when": "A release condition names an activity or event that does not exist, or that cannot follow the start event.", "action": "Block the reservation and every covered activity.", "existing": "new"},
+        {"code": "RELEASE_CONDITIONAL", "status": "CONDITIONAL", "when": "A release depends on a strength or inspection event with status missing.", "action": "Project the schedule with the condition flagged; it is not a releasable schedule.", "existing": "5.4A conditional status"},
+        {"code": "TICK_MISALIGNED", "status": "MODEL_INVALID", "when": "A calendar boundary, duration grid or tick does not align.", "action": "Reject before solving.", "existing": "new (Task 3 N3)"},
+        {"code": "INFEASIBLE_DEADLINE", "status": "INFEASIBLE", "when": "No schedule meets a declared deadline.", "action": "Report the deadline and the implicated chain; never return a relaxed schedule.", "existing": "5.4A cpm.calculate INFEASIBLE_DEADLINE"}
+      ]
+    }
+  },
+
+  "validation_rules": [
+    {"id": "V1", "rule": "Every resource_id named by a mode, inspection, reservation or pour demand exists in Resource.", "code": "MISSING_INPUT"},
+    {"id": "V2", "rule": "explicit_none = true implies capacity = 0, and such a resource is never demanded.", "code": "MISSING_INPUT"},
+    {"id": "V3", "rule": "reusable_asset resources use availability continuous; all others use calendar with an explicit calendar_ref.", "code": "MODEL_INVALID"},
+    {"id": "V4", "rule": "For each activity and mode: units[trade] x scheduled_hours >= worker_hours_by_trade[trade] and units[class] x scheduled_hours >= machine_hours_by_class[class] (5.3A reserved hours consistency).", "code": "MODEL_INVALID"},
+    {"id": "V5", "rule": "Mode units equal the 5.3A worker_capacity_by_trade plus equipment_capacity_by_class for the estimate that produced productive_minutes.", "code": "MODEL_INVALID"},
+    {"id": "V6", "rule": "Elapsed holds (curing, strength release) demand no working_time resource (5.4A rule).", "code": "MODEL_INVALID"},
+    {"id": "V7", "rule": "Reservation start_event precedes every event in release_condition.all_of in the dependency graph.", "code": "RESERVATION_UNRELEASED"},
+    {"id": "V8", "rule": "Every working segment of covers_activities lies inside [start_event, release]. A FORM-to-STRIP reservation therefore spans the pour, curing, strength release and stripping.", "code": "MODEL_INVALID"},
+    {"id": "V9", "rule": "At every tick: sum of working_time demands <= capacity on that tick (0 off calendar); sum of reservation quantities <= reusable_asset capacity.", "code": "solver constraint"},
+    {"id": "V10", "rule": "No reservation, inspector occupancy or supply draw produces a cost line (P4).", "code": "MODEL_INVALID"},
+    {"id": "V11", "rule": "Tick divides 60 and every calendar and supply boundary.", "code": "TICK_MISALIGNED"}
+  ],
+
+  "solver_semantics": {
+    "working_time": "One interval per working segment; each interval contributes its mode units to a cumulative constraint per resource; capacity off-calendar is modelled as fixed blocking intervals or a time-varying capacity profile.",
+    "continuous_elapsed": "One span interval per reservation from the start-event time to max(release events) + return_lead_minutes; it contributes quantity to the reusable_asset cumulative constraint. It ignores every calendar.",
+    "supply": "Each pour interval contributes drawn_rate_m3_h to the supply cumulative constraint; the supply calendar restricts pour intervals.",
+    "modes": "Optional intervals per mode with exactly one present per activity; mode duration is fixed from 5.3A.",
+    "reference_cases": "RC01-RC11 and R0 in cpsat_reference_cases.json exercise these semantics; RC05a/b exercise continuous reservations."
+  },
+
+  "controlled_fixture_instance": {
+    "scope": "hypothetical_fixture_only",
+    "note": "The Stage 5.3A / 5.4A fixture expressed in this contract. Values are copied from existing sources; nothing is added. Where no source exists the field is missing.",
+    "calendars": [
+      {"calendar_id": "PROJECT", "timezone": "Europe/Madrid", "working_windows": "Mon-Fri 08:00-16:00", "date_exceptions": ["2027-01-06"], "input_state": "hypothetical_fixture", "source": "controlled_scheduling_inputs.json calendar"},
+      {"calendar_id": "DELIVERY", "timezone": "Europe/Madrid", "working_windows": "Mon-Fri 08:00-14:00", "date_exceptions": ["2027-01-06"], "input_state": "hypothetical_fixture", "source": "controlled_scheduling_inputs.json concrete_delivery.window_local", "note": "Holiday exclusion is the project calendar's; Agent 2 states only the weekday window."}
+    ],
+    "resources": [
+      {"resource_id": "OF1_ENCOFRADOR", "display_name": "OF. 1ª ENCOFRADOR", "resource_class": "labour_trade", "unit": "worker", "capacity": 2, "explicit_none": false, "availability": "calendar", "calendar_ref": "PROJECT", "input_state": "hypothetical_fixture"},
+      {"resource_id": "PEON_ESPECIAL", "display_name": "PEÓN ESPECIAL", "resource_class": "labour_trade", "unit": "worker", "capacity": 3, "explicit_none": false, "availability": "calendar", "calendar_ref": "PROJECT", "input_state": "hypothetical_fixture"},
+      {"resource_id": "OF1_FERRALLISTA", "display_name": "OF. 1ª FERRALLISTA", "resource_class": "labour_trade", "unit": "worker", "capacity": 2, "explicit_none": false, "availability": "calendar", "calendar_ref": "PROJECT", "input_state": "hypothetical_fixture"},
+      {"resource_id": "OFICIAL_1", "display_name": "OFICIAL 1ª", "resource_class": "labour_trade", "unit": "worker", "capacity": 1, "explicit_none": false, "availability": "calendar", "calendar_ref": "PROJECT", "input_state": "hypothetical_fixture"},
+      {"resource_id": "VIBRADOR", "display_name": "VIBRADOR", "resource_class": "equipment", "unit": "machine", "capacity": 1, "explicit_none": false, "availability": "calendar", "calendar_ref": "PROJECT", "input_state": "hypothetical_fixture"},
+      {"resource_id": "CRANE", "display_name": "CRANE", "resource_class": "equipment", "unit": "machine", "capacity": 0, "explicit_none": true, "availability": "calendar", "calendar_ref": "PROJECT", "input_state": "hypothetical_fixture"},
+      {"resource_id": "CONCRETE_PUMP", "display_name": "CONCRETE_PUMP", "resource_class": "equipment", "unit": "machine", "capacity": 0, "explicit_none": true, "availability": "calendar", "calendar_ref": "PROJECT", "input_state": "hypothetical_fixture"},
+      {"resource_id": "CONCRETE_DELIVERY", "display_name": "CONCRETE_DELIVERY", "resource_class": "supply_source", "unit": "m3/h", "capacity": 0, "explicit_none": true, "availability": "calendar", "calendar_ref": "DELIVERY", "input_state": "hypothetical_fixture", "note": "5.3A declares 0 (manual handling, pre-staged supply). Agent 2's delivery window then restricts pour times only; max_rate_m3_h is null, so no throughput constraint exists."},
+      {"resource_id": "INSPECTOR", "display_name": "INSPECTOR", "resource_class": "inspector", "unit": "inspector", "capacity": 1, "explicit_none": false, "availability": "calendar", "calendar_ref": "PROJECT", "input_state": "hypothetical_fixture", "note": "5.4A applies the project calendar implicitly; this contract makes the choice explicit."},
+      {"resource_id": "FORMWORK_PANEL_SET", "resource_class": "reusable_asset", "unit": "set", "capacity": null, "availability": "continuous", "input_state": "missing", "note": "No source declares panel sets. BCCA timber per_unit is an amortised volume, not a count."},
+      {"resource_id": "PROP", "resource_class": "reusable_asset", "unit": "piece", "capacity": null, "availability": "continuous", "input_state": "missing", "note": "No source declares props on site. BCCA CE00200 per_unit 0.009 (beam) and 0.01 (slab) u/m2 are amortisation coefficients."}
+    ],
+    "crew_modes": [
+      {"mode_id": "HYP-FORM", "units": {"OF1_ENCOFRADOR": 2, "PEON_ESPECIAL": 1}, "execution_mode": "simultaneous_fixed_crew", "used_by": ["COL-FORM", "BEAM-FORM", "SLAB-FORM", "FRM-STRIP x3"]},
+      {"mode_id": "HYP-REBAR", "units": {"OF1_FERRALLISTA": 2}, "execution_mode": "simultaneous_fixed_crew", "used_by": ["COL-REBAR", "BEAM-REBAR", "SLAB-REBAR"]},
+      {"mode_id": "HYP-CONC", "units": {"PEON_ESPECIAL": 2, "OFICIAL_1": 1, "VIBRADOR": 1}, "execution_mode": "simultaneous_fixed_crew", "used_by": ["COL-CONC", "BEAM-CONC", "SLAB-CONC"], "note": "VIBRADOR comes from 5.3A equipment_capacity_by_class on the concrete activities."}
+    ],
+    "inspections": [
+      {"activity": "C-INSP / B-INSP / S-INSP", "inspector_resource_id": "INSPECTOR", "units": 1, "duration_minutes": 30, "pass_status": "missing", "input_state": "hypothetical_fixture", "note": "5.3A carries the pass only as criterion text ('Hypothetical passed ... checklist'). The contract requires an explicit pass event; the fixture needs one declared hypothetical_pass to stay unconditional."}
+    ],
+    "reservations": {
+      "status": "missing",
+      "effect": "Under P1 a real project with formwork activities is blocked with MISSING_INPUT until panel sets, props, quantities per element and release conditions are supplied. For the hypothetical fixture, Agent 1 may declare the reservations excluded from the fixture model (input_state hypothetical_fixture, reason 'not declared in Stage 5.3A/5.4A sources') so that R0-15 and R0-5 keep their Task 4 results; the output must then list reservations as unenforced.",
+      "required_inputs": ["FORMWORK_PANEL_SET capacity", "PROP capacity", "quantity per element", "start_event (expected: FORM activity_start)", "release_condition.all_of (panels: own STRIP finish; beam soffit props: B-STRIP finish, which the Agent 2 hypothetical rule orders after S-STRIP; slab props: S-STRIP finish)", "return_lead_minutes", "reshoring"]
+    },
+    "supply": {"status": "explicit none (pre-staged)", "delivery_window": "hypothetical_fixture 08:00-14:00", "rate_capacity_m3_h": null},
+    "split_policy": {"all_activities": "non_interruptible", "source": "5.4A fixture.adapt sets non_interruptible on every task"},
+    "consumables": "All 5.3A materials lines retained unchanged for cost; no stock constraint."
+  },
+
+  "open_items": [
+    {"id": "O1", "item": "The engineering register has no approval id for formwork panel or prop reservations, return lead time or reshoring. The register owner must add them before real release; this contract assigns none."},
+    {"id": "O2", "item": "Inspection pass events are not present in 5.3A or 5.4A data; only criterion text exists."},
+    {"id": "O3", "item": "Resource ids in 5.4A are BCCA display names with non-ASCII characters; the contract separates resource_id from display_name. The fixture instance shows one proposed id mapping."},
+    {"id": "O4", "item": "Multi-mode crews need 5.3A estimates per mode; 5.3A currently emits one mode per activity."},
+    {"id": "O5", "item": "5.3A supports supply throughput only as a placement bound (concurrent_with_placement). A shared rate pool across pours is new in 5.4B."}
+  ]
+}

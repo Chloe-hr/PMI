@@ -1,0 +1,77 @@
+contract_entity,contract_field,stage5_3A_source,stage5_4A_source,agent2_preparation_source,mapping_status,transformation_or_gap
+Resource,resource_id,scheduling_handover.json::activities[].worker_capacity_by_trade (keys),fixture.py#capacities = {**crew,controlled_scheduling_inputs.json::resource_capacity_by_trade (keys),renamed,5.3A/5.4A use BCCA display names as ids; contract adds a stable ASCII resource_id and keeps the name as display_name
+Resource,display_name,scheduling_handover.json::activities[].reference.labor_per_unit (keys),cpm.py#row.get("resources",controlled_scheduling_inputs.json::resource_capacity_by_trade (keys),direct,Same strings carried unchanged
+Resource,resource_class,scheduling_handover.json::activities[].worker_hours_by_trade | activities[].machine_hours_by_class,none,controlled_scheduling_inputs.json::equipment,derived,labour_trade from worker_* fields; equipment from machine_* fields; inspector / reusable_asset / supply_source have no 5.3A class field
+Resource,source_code,scheduling_handover.json::activities[].reference.code,none,none,derived,BCCA item code is per work item; trade-level concept codes are not emitted by 5.3A (name only)
+Resource,unit,scheduling_handover.json::activities[].reserved_worker_hours,cpm.py#type(demand) is not int,none,new_required,5.3A implies worker / machine headcount through integer capacities; 5.4A requires integer demand; no explicit unit field exists
+Resource,capacity (labour_trade),controlled_fixture_inputs.json::crews,cpm.py#capacity = capacities.get(name),controlled_scheduling_inputs.json::resource_capacity_by_trade,split,5.3A holds per-operation crew sizes only; the shared pool capacity exists only in Agent 2 preparation and is passed to 5.4A calculate(capacities=...)
+Resource,capacity (equipment),controlled_fixture_inputs.json::equipment.VIBRADOR,fixture.py#equipment_capacity_by_class,controlled_scheduling_inputs.json::equipment.VIBRADOR,direct,VIBRADOR 1 in both
+Resource,explicit_none,scheduling_handover.json::activities[].explicit_none_equipment,none,controlled_scheduling_inputs.json::equipment.CRANE,direct,5.3A integer 0 in fixture equipment means explicit none (engine._external_resources); 5.4A ignores these resources
+Resource,availability,none,calendar.py#def build_windows,none,new_required,5.4A builds one window map for all resources from the project calendar; contract adds calendar vs continuous
+Resource,calendar_ref,controlled_fixture_inputs.json::calendar,fixture.py#calendar = prepared["calendar"],controlled_scheduling_inputs.json::calendar,new_required,5.4A applies the project calendar implicitly to every resource; contract requires an explicit reference
+Resource,capacity_by_date,none,none,none,new_optional,No source
+Resource,input_state,scheduling_handover.json::input_states,none,none,direct,Same five-value vocabulary; 5.3A sets it per activity; contract sets it per resource value
+Resource,evidence_ref,scheduling_handover.json::activities[].assumption_ref,fixture.py#"assumption_ref",controlled_scheduling_inputs.json::_meta.status,renamed,assumption_ref is per activity; contract needs it per resource value
+Resource,approval_required,scheduling_handover.json::activities[].pending_approval_ids,fixture.py#"pending_approval_ids",engineering_gate_matrix.csv (approval_id),derived,Flag set from the register owner's approval ids; this contract assigns none
+ResourceCalendar,calendar_id,none,none,none,new_required,5.4A has a single unnamed calendar
+ResourceCalendar,timezone,controlled_fixture_inputs.json::calendar.timezone,scheduling_contract.json::axis,controlled_scheduling_inputs.json::calendar.timezone,conflict,5.3A Europe/Paris vs preparation Europe/Madrid (Task 3 finding N4); contract requires one explicit zone per calendar
+ResourceCalendar,working_windows,controlled_fixture_inputs.json::calendar.working_windows,scheduling_contract.json::calendar.working_windows,controlled_scheduling_inputs.json::calendar.working_windows,direct,Same weekday/HH:MM structure
+ResourceCalendar,date_exceptions,none,scheduling_contract.json::calendar.date_exceptions,controlled_scheduling_inputs.json::calendar.date_exceptions,direct,Absent in 5.3A (deficiency D8)
+ResourceCalendar,date_overrides,none,scheduling_contract.json::calendar.date_overrides,none,direct,Supported by 5.4A build_windows
+ResourceCalendar,input_state,none,none,none,new_required,No calendar-level state in any source
+CrewMode,mode_id,scheduling_handover.json::activities[].crew_id,fixture.py#crew_mode = row.get("crew_id"),controlled_scheduling_inputs.json::crew_modes (keys),direct,HYP-FORM / HYP-REBAR / HYP-CONC
+CrewMode,units,controlled_fixture_inputs.json::crews,fixture.py#capacities = {**crew,controlled_scheduling_inputs.json::crew_modes,derived,5.4A units = 5.3A crew + equipment_capacity_by_class (VIBRADOR on pours); adapt() checks equality with preparation crew_modes
+CrewMode,execution_mode,scheduling_handover.json::activities[].execution_mode,none,none,direct,Only simultaneous_fixed_crew is supported by 5.3A
+CrewMode,input_state,controlled_fixture_inputs.json::elements.*.input_state,none,none,derived,Element-level state applies to its crew
+ActivityResourceRequirement,activity_id,scheduling_handover.json::activities[].id,fixture.py#"id": uid,controlled_scheduling_inputs.json::activities[].id,renamed,Preparation uses aliases (C-FORM); 5.4A keeps the 5.3A UUID as id and the alias as reference_id
+ActivityResourceRequirement,modes[].productive_minutes,scheduling_handover.json::activities[].productive_hours,fixture.py#minutes = row["productive_hours"] * 60,controlled_scheduling_inputs.json::activities[].productive_hours,direct,x 60; one mode per activity in all sources
+ActivityResourceRequirement,modes[].worker_hours_by_trade,scheduling_handover.json::activities[].worker_hours_by_trade,none,none,direct,Not consumed by 5.4A; used by contract rule V4
+ActivityResourceRequirement,modes[].machine_hours_by_class,scheduling_handover.json::activities[].machine_hours_by_class,none,none,direct,Not consumed by 5.4A; used by V4
+ActivityResourceRequirement,modes[].duration_basis,scheduling_handover.json::activities[].duration_basis,none,none,direct,Traceability only
+ActivityResourceRequirement,occupancy_basis,scheduling_handover.json::activities[].reserved_worker_hours,scheduling_contract.json::activities.resources,none,direct,5.4A: integer occupancy during working segments = working_time
+ActivityResourceRequirement,allowed_hours,none,fixture.py#"allowed_hours": oracle.get("window"),controlled_scheduling_inputs.json::activities[].window,direct,Pour 08:00-14:00 window; contract prefers SupplySource calendar but keeps allowed_hours for parity
+ActivityResourceRequirement,interruption,none,scheduling_contract.json::activities.interruption,controlled_scheduling_inputs.json::calendar.productive_phase_policy,direct,All fixture tasks non_interruptible
+InspectorRequirement,activity_id,scheduling_handover.json::activities[].work_item (INSPECTION-HOLD),fixture.py#if item == "INSPECTION-HOLD",controlled_scheduling_inputs.json::inspection_milestones[].id,derived,5.3A elapsed hold converted to 5.4A kind inspection (deficiency D4)
+InspectorRequirement,inspector_resource_id,none,fixture.py#inspectors[alias]["resource"],controlled_scheduling_inputs.json::inspection_milestones[].resource,direct,INSPECTOR
+InspectorRequirement,units,none,fixture.py#capacities = {inspectors[alias]["resource"]: 1},none,derived,5.4A hard-codes 1; contract requires an explicit value
+InspectorRequirement,duration_minutes,controlled_fixture_inputs.json::elements.*.inspection_elapsed_hours,fixture.py#minutes = inspectors[alias]["duration_min"],controlled_scheduling_inputs.json::inspection_milestones[].duration_min,derived,0.5 elapsed h in 5.3A reinterpreted as 30 working minutes in 5.4A
+InspectorRequirement,pass_event_id,scheduling_handover.json::activities[].criterion,none,none,new_required,Only criterion text exists (open item O2)
+InspectorRequirement,pass_status,controlled_fixture_inputs.json::elements.*.inspection_condition,none,none,new_required,Text 'Hypothetical passed ...' is not a machine-readable event
+Reservation,reservation_id,none,none,none,new_required,No source models reusable assets
+Reservation,resource_id,none,none,none,new_required,FORMWORK_PANEL_SET / PROP have no source
+Reservation,quantity,scheduling_handover.json::activities[].materials (CE00200 per_unit),none,none,new_required,BCCA per_unit is an amortisation coefficient and must not be used as a count (principle P5)
+Reservation,element_ids,scheduling_handover.json::activities[].global_id,fixture.py#"global_id": guid,controlled_scheduling_inputs.json::activities[].global_id,direct,IFC GlobalId per element
+Reservation,start_event,scheduling_handover.json::activities[].work_item (*-FORM),none,none,derived,Proposed FORM activity_start; must be stated per reservation
+Reservation,release_condition,scheduling_handover.json::activities[].work_item (FRM-STRIP),fixture.py#CROSS_SUPPORT,controlled_scheduling_inputs.json::cross_package_dependencies,derived,STRIP finish; beam soffit props follow the Agent 2 hypothetical rule B-STRIP after S-STRIP (5.4A edge S-STRIP>B-STRIP)
+Reservation,occupancy_basis,none,none,none,new_required,continuous_elapsed has no 5.4A equivalent (elapsed holds carry no resources)
+Reservation,covers_activities,none,none,none,new_required,Validation V8
+Reservation,input_state,none,none,none,new_required,missing for the fixture
+ReleaseCondition,all_of,none,cpm.py#release_event_id,controlled_scheduling_inputs.json::striking,derived,Reuses 5.4A activity and strength events as release triggers
+ReleaseCondition,return_lead_minutes,none,none,none,new_required,No source; explicit value required
+ReleaseCondition,reshoring,scheduling_handover.json::activities[].reference.excluded_operations,none,none,derived,05HED00001 excludes re-propping; contract makes it an explicit enum
+Event,strength_release,controlled_fixture_inputs.json::elements.*.striking_condition,fixture.py#hypothetical_strength_events,controlled_scheduling_inputs.json::striking,direct,Statuses hypothetical_pass_at_minimum / hypothetical_recorded_pass / recorded_pass / failed / missing
+Event,elapsed_after_event,controlled_fixture_inputs.json::elements.*.striking_elapsed_hours_from_pour,fixture.py#elapsed_hours_from_pour,controlled_scheduling_inputs.json::striking,direct,Anchored to pour finish (deficiency D5)
+SupplySource,resource_id,controlled_fixture_inputs.json::equipment.CONCRETE_DELIVERY,none,controlled_scheduling_inputs.json::concrete_delivery,renamed,5.3A equipment key becomes a supply_source
+SupplySource,product,controlled_fixture_inputs.json::concrete_specification,none,none,direct,HA-25/P/20/XC2
+SupplySource,rate_capacity_m3_h,engine.py#declared.get("unit") == "m3/h",none,controlled_scheduling_inputs.json::concrete_delivery.max_rate_m3_h,direct,5.3A accepts {unit m3/h; capacity; concurrent_with_placement}; fixture declares 0 (explicit none); Agent 2 rate null
+SupplySource,calendar_ref,none,fixture.py#"allowed_hours": oracle.get("window"),controlled_scheduling_inputs.json::concrete_delivery.window_local,derived,Delivery window moves from activity allowed_hours to the supply calendar
+SupplySource,max_volume_per_day_m3,none,none,none,new_optional,No source
+SupplySource,concurrent_with_placement,engine.py#declared.get("concurrent_with_placement") is True,none,none,direct,Required by 5.3A for a throughput bound
+SupplySource,input_state,none,none,none,new_required,
+PourSupplyDemand,supply_resource_id,scheduling_handover.json::activities[].explicit_none_equipment,none,none,derived,null when CONCRETE_DELIVERY is explicit none
+PourSupplyDemand,drawn_rate_m3_h,scheduling_handover.json::activities[].concurrent_throughput_per_hour,none,none,direct,Empty for the fixture
+PourSupplyDemand,pump_resource_id,controlled_fixture_inputs.json::equipment.CONCRETE_PUMP,none,controlled_scheduling_inputs.json::equipment.CONCRETE_PUMP,derived,Explicit none (0)
+PourSupplyDemand,volume_m3,scheduling_handover.json::activities[].quantity,none,controlled_scheduling_inputs.json::activities[].quantity,direct,Unit m3 on *-CONC activities
+PourSupplyDemand,duration_rule,scheduling_handover.json::activities[].capacity_bounds_hours,none,none,direct,throughput:<key> bound computed in 5.3A engine.estimate
+ConsumableDemand,code / unit / quantity,scheduling_handover.json::activities[].materials,none,none,direct,Retained for cost; no 5.4B constraint
+SplitPolicy,interruption,none,scheduling_contract.json::activities.interruption,none,direct,
+SplitPolicy,authorization_ref,none,none,none,new_required,5.4A split_allowed has no authorization field
+SplitPolicy,max_segments / min_segment_minutes,none,none,none,new_required,Task 4 RC10a-c
+SplitPolicy,retention_during_gap / restart_overhead_minutes / same_mode_on_restart / voluntary_pause,none,calendar.py#def fit_work,none,new_required,5.4A fit_work splits greedily with release between segments and no overhead; contract makes each choice explicit
+CapacityPolicy,MISSING_INPUT,engine.py#Missing compatible,cpm.py#"MISSING_INPUT",scheduling_test_cases.json (TC8),direct,
+CapacityPolicy,IMPOSSIBLE_CREW,none,cpm.py#"IMPOSSIBLE_CREW",scheduling_test_cases.json (TC8),direct,5.4A checks single-mode capacity >= demand
+CapacityPolicy,NO_FIT,none,calendar.py#"NO_FIT",scheduling_test_cases.json (TC4),direct,
+CapacityPolicy,INFEASIBLE_DEADLINE,none,cpm.py#"INFEASIBLE_DEADLINE",scheduling_test_cases.json (TC7),direct,
+CapacityPolicy,EXPLICIT_NONE_REQUIRED,engine.py#or explicit none for this operation,none,none,renamed,5.3A ValueError text becomes a code
+CapacityPolicy,NO_ELIGIBLE_MODE / SPLIT_NOT_AUTHORIZED / RESERVATION_UNRELEASED / TICK_MISALIGNED,none,none,none,new_required,
+CapacityPolicy,RELEASE_CONDITIONAL,none,cpm.py#"conditional",scheduling_test_cases.json (TC6),direct,

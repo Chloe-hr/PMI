@@ -1,0 +1,59 @@
+{
+  "generated": "2026-11-19 17:55 UTC",
+  "checks": [
+    {
+      "check": "Stage 4.0B pre-task baseline",
+      "total": 1601,
+      "changed_or_missing": []
+    },
+    {
+      "check": "Stage 4.0A baseline",
+      "total": 342,
+      "changed_or_missing": []
+    },
+    {
+      "check": "Protected paths vs task-start snapshot",
+      "total": 165,
+      "changed": []
+    },
+    {
+      "check": "Manual validation workbook unchanged",
+      "path": "research/validation/stage5_1_manual/manual_quantity_validation.xlsx",
+      "sha256_now": "08c12313c20a87c31e89381e3c0dc8dcde2be73ddefe2f290a3657ae091ef1dc",
+      "sha256_start": "08c12313c20a87c31e89381e3c0dc8dcde2be73ddefe2f290a3657ae091ef1dc",
+      "unchanged": true
+    },
+    {
+      "check": "git tracked modifications / staged",
+      "tracked": [],
+      "untracked": [
+        "research/implementation/stage5_2/implementation_baseline.json",
+        "research/validation/engineering_approval_review/controlled_demo_input_template.json",
+        "research/validation/engineering_approval_review/duration_and_cost_calculation_examples.md",
+        "research/validation/engineering_approval_review/measurement_instructions.md",
+        "research/validation/engineering_approval_review/one_page_summary.md",
+        "research/validation/engineering_approval_review/preservation_verification.json",
+        "research/validation/engineering_approval_review/priority_approval_register.csv",
+        "research/validation/engineering_approval_review/scripts/",
+        "research/validation/engineering_approval_review/stage5_3_readiness_report.md",
+        "research/validation/engineering_approval_review/stage5_3_reference_selection.csv",
+        "research/validation/stage5_1_manual/~$manual_quantity_validation.xlsx"
+      ]
+    },
+    {
+      "check": "Write scope",
+      "paths": [
+        "research/validation/engineering_approval_review/"
+      ]
+    },
+    {
+      "check": "No approvals recorded, no measurements filled",
+      "result": true
+    },
+    {
+      "check": "No acquisition, training, inference, environment change, commit or push",
+      "result": "confirmed by script scope"
+    }
+  ],
+  "all_protected_unchanged_by_this_task": true
+}

@@ -14,15 +14,24 @@ from pmi_core.validation.readiness import Readiness, assess_readiness
 def main(argv=None):
     parser = argparse.ArgumentParser()
     commands = parser.add_subparsers(dest="command", required=True)
-    command = commands.add_parser("import-ifc")
-    command.add_argument("--input", required=True, type=Path)
-    command.add_argument("--project-id", required=True)
-    command.add_argument("--output", required=True, type=Path)
-    command.add_argument("--policy", choices=("strict", "exploratory"), default="strict")
-    command.add_argument("--geometry", action="store_true")
+    for name in ("import-ifc", "build-construction"):
+        command = commands.add_parser(name)
+        command.add_argument("--input", required=True, type=Path)
+        command.add_argument("--project-id", required=True)
+        command.add_argument("--output", required=True, type=Path)
+        command.add_argument("--policy", choices=("strict", "exploratory"), default="strict")
+        command.add_argument("--geometry", action="store_true")
+        if name == "build-construction":
+            command.add_argument("--library", type=Path)
     args = parser.parse_args(argv)
     result = import_ifc(args.input, project_id=args.project_id, policy=args.policy, geometry=args.geometry)
     readiness = tuple(assess_readiness(result))
+    if args.command == "build-construction":
+        from pmi_core.construction.engine import build_construction
+        from pmi_core.construction.export import export_construction
+        from pmi_core.construction.library import DEFAULT_LIBRARY, load_library
+
+        construction = build_construction(result, load_library(args.library or DEFAULT_LIBRARY))
     args.output.mkdir(parents=True, exist_ok=False)
     bundle = {"contract_version": "5.1.0", "is_valid": result.is_valid,
               **asdict(result), "readiness": [asdict(row) for row in readiness]}
@@ -39,6 +48,8 @@ def main(argv=None):
             for row in rows:
                 writer.writerow({key: json.dumps(value) if isinstance(value, tuple) else value
                                  for key, value in asdict(row).items()})
+    if args.command == "build-construction":
+        export_construction(args.output, construction, result.elements)
     return 0 if result.is_valid else 1
 
 

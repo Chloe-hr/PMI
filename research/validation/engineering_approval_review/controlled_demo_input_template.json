@@ -1,0 +1,581 @@
+{
+  "_meta": {
+    "title": "PMI controlled concrete-frame demonstration - input template",
+    "generated": "2026-11-19 17:55 UTC",
+    "status": "TEMPLATE - not an approval",
+    "scope": "cast-in-place RC frame: columns, beams, slabs (no foundations, excavation, masonry, precast)",
+    "rules": [
+      "null means REQUIRED and unknown: dependent activities are blocked; never replace with 0",
+      "reinforcement mass is entered per element or per element group by the user; generic ratios are not accepted",
+      "curing and striking values are engineer inputs; no defaults exist",
+      "hypothetical_test_fixture is for software tests only and must never be used as a real project input"
+    ],
+    "contracts": "research/architecture/stage5_0/canonical_schemas.json (Project, ProjectCalendar, Crew, EquipmentResource, WorkItem, ActivityDependency, ProductivityReference, CostReference, DurationEstimate)"
+  },
+  "required_user_inputs": {
+    "project": {
+      "id": null,
+      "name": null,
+      "country": null,
+      "region": null,
+      "timezone": null,
+      "start_date": null,
+      "preferred_completion": null
+    },
+    "calendar": {
+      "id": null,
+      "timezone": null,
+      "working_windows": [
+        {
+          "weekday": null,
+          "start": "HH:mm",
+          "end": "HH:mm"
+        }
+      ],
+      "date_exceptions": [],
+      "window_start": null,
+      "window_end": null
+    },
+    "zones": [
+      {
+        "zone_id": null,
+        "storey": null,
+        "element_global_ids": []
+      }
+    ],
+    "crews": [
+      {
+        "id": null,
+        "calendar_id": null,
+        "workers_by_trade": {
+          "OF. 1ª ENCOFRADOR": null,
+          "OF. 1ª FERRALLISTA": null,
+          "OFICIAL 1ª": null,
+          "PEÓN ESPECIAL": null
+        },
+        "applies_to_activities": []
+      }
+    ],
+    "equipment": [
+      {
+        "id": null,
+        "equipment_class": "VIBRADOR",
+        "units": null,
+        "calendar_id": null,
+        "note": "enter 0 only if explicitly none; null blocks"
+      },
+      {
+        "id": null,
+        "equipment_class": "CRANE",
+        "units": null,
+        "calendar_id": null,
+        "note": "enter 0 only if explicitly none; null blocks"
+      },
+      {
+        "id": null,
+        "equipment_class": "CONCRETE_PUMP",
+        "units": null,
+        "calendar_id": null,
+        "note": "enter 0 only if explicitly none; null blocks"
+      },
+      {
+        "id": null,
+        "equipment_class": "CONCRETE_DELIVERY_m3_per_h",
+        "units": null,
+        "calendar_id": null,
+        "note": "enter 0 only if explicitly none; null blocks"
+      }
+    ],
+    "concrete_specification": {
+      "class_by_element_type": {
+        "IfcColumn": null,
+        "IfcBeam": null,
+        "IfcSlab": null
+      },
+      "consistency": null,
+      "max_aggregate_mm": null,
+      "exposure_class": null
+    },
+    "construction_method": {
+      "per_element_group": [
+        {
+          "group": null,
+          "method": "cast_in_place|precast|composite",
+          "approval_id": "AP-CR06"
+        }
+      ]
+    },
+    "reinforcement_mass_kg": [
+      {
+        "element_global_id_or_group": null,
+        "mass_kg": null,
+        "source": "bar schedule | rebar model | design value",
+        "bars_or_mesh": "bars|mesh"
+      }
+    ],
+    "formwork": {
+      "system_by_element_type": {
+        "IfcColumn": null,
+        "IfcBeam": null,
+        "IfcSlab": null
+      },
+      "finish": "rendered|exposed",
+      "contact_face_rules": {
+        "IfcColumn": null,
+        "IfcBeam": null,
+        "IfcSlab": null
+      },
+      "slab_on_grade_global_ids": []
+    },
+    "measurement_rules": {
+      "column_height": "clear|through (AP-DC07)",
+      "beam_depth": "including_slab|below_soffit (AP-DC06)",
+      "layered_elements": "concrete_layer_only|exclude (AP-DC08)"
+    },
+    "curing": {
+      "criterion": "time|strength|both",
+      "minimum_elapsed_hours": null,
+      "strength_mpa": null,
+      "monitoring": null,
+      "applies_to": []
+    },
+    "striking": {
+      "side_formwork": {
+        "criterion": null,
+        "minimum_elapsed_hours": null,
+        "strength_mpa": null
+      },
+      "soffit_formwork": {
+        "criterion": null,
+        "minimum_elapsed_hours": null,
+        "strength_mpa": null
+      },
+      "reshoring": null
+    },
+    "sequence_choice": {
+      "column": "DR05 (rebar then formwork) | prefabricated cage SS",
+      "beam_slab": "DR06 soffit formwork then rebar",
+      "storeys": "DR10",
+      "zones": "DR11 resource-driven | fixed order",
+      "inspection_hold_hours_before_pour": null
+    },
+    "productivity_adjustments": {
+      "factor": null,
+      "applies_to": null,
+      "evidence": null,
+      "note": "omit to use unchanged BCCA basis (disclosed)"
+    }
+  },
+  "reference_data": {
+    "provider": "BCCA",
+    "release": "Dic-2023 V02",
+    "region": "Andalucia, ES",
+    "source_file": "data/raw/candidates/productivity/bcca_andalucia/extracted/BCCA2023_V02/BCCA2023_V02.bc3",
+    "source_sha256": "bee06981c4447c6b07a3434a6a4d934de11a7498687b0bf3462ba2ce36b7817d",
+    "selected": [
+      {
+        "activity_id": "COL-REBAR",
+        "bcca_code": "05HAC00015",
+        "role": "primary",
+        "unit": "kg",
+        "unit_cost_eur": 1.52,
+        "labour_h_per_unit_total": 0.02
+      },
+      {
+        "activity_id": "BEAM-REBAR",
+        "bcca_code": "05HAC00015",
+        "role": "primary",
+        "unit": "kg",
+        "unit_cost_eur": 1.52,
+        "labour_h_per_unit_total": 0.02
+      },
+      {
+        "activity_id": "SLAB-REBAR",
+        "bcca_code": "05HAC00015",
+        "role": "primary",
+        "unit": "kg",
+        "unit_cost_eur": 1.52,
+        "labour_h_per_unit_total": 0.02
+      },
+      {
+        "activity_id": "SLAB-REBAR",
+        "bcca_code": "05HAM00010",
+        "role": "alternative (mesh)",
+        "unit": "kg",
+        "unit_cost_eur": 1.61,
+        "labour_h_per_unit_total": 0.01
+      },
+      {
+        "activity_id": "COL-FORM",
+        "bcca_code": "05HEM00001",
+        "role": "primary",
+        "unit": "m2",
+        "unit_cost_eur": 16.16,
+        "labour_h_per_unit_total": 0.35
+      },
+      {
+        "activity_id": "BEAM-FORM",
+        "bcca_code": "05HEM00051",
+        "role": "primary",
+        "unit": "m2",
+        "unit_cost_eur": 16.23,
+        "labour_h_per_unit_total": 0.5
+      },
+      {
+        "activity_id": "SLAB-FORM",
+        "bcca_code": "05HEM00101",
+        "role": "primary",
+        "unit": "m2",
+        "unit_cost_eur": 21.42,
+        "labour_h_per_unit_total": 0.75
+      },
+      {
+        "activity_id": "COL-CONC",
+        "bcca_code": "05HHP00003",
+        "role": "primary",
+        "unit": "m3",
+        "unit_cost_eur": 113.58,
+        "labour_h_per_unit_total": 0.6
+      },
+      {
+        "activity_id": "COL-CONC",
+        "bcca_code": "05HHP00103",
+        "role": "alternative (HA-30)",
+        "unit": "m3",
+        "unit_cost_eur": 119.45,
+        "labour_h_per_unit_total": 0.6
+      },
+      {
+        "activity_id": "BEAM-CONC",
+        "bcca_code": "05HHJ00003",
+        "role": "primary",
+        "unit": "m3",
+        "unit_cost_eur": 118.4,
+        "labour_h_per_unit_total": 0.8
+      },
+      {
+        "activity_id": "BEAM-CONC",
+        "bcca_code": "05HHJ00103",
+        "role": "alternative (HA-30)",
+        "unit": "m3",
+        "unit_cost_eur": 124.27,
+        "labour_h_per_unit_total": 0.8
+      },
+      {
+        "activity_id": "SLAB-CONC",
+        "bcca_code": "05HHL00003",
+        "role": "primary",
+        "unit": "m3",
+        "unit_cost_eur": 118.57,
+        "labour_h_per_unit_total": 0.8
+      },
+      {
+        "activity_id": "SLAB-CONC",
+        "bcca_code": "05HHL00103",
+        "role": "alternative (HA-30)",
+        "unit": "m3",
+        "unit_cost_eur": 124.57,
+        "labour_h_per_unit_total": 0.8
+      },
+      {
+        "activity_id": "FRM-STRIP",
+        "bcca_code": "05HED00001",
+        "role": "primary",
+        "unit": "m2",
+        "unit_cost_eur": 4.0,
+        "labour_h_per_unit_total": 0.18
+      }
+    ],
+    "detail": "research/validation/engineering_approval_review/stage5_3_reference_selection.csv"
+  },
+  "engineering_decisions": [
+    {
+      "approval_id": "AP-CR01",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-CR05",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-CR06",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-CR07",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-CR10",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-CR13",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-CR14",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-DC04",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-DC05",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-DC06",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-DC07",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-DC08",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-W-BEAM-CONC",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-W-BEAM-FORM",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-W-BEAM-REBAR",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-W-COL-CONC",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-W-COL-FORM",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-W-COL-REBAR",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-W-SLAB-CONC",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-W-SLAB-FORM",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-W-SLAB-REBAR",
+      "phase": "WPG",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-DC02",
+      "phase": "DUR",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-DC03",
+      "phase": "DUR",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-W-CURE",
+      "phase": "DUR",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-W-FRM-STRIP",
+      "phase": "DUR",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-DR05",
+      "phase": "RCPSP",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-DR06",
+      "phase": "RCPSP",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-DR07",
+      "phase": "RCPSP",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-DR08",
+      "phase": "RCPSP",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-DR09",
+      "phase": "RCPSP",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-DR10",
+      "phase": "RCPSP",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-DR11",
+      "phase": "RCPSP",
+      "status": "PENDING",
+      "decision": null
+    },
+    {
+      "approval_id": "AP-DR15",
+      "phase": "RCPSP",
+      "status": "PENDING",
+      "decision": null
+    }
+  ],
+  "hypothetical_test_fixture": {
+    "not_for_real_project_use": true,
+    "label": "HYPOTHETICAL - software test values chosen arbitrarily; not engineering recommendations, not approvals",
+    "project": {
+      "id": "HYP-FRAME-001",
+      "name": "Hypothetical one-bay frame",
+      "country": "ES",
+      "region": "AN",
+      "timezone": "Europe/Madrid",
+      "start_date": "2027-01-04"
+    },
+    "calendar": {
+      "id": "HYP-CAL",
+      "working_windows": [
+        {
+          "weekday": 1,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 2,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 3,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 4,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 5,
+          "start": "08:00",
+          "end": "16:00"
+        }
+      ],
+      "note": "8 h/day Mon-Fri, no breaks modelled"
+    },
+    "geometry": "4 columns 0.30x0.30x3.00 m; 4 beams 0.30x0.50x5.00 m; 1 slab 5.30x5.30x0.20 m; no openings",
+    "quantities": {
+      "COL_CONC_m3": 1.08,
+      "COL_FORM_m2": 14.4,
+      "BEAM_CONC_m3": 3.0,
+      "BEAM_FORM_m2": 26.0,
+      "SLAB_CONC_m3": 5.618,
+      "SLAB_FORM_m2": 28.09,
+      "COL_REBAR_kg": 150.0,
+      "BEAM_REBAR_kg": 300.0,
+      "SLAB_REBAR_kg": 400.0,
+      "note": "HYPOTHETICAL: formwork faces = 4 column faces full height; beam soffit + 2 sides full depth; slab soffit full area (no deduction of beam tops). Rebar kg are stated test values, NOT ratios."
+    },
+    "crews": [
+      {
+        "id": "HYP-FORM",
+        "workers_by_trade": {
+          "OF. 1ª ENCOFRADOR": 2,
+          "PEÓN ESPECIAL": 1
+        }
+      },
+      {
+        "id": "HYP-REBAR",
+        "workers_by_trade": {
+          "OF. 1ª FERRALLISTA": 2
+        }
+      },
+      {
+        "id": "HYP-CONC",
+        "workers_by_trade": {
+          "PEÓN ESPECIAL": 2,
+          "OFICIAL 1ª": 1
+        }
+      }
+    ],
+    "equipment": {
+      "VIBRADOR": 1,
+      "CRANE": 0,
+      "CONCRETE_PUMP": 0,
+      "note": "HYPOTHETICAL explicit none for crane/pump (hand placement assumed for the test)"
+    },
+    "curing_hold_hours_HYPOTHETICAL": 24,
+    "striking_hold_hours_HYPOTHETICAL": {
+      "columns_sides": 24,
+      "beams_slab_soffit": 168
+    },
+    "note_holds": "Arbitrary numbers to exercise calendar logic only. Real values require AP-W-CURE / AP-DR07 / AP-DR08 decisions by the engineer."
+  }
+}

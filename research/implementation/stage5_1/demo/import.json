@@ -1,0 +1,256 @@
+{
+  "contract_version": "5.1.0",
+  "is_valid": true,
+  "model_version": {
+    "id": "2cf4956e-2a5d-5699-8b33-41cf41b3e466",
+    "evidence_ids": [
+      "779407ae-b11e-5a72-8e00-67cd941582e3",
+      "85fabcab-af8e-5c91-9bc9-404140b6368f"
+    ],
+    "project_id": "PMI-DEMO",
+    "sha256": "58bb9b2cae96edf2c368de95f526650f3f282e4e7fc37c0065c501bdbeed00a1",
+    "source_uri": "file:///C:/Users/Chloe/PMI/PMI/data/raw/Certification-datasets-main/IFC%204.0.2.1%20%28IFC%204%20ADD2%20TC1%29/ISO%20Spec%20-%20ReferenceView_V1.2/column-straight-rectangle-tessellation.ifc",
+    "namespace": "0CxDbxzA1B4eLeOw9eIjQx",
+    "ifc_schema": "IFC4",
+    "parent_id": null
+  },
+  "elements": [
+    {
+      "id": "ac357862-7366-5f4a-be31-dd8f719fbfbf",
+      "evidence_ids": [
+        "bb72b2ba-47e8-587c-a300-e898f42ce409",
+        "b685350c-0c82-538e-ae8f-aa3b06ce5089"
+      ],
+      "model_version_id": "2cf4956e-2a5d-5699-8b33-41cf41b3e466",
+      "global_id": "2WUGYBphrFv8aLIFJCmiIk",
+      "ifc_class": "IfcColumn",
+      "source_step_id": 71,
+      "container_id": "c1df3e1d-48a7-5151-ad72-b9ee6fbd9aaa",
+      "classification": null,
+      "name": "Column #1",
+      "object_type": null,
+      "predefined_type": "COLUMN"
+    }
+  ],
+  "spatial_elements": [
+    {
+      "id": "c1df3e1d-48a7-5151-ad72-b9ee6fbd9aaa",
+      "evidence_ids": [
+        "b685350c-0c82-538e-ae8f-aa3b06ce5089"
+      ],
+      "model_version_id": "2cf4956e-2a5d-5699-8b33-41cf41b3e466",
+      "global_id": "0M0akNk9f3hOH9u2awmtre",
+      "ifc_class": "IfcSite",
+      "source_step_id": 44,
+      "container_id": null,
+      "classification": "ELEMENT",
+      "name": "Site #1",
+      "object_type": null,
+      "predefined_type": null
+    }
+  ],
+  "quantities": [
+    {
+      "id": "7111f558-b13c-578b-9504-4c61f4179188",
+      "evidence_ids": [
+        "522b1db4-9bb0-5dca-8ade-8686fa869f33"
+      ],
+      "element_id": "ac357862-7366-5f4a-be31-dd8f719fbfbf",
+      "kind": "volume",
+      "basis": "represented_body_volume",
+      "method": "geometry",
+      "status": "accepted",
+      "value": 0.12585265152,
+      "unit": "m3",
+      "raw_value": null,
+      "raw_unit": null,
+      "reason": null,
+      "measurement_method": null
+    }
+  ],
+  "materials": [],
+  "evidence": [
+    {
+      "id": "779407ae-b11e-5a72-8e00-67cd941582e3",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/data/raw/Certification-datasets-main/IFC%204.0.2.1%20%28IFC%204%20ADD2%20TC1%29/ISO%20Spec%20-%20ReferenceView_V1.2/column-straight-rectangle-tessellation.ifc",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [],
+      "sha256": "58bb9b2cae96edf2c368de95f526650f3f282e4e7fc37c0065c501bdbeed00a1",
+      "formula": null
+    },
+    {
+      "id": "85fabcab-af8e-5c91-9bc9-404140b6368f",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/data/raw/Certification-datasets-main/IFC%204.0.2.1%20%28IFC%204%20ADD2%20TC1%29/ISO%20Spec%20-%20ReferenceView_V1.2/column-straight-rectangle-tessellation.ifc#step-37",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "779407ae-b11e-5a72-8e00-67cd941582e3"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "bb72b2ba-47e8-587c-a300-e898f42ce409",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/data/raw/Certification-datasets-main/IFC%204.0.2.1%20%28IFC%204%20ADD2%20TC1%29/ISO%20Spec%20-%20ReferenceView_V1.2/column-straight-rectangle-tessellation.ifc#step-71",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "779407ae-b11e-5a72-8e00-67cd941582e3"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "b685350c-0c82-538e-ae8f-aa3b06ce5089",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/data/raw/Certification-datasets-main/IFC%204.0.2.1%20%28IFC%204%20ADD2%20TC1%29/ISO%20Spec%20-%20ReferenceView_V1.2/column-straight-rectangle-tessellation.ifc#step-44",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "779407ae-b11e-5a72-8e00-67cd941582e3"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "93859e38-0f18-5642-ba3a-33a962e85532",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/data/raw/Certification-datasets-main/IFC%204.0.2.1%20%28IFC%204%20ADD2%20TC1%29/ISO%20Spec%20-%20ReferenceView_V1.2/column-straight-rectangle-tessellation.ifc#step-154",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "779407ae-b11e-5a72-8e00-67cd941582e3"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "811ba068-5246-55fe-a086-7b7885afa39f",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/data/raw/Certification-datasets-main/IFC%204.0.2.1%20%28IFC%204%20ADD2%20TC1%29/ISO%20Spec%20-%20ReferenceView_V1.2/column-straight-rectangle-tessellation.ifc#step-288",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "779407ae-b11e-5a72-8e00-67cd941582e3"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "909d9c09-bef3-5b9d-9a64-5113b8969402",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/data/raw/Certification-datasets-main/IFC%204.0.2.1%20%28IFC%204%20ADD2%20TC1%29/ISO%20Spec%20-%20ReferenceView_V1.2/column-straight-rectangle-tessellation.ifc#step-36",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "779407ae-b11e-5a72-8e00-67cd941582e3"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "892afa99-3b2b-5a16-a7b6-9802fdea1a1c",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/data/raw/Certification-datasets-main/IFC%204.0.2.1%20%28IFC%204%20ADD2%20TC1%29/ISO%20Spec%20-%20ReferenceView_V1.2/column-straight-rectangle-tessellation.ifc#step-15",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "779407ae-b11e-5a72-8e00-67cd941582e3"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "8273d4fb-4ee6-5ebe-98f9-6b05b6d8c599",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/data/raw/Certification-datasets-main/IFC%204.0.2.1%20%28IFC%204%20ADD2%20TC1%29/ISO%20Spec%20-%20ReferenceView_V1.2/column-straight-rectangle-tessellation.ifc#step-14",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "779407ae-b11e-5a72-8e00-67cd941582e3"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "970b0319-967f-50a3-9d3f-a676eca5c691",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/data/raw/Certification-datasets-main/IFC%204.0.2.1%20%28IFC%204%20ADD2%20TC1%29/ISO%20Spec%20-%20ReferenceView_V1.2/column-straight-rectangle-tessellation.ifc#step-13",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "779407ae-b11e-5a72-8e00-67cd941582e3"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "6b4c14f1-02a1-51ab-b12a-235ed4080c8b",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/data/raw/Certification-datasets-main/IFC%204.0.2.1%20%28IFC%204%20ADD2%20TC1%29/ISO%20Spec%20-%20ReferenceView_V1.2/column-straight-rectangle-tessellation.ifc#step-12",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "779407ae-b11e-5a72-8e00-67cd941582e3"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "522b1db4-9bb0-5dca-8ade-8686fa869f33",
+      "kind": "derivation",
+      "locator": "pmi:7111f558-b13c-578b-9504-4c61f4179188",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "bb72b2ba-47e8-587c-a300-e898f42ce409",
+        "93859e38-0f18-5642-ba3a-33a962e85532",
+        "811ba068-5246-55fe-a086-7b7885afa39f",
+        "909d9c09-bef3-5b9d-9a64-5113b8969402",
+        "892afa99-3b2b-5a16-a7b6-9802fdea1a1c",
+        "8273d4fb-4ee6-5ebe-98f9-6b05b6d8c599",
+        "970b0319-967f-50a3-9d3f-a676eca5c691",
+        "6b4c14f1-02a1-51ab-b12a-235ed4080c8b"
+      ],
+      "sha256": null,
+      "formula": "Oriented triangle volume of the convex IFC Body in SI metres"
+    }
+  ],
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "MISSING_QUANTITIES",
+      "message": "No supported occurrence quantity entities or properties.",
+      "step_ids": [
+        71
+      ],
+      "element_id": "ac357862-7366-5f4a-be31-dd8f719fbfbf",
+      "native_severity": null
+    },
+    {
+      "severity": "warning",
+      "code": "MISSING_MATERIAL",
+      "message": "No occurrence or type material association.",
+      "step_ids": [
+        71
+      ],
+      "element_id": "ac357862-7366-5f4a-be31-dd8f719fbfbf",
+      "native_severity": null
+    }
+  ],
+  "source_project_global_id": "0CxDbxzA1B4eLeOw9eIjQx",
+  "policy": "strict",
+  "geometry": [
+    {
+      "element_id": "ac357862-7366-5f4a-be31-dd8f719fbfbf",
+      "status": "valid",
+      "reason": null
+    }
+  ],
+  "readiness": [
+    {
+      "element_id": "ac357862-7366-5f4a-be31-dd8f719fbfbf",
+      "import_valid": true,
+      "identity_eligible": true,
+      "containment_resolved": true,
+      "geometry_status": "valid",
+      "quantity_status": "available",
+      "material_evidence_available": false,
+      "material_classification_status": "missing",
+      "engineering_validation": "pending",
+      "work_item_eligible": false
+    }
+  ]
+}

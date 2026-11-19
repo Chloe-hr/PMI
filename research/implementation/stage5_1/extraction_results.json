@@ -1,0 +1,240 @@
+[
+  {
+    "model": "SCH-design",
+    "path": "data\\raw\\SCHEPENDOMLAAN\\Design model IFC\\IFC Schependomlaan.ifc",
+    "valid": true,
+    "seconds": 11.954,
+    "sha256": "03c2a13b37e24fccd925ba251a9a1f7703f10a959e73f3728fd9e1d944d7cada",
+    "schema": "IFC2X3",
+    "elements": {
+      "IfcWallStandardCase": 282,
+      "IfcBeam": 174,
+      "IfcSlab": 279,
+      "IfcWall": 652,
+      "IfcColumn": 23,
+      "IfcMember": 9
+    },
+    "spatial": 108,
+    "materials": 1755,
+    "quantity": {
+      "ifc_quantity/accepted": 66990,
+      "ifc_quantity/disputed": 7723,
+      "geometry/accepted": 784
+    },
+    "geometry": {
+      "valid": 784,
+      "unsupported": 597,
+      "invalid": 34,
+      "missing": 4
+    },
+    "geometry_reasons": [
+      [
+        null,
+        784
+      ],
+      [
+        "Multiple bodies, multiple items or openings.",
+        295
+      ],
+      [
+        "Mesh is outside the supported convex solid domain.",
+        235
+      ],
+      [
+        "IfcMappedItem",
+        67
+      ],
+      [
+        "Mesh must describe one closed shell.",
+        34
+      ],
+      [
+        "No Body representation.",
+        4
+      ]
+    ],
+    "issues": {
+      "IFC_PARSER_DIAGNOSTIC": 1,
+      "DUPLICATE_GLOBAL_ID": 1,
+      "DISPUTED_QUANTITY": 7723,
+      "MISSING_MATERIAL": 4
+    },
+    "ineligible": 0,
+    "errors": []
+  },
+  {
+    "model": "MEN-RES",
+    "path": "data\\raw\\BIM Spatial Models for Construction Dependency Inf\\BIM_residential_building_data\\BIM_residential_building.ifc",
+    "valid": true,
+    "seconds": 9.739,
+    "sha256": "9c5bfc05886e869674fffd141c97a8ad83d3d37e699e862e7e40eebb859bce89",
+    "schema": "IFC2X3",
+    "elements": {
+      "IfcColumn": 1008,
+      "IfcWallStandardCase": 1532,
+      "IfcWall": 155,
+      "IfcBeam": 573,
+      "IfcSlab": 836,
+      "IfcMember": 168
+    },
+    "spatial": 33,
+    "materials": 4272,
+    "quantity": {
+      "geometry/accepted": 1601
+    },
+    "geometry": {
+      "unsupported": 2665,
+      "valid": 1601,
+      "invalid": 6
+    },
+    "geometry_reasons": [
+      [
+        null,
+        1601
+      ],
+      [
+        "IfcMappedItem",
+        1176
+      ],
+      [
+        "Multiple bodies, multiple items or openings.",
+        660
+      ],
+      [
+        "Mesh is outside the supported convex solid domain.",
+        569
+      ],
+      [
+        "IfcBooleanClippingResult",
+        260
+      ],
+      [
+        "Mesh must describe one closed shell.",
+        6
+      ]
+    ],
+    "issues": {
+      "MISSING_QUANTITIES": 4272
+    },
+    "ineligible": 0,
+    "errors": []
+  },
+  {
+    "model": "SCH-synchro",
+    "path": "data\\raw\\SCHEPENDOMLAAN\\As Planned models\\IFC Schependomlaan incl planningsdata.ifc",
+    "valid": true,
+    "seconds": 7.094,
+    "sha256": "e9746b3b4a653051147f032986f10924b38db1a0699ac412e5f322717e052e51",
+    "schema": "IFC2X3",
+    "elements": {
+      "IfcMember": 9,
+      "IfcBeam": 174,
+      "IfcWallStandardCase": 232,
+      "IfcSlab": 279,
+      "IfcWall": 648,
+      "IfcColumn": 23
+    },
+    "spatial": 3,
+    "materials": 0,
+    "quantity": {
+      "ifc_flattened_quantity/disputed": 8255,
+      "geometry/accepted": 783
+    },
+    "geometry": {
+      "unsupported": 532,
+      "valid": 783,
+      "invalid": 50
+    },
+    "geometry_reasons": [
+      [
+        null,
+        783
+      ],
+      [
+        "Mesh is outside the supported convex solid domain.",
+        293
+      ],
+      [
+        "Multiple bodies, multiple items or openings.",
+        239
+      ],
+      [
+        "Mesh must describe one closed shell.",
+        33
+      ],
+      [
+        "Mesh is open, nonmanifold or inconsistently oriented.",
+        16
+      ],
+      [
+        "Mesh has insufficient or nonfinite coordinates.",
+        1
+      ]
+    ],
+    "issues": {
+      "DISPUTED_QUANTITY": 8255,
+      "MISSING_MATERIAL": 1365
+    },
+    "ineligible": 0,
+    "errors": []
+  },
+  {
+    "model": "CERT",
+    "path": "data\\raw\\Certification-datasets-main\\IFC 4.0.2.1 (IFC 4 ADD2 TC1)\\ISO Spec - ReferenceView_V1.2\\column-straight-rectangle-tessellation.ifc",
+    "valid": true,
+    "seconds": 0.026,
+    "sha256": "58bb9b2cae96edf2c368de95f526650f3f282e4e7fc37c0065c501bdbeed00a1",
+    "schema": "IFC4",
+    "elements": {
+      "IfcColumn": 1
+    },
+    "spatial": 1,
+    "materials": 0,
+    "quantity": {
+      "geometry/accepted": 1
+    },
+    "geometry": {
+      "valid": 1
+    },
+    "geometry_reasons": [
+      [
+        null,
+        1
+      ]
+    ],
+    "issues": {
+      "MISSING_QUANTITIES": 1,
+      "MISSING_MATERIAL": 1
+    },
+    "ineligible": 0,
+    "errors": []
+  },
+  {
+    "model": "CERT",
+    "path": "data\\raw\\Certification-datasets-main\\IFC 4.0.2.1 (IFC 4 ADD2 TC1)\\ISO Spec - ReferenceView_V1.2\\wall-with-opening-and-window.ifc",
+    "valid": true,
+    "seconds": 0.009,
+    "sha256": "73b0e45d931d5dc13bfee5fdc7bd80f796526445458b2de74c4168d209097832",
+    "schema": "IFC4",
+    "elements": {
+      "IfcWall": 1
+    },
+    "spatial": 3,
+    "materials": 1,
+    "quantity": {},
+    "geometry": {
+      "unsupported": 1
+    },
+    "geometry_reasons": [
+      [
+        "Multiple bodies, multiple items or openings.",
+        1
+      ]
+    ],
+    "issues": {
+      "MISSING_QUANTITIES": 1
+    },
+    "ineligible": 0,
+    "errors": []
+  }
+]

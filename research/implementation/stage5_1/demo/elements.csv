@@ -1,0 +1,2 @@
+id,evidence_ids,model_version_id,global_id,ifc_class,source_step_id,container_id,classification,name,object_type,predefined_type
+ac357862-7366-5f4a-be31-dd8f719fbfbf,"[""bb72b2ba-47e8-587c-a300-e898f42ce409"", ""b685350c-0c82-538e-ae8f-aa3b06ce5089""]",2cf4956e-2a5d-5699-8b33-41cf41b3e466,2WUGYBphrFv8aLIFJCmiIk,IfcColumn,71,c1df3e1d-48a7-5151-ad72-b9ee6fbd9aaa,,Column #1,,COLUMN

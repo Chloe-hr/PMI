@@ -1,0 +1,23 @@
+input_id,input,unit,used_by,reason,default_value,if_missing,evidence_status
+UI01,Ground levels / terrain model,m,"EXC-*, BACKFILL",No terrain in any real IFC,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI02,Formation / excavation level,m,EXC-*,Underside of foundations + blinding,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI03,Soil class (BCCA consistency: dura/media/blanda/disgregado/roca),enum,EXC-* variant,Selects BCCA code,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI04,Working space and slope/shoring method,m / enum,EXC-*,Changes volume,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI05,Blinding specified and thickness,bool / m,BLD,BCCA assumes 10 cm minimum,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI06,Construction method per element group (cast-in-place / precast / composite),enum,all concrete,Resolves CR06,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI07,Foundation confirmation for candidate IfcBeam/IfcSlab elements,bool,FND-*,Resolves CR11 (SCH fund_*),NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI08,Concrete class and consistency,enum,*-CONC variant,Selects BCCA code,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI09,Reinforcement mass per element or bar schedule,kg,*-REBAR,No generic ratios,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI10,Formwork system and formed-face rules,enum + rules,*-FORM,Formwork area category C,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI11,Exposed/architectural finish requirement,bool,*-FORM variant,Selects visto vs revestir items,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI12,Curing method and duration / strength criterion,days / MPa,CURE,No universal default,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI13,"Formwork striking criterion (sides, soffits, props)",days / MPa,FRM-STRIP,Engineer-approved,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI14,Crew composition per trade and daily working hours,persons / h,all (Stage 5.3),BCCA gives trades only,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI15,"Project calendar (holidays, working days)",calendar,all (Stage 5.4),Catalan/Andalusian calendars not acquired,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI16,Work zones,zone ids,DR11,IfcZone not audited,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI17,Inspection holds before pours / backfill,days,"DR04, DR06, DR12",Project-specific,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI18,Bulking and compaction factors,ratio,BACKFILL,Bank vs compacted basis,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI19,"Precast supplier, unit type, crane",text,SLAB-PRECAST,No BCCA reference,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI20,Masonry unit type and thickness,enum,MAS-*,Selects BCCA code,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI21,Slab-on-grade identification,bool,SLAB-FORM,CR13,NONE,dependent work items BLOCKED,UNAVAILABLE in data
+UI22,Column height measurement rule at joints (clear / through),enum,"COL-CONC, double counting",DC07,NONE,dependent work items BLOCKED,UNAVAILABLE in data

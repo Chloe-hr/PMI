@@ -1,0 +1,62 @@
+{
+  "head": "0c0a5160051520aa1a83f7baa573fff7d3785ce9",
+  "tracked_changes": [],
+  "staged_changes": [],
+  "protected_trees_before_and_after_final_tests": {
+    "data": {
+      "files": 2092,
+      "tree_sha256": "1e2b929db295ba09d226a3c76b5f1cc58ab6a8a1a78527719154f15f95ed7d31",
+      "unreadable": []
+    },
+    "research": {
+      "files": 162,
+      "tree_sha256": "54873aee5724df9a07f029ae2cc205908c3c9977235d460bf3b3851d134f4e0f",
+      "unreadable": []
+    },
+    "models": {
+      "files": 38,
+      "tree_sha256": "15ad140c2491a450cc50a05c81656c31094e1262a69aa2d47e57c6747a51929b",
+      "unreadable": []
+    },
+    "outputs": {
+      "files": 23,
+      "tree_sha256": "76b3357e2e04d25a165dccd97e3ee67132acb047e6617ffb87a4e5d1be712d80",
+      "unreadable": []
+    },
+    "evidence": {
+      "files": 9,
+      "tree_sha256": "ef410eb2e1ff1773b695eb0b8c8dc7801e8efc9700c6cd2eef79ba967bfc7362",
+      "unreadable": []
+    }
+  },
+  "original_baseline_match": {
+    "models": true,
+    "outputs": true,
+    "evidence": true,
+    "data": false,
+    "research": false
+  },
+  "additional_scan_exclusions": [
+    "Stage 4.0B consolidated additions",
+    "Stage 5.1 implementation records"
+  ],
+  "tests": {
+    "stage5_1": {
+      "passed": 8
+    },
+    "synthetic_imports": {
+      "passed": 12
+    },
+    "legacy_ifc4d": {
+      "passed": 8
+    },
+    "legacy_viewer": {
+      "passed": 6,
+      "failed": 1,
+      "diagnostic": "Two raw IFC inputs use CRLF. LF-normalized hashes match the frozen hashes."
+    },
+    "legacy_dashboard": {
+      "passed": 5
+    }
+  }
+}

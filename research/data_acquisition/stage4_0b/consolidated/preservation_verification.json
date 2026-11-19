@@ -1,0 +1,196 @@
+{
+  "generated": "2026-11-19 13:16 UTC",
+  "checks": [
+    {
+      "check": "Stage 4.0B pre-task baseline (models, processed, evaluation, gnn, raw excl. candidates, data/*.csv|json)",
+      "total": 1601,
+      "changed_or_missing": []
+    },
+    {
+      "check": "Stage 4.0A baseline",
+      "total": 342,
+      "changed_or_missing": []
+    },
+    {
+      "check": "Section A, Sections B-E and Agent 2 (research/architecture) files vs consolidation-start snapshot (2026-11-19 13:01:51 UTC)",
+      "total": 62,
+      "changed": 24,
+      "detail": [
+        {
+          "path": "research/architecture/stage5_0/canonical_data_contracts.md",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.329842+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/construction_knowledge_specification.md",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.329842+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/cost_carbon_evaluation_specification.md",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.330842+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/data_flow.mmd",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.330842+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/engineering_estimation_specification.md",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.330842+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/existing_code_migration_matrix.csv",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.331842+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/implementation_roadmap.md",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.331842+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/repository_reuse_matrix.csv",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.332854+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/revision_propagation_specification.md",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.333851+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/risk_and_assumption_register.csv",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.333851+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/scenario_optimization_specification.md",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.333851+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/scheduling_engine_specification.md",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.334841+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/stage5_0_architecture.html",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.334841+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/stage5_0_architecture.md",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.335842+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/system_architecture.mmd",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.335842+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/user_input_schema.csv",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.335842+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/architecture/stage5_0/validation_strategy.md",
+          "owner": "Agent 2 (research/architecture)",
+          "mtime_utc": "2026-11-19T13:04:19.336842+00:00",
+          "change": "CONTENT CHANGED"
+        },
+        {
+          "path": "research/data_acquisition/stage4_0b/section_A/scripts/geometry_check.py",
+          "owner": "Stage 4.0B deliverable",
+          "mtime_utc": "2026-11-19T13:04:19.344842+00:00",
+          "change": "line endings only (LF<->CRLF); content identical"
+        },
+        {
+          "path": "research/data_acquisition/stage4_0b/section_A/scripts/run_audit_all.sh",
+          "owner": "Stage 4.0B deliverable",
+          "mtime_utc": "2026-11-19T13:04:19.344842+00:00",
+          "change": "line endings only (LF<->CRLF); content identical"
+        },
+        {
+          "path": "research/data_acquisition/stage4_0b/section_A/scripts/verify_github_copies.py",
+          "owner": "Stage 4.0B deliverable",
+          "mtime_utc": "2026-11-19T13:04:19.344842+00:00",
+          "change": "line endings only (LF<->CRLF); content identical"
+        },
+        {
+          "path": "research/data_acquisition/stage4_0b/sections_B_E/preservation/baseline_sha256_before_stage4_0b.txt",
+          "owner": "Stage 4.0B deliverable",
+          "mtime_utc": "2026-11-19T13:04:19.351855+00:00",
+          "change": "line endings only (LF<->CRLF); content identical"
+        },
+        {
+          "path": "research/data_acquisition/stage4_0b/sections_B_E/scripts/build_stage4_0b_deliverables.py",
+          "owner": "Stage 4.0B deliverable",
+          "mtime_utc": "2026-11-19T13:04:19.354346+00:00",
+          "change": "line endings only (LF<->CRLF); content identical"
+        },
+        {
+          "path": "research/data_acquisition/stage4_0b/sections_B_E/scripts/extract_reference_coverage.py",
+          "owner": "Stage 4.0B deliverable",
+          "mtime_utc": "2026-11-19T13:04:19.355349+00:00",
+          "change": "line endings only (LF<->CRLF); content identical"
+        },
+        {
+          "path": "research/data_acquisition/stage4_0b/sections_B_E/scripts/parse_bc3.py",
+          "owner": "Stage 4.0B deliverable",
+          "mtime_utc": "2026-11-19T13:04:19.355349+00:00",
+          "change": "line endings only (LF<->CRLF); content identical"
+        }
+      ],
+      "stage4_0b_content_changes": [],
+      "agent2_files_added_since_snapshot": [],
+      "note": "All changes carry mtime 2026-11-19T13:04:19Z, the moment Agent 2 rewrote research/architecture/stage5_0. This consolidation only READ those paths and never wrote outside research/data_acquisition/stage4_0b/consolidated/ and data/processed/candidates/stage4_0b/consolidated/. Stage 4.0B files changed only in line endings (external normalisation); they were NOT reverted, per instruction to report rather than rewrite."
+    },
+    {
+      "check": "git: no tracked file modified",
+      "tracked_modifications": [],
+      "untracked": [
+        "data/processed/candidates/stage4_0b/consolidated/",
+        "pmi_core/",
+        "research/data_acquisition/stage4_0b/consolidated/",
+        "tests/test_stage5_1_ifc.py"
+      ]
+    },
+    {
+      "check": "No duplicate downloads",
+      "result": "Only a 131-byte Git LFS pointer fetched into the session scratchpad (not data/raw) to verify V_L_Constructief provenance"
+    },
+    {
+      "check": "No training, inference, production modules, environment changes, commit or push",
+      "result": "scripts read, count, tessellate and hash only"
+    },
+    {
+      "check": "Cambridge locked-test records",
+      "result": "not accessed"
+    }
+  ],
+  "all_protected_unchanged": true,
+  "discrepancies": [
+    "7 Stage 4.0B script/baseline files were converted LF->CRLF at 13:04:19Z by an external process (coinciding with Agent 2); content unchanged; not reverted.",
+    "17 Agent 2 files were rewritten by Agent 2 at 13:04:19Z (17 with content changes); read only by this task."
+  ]
+}

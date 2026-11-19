@@ -1,0 +1,15 @@
+risk_id,risk,affected_combination,control,severity,evidence,evidence_status,approval_status
+DC01,"Foundation formwork 03ERM00001 already includes stripping (""aplicacion del desencofrante, desencofrado"")",FND-FORM + FRM-STRIP,Never add 05HED00001 to 03ERM*/03ERT* items,High,BCCA text 03ERM00001,VERIFIED_REFERENCE,PENDING
+DC02,"Column/beam/slab/wall formwork 05HEM* mention only release agent (""desencofrante"") - stripping is a separate item",05HEM* without 05HED*,Add FRM-STRIP exactly once per 05HEM* area,High (under-count risk),BCCA texts 05HEM00001/00051/00101,VERIFIED_REFERENCE,PENDING
+DC03,"All concrete items include vibration and curing (""vibrado y curado"")",*-CONC + separately priced curing,Curing is a schedule constraint only; no cost/labour line,High,"BCCA texts 03HAZ80020, 03HAA00010, 05HHP/HHJ/HHL00003",VERIFIED_REFERENCE,PENDING
+DC04,"Composite floor items (05FUA*, 05FUW*, 05FWW*) include concrete, reinforcement, mesh, formwork, props, stripping, vibration and curing",SLAB-COMPOSITE + SLAB-REBAR/FORM/CONC/FRM-STRIP,Mutually exclusive per slab,Critical,"BCCA texts 05FUA00002, 05FUW80040",VERIFIED_REFERENCE,PENDING
+DC05,"Generic rebar item 05HAC00015 is shared by column, beam and slab reinforcement",COL/BEAM/SLAB-REBAR,Allocate each kg of reinforcement to exactly one element,Medium,BCCA 05HAC00015,VERIFIED_REFERENCE,PENDING
+DC06,Beam/slab overlap: beam volume may include slab depth,BEAM-CONC + SLAB-CONC,Approved measurement rule (deduct at T-beams or not); check IFC geometry overlap,High,Stage 4.0B: Revit/ArchiCAD join behaviour not audited,OBSERVED,PENDING
+DC07,Column height through slab,COL-CONC + SLAB-CONC,Approved rule (clear height vs through),High,Measurement guide,OBSERVED,PENDING
+DC08,Layered elements: element volume includes insulation/screed,*-CONC,Use concrete layer only (e.g. SCH prefab floor fraction 0.6006),High,Stage 4.0B consolidation,OBSERVED,PENDING
+DC09,SCH design and Synchro models describe the same elements,any work item from both models,Use one model per project version; link via STEP-id suffix,Critical,"Stage 4.0B: 3,228 linked elements",OBSERVED,PENDING
+DC10,Weekly snapshot models contain subsets of the same elements,any,Never aggregate snapshots,Critical,"Stage 4.0B: identical plan, element subsets",OBSERVED,PENDING
+DC11,Strip foundations as IfcBeam could be counted as both beam and foundation,BEAM-* + FND-*,Foundation classification (CR11) excludes element from BEAM-* items,High,SCH fund_strook/fund_opstort,OBSERVED,PENDING
+DC12,Excavation (bank) and backfill (compacted) on different bases,EXC-* vs BACKFILL,Convert only with approved factors,Medium,BCCA measurement texts,VERIFIED_REFERENCE,PENDING
+DC13,"Blinding bottom cleaning: concrete items include ""limpieza de fondos""",BLD + *-CONC,No separate cleaning item,Low,BCCA texts,VERIFIED_REFERENCE,PENDING
+DC14,"Masonry measured net of openings (""deduciendo huecos"")",MAS-* using gross area,Use NetSideArea or deduct openings,Medium,"BCCA 06LHM00005, 06BHH00020, 06LEC80100",VERIFIED_REFERENCE,PENDING

@@ -1,0 +1,473 @@
+{
+ "mendeley_linkage": [
+  {
+   "project": "BIM_meeting_room_data",
+   "csv": "ifc_space_centroids_data.csv",
+   "csv_rows": 1770,
+   "distinct_csv_names": 1770,
+   "exact_ifcelement_name_match": 1644,
+   "exact_pct": 92.9,
+   "unique_match": 1625,
+   "unique_pct": 91.8,
+   "ambiguous_match": 19,
+   "ambiguous_ifc_elements_behind": 57,
+   "matches_non_element_product": 126,
+   "unmatched": 0,
+   "unmatched_examples": "",
+   "ambiguous_examples": "基本墙:基墙_乳胶漆面层_白色乳胶漆:2410638; 基本墙:基墙_乳胶漆面层_白色乳胶漆:2410640; 基本墙:基墙_乳胶漆面层_白色乳胶漆:2410685"
+  },
+  {
+   "project": "BIM_meeting_room_data",
+   "csv": "spatial_relationships_detailed.csv",
+   "csv_rows": 4409,
+   "distinct_csv_names": 1596,
+   "exact_ifcelement_name_match": 1594,
+   "exact_pct": 99.9,
+   "unique_match": 1575,
+   "unique_pct": 98.7,
+   "ambiguous_match": 19,
+   "ambiguous_ifc_elements_behind": 57,
+   "matches_non_element_product": 2,
+   "unmatched": 0,
+   "unmatched_examples": "",
+   "ambiguous_examples": "基本墙:基墙_乳胶漆面层_白色乳胶漆:2410638; 基本墙:基墙_乳胶漆面层_白色乳胶漆:2410640; 基本墙:基墙_乳胶漆面层_白色乳胶漆:2410685"
+  },
+  {
+   "project": "BIM_residential_building_data",
+   "csv": "ifc_space_centroids_data.csv",
+   "csv_rows": 6715,
+   "distinct_csv_names": 6715,
+   "exact_ifcelement_name_match": 6715,
+   "exact_pct": 100.0,
+   "unique_match": 6634,
+   "unique_pct": 98.8,
+   "ambiguous_match": 81,
+   "ambiguous_ifc_elements_behind": 580,
+   "matches_non_element_product": 0,
+   "unmatched": 0,
+   "unmatched_examples": "",
+   "ambiguous_examples": "基本墙:Q1-200mm:515285; 基本墙:Q1-200mm:515431; 基本墙:Q1-200mm:515526"
+  },
+  {
+   "project": "BIM_residential_building_data",
+   "csv": "spatial_relationships_detailed.csv",
+   "csv_rows": 49041,
+   "distinct_csv_names": 6714,
+   "exact_ifcelement_name_match": 6714,
+   "exact_pct": 100.0,
+   "unique_match": 6633,
+   "unique_pct": 98.8,
+   "ambiguous_match": 81,
+   "ambiguous_ifc_elements_behind": 580,
+   "matches_non_element_product": 0,
+   "unmatched": 0,
+   "unmatched_examples": "",
+   "ambiguous_examples": "基本墙:Q1-200mm:515285; 基本墙:Q1-200mm:515431; 基本墙:Q1-200mm:515526"
+  },
+  {
+   "project": "rac_advanced_sample_project_data",
+   "csv": "ifc_space_centroids_data.csv",
+   "csv_rows": 5791,
+   "distinct_csv_names": 5789,
+   "exact_ifcelement_name_match": 5643,
+   "exact_pct": 97.5,
+   "unique_match": 5600,
+   "unique_pct": 96.7,
+   "ambiguous_match": 43,
+   "ambiguous_ifc_elements_behind": 124,
+   "matches_non_element_product": 146,
+   "unmatched": 0,
+   "unmatched_examples": "",
+   "ambiguous_examples": "基本墙:Exterior - Insulation on Masonry:139854; 基本墙:Exterior - Insulation on Masonry:139857; 基本墙:Exterior - Insulation on Masonry:148769"
+  },
+  {
+   "project": "rac_advanced_sample_project_data",
+   "csv": "spatial_relationships_detailed.csv",
+   "csv_rows": 39553,
+   "distinct_csv_names": 5656,
+   "exact_ifcelement_name_match": 5540,
+   "exact_pct": 97.9,
+   "unique_match": 5502,
+   "unique_pct": 97.3,
+   "ambiguous_match": 38,
+   "ambiguous_ifc_elements_behind": 114,
+   "matches_non_element_product": 116,
+   "unmatched": 0,
+   "unmatched_examples": "",
+   "ambiguous_examples": "基本墙:Exterior - Insulation on Masonry:139854; 基本墙:Exterior - Insulation on Masonry:139857; 基本墙:Exterior - Insulation on Masonry:148769"
+  }
+ ],
+ "sch_snapshots": [
+  {
+   "file": "IFC Schependomlaan incl planningsdata.ifc",
+   "tasks": 125,
+   "identical_task_names_and_planned_dates_to_full_model": true,
+   "tasks_not_in_full_model": 0,
+   "task_guids_shared_with_full_model": 125,
+   "elements": 3505,
+   "element_names_subset_of_full": true,
+   "tasks_with_actual_dates": 0
+  },
+  {
+   "file": "Week 26 26 june IFC Schependomlaan incl planningsdata.ifc",
+   "tasks": 125,
+   "identical_task_names_and_planned_dates_to_full_model": true,
+   "tasks_not_in_full_model": 0,
+   "task_guids_shared_with_full_model": 0,
+   "elements": 854,
+   "element_names_subset_of_full": true,
+   "tasks_with_actual_dates": 0
+  },
+  {
+   "file": "Week 27 3 july IFC Schependomlaan incl planningsdata.ifc",
+   "tasks": 125,
+   "identical_task_names_and_planned_dates_to_full_model": true,
+   "tasks_not_in_full_model": 0,
+   "task_guids_shared_with_full_model": 0,
+   "elements": 1025,
+   "element_names_subset_of_full": true,
+   "tasks_with_actual_dates": 0
+  },
+  {
+   "file": "Week 28 10 july IFC Schependomlaan incl planningsdata.ifc",
+   "tasks": 125,
+   "identical_task_names_and_planned_dates_to_full_model": true,
+   "tasks_not_in_full_model": 0,
+   "task_guids_shared_with_full_model": 0,
+   "elements": 1552,
+   "element_names_subset_of_full": true,
+   "tasks_with_actual_dates": 0
+  },
+  {
+   "file": "Week 29 17 july IFC Schependomlaan incl planningsdata.ifc",
+   "tasks": 125,
+   "identical_task_names_and_planned_dates_to_full_model": true,
+   "tasks_not_in_full_model": 0,
+   "task_guids_shared_with_full_model": 0,
+   "elements": 1690,
+   "element_names_subset_of_full": true,
+   "tasks_with_actual_dates": 0
+  },
+  {
+   "file": "Week 30 24 july IFC Schependomlaan incl planningsdata.ifc",
+   "tasks": 125,
+   "identical_task_names_and_planned_dates_to_full_model": true,
+   "tasks_not_in_full_model": 0,
+   "task_guids_shared_with_full_model": 0,
+   "elements": 1722,
+   "element_names_subset_of_full": true,
+   "tasks_with_actual_dates": 0
+  },
+  {
+   "file": "Week 37 11 sept IFC Schependomlaan incl planningsdata.ifc",
+   "tasks": 125,
+   "identical_task_names_and_planned_dates_to_full_model": true,
+   "tasks_not_in_full_model": 0,
+   "task_guids_shared_with_full_model": 0,
+   "elements": 3505,
+   "element_names_subset_of_full": true,
+   "tasks_with_actual_dates": 0
+  }
+ ],
+ "restage_tasks": [
+  {
+   "global_id": "09VkyuI41E2ejjPldUxP47",
+   "name": "ConstructionPhase_01",
+   "identification": "1",
+   "predefined": "NOTDEFINED",
+   "is_milestone": false,
+   "status": null,
+   "work_method": null,
+   "description": null,
+   "task_time": {
+    "ActualFinish": "2024-08-26T18:00:00"
+   },
+   "assigned_products": 2931,
+   "psets": {}
+  },
+  {
+   "global_id": "3XYvmWynvC6APtEfNGjok1",
+   "name": "ConstructionPhase_02",
+   "identification": "2",
+   "predefined": "NOTDEFINED",
+   "is_milestone": false,
+   "status": null,
+   "work_method": null,
+   "description": null,
+   "task_time": {},
+   "assigned_products": 0,
+   "psets": {}
+  },
+  {
+   "global_id": "0j3XONbLH2KgVb6wL6LzkV",
+   "name": "ConstructionPhase_03",
+   "identification": "3",
+   "predefined": "NOTDEFINED",
+   "is_milestone": false,
+   "status": null,
+   "work_method": null,
+   "description": null,
+   "task_time": {
+    "ActualFinish": "2025-05-05T18:00:00"
+   },
+   "assigned_products": 679,
+   "psets": {}
+  },
+  {
+   "global_id": "3HHwcVqi18shThGmXaHI_W",
+   "name": "SolarPanel",
+   "identification": "3.1",
+   "predefined": "NOTDEFINED",
+   "is_milestone": false,
+   "status": null,
+   "work_method": null,
+   "description": null,
+   "task_time": {
+    "ActualFinish": "2025-05-09T18:00:00"
+   },
+   "assigned_products": 4,
+   "psets": {}
+  },
+  {
+   "global_id": "37g34pPPP4ZhYys7vdKMfl",
+   "name": "Green Facade",
+   "identification": "2.3",
+   "predefined": "NOTDEFINED",
+   "is_milestone": false,
+   "status": null,
+   "work_method": null,
+   "description": null,
+   "task_time": {
+    "ActualFinish": "2025-06-04T18:00:00"
+   },
+   "assigned_products": 135,
+   "psets": {}
+  },
+  {
+   "global_id": "0bvB1qIq901R1d3ThQA381",
+   "name": "3D-Printed Concrete Wall",
+   "identification": "2.4",
+   "predefined": "NOTDEFINED",
+   "is_milestone": false,
+   "status": null,
+   "work_method": null,
+   "description": null,
+   "task_time": {
+    "ActualFinish": "2025-08-25T18:00:00"
+   },
+   "assigned_products": 67,
+   "psets": {}
+  },
+  {
+   "global_id": "2EffTzvxj4SgOwD_PXMhY9",
+   "name": "Underground Water Tank",
+   "identification": "2.2",
+   "predefined": "NOTDEFINED",
+   "is_milestone": false,
+   "status": null,
+   "work_method": null,
+   "description": null,
+   "task_time": {
+    "ActualFinish": "2025-06-03T18:00:00"
+   },
+   "assigned_products": 6,
+   "psets": {}
+  },
+  {
+   "global_id": "1yuj6QOK54eA3nDJaKusj8",
+   "name": "Concrete Slab Floor",
+   "identification": "2.1",
+   "predefined": "NOTDEFINED",
+   "is_milestone": false,
+   "status": null,
+   "work_method": null,
+   "description": null,
+   "task_time": {
+    "ActualFinish": "2025-05-16T18:00:00"
+   },
+   "assigned_products": 2,
+   "psets": {}
+  },
+  {
+   "global_id": "12bdGY1qP0Re5gSyKInWpf",
+   "name": "Bauabschnitt_02",
+   "identification": "Module3",
+   "predefined": "NOTDEFINED",
+   "is_milestone": false,
+   "status": null,
+   "work_method": null,
+   "description": null,
+   "task_time": {
+    "ActualFinish": "2025-05-05T18:00:00"
+   },
+   "assigned_products": 679,
+   "psets": {}
+  },
+  {
+   "global_id": "3Sw2wY62TE4Qp9xYp7FE0f",
+   "name": "SolarPanel",
+   "identification": "Module3.1",
+   "predefined": "NOTDEFINED",
+   "is_milestone": false,
+   "status": null,
+   "work_method": null,
+   "description": null,
+   "task_time": {
+    "ActualFinish": "2025-05-09T18:00:00"
+   },
+   "assigned_products": 4,
+   "psets": {}
+  },
+  {
+   "global_id": "2TSAK4kcDBLQc8KevA$RsR",
+   "name": "Bauabschnitt_01",
+   "identification": "Module1",
+   "predefined": "NOTDEFINED",
+   "is_milestone": false,
+   "status": null,
+   "work_method": null,
+   "description": null,
+   "task_time": {
+    "ActualFinish": "2024-08-26T18:00:00"
+   },
+   "assigned_products": 2931,
+   "psets": {}
+  },
+  {
+   "global_id": "2QTzkpmirAhP5dE9ZxkSWH",
+   "name": "ConstructionPhase_04",
+   "identification": "4",
+   "predefined": "NOTDEFINED",
+   "is_milestone": false,
+   "status": null,
+   "work_method": null,
+   "description": null,
+   "task_time": {
+    "ActualFinish": "2025-08-08T18:00:00"
+   },
+   "assigned_products": 438,
+   "psets": {}
+  }
+ ],
+ "restage_work_schedule": [
+  {
+   "id": "2245748",
+   "type": "IfcWorkSchedule",
+   "GlobalId": "3pJefmWdb1yP0aCsXgEPcL",
+   "Name": "Restage",
+   "CreationDate": "2026-07-01T10:24:12.085341",
+   "Creators": "(#2=IfcPerson($,'unknown','user',$,$,$,$,$),)",
+   "StartTime": "2026-07-01T10:24:12.084954",
+   "PredefinedType": "ACTUAL"
+  }
+ ],
+ "restage_nests": [
+  [
+   "IfcTask",
+   "ConstructionPhase_03",
+   [
+    "SolarPanel"
+   ]
+  ],
+  [
+   "IfcTask",
+   "ConstructionPhase_02",
+   [
+    "Concrete Slab Floor",
+    "Underground Water Tank",
+    "Green Facade",
+    "3D-Printed Concrete Wall"
+   ]
+  ],
+  [
+   "IfcTask",
+   "Bauabschnitt_02",
+   [
+    "SolarPanel"
+   ]
+  ]
+ ],
+ "duplicate_globalids": {
+  "SCH-design": [
+   {
+    "global_id": "2mjWTFJ8N58yehh8j$WWx3",
+    "entities": [
+     "IfcRelConnectsPathElements#185426 None",
+     "IfcRelConnectsPathElements#185431 None"
+    ]
+   }
+  ],
+  "SCH-synchro": [],
+  "RST": [],
+  "MEN-RES": [],
+  "MEN-RAC": [],
+  "MEN-MTG": [],
+  "B4D": []
+ },
+ "quantity_units": {
+  "SCH-design": {
+   "physical_quantities": 153815,
+   "with_explicit_unit": 0,
+   "explicit_units": {},
+   "project_length_scale": 0.001,
+   "project_area_scale": 1.0,
+   "project_volume_scale": 1.0,
+   "project_mass_scale": 1.0
+  },
+  "SCH-synchro": {
+   "physical_quantities": 0,
+   "with_explicit_unit": 0,
+   "explicit_units": {},
+   "project_length_scale": 0.001,
+   "project_area_scale": 1.0,
+   "project_volume_scale": 1.0,
+   "project_mass_scale": 1.0
+  },
+  "RST": {
+   "physical_quantities": 1737,
+   "with_explicit_unit": 0,
+   "explicit_units": {},
+   "project_length_scale": 1.0,
+   "project_area_scale": 1.0,
+   "project_volume_scale": 1.0,
+   "project_mass_scale": 1000.0
+  },
+  "MEN-RES": {
+   "physical_quantities": 0,
+   "with_explicit_unit": 0,
+   "explicit_units": {},
+   "project_length_scale": 0.001,
+   "project_area_scale": 1.0,
+   "project_volume_scale": 1.0,
+   "project_mass_scale": 1000.0
+  },
+  "MEN-RAC": {
+   "physical_quantities": 0,
+   "with_explicit_unit": 0,
+   "explicit_units": {},
+   "project_length_scale": 0.001,
+   "project_area_scale": 1.0,
+   "project_volume_scale": 1.0,
+   "project_mass_scale": 1000.0
+  },
+  "MEN-MTG": {
+   "physical_quantities": 0,
+   "with_explicit_unit": 0,
+   "explicit_units": {},
+   "project_length_scale": 1.0,
+   "project_area_scale": 1.0,
+   "project_volume_scale": 1.0,
+   "project_mass_scale": 1000.0
+  },
+  "B4D": {
+   "physical_quantities": 961,
+   "with_explicit_unit": 0,
+   "explicit_units": {},
+   "project_length_scale": 0.001,
+   "project_area_scale": 1.0,
+   "project_volume_scale": 1.0,
+   "project_mass_scale": 1000.0
+  }
+ },
+ "sample_size": 40
+}

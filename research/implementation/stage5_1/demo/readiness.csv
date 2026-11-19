@@ -1,0 +1,2 @@
+element_id,import_valid,identity_eligible,containment_resolved,geometry_status,quantity_status,material_evidence_available,material_classification_status,engineering_validation,work_item_eligible
+ac357862-7366-5f4a-be31-dd8f719fbfbf,True,True,True,valid,available,False,missing,pending,False

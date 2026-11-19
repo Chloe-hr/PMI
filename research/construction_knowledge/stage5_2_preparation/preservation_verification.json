@@ -1,0 +1,152 @@
+{
+  "generated": "2026-11-19 17:05 UTC",
+  "checks": [
+    {
+      "check": "Stage 4.0B pre-task baseline",
+      "total": 1601,
+      "changed_or_missing": []
+    },
+    {
+      "check": "Stage 4.0A baseline",
+      "total": 342,
+      "changed_or_missing": []
+    },
+    {
+      "check": "Agent 1 (pmi_core, tests, research/implementation), Agent 2 (research/architecture), Stage 4.0B, app (app.py, pages, docs, scripts) vs task-start snapshot",
+      "total": 132,
+      "changed": [
+        {
+          "path": "pmi_core/adapters/ifc.py",
+          "change": "CONTENT CHANGED",
+          "mtime_utc": "2026-11-19T17:02:08.148889+00:00",
+          "owner": "Agent 1 (concurrent Stage 5.1 implementation)"
+        },
+        {
+          "path": "pmi_core/bim/elements.py",
+          "change": "CONTENT CHANGED",
+          "mtime_utc": "2026-11-19T16:58:47.209215+00:00",
+          "owner": "Agent 1 (concurrent Stage 5.1 implementation)"
+        },
+        {
+          "path": "pmi_core/bim/materials.py",
+          "change": "CONTENT CHANGED",
+          "mtime_utc": "2026-11-19T17:00:29.887599+00:00",
+          "owner": "Agent 1 (concurrent Stage 5.1 implementation)"
+        },
+        {
+          "path": "pmi_core/bim/quantities.py",
+          "change": "CONTENT CHANGED",
+          "mtime_utc": "2026-11-19T17:00:29.873234+00:00",
+          "owner": "Agent 1 (concurrent Stage 5.1 implementation)"
+        },
+        {
+          "path": "pmi_core/schemas/bim.py",
+          "change": "CONTENT CHANGED",
+          "mtime_utc": "2026-11-19T17:00:29.893833+00:00",
+          "owner": "Agent 1 (concurrent Stage 5.1 implementation)"
+        },
+        {
+          "path": "pmi_core/validation/bim.py",
+          "change": "CONTENT CHANGED",
+          "mtime_utc": "2026-11-19T16:58:47.209215+00:00",
+          "owner": "Agent 1 (concurrent Stage 5.1 implementation)"
+        },
+        {
+          "path": "tests/test_stage5_1_ifc.py",
+          "change": "CONTENT CHANGED",
+          "mtime_utc": "2026-11-19T16:58:47.209215+00:00",
+          "owner": "Agent 1 (concurrent Stage 5.1 implementation)"
+        },
+        {
+          "path": "research/implementation/stage5_1/implementation_report.md",
+          "change": "CONTENT CHANGED",
+          "mtime_utc": "2026-11-19T17:04:38.135233+00:00",
+          "owner": "Agent 1 (concurrent Stage 5.1 implementation)"
+        }
+      ],
+      "files_added_by_others_since_snapshot": [
+        "pmi_core/bim/geometry.py",
+        "pmi_core/cli.py",
+        "pmi_core/validation/readiness.py",
+        "research/implementation/stage5_1/canonical_schemas_5_1.json",
+        "research/implementation/stage5_1/demo/diagnostics.csv",
+        "research/implementation/stage5_1/demo/elements.csv",
+        "research/implementation/stage5_1/demo/evidence.csv",
+        "research/implementation/stage5_1/demo/geometry.csv",
+        "research/implementation/stage5_1/demo/import.json",
+        "research/implementation/stage5_1/demo/materials.csv",
+        "research/implementation/stage5_1/demo/quantities.csv",
+        "research/implementation/stage5_1/demo/readiness.csv",
+        "research/implementation/stage5_1/demo/spatial.csv",
+        "research/implementation/stage5_1/extraction_results.json",
+        "research/implementation/stage5_1/restage_demonstrator_protocol.md",
+        "research/implementation/stage5_1/restage_demonstrator_results.json",
+        "tests/test_stage5_1_compatibility.py"
+      ],
+      "note": "This task only READ these paths."
+    },
+    {
+      "check": "git tracked modifications",
+      "tracked_modifications": [],
+      "untracked": [
+        "data/processed/candidates/stage4_0b/consolidated/",
+        "data/processed/candidates/stage5_2_prep/",
+        "pmi_core/",
+        "research/construction_knowledge/",
+        "research/data_acquisition/stage4_0b/consolidated/",
+        "research/implementation/stage5_1/canonical_schemas_5_1.json",
+        "research/implementation/stage5_1/demo/",
+        "research/implementation/stage5_1/extraction_results.json",
+        "research/implementation/stage5_1/implementation_report.md",
+        "research/implementation/stage5_1/restage_demonstrator_protocol.md",
+        "research/implementation/stage5_1/restage_demonstrator_results.json",
+        "research/implementation/stage5_1/verification.json",
+        "research/validation/",
+        "tests/test_stage5_1_compatibility.py",
+        "tests/test_stage5_1_ifc.py"
+      ]
+    },
+    {
+      "check": "Write scope of this task",
+      "paths": [
+        "research/validation/stage5_1_manual/",
+        "research/construction_knowledge/stage5_2_preparation/",
+        "data/processed/candidates/stage5_2_prep/"
+      ]
+    },
+    {
+      "check": "No training, inference, production modules, environment changes, locked-test access, commit or push",
+      "result": "confirmed by script scope (read-only IFC parsing, CSV/XLSX/MD/HTML writing)"
+    }
+  ],
+  "agent1_concurrent_changes": [
+    "pmi_core/adapters/ifc.py",
+    "pmi_core/bim/elements.py",
+    "pmi_core/bim/materials.py",
+    "pmi_core/bim/quantities.py",
+    "pmi_core/schemas/bim.py",
+    "pmi_core/validation/bim.py",
+    "tests/test_stage5_1_ifc.py",
+    "research/implementation/stage5_1/implementation_report.md",
+    "pmi_core/bim/geometry.py",
+    "pmi_core/cli.py",
+    "pmi_core/validation/readiness.py",
+    "research/implementation/stage5_1/canonical_schemas_5_1.json",
+    "research/implementation/stage5_1/demo/diagnostics.csv",
+    "research/implementation/stage5_1/demo/elements.csv",
+    "research/implementation/stage5_1/demo/evidence.csv",
+    "research/implementation/stage5_1/demo/geometry.csv",
+    "research/implementation/stage5_1/demo/import.json",
+    "research/implementation/stage5_1/demo/materials.csv",
+    "research/implementation/stage5_1/demo/quantities.csv",
+    "research/implementation/stage5_1/demo/readiness.csv",
+    "research/implementation/stage5_1/demo/spatial.csv",
+    "research/implementation/stage5_1/extraction_results.json",
+    "research/implementation/stage5_1/restage_demonstrator_protocol.md",
+    "research/implementation/stage5_1/restage_demonstrator_results.json",
+    "tests/test_stage5_1_compatibility.py"
+  ],
+  "all_protected_unchanged_by_this_task": true,
+  "all_protected_unchanged": true,
+  "note": "Changes inside pmi_core/, tests/ and research/implementation/ were made by Agent 1 while this task ran (mtimes 16:58-17:02 UTC); this task never wrote to those paths. Stage 4.0A/4.0B baselines, Stage 4.0B deliverables, Agent 2 architecture and the app are compared for content."
+}

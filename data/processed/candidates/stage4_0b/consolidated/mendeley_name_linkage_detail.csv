@@ -1,0 +1,7 @@
+project,csv,csv_rows,distinct_csv_names,exact_ifcelement_name_match,exact_pct,unique_match,unique_pct,ambiguous_match,ambiguous_ifc_elements_behind,matches_non_element_product,unmatched,unmatched_examples,ambiguous_examples
+BIM_meeting_room_data,ifc_space_centroids_data.csv,1770,1770,1644,92.9,1625,91.8,19,57,126,0,,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410638; 基本墙:基墙_乳胶漆面层_白色乳胶漆:2410640; 基本墙:基墙_乳胶漆面层_白色乳胶漆:2410685
+BIM_meeting_room_data,spatial_relationships_detailed.csv,4409,1596,1594,99.9,1575,98.7,19,57,2,0,,基本墙:基墙_乳胶漆面层_白色乳胶漆:2410638; 基本墙:基墙_乳胶漆面层_白色乳胶漆:2410640; 基本墙:基墙_乳胶漆面层_白色乳胶漆:2410685
+BIM_residential_building_data,ifc_space_centroids_data.csv,6715,6715,6715,100.0,6634,98.8,81,580,0,0,,基本墙:Q1-200mm:515285; 基本墙:Q1-200mm:515431; 基本墙:Q1-200mm:515526
+BIM_residential_building_data,spatial_relationships_detailed.csv,49041,6714,6714,100.0,6633,98.8,81,580,0,0,,基本墙:Q1-200mm:515285; 基本墙:Q1-200mm:515431; 基本墙:Q1-200mm:515526
+rac_advanced_sample_project_data,ifc_space_centroids_data.csv,5791,5789,5643,97.5,5600,96.7,43,124,146,0,,基本墙:Exterior - Insulation on Masonry:139854; 基本墙:Exterior - Insulation on Masonry:139857; 基本墙:Exterior - Insulation on Masonry:148769
+rac_advanced_sample_project_data,spatial_relationships_detailed.csv,39553,5656,5540,97.9,5502,97.3,38,114,116,0,,基本墙:Exterior - Insulation on Masonry:139854; 基本墙:Exterior - Insulation on Masonry:139857; 基本墙:Exterior - Insulation on Masonry:148769

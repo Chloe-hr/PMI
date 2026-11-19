@@ -1,0 +1,12 @@
+quantity,work_items,unit,from_authored_ifc,from_validated_geometry,from_user_provided,from_approved_assumption,if_no_source_available,zero_substitution,provenance_required
+Excavation volume,EXC-*,m3 bank,N,N,Y,Y (e.g. approved working-space rule + user ground levels),BLOCKED,PROHIBITED,method + basis + source file + approval id (Agent 2 QuantityRecord)
+Blinding area,BLD,m2,Y (footprint area if authored),Y (footprint of validated foundation geometry),Y,Y (thickness if not 10 cm),BLOCKED,PROHIBITED,method + basis + source file + approval id (Agent 2 QuantityRecord)
+"Concrete volume (net, concrete layer only)",*-CONC,m3,Y (NetVolume; single-material elements),Y (after manual validation of the model; layer split required),Y,N,BLOCKED,PROHIBITED,method + basis + source file + approval id (Agent 2 QuantityRecord)
+Formwork contact area,"*-FORM, FRM-STRIP",m2,N (no model authors formwork area),N (surface area is not formwork area),Y,Y (approved face rules per element type/method),BLOCKED,PROHIBITED,method + basis + source file + approval id (Agent 2 QuantityRecord)
+Reinforcement mass,*-REBAR,kg,Y only if IfcReinforcingBar/weight exists (none in real models),N,Y (bar schedule/design value),N - generic ratios prohibited unless explicitly approved and labelled as assumption by the engineer,BLOCKED,PROHIBITED,method + basis + source file + approval id (Agent 2 QuantityRecord)
+Composite floor area,SLAB-COMPOSITE,m2,Y (NetArea of slab),Y,Y,N,BLOCKED,PROHIBITED,method + basis + source file + approval id (Agent 2 QuantityRecord)
+Precast unit count/area,SLAB-PRECAST,m2 / each,Y (slab area),Y,Y,N,BLOCKED (also no BCCA reference),PROHIBITED,method + basis + source file + approval id (Agent 2 QuantityRecord)
+Masonry net face area,MAS-*,m2,"Y (NetSideArea, SCH)",Y (with approved face rule),Y,N,BLOCKED,PROHIBITED,method + basis + source file + approval id (Agent 2 QuantityRecord)
+Backfill volume,BACKFILL,m3 compacted,N,N,Y,Y (approved bulking/compaction factors),BLOCKED,PROHIBITED,method + basis + source file + approval id (Agent 2 QuantityRecord)
+Curing duration / strength criterion,"CURE, FRM-STRIP",time + criterion,N,N,Y,Y (engineer-approved),BLOCKED (schedule constraint unavailable),PROHIBITED,method + basis + source file + approval id (Agent 2 QuantityRecord)
+Steel mass,STEEL-COL,kg,Y if Weight authored,N (density x volume requires approved density),Y,Y,BLOCKED (out of RC scope),PROHIBITED,method + basis + source file + approval id (Agent 2 QuantityRecord)

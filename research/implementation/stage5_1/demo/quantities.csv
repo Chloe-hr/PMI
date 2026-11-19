@@ -1,0 +1,2 @@
+id,evidence_ids,element_id,kind,basis,method,status,value,unit,raw_value,raw_unit,reason,measurement_method
+7111f558-b13c-578b-9504-4c61f4179188,"[""522b1db4-9bb0-5dca-8ade-8686fa869f33""]",ac357862-7366-5f4a-be31-dd8f719fbfbf,volume,represented_body_volume,geometry,accepted,0.12585265152,m3,,,,

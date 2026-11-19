@@ -1,0 +1,224 @@
+{
+  "model": "RST",
+  "role": "independent software demonstrator",
+  "sha256": "9162a43f3e1041cb4825705b901edcf6d90f6d0b62f306dcaba6402184f01bb5",
+  "seconds": 5.361,
+  "valid": true,
+  "schema": "IFC4",
+  "elements": {
+    "IfcMember": 82,
+    "IfcBeam": 191,
+    "IfcWall": 92,
+    "IfcFooting": 13,
+    "IfcSlab": 12
+  },
+  "geometry": {
+    "valid": 123,
+    "unsupported": 206,
+    "invalid": 59,
+    "missing": 2
+  },
+  "issues": {
+    "MISSING_QUANTITIES": 264,
+    "MISSING_MATERIAL": 69,
+    "DISPUTED_QUANTITY": 5
+  },
+  "quantities": {
+    "ifc_quantity/accepted": 850,
+    "geometry/accepted": 123,
+    "ifc_property_quantity/disputed": 5
+  },
+  "engineering_status": "pending",
+  "work_item_eligible": 0,
+  "software_gate": true,
+  "sample": [
+    {
+      "check": "QV09",
+      "global_id": "05hYJfrx99v$KeaCnnTUNB",
+      "matches": 1,
+      "geometry": [
+        "valid"
+      ],
+      "materials": [
+        "C35/45"
+      ],
+      "volumes": [
+        {
+          "method": "ifc_quantity",
+          "basis": "net_volume",
+          "status": "accepted",
+          "value": 0.7065,
+          "unit": "m3"
+        },
+        {
+          "method": "geometry",
+          "basis": "represented_body_volume",
+          "status": "accepted",
+          "value": 0.7065,
+          "unit": "m3"
+        }
+      ]
+    },
+    {
+      "check": "QV10",
+      "global_id": "0DsVDPLpH6KOwWtouTiq1m",
+      "matches": 1,
+      "geometry": [
+        "valid"
+      ],
+      "materials": [
+        "C25/30"
+      ],
+      "volumes": [
+        {
+          "method": "ifc_quantity",
+          "basis": "net_volume",
+          "status": "accepted",
+          "value": 0.7175,
+          "unit": "m3"
+        },
+        {
+          "method": "geometry",
+          "basis": "represented_body_volume",
+          "status": "accepted",
+          "value": 0.7175000000000004,
+          "unit": "m3"
+        }
+      ]
+    },
+    {
+      "check": "QV11",
+      "global_id": "1jk_Qel3LAay24H0HaZeHK",
+      "matches": 1,
+      "geometry": [
+        "valid"
+      ],
+      "materials": [
+        "C35/45"
+      ],
+      "volumes": [
+        {
+          "method": "ifc_quantity",
+          "basis": "net_volume",
+          "status": "accepted",
+          "value": 0.798,
+          "unit": "m3"
+        },
+        {
+          "method": "geometry",
+          "basis": "represented_body_volume",
+          "status": "accepted",
+          "value": 0.798,
+          "unit": "m3"
+        }
+      ]
+    },
+    {
+      "check": "QV12",
+      "global_id": "1yKwjIZ_16yen0qjvtfq4q",
+      "matches": 1,
+      "geometry": [
+        "valid"
+      ],
+      "materials": [
+        "C25/30"
+      ],
+      "volumes": [
+        {
+          "method": "ifc_quantity",
+          "basis": "net_volume",
+          "status": "accepted",
+          "value": 0.3437,
+          "unit": "m3"
+        },
+        {
+          "method": "geometry",
+          "basis": "represented_body_volume",
+          "status": "accepted",
+          "value": 0.34369999999999973,
+          "unit": "m3"
+        }
+      ]
+    },
+    {
+      "check": "QV13",
+      "global_id": "0air7_zBn4rB64GHxtjcKK",
+      "matches": 1,
+      "geometry": [
+        "unsupported"
+      ],
+      "materials": [
+        "C35/45"
+      ],
+      "volumes": [
+        {
+          "method": "ifc_quantity",
+          "basis": "net_volume",
+          "status": "accepted",
+          "value": 2.292224,
+          "unit": "m3"
+        }
+      ]
+    },
+    {
+      "check": "QV14",
+      "global_id": "1JCJvyKdR8zGF7KHRmzPNI",
+      "matches": 1,
+      "geometry": [
+        "unsupported"
+      ],
+      "materials": [
+        "C35/45"
+      ],
+      "volumes": [
+        {
+          "method": "ifc_quantity",
+          "basis": "net_volume",
+          "status": "accepted",
+          "value": 1.869824,
+          "unit": "m3"
+        }
+      ]
+    },
+    {
+      "check": "QV15",
+      "global_id": "2_Awjzy5vjDQTcwWkFPSZE",
+      "matches": 1,
+      "geometry": [
+        "unsupported"
+      ],
+      "materials": [
+        "C35/45"
+      ],
+      "volumes": [
+        {
+          "method": "ifc_quantity",
+          "basis": "net_volume",
+          "status": "accepted",
+          "value": 0.796205162,
+          "unit": "m3"
+        }
+      ]
+    },
+    {
+      "check": "QV16",
+      "global_id": "2u6bDe$D4AwMMhn1Na_aDi",
+      "matches": 1,
+      "geometry": [
+        "unsupported"
+      ],
+      "materials": [
+        "C35/45"
+      ],
+      "volumes": [
+        {
+          "method": "ifc_quantity",
+          "basis": "net_volume",
+          "status": "accepted",
+          "value": 0.858978461,
+          "unit": "m3"
+        }
+      ]
+    }
+  ]
+}

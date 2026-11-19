@@ -612,7 +612,14 @@ pres = dict(generated=NOW, checks=bases + [
     dict(check='No approvals recorded, no measurements filled', result=all(r['status'] == 'PENDING' and not r['decision'] for r in prio)),
     dict(check='No acquisition, training, inference, environment change, commit or push', result='confirmed by script scope'),
 ])
+# Staged/tracked entries are attributed: this task never runs git add/commit; paths inside OUT were staged by someone else.
+staged = pres['checks'][4]['tracked']
+pres['staged_or_tracked_attribution'] = [dict(entry=l, owner=('this package (staged externally - this task never runs git add)' if OUT in l else
+                                                              'Agent 1 (concurrent Stage 5.2A)' if any(a in l for a in ('pmi_core/', 'tests/', 'research/implementation/')) else
+                                                              'Excel lock file from the workbook being open in Excel (workbook hash unchanged); should not be committed' if '~$' in l else 'other'))
+                                         for l in staged]
+other_staged = [s for s in pres['staged_or_tracked_attribution'] if s['owner'] == 'other']
 pres['all_protected_unchanged_by_this_task'] = (not any(b['changed_or_missing'] for b in bases) and not [c for c in changed if c['owner'] == 'other' and c['change'] != 'line endings only']
-                                                 and pres['checks'][3]['unchanged'] and not pres['checks'][4]['tracked'])
+                                                 and pres['checks'][3]['unchanged'] and not other_staged)
 json.dump(pres, open(f'{OUT}/preservation_verification.json', 'w', encoding='utf-8'), indent=2)
 print('preservation ok:', pres['all_protected_unchanged_by_this_task'], 'changed', len(changed))

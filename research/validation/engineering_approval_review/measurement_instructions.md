@@ -1,6 +1,6 @@
 # Measurement instructions - initial validation subset (11 elements)
 
-Generated 2026-11-19 17:55 UTC. Research only. **No measured values are filled in.** Record results in `research/validation/stage5_1_manual/manual_quantity_validation.xlsx` (sheet Validation_40) - this file does not modify it. Store evidence in `research/validation/stage5_1_manual/evidence/<check_id>/`.
+Generated 2026-11-19 17:58 UTC. Research only. **No measured values are filled in.** Record results in `research/validation/stage5_1_manual/manual_quantity_validation.xlsx` (sheet Validation_40) - this file does not modify it. Store evidence in `research/validation/stage5_1_manual/evidence/<check_id>/`.
 
 **Independence rule:** measure dimensions yourself and compute the volume; the grey workbook values (authored, DERIVED) must not be copied. Bonsai/FreeCAD share IfcOpenShell geometry and do not count as independent.
 
@@ -17,8 +17,8 @@ Generated 2026-11-19 17:55 UTC. Research only. **No measured values are filled i
 | STEP id | `#551041` |
 | Class / predefined type | IfcColumn / None |
 | Storey / building | F06-13.900 /  |
-| Material | [["混凝土 - 现场浇注混凝土", null]] () |
-| World bounding box (m) | min [np.float64(632.674), np.float64(431.621), np.float64(13.9)] / max [np.float64(633.199), np.float64(432.13), np.float64(16.7)] |
+| Material | [["混凝土 - 现场浇注混凝土", null]] |
+| World bounding box (m) | min [632.674, 431.621, 13.9] / max [633.199, 432.13, 16.7] |
 | Body geometry | extrusion IfcArbitraryClosedProfileDef depth 2.8 m |
 | Measurement basis | Net volume of the modelled body in m3 (concrete); element is single-material |
 | Required dimensions | profile vertices (6 points) in the profile plane, and extrusion depth |
@@ -45,8 +45,8 @@ Generated 2026-11-19 17:55 UTC. Research only. **No measured values are filled i
 | STEP id | `#1901187` |
 | Class / predefined type | IfcBeam / None |
 | Storey / building | B01-5.850 /  |
-| Material | [["混凝土，现场浇注 - C40", null]] () |
-| World bounding box (m) | min [np.float64(654.845), np.float64(436.278), np.float64(-6.25)] / max [np.float64(656.355), np.float64(436.604), np.float64(-5.85)] |
+| Material | [["混凝土，现场浇注 - C40", null]] |
+| World bounding box (m) | min [654.845, 436.278, -6.25] / max [656.355, 436.604, -5.85] |
 | Body geometry | extrusion IfcRectangleProfileDef 0.4x0.25 m depth 1.5 m |
 | Measurement basis | Net volume of the modelled body in m3 (concrete); element is single-material |
 | Required dimensions | section width and depth (XDim=0.4000 m, YDim=0.2500 m in the IFC profile definition - re-measure, do not copy) and member length (extrusion depth) |
@@ -73,8 +73,8 @@ Generated 2026-11-19 17:55 UTC. Research only. **No measured values are filled i
 | STEP id | `#549228` |
 | Class / predefined type | IfcBeam / None |
 | Storey / building | F05-11.100 /  |
-| Material | [["混凝土，现场浇注 - C40", null]] () |
-| World bounding box (m) | min [np.float64(622.29), np.float64(437.993), np.float64(13.5)] / max [np.float64(623.798), np.float64(438.269), np.float64(13.9)] |
+| Material | [["混凝土，现场浇注 - C40", null]] |
+| World bounding box (m) | min [622.29, 437.993, 13.5] / max [623.798, 438.269, 13.9] |
 | Body geometry | extrusion IfcRectangleProfileDef 0.4x0.2 m depth 1.5 m |
 | Measurement basis | Net volume of the modelled body in m3 (concrete); element is single-material |
 | Required dimensions | section width and depth (XDim=0.4000 m, YDim=0.2000 m in the IFC profile definition - re-measure, do not copy) and member length (extrusion depth) |
@@ -101,8 +101,8 @@ Generated 2026-11-19 17:55 UTC. Research only. **No measured values are filled i
 | STEP id | `#957223` |
 | Class / predefined type | IfcBeam / None |
 | Storey / building | F07-16.700 /  |
-| Material | [["混凝土，现场浇注 - C40", null]] () |
-| World bounding box (m) | min [np.float64(617.11), np.float64(432.651), np.float64(19.0)] / max [np.float64(618.618), np.float64(432.927), np.float64(19.5)] |
+| Material | [["混凝土，现场浇注 - C40", null]] |
+| World bounding box (m) | min [617.11, 432.651, 19.0] / max [618.618, 432.927, 19.5] |
 | Body geometry | extrusion IfcRectangleProfileDef 0.5x0.2 m depth 1.5 m |
 | Measurement basis | Net volume of the modelled body in m3 (concrete); element is single-material |
 | Required dimensions | section width and depth (XDim=0.5000 m, YDim=0.2000 m in the IFC profile definition - re-measure, do not copy) and member length (extrusion depth) |
@@ -129,8 +129,8 @@ Generated 2026-11-19 17:55 UTC. Research only. **No measured values are filled i
 | STEP id | `#2014534` |
 | Class / predefined type | IfcSlab / FLOOR |
 | Storey / building | F03-5.500 /  |
-| Material | [["混凝土，现场浇注 - C30", 0.1]] () |
-| World bounding box (m) | min [np.float64(645.548), np.float64(433.1), np.float64(5.4)] / max [np.float64(648.016), np.float64(433.755), np.float64(5.5)] |
+| Material | [["混凝土，现场浇注 - C30", 0.1]] |
+| World bounding box (m) | min [645.548, 433.1, 5.4] / max [648.016, 433.755, 5.5] |
 | Body geometry | extrusion IfcRectangleProfileDef 0.53x2.445 m depth 0.1 m |
 | Measurement basis | Net volume of the modelled body in m3 (concrete); element is single-material |
 | Required dimensions | section width and depth (XDim=0.5300 m, YDim=2.4450 m in the IFC profile definition - re-measure, do not copy) and member length (extrusion depth) |
@@ -157,8 +157,8 @@ Generated 2026-11-19 17:55 UTC. Research only. **No measured values are filled i
 | STEP id | `#19296` |
 | Class / predefined type | IfcSlab / FLOOR |
 | Storey / building | F03-5.500 /  |
-| Material | [["混凝土，现场浇注 - C30", 0.13]] () |
-| World bounding box (m) | min [np.float64(623.502), np.float64(430.404), np.float64(5.32)] / max [np.float64(624.45), np.float64(432.395), np.float64(5.45)] |
+| Material | [["混凝土，现场浇注 - C30", 0.13]] |
+| World bounding box (m) | min [623.502, 430.404, 5.32] / max [624.45, 432.395, 5.45] |
 | Body geometry | extrusion IfcRectangleProfileDef 1.95x0.85 m depth 0.13 m |
 | Measurement basis | Net volume of the modelled body in m3 (concrete); element is single-material |
 | Required dimensions | section width and depth (XDim=1.9500 m, YDim=0.8500 m in the IFC profile definition - re-measure, do not copy) and member length (extrusion depth) |
@@ -185,8 +185,8 @@ Generated 2026-11-19 17:55 UTC. Research only. **No measured values are filled i
 | STEP id | `#1900988` |
 | Class / predefined type | IfcWall / None |
 | Storey / building | B02-9.450 /  |
-| Material | [["混凝土，现场浇注 - C40", 0.25]] () |
-| World bounding box (m) | min [np.float64(653.3), np.float64(428.16), np.float64(-9.45)] / max [np.float64(653.671), np.float64(430.545), np.float64(-5.85)] |
+| Material | [["混凝土，现场浇注 - C40", 0.25]] |
+| World bounding box (m) | min [653.3, 428.16, -9.45] / max [653.671, 430.545, -5.85] |
 | Body geometry | extrusion IfcRectangleProfileDef 2.375x0.25 m depth 3.6 m |
 | Measurement basis | Net volume of the modelled body in m3 (concrete); element is single-material |
 | Required dimensions | section width and depth (XDim=2.3750 m, YDim=0.2500 m in the IFC profile definition - re-measure, do not copy) and member length (extrusion depth) |
@@ -213,8 +213,8 @@ Generated 2026-11-19 17:55 UTC. Research only. **No measured values are filled i
 | STEP id | `#622980` |
 | Class / predefined type | IfcWall / None |
 | Storey / building | F06-13.900 /  |
-| Material | [["混凝土，现场浇注 - C40", 0.2]] () |
-| World bounding box (m) | min [np.float64(623.241), np.float64(434.115), np.float64(13.9)] / max [np.float64(624.25), np.float64(434.366), np.float64(16.7)] |
+| Material | [["混凝土，现场浇注 - C40", 0.2]] |
+| World bounding box (m) | min [623.241, 434.115, 13.9] / max [624.25, 434.366, 16.7] |
 | Body geometry | extrusion IfcRectangleProfileDef 1x0.2 m depth 2.8 m |
 | Measurement basis | Net volume of the modelled body in m3 (concrete); element is single-material |
 | Required dimensions | section width and depth (XDim=1.0000 m, YDim=0.2000 m in the IFC profile definition - re-measure, do not copy) and member length (extrusion depth) |
@@ -241,8 +241,8 @@ Generated 2026-11-19 17:55 UTC. Research only. **No measured values are filled i
 | STEP id | `#1898730` |
 | Class / predefined type | IfcWall / None |
 | Storey / building | B02-9.450 /  |
-| Material | [["混凝土，现场浇注 - C40", 0.25]] () |
-| World bounding box (m) | min [np.float64(628.096), np.float64(430.2), np.float64(-9.45)] / max [np.float64(628.429), np.float64(431.836), np.float64(-5.85)] |
+| Material | [["混凝土，现场浇注 - C40", 0.25]] |
+| World bounding box (m) | min [628.096, 430.2, -9.45] / max [628.429, 431.836, -5.85] |
 | Body geometry | extrusion IfcRectangleProfileDef 1.625x0.25 m depth 3.6 m |
 | Measurement basis | Net volume of the modelled body in m3 (concrete); element is single-material |
 | Required dimensions | section width and depth (XDim=1.6250 m, YDim=0.2500 m in the IFC profile definition - re-measure, do not copy) and member length (extrusion depth) |
@@ -269,8 +269,8 @@ Generated 2026-11-19 17:55 UTC. Research only. **No measured values are filled i
 | STEP id | `#1076898` |
 | Class / predefined type | IfcFooting / USERDEFINED |
 | Storey / building | Concrete_-01 / Restage |
-| Material | [["C35/45", null]] () |
-| World bounding box (m) | min [np.float64(6.95), np.float64(-4.01), np.float64(-0.41)] / max [np.float64(7.45), np.float64(0.7), np.float64(-0.11)] |
+| Material | [["C35/45", null]] |
+| World bounding box (m) | min [6.95, -4.01, -0.41] / max [7.45, 0.7, -0.11] |
 | Body geometry | extrusion IfcArbitraryClosedProfileDef depth 0.3 m |
 | Measurement basis | Net volume of the modelled body in m3 (concrete); element is single-material |
 | Required dimensions | profile vertices (4 points) in the profile plane, and extrusion depth |
@@ -297,12 +297,12 @@ Generated 2026-11-19 17:55 UTC. Research only. **No measured values are filled i
 | STEP id | `#5991` |
 | Class / predefined type | IfcBeam / None |
 | Storey / building | -1 fundering / Building |
-| Material | [["02 Beton gewapend - ihw", null]] () |
-| World bounding box (m) | min [np.float64(8.872), np.float64(10.0), np.float64(-1.0)] / max [np.float64(9.872), np.float64(11.465), np.float64(-0.75)] |
+| Material | [["02 Beton gewapend - ihw", null]] |
+| World bounding box (m) | min [8.872, 10.0, -1.0] / max [9.872, 11.465, -0.75] |
 | Body geometry | extrusion IfcArbitraryClosedProfileDef depth 1.465 m |
 | Measurement basis | Net volume of the modelled body in m3 (concrete); element is single-material |
 | Required dimensions | profile vertices (4 points) in the profile plane, and extrusion depth |
-| Required deductions | None expected (no IfcOpeningElement voids this element). If a notch, chamfer or opening is visible, measure and deduct it and note it. State whether beam depth includes the slab (rule DC06 pending). |
+| Required deductions | None expected (no IfcOpeningElement voids this element). If a notch, chamfer or opening is visible, measure and deduct it and note it. Foundation element modelled as IfcBeam: measure as a strip/upstand foundation; no slab deduction applies. |
 | Independent formula | V = A_profile x extrusion depth; A_profile from measured vertex coordinates by the shoelace formula A = 0.5 |sum(x_i*y_(i+1) - x_(i+1)*y_i)| |
 | Authored value available for comparison | NetVolume 0.36625 m3 (do not copy) |
 

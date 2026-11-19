@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-19 17:55 UTC",
+  "generated": "2026-11-19 17:58 UTC",
   "checks": [
     {
       "check": "Stage 4.0B pre-task baseline",
@@ -14,7 +14,14 @@
     {
       "check": "Protected paths vs task-start snapshot",
       "total": 165,
-      "changed": []
+      "changed": [
+        {
+          "path": "pmi_core/cli.py",
+          "change": "CONTENT CHANGED",
+          "owner": "Agent 1 (concurrent)",
+          "mtime_utc": "2026-11-19T17:58:16.161695+00:00"
+        }
+      ]
     },
     {
       "check": "Manual validation workbook unchanged",
@@ -25,20 +32,27 @@
     },
     {
       "check": "git tracked modifications / staged",
-      "tracked": [],
-      "untracked": [
-        "research/implementation/stage5_2/implementation_baseline.json",
-        "research/validation/engineering_approval_review/controlled_demo_input_template.json",
-        "research/validation/engineering_approval_review/duration_and_cost_calculation_examples.md",
-        "research/validation/engineering_approval_review/measurement_instructions.md",
-        "research/validation/engineering_approval_review/one_page_summary.md",
-        "research/validation/engineering_approval_review/preservation_verification.json",
-        "research/validation/engineering_approval_review/priority_approval_register.csv",
-        "research/validation/engineering_approval_review/scripts/",
-        "research/validation/engineering_approval_review/stage5_3_readiness_report.md",
-        "research/validation/engineering_approval_review/stage5_3_reference_selection.csv",
-        "research/validation/stage5_1_manual/~$manual_quantity_validation.xlsx"
-      ]
+      "tracked": [
+        "M  pmi_core/cli.py",
+        "A  pmi_core/construction/__init__.py",
+        "A  pmi_core/construction/classification.py",
+        "A  pmi_core/construction/dependencies.py",
+        "A  pmi_core/construction/engine.py",
+        "A  pmi_core/construction/export.py",
+        "A  pmi_core/construction/library.py",
+        "A  research/implementation/stage5_2/implementation_baseline.json",
+        "AM research/validation/engineering_approval_review/controlled_demo_input_template.json",
+        "AM research/validation/engineering_approval_review/duration_and_cost_calculation_examples.md",
+        "AM research/validation/engineering_approval_review/measurement_instructions.md",
+        "A  research/validation/engineering_approval_review/one_page_summary.md",
+        "A  research/validation/engineering_approval_review/preservation_verification.json",
+        "A  research/validation/engineering_approval_review/priority_approval_register.csv",
+        "A  research/validation/engineering_approval_review/scripts/build_review_package.py",
+        "AM research/validation/engineering_approval_review/stage5_3_readiness_report.md",
+        "A  research/validation/engineering_approval_review/stage5_3_reference_selection.csv",
+        "A  research/validation/stage5_1_manual/~$manual_quantity_validation.xlsx"
+      ],
+      "untracked": []
     },
     {
       "check": "Write scope",
@@ -55,5 +69,5 @@
       "result": "confirmed by script scope"
     }
   ],
-  "all_protected_unchanged_by_this_task": true
+  "all_protected_unchanged_by_this_task": false
 }

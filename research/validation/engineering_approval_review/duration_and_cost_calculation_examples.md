@@ -1,6 +1,6 @@
 # Stage 5.3 engineering estimation method and worked examples
 
-Generated 2026-11-19 17:55 UTC. Research only - not production code. Method follows Agent 2's `research/architecture/stage5_0/engineering_estimation_specification.md`.
+Generated 2026-11-19 17:58 UTC. Research only - not production code. Method follows Agent 2's `research/architecture/stage5_0/engineering_estimation_specification.md`.
 
 ## 1. Method
 For an activity with allocated physical quantity Q (in the BCCA declared unit) and BCCA coefficients c[t] (worker-hours per unit, trade t) and k[e] (machine-hours per unit, class e):

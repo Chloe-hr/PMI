@@ -1,0 +1,69 @@
+experiment,parameter,value
+E1,optimizer,Adam
+E1,learning rate,0.001
+E1,weight decay,0.001
+E1,batch,full batch (32 rows)
+E1,loss,MSE on standardized ProjDura
+E1,max epochs,2000
+E1,patience,150
+E1,seed,42
+E1,architecture,9-16-8-1 ReLU
+E1,ridge alpha (baseline),1.0
+E2,as E1,all MLP and ridge settings identical
+E2,repeats,1 (seed 42)
+E3,as E1,"Adam lr 1e-3, wd 1e-3, MSE scaled, max 2000, patience 150"
+E3,repeats,3
+E3,seeds,"42, 43, 44"
+E4,optimizer,AdamW
+E4,learning rate,0.003
+E4,weight decay,1e-4
+E4,loss,Huber delta 0.5 on log(actual/planned)
+E4,hidden,64
+E4,layers,3
+E4,dropout,0.1
+E4,max epochs,150
+E4,patience,30
+E4,seed,42 + fold
+E4,folds,5
+E5,optimizer,AdamW
+E5,learning rate,0.003
+E5,weight decay,1e-4
+E5,loss,Huber delta 0.5 on log(actual/planned)
+E5,hidden,64
+E5,layers,3
+E5,dropout,0.1
+E5,max epochs,200
+E5,patience,30
+E5,seed,42 + fold
+E5,folds,5
+E6,optimizer,AdamW
+E6,learning rate,0.003
+E6,weight decay,1e-4
+E6,loss,Huber delta 0.5 on log(actual/planned)
+E6,hidden,64
+E6,layers,3
+E6,dropout,0.1
+E6,max epochs,200
+E6,patience,30
+E6,seed,42 + fold
+E6,folds,5
+E7,ridge,"lsqr, max_iter 2000, alpha by fold [10,10,10,10,1]"
+E7,random forest,"120 trees, max_depth 24, min_samples_leaf 4, max_features 0.6"
+E7,MLP,"128-64-32-1, dropout .25/.15, AdamW lr 1e-3, wd 1e-3, batch 2048"
+E7,MLP loss,MSE on standardized days; stop on L1
+E7,MLP max epochs / patience,100 / 10
+E7,text,"TF-IDF 50k (1,2)-gram, min_df 2, max_df .98, sublinear"
+E7,dense projection,TruncatedSVD 128 + StandardScaler
+E7,seed,23051
+E8,optimizer,AdamW
+E8,learning rate,0.003
+E8,weight decay,1e-4
+E8,loss,L1 on log1p(days)
+E8,batch,8 graphs
+E8,hidden,64
+E8,graph layers,2
+E8,dropout,0.2
+E8,max epochs,150
+E8,patience / min_delta,15 / 1e-4
+E8,seeds,"23051, 23052, 23053"
+E8,protocol sha256,ca2ae92ee8a65b82...

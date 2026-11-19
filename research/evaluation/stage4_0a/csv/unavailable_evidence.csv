@@ -1,0 +1,15 @@
+experiment,missing_evidence,reason
+E4-E6,Per-epoch training/validation loss histories,train.py keeps losses in memory only; nothing saved
+E4-E6,Per-fold best and executed epochs,printed to console only; not in metrics.json
+E4-E6,Fold-level checkpoints behind the OOF metrics,only a refit-on-all model.pt was saved
+E4-E6,Paired GNN vs MLP significance test,bootstrap compares GNN only with the best non-graph method
+E4-E6,"Run log, environment beyond python/torch versions, git commit",not written by train.py
+E7,"MLP loss history, executed and best epochs (CV and final)",fit_mlp does not record them
+E7,Development OOF predictions file,only fold-level metrics were saved
+E7,Hashes of models/cambridge_duration_v1 at creation time,no manifest written; current hashes recorded here
+E7,Row-level held-out evidence,deliberately not opened: locked-test derived
+E1-E3,Verified duration unit and source licence for Mendeley data,flagged as unverified by the original pipeline
+E1-E3,Original-machine input files at the recorded paths,metrics.json paths point to another user's machine
+E8,Locked-test performance,protocol forbids evaluating the 99 locked blocks in this stage
+E8,Exact ensemble reconstruction from saved per-seed day predictions,per-seed predictions were clipped before saving
+All,Reliable training timestamps for E1-E6,file times reflect copy/checkout; only E7 and E8 have run logs

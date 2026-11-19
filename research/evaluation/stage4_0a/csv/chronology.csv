@@ -1,0 +1,9 @@
+order,id,stage,evidence_first_commit,file_mtime_note
+1,E1,Stage 1,fbf0413 2026-11-11,"all artefacts 2026-11-12 10:12:50 (copy time, not training time)"
+2,E2,Stage 1 dev validation,fbf0413 2026-11-11,2026-11-12 10:12 (copy time)
+3,E3,Stage 1 dev validation,fbf0413 2026-11-11,2026-11-12 10:12 (copy time)
+4,E7,Stage 2.3E,30f5330 2026-11-16,run_log.txt: 2026-11-12T18:38:43 to 18:59:12 +01:00
+5,E4,Stage 3.5,30f5330 2026-11-16,model.pt mtime 2026-11-12 15:31 (earlier than the E7 run log; conflict unresolved)
+6,E5,Stage 3.5,30f5330 2026-11-16,model.pt mtime 2026-11-12 15:36
+7,E6,Stage 3.5,30f5330 2026-11-16,model.pt mtime 2026-11-12 15:37
+8,E8,Stage 3.7,30f5330 2026-11-16,run started 2026-11-16T18:26:10 +01:00 at commit cc38083 (dirty tree)

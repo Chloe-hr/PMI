@@ -1,0 +1,14 @@
+{
+  "starting_head": "0933719457af29750c31d58f181486010a8b5d14",
+  "ending_head": "0933719457af29750c31d58f181486010a8b5d14",
+  "protected_file_hashes_verified": 1327,
+  "starting_status": [
+    "?? pmi_core/estimation/",
+    "?? research/implementation/stage5_3/",
+    "?? research/planning/",
+    "?? tests/test_stage5_3.py"
+  ],
+  "stage5_3_handover_sha256": "77ebcee21666608a16ef8273aa0d1bae9dfb90d0fda05e6800edb6ba80c72808",
+  "schedule_sha256": "53849aa9f24aa16f4482449cac10cdc33a07a32a088a000df6b7838e0a4a51ed",
+  "generated_outputs_reproduced_byte_exactly": true
+}

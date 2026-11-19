@@ -1,0 +1,7 @@
+﻿predecessor_id,successor_id,predecessor_alias,successor_alias,rule_id,calendar_gap_minutes
+a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7,ef679452-ad4e-5662-803e-a59d6f27c913,S-FORM,S-REBAR,DR06,0
+ef679452-ad4e-5662-803e-a59d6f27c913,0de967fe-4794-5dbb-aab8-8fea253a5927,S-REBAR,S-INSP,DR06,0
+0de967fe-4794-5dbb-aab8-8fea253a5927,8a20a577-58c4-58e1-a2c7-86dbb4ee5523,S-INSP,S-POUR,DR06,0
+8a20a577-58c4-58e1-a2c7-86dbb4ee5523,f00f202c-c5fe-5fe5-832b-6e8acdb8b639,S-POUR,S-STRIKE,DR08,0
+f00f202c-c5fe-5fe5-832b-6e8acdb8b639,6c3c378a-8f19-575f-b4e8-3af46b600c94,S-STRIKE,S-STRIP,DR08,0
+6c3c378a-8f19-575f-b4e8-3af46b600c94,a3a9c4bb-8619-5ff0-a41b-8552bc746366,S-STRIP,B-STRIP,DR09,0

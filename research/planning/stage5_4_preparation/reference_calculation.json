@@ -1,0 +1,942 @@
+{
+  "_meta": {
+    "generated": "2026-11-19 18:37 UTC",
+    "purpose": "Numerical references for comparing Stage 5.3A engineering estimates",
+    "hypothetical": true,
+    "cost_boundary": "BCCA Dic-2023 V02 Andalucia direct unit prices x quantity; excludes overheads, general expenses, profit, VAT, crane/pump/delivery, curing (bundled in concrete labour), waiting time",
+    "duration_rule": "productive_hours = max over trades H[t]/n[t] and machines E[e]/m[e] (fixed simultaneous crew); no process minimum; no calendar; no rounding to tick",
+    "sources": {
+      "reference_selection": "research/validation/engineering_approval_review/stage5_3_reference_selection.csv",
+      "template": "research/validation/engineering_approval_review/controlled_demo_input_template.json",
+      "bcca_sha256": "bee06981c4447c6b07a3434a6a4d934de11a7498687b0bf3462ba2ce36b7817d",
+      "agent1_fixture": "research/implementation/stage5_3/fixture_inputs.json",
+      "agent1_fixture_sha256": "deaebe5201ec501e601bde44f2753766fd90bfa894d3180d9dcf75b6ee48b5b1"
+    }
+  },
+  "fixture_A_review_package_4col_frame": {
+    "description": "controlled_demo_input_template.json -> hypothetical_test_fixture (4 columns, 4 beams, 1 slab). Basis of the EUR 3,966.32 figure.",
+    "geometry": "4 columns 0.30x0.30x3.00 m; 4 beams 0.30x0.50x5.00 m; 1 slab 5.30x5.30x0.20 m; no openings",
+    "quantities": {
+      "COL_CONC_m3": 1.08,
+      "COL_FORM_m2": 14.4,
+      "BEAM_CONC_m3": 3.0,
+      "BEAM_FORM_m2": 26.0,
+      "SLAB_CONC_m3": 5.618,
+      "SLAB_FORM_m2": 28.09,
+      "COL_REBAR_kg": 150.0,
+      "BEAM_REBAR_kg": 300.0,
+      "SLAB_REBAR_kg": 400.0,
+      "note": "HYPOTHETICAL: formwork faces = 4 column faces full height; beam soffit + 2 sides full depth; slab soffit full area (no deduction of beam tops). Rebar kg are stated test values, NOT ratios."
+    },
+    "crews": {
+      "HYP-FORM": {
+        "OF. 1ª ENCOFRADOR": 2,
+        "PEÓN ESPECIAL": 1
+      },
+      "HYP-REBAR": {
+        "OF. 1ª FERRALLISTA": 2
+      },
+      "HYP-CONC": {
+        "PEÓN ESPECIAL": 2,
+        "OFICIAL 1ª": 1
+      }
+    },
+    "equipment": {
+      "VIBRADOR": 1,
+      "CRANE": 0,
+      "CONCRETE_PUMP": 0,
+      "note": "HYPOTHETICAL explicit none for crane/pump (hand placement assumed for the test)"
+    },
+    "activities": [
+      {
+        "activity": "COL-REBAR",
+        "bcca_code": "05HAC00015",
+        "quantity": 150.0,
+        "unit": "kg",
+        "unit_price_eur": 1.52,
+        "worker_hours_by_trade": {
+          "OF. 1ª FERRALLISTA": 3.0
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª FERRALLISTA": 2
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª FERRALLISTA": 1.5
+        },
+        "productive_hours": 1.5,
+        "blocked_by": [],
+        "direct_cost_eur": 228.0,
+        "cost_components_eur": {
+          "labour": 69.50999999999999,
+          "equipment": 0.0,
+          "material": 157.5
+        },
+        "rounding_residual_eur": 0.9899999999999807
+      },
+      {
+        "activity": "COL-FORM",
+        "bcca_code": "05HEM00001",
+        "quantity": 14.4,
+        "unit": "m2",
+        "unit_price_eur": 16.16,
+        "worker_hours_by_trade": {
+          "OF. 1ª ENCOFRADOR": 3.6,
+          "PEÓN ESPECIAL": 1.4400000000000002
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª ENCOFRADOR": 2,
+          "PEÓN ESPECIAL": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª ENCOFRADOR": 1.8,
+          "labor:PEÓN ESPECIAL": 1.4400000000000002
+        },
+        "productive_hours": 1.8,
+        "blocked_by": [],
+        "direct_cost_eur": 232.704,
+        "cost_components_eur": {
+          "labour": 115.10640000000001,
+          "equipment": 0.0,
+          "material": 117.64656000000001
+        },
+        "rounding_residual_eur": -0.0489599999999939
+      },
+      {
+        "activity": "COL-CONC",
+        "bcca_code": "05HHP00003",
+        "quantity": 1.08,
+        "unit": "m3",
+        "unit_price_eur": 113.58,
+        "worker_hours_by_trade": {
+          "PEÓN ESPECIAL": 0.648
+        },
+        "machine_hours_by_class": {
+          "VIBRADOR": 0.21600000000000003
+        },
+        "crew": {
+          "PEÓN ESPECIAL": 2,
+          "OFICIAL 1ª": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:PEÓN ESPECIAL": 0.324,
+          "equipment:VIBRADOR": 0.21600000000000003
+        },
+        "productive_hours": 0.324,
+        "blocked_by": [],
+        "direct_cost_eur": 122.66640000000001,
+        "cost_components_eur": {
+          "labour": 14.26248,
+          "equipment": 0.39312,
+          "material": 108.01404000000001
+        },
+        "rounding_residual_eur": -0.003239999999991028
+      },
+      {
+        "activity": "BEAM-FORM",
+        "bcca_code": "05HEM00051",
+        "quantity": 26.0,
+        "unit": "m2",
+        "unit_price_eur": 16.23,
+        "worker_hours_by_trade": {
+          "OF. 1ª ENCOFRADOR": 9.1,
+          "PEÓN ESPECIAL": 3.9
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª ENCOFRADOR": 2,
+          "PEÓN ESPECIAL": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª ENCOFRADOR": 4.55,
+          "labor:PEÓN ESPECIAL": 3.9
+        },
+        "productive_hours": 4.55,
+        "blocked_by": [],
+        "direct_cost_eur": 421.98,
+        "cost_components_eur": {
+          "labour": 296.686,
+          "equipment": 0.0,
+          "material": 125.33040000000001
+        },
+        "rounding_residual_eur": -0.03640000000001464
+      },
+      {
+        "activity": "SLAB-FORM",
+        "bcca_code": "05HEM00101",
+        "quantity": 28.09,
+        "unit": "m2",
+        "unit_price_eur": 21.42,
+        "worker_hours_by_trade": {
+          "OF. 1ª ENCOFRADOR": 15.4495,
+          "PEÓN ESPECIAL": 5.618
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª ENCOFRADOR": 2,
+          "PEÓN ESPECIAL": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª ENCOFRADOR": 7.72475,
+          "labor:PEÓN ESPECIAL": 5.618
+        },
+        "productive_hours": 7.72475,
+        "blocked_by": [],
+        "direct_cost_eur": 601.6878,
+        "cost_components_eur": {
+          "labour": 481.61709499999995,
+          "equipment": 0.0,
+          "material": 120.15216600000001
+        },
+        "rounding_residual_eur": -0.08146099999987655
+      },
+      {
+        "activity": "BEAM-REBAR",
+        "bcca_code": "05HAC00015",
+        "quantity": 300.0,
+        "unit": "kg",
+        "unit_price_eur": 1.52,
+        "worker_hours_by_trade": {
+          "OF. 1ª FERRALLISTA": 6.0
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª FERRALLISTA": 2
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª FERRALLISTA": 3.0
+        },
+        "productive_hours": 3.0,
+        "blocked_by": [],
+        "direct_cost_eur": 456.0,
+        "cost_components_eur": {
+          "labour": 139.01999999999998,
+          "equipment": 0.0,
+          "material": 315.0
+        },
+        "rounding_residual_eur": 1.9799999999999613
+      },
+      {
+        "activity": "SLAB-REBAR",
+        "bcca_code": "05HAC00015",
+        "quantity": 400.0,
+        "unit": "kg",
+        "unit_price_eur": 1.52,
+        "worker_hours_by_trade": {
+          "OF. 1ª FERRALLISTA": 8.0
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª FERRALLISTA": 2
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª FERRALLISTA": 4.0
+        },
+        "productive_hours": 4.0,
+        "blocked_by": [],
+        "direct_cost_eur": 608.0,
+        "cost_components_eur": {
+          "labour": 185.35999999999999,
+          "equipment": 0.0,
+          "material": 420.0
+        },
+        "rounding_residual_eur": 2.6399999999999864
+      },
+      {
+        "activity": "BEAM-CONC",
+        "bcca_code": "05HHJ00003",
+        "quantity": 3.0,
+        "unit": "m3",
+        "unit_price_eur": 118.4,
+        "worker_hours_by_trade": {
+          "OFICIAL 1ª": 0.6000000000000001,
+          "PEÓN ESPECIAL": 1.7999999999999998
+        },
+        "machine_hours_by_class": {
+          "VIBRADOR": 0.8999999999999999
+        },
+        "crew": {
+          "PEÓN ESPECIAL": 2,
+          "OFICIAL 1ª": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:OFICIAL 1ª": 0.6000000000000001,
+          "labor:PEÓN ESPECIAL": 0.8999999999999999,
+          "equipment:VIBRADOR": 0.8999999999999999
+        },
+        "productive_hours": 0.8999999999999999,
+        "blocked_by": [],
+        "direct_cost_eur": 355.20000000000005,
+        "cost_components_eur": {
+          "labour": 53.519999999999996,
+          "equipment": 1.6380000000000001,
+          "material": 300.039
+        },
+        "rounding_residual_eur": 0.0030000000000427463
+      },
+      {
+        "activity": "SLAB-CONC",
+        "bcca_code": "05HHL00003",
+        "quantity": 5.618,
+        "unit": "m3",
+        "unit_price_eur": 118.57,
+        "worker_hours_by_trade": {
+          "OFICIAL 1ª": 1.1236000000000002,
+          "PEÓN ESPECIAL": 3.3708
+        },
+        "machine_hours_by_class": {
+          "VIBRADOR": 1.6854
+        },
+        "crew": {
+          "PEÓN ESPECIAL": 2,
+          "OFICIAL 1ª": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:OFICIAL 1ª": 1.1236000000000002,
+          "labor:PEÓN ESPECIAL": 1.6854,
+          "equipment:VIBRADOR": 1.6854
+        },
+        "productive_hours": 1.6854,
+        "blocked_by": [],
+        "direct_cost_eur": 666.12626,
+        "cost_components_eur": {
+          "labour": 100.22512,
+          "equipment": 3.0674280000000005,
+          "material": 562.8000040000001
+        },
+        "rounding_residual_eur": 0.03370800000004692
+      },
+      {
+        "activity": "FRM-STRIP (cols)",
+        "bcca_code": "05HED00001",
+        "quantity": 14.4,
+        "unit": "m2",
+        "unit_price_eur": 4.0,
+        "worker_hours_by_trade": {
+          "OF. 1ª ENCOFRADOR": 0.432,
+          "PEÓN ESPECIAL": 2.16
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª ENCOFRADOR": 2,
+          "PEÓN ESPECIAL": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª ENCOFRADOR": 0.216,
+          "labor:PEÓN ESPECIAL": 2.16
+        },
+        "productive_hours": 2.16,
+        "blocked_by": [],
+        "direct_cost_eur": 57.6,
+        "cost_components_eur": {
+          "labour": 57.55104,
+          "equipment": 0.0,
+          "material": 0.0
+        },
+        "rounding_residual_eur": 0.048960000000001
+      },
+      {
+        "activity": "FRM-STRIP (beams+slab)",
+        "bcca_code": "05HED00001",
+        "quantity": 54.09,
+        "unit": "m2",
+        "unit_price_eur": 4.0,
+        "worker_hours_by_trade": {
+          "OF. 1ª ENCOFRADOR": 1.6227,
+          "PEÓN ESPECIAL": 8.1135
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª ENCOFRADOR": 2,
+          "PEÓN ESPECIAL": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª ENCOFRADOR": 0.81135,
+          "labor:PEÓN ESPECIAL": 8.1135
+        },
+        "productive_hours": 8.1135,
+        "blocked_by": [],
+        "direct_cost_eur": 216.36,
+        "cost_components_eur": {
+          "labour": 216.176094,
+          "equipment": 0.0,
+          "material": 0.0
+        },
+        "rounding_residual_eur": 0.18390600000000745
+      }
+    ],
+    "totals": {
+      "direct_cost_eur": 3966.3245,
+      "components_eur": {
+        "labour": 1729.0342,
+        "equipment": 5.0985,
+        "material": 2226.4822
+      },
+      "rounding_residual_eur": 5.7095
+    },
+    "status": "NOT the fixture implemented by Agent 1 in Stage 5.3A - compare only with an estimator run on these exact quantities"
+  },
+  "fixture_B_agent1_stage5_3A": {
+    "description": "Independent recomputation of Agent 1 fixture_inputs.json (1 column, 1 beam, 1 slab) with the same BCCA selections",
+    "activities": [
+      {
+        "activity": "COL-REBAR",
+        "bcca_code": "05HAC00015",
+        "quantity": 32,
+        "unit": "kg",
+        "unit_price_eur": 1.52,
+        "worker_hours_by_trade": {
+          "OF. 1ª FERRALLISTA": 0.64
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª FERRALLISTA": 2
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª FERRALLISTA": 0.32
+        },
+        "productive_hours": 0.32,
+        "blocked_by": [],
+        "direct_cost_eur": 48.64,
+        "cost_components_eur": {
+          "labour": 14.8288,
+          "equipment": 0.0,
+          "material": 33.6
+        },
+        "rounding_residual_eur": 0.21119999999999806,
+        "global_id": "24tlOXIsvMQfyRLiqh6fZt"
+      },
+      {
+        "activity": "COL-FORM",
+        "bcca_code": "05HEM00001",
+        "quantity": 4.8,
+        "unit": "m2",
+        "unit_price_eur": 16.16,
+        "worker_hours_by_trade": {
+          "OF. 1ª ENCOFRADOR": 1.2,
+          "PEÓN ESPECIAL": 0.48
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª ENCOFRADOR": 2,
+          "PEÓN ESPECIAL": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª ENCOFRADOR": 0.6,
+          "labor:PEÓN ESPECIAL": 0.48
+        },
+        "productive_hours": 0.6,
+        "blocked_by": [],
+        "direct_cost_eur": 77.568,
+        "cost_components_eur": {
+          "labour": 38.3688,
+          "equipment": 0.0,
+          "material": 39.21552
+        },
+        "rounding_residual_eur": -0.01631999999999323,
+        "global_id": "24tlOXIsvMQfyRLiqh6fZt"
+      },
+      {
+        "activity": "COL-CONC",
+        "bcca_code": "05HHP00003",
+        "quantity": 0.4800000000000001,
+        "unit": "m3",
+        "unit_price_eur": 113.58,
+        "worker_hours_by_trade": {
+          "PEÓN ESPECIAL": 0.28800000000000003
+        },
+        "machine_hours_by_class": {
+          "VIBRADOR": 0.09600000000000003
+        },
+        "crew": {
+          "PEÓN ESPECIAL": 2,
+          "OFICIAL 1ª": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:PEÓN ESPECIAL": 0.14400000000000002,
+          "equipment:VIBRADOR": 0.09600000000000003
+        },
+        "productive_hours": 0.14400000000000002,
+        "blocked_by": [],
+        "direct_cost_eur": 54.51840000000001,
+        "cost_components_eur": {
+          "labour": 6.338880000000001,
+          "equipment": 0.17472000000000004,
+          "material": 48.00624000000001
+        },
+        "rounding_residual_eur": -0.0014400000000023283,
+        "global_id": "24tlOXIsvMQfyRLiqh6fZt"
+      },
+      {
+        "activity": "FRM-STRIP",
+        "bcca_code": "05HED00001",
+        "quantity": 4.8,
+        "unit": "m2",
+        "unit_price_eur": 4.0,
+        "worker_hours_by_trade": {
+          "OF. 1ª ENCOFRADOR": 0.144,
+          "PEÓN ESPECIAL": 0.72
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª ENCOFRADOR": 2,
+          "PEÓN ESPECIAL": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª ENCOFRADOR": 0.072,
+          "labor:PEÓN ESPECIAL": 0.72
+        },
+        "productive_hours": 0.72,
+        "blocked_by": [],
+        "direct_cost_eur": 19.2,
+        "cost_components_eur": {
+          "labour": 19.18368,
+          "equipment": 0.0,
+          "material": 0.0
+        },
+        "rounding_residual_eur": 0.016320000000000334,
+        "global_id": "24tlOXIsvMQfyRLiqh6fZt"
+      },
+      {
+        "activity": "BEAM-REBAR",
+        "bcca_code": "05HAC00015",
+        "quantity": 58,
+        "unit": "kg",
+        "unit_price_eur": 1.52,
+        "worker_hours_by_trade": {
+          "OF. 1ª FERRALLISTA": 1.16
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª FERRALLISTA": 2
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª FERRALLISTA": 0.58
+        },
+        "productive_hours": 0.58,
+        "blocked_by": [],
+        "direct_cost_eur": 88.16,
+        "cost_components_eur": {
+          "labour": 26.8772,
+          "equipment": 0.0,
+          "material": 60.900000000000006
+        },
+        "rounding_residual_eur": 0.3827999999999889,
+        "global_id": "1jDfy2_jTRueAw6f5fc3Ev"
+      },
+      {
+        "activity": "BEAM-FORM",
+        "bcca_code": "05HEM00051",
+        "quantity": 5.44,
+        "unit": "m2",
+        "unit_price_eur": 16.23,
+        "worker_hours_by_trade": {
+          "OF. 1ª ENCOFRADOR": 1.904,
+          "PEÓN ESPECIAL": 0.8160000000000001
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª ENCOFRADOR": 2,
+          "PEÓN ESPECIAL": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª ENCOFRADOR": 0.952,
+          "labor:PEÓN ESPECIAL": 0.8160000000000001
+        },
+        "productive_hours": 0.952,
+        "blocked_by": [],
+        "direct_cost_eur": 88.2912,
+        "cost_components_eur": {
+          "labour": 62.07584,
+          "equipment": 0.0,
+          "material": 26.222976000000003
+        },
+        "rounding_residual_eur": -0.007616000000012946,
+        "global_id": "1jDfy2_jTRueAw6f5fc3Ev"
+      },
+      {
+        "activity": "BEAM-CONC",
+        "bcca_code": "05HHJ00003",
+        "quantity": 0.8,
+        "unit": "m3",
+        "unit_price_eur": 118.4,
+        "worker_hours_by_trade": {
+          "OFICIAL 1ª": 0.16000000000000003,
+          "PEÓN ESPECIAL": 0.48
+        },
+        "machine_hours_by_class": {
+          "VIBRADOR": 0.24
+        },
+        "crew": {
+          "PEÓN ESPECIAL": 2,
+          "OFICIAL 1ª": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:OFICIAL 1ª": 0.16000000000000003,
+          "labor:PEÓN ESPECIAL": 0.24,
+          "equipment:VIBRADOR": 0.24
+        },
+        "productive_hours": 0.24,
+        "blocked_by": [],
+        "direct_cost_eur": 94.72000000000001,
+        "cost_components_eur": {
+          "labour": 14.272,
+          "equipment": 0.4368000000000001,
+          "material": 80.0104
+        },
+        "rounding_residual_eur": 0.0008000000000123464,
+        "global_id": "1jDfy2_jTRueAw6f5fc3Ev"
+      },
+      {
+        "activity": "FRM-STRIP",
+        "bcca_code": "05HED00001",
+        "quantity": 5.44,
+        "unit": "m2",
+        "unit_price_eur": 4.0,
+        "worker_hours_by_trade": {
+          "OF. 1ª ENCOFRADOR": 0.1632,
+          "PEÓN ESPECIAL": 0.8160000000000001
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª ENCOFRADOR": 2,
+          "PEÓN ESPECIAL": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª ENCOFRADOR": 0.0816,
+          "labor:PEÓN ESPECIAL": 0.8160000000000001
+        },
+        "productive_hours": 0.8160000000000001,
+        "blocked_by": [],
+        "direct_cost_eur": 21.76,
+        "cost_components_eur": {
+          "labour": 21.741504000000003,
+          "equipment": 0.0,
+          "material": 0.0
+        },
+        "rounding_residual_eur": 0.018495999999998958,
+        "global_id": "1jDfy2_jTRueAw6f5fc3Ev"
+      },
+      {
+        "activity": "SLAB-REBAR",
+        "bcca_code": "05HAC00015",
+        "quantity": 86,
+        "unit": "kg",
+        "unit_price_eur": 1.52,
+        "worker_hours_by_trade": {
+          "OF. 1ª FERRALLISTA": 1.72
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª FERRALLISTA": 2
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª FERRALLISTA": 0.86
+        },
+        "productive_hours": 0.86,
+        "blocked_by": [],
+        "direct_cost_eur": 130.72,
+        "cost_components_eur": {
+          "labour": 39.852399999999996,
+          "equipment": 0.0,
+          "material": 90.3
+        },
+        "rounding_residual_eur": 0.5675999999999988,
+        "global_id": "3wOB$MtWLSz8SJNgW3VJvy"
+      },
+      {
+        "activity": "SLAB-FORM",
+        "bcca_code": "05HEM00101",
+        "quantity": 10.4,
+        "unit": "m2",
+        "unit_price_eur": 21.42,
+        "worker_hours_by_trade": {
+          "OF. 1ª ENCOFRADOR": 5.720000000000001,
+          "PEÓN ESPECIAL": 2.08
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª ENCOFRADOR": 2,
+          "PEÓN ESPECIAL": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª ENCOFRADOR": 2.8600000000000003,
+          "labor:PEÓN ESPECIAL": 2.08
+        },
+        "productive_hours": 2.8600000000000003,
+        "blocked_by": [],
+        "direct_cost_eur": 222.76800000000003,
+        "cost_components_eur": {
+          "labour": 178.3132,
+          "equipment": 0.0,
+          "material": 44.48496
+        },
+        "rounding_residual_eur": -0.030159999999966658,
+        "global_id": "3wOB$MtWLSz8SJNgW3VJvy"
+      },
+      {
+        "activity": "SLAB-CONC",
+        "bcca_code": "05HHL00003",
+        "quantity": 2.400000000000002,
+        "unit": "m3",
+        "unit_price_eur": 118.57,
+        "worker_hours_by_trade": {
+          "OFICIAL 1ª": 0.4800000000000004,
+          "PEÓN ESPECIAL": 1.4400000000000013
+        },
+        "machine_hours_by_class": {
+          "VIBRADOR": 0.7200000000000006
+        },
+        "crew": {
+          "PEÓN ESPECIAL": 2,
+          "OFICIAL 1ª": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:OFICIAL 1ª": 0.4800000000000004,
+          "labor:PEÓN ESPECIAL": 0.7200000000000006,
+          "equipment:VIBRADOR": 0.7200000000000006
+        },
+        "productive_hours": 0.7200000000000006,
+        "blocked_by": [],
+        "direct_cost_eur": 284.5680000000002,
+        "cost_components_eur": {
+          "labour": 42.81600000000004,
+          "equipment": 1.3104000000000013,
+          "material": 240.4272000000002
+        },
+        "rounding_residual_eur": 0.01439999999996644,
+        "global_id": "3wOB$MtWLSz8SJNgW3VJvy"
+      },
+      {
+        "activity": "FRM-STRIP",
+        "bcca_code": "05HED00001",
+        "quantity": 10.4,
+        "unit": "m2",
+        "unit_price_eur": 4.0,
+        "worker_hours_by_trade": {
+          "OF. 1ª ENCOFRADOR": 0.312,
+          "PEÓN ESPECIAL": 1.56
+        },
+        "machine_hours_by_class": {},
+        "crew": {
+          "OF. 1ª ENCOFRADOR": 2,
+          "PEÓN ESPECIAL": 1
+        },
+        "capacity_bounds_hours": {
+          "labor:OF. 1ª ENCOFRADOR": 0.156,
+          "labor:PEÓN ESPECIAL": 1.56
+        },
+        "productive_hours": 1.56,
+        "blocked_by": [],
+        "direct_cost_eur": 41.6,
+        "cost_components_eur": {
+          "labour": 41.56464,
+          "equipment": 0.0,
+          "material": 0.0
+        },
+        "rounding_residual_eur": 0.03536000000000428,
+        "global_id": "3wOB$MtWLSz8SJNgW3VJvy"
+      }
+    ],
+    "totals": {
+      "direct_cost_eur": 1172.5136,
+      "agent1_reported_eur": 1172.5136,
+      "match": true,
+      "components_eur": {
+        "labour": 506.2329,
+        "equipment": 1.9219,
+        "material": 663.1673
+      },
+      "agent1_components_eur": {
+        "labor": 506.232944,
+        "equipment": 1.92192,
+        "material": 663.167296
+      },
+      "rounding_residual_eur": 1.1914,
+      "agent1_rounding_residual_eur": 1.191440000000071
+    },
+    "comparison_rows": [
+      {
+        "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+        "work_item": "COL-REBAR",
+        "bcca_code": "05HAC00015",
+        "quantity": 32,
+        "unit": "kg",
+        "independent_productive_h": 0.32,
+        "agent1_productive_h": 0.32,
+        "productive_h_match": true,
+        "independent_cost_eur": 48.64,
+        "agent1_cost_eur": 48.64,
+        "cost_match": true,
+        "worker_hours_match": true,
+        "independent_worker_hours": "{\"OF. 1ª FERRALLISTA\": 0.64}"
+      },
+      {
+        "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+        "work_item": "COL-FORM",
+        "bcca_code": "05HEM00001",
+        "quantity": 4.8,
+        "unit": "m2",
+        "independent_productive_h": 0.6,
+        "agent1_productive_h": 0.6,
+        "productive_h_match": true,
+        "independent_cost_eur": 77.568,
+        "agent1_cost_eur": 77.568,
+        "cost_match": true,
+        "worker_hours_match": true,
+        "independent_worker_hours": "{\"OF. 1ª ENCOFRADOR\": 1.2, \"PEÓN ESPECIAL\": 0.48}"
+      },
+      {
+        "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+        "work_item": "COL-CONC",
+        "bcca_code": "05HHP00003",
+        "quantity": 0.4800000000000001,
+        "unit": "m3",
+        "independent_productive_h": 0.144,
+        "agent1_productive_h": 0.144,
+        "productive_h_match": true,
+        "independent_cost_eur": 54.5184,
+        "agent1_cost_eur": 54.5184,
+        "cost_match": true,
+        "worker_hours_match": true,
+        "independent_worker_hours": "{\"PEÓN ESPECIAL\": 0.288}"
+      },
+      {
+        "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+        "work_item": "FRM-STRIP",
+        "bcca_code": "05HED00001",
+        "quantity": 4.8,
+        "unit": "m2",
+        "independent_productive_h": 0.72,
+        "agent1_productive_h": 0.72,
+        "productive_h_match": true,
+        "independent_cost_eur": 19.2,
+        "agent1_cost_eur": 19.2,
+        "cost_match": true,
+        "worker_hours_match": true,
+        "independent_worker_hours": "{\"OF. 1ª ENCOFRADOR\": 0.144, \"PEÓN ESPECIAL\": 0.72}"
+      },
+      {
+        "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+        "work_item": "BEAM-REBAR",
+        "bcca_code": "05HAC00015",
+        "quantity": 58,
+        "unit": "kg",
+        "independent_productive_h": 0.58,
+        "agent1_productive_h": 0.58,
+        "productive_h_match": true,
+        "independent_cost_eur": 88.16,
+        "agent1_cost_eur": 88.16,
+        "cost_match": true,
+        "worker_hours_match": true,
+        "independent_worker_hours": "{\"OF. 1ª FERRALLISTA\": 1.16}"
+      },
+      {
+        "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+        "work_item": "BEAM-FORM",
+        "bcca_code": "05HEM00051",
+        "quantity": 5.44,
+        "unit": "m2",
+        "independent_productive_h": 0.952,
+        "agent1_productive_h": 0.952,
+        "productive_h_match": true,
+        "independent_cost_eur": 88.2912,
+        "agent1_cost_eur": 88.2912,
+        "cost_match": true,
+        "worker_hours_match": true,
+        "independent_worker_hours": "{\"OF. 1ª ENCOFRADOR\": 1.904, \"PEÓN ESPECIAL\": 0.816}"
+      },
+      {
+        "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+        "work_item": "BEAM-CONC",
+        "bcca_code": "05HHJ00003",
+        "quantity": 0.8,
+        "unit": "m3",
+        "independent_productive_h": 0.24,
+        "agent1_productive_h": 0.24,
+        "productive_h_match": true,
+        "independent_cost_eur": 94.72,
+        "agent1_cost_eur": 94.72000000000001,
+        "cost_match": true,
+        "worker_hours_match": true,
+        "independent_worker_hours": "{\"OFICIAL 1ª\": 0.16, \"PEÓN ESPECIAL\": 0.48}"
+      },
+      {
+        "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+        "work_item": "FRM-STRIP",
+        "bcca_code": "05HED00001",
+        "quantity": 5.44,
+        "unit": "m2",
+        "independent_productive_h": 0.816,
+        "agent1_productive_h": 0.8160000000000001,
+        "productive_h_match": true,
+        "independent_cost_eur": 21.76,
+        "agent1_cost_eur": 21.76,
+        "cost_match": true,
+        "worker_hours_match": true,
+        "independent_worker_hours": "{\"OF. 1ª ENCOFRADOR\": 0.1632, \"PEÓN ESPECIAL\": 0.816}"
+      },
+      {
+        "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+        "work_item": "SLAB-REBAR",
+        "bcca_code": "05HAC00015",
+        "quantity": 86,
+        "unit": "kg",
+        "independent_productive_h": 0.86,
+        "agent1_productive_h": 0.86,
+        "productive_h_match": true,
+        "independent_cost_eur": 130.72,
+        "agent1_cost_eur": 130.72,
+        "cost_match": true,
+        "worker_hours_match": true,
+        "independent_worker_hours": "{\"OF. 1ª FERRALLISTA\": 1.72}"
+      },
+      {
+        "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+        "work_item": "SLAB-FORM",
+        "bcca_code": "05HEM00101",
+        "quantity": 10.4,
+        "unit": "m2",
+        "independent_productive_h": 2.86,
+        "agent1_productive_h": 2.8600000000000003,
+        "productive_h_match": true,
+        "independent_cost_eur": 222.768,
+        "agent1_cost_eur": 222.76800000000003,
+        "cost_match": true,
+        "worker_hours_match": true,
+        "independent_worker_hours": "{\"OF. 1ª ENCOFRADOR\": 5.72, \"PEÓN ESPECIAL\": 2.08}"
+      },
+      {
+        "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+        "work_item": "SLAB-CONC",
+        "bcca_code": "05HHL00003",
+        "quantity": 2.400000000000002,
+        "unit": "m3",
+        "independent_productive_h": 0.72,
+        "agent1_productive_h": 0.72,
+        "productive_h_match": true,
+        "independent_cost_eur": 284.568,
+        "agent1_cost_eur": 284.568,
+        "cost_match": true,
+        "worker_hours_match": true,
+        "independent_worker_hours": "{\"OFICIAL 1ª\": 0.48, \"PEÓN ESPECIAL\": 1.44}"
+      },
+      {
+        "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+        "work_item": "FRM-STRIP",
+        "bcca_code": "05HED00001",
+        "quantity": 10.4,
+        "unit": "m2",
+        "independent_productive_h": 1.56,
+        "agent1_productive_h": 1.56,
+        "productive_h_match": true,
+        "independent_cost_eur": 41.6,
+        "agent1_cost_eur": 41.6,
+        "cost_match": true,
+        "worker_hours_match": true,
+        "independent_worker_hours": "{\"OF. 1ª ENCOFRADOR\": 0.312, \"PEÓN ESPECIAL\": 1.56}"
+      }
+    ]
+  }
+}

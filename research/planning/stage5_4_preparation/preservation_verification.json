@@ -1,0 +1,71 @@
+{
+  "generated": "2026-11-19 18:37 UTC",
+  "checks": [
+    {
+      "check": "Stage 4.0B baseline",
+      "total": 1601,
+      "changed_or_missing": []
+    },
+    {
+      "check": "Stage 4.0A baseline",
+      "total": 342,
+      "changed_or_missing": []
+    },
+    {
+      "check": "protected paths vs task-start snapshot",
+      "total": 224,
+      "changed": [
+        {
+          "path": "pmi_core/estimation/__main__.py",
+          "owner": "Agent 1 (concurrent)",
+          "mtime_utc": "2026-11-19T18:34:39.588690+00:00"
+        },
+        {
+          "path": "pmi_core/estimation/engine.py",
+          "owner": "Agent 1 (concurrent)",
+          "mtime_utc": "2026-11-19T18:35:07.935415+00:00"
+        },
+        {
+          "path": "pmi_core/estimation/references.py",
+          "owner": "Agent 1 (concurrent)",
+          "mtime_utc": "2026-11-19T18:33:49.232693+00:00"
+        },
+        {
+          "path": "research/implementation/stage5_3/demonstration/activities.csv",
+          "owner": "Agent 1 (concurrent)",
+          "mtime_utc": "2026-11-19T18:35:09.452153+00:00"
+        },
+        {
+          "path": "research/implementation/stage5_3/demonstration/estimate.json",
+          "owner": "Agent 1 (concurrent)",
+          "mtime_utc": "2026-11-19T18:35:09.512276+00:00"
+        },
+        {
+          "path": "research/implementation/stage5_3/fixture_inputs.json",
+          "owner": "Agent 1 (concurrent)",
+          "mtime_utc": "2026-11-19T18:34:39.588690+00:00"
+        }
+      ]
+    },
+    {
+      "check": "git status",
+      "entries": [
+        "?? pmi_core/estimation/",
+        "?? research/implementation/stage5_3/",
+        "?? research/planning/",
+        "?? tests/test_stage5_3.py"
+      ]
+    },
+    {
+      "check": "write scope",
+      "paths": [
+        "research/planning/stage5_4_preparation/"
+      ]
+    },
+    {
+      "check": "no approvals, training, inference, environment change, commit or push",
+      "result": "confirmed by script scope"
+    }
+  ],
+  "all_protected_unchanged_by_this_task": true
+}

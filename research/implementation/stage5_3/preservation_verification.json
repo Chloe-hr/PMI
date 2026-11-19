@@ -1,0 +1,11 @@
+{
+  "head": "0933719457af29750c31d58f181486010a8b5d14",
+  "starting_and_ending_head_match": true,
+  "byte_hashes_verified": 1285,
+  "excluded_office_locks": [],
+  "tracked_diff": [],
+  "staged_diff": [],
+  "controlled_fixture_sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+  "estimate_sha256": "77ebcee21666608a16ef8273aa0d1bae9dfb90d0fda05e6800edb6ba80c72808",
+  "reference_comparison_sha256": "575e7eef36d4beae00f4fa2adb27e1a85736f333ee9ec380aef8642d74fb04b9"
+}

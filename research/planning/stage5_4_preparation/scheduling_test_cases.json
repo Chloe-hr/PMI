@@ -1,0 +1,301 @@
+{
+  "_meta": {
+    "generated": "2026-11-19 18:37 UTC",
+    "oracle": "calendar arithmetic only (this script); times are Europe/Madrid local (UTC+01:00)",
+    "hypothetical": true
+  },
+  "cases": [
+    {
+      "case_id": "TC1",
+      "title": "Simple finish-to-start chain",
+      "inputs": {
+        "calendar": "Mon-Fri 08:00-16:00 Europe/Madrid, no exceptions",
+        "tick_minutes": 15,
+        "start": "2027-01-04 08:00 (Monday)",
+        "productive_policy": "non-interruptible within a window",
+        "activities": "A 3 h -> B 2.5 h -> C 4 h (FS, lag 0)"
+      },
+      "expected_behaviour": "C cannot start at 13:30 because only 2.5 h remain in the shift; it starts next working morning",
+      "expected": {
+        "A": [
+          "2027-01-04 08:00",
+          "2027-01-04 11:00"
+        ],
+        "B": [
+          "2027-01-04 11:00",
+          "2027-01-04 13:30"
+        ],
+        "C": [
+          "2027-01-05 08:00",
+          "2027-01-05 12:00"
+        ],
+        "makespan": "2027-01-05 12:00"
+      },
+      "independent_calculation": "A 08:00-11:00; B 11:00-13:30; C needs 240 min > 150 min left -> Tue 08:00-12:00"
+    },
+    {
+      "case_id": "TC2",
+      "title": "Parallel activities without resource conflict",
+      "inputs": {
+        "calendar": "Mon-Fri 08:00-16:00 Europe/Madrid, no exceptions",
+        "tick_minutes": 15,
+        "start": "2027-01-04 08:00 (Monday)",
+        "productive_policy": "non-interruptible within a window",
+        "activities": "A 3 h (X), B 5 h (Y) in parallel; C 2 h (X) after A and B",
+        "capacity": {
+          "X": 1,
+          "Y": 1
+        }
+      },
+      "expected_behaviour": "A and B overlap because they use different resources",
+      "expected": {
+        "A": [
+          "2027-01-04 08:00",
+          "2027-01-04 11:00"
+        ],
+        "B": [
+          "2027-01-04 08:00",
+          "2027-01-04 13:00"
+        ],
+        "C": [
+          "2027-01-04 13:00",
+          "2027-01-04 15:00"
+        ],
+        "makespan": "2027-01-04 15:00",
+        "resource_violations": []
+      },
+      "independent_calculation": "C ready at max(11:00, 13:00) = 13:00 -> 13:00-15:00"
+    },
+    {
+      "case_id": "TC3",
+      "title": "Parallel activities sharing a limited crew",
+      "inputs": {
+        "calendar": "Mon-Fri 08:00-16:00 Europe/Madrid, no exceptions",
+        "tick_minutes": 15,
+        "start": "2027-01-04 08:00 (Monday)",
+        "productive_policy": "non-interruptible within a window",
+        "activities": "A 3 h (X), B 5 h (X), C 2 h (X) after A and B",
+        "capacity": {
+          "X": 1
+        }
+      },
+      "expected_behaviour": "X never exceeds 1; A and B are serialised (either order); makespan is unique even though the order is not",
+      "expected": {
+        "makespan": "2027-01-05 10:00",
+        "makespan_other_order": "2027-01-05 10:00",
+        "order_A_first": {
+          "A": [
+            "2027-01-04 08:00",
+            "2027-01-04 11:00"
+          ],
+          "B": [
+            "2027-01-04 11:00",
+            "2027-01-04 16:00"
+          ],
+          "C": [
+            "2027-01-05 08:00",
+            "2027-01-05 10:00"
+          ]
+        },
+        "order_B_first": {
+          "B": [
+            "2027-01-04 08:00",
+            "2027-01-04 13:00"
+          ],
+          "A": [
+            "2027-01-04 13:00",
+            "2027-01-04 16:00"
+          ],
+          "C": [
+            "2027-01-05 08:00",
+            "2027-01-05 10:00"
+          ]
+        },
+        "cpm_unconstrained_finish": "2027-01-04 15:00",
+        "max_usage_X": 1
+      },
+      "independent_calculation": "A+B = 8 h fill Monday; C Tue 08:00-10:00. CPM without resources: C Mon 13:00-15:00"
+    },
+    {
+      "case_id": "TC4",
+      "title": "Weekend / non-working-day constraint",
+      "inputs": {
+        "calendar": "Mon-Fri 08:00-16:00 Europe/Madrid, no exceptions",
+        "tick_minutes": 15,
+        "start": "2027-01-04 08:00 (Monday)",
+        "productive_policy": "non-interruptible within a window",
+        "activities": "A 6 h ready Fri 2027-01-08 12:00; variant: split approved; variant: 10 h activity"
+      },
+      "expected_behaviour": "Only 4 h remain on Friday; Saturday/Sunday are non-working. A 10 h phase cannot fit an 8 h window -> NO_FIT diagnostic, not silent splitting",
+      "expected": {
+        "non_interruptible": [
+          "2027-01-11 08:00",
+          "2027-01-11 14:00"
+        ],
+        "approved_split": [
+          [
+            "2027-01-08 12:00",
+            "2027-01-08 16:00"
+          ],
+          [
+            "2027-01-11 08:00",
+            "2027-01-11 10:00"
+          ]
+        ],
+        "ten_hour_activity": "NO_FIT: 600 min exceeds the longest window (480 min); requires an approved split"
+      },
+      "independent_calculation": "Mon 2027-01-11 08:00-14:00; split: Fri 12:00-16:00 + Mon 08:00-10:00"
+    },
+    {
+      "case_id": "TC5",
+      "title": "Elapsed curing crossing non-working days",
+      "inputs": {
+        "calendar": "Mon-Fri 08:00-16:00 Europe/Madrid, no exceptions",
+        "tick_minutes": 15,
+        "start": "2027-01-04 08:00 (Monday)",
+        "productive_policy": "non-interruptible within a window",
+        "activities": "POUR 1 h ready Fri 2027-01-08 14:00; CURE 48 h elapsed; STRIP 1 h"
+      },
+      "expected_behaviour": "Curing runs through the weekend (elapsed); stripping waits for the next working window",
+      "expected": {
+        "POUR": [
+          "2027-01-08 14:00",
+          "2027-01-08 15:00"
+        ],
+        "CURE": [
+          "2027-01-08 15:00",
+          "2027-01-10 15:00"
+        ],
+        "STRIP": [
+          "2027-01-11 08:00",
+          "2027-01-11 09:00"
+        ],
+        "wrong_if_working_time_lag": "CURE would end Mon 2027-01-18 15:00 (48 working h = 6 working days)"
+      },
+      "independent_calculation": "POUR 14:00-15:00 Fri; CURE to Sun 15:00; STRIP Mon 08:00-09:00"
+    },
+    {
+      "case_id": "TC6",
+      "title": "Strength-release condition before formwork removal",
+      "inputs": {
+        "calendar": "Mon-Fri 08:00-16:00 Europe/Madrid, no exceptions",
+        "tick_minutes": 15,
+        "start": "2027-01-04 08:00 (Monday)",
+        "productive_policy": "non-interruptible within a window",
+        "activities": "POUR 1 h Mon 08:00; striking requires >= 72 h elapsed AND a recorded strength approval event"
+      },
+      "expected_behaviour": "Release = max(minimum elapsed, approval event); without the event the projected strip is CONDITIONAL and must not clear the field hold (Agent 2 spec)",
+      "expected": {
+        "no_approval_event": {
+          "strip_projected": [
+            "2027-01-07 09:00",
+            "2027-01-07 10:00"
+          ],
+          "status": "CONDITIONAL - hold not cleared"
+        },
+        "approval_2027_01_08_1030": {
+          "strip": [
+            "2027-01-08 10:30",
+            "2027-01-08 11:30"
+          ],
+          "status": "released"
+        },
+        "approval_before_minimum_2027_01_05_0900": {
+          "strip": [
+            "2027-01-07 09:00",
+            "2027-01-07 10:00"
+          ],
+          "status": "released at the elapsed minimum"
+        }
+      },
+      "independent_calculation": "POUR 08:00-09:00; min elapsed ends Thu 01-07 09:00"
+    },
+    {
+      "case_id": "TC7",
+      "title": "Impossible completion deadline",
+      "inputs": {
+        "calendar": "Mon-Fri 08:00-16:00 Europe/Madrid, no exceptions",
+        "tick_minutes": 15,
+        "start": "2027-01-04 08:00 (Monday)",
+        "productive_policy": "non-interruptible within a window",
+        "activities": "A 8 h -> B 8 h",
+        "hard_deadline": "B finish <= 2027-01-04 16:00"
+      },
+      "expected_behaviour": "Preflight serial bound or CP-SAT returns infeasible; diagnostics name the deadline and the controlling chain; no relaxed schedule is selected",
+      "expected": {
+        "status": "INFEASIBLE",
+        "earliest_B_finish": "2027-01-05 16:00",
+        "implicated": [
+          "deadline(B)",
+          "A->B FS",
+          "A duration",
+          "B duration",
+          "calendar"
+        ],
+        "selected_schedule": null
+      },
+      "independent_calculation": "16 working hours need two shifts -> earliest finish Tue 16:00"
+    },
+    {
+      "case_id": "TC8",
+      "title": "Missing resource capacity",
+      "inputs": {
+        "calendar": "Mon-Fri 08:00-16:00 Europe/Madrid, no exceptions",
+        "tick_minutes": 15,
+        "start": "2027-01-04 08:00 (Monday)",
+        "productive_policy": "non-interruptible within a window",
+        "activities": "REBAR needs crew mode {OF. 1ª FERRALLISTA: 2}",
+        "capacity_variants": {
+          "a": null,
+          "b": 0,
+          "c": 1
+        }
+      },
+      "expected_behaviour": "Preflight diagnostic before solving; the activity is not scheduled",
+      "expected": {
+        "a": "BLOCKED: MISSING_INPUT capacity for OF. 1ª FERRALLISTA (null)",
+        "b": "BLOCKED: IMPOSSIBLE_CREW - demand > 0 with capacity 0",
+        "c": "BLOCKED: no eligible mode (mode needs 2, capacity 1)",
+        "never": "scheduled with zero duration or zero capacity treated as unlimited"
+      },
+      "independent_calculation": ""
+    },
+    {
+      "case_id": "TC9",
+      "title": "Cyclic dependency graph",
+      "inputs": {
+        "calendar": "Mon-Fri 08:00-16:00 Europe/Madrid, no exceptions",
+        "tick_minutes": 15,
+        "start": "2027-01-04 08:00 (Monday)",
+        "productive_policy": "non-interruptible within a window",
+        "activities": "A -> B -> C -> A (FS)"
+      },
+      "expected_behaviour": "Rejected in preflight with the cycle listed; no CPM pass or solve attempted",
+      "expected": {
+        "status": "MODEL_INVALID",
+        "diagnostic": "CYCLE",
+        "cycle": [
+          "A",
+          "B",
+          "C",
+          "A"
+        ]
+      },
+      "independent_calculation": ""
+    },
+    {
+      "case_id": "TC10",
+      "title": "Controlled frame (fixture B) end-to-end",
+      "inputs": {
+        "inputs": "controlled_scheduling_inputs.json"
+      },
+      "expected_behaviour": "All activities scheduled; holds elapsed; pours inside 08:00-14:00; holiday 2027-01-06 skipped; no resource over-use",
+      "expected": {
+        "makespan": "2027-01-14 16:00",
+        "resource_violations": [],
+        "schedule": "fixture_expected_schedule.csv"
+      },
+      "independent_calculation": ""
+    }
+  ]
+}

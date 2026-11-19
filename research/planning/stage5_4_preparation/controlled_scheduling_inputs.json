@@ -1,0 +1,655 @@
+{
+  "_meta": {
+    "generated": "2026-11-19 18:37 UTC",
+    "status": "HYPOTHETICAL controlled scheduling inputs - not a real project, no approvals",
+    "fixture": "Agent 1 Stage 5.3A fixture_inputs.json (1 column, 1 beam, 1 slab)",
+    "fixture_sha256": "deaebe5201ec501e601bde44f2753766fd90bfa894d3180d9dcf75b6ee48b5b1",
+    "durations_from": "independent recomputation (reference_calculation.json fixture_B) - identical to Agent 1 productive_hours",
+    "semantics": "Agent 2 scheduling_engine_specification.md: UTC minute axis, 15-min tick, productive phases non-interruptible within a shift, elapsed holds span non-working time, FS only"
+  },
+  "project": {
+    "id": "HYP-FRAME-5.3A",
+    "start_local": "2027-01-04T08:00",
+    "timezone": "Europe/Madrid",
+    "country": "ES",
+    "region": "AN"
+  },
+  "calendar": {
+    "timezone": "Europe/Madrid",
+    "utc_offset_jan": "+01:00 (no DST change in the horizon)",
+    "working_windows": [
+      {
+        "weekday": 1,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 2,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 3,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 4,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 5,
+        "start": "08:00",
+        "end": "16:00"
+      }
+    ],
+    "date_exceptions": [
+      "2027-01-06"
+    ],
+    "exception_note": "HYPOTHETICAL: 6 Jan (Epifania, a Spanish national holiday) included to exercise exception handling",
+    "tick_minutes": 15,
+    "rounding": "productive minutes rounded UP to 15-min tick (Agent 2 spec)",
+    "productive_phase_policy": "non-interruptible within one working window unless split is approved"
+  },
+  "shifts": [
+    {
+      "id": "DAY",
+      "windows": "Mon-Fri 08:00-16:00 local",
+      "breaks": "none modelled (HYPOTHETICAL)"
+    }
+  ],
+  "resource_capacity_by_trade": {
+    "OF. 1ª ENCOFRADOR": 2,
+    "PEÓN ESPECIAL": 3,
+    "OF. 1ª FERRALLISTA": 2,
+    "OFICIAL 1ª": 1,
+    "VIBRADOR": 1,
+    "INSPECTOR": 1
+  },
+  "crew_modes": {
+    "HYP-FORM": {
+      "OF. 1ª ENCOFRADOR": 2,
+      "PEÓN ESPECIAL": 1
+    },
+    "HYP-REBAR": {
+      "OF. 1ª FERRALLISTA": 2
+    },
+    "HYP-CONC": {
+      "PEÓN ESPECIAL": 2,
+      "OFICIAL 1ª": 1
+    }
+  },
+  "equipment": {
+    "VIBRADOR": 1,
+    "CRANE": 0,
+    "CONCRETE_PUMP": 0,
+    "note": "explicit none for crane/pump (manual handling, staged supply) as in Agent 1 fixture"
+  },
+  "concrete_delivery": {
+    "window_local": "08:00-14:00 Mon-Fri",
+    "rule": "a pour (productive concrete activity) must start and finish inside the delivery window",
+    "max_rate_m3_h": null,
+    "note": "HYPOTHETICAL. Agent 1 fixture declares CONCRETE_DELIVERY=0 (no delivery equipment); this window is a separate supply-time constraint."
+  },
+  "construction_method": {
+    "column": "cage_first",
+    "beam": "formwork_first",
+    "slab": "formwork_first"
+  },
+  "inspection_milestones": [
+    {
+      "id": "C-INSP",
+      "duration_min": 30,
+      "resource": "INSPECTOR",
+      "kind": "productive (working time)"
+    },
+    {
+      "id": "B-INSP",
+      "duration_min": 30,
+      "resource": "INSPECTOR",
+      "kind": "productive (working time)"
+    },
+    {
+      "id": "S-INSP",
+      "duration_min": 30,
+      "resource": "INSPECTOR",
+      "kind": "productive (working time)"
+    }
+  ],
+  "curing": {
+    "COL": {
+      "elapsed_hours": 24,
+      "basis": "elapsed from pour finish",
+      "label": "HYPOTHETICAL"
+    },
+    "BEAM": {
+      "elapsed_hours": 24,
+      "basis": "elapsed from pour finish",
+      "label": "HYPOTHETICAL"
+    },
+    "SLAB": {
+      "elapsed_hours": 24,
+      "basis": "elapsed from pour finish",
+      "label": "HYPOTHETICAL"
+    }
+  },
+  "striking": {
+    "COL": {
+      "elapsed_hours_from_pour": 24,
+      "strength_condition": "strength check required; PASS assumed for the test only",
+      "label": "HYPOTHETICAL"
+    },
+    "BEAM": {
+      "elapsed_hours_from_pour": 168,
+      "strength_condition": "strength check required; PASS assumed for the test only",
+      "label": "HYPOTHETICAL"
+    },
+    "SLAB": {
+      "elapsed_hours_from_pour": 168,
+      "strength_condition": "strength check required; PASS assumed for the test only",
+      "label": "HYPOTHETICAL"
+    }
+  },
+  "activities": [
+    {
+      "id": "C-REBAR",
+      "kind": "productive",
+      "work_item": "COL-REBAR",
+      "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "bcca_code": "05HAC00015",
+      "quantity": 32,
+      "unit": "kg",
+      "productive_hours": 0.32,
+      "minutes": 30,
+      "crew_mode": "HYP-REBAR",
+      "resources": {
+        "OF. 1ª FERRALLISTA": 2
+      },
+      "predecessors": []
+    },
+    {
+      "id": "C-FORM",
+      "kind": "productive",
+      "work_item": "COL-FORM",
+      "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "bcca_code": "05HEM00001",
+      "quantity": 4.8,
+      "unit": "m2",
+      "productive_hours": 0.6,
+      "minutes": 45,
+      "crew_mode": "HYP-FORM",
+      "resources": {
+        "OF. 1ª ENCOFRADOR": 2,
+        "PEÓN ESPECIAL": 1
+      },
+      "predecessors": [
+        {
+          "id": "C-REBAR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "C-INSP",
+      "kind": "productive",
+      "work_item": "INSPECTION",
+      "minutes": 30,
+      "resources": {
+        "INSPECTOR": 1
+      },
+      "note": "HYPOTHETICAL pre-pour inspection: 0.5 h of inspector WORKING time (Agent 1 encodes it as a 0.5 h elapsed hold - see deficiency D4)",
+      "predecessors": [
+        {
+          "id": "C-FORM",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "id": "C-REBAR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "C-POUR",
+      "kind": "productive",
+      "work_item": "COL-CONC",
+      "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "bcca_code": "05HHP00003",
+      "quantity": 0.4800000000000001,
+      "unit": "m3",
+      "productive_hours": 0.14400000000000002,
+      "minutes": 15,
+      "crew_mode": "HYP-CONC",
+      "resources": {
+        "PEÓN ESPECIAL": 2,
+        "OFICIAL 1ª": 1,
+        "VIBRADOR": 1
+      },
+      "window": [
+        [
+          "08:00",
+          "14:00"
+        ]
+      ],
+      "predecessors": [
+        {
+          "id": "C-INSP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "C-CURE",
+      "kind": "elapsed_hold",
+      "minutes": 1440,
+      "note": "curing gate (elapsed)",
+      "condition": null,
+      "predecessors": [
+        {
+          "id": "C-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "C-STRIKE",
+      "kind": "elapsed_hold",
+      "minutes": 1440,
+      "note": "striking release measured from pour end (elapsed)",
+      "condition": "strength check PASS assumed (HYPOTHETICAL); real: approval event required",
+      "predecessors": [
+        {
+          "id": "C-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "C-STRIP",
+      "kind": "productive",
+      "work_item": "FRM-STRIP",
+      "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "bcca_code": "05HED00001",
+      "quantity": 4.8,
+      "unit": "m2",
+      "productive_hours": 0.72,
+      "minutes": 45,
+      "crew_mode": "HYP-FORM",
+      "resources": {
+        "OF. 1ª ENCOFRADOR": 2,
+        "PEÓN ESPECIAL": 1
+      },
+      "predecessors": [
+        {
+          "id": "C-STRIKE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "id": "C-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "B-FORM",
+      "kind": "productive",
+      "work_item": "BEAM-FORM",
+      "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "bcca_code": "05HEM00051",
+      "quantity": 5.44,
+      "unit": "m2",
+      "productive_hours": 0.952,
+      "minutes": 60,
+      "crew_mode": "HYP-FORM",
+      "resources": {
+        "OF. 1ª ENCOFRADOR": 2,
+        "PEÓN ESPECIAL": 1
+      },
+      "cross_package": "HYPOTHETICAL DR09: beam formwork bears on the column -> after column curing gate; after column stripping (single formwork crew, explicit order)",
+      "predecessors": [
+        {
+          "id": "C-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "id": "C-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "B-REBAR",
+      "kind": "productive",
+      "work_item": "BEAM-REBAR",
+      "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "bcca_code": "05HAC00015",
+      "quantity": 58,
+      "unit": "kg",
+      "productive_hours": 0.58,
+      "minutes": 45,
+      "crew_mode": "HYP-REBAR",
+      "resources": {
+        "OF. 1ª FERRALLISTA": 2
+      },
+      "predecessors": [
+        {
+          "id": "B-FORM",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "B-INSP",
+      "kind": "productive",
+      "work_item": "INSPECTION",
+      "minutes": 30,
+      "resources": {
+        "INSPECTOR": 1
+      },
+      "note": "HYPOTHETICAL pre-pour inspection: 0.5 h of inspector WORKING time (Agent 1 encodes it as a 0.5 h elapsed hold - see deficiency D4)",
+      "predecessors": [
+        {
+          "id": "B-REBAR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "B-POUR",
+      "kind": "productive",
+      "work_item": "BEAM-CONC",
+      "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "bcca_code": "05HHJ00003",
+      "quantity": 0.8,
+      "unit": "m3",
+      "productive_hours": 0.24,
+      "minutes": 15,
+      "crew_mode": "HYP-CONC",
+      "resources": {
+        "PEÓN ESPECIAL": 2,
+        "OFICIAL 1ª": 1,
+        "VIBRADOR": 1
+      },
+      "window": [
+        [
+          "08:00",
+          "14:00"
+        ]
+      ],
+      "predecessors": [
+        {
+          "id": "B-INSP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "B-CURE",
+      "kind": "elapsed_hold",
+      "minutes": 1440,
+      "note": "curing gate (elapsed)",
+      "condition": null,
+      "predecessors": [
+        {
+          "id": "B-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "B-STRIKE",
+      "kind": "elapsed_hold",
+      "minutes": 10080,
+      "note": "striking release from pour end (elapsed)",
+      "condition": "strength check PASS assumed (HYPOTHETICAL)",
+      "predecessors": [
+        {
+          "id": "B-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "S-FORM",
+      "kind": "productive",
+      "work_item": "SLAB-FORM",
+      "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "bcca_code": "05HEM00101",
+      "quantity": 10.4,
+      "unit": "m2",
+      "productive_hours": 2.8600000000000003,
+      "minutes": 180,
+      "crew_mode": "HYP-FORM",
+      "resources": {
+        "OF. 1ª ENCOFRADOR": 2,
+        "PEÓN ESPECIAL": 1
+      },
+      "cross_package": "HYPOTHETICAL DR09: slab soffit formwork after beam curing gate",
+      "predecessors": [
+        {
+          "id": "B-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "S-REBAR",
+      "kind": "productive",
+      "work_item": "SLAB-REBAR",
+      "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "bcca_code": "05HAC00015",
+      "quantity": 86,
+      "unit": "kg",
+      "productive_hours": 0.86,
+      "minutes": 60,
+      "crew_mode": "HYP-REBAR",
+      "resources": {
+        "OF. 1ª FERRALLISTA": 2
+      },
+      "predecessors": [
+        {
+          "id": "S-FORM",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "S-INSP",
+      "kind": "productive",
+      "work_item": "INSPECTION",
+      "minutes": 30,
+      "resources": {
+        "INSPECTOR": 1
+      },
+      "note": "HYPOTHETICAL pre-pour inspection: 0.5 h of inspector WORKING time (Agent 1 encodes it as a 0.5 h elapsed hold - see deficiency D4)",
+      "predecessors": [
+        {
+          "id": "S-REBAR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "S-POUR",
+      "kind": "productive",
+      "work_item": "SLAB-CONC",
+      "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "bcca_code": "05HHL00003",
+      "quantity": 2.400000000000002,
+      "unit": "m3",
+      "productive_hours": 0.7200000000000006,
+      "minutes": 45,
+      "crew_mode": "HYP-CONC",
+      "resources": {
+        "PEÓN ESPECIAL": 2,
+        "OFICIAL 1ª": 1,
+        "VIBRADOR": 1
+      },
+      "window": [
+        [
+          "08:00",
+          "14:00"
+        ]
+      ],
+      "predecessors": [
+        {
+          "id": "S-INSP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "S-CURE",
+      "kind": "elapsed_hold",
+      "minutes": 1440,
+      "note": "curing gate (elapsed)",
+      "condition": null,
+      "predecessors": [
+        {
+          "id": "S-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "S-STRIKE",
+      "kind": "elapsed_hold",
+      "minutes": 10080,
+      "note": "striking release from pour end (elapsed)",
+      "condition": "strength check PASS assumed (HYPOTHETICAL)",
+      "predecessors": [
+        {
+          "id": "S-POUR",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "S-STRIP",
+      "kind": "productive",
+      "work_item": "FRM-STRIP",
+      "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "bcca_code": "05HED00001",
+      "quantity": 10.4,
+      "unit": "m2",
+      "productive_hours": 1.56,
+      "minutes": 105,
+      "crew_mode": "HYP-FORM",
+      "resources": {
+        "OF. 1ª ENCOFRADOR": 2,
+        "PEÓN ESPECIAL": 1
+      },
+      "predecessors": [
+        {
+          "id": "S-STRIKE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "id": "S-CURE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    },
+    {
+      "id": "B-STRIP",
+      "kind": "productive",
+      "work_item": "FRM-STRIP",
+      "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "bcca_code": "05HED00001",
+      "quantity": 5.44,
+      "unit": "m2",
+      "productive_hours": 0.8160000000000001,
+      "minutes": 60,
+      "crew_mode": "HYP-FORM",
+      "resources": {
+        "OF. 1ª ENCOFRADOR": 2,
+        "PEÓN ESPECIAL": 1
+      },
+      "cross_package": "HYPOTHETICAL: beam soffit props retained until the supported slab is stripped",
+      "predecessors": [
+        {
+          "id": "B-STRIKE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "id": "S-STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ]
+    }
+  ],
+  "cross_package_dependencies": [
+    {
+      "activity": "B-FORM",
+      "rule": "HYPOTHETICAL DR09: beam formwork bears on the column -> after column curing gate; after column stripping (single formwork crew, explicit order)"
+    },
+    {
+      "activity": "S-FORM",
+      "rule": "HYPOTHETICAL DR09: slab soffit formwork after beam curing gate"
+    },
+    {
+      "activity": "B-STRIP",
+      "rule": "HYPOTHETICAL: beam soffit props retained until the supported slab is stripped"
+    }
+  ],
+  "expected_result": {
+    "makespan_finish_local": "2027-01-14 16:00",
+    "resource_violations": [],
+    "schedule_file": "fixture_expected_schedule.csv",
+    "note": "computed by the test oracle; all dependencies explicit so the schedule is resource-feasible without levelling (checked)"
+  },
+  "variant_without_cross_package_dependencies": {
+    "note": "Agent 1 dependencies.csv (as exported) has no column->beam->slab links: beam and slab formwork become eligible at project start, competing with the column for HYP-FORM. A scheduler must then serialise by resources; the result is physically invalid (beam formwork before the column exists)."
+  }
+}

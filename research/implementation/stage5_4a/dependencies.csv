@@ -1,0 +1,29 @@
+﻿predecessor_id,successor_id,predecessor_alias,successor_alias,relation,rule_id,lag_minutes,lag_basis,source,condition
+27e7a5c3-5aa1-5665-9f68-1c2168a412ac,3235aa7e-88d9-53c5-9cf7-49e573d81a5a,C-REBAR,C-FORM,FS,DR05,0,elapsed,5.3A,
+3235aa7e-88d9-53c5-9cf7-49e573d81a5a,c0b8943f-0dbd-54a0-977e-731916bcd42a,C-FORM,C-INSP,FS,DR06,0,elapsed,5.3A,
+27e7a5c3-5aa1-5665-9f68-1c2168a412ac,c0b8943f-0dbd-54a0-977e-731916bcd42a,C-REBAR,C-INSP,FS,DR06,0,elapsed,5.3A,
+c0b8943f-0dbd-54a0-977e-731916bcd42a,04527e9d-995e-5e16-9663-9756d828c586,C-INSP,C-POUR,FS,DR06,0,elapsed,5.3A,
+04527e9d-995e-5e16-9663-9756d828c586,fe8beee0-18d0-505c-9cf2-ab234883c2db,C-POUR,C-CURE,FS,DR07,0,elapsed,5.3A,
+a47f0364-8f49-5947-94e7-e24af60a1b92,c318b5bb-2652-5d7b-a706-041aeb3307d5,C-STRIKE,C-STRIP,FS,DR08,0,elapsed,5.3A,
+a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a,0240248f-1548-557b-945e-e417b0b1222d,B-FORM,B-REBAR,FS,DR06,0,elapsed,5.3A,
+a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a,9cd34b99-bcb2-5f88-ad80-896053ef5153,B-FORM,B-INSP,FS,DR06,0,elapsed,5.3A,
+0240248f-1548-557b-945e-e417b0b1222d,9cd34b99-bcb2-5f88-ad80-896053ef5153,B-REBAR,B-INSP,FS,DR06,0,elapsed,5.3A,
+9cd34b99-bcb2-5f88-ad80-896053ef5153,d908f25a-67e4-565f-a629-c9f52ff352ed,B-INSP,B-POUR,FS,DR06,0,elapsed,5.3A,
+d908f25a-67e4-565f-a629-c9f52ff352ed,7d1f4e79-3847-5408-8fba-12afc11f6bfd,B-POUR,B-CURE,FS,DR07,0,elapsed,5.3A,
+2cf0b700-88cb-5d0b-91e5-9fa0a1a5c4b0,a3a9c4bb-8619-5ff0-a41b-8552bc746366,B-STRIKE,B-STRIP,FS,DR08,0,elapsed,5.3A,
+a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7,ef679452-ad4e-5662-803e-a59d6f27c913,S-FORM,S-REBAR,FS,DR06,0,elapsed,5.3A,
+a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7,0de967fe-4794-5dbb-aab8-8fea253a5927,S-FORM,S-INSP,FS,DR06,0,elapsed,5.3A,
+ef679452-ad4e-5662-803e-a59d6f27c913,0de967fe-4794-5dbb-aab8-8fea253a5927,S-REBAR,S-INSP,FS,DR06,0,elapsed,5.3A,
+0de967fe-4794-5dbb-aab8-8fea253a5927,8a20a577-58c4-58e1-a2c7-86dbb4ee5523,S-INSP,S-POUR,FS,DR06,0,elapsed,5.3A,
+8a20a577-58c4-58e1-a2c7-86dbb4ee5523,a83bd1d6-07c6-585c-b501-4ebf1183d5d0,S-POUR,S-CURE,FS,DR07,0,elapsed,5.3A,
+f00f202c-c5fe-5fe5-832b-6e8acdb8b639,6c3c378a-8f19-575f-b4e8-3af46b600c94,S-STRIKE,S-STRIP,FS,DR08,0,elapsed,5.3A,
+04527e9d-995e-5e16-9663-9756d828c586,a47f0364-8f49-5947-94e7-e24af60a1b92,C-POUR,C-STRIKE,FS,DR08,0,elapsed,fixture_extension,Minimum elapsed time from pour completion.
+fe8beee0-18d0-505c-9cf2-ab234883c2db,c318b5bb-2652-5d7b-a706-041aeb3307d5,C-CURE,C-STRIP,FS,DR08,0,elapsed,fixture_extension,Curing completed independently of strength release.
+d908f25a-67e4-565f-a629-c9f52ff352ed,2cf0b700-88cb-5d0b-91e5-9fa0a1a5c4b0,B-POUR,B-STRIKE,FS,DR08,0,elapsed,fixture_extension,Minimum elapsed time from pour completion.
+7d1f4e79-3847-5408-8fba-12afc11f6bfd,a3a9c4bb-8619-5ff0-a41b-8552bc746366,B-CURE,B-STRIP,FS,DR08,0,elapsed,fixture_extension,Curing completed independently of strength release.
+8a20a577-58c4-58e1-a2c7-86dbb4ee5523,f00f202c-c5fe-5fe5-832b-6e8acdb8b639,S-POUR,S-STRIKE,FS,DR08,0,elapsed,fixture_extension,Minimum elapsed time from pour completion.
+a83bd1d6-07c6-585c-b501-4ebf1183d5d0,6c3c378a-8f19-575f-b4e8-3af46b600c94,S-CURE,S-STRIP,FS,DR08,0,elapsed,fixture_extension,Curing completed independently of strength release.
+7d1f4e79-3847-5408-8fba-12afc11f6bfd,a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7,B-CURE,S-FORM,FS,DR09,0,elapsed,fixture_extension,HYPOTHETICAL DR09: slab soffit formwork after beam curing gate
+fe8beee0-18d0-505c-9cf2-ab234883c2db,a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a,C-CURE,B-FORM,FS,DR09,0,elapsed,fixture_extension,"HYPOTHETICAL DR09: beam formwork bears on the column -> after column curing gate; after column stripping (single formwork crew, explicit order)"
+c318b5bb-2652-5d7b-a706-041aeb3307d5,a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a,C-STRIP,B-FORM,FS,DR09,0,elapsed,fixture_extension,"HYPOTHETICAL DR09: beam formwork bears on the column -> after column curing gate; after column stripping (single formwork crew, explicit order)"
+6c3c378a-8f19-575f-b4e8-3af46b600c94,a3a9c4bb-8619-5ff0-a41b-8552bc746366,S-STRIP,B-STRIP,FS,DR09,0,elapsed,fixture_extension,HYPOTHETICAL: beam soffit props retained until the supported slab is stripped

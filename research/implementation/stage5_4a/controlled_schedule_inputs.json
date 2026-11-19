@@ -1,0 +1,23 @@
+{
+  "version": "5.4A",
+  "scope": "hypothetical_fixture_only",
+  "tick_minutes": 15,
+  "horizon_local": "2027-03-01T16:00",
+  "preparation_directory": "research/planning/stage5_4_preparation",
+  "handover": "research/implementation/stage5_3/scheduling_handover.json",
+  "fixture_inputs": "research/implementation/stage5_3/fixture_inputs.json",
+  "hypothetical_strength_events": {
+    "C-STRIKE": {
+      "status": "hypothetical_pass_at_minimum",
+      "source": "Agent 2 controlled_scheduling_inputs.json striking condition (test only)"
+    },
+    "B-STRIKE": {
+      "status": "hypothetical_pass_at_minimum",
+      "source": "Agent 2 controlled_scheduling_inputs.json striking condition (test only)"
+    },
+    "S-STRIKE": {
+      "status": "hypothetical_pass_at_minimum",
+      "source": "Agent 2 controlled_scheduling_inputs.json striking condition (test only)"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "pattern": "test_stage5_1*.py",
+    "ran": 12,
+    "passed": 12,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "log": "test_ifc2x3_type_material_quantities_and_analytical_geometry (test_stage5_1_compatibility.CompatibilityTests.test_ifc2x3_type_material_quantities_and_analytical_geometry) ... ok\ntest_native_duplicate_step_is_fatal_even_in_exploratory_mode (test_stage5_1_compatibility.CompatibilityTests.test_native_duplicate_step_is_fatal_even_in_exploratory_mode) ... ok\ntest_property_and_geometry_reconciliation_retains_each_record (test_stage5_1_compatibility.CompatibilityTests.test_property_and_geometry_reconciliation_retains_each_record) ... ok\ntest_tessellated_closed_open_and_duplicate_identity (test_stage5_1_compatibility.CompatibilityTests.test_tessellated_closed_open_and_duplicate_identity) ... ok\ntest_controlled_ifc_is_immutable_and_canonical (test_stage5_1_ifc.ImportTests.test_controlled_ifc_is_immutable_and_canonical) ... ok\ntest_duplicate_and_invalid_id_rejected (test_stage5_1_ifc.ImportTests.test_duplicate_and_invalid_id_rejected) ... ok\ntest_equivalent_and_disputed_candidates (test_stage5_1_ifc.ImportTests.test_equivalent_and_disputed_candidates) ... ok\ntest_material_layer_scope_and_missing_values (test_stage5_1_ifc.ImportTests.test_material_layer_scope_and_missing_values) ... ok\ntest_missing_invalid_and_unsupported_inputs (test_stage5_1_ifc.ImportTests.test_missing_invalid_and_unsupported_inputs) ... ok\ntest_missing_units_and_incompatible_measurement_methods (test_stage5_1_ifc.ImportTests.test_missing_units_and_incompatible_measurement_methods) ... ok\ntest_squared_cubed_units_and_imperial_override (test_stage5_1_ifc.ImportTests.test_squared_cubed_units_and_imperial_override) ... ok\ntest_subtypes_nested_spatial_context_and_version_scope (test_stage5_1_ifc.ImportTests.test_subtypes_nested_spatial_context_and_version_scope) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.885s\n\nOK\n"
+  },
+  {
+    "pattern": "test_stage5_2.py",
+    "ran": 5,
+    "passed": 5,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "log": "test_cli_exports_and_exploratory_gate (test_stage5_2.ConstructionTests.test_cli_exports_and_exploratory_gate) ... ok\ntest_conditional_method_and_release_edges (test_stage5_2.ConstructionTests.test_conditional_method_and_release_edges) ... ok\ntest_double_counting_and_user_evidence (test_stage5_2.ConstructionTests.test_double_counting_and_user_evidence) ... ok\ntest_library_inventory_and_reference_provenance (test_stage5_2.ConstructionTests.test_library_inventory_and_reference_provenance) ... ok\ntest_scope_and_traceability (test_stage5_2.ConstructionTests.test_scope_and_traceability) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.155s\n\nOK\n"
+  },
+  {
+    "pattern": "test_stage5_3.py",
+    "ran": 10,
+    "passed": 10,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "log": "test_cli_exports (test_stage5_3.EstimationTests.test_cli_exports) ... ok\ntest_cost_reconciles_and_bundle_is_counted_once (test_stage5_3.EstimationTests.test_cost_reconciles_and_bundle_is_counted_once) ... ok\ntest_explicit_grouping_preserves_global_ids (test_stage5_3.EstimationTests.test_explicit_grouping_preserves_global_ids) ... ok\ntest_fixture_isolation_and_deterministic_results (test_stage5_3.EstimationTests.test_fixture_isolation_and_deterministic_results) ... ok\ntest_holds_have_no_crew_and_do_not_repeat_curing_elapsed_time (test_stage5_3.EstimationTests.test_holds_have_no_crew_and_do_not_repeat_curing_elapsed_time) ... ok\ntest_missing_and_invalid_resources_block_affected_estimates (test_stage5_3.EstimationTests.test_missing_and_invalid_resources_block_affected_estimates) ... ok\ntest_pending_approvals_and_handover_evidence (test_stage5_3.EstimationTests.test_pending_approvals_and_handover_evidence) ... ok\ntest_review_reference_comparison_independent (test_stage5_3.EstimationTests.test_review_reference_comparison_independent) ... ok\ntest_throughput_and_sequential_methods (test_stage5_3.EstimationTests.test_throughput_and_sequential_methods) ... ok\ntest_unit_demand_and_bottleneck (test_stage5_3.EstimationTests.test_unit_demand_and_bottleneck) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.028s\n\nOK\n"
+  },
+  {
+    "pattern": "test_stage5_4a.py",
+    "ran": 13,
+    "passed": 13,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "log": "test_cli_export (test_stage5_4a.CalendarCPMTests.test_cli_export) ... ok\ntest_independent_striking_minimum_and_delivery (test_stage5_4a.CalendarCPMTests.test_independent_striking_minimum_and_delivery) ... ok\ntest_rounding_working_lags_milestones_and_timezone (test_stage5_4a.CalendarCPMTests.test_rounding_working_lags_milestones_and_timezone) ... ok\ntest_tc10_controlled_fixture_and_cost_preservation (test_stage5_4a.CalendarCPMTests.test_tc10_controlled_fixture_and_cost_preservation) ... ok\ntest_tc1_chain_and_holiday (test_stage5_4a.CalendarCPMTests.test_tc1_chain_and_holiday) ... ok\ntest_tc2_parallel_backward_float (test_stage5_4a.CalendarCPMTests.test_tc2_parallel_backward_float) ... ok\ntest_tc3_shared_pool_cpm_does_not_level (test_stage5_4a.CalendarCPMTests.test_tc3_shared_pool_cpm_does_not_level) ... ok\ntest_tc4_fit_split_and_weekend (test_stage5_4a.CalendarCPMTests.test_tc4_fit_split_and_weekend) ... ok\ntest_tc5_elapsed_curing (test_stage5_4a.CalendarCPMTests.test_tc5_elapsed_curing) ... ok\ntest_tc6_strength_condition (test_stage5_4a.CalendarCPMTests.test_tc6_strength_condition) ... ok\ntest_tc7_impossible_deadline (test_stage5_4a.CalendarCPMTests.test_tc7_impossible_deadline) ... ok\ntest_tc8_capacity_preflight (test_stage5_4a.CalendarCPMTests.test_tc8_capacity_preflight) ... ok\ntest_tc9_cycle_and_invalid_endpoints (test_stage5_4a.CalendarCPMTests.test_tc9_cycle_and_invalid_endpoints) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.057s\n\nOK\n"
+  }
+]

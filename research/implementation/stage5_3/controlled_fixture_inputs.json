@@ -1,0 +1,184 @@
+{
+  "version": "5.3A-fixture",
+  "hypothetical_only": true,
+  "source_sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+  "scope_note": "Synthetic test quantities, capacities and readiness conditions only. All engineering approvals remain pending.",
+  "concrete_specification": "HA-25/P/20/XC2",
+  "calendar": {
+    "timezone": "Europe/Paris",
+    "productive_hours_per_workday": 8,
+    "working_windows": [
+      {
+        "weekday": 1,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 2,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 3,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 4,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 5,
+        "start": "08:00",
+        "end": "16:00"
+      }
+    ]
+  },
+  "crews": {
+    "HYP-FORM": {
+      "OF. 1ª ENCOFRADOR": 2,
+      "PEÓN ESPECIAL": 1
+    },
+    "HYP-REBAR": {
+      "OF. 1ª FERRALLISTA": 2
+    },
+    "HYP-CONC": {
+      "PEÓN ESPECIAL": 2,
+      "OFICIAL 1ª": 1
+    }
+  },
+  "crew_by_operation": {
+    "FORM": "HYP-FORM",
+    "REBAR": "HYP-REBAR",
+    "CONC": "HYP-CONC",
+    "STRIP": "HYP-FORM"
+  },
+  "equipment": {
+    "VIBRADOR": 1,
+    "CRANE": 0,
+    "CONCRETE_PUMP": 0,
+    "CONCRETE_DELIVERY": 0
+  },
+  "catalogue": {
+    "COL-REBAR": "05HAC00015",
+    "BEAM-REBAR": "05HAC00015",
+    "SLAB-REBAR": "05HAC00015",
+    "COL-FORM": "05HEM00001",
+    "BEAM-FORM": "05HEM00051",
+    "SLAB-FORM": "05HEM00101",
+    "COL-CONC": "05HHP00003",
+    "BEAM-CONC": "05HHJ00003",
+    "SLAB-CONC": "05HHL00003",
+    "FRM-STRIP": "05HED00001"
+  },
+  "elements": {
+    "24tlOXIsvMQfyRLiqh6fZt": {
+      "bounds_m": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.4,
+          0.4,
+          3
+        ]
+      ],
+      "formwork_m2": 4.8,
+      "formwork_rule": "Four vertical column faces. Base and top are excluded.",
+      "reinforcement_kg": 32,
+      "reinforcement_boq": "HYP-COL-BOQ: one explicit 32 kg net installed B500S bill line. Software test entry.",
+      "sequence": "cage_first",
+      "manual_handling_and_staged_supply": true,
+      "inspection_elapsed_hours": 0.5,
+      "inspection_condition": "Hypothetical passed pre-pour formwork and reinforcement checklist after 0.5 elapsed hour.",
+      "curing_elapsed_hours": 24,
+      "curing_condition": "Hypothetical curing gate at 24 elapsed hours from placement.",
+      "striking_elapsed_hours_from_pour": 24,
+      "striking_condition": "Hypothetical release at 24 elapsed hours from placement and a passing strength check. The test assumes the check passes at that time.",
+      "execution_mode": "simultaneous_fixed_crew",
+      "input_state": "hypothetical_fixture"
+    },
+    "1jDfy2_jTRueAw6f5fc3Ev": {
+      "bounds_m": [
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          4,
+          0.4,
+          3.5
+        ]
+      ],
+      "formwork_m2": 5.44,
+      "formwork_rule": "Two long sides (4.00 m2) and soffit (1.60 m2) less the 0.16 m2 column bearing. End shutters are outside this fixture reference measurement.",
+      "reinforcement_kg": 58,
+      "reinforcement_boq": "HYP-BEAM-BOQ: one explicit 58 kg net installed B500S bill line. Software test entry.",
+      "sequence": "formwork_first",
+      "manual_handling_and_staged_supply": true,
+      "inspection_elapsed_hours": 0.5,
+      "inspection_condition": "Hypothetical passed pre-pour formwork and reinforcement checklist after 0.5 elapsed hour.",
+      "curing_elapsed_hours": 24,
+      "curing_condition": "Hypothetical curing gate at 24 elapsed hours from placement.",
+      "striking_elapsed_hours_from_pour": 168,
+      "striking_condition": "Hypothetical release at 168 elapsed hours from placement and a passing strength check. The test assumes the check passes at that time.",
+      "execution_mode": "simultaneous_fixed_crew",
+      "input_state": "hypothetical_fixture"
+    },
+    "3wOB$MtWLSz8SJNgW3VJvy": {
+      "bounds_m": [
+        [
+          0,
+          0,
+          3.5
+        ],
+        [
+          4,
+          3,
+          3.7
+        ]
+      ],
+      "formwork_m2": 10.4,
+      "formwork_rule": "Soffit only (12.00 m2) less the 1.60 m2 supported beam footprint. Edge shutters are outside this fixture reference measurement.",
+      "reinforcement_kg": 86,
+      "reinforcement_boq": "HYP-SLAB-BOQ: one explicit 86 kg net installed B500S bill line. Software test entry.",
+      "sequence": "formwork_first",
+      "manual_handling_and_staged_supply": true,
+      "inspection_elapsed_hours": 0.5,
+      "inspection_condition": "Hypothetical passed pre-pour formwork and reinforcement checklist after 0.5 elapsed hour.",
+      "curing_elapsed_hours": 24,
+      "curing_condition": "Hypothetical curing gate at 24 elapsed hours from placement.",
+      "striking_elapsed_hours_from_pour": 168,
+      "striking_condition": "Hypothetical release at 168 elapsed hours from placement and a passing strength check. The test assumes the check passes at that time.",
+      "execution_mode": "simultaneous_fixed_crew",
+      "input_state": "hypothetical_fixture"
+    }
+  },
+  "group_assignments": {
+    "24tlOXIsvMQfyRLiqh6fZt": {
+      "storey": "Frame level",
+      "zone": "Controlled test bay",
+      "classification": "cast_in_place_col",
+      "method": "cage_first",
+      "batch": "HYP-COL-POUR"
+    },
+    "1jDfy2_jTRueAw6f5fc3Ev": {
+      "storey": "Frame level",
+      "zone": "Controlled test bay",
+      "classification": "cast_in_place_beam",
+      "method": "formwork_first",
+      "batch": "HYP-BEAM-POUR"
+    },
+    "3wOB$MtWLSz8SJNgW3VJvy": {
+      "storey": "Frame level",
+      "zone": "Controlled test bay",
+      "classification": "cast_in_place_slab",
+      "method": "formwork_first",
+      "batch": "HYP-SLAB-POUR"
+    }
+  }
+}

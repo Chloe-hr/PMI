@@ -1,0 +1,94 @@
+{
+  "source_sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+  "checks": [
+    {
+      "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "ifc_class": "IfcBeam",
+      "world_bounds_m": [
+        [
+          0.0,
+          0.0,
+          3.0
+        ],
+        [
+          4.0,
+          0.4,
+          3.5
+        ]
+      ],
+      "box_volume_m3": 0.8
+    },
+    {
+      "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "ifc_class": "IfcColumn",
+      "world_bounds_m": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.4,
+          0.4,
+          3.0
+        ]
+      ],
+      "box_volume_m3": 0.4800000000000001
+    },
+    {
+      "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "ifc_class": "IfcSlab",
+      "world_bounds_m": [
+        [
+          0.0,
+          0.0,
+          3.5
+        ],
+        [
+          4.0,
+          3.0,
+          3.7
+        ]
+      ],
+      "box_volume_m3": 2.400000000000002
+    }
+  ],
+  "intersections": [
+    {
+      "global_ids": [
+        "1jDfy2_jTRueAw6f5fc3Ev",
+        "24tlOXIsvMQfyRLiqh6fZt"
+      ],
+      "intersection_volume_m3": 0.0,
+      "overlap_extents_m": [
+        0.4,
+        0.4,
+        0.0
+      ]
+    },
+    {
+      "global_ids": [
+        "1jDfy2_jTRueAw6f5fc3Ev",
+        "3wOB$MtWLSz8SJNgW3VJvy"
+      ],
+      "intersection_volume_m3": 0.0,
+      "overlap_extents_m": [
+        4.0,
+        0.4,
+        0.0
+      ]
+    },
+    {
+      "global_ids": [
+        "24tlOXIsvMQfyRLiqh6fZt",
+        "3wOB$MtWLSz8SJNgW3VJvy"
+      ],
+      "intersection_volume_m3": 0.0,
+      "overlap_extents_m": [
+        0.4,
+        0.4,
+        0.0
+      ]
+    }
+  ]
+}

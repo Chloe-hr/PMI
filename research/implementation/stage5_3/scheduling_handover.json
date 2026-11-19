@@ -1,0 +1,4086 @@
+{
+  "version": "5.3A",
+  "scope": "hypothetical_fixture_only",
+  "source_sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+  "model_version_id": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+  "reference_selection_sha256": "5dcab26ecbe0576764667ac5b3072e2bc597e5fefe1a8edee6fcfea6a8dbe68b",
+  "construction_library_version": "5.2A/6ce174b13cbb4661429fc992cdf4c2a9b72eff5a6edcbde848f6bc1ec1f79b6b",
+  "eligible_for_controlled_scheduling_input": true,
+  "eligible_for_real_scheduling": false,
+  "input_states": [
+    "missing",
+    "hypothetical_fixture",
+    "user_provided_project",
+    "independently_measured",
+    "engineer_approved"
+  ],
+  "engineering_approval_status": "pending",
+  "calendar": {
+    "timezone": "Europe/Paris",
+    "productive_hours_per_workday": 8,
+    "working_windows": [
+      {
+        "weekday": 1,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 2,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 3,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 4,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 5,
+        "start": "08:00",
+        "end": "16:00"
+      }
+    ]
+  },
+  "fixture_inputs": {
+    "version": "5.3A-fixture",
+    "hypothetical_only": true,
+    "source_sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+    "scope_note": "Synthetic test quantities, capacities and readiness conditions only. All engineering approvals remain pending.",
+    "concrete_specification": "HA-25/P/20/XC2",
+    "calendar": {
+      "timezone": "Europe/Paris",
+      "productive_hours_per_workday": 8,
+      "working_windows": [
+        {
+          "weekday": 1,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 2,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 3,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 4,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 5,
+          "start": "08:00",
+          "end": "16:00"
+        }
+      ]
+    },
+    "crews": {
+      "HYP-FORM": {
+        "OF. 1ª ENCOFRADOR": 2,
+        "PEÓN ESPECIAL": 1
+      },
+      "HYP-REBAR": {
+        "OF. 1ª FERRALLISTA": 2
+      },
+      "HYP-CONC": {
+        "PEÓN ESPECIAL": 2,
+        "OFICIAL 1ª": 1
+      }
+    },
+    "crew_by_operation": {
+      "FORM": "HYP-FORM",
+      "REBAR": "HYP-REBAR",
+      "CONC": "HYP-CONC",
+      "STRIP": "HYP-FORM"
+    },
+    "equipment": {
+      "VIBRADOR": 1,
+      "CRANE": 0,
+      "CONCRETE_PUMP": 0,
+      "CONCRETE_DELIVERY": 0
+    },
+    "catalogue": {
+      "COL-REBAR": "05HAC00015",
+      "BEAM-REBAR": "05HAC00015",
+      "SLAB-REBAR": "05HAC00015",
+      "COL-FORM": "05HEM00001",
+      "BEAM-FORM": "05HEM00051",
+      "SLAB-FORM": "05HEM00101",
+      "COL-CONC": "05HHP00003",
+      "BEAM-CONC": "05HHJ00003",
+      "SLAB-CONC": "05HHL00003",
+      "FRM-STRIP": "05HED00001"
+    },
+    "elements": {
+      "24tlOXIsvMQfyRLiqh6fZt": {
+        "bounds_m": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0.4,
+            0.4,
+            3
+          ]
+        ],
+        "formwork_m2": 4.8,
+        "formwork_rule": "Four vertical column faces. Base and top are excluded.",
+        "reinforcement_kg": 32,
+        "reinforcement_boq": "HYP-COL-BOQ: one explicit 32 kg net installed B500S bill line. Software test entry.",
+        "sequence": "cage_first",
+        "manual_handling_and_staged_supply": true,
+        "inspection_elapsed_hours": 0.5,
+        "inspection_condition": "Hypothetical passed pre-pour formwork and reinforcement checklist after 0.5 elapsed hour.",
+        "curing_elapsed_hours": 24,
+        "curing_condition": "Hypothetical curing gate at 24 elapsed hours from placement.",
+        "striking_elapsed_hours_from_pour": 24,
+        "striking_condition": "Hypothetical release at 24 elapsed hours from placement and a passing strength check. The test assumes the check passes at that time.",
+        "execution_mode": "simultaneous_fixed_crew",
+        "input_state": "hypothetical_fixture"
+      },
+      "1jDfy2_jTRueAw6f5fc3Ev": {
+        "bounds_m": [
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            4,
+            0.4,
+            3.5
+          ]
+        ],
+        "formwork_m2": 5.44,
+        "formwork_rule": "Two long sides (4.00 m2) and soffit (1.60 m2) less the 0.16 m2 column bearing. End shutters are outside this fixture reference measurement.",
+        "reinforcement_kg": 58,
+        "reinforcement_boq": "HYP-BEAM-BOQ: one explicit 58 kg net installed B500S bill line. Software test entry.",
+        "sequence": "formwork_first",
+        "manual_handling_and_staged_supply": true,
+        "inspection_elapsed_hours": 0.5,
+        "inspection_condition": "Hypothetical passed pre-pour formwork and reinforcement checklist after 0.5 elapsed hour.",
+        "curing_elapsed_hours": 24,
+        "curing_condition": "Hypothetical curing gate at 24 elapsed hours from placement.",
+        "striking_elapsed_hours_from_pour": 168,
+        "striking_condition": "Hypothetical release at 168 elapsed hours from placement and a passing strength check. The test assumes the check passes at that time.",
+        "execution_mode": "simultaneous_fixed_crew",
+        "input_state": "hypothetical_fixture"
+      },
+      "3wOB$MtWLSz8SJNgW3VJvy": {
+        "bounds_m": [
+          [
+            0,
+            0,
+            3.5
+          ],
+          [
+            4,
+            3,
+            3.7
+          ]
+        ],
+        "formwork_m2": 10.4,
+        "formwork_rule": "Soffit only (12.00 m2) less the 1.60 m2 supported beam footprint. Edge shutters are outside this fixture reference measurement.",
+        "reinforcement_kg": 86,
+        "reinforcement_boq": "HYP-SLAB-BOQ: one explicit 86 kg net installed B500S bill line. Software test entry.",
+        "sequence": "formwork_first",
+        "manual_handling_and_staged_supply": true,
+        "inspection_elapsed_hours": 0.5,
+        "inspection_condition": "Hypothetical passed pre-pour formwork and reinforcement checklist after 0.5 elapsed hour.",
+        "curing_elapsed_hours": 24,
+        "curing_condition": "Hypothetical curing gate at 24 elapsed hours from placement.",
+        "striking_elapsed_hours_from_pour": 168,
+        "striking_condition": "Hypothetical release at 168 elapsed hours from placement and a passing strength check. The test assumes the check passes at that time.",
+        "execution_mode": "simultaneous_fixed_crew",
+        "input_state": "hypothetical_fixture"
+      }
+    },
+    "group_assignments": {
+      "24tlOXIsvMQfyRLiqh6fZt": {
+        "storey": "Frame level",
+        "zone": "Controlled test bay",
+        "classification": "cast_in_place_col",
+        "method": "cage_first",
+        "batch": "HYP-COL-POUR"
+      },
+      "1jDfy2_jTRueAw6f5fc3Ev": {
+        "storey": "Frame level",
+        "zone": "Controlled test bay",
+        "classification": "cast_in_place_beam",
+        "method": "formwork_first",
+        "batch": "HYP-BEAM-POUR"
+      },
+      "3wOB$MtWLSz8SJNgW3VJvy": {
+        "storey": "Frame level",
+        "zone": "Controlled test bay",
+        "classification": "cast_in_place_slab",
+        "method": "formwork_first",
+        "batch": "HYP-SLAB-POUR"
+      }
+    }
+  },
+  "element_quantities": [
+    {
+      "element_id": "b9088700-27e9-5011-82a6-fcfe7d50da04",
+      "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "ifc_class": "IfcColumn",
+      "placed_concrete_m3": 0.48,
+      "concrete_quantity_ids": [
+        "c2db47ae-15d2-5f60-8290-7bedc4ca5623",
+        "0c07fccc-9bdb-53ad-96bf-9ad3e5410dfe"
+      ],
+      "concrete_evidence_ids": [
+        "95c748a0-05c8-5f06-97c4-f0bf741d2a6e",
+        "db2ddada-71c9-5afc-8eee-5a062bb87056"
+      ],
+      "formwork_m2": 4.8,
+      "formwork_rule": "Four vertical column faces. Base and top are excluded.",
+      "reinforcement_kg": 32,
+      "reinforcement_boq": "HYP-COL-BOQ: one explicit 32 kg net installed B500S bill line. Software test entry.",
+      "bounds_m": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.4,
+          0.4,
+          3
+        ]
+      ],
+      "fixture_input_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "estimation_input_state": "hypothetical_fixture",
+      "concrete_quantity_origin": "model_authored_cross_checked_with_ifc_geometry"
+    },
+    {
+      "element_id": "38c0e562-d472-5939-a938-fb0891408b61",
+      "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "ifc_class": "IfcBeam",
+      "placed_concrete_m3": 0.8,
+      "concrete_quantity_ids": [
+        "5f6eaa80-527c-579f-b165-b8ef9170e17c",
+        "8778a92d-99bc-54e7-8133-3f382511ee93"
+      ],
+      "concrete_evidence_ids": [
+        "99987bb6-1b07-5424-ab5d-46f30ae41ab5",
+        "308c429b-fb2d-5178-96e0-266b6e9d16a7"
+      ],
+      "formwork_m2": 5.44,
+      "formwork_rule": "Two long sides (4.00 m2) and soffit (1.60 m2) less the 0.16 m2 column bearing. End shutters are outside this fixture reference measurement.",
+      "reinforcement_kg": 58,
+      "reinforcement_boq": "HYP-BEAM-BOQ: one explicit 58 kg net installed B500S bill line. Software test entry.",
+      "bounds_m": [
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          4,
+          0.4,
+          3.5
+        ]
+      ],
+      "fixture_input_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "estimation_input_state": "hypothetical_fixture",
+      "concrete_quantity_origin": "model_authored_cross_checked_with_ifc_geometry"
+    },
+    {
+      "element_id": "eb9257d4-8531-5b83-81be-350df71a5314",
+      "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "ifc_class": "IfcSlab",
+      "placed_concrete_m3": 2.4,
+      "concrete_quantity_ids": [
+        "17dbbe2e-ae26-54d6-9f68-c67b70eb3f63",
+        "b0c5ef0a-96c4-5be1-b863-23536e62047f"
+      ],
+      "concrete_evidence_ids": [
+        "fd90d62c-1d76-5c29-905f-54304a8c37a8",
+        "b1027942-958d-54f6-997e-c9032e46868e"
+      ],
+      "formwork_m2": 10.4,
+      "formwork_rule": "Soffit only (12.00 m2) less the 1.60 m2 supported beam footprint. Edge shutters are outside this fixture reference measurement.",
+      "reinforcement_kg": 86,
+      "reinforcement_boq": "HYP-SLAB-BOQ: one explicit 86 kg net installed B500S bill line. Software test entry.",
+      "bounds_m": [
+        [
+          0,
+          0,
+          3.5
+        ],
+        [
+          4,
+          3,
+          3.7
+        ]
+      ],
+      "fixture_input_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "estimation_input_state": "hypothetical_fixture",
+      "concrete_quantity_origin": "model_authored_cross_checked_with_ifc_geometry"
+    }
+  ],
+  "packages": [
+    {
+      "id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "element_ids": [
+        "b9088700-27e9-5011-82a6-fcfe7d50da04"
+      ],
+      "storey_id": "b80f4aba-7717-59f4-b234-51b7bdf79425",
+      "family": "COL",
+      "activity_ids": [
+        "27e7a5c3-5aa1-5665-9f68-1c2168a412ac",
+        "3235aa7e-88d9-53c5-9cf7-49e573d81a5a",
+        "04527e9d-995e-5e16-9663-9756d828c586",
+        "fe8beee0-18d0-505c-9cf2-ab234883c2db",
+        "c318b5bb-2652-5d7b-a706-041aeb3307d5",
+        "c0b8943f-0dbd-54a0-977e-731916bcd42a",
+        "a47f0364-8f49-5947-94e7-e24af60a1b92"
+      ],
+      "status": "candidate",
+      "independent_pour_scope": null,
+      "global_ids": [
+        "24tlOXIsvMQfyRLiqh6fZt"
+      ],
+      "fixture_sequence": "cage_first"
+    },
+    {
+      "id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "element_ids": [
+        "38c0e562-d472-5939-a938-fb0891408b61"
+      ],
+      "storey_id": "b80f4aba-7717-59f4-b234-51b7bdf79425",
+      "family": "BEAM",
+      "activity_ids": [
+        "0240248f-1548-557b-945e-e417b0b1222d",
+        "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a",
+        "d908f25a-67e4-565f-a629-c9f52ff352ed",
+        "7d1f4e79-3847-5408-8fba-12afc11f6bfd",
+        "a3a9c4bb-8619-5ff0-a41b-8552bc746366",
+        "9cd34b99-bcb2-5f88-ad80-896053ef5153",
+        "2cf0b700-88cb-5d0b-91e5-9fa0a1a5c4b0"
+      ],
+      "status": "candidate",
+      "independent_pour_scope": null,
+      "global_ids": [
+        "1jDfy2_jTRueAw6f5fc3Ev"
+      ],
+      "fixture_sequence": "formwork_first"
+    },
+    {
+      "id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "element_ids": [
+        "eb9257d4-8531-5b83-81be-350df71a5314"
+      ],
+      "storey_id": "b80f4aba-7717-59f4-b234-51b7bdf79425",
+      "family": "SLAB",
+      "activity_ids": [
+        "ef679452-ad4e-5662-803e-a59d6f27c913",
+        "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7",
+        "8a20a577-58c4-58e1-a2c7-86dbb4ee5523",
+        "a83bd1d6-07c6-585c-b501-4ebf1183d5d0",
+        "6c3c378a-8f19-575f-b4e8-3af46b600c94",
+        "0de967fe-4794-5dbb-aab8-8fea253a5927",
+        "f00f202c-c5fe-5fe5-832b-6e8acdb8b639"
+      ],
+      "status": "candidate",
+      "independent_pour_scope": null,
+      "global_ids": [
+        "3wOB$MtWLSz8SJNgW3VJvy"
+      ],
+      "fixture_sequence": "formwork_first"
+    }
+  ],
+  "activities": [
+    {
+      "id": "27e7a5c3-5aa1-5665-9f68-1c2168a412ac",
+      "package_id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "work_item": "COL-REBAR",
+      "kind": "productive",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC05",
+        "AP-DR05",
+        "AP-DR06",
+        "AP-W-COL-REBAR"
+      ],
+      "blockers": [],
+      "quantity": 32,
+      "unit": "kg",
+      "quantity_ids": [],
+      "fixture_quantity_key": "reinforcement_kg",
+      "worker_hours_by_trade": {
+        "OF. 1ª FERRALLISTA": 0.64
+      },
+      "machine_hours_by_class": {},
+      "materials": [
+        {
+          "code": "CA00320",
+          "name": "ACERO B 500 S",
+          "unit": "kg",
+          "per_unit": 1.08,
+          "reference_rate_eur": 0.95,
+          "quantity": 34.56,
+          "cost_eur_from_line": 32.832
+        },
+        {
+          "code": "CA01700",
+          "name": "ALAMBRE DE ATAR",
+          "unit": "kg",
+          "per_unit": 0.005,
+          "reference_rate_eur": 1.5,
+          "quantity": 0.16,
+          "cost_eur_from_line": 0.24
+        },
+        {
+          "code": "WW00400",
+          "name": "PEQUEÑO MATERIAL",
+          "unit": "u",
+          "per_unit": 0.05,
+          "reference_rate_eur": 0.33,
+          "quantity": 1.6,
+          "cost_eur_from_line": 0.528
+        }
+      ],
+      "labor_cost_eur_by_trade": {
+        "OF. 1ª FERRALLISTA": 14.828800000000001
+      },
+      "equipment_cost_eur_by_class": {},
+      "worker_capacity_by_trade": {
+        "OF. 1ª FERRALLISTA": 2
+      },
+      "equipment_capacity_by_class": {},
+      "concurrent_throughput_per_hour": {},
+      "execution_mode": "simultaneous_fixed_crew",
+      "productive_hours": 0.32,
+      "elapsed_hours": null,
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª FERRALLISTA": 0.32
+      },
+      "reserved_worker_hours": {
+        "OF. 1ª FERRALLISTA": 0.64
+      },
+      "reserved_machine_hours": {},
+      "cost_components_eur": {
+        "labor": 14.8288,
+        "equipment": 0.0,
+        "material": 33.6
+      },
+      "reference_cost_eur": 48.64,
+      "rounding_residual_eur": 0.21119999999999806,
+      "reference": {
+        "work_item": "COL-REBAR",
+        "code": "05HAC00015",
+        "unit": "kg",
+        "labor_per_unit": {
+          "OF. 1ª FERRALLISTA": 0.02
+        },
+        "labor_rate_eur_per_hour": {
+          "OF. 1ª FERRALLISTA": 23.17
+        },
+        "equipment_per_unit": {},
+        "materials": [
+          {
+            "code": "CA00320",
+            "name": "ACERO B 500 S",
+            "unit": "kg",
+            "per_unit": 1.08,
+            "reference_rate_eur": 0.95
+          },
+          {
+            "code": "CA01700",
+            "name": "ALAMBRE DE ATAR",
+            "unit": "kg",
+            "per_unit": 0.005,
+            "reference_rate_eur": 1.5
+          },
+          {
+            "code": "WW00400",
+            "name": "PEQUEÑO MATERIAL",
+            "unit": "u",
+            "per_unit": 0.05,
+            "reference_rate_eur": 0.33
+          }
+        ],
+        "component_eur_per_unit": {
+          "labor": 0.4634,
+          "equipment": 0.0,
+          "material": 1.05
+        },
+        "published_eur_per_unit": 1.52,
+        "unresolved_equipment": "crane handling for formwork panels/bar bundles not in BCCA - declare or explicit none",
+        "included_operations": "bending, cutting, placing, placing on site, spacers, tying wire",
+        "excluded_operations": "bar schedule/detailing; crane lifting; prefabricated cage transport",
+        "bundled_operations": "cutting/bending/tying inside ferrallista hours",
+        "approval_id": "AP-W-COL-REBAR",
+        "edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+        "region": "Andalucia, ES",
+        "currency": "EUR",
+        "concept_price_date_ddmmyy": "160122",
+        "bc3_sha256": "bee06981c4447c6b07a3434a6a4d934de11a7498687b0bf3462ba2ce36b7817d",
+        "applicability": "Catalogue estimate, not observed productivity; trades only (no crew size); Andalucia prices; direct cost only (no overheads, profit, VAT); generic structural rebar item not specific to columns/beams/slabs"
+      },
+      "crew_id": "HYP-REBAR",
+      "explicit_none_equipment": [
+        "CRANE"
+      ],
+      "productive_workdays_equivalent": 0.04,
+      "duration_basis": "simultaneous resource bottleneck, booked bundle",
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/24tlOXIsvMQfyRLiqh6fZt",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "3235aa7e-88d9-53c5-9cf7-49e573d81a5a",
+      "package_id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "work_item": "COL-FORM",
+      "kind": "productive",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC02",
+        "AP-DR05",
+        "AP-DR06",
+        "AP-W-COL-FORM"
+      ],
+      "blockers": [],
+      "quantity": 4.8,
+      "unit": "m2",
+      "quantity_ids": [],
+      "fixture_quantity_key": "formwork_m2",
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 1.2,
+        "PEÓN ESPECIAL": 0.48
+      },
+      "machine_hours_by_class": {},
+      "materials": [
+        {
+          "code": "CM00200",
+          "name": "MADERA DE PINO EN TABLA",
+          "unit": "m3",
+          "per_unit": 0.003,
+          "reference_rate_eur": 412.45,
+          "quantity": 0.0144,
+          "cost_eur_from_line": 5.93928
+        },
+        {
+          "code": "CM00300",
+          "name": "MADERA DE PINO EN TABLON",
+          "unit": "m3",
+          "per_unit": 0.013,
+          "reference_rate_eur": 443.12,
+          "quantity": 0.0624,
+          "cost_eur_from_line": 27.650688
+        },
+        {
+          "code": "CW00600",
+          "name": "DESENCOFRANTE",
+          "unit": "l",
+          "per_unit": 0.4,
+          "reference_rate_eur": 1.85,
+          "quantity": 1.92,
+          "cost_eur_from_line": 3.552
+        },
+        {
+          "code": "WW00300",
+          "name": "MATERIAL COMPLEMENTARIO O PZAS. ESPECIALES",
+          "unit": "u",
+          "per_unit": 0.5,
+          "reference_rate_eur": 0.6,
+          "quantity": 2.4,
+          "cost_eur_from_line": 1.44
+        },
+        {
+          "code": "WW00400",
+          "name": "PEQUEÑO MATERIAL",
+          "unit": "u",
+          "per_unit": 0.4,
+          "reference_rate_eur": 0.33,
+          "quantity": 1.92,
+          "cost_eur_from_line": 0.6336
+        }
+      ],
+      "labor_cost_eur_by_trade": {
+        "OF. 1ª ENCOFRADOR": 27.804000000000002,
+        "PEÓN ESPECIAL": 10.5648
+      },
+      "equipment_cost_eur_by_class": {},
+      "worker_capacity_by_trade": {
+        "OF. 1ª ENCOFRADOR": 2,
+        "PEÓN ESPECIAL": 1
+      },
+      "equipment_capacity_by_class": {},
+      "concurrent_throughput_per_hour": {},
+      "execution_mode": "simultaneous_fixed_crew",
+      "productive_hours": 0.6,
+      "elapsed_hours": null,
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.6,
+        "labor:PEÓN ESPECIAL": 0.48
+      },
+      "reserved_worker_hours": {
+        "OF. 1ª ENCOFRADOR": 1.2,
+        "PEÓN ESPECIAL": 0.6
+      },
+      "reserved_machine_hours": {},
+      "cost_components_eur": {
+        "labor": 38.3688,
+        "equipment": 0.0,
+        "material": 39.21552
+      },
+      "reference_cost_eur": 77.568,
+      "rounding_residual_eur": -0.01631999999999323,
+      "reference": {
+        "work_item": "COL-FORM",
+        "code": "05HEM00001",
+        "unit": "m2",
+        "labor_per_unit": {
+          "OF. 1ª ENCOFRADOR": 0.25,
+          "PEÓN ESPECIAL": 0.1
+        },
+        "labor_rate_eur_per_hour": {
+          "OF. 1ª ENCOFRADOR": 23.17,
+          "PEÓN ESPECIAL": 22.01
+        },
+        "equipment_per_unit": {},
+        "materials": [
+          {
+            "code": "CM00200",
+            "name": "MADERA DE PINO EN TABLA",
+            "unit": "m3",
+            "per_unit": 0.003,
+            "reference_rate_eur": 412.45
+          },
+          {
+            "code": "CM00300",
+            "name": "MADERA DE PINO EN TABLON",
+            "unit": "m3",
+            "per_unit": 0.013,
+            "reference_rate_eur": 443.12
+          },
+          {
+            "code": "CW00600",
+            "name": "DESENCOFRANTE",
+            "unit": "l",
+            "per_unit": 0.4,
+            "reference_rate_eur": 1.85
+          },
+          {
+            "code": "WW00300",
+            "name": "MATERIAL COMPLEMENTARIO O PZAS. ESPECIALES",
+            "unit": "u",
+            "per_unit": 0.5,
+            "reference_rate_eur": 0.6
+          },
+          {
+            "code": "WW00400",
+            "name": "PEQUEÑO MATERIAL",
+            "unit": "u",
+            "per_unit": 0.4,
+            "reference_rate_eur": 0.33
+          }
+        ],
+        "component_eur_per_unit": {
+          "labor": 7.9935,
+          "equipment": 0.0,
+          "material": 8.1699
+        },
+        "published_eur_per_unit": 16.16,
+        "unresolved_equipment": "crane handling for formwork panels/bar bundles not in BCCA - declare or explicit none",
+        "included_operations": "cleaning, release agent, stabilising accessories, wetting",
+        "excluded_operations": "stripping (separate 05HED*); props/shoring as separate items not listed; crane handling; reinforcement; concrete",
+        "bundled_operations": "release agent and cleaning inside formwork labour",
+        "approval_id": "AP-W-COL-FORM",
+        "edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+        "region": "Andalucia, ES",
+        "currency": "EUR",
+        "concept_price_date_ddmmyy": "160122",
+        "bc3_sha256": "bee06981c4447c6b07a3434a6a4d934de11a7498687b0bf3462ba2ce36b7817d",
+        "applicability": "Catalogue estimate, not observed productivity; trades only (no crew size); Andalucia prices; direct cost only (no overheads, profit, VAT); pine timber for rendered finish; exposed finish needs another variant"
+      },
+      "crew_id": "HYP-FORM",
+      "explicit_none_equipment": [
+        "CRANE"
+      ],
+      "productive_workdays_equivalent": 0.075,
+      "duration_basis": "simultaneous resource bottleneck, booked bundle",
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/24tlOXIsvMQfyRLiqh6fZt",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "04527e9d-995e-5e16-9663-9756d828c586",
+      "package_id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "work_item": "COL-CONC",
+      "kind": "productive",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC03",
+        "AP-DC07",
+        "AP-DC08",
+        "AP-DR06",
+        "AP-DR07",
+        "AP-TOL",
+        "AP-W-COL-CONC"
+      ],
+      "blockers": [],
+      "quantity": 0.48,
+      "unit": "m3",
+      "quantity_ids": [
+        "c2db47ae-15d2-5f60-8290-7bedc4ca5623",
+        "0c07fccc-9bdb-53ad-96bf-9ad3e5410dfe"
+      ],
+      "fixture_quantity_key": null,
+      "worker_hours_by_trade": {
+        "PEÓN ESPECIAL": 0.288
+      },
+      "machine_hours_by_class": {
+        "VIBRADOR": 0.096
+      },
+      "materials": [
+        {
+          "code": "CH02920",
+          "name": "HORMIGÓN HA-25/P/20/XC2, SUMINISTRADO",
+          "unit": "m3",
+          "per_unit": 1.03,
+          "reference_rate_eur": 97.1,
+          "quantity": 0.4944,
+          "cost_eur_from_line": 48.00624
+        }
+      ],
+      "labor_cost_eur_by_trade": {
+        "PEÓN ESPECIAL": 6.33888
+      },
+      "equipment_cost_eur_by_class": {
+        "VIBRADOR": 0.17472
+      },
+      "worker_capacity_by_trade": {
+        "PEÓN ESPECIAL": 2
+      },
+      "equipment_capacity_by_class": {
+        "VIBRADOR": 1
+      },
+      "concurrent_throughput_per_hour": {},
+      "execution_mode": "simultaneous_fixed_crew",
+      "productive_hours": 0.144,
+      "elapsed_hours": null,
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:PEÓN ESPECIAL": 0.144,
+        "equipment:VIBRADOR": 0.096
+      },
+      "reserved_worker_hours": {
+        "PEÓN ESPECIAL": 0.288
+      },
+      "reserved_machine_hours": {
+        "VIBRADOR": 0.144
+      },
+      "cost_components_eur": {
+        "labor": 6.33888,
+        "equipment": 0.17472,
+        "material": 48.00624
+      },
+      "reference_cost_eur": 54.5184,
+      "rounding_residual_eur": -0.0014399999999952229,
+      "reference": {
+        "work_item": "COL-CONC",
+        "code": "05HHP00003",
+        "unit": "m3",
+        "labor_per_unit": {
+          "PEÓN ESPECIAL": 0.6
+        },
+        "labor_rate_eur_per_hour": {
+          "PEÓN ESPECIAL": 22.01
+        },
+        "equipment_per_unit": {
+          "VIBRADOR": 0.2
+        },
+        "materials": [
+          {
+            "code": "CH02920",
+            "name": "HORMIGÓN HA-25/P/20/XC2, SUMINISTRADO",
+            "unit": "m3",
+            "per_unit": 1.03,
+            "reference_rate_eur": 97.1
+          }
+        ],
+        "component_eur_per_unit": {
+          "labor": 13.206,
+          "equipment": 0.364,
+          "material": 100.013
+        },
+        "published_eur_per_unit": 113.58,
+        "unresolved_equipment": "crane or pump and concrete delivery capacity NOT in BCCA - user must declare available equipment or explicit none; otherwise the activity is blocked",
+        "included_operations": "bottom cleaning, cleaning, curing, supply, vibration",
+        "excluded_operations": "formwork; reinforcement; stripping; crane/pump/concrete transport beyond \"puesto en obra\" (no machinery other than vibrator in decomposition); waiting/curing time (only labour of curing is bundled)",
+        "bundled_operations": "curing labour and bottom cleaning inside concrete labour - cannot be split into a separate curing activity",
+        "approval_id": "AP-W-COL-CONC",
+        "edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+        "region": "Andalucia, ES",
+        "currency": "EUR",
+        "concept_price_date_ddmmyy": "051222",
+        "bc3_sha256": "bee06981c4447c6b07a3434a6a4d934de11a7498687b0bf3462ba2ce36b7817d",
+        "applicability": "Catalogue estimate, not observed productivity; trades only (no crew size); Andalucia prices; direct cost only (no overheads, profit, VAT); concrete class/consistency must match the selected variant"
+      },
+      "crew_id": "HYP-CONC",
+      "explicit_none_equipment": [
+        "CRANE",
+        "CONCRETE_PUMP",
+        "CONCRETE_DELIVERY"
+      ],
+      "productive_workdays_equivalent": 0.018,
+      "duration_basis": "simultaneous resource bottleneck, booked bundle",
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/24tlOXIsvMQfyRLiqh6fZt",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "c318b5bb-2652-5d7b-a706-041aeb3307d5",
+      "package_id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "work_item": "FRM-STRIP",
+      "kind": "productive",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC01",
+        "AP-DC02",
+        "AP-DR08",
+        "AP-W-FRM-STRIP"
+      ],
+      "blockers": [],
+      "quantity": 4.8,
+      "unit": "m2",
+      "quantity_ids": [],
+      "fixture_quantity_key": "formwork_m2",
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 0.144,
+        "PEÓN ESPECIAL": 0.72
+      },
+      "machine_hours_by_class": {},
+      "materials": [],
+      "labor_cost_eur_by_trade": {
+        "OF. 1ª ENCOFRADOR": 3.33648,
+        "PEÓN ESPECIAL": 15.8472
+      },
+      "equipment_cost_eur_by_class": {},
+      "worker_capacity_by_trade": {
+        "OF. 1ª ENCOFRADOR": 2,
+        "PEÓN ESPECIAL": 1
+      },
+      "equipment_capacity_by_class": {},
+      "concurrent_throughput_per_hour": {},
+      "execution_mode": "simultaneous_fixed_crew",
+      "productive_hours": 0.72,
+      "elapsed_hours": null,
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.072,
+        "labor:PEÓN ESPECIAL": 0.72
+      },
+      "reserved_worker_hours": {
+        "OF. 1ª ENCOFRADOR": 1.44,
+        "PEÓN ESPECIAL": 0.72
+      },
+      "reserved_machine_hours": {},
+      "cost_components_eur": {
+        "labor": 19.18368,
+        "equipment": 0.0,
+        "material": 0.0
+      },
+      "reference_cost_eur": 19.2,
+      "rounding_residual_eur": 0.016320000000000334,
+      "reference": {
+        "work_item": "FRM-STRIP",
+        "code": "05HED00001",
+        "unit": "m2",
+        "labor_per_unit": {
+          "OF. 1ª ENCOFRADOR": 0.03,
+          "PEÓN ESPECIAL": 0.15
+        },
+        "labor_rate_eur_per_hour": {
+          "OF. 1ª ENCOFRADOR": 23.17,
+          "PEÓN ESPECIAL": 22.01
+        },
+        "equipment_per_unit": {},
+        "materials": [],
+        "component_eur_per_unit": {
+          "labor": 3.9966,
+          "equipment": 0.0,
+          "material": 0.0
+        },
+        "published_eur_per_unit": 4.0,
+        "unresolved_equipment": "none",
+        "included_operations": "cleaning, repair, stripping",
+        "excluded_operations": "formwork erection; re-propping; cleaning beyond \"limpieza y reparacion\"",
+        "bundled_operations": "cleaning and repair inside stripping labour",
+        "approval_id": "AP-W-FRM-STRIP",
+        "edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+        "region": "Andalucia, ES",
+        "currency": "EUR",
+        "concept_price_date_ddmmyy": "051222",
+        "bc3_sha256": "bee06981c4447c6b07a3434a6a4d934de11a7498687b0bf3462ba2ce36b7817d",
+        "applicability": "Catalogue estimate, not observed productivity; trades only (no crew size); Andalucia prices; direct cost only (no overheads, profit, VAT); timber formwork for rendered finish only"
+      },
+      "crew_id": "HYP-FORM",
+      "explicit_none_equipment": [],
+      "productive_workdays_equivalent": 0.09,
+      "duration_basis": "simultaneous resource bottleneck, booked bundle",
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/24tlOXIsvMQfyRLiqh6fZt",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "c0b8943f-0dbd-54a0-977e-731916bcd42a",
+      "package_id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "work_item": "INSPECTION-HOLD",
+      "kind": "elapsed_hold",
+      "elapsed_hours": 0.5,
+      "productive_hours": null,
+      "worker_hours_by_trade": {},
+      "machine_hours_by_class": {},
+      "materials": [],
+      "criterion": "Hypothetical passed pre-pour formwork and reinforcement checklist after 0.5 elapsed hour.",
+      "reference_cost_eur": null,
+      "cost_treatment": "unpriced_release",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-DR06"
+      ],
+      "blockers": [],
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/24tlOXIsvMQfyRLiqh6fZt",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "fe8beee0-18d0-505c-9cf2-ab234883c2db",
+      "package_id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "work_item": "CURE",
+      "kind": "elapsed_hold",
+      "elapsed_hours": 24,
+      "productive_hours": null,
+      "worker_hours_by_trade": {},
+      "machine_hours_by_class": {},
+      "materials": [],
+      "criterion": "Hypothetical curing gate at 24 elapsed hours from placement.",
+      "reference_cost_eur": null,
+      "cost_treatment": "included_in_placement",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC03",
+        "AP-DR07",
+        "AP-DR08",
+        "AP-W-CURE"
+      ],
+      "blockers": [],
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/24tlOXIsvMQfyRLiqh6fZt",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "a47f0364-8f49-5947-94e7-e24af60a1b92",
+      "package_id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "work_item": "STRIKING-RELEASE",
+      "kind": "elapsed_hold",
+      "elapsed_hours": 0,
+      "productive_hours": null,
+      "worker_hours_by_trade": {},
+      "machine_hours_by_class": {},
+      "materials": [],
+      "criterion": "Hypothetical release at 24 elapsed hours from placement and a passing strength check. The test assumes the check passes at that time.",
+      "reference_cost_eur": null,
+      "cost_treatment": "unpriced_release",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC01",
+        "AP-DC02",
+        "AP-DR08",
+        "AP-W-FRM-STRIP"
+      ],
+      "blockers": [],
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/24tlOXIsvMQfyRLiqh6fZt",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "0240248f-1548-557b-945e-e417b0b1222d",
+      "package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "work_item": "BEAM-REBAR",
+      "kind": "productive",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC05",
+        "AP-DR06",
+        "AP-W-BEAM-REBAR"
+      ],
+      "blockers": [],
+      "quantity": 58,
+      "unit": "kg",
+      "quantity_ids": [],
+      "fixture_quantity_key": "reinforcement_kg",
+      "worker_hours_by_trade": {
+        "OF. 1ª FERRALLISTA": 1.16
+      },
+      "machine_hours_by_class": {},
+      "materials": [
+        {
+          "code": "CA00320",
+          "name": "ACERO B 500 S",
+          "unit": "kg",
+          "per_unit": 1.08,
+          "reference_rate_eur": 0.95,
+          "quantity": 62.64,
+          "cost_eur_from_line": 59.507999999999996
+        },
+        {
+          "code": "CA01700",
+          "name": "ALAMBRE DE ATAR",
+          "unit": "kg",
+          "per_unit": 0.005,
+          "reference_rate_eur": 1.5,
+          "quantity": 0.29,
+          "cost_eur_from_line": 0.43499999999999994
+        },
+        {
+          "code": "WW00400",
+          "name": "PEQUEÑO MATERIAL",
+          "unit": "u",
+          "per_unit": 0.05,
+          "reference_rate_eur": 0.33,
+          "quantity": 2.9000000000000004,
+          "cost_eur_from_line": 0.9570000000000002
+        }
+      ],
+      "labor_cost_eur_by_trade": {
+        "OF. 1ª FERRALLISTA": 26.8772
+      },
+      "equipment_cost_eur_by_class": {},
+      "worker_capacity_by_trade": {
+        "OF. 1ª FERRALLISTA": 2
+      },
+      "equipment_capacity_by_class": {},
+      "concurrent_throughput_per_hour": {},
+      "execution_mode": "simultaneous_fixed_crew",
+      "productive_hours": 0.58,
+      "elapsed_hours": null,
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª FERRALLISTA": 0.58
+      },
+      "reserved_worker_hours": {
+        "OF. 1ª FERRALLISTA": 1.16
+      },
+      "reserved_machine_hours": {},
+      "cost_components_eur": {
+        "labor": 26.8772,
+        "equipment": 0.0,
+        "material": 60.900000000000006
+      },
+      "reference_cost_eur": 88.16,
+      "rounding_residual_eur": 0.3827999999999889,
+      "reference": {
+        "work_item": "BEAM-REBAR",
+        "code": "05HAC00015",
+        "unit": "kg",
+        "labor_per_unit": {
+          "OF. 1ª FERRALLISTA": 0.02
+        },
+        "labor_rate_eur_per_hour": {
+          "OF. 1ª FERRALLISTA": 23.17
+        },
+        "equipment_per_unit": {},
+        "materials": [
+          {
+            "code": "CA00320",
+            "name": "ACERO B 500 S",
+            "unit": "kg",
+            "per_unit": 1.08,
+            "reference_rate_eur": 0.95
+          },
+          {
+            "code": "CA01700",
+            "name": "ALAMBRE DE ATAR",
+            "unit": "kg",
+            "per_unit": 0.005,
+            "reference_rate_eur": 1.5
+          },
+          {
+            "code": "WW00400",
+            "name": "PEQUEÑO MATERIAL",
+            "unit": "u",
+            "per_unit": 0.05,
+            "reference_rate_eur": 0.33
+          }
+        ],
+        "component_eur_per_unit": {
+          "labor": 0.4634,
+          "equipment": 0.0,
+          "material": 1.05
+        },
+        "published_eur_per_unit": 1.52,
+        "unresolved_equipment": "crane handling for formwork panels/bar bundles not in BCCA - declare or explicit none",
+        "included_operations": "bending, cutting, placing, placing on site, spacers, tying wire",
+        "excluded_operations": "bar schedule/detailing; crane lifting; prefabricated cage transport",
+        "bundled_operations": "cutting/bending/tying inside ferrallista hours",
+        "approval_id": "AP-W-BEAM-REBAR",
+        "edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+        "region": "Andalucia, ES",
+        "currency": "EUR",
+        "concept_price_date_ddmmyy": "160122",
+        "bc3_sha256": "bee06981c4447c6b07a3434a6a4d934de11a7498687b0bf3462ba2ce36b7817d",
+        "applicability": "Catalogue estimate, not observed productivity; trades only (no crew size); Andalucia prices; direct cost only (no overheads, profit, VAT); generic structural rebar item not specific to columns/beams/slabs"
+      },
+      "crew_id": "HYP-REBAR",
+      "explicit_none_equipment": [
+        "CRANE"
+      ],
+      "productive_workdays_equivalent": 0.0725,
+      "duration_basis": "simultaneous resource bottleneck, booked bundle",
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/1jDfy2_jTRueAw6f5fc3Ev",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a",
+      "package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "work_item": "BEAM-FORM",
+      "kind": "productive",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC02",
+        "AP-DR06",
+        "AP-W-BEAM-FORM"
+      ],
+      "blockers": [],
+      "quantity": 5.44,
+      "unit": "m2",
+      "quantity_ids": [],
+      "fixture_quantity_key": "formwork_m2",
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 1.904,
+        "PEÓN ESPECIAL": 0.8160000000000001
+      },
+      "machine_hours_by_class": {},
+      "materials": [
+        {
+          "code": "CE00200",
+          "name": "PUNTAL METÁLICO DE 3 m",
+          "unit": "u",
+          "per_unit": 0.009,
+          "reference_rate_eur": 21.87,
+          "quantity": 0.04896,
+          "cost_eur_from_line": 1.0707552
+        },
+        {
+          "code": "CM00200",
+          "name": "MADERA DE PINO EN TABLA",
+          "unit": "m3",
+          "per_unit": 0.005,
+          "reference_rate_eur": 412.45,
+          "quantity": 0.027200000000000002,
+          "cost_eur_from_line": 11.21864
+        },
+        {
+          "code": "CM00300",
+          "name": "MADERA DE PINO EN TABLON",
+          "unit": "m3",
+          "per_unit": 0.003,
+          "reference_rate_eur": 443.12,
+          "quantity": 0.01632,
+          "cost_eur_from_line": 7.231718400000001
+        },
+        {
+          "code": "CW00600",
+          "name": "DESENCOFRANTE",
+          "unit": "l",
+          "per_unit": 0.4,
+          "reference_rate_eur": 1.85,
+          "quantity": 2.176,
+          "cost_eur_from_line": 4.025600000000001
+        },
+        {
+          "code": "WW00300",
+          "name": "MATERIAL COMPLEMENTARIO O PZAS. ESPECIALES",
+          "unit": "u",
+          "per_unit": 0.6,
+          "reference_rate_eur": 0.6,
+          "quantity": 3.2640000000000002,
+          "cost_eur_from_line": 1.9584000000000001
+        },
+        {
+          "code": "WW00400",
+          "name": "PEQUEÑO MATERIAL",
+          "unit": "u",
+          "per_unit": 0.4,
+          "reference_rate_eur": 0.33,
+          "quantity": 2.176,
+          "cost_eur_from_line": 0.71808
+        }
+      ],
+      "labor_cost_eur_by_trade": {
+        "OF. 1ª ENCOFRADOR": 44.115680000000005,
+        "PEÓN ESPECIAL": 17.960160000000002
+      },
+      "equipment_cost_eur_by_class": {},
+      "worker_capacity_by_trade": {
+        "OF. 1ª ENCOFRADOR": 2,
+        "PEÓN ESPECIAL": 1
+      },
+      "equipment_capacity_by_class": {},
+      "concurrent_throughput_per_hour": {},
+      "execution_mode": "simultaneous_fixed_crew",
+      "productive_hours": 0.952,
+      "elapsed_hours": null,
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.952,
+        "labor:PEÓN ESPECIAL": 0.8160000000000001
+      },
+      "reserved_worker_hours": {
+        "OF. 1ª ENCOFRADOR": 1.904,
+        "PEÓN ESPECIAL": 0.952
+      },
+      "reserved_machine_hours": {},
+      "cost_components_eur": {
+        "labor": 62.07584,
+        "equipment": 0.0,
+        "material": 26.222976000000003
+      },
+      "reference_cost_eur": 88.2912,
+      "rounding_residual_eur": -0.007615999999998735,
+      "reference": {
+        "work_item": "BEAM-FORM",
+        "code": "05HEM00051",
+        "unit": "m2",
+        "labor_per_unit": {
+          "OF. 1ª ENCOFRADOR": 0.35,
+          "PEÓN ESPECIAL": 0.15
+        },
+        "labor_rate_eur_per_hour": {
+          "OF. 1ª ENCOFRADOR": 23.17,
+          "PEÓN ESPECIAL": 22.01
+        },
+        "equipment_per_unit": {},
+        "materials": [
+          {
+            "code": "CE00200",
+            "name": "PUNTAL METÁLICO DE 3 m",
+            "unit": "u",
+            "per_unit": 0.009,
+            "reference_rate_eur": 21.87
+          },
+          {
+            "code": "CM00200",
+            "name": "MADERA DE PINO EN TABLA",
+            "unit": "m3",
+            "per_unit": 0.005,
+            "reference_rate_eur": 412.45
+          },
+          {
+            "code": "CM00300",
+            "name": "MADERA DE PINO EN TABLON",
+            "unit": "m3",
+            "per_unit": 0.003,
+            "reference_rate_eur": 443.12
+          },
+          {
+            "code": "CW00600",
+            "name": "DESENCOFRANTE",
+            "unit": "l",
+            "per_unit": 0.4,
+            "reference_rate_eur": 1.85
+          },
+          {
+            "code": "WW00300",
+            "name": "MATERIAL COMPLEMENTARIO O PZAS. ESPECIALES",
+            "unit": "u",
+            "per_unit": 0.6,
+            "reference_rate_eur": 0.6
+          },
+          {
+            "code": "WW00400",
+            "name": "PEQUEÑO MATERIAL",
+            "unit": "u",
+            "per_unit": 0.4,
+            "reference_rate_eur": 0.33
+          }
+        ],
+        "component_eur_per_unit": {
+          "labor": 11.411,
+          "equipment": 0.0,
+          "material": 4.8204
+        },
+        "published_eur_per_unit": 16.23,
+        "unresolved_equipment": "crane handling for formwork panels/bar bundles not in BCCA - declare or explicit none",
+        "included_operations": "cleaning, release agent, stabilising accessories, wetting",
+        "excluded_operations": "stripping (separate 05HED*); props/shoring as separate items not listed; crane handling; reinforcement; concrete",
+        "bundled_operations": "release agent and cleaning inside formwork labour",
+        "approval_id": "AP-W-BEAM-FORM",
+        "edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+        "region": "Andalucia, ES",
+        "currency": "EUR",
+        "concept_price_date_ddmmyy": "281221",
+        "bc3_sha256": "bee06981c4447c6b07a3434a6a4d934de11a7498687b0bf3462ba2ce36b7817d",
+        "applicability": "Catalogue estimate, not observed productivity; trades only (no crew size); Andalucia prices; direct cost only (no overheads, profit, VAT); pine timber for rendered finish; exposed finish needs another variant"
+      },
+      "crew_id": "HYP-FORM",
+      "explicit_none_equipment": [
+        "CRANE"
+      ],
+      "productive_workdays_equivalent": 0.119,
+      "duration_basis": "simultaneous resource bottleneck, booked bundle",
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/1jDfy2_jTRueAw6f5fc3Ev",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "d908f25a-67e4-565f-a629-c9f52ff352ed",
+      "package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "work_item": "BEAM-CONC",
+      "kind": "productive",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC03",
+        "AP-DC06",
+        "AP-DC08",
+        "AP-DR06",
+        "AP-DR07",
+        "AP-TOL",
+        "AP-W-BEAM-CONC"
+      ],
+      "blockers": [],
+      "quantity": 0.8,
+      "unit": "m3",
+      "quantity_ids": [
+        "5f6eaa80-527c-579f-b165-b8ef9170e17c",
+        "8778a92d-99bc-54e7-8133-3f382511ee93"
+      ],
+      "fixture_quantity_key": null,
+      "worker_hours_by_trade": {
+        "OFICIAL 1ª": 0.16000000000000003,
+        "PEÓN ESPECIAL": 0.48
+      },
+      "machine_hours_by_class": {
+        "VIBRADOR": 0.24
+      },
+      "materials": [
+        {
+          "code": "CH02920",
+          "name": "HORMIGÓN HA-25/P/20/XC2, SUMINISTRADO",
+          "unit": "m3",
+          "per_unit": 1.03,
+          "reference_rate_eur": 97.1,
+          "quantity": 0.8240000000000001,
+          "cost_eur_from_line": 80.0104
+        }
+      ],
+      "labor_cost_eur_by_trade": {
+        "OFICIAL 1ª": 3.707200000000001,
+        "PEÓN ESPECIAL": 10.5648
+      },
+      "equipment_cost_eur_by_class": {
+        "VIBRADOR": 0.4368000000000001
+      },
+      "worker_capacity_by_trade": {
+        "OFICIAL 1ª": 1,
+        "PEÓN ESPECIAL": 2
+      },
+      "equipment_capacity_by_class": {
+        "VIBRADOR": 1
+      },
+      "concurrent_throughput_per_hour": {},
+      "execution_mode": "simultaneous_fixed_crew",
+      "productive_hours": 0.24,
+      "elapsed_hours": null,
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OFICIAL 1ª": 0.16000000000000003,
+        "labor:PEÓN ESPECIAL": 0.24,
+        "equipment:VIBRADOR": 0.24
+      },
+      "reserved_worker_hours": {
+        "OFICIAL 1ª": 0.24,
+        "PEÓN ESPECIAL": 0.48
+      },
+      "reserved_machine_hours": {
+        "VIBRADOR": 0.24
+      },
+      "cost_components_eur": {
+        "labor": 14.272,
+        "equipment": 0.4368000000000001,
+        "material": 80.0104
+      },
+      "reference_cost_eur": 94.72000000000001,
+      "rounding_residual_eur": 0.0008000000000123464,
+      "reference": {
+        "work_item": "BEAM-CONC",
+        "code": "05HHJ00003",
+        "unit": "m3",
+        "labor_per_unit": {
+          "OFICIAL 1ª": 0.2,
+          "PEÓN ESPECIAL": 0.6
+        },
+        "labor_rate_eur_per_hour": {
+          "OFICIAL 1ª": 23.17,
+          "PEÓN ESPECIAL": 22.01
+        },
+        "equipment_per_unit": {
+          "VIBRADOR": 0.3
+        },
+        "materials": [
+          {
+            "code": "CH02920",
+            "name": "HORMIGÓN HA-25/P/20/XC2, SUMINISTRADO",
+            "unit": "m3",
+            "per_unit": 1.03,
+            "reference_rate_eur": 97.1
+          }
+        ],
+        "component_eur_per_unit": {
+          "labor": 17.84,
+          "equipment": 0.546,
+          "material": 100.013
+        },
+        "published_eur_per_unit": 118.4,
+        "unresolved_equipment": "crane or pump and concrete delivery capacity NOT in BCCA - user must declare available equipment or explicit none; otherwise the activity is blocked",
+        "included_operations": "bottom cleaning, cleaning, curing, supply, vibration",
+        "excluded_operations": "formwork; reinforcement; stripping; crane/pump/concrete transport beyond \"puesto en obra\" (no machinery other than vibrator in decomposition); waiting/curing time (only labour of curing is bundled)",
+        "bundled_operations": "curing labour and bottom cleaning inside concrete labour - cannot be split into a separate curing activity",
+        "approval_id": "AP-W-BEAM-CONC",
+        "edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+        "region": "Andalucia, ES",
+        "currency": "EUR",
+        "concept_price_date_ddmmyy": "051222",
+        "bc3_sha256": "bee06981c4447c6b07a3434a6a4d934de11a7498687b0bf3462ba2ce36b7817d",
+        "applicability": "Catalogue estimate, not observed productivity; trades only (no crew size); Andalucia prices; direct cost only (no overheads, profit, VAT); concrete class/consistency must match the selected variant"
+      },
+      "crew_id": "HYP-CONC",
+      "explicit_none_equipment": [
+        "CRANE",
+        "CONCRETE_PUMP",
+        "CONCRETE_DELIVERY"
+      ],
+      "productive_workdays_equivalent": 0.03,
+      "duration_basis": "simultaneous resource bottleneck, booked bundle",
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/1jDfy2_jTRueAw6f5fc3Ev",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "a3a9c4bb-8619-5ff0-a41b-8552bc746366",
+      "package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "work_item": "FRM-STRIP",
+      "kind": "productive",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC01",
+        "AP-DC02",
+        "AP-DR08",
+        "AP-W-FRM-STRIP"
+      ],
+      "blockers": [],
+      "quantity": 5.44,
+      "unit": "m2",
+      "quantity_ids": [],
+      "fixture_quantity_key": "formwork_m2",
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 0.1632,
+        "PEÓN ESPECIAL": 0.8160000000000001
+      },
+      "machine_hours_by_class": {},
+      "materials": [],
+      "labor_cost_eur_by_trade": {
+        "OF. 1ª ENCOFRADOR": 3.7813440000000007,
+        "PEÓN ESPECIAL": 17.960160000000002
+      },
+      "equipment_cost_eur_by_class": {},
+      "worker_capacity_by_trade": {
+        "OF. 1ª ENCOFRADOR": 2,
+        "PEÓN ESPECIAL": 1
+      },
+      "equipment_capacity_by_class": {},
+      "concurrent_throughput_per_hour": {},
+      "execution_mode": "simultaneous_fixed_crew",
+      "productive_hours": 0.8160000000000001,
+      "elapsed_hours": null,
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.0816,
+        "labor:PEÓN ESPECIAL": 0.8160000000000001
+      },
+      "reserved_worker_hours": {
+        "OF. 1ª ENCOFRADOR": 1.6320000000000001,
+        "PEÓN ESPECIAL": 0.8160000000000001
+      },
+      "reserved_machine_hours": {},
+      "cost_components_eur": {
+        "labor": 21.741504000000003,
+        "equipment": 0.0,
+        "material": 0.0
+      },
+      "reference_cost_eur": 21.76,
+      "rounding_residual_eur": 0.018495999999998958,
+      "reference": {
+        "work_item": "FRM-STRIP",
+        "code": "05HED00001",
+        "unit": "m2",
+        "labor_per_unit": {
+          "OF. 1ª ENCOFRADOR": 0.03,
+          "PEÓN ESPECIAL": 0.15
+        },
+        "labor_rate_eur_per_hour": {
+          "OF. 1ª ENCOFRADOR": 23.17,
+          "PEÓN ESPECIAL": 22.01
+        },
+        "equipment_per_unit": {},
+        "materials": [],
+        "component_eur_per_unit": {
+          "labor": 3.9966,
+          "equipment": 0.0,
+          "material": 0.0
+        },
+        "published_eur_per_unit": 4.0,
+        "unresolved_equipment": "none",
+        "included_operations": "cleaning, repair, stripping",
+        "excluded_operations": "formwork erection; re-propping; cleaning beyond \"limpieza y reparacion\"",
+        "bundled_operations": "cleaning and repair inside stripping labour",
+        "approval_id": "AP-W-FRM-STRIP",
+        "edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+        "region": "Andalucia, ES",
+        "currency": "EUR",
+        "concept_price_date_ddmmyy": "051222",
+        "bc3_sha256": "bee06981c4447c6b07a3434a6a4d934de11a7498687b0bf3462ba2ce36b7817d",
+        "applicability": "Catalogue estimate, not observed productivity; trades only (no crew size); Andalucia prices; direct cost only (no overheads, profit, VAT); timber formwork for rendered finish only"
+      },
+      "crew_id": "HYP-FORM",
+      "explicit_none_equipment": [],
+      "productive_workdays_equivalent": 0.10200000000000001,
+      "duration_basis": "simultaneous resource bottleneck, booked bundle",
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/1jDfy2_jTRueAw6f5fc3Ev",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "9cd34b99-bcb2-5f88-ad80-896053ef5153",
+      "package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "work_item": "INSPECTION-HOLD",
+      "kind": "elapsed_hold",
+      "elapsed_hours": 0.5,
+      "productive_hours": null,
+      "worker_hours_by_trade": {},
+      "machine_hours_by_class": {},
+      "materials": [],
+      "criterion": "Hypothetical passed pre-pour formwork and reinforcement checklist after 0.5 elapsed hour.",
+      "reference_cost_eur": null,
+      "cost_treatment": "unpriced_release",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-DR06"
+      ],
+      "blockers": [],
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/1jDfy2_jTRueAw6f5fc3Ev",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "7d1f4e79-3847-5408-8fba-12afc11f6bfd",
+      "package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "work_item": "CURE",
+      "kind": "elapsed_hold",
+      "elapsed_hours": 24,
+      "productive_hours": null,
+      "worker_hours_by_trade": {},
+      "machine_hours_by_class": {},
+      "materials": [],
+      "criterion": "Hypothetical curing gate at 24 elapsed hours from placement.",
+      "reference_cost_eur": null,
+      "cost_treatment": "included_in_placement",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC03",
+        "AP-DR07",
+        "AP-DR08",
+        "AP-W-CURE"
+      ],
+      "blockers": [],
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/1jDfy2_jTRueAw6f5fc3Ev",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "2cf0b700-88cb-5d0b-91e5-9fa0a1a5c4b0",
+      "package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "work_item": "STRIKING-RELEASE",
+      "kind": "elapsed_hold",
+      "elapsed_hours": 144,
+      "productive_hours": null,
+      "worker_hours_by_trade": {},
+      "machine_hours_by_class": {},
+      "materials": [],
+      "criterion": "Hypothetical release at 168 elapsed hours from placement and a passing strength check. The test assumes the check passes at that time.",
+      "reference_cost_eur": null,
+      "cost_treatment": "unpriced_release",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC01",
+        "AP-DC02",
+        "AP-DR08",
+        "AP-W-FRM-STRIP"
+      ],
+      "blockers": [],
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/1jDfy2_jTRueAw6f5fc3Ev",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "ef679452-ad4e-5662-803e-a59d6f27c913",
+      "package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "work_item": "SLAB-REBAR",
+      "kind": "productive",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR13",
+        "AP-CR14",
+        "AP-DC04",
+        "AP-DC05",
+        "AP-DR06",
+        "AP-W-SLAB-REBAR"
+      ],
+      "blockers": [],
+      "quantity": 86,
+      "unit": "kg",
+      "quantity_ids": [],
+      "fixture_quantity_key": "reinforcement_kg",
+      "worker_hours_by_trade": {
+        "OF. 1ª FERRALLISTA": 1.72
+      },
+      "machine_hours_by_class": {},
+      "materials": [
+        {
+          "code": "CA00320",
+          "name": "ACERO B 500 S",
+          "unit": "kg",
+          "per_unit": 1.08,
+          "reference_rate_eur": 0.95,
+          "quantity": 92.88000000000001,
+          "cost_eur_from_line": 88.236
+        },
+        {
+          "code": "CA01700",
+          "name": "ALAMBRE DE ATAR",
+          "unit": "kg",
+          "per_unit": 0.005,
+          "reference_rate_eur": 1.5,
+          "quantity": 0.43,
+          "cost_eur_from_line": 0.645
+        },
+        {
+          "code": "WW00400",
+          "name": "PEQUEÑO MATERIAL",
+          "unit": "u",
+          "per_unit": 0.05,
+          "reference_rate_eur": 0.33,
+          "quantity": 4.3,
+          "cost_eur_from_line": 1.419
+        }
+      ],
+      "labor_cost_eur_by_trade": {
+        "OF. 1ª FERRALLISTA": 39.8524
+      },
+      "equipment_cost_eur_by_class": {},
+      "worker_capacity_by_trade": {
+        "OF. 1ª FERRALLISTA": 2
+      },
+      "equipment_capacity_by_class": {},
+      "concurrent_throughput_per_hour": {},
+      "execution_mode": "simultaneous_fixed_crew",
+      "productive_hours": 0.86,
+      "elapsed_hours": null,
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª FERRALLISTA": 0.86
+      },
+      "reserved_worker_hours": {
+        "OF. 1ª FERRALLISTA": 1.72
+      },
+      "reserved_machine_hours": {},
+      "cost_components_eur": {
+        "labor": 39.852399999999996,
+        "equipment": 0.0,
+        "material": 90.3
+      },
+      "reference_cost_eur": 130.72,
+      "rounding_residual_eur": 0.5675999999999988,
+      "reference": {
+        "work_item": "SLAB-REBAR",
+        "code": "05HAC00015",
+        "unit": "kg",
+        "labor_per_unit": {
+          "OF. 1ª FERRALLISTA": 0.02
+        },
+        "labor_rate_eur_per_hour": {
+          "OF. 1ª FERRALLISTA": 23.17
+        },
+        "equipment_per_unit": {},
+        "materials": [
+          {
+            "code": "CA00320",
+            "name": "ACERO B 500 S",
+            "unit": "kg",
+            "per_unit": 1.08,
+            "reference_rate_eur": 0.95
+          },
+          {
+            "code": "CA01700",
+            "name": "ALAMBRE DE ATAR",
+            "unit": "kg",
+            "per_unit": 0.005,
+            "reference_rate_eur": 1.5
+          },
+          {
+            "code": "WW00400",
+            "name": "PEQUEÑO MATERIAL",
+            "unit": "u",
+            "per_unit": 0.05,
+            "reference_rate_eur": 0.33
+          }
+        ],
+        "component_eur_per_unit": {
+          "labor": 0.4634,
+          "equipment": 0.0,
+          "material": 1.05
+        },
+        "published_eur_per_unit": 1.52,
+        "unresolved_equipment": "crane handling for formwork panels/bar bundles not in BCCA - declare or explicit none",
+        "included_operations": "bending, cutting, placing, placing on site, spacers, tying wire",
+        "excluded_operations": "bar schedule/detailing; crane lifting; prefabricated cage transport",
+        "bundled_operations": "cutting/bending/tying inside ferrallista hours",
+        "approval_id": "AP-W-SLAB-REBAR",
+        "edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+        "region": "Andalucia, ES",
+        "currency": "EUR",
+        "concept_price_date_ddmmyy": "160122",
+        "bc3_sha256": "bee06981c4447c6b07a3434a6a4d934de11a7498687b0bf3462ba2ce36b7817d",
+        "applicability": "Catalogue estimate, not observed productivity; trades only (no crew size); Andalucia prices; direct cost only (no overheads, profit, VAT); generic structural rebar item not specific to columns/beams/slabs"
+      },
+      "crew_id": "HYP-REBAR",
+      "explicit_none_equipment": [
+        "CRANE"
+      ],
+      "productive_workdays_equivalent": 0.1075,
+      "duration_basis": "simultaneous resource bottleneck, booked bundle",
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/3wOB$MtWLSz8SJNgW3VJvy",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7",
+      "package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "work_item": "SLAB-FORM",
+      "kind": "productive",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR13",
+        "AP-CR14",
+        "AP-DC02",
+        "AP-DC04",
+        "AP-DR06",
+        "AP-W-SLAB-FORM"
+      ],
+      "blockers": [],
+      "quantity": 10.4,
+      "unit": "m2",
+      "quantity_ids": [],
+      "fixture_quantity_key": "formwork_m2",
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 5.720000000000001,
+        "PEÓN ESPECIAL": 2.08
+      },
+      "machine_hours_by_class": {},
+      "materials": [
+        {
+          "code": "CE00200",
+          "name": "PUNTAL METÁLICO DE 3 m",
+          "unit": "u",
+          "per_unit": 0.01,
+          "reference_rate_eur": 21.87,
+          "quantity": 0.10400000000000001,
+          "cost_eur_from_line": 2.2744800000000005
+        },
+        {
+          "code": "CM00200",
+          "name": "MADERA DE PINO EN TABLA",
+          "unit": "m3",
+          "per_unit": 0.004,
+          "reference_rate_eur": 412.45,
+          "quantity": 0.041600000000000005,
+          "cost_eur_from_line": 17.15792
+        },
+        {
+          "code": "CM00300",
+          "name": "MADERA DE PINO EN TABLON",
+          "unit": "m3",
+          "per_unit": 0.003,
+          "reference_rate_eur": 443.12,
+          "quantity": 0.031200000000000002,
+          "cost_eur_from_line": 13.825344000000001
+        },
+        {
+          "code": "CW00600",
+          "name": "DESENCOFRANTE",
+          "unit": "l",
+          "per_unit": 0.35,
+          "reference_rate_eur": 1.85,
+          "quantity": 3.6399999999999997,
+          "cost_eur_from_line": 6.734
+        },
+        {
+          "code": "WW00300",
+          "name": "MATERIAL COMPLEMENTARIO O PZAS. ESPECIALES",
+          "unit": "u",
+          "per_unit": 0.5,
+          "reference_rate_eur": 0.6,
+          "quantity": 5.2,
+          "cost_eur_from_line": 3.12
+        },
+        {
+          "code": "WW00400",
+          "name": "PEQUEÑO MATERIAL",
+          "unit": "u",
+          "per_unit": 0.4,
+          "reference_rate_eur": 0.33,
+          "quantity": 4.16,
+          "cost_eur_from_line": 1.3728
+        }
+      ],
+      "labor_cost_eur_by_trade": {
+        "OF. 1ª ENCOFRADOR": 132.53240000000002,
+        "PEÓN ESPECIAL": 45.780800000000006
+      },
+      "equipment_cost_eur_by_class": {},
+      "worker_capacity_by_trade": {
+        "OF. 1ª ENCOFRADOR": 2,
+        "PEÓN ESPECIAL": 1
+      },
+      "equipment_capacity_by_class": {},
+      "concurrent_throughput_per_hour": {},
+      "execution_mode": "simultaneous_fixed_crew",
+      "productive_hours": 2.8600000000000003,
+      "elapsed_hours": null,
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 2.8600000000000003,
+        "labor:PEÓN ESPECIAL": 2.08
+      },
+      "reserved_worker_hours": {
+        "OF. 1ª ENCOFRADOR": 5.720000000000001,
+        "PEÓN ESPECIAL": 2.8600000000000003
+      },
+      "reserved_machine_hours": {},
+      "cost_components_eur": {
+        "labor": 178.3132,
+        "equipment": 0.0,
+        "material": 44.48496
+      },
+      "reference_cost_eur": 222.76800000000003,
+      "rounding_residual_eur": -0.030159999999966658,
+      "reference": {
+        "work_item": "SLAB-FORM",
+        "code": "05HEM00101",
+        "unit": "m2",
+        "labor_per_unit": {
+          "OF. 1ª ENCOFRADOR": 0.55,
+          "PEÓN ESPECIAL": 0.2
+        },
+        "labor_rate_eur_per_hour": {
+          "OF. 1ª ENCOFRADOR": 23.17,
+          "PEÓN ESPECIAL": 22.01
+        },
+        "equipment_per_unit": {},
+        "materials": [
+          {
+            "code": "CE00200",
+            "name": "PUNTAL METÁLICO DE 3 m",
+            "unit": "u",
+            "per_unit": 0.01,
+            "reference_rate_eur": 21.87
+          },
+          {
+            "code": "CM00200",
+            "name": "MADERA DE PINO EN TABLA",
+            "unit": "m3",
+            "per_unit": 0.004,
+            "reference_rate_eur": 412.45
+          },
+          {
+            "code": "CM00300",
+            "name": "MADERA DE PINO EN TABLON",
+            "unit": "m3",
+            "per_unit": 0.003,
+            "reference_rate_eur": 443.12
+          },
+          {
+            "code": "CW00600",
+            "name": "DESENCOFRANTE",
+            "unit": "l",
+            "per_unit": 0.35,
+            "reference_rate_eur": 1.85
+          },
+          {
+            "code": "WW00300",
+            "name": "MATERIAL COMPLEMENTARIO O PZAS. ESPECIALES",
+            "unit": "u",
+            "per_unit": 0.5,
+            "reference_rate_eur": 0.6
+          },
+          {
+            "code": "WW00400",
+            "name": "PEQUEÑO MATERIAL",
+            "unit": "u",
+            "per_unit": 0.4,
+            "reference_rate_eur": 0.33
+          }
+        ],
+        "component_eur_per_unit": {
+          "labor": 17.1455,
+          "equipment": 0.0,
+          "material": 4.2774
+        },
+        "published_eur_per_unit": 21.42,
+        "unresolved_equipment": "crane handling for formwork panels/bar bundles not in BCCA - declare or explicit none",
+        "included_operations": "cleaning, release agent, stabilising accessories, wetting",
+        "excluded_operations": "stripping (separate 05HED*); props/shoring as separate items not listed; crane handling; reinforcement; concrete",
+        "bundled_operations": "release agent and cleaning inside formwork labour",
+        "approval_id": "AP-W-SLAB-FORM",
+        "edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+        "region": "Andalucia, ES",
+        "currency": "EUR",
+        "concept_price_date_ddmmyy": "281221",
+        "bc3_sha256": "bee06981c4447c6b07a3434a6a4d934de11a7498687b0bf3462ba2ce36b7817d",
+        "applicability": "Catalogue estimate, not observed productivity; trades only (no crew size); Andalucia prices; direct cost only (no overheads, profit, VAT); pine timber for rendered finish; exposed finish needs another variant"
+      },
+      "crew_id": "HYP-FORM",
+      "explicit_none_equipment": [
+        "CRANE"
+      ],
+      "productive_workdays_equivalent": 0.35750000000000004,
+      "duration_basis": "simultaneous resource bottleneck, booked bundle",
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/3wOB$MtWLSz8SJNgW3VJvy",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "8a20a577-58c4-58e1-a2c7-86dbb4ee5523",
+      "package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "work_item": "SLAB-CONC",
+      "kind": "productive",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR13",
+        "AP-CR14",
+        "AP-DC03",
+        "AP-DC04",
+        "AP-DC06",
+        "AP-DC07",
+        "AP-DC08",
+        "AP-DR06",
+        "AP-DR07",
+        "AP-TOL",
+        "AP-W-SLAB-CONC"
+      ],
+      "blockers": [],
+      "quantity": 2.4,
+      "unit": "m3",
+      "quantity_ids": [
+        "17dbbe2e-ae26-54d6-9f68-c67b70eb3f63",
+        "b0c5ef0a-96c4-5be1-b863-23536e62047f"
+      ],
+      "fixture_quantity_key": null,
+      "worker_hours_by_trade": {
+        "OFICIAL 1ª": 0.48,
+        "PEÓN ESPECIAL": 1.44
+      },
+      "machine_hours_by_class": {
+        "VIBRADOR": 0.72
+      },
+      "materials": [
+        {
+          "code": "CH02920",
+          "name": "HORMIGÓN HA-25/P/20/XC2, SUMINISTRADO",
+          "unit": "m3",
+          "per_unit": 1.03,
+          "reference_rate_eur": 97.1,
+          "quantity": 2.472,
+          "cost_eur_from_line": 240.03119999999998
+        },
+        {
+          "code": "WW00400",
+          "name": "PEQUEÑO MATERIAL",
+          "unit": "u",
+          "per_unit": 0.5,
+          "reference_rate_eur": 0.33,
+          "quantity": 1.2,
+          "cost_eur_from_line": 0.396
+        }
+      ],
+      "labor_cost_eur_by_trade": {
+        "OFICIAL 1ª": 11.1216,
+        "PEÓN ESPECIAL": 31.6944
+      },
+      "equipment_cost_eur_by_class": {
+        "VIBRADOR": 1.3104
+      },
+      "worker_capacity_by_trade": {
+        "OFICIAL 1ª": 1,
+        "PEÓN ESPECIAL": 2
+      },
+      "equipment_capacity_by_class": {
+        "VIBRADOR": 1
+      },
+      "concurrent_throughput_per_hour": {},
+      "execution_mode": "simultaneous_fixed_crew",
+      "productive_hours": 0.72,
+      "elapsed_hours": null,
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OFICIAL 1ª": 0.48,
+        "labor:PEÓN ESPECIAL": 0.72,
+        "equipment:VIBRADOR": 0.72
+      },
+      "reserved_worker_hours": {
+        "OFICIAL 1ª": 0.72,
+        "PEÓN ESPECIAL": 1.44
+      },
+      "reserved_machine_hours": {
+        "VIBRADOR": 0.72
+      },
+      "cost_components_eur": {
+        "labor": 42.815999999999995,
+        "equipment": 1.3104,
+        "material": 240.42719999999997
+      },
+      "reference_cost_eur": 284.568,
+      "rounding_residual_eur": 0.014400000000023283,
+      "reference": {
+        "work_item": "SLAB-CONC",
+        "code": "05HHL00003",
+        "unit": "m3",
+        "labor_per_unit": {
+          "OFICIAL 1ª": 0.2,
+          "PEÓN ESPECIAL": 0.6
+        },
+        "labor_rate_eur_per_hour": {
+          "OFICIAL 1ª": 23.17,
+          "PEÓN ESPECIAL": 22.01
+        },
+        "equipment_per_unit": {
+          "VIBRADOR": 0.3
+        },
+        "materials": [
+          {
+            "code": "CH02920",
+            "name": "HORMIGÓN HA-25/P/20/XC2, SUMINISTRADO",
+            "unit": "m3",
+            "per_unit": 1.03,
+            "reference_rate_eur": 97.1
+          },
+          {
+            "code": "WW00400",
+            "name": "PEQUEÑO MATERIAL",
+            "unit": "u",
+            "per_unit": 0.5,
+            "reference_rate_eur": 0.33
+          }
+        ],
+        "component_eur_per_unit": {
+          "labor": 17.84,
+          "equipment": 0.546,
+          "material": 100.178
+        },
+        "published_eur_per_unit": 118.57,
+        "unresolved_equipment": "crane or pump and concrete delivery capacity NOT in BCCA - user must declare available equipment or explicit none; otherwise the activity is blocked",
+        "included_operations": "bottom cleaning, cleaning, curing, reserves/blockouts, service openings, supply, vibration",
+        "excluded_operations": "formwork; reinforcement; stripping; crane/pump/concrete transport beyond \"puesto en obra\" (no machinery other than vibrator in decomposition); waiting/curing time (only labour of curing is bundled)",
+        "bundled_operations": "curing labour and bottom cleaning inside concrete labour - cannot be split into a separate curing activity",
+        "approval_id": "AP-W-SLAB-CONC",
+        "edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+        "region": "Andalucia, ES",
+        "currency": "EUR",
+        "concept_price_date_ddmmyy": "160122",
+        "bc3_sha256": "bee06981c4447c6b07a3434a6a4d934de11a7498687b0bf3462ba2ce36b7817d",
+        "applicability": "Catalogue estimate, not observed productivity; trades only (no crew size); Andalucia prices; direct cost only (no overheads, profit, VAT); concrete class/consistency must match the selected variant"
+      },
+      "crew_id": "HYP-CONC",
+      "explicit_none_equipment": [
+        "CRANE",
+        "CONCRETE_PUMP",
+        "CONCRETE_DELIVERY"
+      ],
+      "productive_workdays_equivalent": 0.09,
+      "duration_basis": "simultaneous resource bottleneck, booked bundle",
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/3wOB$MtWLSz8SJNgW3VJvy",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "6c3c378a-8f19-575f-b4e8-3af46b600c94",
+      "package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "work_item": "FRM-STRIP",
+      "kind": "productive",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR13",
+        "AP-CR14",
+        "AP-DC01",
+        "AP-DC02",
+        "AP-DC04",
+        "AP-DR08",
+        "AP-W-FRM-STRIP"
+      ],
+      "blockers": [],
+      "quantity": 10.4,
+      "unit": "m2",
+      "quantity_ids": [],
+      "fixture_quantity_key": "formwork_m2",
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 0.312,
+        "PEÓN ESPECIAL": 1.56
+      },
+      "machine_hours_by_class": {},
+      "materials": [],
+      "labor_cost_eur_by_trade": {
+        "OF. 1ª ENCOFRADOR": 7.22904,
+        "PEÓN ESPECIAL": 34.33560000000001
+      },
+      "equipment_cost_eur_by_class": {},
+      "worker_capacity_by_trade": {
+        "OF. 1ª ENCOFRADOR": 2,
+        "PEÓN ESPECIAL": 1
+      },
+      "equipment_capacity_by_class": {},
+      "concurrent_throughput_per_hour": {},
+      "execution_mode": "simultaneous_fixed_crew",
+      "productive_hours": 1.56,
+      "elapsed_hours": null,
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.156,
+        "labor:PEÓN ESPECIAL": 1.56
+      },
+      "reserved_worker_hours": {
+        "OF. 1ª ENCOFRADOR": 3.12,
+        "PEÓN ESPECIAL": 1.56
+      },
+      "reserved_machine_hours": {},
+      "cost_components_eur": {
+        "labor": 41.56464,
+        "equipment": 0.0,
+        "material": 0.0
+      },
+      "reference_cost_eur": 41.6,
+      "rounding_residual_eur": 0.03536000000000428,
+      "reference": {
+        "work_item": "FRM-STRIP",
+        "code": "05HED00001",
+        "unit": "m2",
+        "labor_per_unit": {
+          "OF. 1ª ENCOFRADOR": 0.03,
+          "PEÓN ESPECIAL": 0.15
+        },
+        "labor_rate_eur_per_hour": {
+          "OF. 1ª ENCOFRADOR": 23.17,
+          "PEÓN ESPECIAL": 22.01
+        },
+        "equipment_per_unit": {},
+        "materials": [],
+        "component_eur_per_unit": {
+          "labor": 3.9966,
+          "equipment": 0.0,
+          "material": 0.0
+        },
+        "published_eur_per_unit": 4.0,
+        "unresolved_equipment": "none",
+        "included_operations": "cleaning, repair, stripping",
+        "excluded_operations": "formwork erection; re-propping; cleaning beyond \"limpieza y reparacion\"",
+        "bundled_operations": "cleaning and repair inside stripping labour",
+        "approval_id": "AP-W-FRM-STRIP",
+        "edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+        "region": "Andalucia, ES",
+        "currency": "EUR",
+        "concept_price_date_ddmmyy": "051222",
+        "bc3_sha256": "bee06981c4447c6b07a3434a6a4d934de11a7498687b0bf3462ba2ce36b7817d",
+        "applicability": "Catalogue estimate, not observed productivity; trades only (no crew size); Andalucia prices; direct cost only (no overheads, profit, VAT); timber formwork for rendered finish only"
+      },
+      "crew_id": "HYP-FORM",
+      "explicit_none_equipment": [],
+      "productive_workdays_equivalent": 0.195,
+      "duration_basis": "simultaneous resource bottleneck, booked bundle",
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/3wOB$MtWLSz8SJNgW3VJvy",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "0de967fe-4794-5dbb-aab8-8fea253a5927",
+      "package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "work_item": "INSPECTION-HOLD",
+      "kind": "elapsed_hold",
+      "elapsed_hours": 0.5,
+      "productive_hours": null,
+      "worker_hours_by_trade": {},
+      "machine_hours_by_class": {},
+      "materials": [],
+      "criterion": "Hypothetical passed pre-pour formwork and reinforcement checklist after 0.5 elapsed hour.",
+      "reference_cost_eur": null,
+      "cost_treatment": "unpriced_release",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-DR06"
+      ],
+      "blockers": [],
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/3wOB$MtWLSz8SJNgW3VJvy",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "a83bd1d6-07c6-585c-b501-4ebf1183d5d0",
+      "package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "work_item": "CURE",
+      "kind": "elapsed_hold",
+      "elapsed_hours": 24,
+      "productive_hours": null,
+      "worker_hours_by_trade": {},
+      "machine_hours_by_class": {},
+      "materials": [],
+      "criterion": "Hypothetical curing gate at 24 elapsed hours from placement.",
+      "reference_cost_eur": null,
+      "cost_treatment": "included_in_placement",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR13",
+        "AP-CR14",
+        "AP-DC03",
+        "AP-DC04",
+        "AP-DR07",
+        "AP-DR08",
+        "AP-W-CURE"
+      ],
+      "blockers": [],
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/3wOB$MtWLSz8SJNgW3VJvy",
+      "eligible_for_controlled_scheduling_input": true
+    },
+    {
+      "id": "f00f202c-c5fe-5fe5-832b-6e8acdb8b639",
+      "package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "work_item": "STRIKING-RELEASE",
+      "kind": "elapsed_hold",
+      "elapsed_hours": 144,
+      "productive_hours": null,
+      "worker_hours_by_trade": {},
+      "machine_hours_by_class": {},
+      "materials": [],
+      "criterion": "Hypothetical release at 168 elapsed hours from placement and a passing strength check. The test assumes the check passes at that time.",
+      "reference_cost_eur": null,
+      "cost_treatment": "unpriced_release",
+      "eligible_for_real_scheduling": false,
+      "pending_approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR13",
+        "AP-CR14",
+        "AP-DC01",
+        "AP-DC02",
+        "AP-DC04",
+        "AP-DR08",
+        "AP-W-FRM-STRIP"
+      ],
+      "blockers": [],
+      "input_state": "hypothetical_fixture",
+      "assumption_ref": "controlled_fixture_inputs.json#/elements/3wOB$MtWLSz8SJNgW3VJvy",
+      "eligible_for_controlled_scheduling_input": true
+    }
+  ],
+  "dependencies": [
+    {
+      "predecessor_id": "27e7a5c3-5aa1-5665-9f68-1c2168a412ac",
+      "successor_id": "3235aa7e-88d9-53c5-9cf7-49e573d81a5a",
+      "relation": "FS",
+      "rule_id": "DR05",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "3235aa7e-88d9-53c5-9cf7-49e573d81a5a",
+      "successor_id": "c0b8943f-0dbd-54a0-977e-731916bcd42a",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "27e7a5c3-5aa1-5665-9f68-1c2168a412ac",
+      "successor_id": "c0b8943f-0dbd-54a0-977e-731916bcd42a",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "c0b8943f-0dbd-54a0-977e-731916bcd42a",
+      "successor_id": "04527e9d-995e-5e16-9663-9756d828c586",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "04527e9d-995e-5e16-9663-9756d828c586",
+      "successor_id": "fe8beee0-18d0-505c-9cf2-ab234883c2db",
+      "relation": "FS",
+      "rule_id": "DR07",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "fe8beee0-18d0-505c-9cf2-ab234883c2db",
+      "successor_id": "a47f0364-8f49-5947-94e7-e24af60a1b92",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "a47f0364-8f49-5947-94e7-e24af60a1b92",
+      "successor_id": "c318b5bb-2652-5d7b-a706-041aeb3307d5",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a",
+      "successor_id": "0240248f-1548-557b-945e-e417b0b1222d",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a",
+      "successor_id": "9cd34b99-bcb2-5f88-ad80-896053ef5153",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "0240248f-1548-557b-945e-e417b0b1222d",
+      "successor_id": "9cd34b99-bcb2-5f88-ad80-896053ef5153",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "9cd34b99-bcb2-5f88-ad80-896053ef5153",
+      "successor_id": "d908f25a-67e4-565f-a629-c9f52ff352ed",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "d908f25a-67e4-565f-a629-c9f52ff352ed",
+      "successor_id": "7d1f4e79-3847-5408-8fba-12afc11f6bfd",
+      "relation": "FS",
+      "rule_id": "DR07",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "7d1f4e79-3847-5408-8fba-12afc11f6bfd",
+      "successor_id": "2cf0b700-88cb-5d0b-91e5-9fa0a1a5c4b0",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "2cf0b700-88cb-5d0b-91e5-9fa0a1a5c4b0",
+      "successor_id": "a3a9c4bb-8619-5ff0-a41b-8552bc746366",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7",
+      "successor_id": "ef679452-ad4e-5662-803e-a59d6f27c913",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7",
+      "successor_id": "0de967fe-4794-5dbb-aab8-8fea253a5927",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "ef679452-ad4e-5662-803e-a59d6f27c913",
+      "successor_id": "0de967fe-4794-5dbb-aab8-8fea253a5927",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "0de967fe-4794-5dbb-aab8-8fea253a5927",
+      "successor_id": "8a20a577-58c4-58e1-a2c7-86dbb4ee5523",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "8a20a577-58c4-58e1-a2c7-86dbb4ee5523",
+      "successor_id": "a83bd1d6-07c6-585c-b501-4ebf1183d5d0",
+      "relation": "FS",
+      "rule_id": "DR07",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "a83bd1d6-07c6-585c-b501-4ebf1183d5d0",
+      "successor_id": "f00f202c-c5fe-5fe5-832b-6e8acdb8b639",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    },
+    {
+      "predecessor_id": "f00f202c-c5fe-5fe5-832b-6e8acdb8b639",
+      "successor_id": "6c3c378a-8f19-575f-b4e8-3af46b600c94",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "state": "fixture_selected",
+      "lag_hours": 0
+    }
+  ],
+  "graph_issues": [],
+  "conditional_dependencies": [
+    {
+      "predecessor_id": "27e7a5c3-5aa1-5665-9f68-1c2168a412ac",
+      "successor_id": "3235aa7e-88d9-53c5-9cf7-49e573d81a5a",
+      "relation": "FS",
+      "rule_id": "DR05",
+      "state": "conditional",
+      "option": "cage_first",
+      "condition": "Approved column cage and formwork sequence",
+      "lag": null
+    },
+    {
+      "predecessor_id": "27e7a5c3-5aa1-5665-9f68-1c2168a412ac",
+      "successor_id": "3235aa7e-88d9-53c5-9cf7-49e573d81a5a",
+      "relation": "SS",
+      "rule_id": "DR05",
+      "state": "conditional",
+      "option": "overlap",
+      "condition": "Approved column cage and formwork sequence",
+      "lag": null
+    },
+    {
+      "predecessor_id": "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a",
+      "successor_id": "0240248f-1548-557b-945e-e417b0b1222d",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "state": "conditional",
+      "option": "formwork_first",
+      "condition": "Approved soffit-first method",
+      "lag": null
+    },
+    {
+      "predecessor_id": "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7",
+      "successor_id": "ef679452-ad4e-5662-803e-a59d6f27c913",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "state": "conditional",
+      "option": "formwork_first",
+      "condition": "Approved soffit-first method",
+      "lag": null
+    },
+    {
+      "predecessor_id": "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7",
+      "successor_id": "8a20a577-58c4-58e1-a2c7-86dbb4ee5523",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "state": "conditional",
+      "option": null,
+      "condition": "Formwork applies and inspection is complete",
+      "lag": null
+    },
+    {
+      "predecessor_id": "a83bd1d6-07c6-585c-b501-4ebf1183d5d0",
+      "successor_id": "6c3c378a-8f19-575f-b4e8-3af46b600c94",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "state": "conditional",
+      "option": null,
+      "condition": "criterion = engineer input; Spanish Codigo Estructural (cited by BCCA) governs; values NOT extracted here",
+      "lag": null
+    }
+  ],
+  "model_elements": [
+    {
+      "id": "b9088700-27e9-5011-82a6-fcfe7d50da04",
+      "evidence_ids": [
+        "7e3e4cbf-66e9-5063-aaf7-002e17d8991c",
+        "03a04abc-7b3c-5bef-a621-d1cb9f60abf0"
+      ],
+      "model_version_id": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+      "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "ifc_class": "IfcColumn",
+      "source_step_id": 15,
+      "container_id": "b80f4aba-7717-59f4-b234-51b7bdf79425",
+      "classification": null,
+      "name": "Column",
+      "object_type": null,
+      "predefined_type": null
+    },
+    {
+      "id": "38c0e562-d472-5939-a938-fb0891408b61",
+      "evidence_ids": [
+        "c8194e91-242b-5a4d-be66-45481069a442",
+        "03a04abc-7b3c-5bef-a621-d1cb9f60abf0"
+      ],
+      "model_version_id": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+      "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "ifc_class": "IfcBeam",
+      "source_step_id": 36,
+      "container_id": "b80f4aba-7717-59f4-b234-51b7bdf79425",
+      "classification": null,
+      "name": "Beam",
+      "object_type": null,
+      "predefined_type": null
+    },
+    {
+      "id": "eb9257d4-8531-5b83-81be-350df71a5314",
+      "evidence_ids": [
+        "1a3f64e1-f1dc-5621-8b86-ebc3d4efa9dd",
+        "03a04abc-7b3c-5bef-a621-d1cb9f60abf0"
+      ],
+      "model_version_id": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+      "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "ifc_class": "IfcSlab",
+      "source_step_id": 55,
+      "container_id": "b80f4aba-7717-59f4-b234-51b7bdf79425",
+      "classification": null,
+      "name": "Slab",
+      "object_type": null,
+      "predefined_type": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "c6dfa0d0-9ef5-50de-92f3-74af3215690c",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [],
+      "sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+      "formula": null
+    },
+    {
+      "id": "f61770e2-9d31-5c99-acc7-08e1852ffd23",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-1",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "7e3e4cbf-66e9-5063-aaf7-002e17d8991c",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-15",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "03a04abc-7b3c-5bef-a621-d1cb9f60abf0",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-12",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "c8194e91-242b-5a4d-be66-45481069a442",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-36",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "1a3f64e1-f1dc-5621-8b86-ebc3d4efa9dd",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-55",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "b6e9d6ef-f2b9-52a0-a95a-747d66275fe2",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-33",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "7d03d229-a467-5c0f-b64c-25a2c6fd580f",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-32",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "176d6d42-3191-5806-9084-a0ca1ae2dd45",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-34",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "4e6de5db-5734-503a-b6e8-1e8217022a79",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-5",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "23897d3f-e102-5190-ad10-e647d1e7e980",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-4",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "7943b634-c3e0-5556-a04e-caaa8dc6d28f",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-35",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "92bfadbe-416a-538a-9002-9b8449552951",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-3",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "8f7d8aa0-3c26-5415-8b4e-0813aeb3cf2a",
+      "kind": "derivation",
+      "locator": "pmi:a315f36b-5e0c-586e-bed3-49f388f2927f",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "b6e9d6ef-f2b9-52a0-a95a-747d66275fe2",
+        "7d03d229-a467-5c0f-b64c-25a2c6fd580f",
+        "7943b634-c3e0-5556-a04e-caaa8dc6d28f",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "92bfadbe-416a-538a-9002-9b8449552951"
+      ],
+      "sha256": null,
+      "formula": "First equivalent authored candidate × 1; basis=gross_surface_area; measurement method=BaseQuantities"
+    },
+    {
+      "id": "95c748a0-05c8-5f06-97c4-f0bf741d2a6e",
+      "kind": "derivation",
+      "locator": "pmi:c2db47ae-15d2-5f60-8290-7bedc4ca5623",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "b6e9d6ef-f2b9-52a0-a95a-747d66275fe2",
+        "7d03d229-a467-5c0f-b64c-25a2c6fd580f",
+        "176d6d42-3191-5806-9084-a0ca1ae2dd45",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "23897d3f-e102-5190-ad10-e647d1e7e980"
+      ],
+      "sha256": null,
+      "formula": "First equivalent authored candidate × 1; basis=net_volume; measurement method=BaseQuantities"
+    },
+    {
+      "id": "5b9bfba0-2a2e-59ea-8da8-37a1dffd18cc",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-27",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "3df29ed0-3f6d-5313-9b09-81e9064a06fe",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-26",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "2ed7fa48-afcc-5f06-aa4a-c2793857ebd1",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-2",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "db2ddada-71c9-5afc-8eee-5a062bb87056",
+      "kind": "derivation",
+      "locator": "pmi:0c07fccc-9bdb-53ad-96bf-9ad3e5410dfe",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "7e3e4cbf-66e9-5063-aaf7-002e17d8991c",
+        "5b9bfba0-2a2e-59ea-8da8-37a1dffd18cc",
+        "3df29ed0-3f6d-5313-9b09-81e9064a06fe",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "2ed7fa48-afcc-5f06-aa4a-c2793857ebd1"
+      ],
+      "sha256": null,
+      "formula": "Oriented triangle volume of the convex IFC Body in SI metres"
+    },
+    {
+      "id": "f6cbbef2-83cd-5960-91eb-39b9f8790dd1",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-17",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "6ca4bfa9-a0ca-5d7b-8b09-f7b67c276174",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-14",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "01c1b235-4cc3-5427-9dce-74d308251205",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-52",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "ea6fd952-bb9c-58de-9078-77b6b75d8dba",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-51",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "3b4c4c66-07f0-549c-99da-04e9a125e974",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-53",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "f101034c-e197-5b47-899e-a3cd47ec1c12",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-54",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "e8112feb-75c4-5bc5-9017-b8db7a930b00",
+      "kind": "derivation",
+      "locator": "pmi:03e65297-2b2c-5802-80ed-16f642ac43a5",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "01c1b235-4cc3-5427-9dce-74d308251205",
+        "ea6fd952-bb9c-58de-9078-77b6b75d8dba",
+        "f101034c-e197-5b47-899e-a3cd47ec1c12",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "92bfadbe-416a-538a-9002-9b8449552951"
+      ],
+      "sha256": null,
+      "formula": "First equivalent authored candidate × 1; basis=gross_surface_area; measurement method=BaseQuantities"
+    },
+    {
+      "id": "99987bb6-1b07-5424-ab5d-46f30ae41ab5",
+      "kind": "derivation",
+      "locator": "pmi:5f6eaa80-527c-579f-b165-b8ef9170e17c",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "01c1b235-4cc3-5427-9dce-74d308251205",
+        "ea6fd952-bb9c-58de-9078-77b6b75d8dba",
+        "3b4c4c66-07f0-549c-99da-04e9a125e974",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "23897d3f-e102-5190-ad10-e647d1e7e980"
+      ],
+      "sha256": null,
+      "formula": "First equivalent authored candidate × 1; basis=net_volume; measurement method=BaseQuantities"
+    },
+    {
+      "id": "4341fdcc-cd6e-5717-b7af-2ac5991b8f4c",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-46",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "bee6a340-0aa8-5277-abeb-ed0a5fce6026",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-45",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "308c429b-fb2d-5178-96e0-266b6e9d16a7",
+      "kind": "derivation",
+      "locator": "pmi:8778a92d-99bc-54e7-8133-3f382511ee93",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c8194e91-242b-5a4d-be66-45481069a442",
+        "4341fdcc-cd6e-5717-b7af-2ac5991b8f4c",
+        "bee6a340-0aa8-5277-abeb-ed0a5fce6026",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "2ed7fa48-afcc-5f06-aa4a-c2793857ebd1"
+      ],
+      "sha256": null,
+      "formula": "Oriented triangle volume of the convex IFC Body in SI metres"
+    },
+    {
+      "id": "09582ca4-0511-54dd-b5c6-bbf56f69d5d5",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-71",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "2193f7a0-212b-5f2b-85a9-76480063a79a",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-70",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "d13838c7-084e-5abd-8a2c-d6e31a91fe27",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-72",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "633d30f3-dcdb-53a0-a671-61af0bd66d57",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-73",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "2affef51-d350-5221-a6c5-1566b96ee703",
+      "kind": "derivation",
+      "locator": "pmi:8228ac9a-1810-53dc-95a1-397c32aae9f3",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "09582ca4-0511-54dd-b5c6-bbf56f69d5d5",
+        "2193f7a0-212b-5f2b-85a9-76480063a79a",
+        "633d30f3-dcdb-53a0-a671-61af0bd66d57",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "92bfadbe-416a-538a-9002-9b8449552951"
+      ],
+      "sha256": null,
+      "formula": "First equivalent authored candidate × 1; basis=gross_surface_area; measurement method=BaseQuantities"
+    },
+    {
+      "id": "fd90d62c-1d76-5c29-905f-54304a8c37a8",
+      "kind": "derivation",
+      "locator": "pmi:17dbbe2e-ae26-54d6-9f68-c67b70eb3f63",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "09582ca4-0511-54dd-b5c6-bbf56f69d5d5",
+        "2193f7a0-212b-5f2b-85a9-76480063a79a",
+        "d13838c7-084e-5abd-8a2c-d6e31a91fe27",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "23897d3f-e102-5190-ad10-e647d1e7e980"
+      ],
+      "sha256": null,
+      "formula": "First equivalent authored candidate × 1; basis=net_volume; measurement method=BaseQuantities"
+    },
+    {
+      "id": "fdd1f69a-37b3-5a7a-8296-b5b66d0c90f1",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-65",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "1b89862a-6a70-5f70-a0dd-29f0c21c0248",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-64",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "b1027942-958d-54f6-997e-c9032e46868e",
+      "kind": "derivation",
+      "locator": "pmi:b0c5ef0a-96c4-5be1-b863-23536e62047f",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "1a3f64e1-f1dc-5621-8b86-ebc3d4efa9dd",
+        "fdd1f69a-37b3-5a7a-8296-b5b66d0c90f1",
+        "1b89862a-6a70-5f70-a0dd-29f0c21c0248",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "2ed7fa48-afcc-5f06-aa4a-c2793857ebd1"
+      ],
+      "sha256": null,
+      "formula": "Oriented triangle volume of the convex IFC Body in SI metres"
+    }
+  ],
+  "pending_approvals": [
+    {
+      "approval_id": "AP-W-EXC-BULK",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "EXC-BULK",
+      "description": "Bulk excavation (vaciado), mechanical",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-EXC-TRENCH",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "EXC-TRENCH",
+      "description": "Trench excavation for strip foundations, mechanical",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-EXC-PIT",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "EXC-PIT",
+      "description": "Pit excavation for pad footings, mechanical",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-BLD",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "BLD",
+      "description": "Blinding concrete (hormigon de limpieza) 10 cm min.",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-FND-REBAR",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "FND-REBAR",
+      "description": "Foundation reinforcement B500S",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-FND-FORM",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "FND-FORM",
+      "description": "Foundation formwork, timber (includes stripping)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-FND-CONC-PAD",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "FND-CONC-PAD",
+      "description": "Pad footing concrete HA-25 (includes vibration and curing)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-FND-CONC-STRIP",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "FND-CONC-STRIP",
+      "description": "Strip foundation / grade beam concrete HA-25 (includes vibration and curing)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-COL-REBAR",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "COL-REBAR",
+      "description": "Column reinforcement B500S",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-COL-FORM",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "COL-FORM",
+      "description": "Column formwork, timber (stripping separate)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-COL-CONC",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "COL-CONC",
+      "description": "Column concrete HA-25 (includes vibration and curing)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-BEAM-REBAR",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "BEAM-REBAR",
+      "description": "Beam reinforcement B500S",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-BEAM-FORM",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "BEAM-FORM",
+      "description": "Beam formwork, timber (stripping separate)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-BEAM-CONC",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "BEAM-CONC",
+      "description": "Beam concrete HA-25 (includes vibration and curing)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-SLAB-REBAR",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "SLAB-REBAR",
+      "description": "Slab reinforcement bars / mesh",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-SLAB-FORM",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "SLAB-FORM",
+      "description": "Slab formwork, timber (stripping separate)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-SLAB-CONC",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "SLAB-CONC",
+      "description": "Slab concrete HA-25 (includes vibration, curing, service openings)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-SLAB-COMPOSITE",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "SLAB-COMPOSITE",
+      "description": "Composite one-way floor system (joists + blocks + topping; all-in m2 item)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-SLAB-PRECAST",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "SLAB-PRECAST",
+      "description": "Precast floor units (hollow-core \"kanaalplaat\", filigree \"breedplaat\") + topping",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-WALL-FORM",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "WALL-FORM",
+      "description": "RC wall formwork, timber (stripping separate)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-WALL-CONC",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "WALL-CONC",
+      "description": "RC wall concrete HA-25",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-CURE",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "CURE",
+      "description": "Concrete curing and strength development",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-FRM-STRIP",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "FRM-STRIP",
+      "description": "Formwork removal (desencofrado) for 05HEM* formwork",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-BACKFILL",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "BACKFILL",
+      "description": "Backfill with excavated soil, mechanical, compacted",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-MAS-BRICK",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "MAS-BRICK",
+      "description": "Hollow brick masonry (1 pie)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-MAS-BLOCK",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "MAS-BLOCK",
+      "description": "Hollow concrete block masonry 15 cm",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-MAS-SANDLIME",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "MAS-SANDLIME",
+      "description": "Sand-lime (silico-calcareous) brick masonry, face work",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-MAS-AAC",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "MAS-AAC",
+      "description": "Aerated-concrete block masonry (cellenbeton / 加气混凝土砌块)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-W-STEEL-COL",
+      "item_type": "work item applicability + BCCA variant + measurement rule",
+      "item": "STEEL-COL",
+      "description": "Structural steel columns (out of RC scope)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-CR01",
+      "item_type": "classification rule",
+      "item": "CR01",
+      "description": "Material category is the first discriminator; IFC class alone never selects a work item",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-CR02",
+      "item_type": "classification rule",
+      "item": "CR02",
+      "description": "Aerated-concrete blocks are masonry (MAS-AAC), never cast concrete",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-CR03",
+      "item_type": "classification rule",
+      "item": "CR03",
+      "description": "Concrete block / CMU is masonry",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-CR04",
+      "item_type": "classification rule",
+      "item": "CR04",
+      "description": "Precast concrete routes to precast installation, not cast-in-place items",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-CR05",
+      "item_type": "classification rule",
+      "item": "CR05",
+      "description": "Explicit cast-in-place concrete routes to RC rebar/formwork/concrete items",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-CR06",
+      "item_type": "classification rule",
+      "item": "CR06",
+      "description": "Concrete with unstated method requires user confirmation before routing",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-CR07",
+      "item_type": "classification rule",
+      "item": "CR07",
+      "description": "Steel elements are excluded from RC work packages",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-CR08",
+      "item_type": "classification rule",
+      "item": "CR08",
+      "description": "Timber elements are excluded from RC work packages",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-CR09",
+      "item_type": "classification rule",
+      "item": "CR09",
+      "description": "Masonry (brick, sand-lime) routes to masonry items by material",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-CR10",
+      "item_type": "classification rule",
+      "item": "CR10",
+      "description": "Elements without material are blocked from work-package generation",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-CR11",
+      "item_type": "classification rule",
+      "item": "CR11",
+      "description": "Foundation detection is NOT class-based: IfcBeam/IfcSlab/IfcWall with foundation name or foundation storey are foundation CANDIDATES",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-CR12",
+      "item_type": "classification rule",
+      "item": "CR12",
+      "description": "IfcFooting is a foundation but its type (pad/strip/pile cap) needs PredefinedType or geometry confirmation",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-CR13",
+      "item_type": "classification rule",
+      "item": "CR13",
+      "description": "Slab on grade vs suspended slab decides whether slab formwork applies",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-CR14",
+      "item_type": "classification rule",
+      "item": "CR14",
+      "description": "Spatial adjacency (IfcRelConnects*, Mendeley spatial relations) never creates a classification or precedence",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-CR15",
+      "item_type": "classification rule",
+      "item": "CR15",
+      "description": "Exporter-specific: SCH Synchro elements are classified through their design-model element (name suffix \"_(#STEP id)\")",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR01",
+      "item_type": "dependency rule",
+      "item": "DR01",
+      "description": "Excavation of the same zone before blinding/foundation work",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR02",
+      "item_type": "dependency rule",
+      "item": "DR02",
+      "description": "Blinding before foundation reinforcement/formwork where blinding is specified",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR03a",
+      "item_type": "dependency rule",
+      "item": "DR03a",
+      "description": "Method A (formwork first): shutter, then place cage inside",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR03b",
+      "item_type": "dependency rule",
+      "item": "DR03b",
+      "description": "Method B (reinforcement first): prefabricated cages, then formwork",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR04",
+      "item_type": "dependency rule",
+      "item": "DR04",
+      "description": "Reinforcement and formwork complete (and inspected) before foundation concrete",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR05",
+      "item_type": "dependency rule",
+      "item": "DR05",
+      "description": "Column cage before column formwork (typical)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR06",
+      "item_type": "dependency rule",
+      "item": "DR06",
+      "description": "Reinforcement and formwork before placement where the method requires both",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR07",
+      "item_type": "dependency rule",
+      "item": "DR07",
+      "description": "Placement before curing/strength development",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR08",
+      "item_type": "dependency rule",
+      "item": "DR08",
+      "description": "Formwork removal only after the approved striking criterion (strength or time) is met",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR09",
+      "item_type": "dependency rule",
+      "item": "DR09",
+      "description": "Supporting columns/walls cast and adequate before loading formwork of supported members",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR10",
+      "item_type": "dependency rule",
+      "item": "DR10",
+      "description": "Vertical progression storey by storey for supported structure",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR11",
+      "item_type": "dependency rule",
+      "item": "DR11",
+      "description": "Zone progression by crew availability, not by precedence",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR12",
+      "item_type": "dependency rule",
+      "item": "DR12",
+      "description": "Backfill after foundation completion and inspection",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR13",
+      "item_type": "dependency rule",
+      "item": "DR13",
+      "description": "Masonry after its supporting slab/foundation",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR14",
+      "item_type": "dependency rule",
+      "item": "DR14",
+      "description": "Precast floor units before topping concrete",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DR15",
+      "item_type": "dependency rule",
+      "item": "DR15",
+      "description": "Spatial adjacency, contact or containment alone NEVER creates a dependency",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DC01",
+      "item_type": "double-counting control",
+      "item": "DC01",
+      "description": "Never add 05HED00001 to 03ERM*/03ERT* items",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DC02",
+      "item_type": "double-counting control",
+      "item": "DC02",
+      "description": "Add FRM-STRIP exactly once per 05HEM* area",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DC03",
+      "item_type": "double-counting control",
+      "item": "DC03",
+      "description": "Curing is a schedule constraint only; no cost/labour line",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DC04",
+      "item_type": "double-counting control",
+      "item": "DC04",
+      "description": "Mutually exclusive per slab",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DC05",
+      "item_type": "double-counting control",
+      "item": "DC05",
+      "description": "Allocate each kg of reinforcement to exactly one element",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DC06",
+      "item_type": "double-counting control",
+      "item": "DC06",
+      "description": "Approved measurement rule (deduct at T-beams or not); check IFC geometry overlap",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DC07",
+      "item_type": "double-counting control",
+      "item": "DC07",
+      "description": "Approved rule (clear height vs through)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DC08",
+      "item_type": "double-counting control",
+      "item": "DC08",
+      "description": "Use concrete layer only (e.g. SCH prefab floor fraction 0.6006)",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DC09",
+      "item_type": "double-counting control",
+      "item": "DC09",
+      "description": "Use one model per project version; link via STEP-id suffix",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DC10",
+      "item_type": "double-counting control",
+      "item": "DC10",
+      "description": "Never aggregate snapshots",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DC11",
+      "item_type": "double-counting control",
+      "item": "DC11",
+      "description": "Foundation classification (CR11) excludes element from BEAM-* items",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DC12",
+      "item_type": "double-counting control",
+      "item": "DC12",
+      "description": "Convert only with approved factors",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DC13",
+      "item_type": "double-counting control",
+      "item": "DC13",
+      "description": "No separate cleaning item",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-DC14",
+      "item_type": "double-counting control",
+      "item": "DC14",
+      "description": "Use NetSideArea or deduct openings",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    },
+    {
+      "approval_id": "AP-TOL",
+      "item_type": "measurement tolerance",
+      "item": "manual_quantity_validation.xlsx",
+      "description": "Relative tolerance for independent quantity checks",
+      "required_approver": "Engineering owner (structural/construction)",
+      "status": "PENDING",
+      "decision": "",
+      "approver": "",
+      "date": "",
+      "conditions": ""
+    }
+  ],
+  "groups": [
+    {
+      "id": "eaefc634-064d-54f5-a564-f2d785b01aba",
+      "storey": "Frame level",
+      "zone": "Controlled test bay",
+      "classification": "cast_in_place_beam",
+      "method": "formwork_first",
+      "batch": "HYP-BEAM-POUR",
+      "package_ids": [
+        "8eca47aa-bad4-5bee-bc28-69f81edd29f2"
+      ],
+      "global_ids": [
+        "1jDfy2_jTRueAw6f5fc3Ev"
+      ]
+    },
+    {
+      "id": "035702ac-8a92-50bc-a6a7-fbe8d567afdc",
+      "storey": "Frame level",
+      "zone": "Controlled test bay",
+      "classification": "cast_in_place_col",
+      "method": "cage_first",
+      "batch": "HYP-COL-POUR",
+      "package_ids": [
+        "f1f55844-5a59-5182-bd47-05697444fec0"
+      ],
+      "global_ids": [
+        "24tlOXIsvMQfyRLiqh6fZt"
+      ]
+    },
+    {
+      "id": "b513a0b7-c83c-5457-88ba-8db15f92435b",
+      "storey": "Frame level",
+      "zone": "Controlled test bay",
+      "classification": "cast_in_place_slab",
+      "method": "formwork_first",
+      "batch": "HYP-SLAB-POUR",
+      "package_ids": [
+        "8cba32d6-f71e-5285-9b0a-0985bf9fa432"
+      ],
+      "global_ids": [
+        "3wOB$MtWLSz8SJNgW3VJvy"
+      ]
+    }
+  ],
+  "cost": {
+    "currency": "EUR",
+    "covered_direct_reference_eur": 1172.5136,
+    "total_direct_reference_eur": 1172.5136,
+    "components_eur": {
+      "labor": 506.232944,
+      "equipment": 1.92192,
+      "material": 663.167296
+    },
+    "rounding_residual_eur": 1.191440000000071,
+    "boundary": "BCCA Dec-2023 V02 Andalusia direct catalogue costs, excluding tax, overhead, profit and indirects."
+  }
+}

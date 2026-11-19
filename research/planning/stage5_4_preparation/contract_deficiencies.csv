@@ -1,0 +1,12 @@
+id,topic,finding,recommendation,owner
+D1,Fixture identity,"Agent 1 Stage 5.3A fixture (1 col/1 beam/1 slab, EUR 1172.51) differs from the review-package fixture (4 col/4 beam/1 slab, EUR 3,966.32)",Comparisons must name the fixture and its SHA-256; reference_calculation.json provides both,Agent 1 / user
+D2,Calendar timezone,5.3A calendar timezone Europe/Paris for an Andalusian fixture,"Use Europe/Madrid (same offset, different holiday rules)",Agent 1
+D3,Cross-package support dependencies,"5.3A dependencies.csv has 21 edges, none between column, beam and slab packages (DR09)",Add explicit support edges or block scheduling,Agent 1 + engineer (AP-DR09)
+D4,Inspection semantics,"Pre-pour inspection encoded as 0.5 h elapsed_hold (can fall outside working hours, no inspector resource)",Model as working-time activity with inspector resource or approved milestone,Agent 1 / Agent 2 contract
+D5,Striking reference point,Striking modelled as curing hold + extra hold (24 + 144 h) instead of lag from pour end,Store striking minimum as lag from pour finish (lag_reference) so curing changes do not shift it,Agent 1
+D6,Strength condition state,"Fixture ""assumes the check passes""; output has no conditional/approval-event field per hold",Add release_rule_id + condition status (conditional/approved) to holds,Agent 1 / Agent 2 contract
+D7,Dependency lag fields,"dependencies.csv columns ['predecessor_id', 'successor_id', 'relation', 'rule_id', 'state', 'lag_hours']: lag_hours, no lag_basis",Use canonical ActivityDependency.lag_minutes + lag_basis,Agent 1
+D8,Calendar exceptions,5.3A calendar has no date_exceptions field,Add holidays/exceptions to the calendar contract,Agent 1 / user input
+D9,Shift fit,No check that productive minutes fit a working window (review-package fixture FRM-STRIP 8.11 h > 8 h shift),Preflight NO_FIT diagnostic or approved split per activity,Agent 1 (5.4)
+D10,Trade capacity vs crew modes,Crews are fixed modes; PEON ESPECIAL appears in HYP-FORM and HYP-CONC; no available_workers_by_trade pool,"Add trade-level capacity (Agent 2 user_input ""Available workers"")",user input contract
+D11,Concrete supply window,CONCRETE_DELIVERY=0 means no delivery equipment; no field for delivery time windows or rate,Add supply window/rate to the equipment or procurement contract,Agent 2 contract

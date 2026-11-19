@@ -1,0 +1,67 @@
+{
+  "version": "5.4A",
+  "scope": "hypothetical_fixture_only",
+  "stage5_3_contract": "5.3A",
+  "axis": "UTC minutes, timestamps emitted using the project IANA zone",
+  "default_tick_minutes": 15,
+  "rounding": {
+    "duration": "up",
+    "minimum_lag": "up",
+    "availability": "inward",
+    "deadline": "down"
+  },
+  "calendar": {
+    "working_windows": "local ISO weekday and HH:MM start/end",
+    "date_exceptions": "local ISO dates closed all day",
+    "date_overrides": "local ISO date to replacement windows",
+    "activity_window": "intersection with project calendar"
+  },
+  "activities": {
+    "identity": [
+      "id",
+      "reference_id",
+      "element_id",
+      "global_id",
+      "package_id"
+    ],
+    "kinds": [
+      "productive",
+      "inspection",
+      "elapsed_hold",
+      "strength_release",
+      "milestone"
+    ],
+    "interruption": [
+      "non_interruptible",
+      "split_allowed"
+    ],
+    "schedule_bounds": [
+      "earliest_start",
+      "earliest_finish",
+      "latest_start",
+      "latest_finish",
+      "total_float_minutes",
+      "free_float_minutes"
+    ],
+    "resources": "Integer occupancy per configured resource during working segments"
+  },
+  "dependency": {
+    "supported_relation": "FS",
+    "lag_minutes": "nonnegative",
+    "lag_basis": [
+      "elapsed",
+      "working"
+    ],
+    "working_lag_calendar": "project calendar",
+    "supports_conditional_source_edges": true
+  },
+  "strength_release": {
+    "anchor": "pour finish",
+    "gate": "both elapsed minimum and explicit passing event; missing event projects a conditional schedule"
+  },
+  "release": {
+    "real_project_eligible": false,
+    "engineering_approvals": "all 75 remain pending",
+    "shared_resources": "diagnostic only"
+  }
+}

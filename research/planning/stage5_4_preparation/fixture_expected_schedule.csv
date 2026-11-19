@@ -1,0 +1,22 @@
+id,kind,work_item,global_id,minutes,productive_hours_unrounded,start_local,finish_local,predecessors,resources,note,condition
+C-REBAR,productive,COL-REBAR,24tlOXIsvMQfyRLiqh6fZt,30,0.32,2027-01-04 08:00,2027-01-04 08:30,,"{""OF. 1ª FERRALLISTA"": 2}",,
+C-FORM,productive,COL-FORM,24tlOXIsvMQfyRLiqh6fZt,45,0.6,2027-01-04 08:30,2027-01-04 09:15,"C-REBAR(FS,lag 0 min)","{""OF. 1ª ENCOFRADOR"": 2, ""PEÓN ESPECIAL"": 1}",,
+C-INSP,productive,INSPECTION,,30,,2027-01-04 09:15,2027-01-04 09:45,"C-FORM(FS,lag 0 min); C-REBAR(FS,lag 0 min)","{""INSPECTOR"": 1}",HYPOTHETICAL pre-pour inspection: 0.5 h of inspector WORKING time (Agent 1 encodes it as a 0.5 h elapsed hold - see deficiency D4),
+C-POUR,productive,COL-CONC,24tlOXIsvMQfyRLiqh6fZt,15,0.144,2027-01-04 09:45,2027-01-04 10:00,"C-INSP(FS,lag 0 min)","{""PEÓN ESPECIAL"": 2, ""OFICIAL 1ª"": 1, ""VIBRADOR"": 1}",,
+C-CURE,elapsed_hold,,,1440,,2027-01-04 10:00,2027-01-05 10:00,"C-POUR(FS,lag 0 min)",{},curing gate (elapsed),
+C-STRIKE,elapsed_hold,,,1440,,2027-01-04 10:00,2027-01-05 10:00,"C-POUR(FS,lag 0 min)",{},striking release measured from pour end (elapsed),strength check PASS assumed (HYPOTHETICAL); real: approval event required
+C-STRIP,productive,FRM-STRIP,24tlOXIsvMQfyRLiqh6fZt,45,0.72,2027-01-05 10:00,2027-01-05 10:45,"C-STRIKE(FS,lag 0 min); C-CURE(FS,lag 0 min)","{""OF. 1ª ENCOFRADOR"": 2, ""PEÓN ESPECIAL"": 1}",,
+B-FORM,productive,BEAM-FORM,1jDfy2_jTRueAw6f5fc3Ev,60,0.952,2027-01-05 10:45,2027-01-05 11:45,"C-CURE(FS,lag 0 min); C-STRIP(FS,lag 0 min)","{""OF. 1ª ENCOFRADOR"": 2, ""PEÓN ESPECIAL"": 1}","HYPOTHETICAL DR09: beam formwork bears on the column -> after column curing gate; after column stripping (single formwork crew, explicit order)",
+B-REBAR,productive,BEAM-REBAR,1jDfy2_jTRueAw6f5fc3Ev,45,0.58,2027-01-05 11:45,2027-01-05 12:30,"B-FORM(FS,lag 0 min)","{""OF. 1ª FERRALLISTA"": 2}",,
+B-INSP,productive,INSPECTION,,30,,2027-01-05 12:30,2027-01-05 13:00,"B-REBAR(FS,lag 0 min)","{""INSPECTOR"": 1}",HYPOTHETICAL pre-pour inspection: 0.5 h of inspector WORKING time (Agent 1 encodes it as a 0.5 h elapsed hold - see deficiency D4),
+B-POUR,productive,BEAM-CONC,1jDfy2_jTRueAw6f5fc3Ev,15,0.24,2027-01-05 13:00,2027-01-05 13:15,"B-INSP(FS,lag 0 min)","{""PEÓN ESPECIAL"": 2, ""OFICIAL 1ª"": 1, ""VIBRADOR"": 1}",,
+B-CURE,elapsed_hold,,,1440,,2027-01-05 13:15,2027-01-06 13:15,"B-POUR(FS,lag 0 min)",{},curing gate (elapsed),
+B-STRIKE,elapsed_hold,,,10080,,2027-01-05 13:15,2027-01-12 13:15,"B-POUR(FS,lag 0 min)",{},striking release from pour end (elapsed),strength check PASS assumed (HYPOTHETICAL)
+S-FORM,productive,SLAB-FORM,3wOB$MtWLSz8SJNgW3VJvy,180,2.86,2027-01-07 08:00,2027-01-07 11:00,"B-CURE(FS,lag 0 min)","{""OF. 1ª ENCOFRADOR"": 2, ""PEÓN ESPECIAL"": 1}",HYPOTHETICAL DR09: slab soffit formwork after beam curing gate,
+S-REBAR,productive,SLAB-REBAR,3wOB$MtWLSz8SJNgW3VJvy,60,0.86,2027-01-07 11:00,2027-01-07 12:00,"S-FORM(FS,lag 0 min)","{""OF. 1ª FERRALLISTA"": 2}",,
+S-INSP,productive,INSPECTION,,30,,2027-01-07 12:00,2027-01-07 12:30,"S-REBAR(FS,lag 0 min)","{""INSPECTOR"": 1}",HYPOTHETICAL pre-pour inspection: 0.5 h of inspector WORKING time (Agent 1 encodes it as a 0.5 h elapsed hold - see deficiency D4),
+S-POUR,productive,SLAB-CONC,3wOB$MtWLSz8SJNgW3VJvy,45,0.72,2027-01-07 12:30,2027-01-07 13:15,"S-INSP(FS,lag 0 min)","{""PEÓN ESPECIAL"": 2, ""OFICIAL 1ª"": 1, ""VIBRADOR"": 1}",,
+S-CURE,elapsed_hold,,,1440,,2027-01-07 13:15,2027-01-08 13:15,"S-POUR(FS,lag 0 min)",{},curing gate (elapsed),
+S-STRIKE,elapsed_hold,,,10080,,2027-01-07 13:15,2027-01-14 13:15,"S-POUR(FS,lag 0 min)",{},striking release from pour end (elapsed),strength check PASS assumed (HYPOTHETICAL)
+S-STRIP,productive,FRM-STRIP,3wOB$MtWLSz8SJNgW3VJvy,105,1.56,2027-01-14 13:15,2027-01-14 15:00,"S-STRIKE(FS,lag 0 min); S-CURE(FS,lag 0 min)","{""OF. 1ª ENCOFRADOR"": 2, ""PEÓN ESPECIAL"": 1}",,
+B-STRIP,productive,FRM-STRIP,1jDfy2_jTRueAw6f5fc3Ev,60,0.816,2027-01-14 15:00,2027-01-14 16:00,"B-STRIKE(FS,lag 0 min); S-STRIP(FS,lag 0 min)","{""OF. 1ª ENCOFRADOR"": 2, ""PEÓN ESPECIAL"": 1}",HYPOTHETICAL: beam soffit props retained until the supported slab is stripped,

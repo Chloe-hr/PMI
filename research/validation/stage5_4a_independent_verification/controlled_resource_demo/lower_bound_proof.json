@@ -1,0 +1,38 @@
+{
+  "method": "Relaxation that drops working-time capacities but keeps precedence, calendars and all reservation constraints exactly. Reservation constraints are encoded as disjunctions: COL_FORM_SET (cap 2, 4 unit intervals) holds iff the intervals split into two chains; BEAM_FORM_SET (cap 3) and BEAM_PROP (cap 9, demands 3+3+2+2) hold iff not all four beam intervals share a point, which for intervals means some ordered pair is disjoint; SLAB_PROP (cap 10, 6+6) holds iff the slab intervals are disjoint; SLAB_PANEL_SET (cap 2) never binds. For each choice the earliest-start CPM is the exact relaxed optimum; it is strengthened by preemptive single-resource bounds for activities that use the whole formwork crew, the whole reinforcement crew or the single inspector. The lower bound is the minimum over all choices.",
+  "best": {
+    "value_minutes": 40445,
+    "completion_local": "2027-03-01T10:05+01:00",
+    "components_minutes": {
+      "precedence + calendars + reservation choice (CPM)": 36470,
+      "formwork crew (HYP-FORM uses both encofradores)": 40445,
+      "reinforcement crew (HYP-REBAR uses both ferrallistas)": 26095,
+      "inspector (capacity 1)": 26125
+    },
+    "reservation_edges": [
+      [
+        "B3-STRIP",
+        "B4-FORM"
+      ],
+      [
+        "C1-STRIP",
+        "C4-FORM"
+      ],
+      [
+        "C3-STRIP",
+        "C2-FORM"
+      ],
+      [
+        "S-W-STRIP",
+        "S-E-FORM"
+      ]
+    ]
+  },
+  "choices_evaluated": 1440,
+  "choices_cyclic_or_infeasible": 1320,
+  "column_chain_structures": 60,
+  "beam_ordered_pairs": 12,
+  "slab_orders": 2,
+  "upper_bound_minutes": 40445,
+  "proven_optimal": true
+}

@@ -1,0 +1,17 @@
+﻿reservation_id,resource_id,quantity,element_ids,start_event,release,return_lead_minutes,reshoring,occupancy_basis
+R-COLSET-C1,COL_FORM_SET,1,"[""HYP-C1""]",C1-FORM.start,C1-STRIP.finish,0,not_permitted,continuous_elapsed
+R-COLSET-C2,COL_FORM_SET,1,"[""HYP-C2""]",C2-FORM.start,C2-STRIP.finish,0,not_permitted,continuous_elapsed
+R-COLSET-C3,COL_FORM_SET,1,"[""HYP-C3""]",C3-FORM.start,C3-STRIP.finish,0,not_permitted,continuous_elapsed
+R-COLSET-C4,COL_FORM_SET,1,"[""HYP-C4""]",C4-FORM.start,C4-STRIP.finish,0,not_permitted,continuous_elapsed
+R-BEAMSET-B1,BEAM_FORM_SET,1,"[""HYP-B1""]",B1-FORM.start,B1-STRIP.finish,0,not_permitted,continuous_elapsed
+R-BEAMPROP-B1,BEAM_PROP,3,"[""HYP-B1""]",B1-FORM.start,B1-STRIP.finish,0,not_permitted,continuous_elapsed
+R-BEAMSET-B2,BEAM_FORM_SET,1,"[""HYP-B2""]",B2-FORM.start,B2-STRIP.finish,0,not_permitted,continuous_elapsed
+R-BEAMPROP-B2,BEAM_PROP,3,"[""HYP-B2""]",B2-FORM.start,B2-STRIP.finish,0,not_permitted,continuous_elapsed
+R-BEAMSET-B3,BEAM_FORM_SET,1,"[""HYP-B3""]",B3-FORM.start,B3-STRIP.finish,0,not_permitted,continuous_elapsed
+R-BEAMPROP-B3,BEAM_PROP,2,"[""HYP-B3""]",B3-FORM.start,B3-STRIP.finish,0,not_permitted,continuous_elapsed
+R-BEAMSET-B4,BEAM_FORM_SET,1,"[""HYP-B4""]",B4-FORM.start,B4-STRIP.finish,0,not_permitted,continuous_elapsed
+R-BEAMPROP-B4,BEAM_PROP,2,"[""HYP-B4""]",B4-FORM.start,B4-STRIP.finish,0,not_permitted,continuous_elapsed
+R-SLABSET-S-W,SLAB_PANEL_SET,1,"[""HYP-S-W""]",S-W-FORM.start,S-W-STRIP.finish,0,not_permitted,continuous_elapsed
+R-SLABPROP-S-W,SLAB_PROP,6,"[""HYP-S-W""]",S-W-FORM.start,S-W-STRIP.finish,0,not_permitted,continuous_elapsed
+R-SLABSET-S-E,SLAB_PANEL_SET,1,"[""HYP-S-E""]",S-E-FORM.start,S-E-STRIP.finish,0,not_permitted,continuous_elapsed
+R-SLABPROP-S-E,SLAB_PROP,6,"[""HYP-S-E""]",S-E-FORM.start,S-E-STRIP.finish,0,not_permitted,continuous_elapsed

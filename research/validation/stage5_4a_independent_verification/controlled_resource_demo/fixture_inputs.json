@@ -1,0 +1,4938 @@
+{
+  "_meta": {
+    "title": "PMI Stage 5.4B controlled resource demonstration",
+    "status": "HYPOTHETICAL SCHEDULING FIXTURE - not an IFC-validated construction case. No IFC model supports these quantities. All engineering approvals remain PENDING.",
+    "contract": "resource_contract.json 5.4B-R1-draft",
+    "tick_minutes": 5,
+    "reference_selection_sha256": "5dcab26ecbe0576764667ac5b3072e2bc597e5fefe1a8edee6fcfea6a8dbe68b",
+    "estimation": "pmi_core.estimation.engine.estimate_operation (Stage 5.3A, unchanged)"
+  },
+  "project": {
+    "id": "HYP-DEMO-2Z",
+    "start_local": "2027-02-01T08:00",
+    "horizon_local": "2027-04-30T16:00",
+    "timezone": "Europe/Madrid",
+    "concrete_specification": "HA-25/P/20/XC2"
+  },
+  "calendars": [
+    {
+      "calendar_id": "PROJECT",
+      "timezone": "Europe/Madrid",
+      "working_windows": [
+        {
+          "weekday": 1,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 2,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 3,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 4,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 5,
+          "start": "08:00",
+          "end": "16:00"
+        }
+      ],
+      "date_exceptions": [],
+      "input_state": "hypothetical_fixture",
+      "note": "Hypothetical site shift Mon-Fri 08:00-16:00."
+    },
+    {
+      "calendar_id": "INSPECTOR",
+      "timezone": "Europe/Madrid",
+      "working_windows": [
+        {
+          "weekday": 1,
+          "start": "10:00",
+          "end": "12:00"
+        },
+        {
+          "weekday": 2,
+          "start": "10:00",
+          "end": "12:00"
+        },
+        {
+          "weekday": 3,
+          "start": "10:00",
+          "end": "12:00"
+        },
+        {
+          "weekday": 4,
+          "start": "10:00",
+          "end": "12:00"
+        },
+        {
+          "weekday": 5,
+          "start": "10:00",
+          "end": "12:00"
+        }
+      ],
+      "date_exceptions": [],
+      "input_state": "hypothetical_fixture",
+      "note": "Hypothetical inspector attendance Mon-Fri 10:00-12:00."
+    },
+    {
+      "calendar_id": "DELIVERY",
+      "timezone": "Europe/Madrid",
+      "working_windows": [
+        {
+          "weekday": 1,
+          "start": "08:00",
+          "end": "14:00"
+        },
+        {
+          "weekday": 2,
+          "start": "08:00",
+          "end": "14:00"
+        },
+        {
+          "weekday": 3,
+          "start": "08:00",
+          "end": "14:00"
+        },
+        {
+          "weekday": 4,
+          "start": "08:00",
+          "end": "14:00"
+        },
+        {
+          "weekday": 5,
+          "start": "08:00",
+          "end": "14:00"
+        }
+      ],
+      "date_exceptions": [],
+      "input_state": "hypothetical_fixture",
+      "note": "Hypothetical plant delivery window Mon-Fri 08:00-14:00."
+    }
+  ],
+  "activity_calendar_rule": "Intersection of PROJECT and the calendar of every resource the activity uses. No exceptions.",
+  "resources": [
+    {
+      "resource_id": "OF1_ENCOFRADOR",
+      "display_name": "OF. 1ª ENCOFRADOR",
+      "resource_class": "labour_trade",
+      "unit": "worker",
+      "capacity": 2,
+      "explicit_none": false,
+      "availability": "calendar",
+      "calendar_ref": "PROJECT",
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "Task 6 hypothetical demonstration input",
+      "approval_required": true,
+      "note": "One formwork crew."
+    },
+    {
+      "resource_id": "OF1_FERRALLISTA",
+      "display_name": "OF. 1ª FERRALLISTA",
+      "resource_class": "labour_trade",
+      "unit": "worker",
+      "capacity": 2,
+      "explicit_none": false,
+      "availability": "calendar",
+      "calendar_ref": "PROJECT",
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "Task 6 hypothetical demonstration input",
+      "approval_required": true,
+      "note": "One reinforcement crew."
+    },
+    {
+      "resource_id": "PEON_ESPECIAL",
+      "display_name": "PEÓN ESPECIAL",
+      "resource_class": "labour_trade",
+      "unit": "worker",
+      "capacity": 5,
+      "explicit_none": false,
+      "availability": "calendar",
+      "calendar_ref": "PROJECT",
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "Task 6 hypothetical demonstration input",
+      "approval_required": true,
+      "note": "Shared labourer pool."
+    },
+    {
+      "resource_id": "OFICIAL_1",
+      "display_name": "OFICIAL 1ª",
+      "resource_class": "labour_trade",
+      "unit": "worker",
+      "capacity": 2,
+      "explicit_none": false,
+      "availability": "calendar",
+      "calendar_ref": "PROJECT",
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "Task 6 hypothetical demonstration input",
+      "approval_required": true,
+      "note": "Two concreting chargehands."
+    },
+    {
+      "resource_id": "VIBRADOR",
+      "display_name": "VIBRADOR",
+      "resource_class": "equipment",
+      "unit": "machine",
+      "capacity": 2,
+      "explicit_none": false,
+      "availability": "calendar",
+      "calendar_ref": "PROJECT",
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "Task 6 hypothetical demonstration input",
+      "approval_required": true,
+      "note": "Two internal vibrators."
+    },
+    {
+      "resource_id": "CRANE",
+      "display_name": "CRANE",
+      "resource_class": "equipment",
+      "unit": "machine",
+      "capacity": 0,
+      "explicit_none": true,
+      "availability": "calendar",
+      "calendar_ref": "PROJECT",
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "Task 6 hypothetical demonstration input",
+      "approval_required": true,
+      "note": "Explicit none: manual handling."
+    },
+    {
+      "resource_id": "CONCRETE_PUMP",
+      "display_name": "CONCRETE_PUMP",
+      "resource_class": "equipment",
+      "unit": "machine",
+      "capacity": 0,
+      "explicit_none": true,
+      "availability": "calendar",
+      "calendar_ref": "PROJECT",
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "Task 6 hypothetical demonstration input",
+      "approval_required": true,
+      "note": "Explicit none: direct chute discharge."
+    },
+    {
+      "resource_id": "INSPECTOR",
+      "display_name": "INSPECTOR",
+      "resource_class": "inspector",
+      "unit": "inspector",
+      "capacity": 1,
+      "explicit_none": false,
+      "availability": "calendar",
+      "calendar_ref": "INSPECTOR",
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "Task 6 hypothetical demonstration input",
+      "approval_required": true,
+      "note": "One inspector."
+    },
+    {
+      "resource_id": "CONCRETE_SUPPLY",
+      "display_name": "CONCRETE_SUPPLY",
+      "resource_class": "supply_source",
+      "unit": "m3/h",
+      "capacity": 6,
+      "explicit_none": false,
+      "availability": "calendar",
+      "calendar_ref": "DELIVERY",
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "Task 6 hypothetical demonstration input",
+      "approval_required": true,
+      "note": "Shared plant rate 6 m3/h."
+    },
+    {
+      "resource_id": "COL_FORM_SET",
+      "display_name": "COL_FORM_SET",
+      "resource_class": "reusable_asset",
+      "unit": "set",
+      "capacity": 2,
+      "explicit_none": false,
+      "availability": "continuous",
+      "calendar_ref": null,
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "Task 6 hypothetical demonstration input",
+      "approval_required": true,
+      "note": "Two column formwork sets."
+    },
+    {
+      "resource_id": "BEAM_FORM_SET",
+      "display_name": "BEAM_FORM_SET",
+      "resource_class": "reusable_asset",
+      "unit": "set",
+      "capacity": 3,
+      "explicit_none": false,
+      "availability": "continuous",
+      "calendar_ref": null,
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "Task 6 hypothetical demonstration input",
+      "approval_required": true,
+      "note": "Three beam side+soffit panel sets."
+    },
+    {
+      "resource_id": "SLAB_PANEL_SET",
+      "display_name": "SLAB_PANEL_SET",
+      "resource_class": "reusable_asset",
+      "unit": "set",
+      "capacity": 2,
+      "explicit_none": false,
+      "availability": "continuous",
+      "calendar_ref": null,
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "Task 6 hypothetical demonstration input",
+      "approval_required": true,
+      "note": "Two slab soffit panel sets."
+    },
+    {
+      "resource_id": "BEAM_PROP",
+      "display_name": "BEAM_PROP",
+      "resource_class": "reusable_asset",
+      "unit": "piece",
+      "capacity": 9,
+      "explicit_none": false,
+      "availability": "continuous",
+      "calendar_ref": null,
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "Task 6 hypothetical demonstration input",
+      "approval_required": true,
+      "note": "Beam soffit prop pool."
+    },
+    {
+      "resource_id": "SLAB_PROP",
+      "display_name": "SLAB_PROP",
+      "resource_class": "reusable_asset",
+      "unit": "piece",
+      "capacity": 10,
+      "explicit_none": false,
+      "availability": "continuous",
+      "calendar_ref": null,
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "Task 6 hypothetical demonstration input",
+      "approval_required": true,
+      "note": "Slab prop pool (separate)."
+    }
+  ],
+  "crew_modes": [
+    {
+      "mode_id": "HYP-FORM",
+      "units": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "execution_mode": "simultaneous_fixed_crew",
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "mode_id": "HYP-REBAR",
+      "units": {
+        "OF1_FERRALLISTA": 2
+      },
+      "execution_mode": "simultaneous_fixed_crew",
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "mode_id": "HYP-CONC",
+      "units": {
+        "PEON_ESPECIAL": 2,
+        "OFICIAL_1": 1,
+        "VIBRADOR": 1
+      },
+      "execution_mode": "simultaneous_fixed_crew",
+      "input_state": "hypothetical_fixture"
+    }
+  ],
+  "supply": {
+    "resource_id": "CONCRETE_SUPPLY",
+    "product": "HA-25/P/20/XC2",
+    "rate_capacity_m3_h": 6,
+    "calendar_ref": "DELIVERY",
+    "concurrent_with_placement": true,
+    "drawn_rate_m3_h_by_family": {
+      "COL": 3,
+      "BEAM": 3,
+      "SLAB": 6
+    },
+    "pump": "explicit none",
+    "crane": "explicit none",
+    "placement_method": "Hypothetical direct chute discharge and manual placement."
+  },
+  "elements": {
+    "C1": {
+      "element_id": "HYP-C1",
+      "family": "COL",
+      "zone": "W",
+      "bounds_m": [
+        [
+          -0.2,
+          -0.2,
+          0.0
+        ],
+        [
+          0.2,
+          0.2,
+          3.5
+        ]
+      ],
+      "placed_concrete_m3": 0.56,
+      "formwork_m2": 4.8,
+      "formwork_rule": "Four vertical faces from 0.0 to 3.0 m (beam soffit). The 3.0-3.5 m node is closed by the beam forms.",
+      "reinforcement_kg": 75,
+      "reinforcement_boq": "HYP-C1-BOQ: explicit 75 kg net B500S software-test line.",
+      "ifc_global_id": null,
+      "input_state": "hypothetical_fixture"
+    },
+    "C3": {
+      "element_id": "HYP-C3",
+      "family": "COL",
+      "zone": "W",
+      "bounds_m": [
+        [
+          -0.2,
+          4.8,
+          0.0
+        ],
+        [
+          0.2,
+          5.2,
+          3.5
+        ]
+      ],
+      "placed_concrete_m3": 0.56,
+      "formwork_m2": 4.8,
+      "formwork_rule": "Four vertical faces from 0.0 to 3.0 m (beam soffit). The 3.0-3.5 m node is closed by the beam forms.",
+      "reinforcement_kg": 75,
+      "reinforcement_boq": "HYP-C3-BOQ: explicit 75 kg net B500S software-test line.",
+      "ifc_global_id": null,
+      "input_state": "hypothetical_fixture"
+    },
+    "C2": {
+      "element_id": "HYP-C2",
+      "family": "COL",
+      "zone": "E",
+      "bounds_m": [
+        [
+          5.8,
+          -0.2,
+          0.0
+        ],
+        [
+          6.2,
+          0.2,
+          3.5
+        ]
+      ],
+      "placed_concrete_m3": 0.56,
+      "formwork_m2": 4.8,
+      "formwork_rule": "Four vertical faces from 0.0 to 3.0 m (beam soffit). The 3.0-3.5 m node is closed by the beam forms.",
+      "reinforcement_kg": 75,
+      "reinforcement_boq": "HYP-C2-BOQ: explicit 75 kg net B500S software-test line.",
+      "ifc_global_id": null,
+      "input_state": "hypothetical_fixture"
+    },
+    "C4": {
+      "element_id": "HYP-C4",
+      "family": "COL",
+      "zone": "E",
+      "bounds_m": [
+        [
+          5.8,
+          4.8,
+          0.0
+        ],
+        [
+          6.2,
+          5.2,
+          3.5
+        ]
+      ],
+      "placed_concrete_m3": 0.56,
+      "formwork_m2": 4.8,
+      "formwork_rule": "Four vertical faces from 0.0 to 3.0 m (beam soffit). The 3.0-3.5 m node is closed by the beam forms.",
+      "reinforcement_kg": 75,
+      "reinforcement_boq": "HYP-C4-BOQ: explicit 75 kg net B500S software-test line.",
+      "ifc_global_id": null,
+      "input_state": "hypothetical_fixture"
+    },
+    "B1": {
+      "element_id": "HYP-B1",
+      "family": "BEAM",
+      "zone": "W+E",
+      "bounds_m": [
+        [
+          0.2,
+          -0.15,
+          3.0
+        ],
+        [
+          5.8,
+          0.15,
+          3.5
+        ]
+      ],
+      "placed_concrete_m3": 0.84,
+      "formwork_m2": 7.28,
+      "formwork_rule": "Two sides (depth x clear length) plus soffit (width x clear length) between column faces.",
+      "reinforcement_kg": 125,
+      "reinforcement_boq": "HYP-B1-BOQ: explicit 125 kg net B500S software-test line.",
+      "ifc_global_id": null,
+      "input_state": "hypothetical_fixture"
+    },
+    "B2": {
+      "element_id": "HYP-B2",
+      "family": "BEAM",
+      "zone": "W+E",
+      "bounds_m": [
+        [
+          0.2,
+          4.85,
+          3.0
+        ],
+        [
+          5.8,
+          5.15,
+          3.5
+        ]
+      ],
+      "placed_concrete_m3": 0.84,
+      "formwork_m2": 7.28,
+      "formwork_rule": "Two sides (depth x clear length) plus soffit (width x clear length) between column faces.",
+      "reinforcement_kg": 125,
+      "reinforcement_boq": "HYP-B2-BOQ: explicit 125 kg net B500S software-test line.",
+      "ifc_global_id": null,
+      "input_state": "hypothetical_fixture"
+    },
+    "B3": {
+      "element_id": "HYP-B3",
+      "family": "BEAM",
+      "zone": "W",
+      "bounds_m": [
+        [
+          -0.15,
+          0.2,
+          3.0
+        ],
+        [
+          0.15,
+          4.8,
+          3.5
+        ]
+      ],
+      "placed_concrete_m3": 0.69,
+      "formwork_m2": 5.98,
+      "formwork_rule": "Two sides (depth x clear length) plus soffit (width x clear length) between column faces.",
+      "reinforcement_kg": 105,
+      "reinforcement_boq": "HYP-B3-BOQ: explicit 105 kg net B500S software-test line.",
+      "ifc_global_id": null,
+      "input_state": "hypothetical_fixture"
+    },
+    "B4": {
+      "element_id": "HYP-B4",
+      "family": "BEAM",
+      "zone": "E",
+      "bounds_m": [
+        [
+          5.85,
+          0.2,
+          3.0
+        ],
+        [
+          6.15,
+          4.8,
+          3.5
+        ]
+      ],
+      "placed_concrete_m3": 0.69,
+      "formwork_m2": 5.98,
+      "formwork_rule": "Two sides (depth x clear length) plus soffit (width x clear length) between column faces.",
+      "reinforcement_kg": 105,
+      "reinforcement_boq": "HYP-B4-BOQ: explicit 105 kg net B500S software-test line.",
+      "ifc_global_id": null,
+      "input_state": "hypothetical_fixture"
+    },
+    "S-W": {
+      "element_id": "HYP-S-W",
+      "family": "SLAB",
+      "zone": "W",
+      "bounds_m": [
+        [
+          -0.2,
+          -0.2,
+          3.5
+        ],
+        [
+          3.0,
+          5.2,
+          3.7
+        ]
+      ],
+      "placed_concrete_m3": 3.456,
+      "formwork_m2": 13.9,
+      "formwork_rule": "Soffit plan area less column and beam top footprints under the section. Edge and joint stop-ends are outside the fixture rule.",
+      "reinforcement_kg": 290,
+      "reinforcement_boq": "HYP-S-W-BOQ: explicit 290 kg net B500S software-test line.",
+      "ifc_global_id": null,
+      "input_state": "hypothetical_fixture"
+    },
+    "S-E": {
+      "element_id": "HYP-S-E",
+      "family": "SLAB",
+      "zone": "E",
+      "bounds_m": [
+        [
+          3.0,
+          -0.2,
+          3.5
+        ],
+        [
+          6.2,
+          5.2,
+          3.7
+        ]
+      ],
+      "placed_concrete_m3": 3.456,
+      "formwork_m2": 13.9,
+      "formwork_rule": "Soffit plan area less column and beam top footprints under the section. Edge and joint stop-ends are outside the fixture rule.",
+      "reinforcement_kg": 290,
+      "reinforcement_boq": "HYP-S-E-BOQ: explicit 290 kg net B500S software-test line.",
+      "ifc_global_id": null,
+      "input_state": "hypothetical_fixture"
+    }
+  },
+  "supports": {
+    "B1": [
+      "C1",
+      "C2"
+    ],
+    "B2": [
+      "C3",
+      "C4"
+    ],
+    "B3": [
+      "C1",
+      "C3"
+    ],
+    "B4": [
+      "C2",
+      "C4"
+    ],
+    "S-W": [
+      "B1",
+      "B2",
+      "B3"
+    ],
+    "S-E": [
+      "B1",
+      "B2",
+      "B4"
+    ]
+  },
+  "work_packages": [
+    {
+      "package_id": "WP-C1",
+      "element_id": "HYP-C1",
+      "family": "COL",
+      "zone": "W",
+      "activities": [
+        "C1-REBAR",
+        "C1-FORM",
+        "C1-POUR",
+        "C1-STRIP",
+        "C1-INSP",
+        "C1-CURE",
+        "C1-STRIKE"
+      ]
+    },
+    {
+      "package_id": "WP-C3",
+      "element_id": "HYP-C3",
+      "family": "COL",
+      "zone": "W",
+      "activities": [
+        "C3-REBAR",
+        "C3-FORM",
+        "C3-POUR",
+        "C3-STRIP",
+        "C3-INSP",
+        "C3-CURE",
+        "C3-STRIKE"
+      ]
+    },
+    {
+      "package_id": "WP-C2",
+      "element_id": "HYP-C2",
+      "family": "COL",
+      "zone": "E",
+      "activities": [
+        "C2-REBAR",
+        "C2-FORM",
+        "C2-POUR",
+        "C2-STRIP",
+        "C2-INSP",
+        "C2-CURE",
+        "C2-STRIKE"
+      ]
+    },
+    {
+      "package_id": "WP-C4",
+      "element_id": "HYP-C4",
+      "family": "COL",
+      "zone": "E",
+      "activities": [
+        "C4-REBAR",
+        "C4-FORM",
+        "C4-POUR",
+        "C4-STRIP",
+        "C4-INSP",
+        "C4-CURE",
+        "C4-STRIKE"
+      ]
+    },
+    {
+      "package_id": "WP-B1",
+      "element_id": "HYP-B1",
+      "family": "BEAM",
+      "zone": "W+E",
+      "activities": [
+        "B1-REBAR",
+        "B1-FORM",
+        "B1-POUR",
+        "B1-STRIP",
+        "B1-INSP",
+        "B1-CURE",
+        "B1-STRIKE"
+      ]
+    },
+    {
+      "package_id": "WP-B2",
+      "element_id": "HYP-B2",
+      "family": "BEAM",
+      "zone": "W+E",
+      "activities": [
+        "B2-REBAR",
+        "B2-FORM",
+        "B2-POUR",
+        "B2-STRIP",
+        "B2-INSP",
+        "B2-CURE",
+        "B2-STRIKE"
+      ]
+    },
+    {
+      "package_id": "WP-B3",
+      "element_id": "HYP-B3",
+      "family": "BEAM",
+      "zone": "W",
+      "activities": [
+        "B3-REBAR",
+        "B3-FORM",
+        "B3-POUR",
+        "B3-STRIP",
+        "B3-INSP",
+        "B3-CURE",
+        "B3-STRIKE"
+      ]
+    },
+    {
+      "package_id": "WP-B4",
+      "element_id": "HYP-B4",
+      "family": "BEAM",
+      "zone": "E",
+      "activities": [
+        "B4-REBAR",
+        "B4-FORM",
+        "B4-POUR",
+        "B4-STRIP",
+        "B4-INSP",
+        "B4-CURE",
+        "B4-STRIKE"
+      ]
+    },
+    {
+      "package_id": "WP-S-W",
+      "element_id": "HYP-S-W",
+      "family": "SLAB",
+      "zone": "W",
+      "activities": [
+        "S-W-REBAR",
+        "S-W-FORM",
+        "S-W-POUR",
+        "S-W-STRIP",
+        "S-W-INSP",
+        "S-W-CURE",
+        "S-W-STRIKE"
+      ]
+    },
+    {
+      "package_id": "WP-S-E",
+      "element_id": "HYP-S-E",
+      "family": "SLAB",
+      "zone": "E",
+      "activities": [
+        "S-E-REBAR",
+        "S-E-FORM",
+        "S-E-POUR",
+        "S-E-STRIP",
+        "S-E-INSP",
+        "S-E-CURE",
+        "S-E-STRIKE"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "C1-REBAR",
+      "element": "C1",
+      "package_id": "WP-C1",
+      "zone": "W",
+      "work_item": "COL-REBAR",
+      "kind": "productive",
+      "mode": "HYP-REBAR",
+      "bcca_code": "05HAC00015",
+      "quantity": 75,
+      "unit": "kg",
+      "productive_hours": 0.75,
+      "duration_minutes": 45.0,
+      "demands": {
+        "OF1_FERRALLISTA": 2
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª FERRALLISTA": 1.5
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª FERRALLISTA": 0.75
+      },
+      "cost_eur": 114.0,
+      "cost_components_eur": {
+        "labor": 34.755,
+        "equipment": 0.0,
+        "material": 78.75
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-COL-REBAR"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "C1-FORM",
+      "element": "C1",
+      "package_id": "WP-C1",
+      "zone": "W",
+      "work_item": "COL-FORM",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HEM00001",
+      "quantity": 4.8,
+      "unit": "m2",
+      "productive_hours": 0.6,
+      "duration_minutes": 36.0,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 1.2,
+        "PEÓN ESPECIAL": 0.48
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.6,
+        "labor:PEÓN ESPECIAL": 0.48
+      },
+      "cost_eur": 77.568,
+      "cost_components_eur": {
+        "labor": 38.3688,
+        "equipment": 0.0,
+        "material": 39.21552
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-COL-FORM"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "C1-POUR",
+      "element": "C1",
+      "package_id": "WP-C1",
+      "zone": "W",
+      "work_item": "COL-CONC",
+      "kind": "productive",
+      "mode": "HYP-CONC",
+      "bcca_code": "05HHP00003",
+      "quantity": 0.56,
+      "unit": "m3",
+      "productive_hours": 0.18666666666666668,
+      "duration_minutes": 11.2,
+      "demands": {
+        "PEON_ESPECIAL": 2,
+        "OFICIAL_1": 1,
+        "VIBRADOR": 1,
+        "CONCRETE_SUPPLY": 3
+      },
+      "worker_hours_by_trade": {
+        "PEÓN ESPECIAL": 0.336
+      },
+      "machine_hours_by_class": {
+        "VIBRADOR": 0.112
+      },
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:PEÓN ESPECIAL": 0.168,
+        "equipment:VIBRADOR": 0.112,
+        "throughput:CONCRETE_DELIVERY": 0.186666667
+      },
+      "cost_eur": 63.6048,
+      "cost_components_eur": {
+        "labor": 7.39536,
+        "equipment": 0.20384,
+        "material": 56.00728
+      },
+      "calendars": [
+        "DELIVERY",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-COL-CONC"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "C1-STRIP",
+      "element": "C1",
+      "package_id": "WP-C1",
+      "zone": "W",
+      "work_item": "FRM-STRIP",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HED00001",
+      "quantity": 4.8,
+      "unit": "m2",
+      "productive_hours": 0.72,
+      "duration_minutes": 43.2,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 0.144,
+        "PEÓN ESPECIAL": 0.72
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.072,
+        "labor:PEÓN ESPECIAL": 0.72
+      },
+      "cost_eur": 19.2,
+      "cost_components_eur": {
+        "labor": 19.18368,
+        "equipment": 0.0,
+        "material": 0.0
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-FRM-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "C1-INSP",
+      "element": "C1",
+      "package_id": "WP-C1",
+      "zone": "W",
+      "work_item": "INSPECTION",
+      "kind": "inspection",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0.5,
+      "duration_minutes": 30,
+      "demands": {
+        "INSPECTOR": 1
+      },
+      "cost_eur": 0.0,
+      "calendars": [
+        "INSPECTOR",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "pass_event": {
+        "id": "EV-C1-INSP",
+        "status": "hypothetical_pass"
+      },
+      "approval_ids": [
+        "AP-DR06"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "C1-CURE",
+      "element": "C1",
+      "package_id": "WP-C1",
+      "zone": "W",
+      "work_item": "CURE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 1440,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR07"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "C1-STRIKE",
+      "element": "C1",
+      "package_id": "WP-C1",
+      "zone": "W",
+      "work_item": "STRIKING-RELEASE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 1440,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR08"
+      ],
+      "input_state": "hypothetical_fixture",
+      "release_event": {
+        "id": "EV-C1-STRENGTH",
+        "status": "hypothetical_pass_at_minimum",
+        "anchor": "C1-POUR finish"
+      }
+    },
+    {
+      "id": "C3-REBAR",
+      "element": "C3",
+      "package_id": "WP-C3",
+      "zone": "W",
+      "work_item": "COL-REBAR",
+      "kind": "productive",
+      "mode": "HYP-REBAR",
+      "bcca_code": "05HAC00015",
+      "quantity": 75,
+      "unit": "kg",
+      "productive_hours": 0.75,
+      "duration_minutes": 45.0,
+      "demands": {
+        "OF1_FERRALLISTA": 2
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª FERRALLISTA": 1.5
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª FERRALLISTA": 0.75
+      },
+      "cost_eur": 114.0,
+      "cost_components_eur": {
+        "labor": 34.755,
+        "equipment": 0.0,
+        "material": 78.75
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-COL-REBAR"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "C3-FORM",
+      "element": "C3",
+      "package_id": "WP-C3",
+      "zone": "W",
+      "work_item": "COL-FORM",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HEM00001",
+      "quantity": 4.8,
+      "unit": "m2",
+      "productive_hours": 0.6,
+      "duration_minutes": 36.0,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 1.2,
+        "PEÓN ESPECIAL": 0.48
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.6,
+        "labor:PEÓN ESPECIAL": 0.48
+      },
+      "cost_eur": 77.568,
+      "cost_components_eur": {
+        "labor": 38.3688,
+        "equipment": 0.0,
+        "material": 39.21552
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-COL-FORM"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "C3-POUR",
+      "element": "C3",
+      "package_id": "WP-C3",
+      "zone": "W",
+      "work_item": "COL-CONC",
+      "kind": "productive",
+      "mode": "HYP-CONC",
+      "bcca_code": "05HHP00003",
+      "quantity": 0.56,
+      "unit": "m3",
+      "productive_hours": 0.18666666666666668,
+      "duration_minutes": 11.2,
+      "demands": {
+        "PEON_ESPECIAL": 2,
+        "OFICIAL_1": 1,
+        "VIBRADOR": 1,
+        "CONCRETE_SUPPLY": 3
+      },
+      "worker_hours_by_trade": {
+        "PEÓN ESPECIAL": 0.336
+      },
+      "machine_hours_by_class": {
+        "VIBRADOR": 0.112
+      },
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:PEÓN ESPECIAL": 0.168,
+        "equipment:VIBRADOR": 0.112,
+        "throughput:CONCRETE_DELIVERY": 0.186666667
+      },
+      "cost_eur": 63.6048,
+      "cost_components_eur": {
+        "labor": 7.39536,
+        "equipment": 0.20384,
+        "material": 56.00728
+      },
+      "calendars": [
+        "DELIVERY",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-COL-CONC"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "C3-STRIP",
+      "element": "C3",
+      "package_id": "WP-C3",
+      "zone": "W",
+      "work_item": "FRM-STRIP",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HED00001",
+      "quantity": 4.8,
+      "unit": "m2",
+      "productive_hours": 0.72,
+      "duration_minutes": 43.2,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 0.144,
+        "PEÓN ESPECIAL": 0.72
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.072,
+        "labor:PEÓN ESPECIAL": 0.72
+      },
+      "cost_eur": 19.2,
+      "cost_components_eur": {
+        "labor": 19.18368,
+        "equipment": 0.0,
+        "material": 0.0
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-FRM-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "C3-INSP",
+      "element": "C3",
+      "package_id": "WP-C3",
+      "zone": "W",
+      "work_item": "INSPECTION",
+      "kind": "inspection",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0.5,
+      "duration_minutes": 30,
+      "demands": {
+        "INSPECTOR": 1
+      },
+      "cost_eur": 0.0,
+      "calendars": [
+        "INSPECTOR",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "pass_event": {
+        "id": "EV-C3-INSP",
+        "status": "hypothetical_pass"
+      },
+      "approval_ids": [
+        "AP-DR06"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "C3-CURE",
+      "element": "C3",
+      "package_id": "WP-C3",
+      "zone": "W",
+      "work_item": "CURE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 1440,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR07"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "C3-STRIKE",
+      "element": "C3",
+      "package_id": "WP-C3",
+      "zone": "W",
+      "work_item": "STRIKING-RELEASE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 1440,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR08"
+      ],
+      "input_state": "hypothetical_fixture",
+      "release_event": {
+        "id": "EV-C3-STRENGTH",
+        "status": "hypothetical_pass_at_minimum",
+        "anchor": "C3-POUR finish"
+      }
+    },
+    {
+      "id": "C2-REBAR",
+      "element": "C2",
+      "package_id": "WP-C2",
+      "zone": "E",
+      "work_item": "COL-REBAR",
+      "kind": "productive",
+      "mode": "HYP-REBAR",
+      "bcca_code": "05HAC00015",
+      "quantity": 75,
+      "unit": "kg",
+      "productive_hours": 0.75,
+      "duration_minutes": 45.0,
+      "demands": {
+        "OF1_FERRALLISTA": 2
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª FERRALLISTA": 1.5
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª FERRALLISTA": 0.75
+      },
+      "cost_eur": 114.0,
+      "cost_components_eur": {
+        "labor": 34.755,
+        "equipment": 0.0,
+        "material": 78.75
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-COL-REBAR"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "C2-FORM",
+      "element": "C2",
+      "package_id": "WP-C2",
+      "zone": "E",
+      "work_item": "COL-FORM",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HEM00001",
+      "quantity": 4.8,
+      "unit": "m2",
+      "productive_hours": 0.6,
+      "duration_minutes": 36.0,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 1.2,
+        "PEÓN ESPECIAL": 0.48
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.6,
+        "labor:PEÓN ESPECIAL": 0.48
+      },
+      "cost_eur": 77.568,
+      "cost_components_eur": {
+        "labor": 38.3688,
+        "equipment": 0.0,
+        "material": 39.21552
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-COL-FORM"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "C2-POUR",
+      "element": "C2",
+      "package_id": "WP-C2",
+      "zone": "E",
+      "work_item": "COL-CONC",
+      "kind": "productive",
+      "mode": "HYP-CONC",
+      "bcca_code": "05HHP00003",
+      "quantity": 0.56,
+      "unit": "m3",
+      "productive_hours": 0.18666666666666668,
+      "duration_minutes": 11.2,
+      "demands": {
+        "PEON_ESPECIAL": 2,
+        "OFICIAL_1": 1,
+        "VIBRADOR": 1,
+        "CONCRETE_SUPPLY": 3
+      },
+      "worker_hours_by_trade": {
+        "PEÓN ESPECIAL": 0.336
+      },
+      "machine_hours_by_class": {
+        "VIBRADOR": 0.112
+      },
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:PEÓN ESPECIAL": 0.168,
+        "equipment:VIBRADOR": 0.112,
+        "throughput:CONCRETE_DELIVERY": 0.186666667
+      },
+      "cost_eur": 63.6048,
+      "cost_components_eur": {
+        "labor": 7.39536,
+        "equipment": 0.20384,
+        "material": 56.00728
+      },
+      "calendars": [
+        "DELIVERY",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-COL-CONC"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "C2-STRIP",
+      "element": "C2",
+      "package_id": "WP-C2",
+      "zone": "E",
+      "work_item": "FRM-STRIP",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HED00001",
+      "quantity": 4.8,
+      "unit": "m2",
+      "productive_hours": 0.72,
+      "duration_minutes": 43.2,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 0.144,
+        "PEÓN ESPECIAL": 0.72
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.072,
+        "labor:PEÓN ESPECIAL": 0.72
+      },
+      "cost_eur": 19.2,
+      "cost_components_eur": {
+        "labor": 19.18368,
+        "equipment": 0.0,
+        "material": 0.0
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-FRM-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "C2-INSP",
+      "element": "C2",
+      "package_id": "WP-C2",
+      "zone": "E",
+      "work_item": "INSPECTION",
+      "kind": "inspection",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0.5,
+      "duration_minutes": 30,
+      "demands": {
+        "INSPECTOR": 1
+      },
+      "cost_eur": 0.0,
+      "calendars": [
+        "INSPECTOR",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "pass_event": {
+        "id": "EV-C2-INSP",
+        "status": "hypothetical_pass"
+      },
+      "approval_ids": [
+        "AP-DR06"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "C2-CURE",
+      "element": "C2",
+      "package_id": "WP-C2",
+      "zone": "E",
+      "work_item": "CURE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 1440,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR07"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "C2-STRIKE",
+      "element": "C2",
+      "package_id": "WP-C2",
+      "zone": "E",
+      "work_item": "STRIKING-RELEASE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 1440,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR08"
+      ],
+      "input_state": "hypothetical_fixture",
+      "release_event": {
+        "id": "EV-C2-STRENGTH",
+        "status": "hypothetical_pass_at_minimum",
+        "anchor": "C2-POUR finish"
+      }
+    },
+    {
+      "id": "C4-REBAR",
+      "element": "C4",
+      "package_id": "WP-C4",
+      "zone": "E",
+      "work_item": "COL-REBAR",
+      "kind": "productive",
+      "mode": "HYP-REBAR",
+      "bcca_code": "05HAC00015",
+      "quantity": 75,
+      "unit": "kg",
+      "productive_hours": 0.75,
+      "duration_minutes": 45.0,
+      "demands": {
+        "OF1_FERRALLISTA": 2
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª FERRALLISTA": 1.5
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª FERRALLISTA": 0.75
+      },
+      "cost_eur": 114.0,
+      "cost_components_eur": {
+        "labor": 34.755,
+        "equipment": 0.0,
+        "material": 78.75
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-COL-REBAR"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "C4-FORM",
+      "element": "C4",
+      "package_id": "WP-C4",
+      "zone": "E",
+      "work_item": "COL-FORM",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HEM00001",
+      "quantity": 4.8,
+      "unit": "m2",
+      "productive_hours": 0.6,
+      "duration_minutes": 36.0,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 1.2,
+        "PEÓN ESPECIAL": 0.48
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.6,
+        "labor:PEÓN ESPECIAL": 0.48
+      },
+      "cost_eur": 77.568,
+      "cost_components_eur": {
+        "labor": 38.3688,
+        "equipment": 0.0,
+        "material": 39.21552
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-COL-FORM"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "C4-POUR",
+      "element": "C4",
+      "package_id": "WP-C4",
+      "zone": "E",
+      "work_item": "COL-CONC",
+      "kind": "productive",
+      "mode": "HYP-CONC",
+      "bcca_code": "05HHP00003",
+      "quantity": 0.56,
+      "unit": "m3",
+      "productive_hours": 0.18666666666666668,
+      "duration_minutes": 11.2,
+      "demands": {
+        "PEON_ESPECIAL": 2,
+        "OFICIAL_1": 1,
+        "VIBRADOR": 1,
+        "CONCRETE_SUPPLY": 3
+      },
+      "worker_hours_by_trade": {
+        "PEÓN ESPECIAL": 0.336
+      },
+      "machine_hours_by_class": {
+        "VIBRADOR": 0.112
+      },
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:PEÓN ESPECIAL": 0.168,
+        "equipment:VIBRADOR": 0.112,
+        "throughput:CONCRETE_DELIVERY": 0.186666667
+      },
+      "cost_eur": 63.6048,
+      "cost_components_eur": {
+        "labor": 7.39536,
+        "equipment": 0.20384,
+        "material": 56.00728
+      },
+      "calendars": [
+        "DELIVERY",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-COL-CONC"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "C4-STRIP",
+      "element": "C4",
+      "package_id": "WP-C4",
+      "zone": "E",
+      "work_item": "FRM-STRIP",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HED00001",
+      "quantity": 4.8,
+      "unit": "m2",
+      "productive_hours": 0.72,
+      "duration_minutes": 43.2,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 0.144,
+        "PEÓN ESPECIAL": 0.72
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.072,
+        "labor:PEÓN ESPECIAL": 0.72
+      },
+      "cost_eur": 19.2,
+      "cost_components_eur": {
+        "labor": 19.18368,
+        "equipment": 0.0,
+        "material": 0.0
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-FRM-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "C4-INSP",
+      "element": "C4",
+      "package_id": "WP-C4",
+      "zone": "E",
+      "work_item": "INSPECTION",
+      "kind": "inspection",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0.5,
+      "duration_minutes": 30,
+      "demands": {
+        "INSPECTOR": 1
+      },
+      "cost_eur": 0.0,
+      "calendars": [
+        "INSPECTOR",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "pass_event": {
+        "id": "EV-C4-INSP",
+        "status": "hypothetical_pass"
+      },
+      "approval_ids": [
+        "AP-DR06"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "C4-CURE",
+      "element": "C4",
+      "package_id": "WP-C4",
+      "zone": "E",
+      "work_item": "CURE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 1440,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR07"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "C4-STRIKE",
+      "element": "C4",
+      "package_id": "WP-C4",
+      "zone": "E",
+      "work_item": "STRIKING-RELEASE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 1440,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR08"
+      ],
+      "input_state": "hypothetical_fixture",
+      "release_event": {
+        "id": "EV-C4-STRENGTH",
+        "status": "hypothetical_pass_at_minimum",
+        "anchor": "C4-POUR finish"
+      }
+    },
+    {
+      "id": "B1-REBAR",
+      "element": "B1",
+      "package_id": "WP-B1",
+      "zone": "W+E",
+      "work_item": "BEAM-REBAR",
+      "kind": "productive",
+      "mode": "HYP-REBAR",
+      "bcca_code": "05HAC00015",
+      "quantity": 125,
+      "unit": "kg",
+      "productive_hours": 1.25,
+      "duration_minutes": 75.0,
+      "demands": {
+        "OF1_FERRALLISTA": 2
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª FERRALLISTA": 2.5
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª FERRALLISTA": 1.25
+      },
+      "cost_eur": 190.0,
+      "cost_components_eur": {
+        "labor": 57.925,
+        "equipment": 0.0,
+        "material": 131.25
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-BEAM-REBAR"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "B1-FORM",
+      "element": "B1",
+      "package_id": "WP-B1",
+      "zone": "W+E",
+      "work_item": "BEAM-FORM",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HEM00051",
+      "quantity": 7.28,
+      "unit": "m2",
+      "productive_hours": 1.274,
+      "duration_minutes": 76.44,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 2.548,
+        "PEÓN ESPECIAL": 1.092
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 1.274,
+        "labor:PEÓN ESPECIAL": 1.092
+      },
+      "cost_eur": 118.1544,
+      "cost_components_eur": {
+        "labor": 83.07208,
+        "equipment": 0.0,
+        "material": 35.092512
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-BEAM-FORM"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "281221"
+    },
+    {
+      "id": "B1-POUR",
+      "element": "B1",
+      "package_id": "WP-B1",
+      "zone": "W+E",
+      "work_item": "BEAM-CONC",
+      "kind": "productive",
+      "mode": "HYP-CONC",
+      "bcca_code": "05HHJ00003",
+      "quantity": 0.84,
+      "unit": "m3",
+      "productive_hours": 0.27999999999999997,
+      "duration_minutes": 16.8,
+      "demands": {
+        "PEON_ESPECIAL": 2,
+        "OFICIAL_1": 1,
+        "VIBRADOR": 1,
+        "CONCRETE_SUPPLY": 3
+      },
+      "worker_hours_by_trade": {
+        "OFICIAL 1ª": 0.168,
+        "PEÓN ESPECIAL": 0.504
+      },
+      "machine_hours_by_class": {
+        "VIBRADOR": 0.252
+      },
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OFICIAL 1ª": 0.168,
+        "labor:PEÓN ESPECIAL": 0.252,
+        "equipment:VIBRADOR": 0.252,
+        "throughput:CONCRETE_DELIVERY": 0.28
+      },
+      "cost_eur": 99.456,
+      "cost_components_eur": {
+        "labor": 14.9856,
+        "equipment": 0.45864,
+        "material": 84.01092
+      },
+      "calendars": [
+        "DELIVERY",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-BEAM-CONC"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "B1-STRIP",
+      "element": "B1",
+      "package_id": "WP-B1",
+      "zone": "W+E",
+      "work_item": "FRM-STRIP",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HED00001",
+      "quantity": 7.28,
+      "unit": "m2",
+      "productive_hours": 1.092,
+      "duration_minutes": 65.52,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 0.2184,
+        "PEÓN ESPECIAL": 1.092
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.1092,
+        "labor:PEÓN ESPECIAL": 1.092
+      },
+      "cost_eur": 29.12,
+      "cost_components_eur": {
+        "labor": 29.095248,
+        "equipment": 0.0,
+        "material": 0.0
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-FRM-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "B1-INSP",
+      "element": "B1",
+      "package_id": "WP-B1",
+      "zone": "W+E",
+      "work_item": "INSPECTION",
+      "kind": "inspection",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0.5,
+      "duration_minutes": 30,
+      "demands": {
+        "INSPECTOR": 1
+      },
+      "cost_eur": 0.0,
+      "calendars": [
+        "INSPECTOR",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "pass_event": {
+        "id": "EV-B1-INSP",
+        "status": "hypothetical_pass"
+      },
+      "approval_ids": [
+        "AP-DR06"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "B1-CURE",
+      "element": "B1",
+      "package_id": "WP-B1",
+      "zone": "W+E",
+      "work_item": "CURE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 1440,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR07"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "B1-STRIKE",
+      "element": "B1",
+      "package_id": "WP-B1",
+      "zone": "W+E",
+      "work_item": "STRIKING-RELEASE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 10080,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR08"
+      ],
+      "input_state": "hypothetical_fixture",
+      "release_event": {
+        "id": "EV-B1-STRENGTH",
+        "status": "hypothetical_pass_at_minimum",
+        "anchor": "B1-POUR finish"
+      }
+    },
+    {
+      "id": "B2-REBAR",
+      "element": "B2",
+      "package_id": "WP-B2",
+      "zone": "W+E",
+      "work_item": "BEAM-REBAR",
+      "kind": "productive",
+      "mode": "HYP-REBAR",
+      "bcca_code": "05HAC00015",
+      "quantity": 125,
+      "unit": "kg",
+      "productive_hours": 1.25,
+      "duration_minutes": 75.0,
+      "demands": {
+        "OF1_FERRALLISTA": 2
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª FERRALLISTA": 2.5
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª FERRALLISTA": 1.25
+      },
+      "cost_eur": 190.0,
+      "cost_components_eur": {
+        "labor": 57.925,
+        "equipment": 0.0,
+        "material": 131.25
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-BEAM-REBAR"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "B2-FORM",
+      "element": "B2",
+      "package_id": "WP-B2",
+      "zone": "W+E",
+      "work_item": "BEAM-FORM",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HEM00051",
+      "quantity": 7.28,
+      "unit": "m2",
+      "productive_hours": 1.274,
+      "duration_minutes": 76.44,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 2.548,
+        "PEÓN ESPECIAL": 1.092
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 1.274,
+        "labor:PEÓN ESPECIAL": 1.092
+      },
+      "cost_eur": 118.1544,
+      "cost_components_eur": {
+        "labor": 83.07208,
+        "equipment": 0.0,
+        "material": 35.092512
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-BEAM-FORM"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "281221"
+    },
+    {
+      "id": "B2-POUR",
+      "element": "B2",
+      "package_id": "WP-B2",
+      "zone": "W+E",
+      "work_item": "BEAM-CONC",
+      "kind": "productive",
+      "mode": "HYP-CONC",
+      "bcca_code": "05HHJ00003",
+      "quantity": 0.84,
+      "unit": "m3",
+      "productive_hours": 0.27999999999999997,
+      "duration_minutes": 16.8,
+      "demands": {
+        "PEON_ESPECIAL": 2,
+        "OFICIAL_1": 1,
+        "VIBRADOR": 1,
+        "CONCRETE_SUPPLY": 3
+      },
+      "worker_hours_by_trade": {
+        "OFICIAL 1ª": 0.168,
+        "PEÓN ESPECIAL": 0.504
+      },
+      "machine_hours_by_class": {
+        "VIBRADOR": 0.252
+      },
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OFICIAL 1ª": 0.168,
+        "labor:PEÓN ESPECIAL": 0.252,
+        "equipment:VIBRADOR": 0.252,
+        "throughput:CONCRETE_DELIVERY": 0.28
+      },
+      "cost_eur": 99.456,
+      "cost_components_eur": {
+        "labor": 14.9856,
+        "equipment": 0.45864,
+        "material": 84.01092
+      },
+      "calendars": [
+        "DELIVERY",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-BEAM-CONC"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "B2-STRIP",
+      "element": "B2",
+      "package_id": "WP-B2",
+      "zone": "W+E",
+      "work_item": "FRM-STRIP",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HED00001",
+      "quantity": 7.28,
+      "unit": "m2",
+      "productive_hours": 1.092,
+      "duration_minutes": 65.52,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 0.2184,
+        "PEÓN ESPECIAL": 1.092
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.1092,
+        "labor:PEÓN ESPECIAL": 1.092
+      },
+      "cost_eur": 29.12,
+      "cost_components_eur": {
+        "labor": 29.095248,
+        "equipment": 0.0,
+        "material": 0.0
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-FRM-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "B2-INSP",
+      "element": "B2",
+      "package_id": "WP-B2",
+      "zone": "W+E",
+      "work_item": "INSPECTION",
+      "kind": "inspection",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0.5,
+      "duration_minutes": 30,
+      "demands": {
+        "INSPECTOR": 1
+      },
+      "cost_eur": 0.0,
+      "calendars": [
+        "INSPECTOR",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "pass_event": {
+        "id": "EV-B2-INSP",
+        "status": "hypothetical_pass"
+      },
+      "approval_ids": [
+        "AP-DR06"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "B2-CURE",
+      "element": "B2",
+      "package_id": "WP-B2",
+      "zone": "W+E",
+      "work_item": "CURE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 1440,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR07"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "B2-STRIKE",
+      "element": "B2",
+      "package_id": "WP-B2",
+      "zone": "W+E",
+      "work_item": "STRIKING-RELEASE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 10080,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR08"
+      ],
+      "input_state": "hypothetical_fixture",
+      "release_event": {
+        "id": "EV-B2-STRENGTH",
+        "status": "hypothetical_pass_at_minimum",
+        "anchor": "B2-POUR finish"
+      }
+    },
+    {
+      "id": "B3-REBAR",
+      "element": "B3",
+      "package_id": "WP-B3",
+      "zone": "W",
+      "work_item": "BEAM-REBAR",
+      "kind": "productive",
+      "mode": "HYP-REBAR",
+      "bcca_code": "05HAC00015",
+      "quantity": 105,
+      "unit": "kg",
+      "productive_hours": 1.05,
+      "duration_minutes": 63.0,
+      "demands": {
+        "OF1_FERRALLISTA": 2
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª FERRALLISTA": 2.1
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª FERRALLISTA": 1.05
+      },
+      "cost_eur": 159.6,
+      "cost_components_eur": {
+        "labor": 48.657,
+        "equipment": 0.0,
+        "material": 110.25
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-BEAM-REBAR"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "B3-FORM",
+      "element": "B3",
+      "package_id": "WP-B3",
+      "zone": "W",
+      "work_item": "BEAM-FORM",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HEM00051",
+      "quantity": 5.98,
+      "unit": "m2",
+      "productive_hours": 1.0465,
+      "duration_minutes": 62.79,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 2.093,
+        "PEÓN ESPECIAL": 0.897
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 1.0465,
+        "labor:PEÓN ESPECIAL": 0.897
+      },
+      "cost_eur": 97.0554,
+      "cost_components_eur": {
+        "labor": 68.23778,
+        "equipment": 0.0,
+        "material": 28.825992
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-BEAM-FORM"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "281221"
+    },
+    {
+      "id": "B3-POUR",
+      "element": "B3",
+      "package_id": "WP-B3",
+      "zone": "W",
+      "work_item": "BEAM-CONC",
+      "kind": "productive",
+      "mode": "HYP-CONC",
+      "bcca_code": "05HHJ00003",
+      "quantity": 0.69,
+      "unit": "m3",
+      "productive_hours": 0.22999999999999998,
+      "duration_minutes": 13.8,
+      "demands": {
+        "PEON_ESPECIAL": 2,
+        "OFICIAL_1": 1,
+        "VIBRADOR": 1,
+        "CONCRETE_SUPPLY": 3
+      },
+      "worker_hours_by_trade": {
+        "OFICIAL 1ª": 0.138,
+        "PEÓN ESPECIAL": 0.414
+      },
+      "machine_hours_by_class": {
+        "VIBRADOR": 0.207
+      },
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OFICIAL 1ª": 0.138,
+        "labor:PEÓN ESPECIAL": 0.207,
+        "equipment:VIBRADOR": 0.207,
+        "throughput:CONCRETE_DELIVERY": 0.23
+      },
+      "cost_eur": 81.696,
+      "cost_components_eur": {
+        "labor": 12.3096,
+        "equipment": 0.37674,
+        "material": 69.00897
+      },
+      "calendars": [
+        "DELIVERY",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-BEAM-CONC"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "B3-STRIP",
+      "element": "B3",
+      "package_id": "WP-B3",
+      "zone": "W",
+      "work_item": "FRM-STRIP",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HED00001",
+      "quantity": 5.98,
+      "unit": "m2",
+      "productive_hours": 0.897,
+      "duration_minutes": 53.82,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 0.1794,
+        "PEÓN ESPECIAL": 0.897
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.0897,
+        "labor:PEÓN ESPECIAL": 0.897
+      },
+      "cost_eur": 23.92,
+      "cost_components_eur": {
+        "labor": 23.899668,
+        "equipment": 0.0,
+        "material": 0.0
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-FRM-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "B3-INSP",
+      "element": "B3",
+      "package_id": "WP-B3",
+      "zone": "W",
+      "work_item": "INSPECTION",
+      "kind": "inspection",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0.5,
+      "duration_minutes": 30,
+      "demands": {
+        "INSPECTOR": 1
+      },
+      "cost_eur": 0.0,
+      "calendars": [
+        "INSPECTOR",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "pass_event": {
+        "id": "EV-B3-INSP",
+        "status": "hypothetical_pass"
+      },
+      "approval_ids": [
+        "AP-DR06"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "B3-CURE",
+      "element": "B3",
+      "package_id": "WP-B3",
+      "zone": "W",
+      "work_item": "CURE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 1440,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR07"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "B3-STRIKE",
+      "element": "B3",
+      "package_id": "WP-B3",
+      "zone": "W",
+      "work_item": "STRIKING-RELEASE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 10080,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR08"
+      ],
+      "input_state": "hypothetical_fixture",
+      "release_event": {
+        "id": "EV-B3-STRENGTH",
+        "status": "hypothetical_pass_at_minimum",
+        "anchor": "B3-POUR finish"
+      }
+    },
+    {
+      "id": "B4-REBAR",
+      "element": "B4",
+      "package_id": "WP-B4",
+      "zone": "E",
+      "work_item": "BEAM-REBAR",
+      "kind": "productive",
+      "mode": "HYP-REBAR",
+      "bcca_code": "05HAC00015",
+      "quantity": 105,
+      "unit": "kg",
+      "productive_hours": 1.05,
+      "duration_minutes": 63.0,
+      "demands": {
+        "OF1_FERRALLISTA": 2
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª FERRALLISTA": 2.1
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª FERRALLISTA": 1.05
+      },
+      "cost_eur": 159.6,
+      "cost_components_eur": {
+        "labor": 48.657,
+        "equipment": 0.0,
+        "material": 110.25
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-BEAM-REBAR"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "B4-FORM",
+      "element": "B4",
+      "package_id": "WP-B4",
+      "zone": "E",
+      "work_item": "BEAM-FORM",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HEM00051",
+      "quantity": 5.98,
+      "unit": "m2",
+      "productive_hours": 1.0465,
+      "duration_minutes": 62.79,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 2.093,
+        "PEÓN ESPECIAL": 0.897
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 1.0465,
+        "labor:PEÓN ESPECIAL": 0.897
+      },
+      "cost_eur": 97.0554,
+      "cost_components_eur": {
+        "labor": 68.23778,
+        "equipment": 0.0,
+        "material": 28.825992
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-BEAM-FORM"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "281221"
+    },
+    {
+      "id": "B4-POUR",
+      "element": "B4",
+      "package_id": "WP-B4",
+      "zone": "E",
+      "work_item": "BEAM-CONC",
+      "kind": "productive",
+      "mode": "HYP-CONC",
+      "bcca_code": "05HHJ00003",
+      "quantity": 0.69,
+      "unit": "m3",
+      "productive_hours": 0.22999999999999998,
+      "duration_minutes": 13.8,
+      "demands": {
+        "PEON_ESPECIAL": 2,
+        "OFICIAL_1": 1,
+        "VIBRADOR": 1,
+        "CONCRETE_SUPPLY": 3
+      },
+      "worker_hours_by_trade": {
+        "OFICIAL 1ª": 0.138,
+        "PEÓN ESPECIAL": 0.414
+      },
+      "machine_hours_by_class": {
+        "VIBRADOR": 0.207
+      },
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OFICIAL 1ª": 0.138,
+        "labor:PEÓN ESPECIAL": 0.207,
+        "equipment:VIBRADOR": 0.207,
+        "throughput:CONCRETE_DELIVERY": 0.23
+      },
+      "cost_eur": 81.696,
+      "cost_components_eur": {
+        "labor": 12.3096,
+        "equipment": 0.37674,
+        "material": 69.00897
+      },
+      "calendars": [
+        "DELIVERY",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-BEAM-CONC"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "B4-STRIP",
+      "element": "B4",
+      "package_id": "WP-B4",
+      "zone": "E",
+      "work_item": "FRM-STRIP",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HED00001",
+      "quantity": 5.98,
+      "unit": "m2",
+      "productive_hours": 0.897,
+      "duration_minutes": 53.82,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 0.1794,
+        "PEÓN ESPECIAL": 0.897
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.0897,
+        "labor:PEÓN ESPECIAL": 0.897
+      },
+      "cost_eur": 23.92,
+      "cost_components_eur": {
+        "labor": 23.899668,
+        "equipment": 0.0,
+        "material": 0.0
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-FRM-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "B4-INSP",
+      "element": "B4",
+      "package_id": "WP-B4",
+      "zone": "E",
+      "work_item": "INSPECTION",
+      "kind": "inspection",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0.5,
+      "duration_minutes": 30,
+      "demands": {
+        "INSPECTOR": 1
+      },
+      "cost_eur": 0.0,
+      "calendars": [
+        "INSPECTOR",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "pass_event": {
+        "id": "EV-B4-INSP",
+        "status": "hypothetical_pass"
+      },
+      "approval_ids": [
+        "AP-DR06"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "B4-CURE",
+      "element": "B4",
+      "package_id": "WP-B4",
+      "zone": "E",
+      "work_item": "CURE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 1440,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR07"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "B4-STRIKE",
+      "element": "B4",
+      "package_id": "WP-B4",
+      "zone": "E",
+      "work_item": "STRIKING-RELEASE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 10080,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR08"
+      ],
+      "input_state": "hypothetical_fixture",
+      "release_event": {
+        "id": "EV-B4-STRENGTH",
+        "status": "hypothetical_pass_at_minimum",
+        "anchor": "B4-POUR finish"
+      }
+    },
+    {
+      "id": "S-W-REBAR",
+      "element": "S-W",
+      "package_id": "WP-S-W",
+      "zone": "W",
+      "work_item": "SLAB-REBAR",
+      "kind": "productive",
+      "mode": "HYP-REBAR",
+      "bcca_code": "05HAC00015",
+      "quantity": 290,
+      "unit": "kg",
+      "productive_hours": 2.9,
+      "duration_minutes": 174.0,
+      "demands": {
+        "OF1_FERRALLISTA": 2
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª FERRALLISTA": 5.8
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª FERRALLISTA": 2.9
+      },
+      "cost_eur": 440.8,
+      "cost_components_eur": {
+        "labor": 134.386,
+        "equipment": 0.0,
+        "material": 304.5
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-SLAB-REBAR"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "S-W-FORM",
+      "element": "S-W",
+      "package_id": "WP-S-W",
+      "zone": "W",
+      "work_item": "SLAB-FORM",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HEM00101",
+      "quantity": 13.9,
+      "unit": "m2",
+      "productive_hours": 3.8225000000000002,
+      "duration_minutes": 229.35,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 7.645,
+        "PEÓN ESPECIAL": 2.78
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 3.8225,
+        "labor:PEÓN ESPECIAL": 2.78
+      },
+      "cost_eur": 297.738,
+      "cost_components_eur": {
+        "labor": 238.32245,
+        "equipment": 0.0,
+        "material": 59.45586
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-SLAB-FORM"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "281221"
+    },
+    {
+      "id": "S-W-POUR",
+      "element": "S-W",
+      "package_id": "WP-S-W",
+      "zone": "W",
+      "work_item": "SLAB-CONC",
+      "kind": "productive",
+      "mode": "HYP-CONC",
+      "bcca_code": "05HHL00003",
+      "quantity": 3.456,
+      "unit": "m3",
+      "productive_hours": 1.0368,
+      "duration_minutes": 62.208,
+      "demands": {
+        "PEON_ESPECIAL": 2,
+        "OFICIAL_1": 1,
+        "VIBRADOR": 1,
+        "CONCRETE_SUPPLY": 6
+      },
+      "worker_hours_by_trade": {
+        "OFICIAL 1ª": 0.6912,
+        "PEÓN ESPECIAL": 2.0736
+      },
+      "machine_hours_by_class": {
+        "VIBRADOR": 1.0368
+      },
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OFICIAL 1ª": 0.6912,
+        "labor:PEÓN ESPECIAL": 1.0368,
+        "equipment:VIBRADOR": 1.0368,
+        "throughput:CONCRETE_DELIVERY": 0.576
+      },
+      "cost_eur": 409.77792,
+      "cost_components_eur": {
+        "labor": 61.65504,
+        "equipment": 1.886976,
+        "material": 346.215168
+      },
+      "calendars": [
+        "DELIVERY",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-SLAB-CONC"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "S-W-STRIP",
+      "element": "S-W",
+      "package_id": "WP-S-W",
+      "zone": "W",
+      "work_item": "FRM-STRIP",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HED00001",
+      "quantity": 13.9,
+      "unit": "m2",
+      "productive_hours": 2.085,
+      "duration_minutes": 125.1,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 0.417,
+        "PEÓN ESPECIAL": 2.085
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.2085,
+        "labor:PEÓN ESPECIAL": 2.085
+      },
+      "cost_eur": 55.6,
+      "cost_components_eur": {
+        "labor": 55.55274,
+        "equipment": 0.0,
+        "material": 0.0
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-FRM-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "S-W-INSP",
+      "element": "S-W",
+      "package_id": "WP-S-W",
+      "zone": "W",
+      "work_item": "INSPECTION",
+      "kind": "inspection",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0.5,
+      "duration_minutes": 30,
+      "demands": {
+        "INSPECTOR": 1
+      },
+      "cost_eur": 0.0,
+      "calendars": [
+        "INSPECTOR",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "pass_event": {
+        "id": "EV-S-W-INSP",
+        "status": "hypothetical_pass"
+      },
+      "approval_ids": [
+        "AP-DR06"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "S-W-CURE",
+      "element": "S-W",
+      "package_id": "WP-S-W",
+      "zone": "W",
+      "work_item": "CURE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 1440,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR07"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "S-W-STRIKE",
+      "element": "S-W",
+      "package_id": "WP-S-W",
+      "zone": "W",
+      "work_item": "STRIKING-RELEASE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 10080,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR08"
+      ],
+      "input_state": "hypothetical_fixture",
+      "release_event": {
+        "id": "EV-S-W-STRENGTH",
+        "status": "hypothetical_pass_at_minimum",
+        "anchor": "S-W-POUR finish"
+      }
+    },
+    {
+      "id": "S-E-REBAR",
+      "element": "S-E",
+      "package_id": "WP-S-E",
+      "zone": "E",
+      "work_item": "SLAB-REBAR",
+      "kind": "productive",
+      "mode": "HYP-REBAR",
+      "bcca_code": "05HAC00015",
+      "quantity": 290,
+      "unit": "kg",
+      "productive_hours": 2.9,
+      "duration_minutes": 174.0,
+      "demands": {
+        "OF1_FERRALLISTA": 2
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª FERRALLISTA": 5.8
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª FERRALLISTA": 2.9
+      },
+      "cost_eur": 440.8,
+      "cost_components_eur": {
+        "labor": 134.386,
+        "equipment": 0.0,
+        "material": 304.5
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-SLAB-REBAR"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "S-E-FORM",
+      "element": "S-E",
+      "package_id": "WP-S-E",
+      "zone": "E",
+      "work_item": "SLAB-FORM",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HEM00101",
+      "quantity": 13.9,
+      "unit": "m2",
+      "productive_hours": 3.8225000000000002,
+      "duration_minutes": 229.35,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 7.645,
+        "PEÓN ESPECIAL": 2.78
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 3.8225,
+        "labor:PEÓN ESPECIAL": 2.78
+      },
+      "cost_eur": 297.738,
+      "cost_components_eur": {
+        "labor": 238.32245,
+        "equipment": 0.0,
+        "material": 59.45586
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-SLAB-FORM"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "281221"
+    },
+    {
+      "id": "S-E-POUR",
+      "element": "S-E",
+      "package_id": "WP-S-E",
+      "zone": "E",
+      "work_item": "SLAB-CONC",
+      "kind": "productive",
+      "mode": "HYP-CONC",
+      "bcca_code": "05HHL00003",
+      "quantity": 3.456,
+      "unit": "m3",
+      "productive_hours": 1.0368,
+      "duration_minutes": 62.208,
+      "demands": {
+        "PEON_ESPECIAL": 2,
+        "OFICIAL_1": 1,
+        "VIBRADOR": 1,
+        "CONCRETE_SUPPLY": 6
+      },
+      "worker_hours_by_trade": {
+        "OFICIAL 1ª": 0.6912,
+        "PEÓN ESPECIAL": 2.0736
+      },
+      "machine_hours_by_class": {
+        "VIBRADOR": 1.0368
+      },
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OFICIAL 1ª": 0.6912,
+        "labor:PEÓN ESPECIAL": 1.0368,
+        "equipment:VIBRADOR": 1.0368,
+        "throughput:CONCRETE_DELIVERY": 0.576
+      },
+      "cost_eur": 409.77792,
+      "cost_components_eur": {
+        "labor": 61.65504,
+        "equipment": 1.886976,
+        "material": 346.215168
+      },
+      "calendars": [
+        "DELIVERY",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-SLAB-CONC"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "160122"
+    },
+    {
+      "id": "S-E-STRIP",
+      "element": "S-E",
+      "package_id": "WP-S-E",
+      "zone": "E",
+      "work_item": "FRM-STRIP",
+      "kind": "productive",
+      "mode": "HYP-FORM",
+      "bcca_code": "05HED00001",
+      "quantity": 13.9,
+      "unit": "m2",
+      "productive_hours": 2.085,
+      "duration_minutes": 125.1,
+      "demands": {
+        "OF1_ENCOFRADOR": 2,
+        "PEON_ESPECIAL": 1
+      },
+      "worker_hours_by_trade": {
+        "OF. 1ª ENCOFRADOR": 0.417,
+        "PEÓN ESPECIAL": 2.085
+      },
+      "machine_hours_by_class": {},
+      "capacity_bounds_hours": {
+        "process_minimum": 0,
+        "labor:OF. 1ª ENCOFRADOR": 0.2085,
+        "labor:PEÓN ESPECIAL": 2.085
+      },
+      "cost_eur": 55.6,
+      "cost_components_eur": {
+        "labor": 55.55274,
+        "equipment": 0.0,
+        "material": 0.0
+      },
+      "calendars": [
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "approval_ids": [
+        "AP-W-FRM-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "reference_edition": "BCCA Dic-2023 V02 (Junta de Andalucia), file BCCA2023_V02.bc3",
+      "concept_price_date_ddmmyy": "051222"
+    },
+    {
+      "id": "S-E-INSP",
+      "element": "S-E",
+      "package_id": "WP-S-E",
+      "zone": "E",
+      "work_item": "INSPECTION",
+      "kind": "inspection",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0.5,
+      "duration_minutes": 30,
+      "demands": {
+        "INSPECTOR": 1
+      },
+      "cost_eur": 0.0,
+      "calendars": [
+        "INSPECTOR",
+        "PROJECT"
+      ],
+      "interruption": "non_interruptible",
+      "pass_event": {
+        "id": "EV-S-E-INSP",
+        "status": "hypothetical_pass"
+      },
+      "approval_ids": [
+        "AP-DR06"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "S-E-CURE",
+      "element": "S-E",
+      "package_id": "WP-S-E",
+      "zone": "E",
+      "work_item": "CURE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 1440,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR07"
+      ],
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "S-E-STRIKE",
+      "element": "S-E",
+      "package_id": "WP-S-E",
+      "zone": "E",
+      "work_item": "STRIKING-RELEASE",
+      "kind": "elapsed_hold",
+      "mode": null,
+      "bcca_code": null,
+      "quantity": null,
+      "unit": null,
+      "productive_hours": 0,
+      "duration_minutes": 10080,
+      "demands": {},
+      "cost_eur": 0.0,
+      "calendars": [],
+      "interruption": null,
+      "approval_ids": [
+        "AP-DR08"
+      ],
+      "input_state": "hypothetical_fixture",
+      "release_event": {
+        "id": "EV-S-E-STRENGTH",
+        "status": "hypothetical_pass_at_minimum",
+        "anchor": "S-E-POUR finish"
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "predecessor": "C1-REBAR",
+      "successor": "C1-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR05",
+      "source": "element method",
+      "condition": "cage_first"
+    },
+    {
+      "predecessor": "C1-FORM",
+      "successor": "C1-INSP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "C1-INSP",
+      "successor": "C1-POUR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "inspection pass"
+    },
+    {
+      "predecessor": "C1-POUR",
+      "successor": "C1-CURE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR07",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "C1-POUR",
+      "successor": "C1-STRIKE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "striking minimum from pour finish"
+    },
+    {
+      "predecessor": "C1-CURE",
+      "successor": "C1-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "C1-STRIKE",
+      "successor": "C1-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "strength release"
+    },
+    {
+      "predecessor": "C3-REBAR",
+      "successor": "C3-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR05",
+      "source": "element method",
+      "condition": "cage_first"
+    },
+    {
+      "predecessor": "C3-FORM",
+      "successor": "C3-INSP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "C3-INSP",
+      "successor": "C3-POUR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "inspection pass"
+    },
+    {
+      "predecessor": "C3-POUR",
+      "successor": "C3-CURE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR07",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "C3-POUR",
+      "successor": "C3-STRIKE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "striking minimum from pour finish"
+    },
+    {
+      "predecessor": "C3-CURE",
+      "successor": "C3-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "C3-STRIKE",
+      "successor": "C3-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "strength release"
+    },
+    {
+      "predecessor": "C2-REBAR",
+      "successor": "C2-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR05",
+      "source": "element method",
+      "condition": "cage_first"
+    },
+    {
+      "predecessor": "C2-FORM",
+      "successor": "C2-INSP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "C2-INSP",
+      "successor": "C2-POUR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "inspection pass"
+    },
+    {
+      "predecessor": "C2-POUR",
+      "successor": "C2-CURE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR07",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "C2-POUR",
+      "successor": "C2-STRIKE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "striking minimum from pour finish"
+    },
+    {
+      "predecessor": "C2-CURE",
+      "successor": "C2-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "C2-STRIKE",
+      "successor": "C2-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "strength release"
+    },
+    {
+      "predecessor": "C4-REBAR",
+      "successor": "C4-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR05",
+      "source": "element method",
+      "condition": "cage_first"
+    },
+    {
+      "predecessor": "C4-FORM",
+      "successor": "C4-INSP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "C4-INSP",
+      "successor": "C4-POUR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "inspection pass"
+    },
+    {
+      "predecessor": "C4-POUR",
+      "successor": "C4-CURE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR07",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "C4-POUR",
+      "successor": "C4-STRIKE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "striking minimum from pour finish"
+    },
+    {
+      "predecessor": "C4-CURE",
+      "successor": "C4-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "C4-STRIKE",
+      "successor": "C4-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "strength release"
+    },
+    {
+      "predecessor": "B1-FORM",
+      "successor": "B1-REBAR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "formwork_first"
+    },
+    {
+      "predecessor": "B1-REBAR",
+      "successor": "B1-INSP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "B1-INSP",
+      "successor": "B1-POUR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "inspection pass"
+    },
+    {
+      "predecessor": "B1-POUR",
+      "successor": "B1-CURE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR07",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "B1-POUR",
+      "successor": "B1-STRIKE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "striking minimum from pour finish"
+    },
+    {
+      "predecessor": "B1-CURE",
+      "successor": "B1-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "B1-STRIKE",
+      "successor": "B1-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "strength release"
+    },
+    {
+      "predecessor": "B2-FORM",
+      "successor": "B2-REBAR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "formwork_first"
+    },
+    {
+      "predecessor": "B2-REBAR",
+      "successor": "B2-INSP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "B2-INSP",
+      "successor": "B2-POUR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "inspection pass"
+    },
+    {
+      "predecessor": "B2-POUR",
+      "successor": "B2-CURE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR07",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "B2-POUR",
+      "successor": "B2-STRIKE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "striking minimum from pour finish"
+    },
+    {
+      "predecessor": "B2-CURE",
+      "successor": "B2-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "B2-STRIKE",
+      "successor": "B2-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "strength release"
+    },
+    {
+      "predecessor": "B3-FORM",
+      "successor": "B3-REBAR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "formwork_first"
+    },
+    {
+      "predecessor": "B3-REBAR",
+      "successor": "B3-INSP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "B3-INSP",
+      "successor": "B3-POUR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "inspection pass"
+    },
+    {
+      "predecessor": "B3-POUR",
+      "successor": "B3-CURE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR07",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "B3-POUR",
+      "successor": "B3-STRIKE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "striking minimum from pour finish"
+    },
+    {
+      "predecessor": "B3-CURE",
+      "successor": "B3-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "B3-STRIKE",
+      "successor": "B3-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "strength release"
+    },
+    {
+      "predecessor": "B4-FORM",
+      "successor": "B4-REBAR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "formwork_first"
+    },
+    {
+      "predecessor": "B4-REBAR",
+      "successor": "B4-INSP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "B4-INSP",
+      "successor": "B4-POUR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "inspection pass"
+    },
+    {
+      "predecessor": "B4-POUR",
+      "successor": "B4-CURE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR07",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "B4-POUR",
+      "successor": "B4-STRIKE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "striking minimum from pour finish"
+    },
+    {
+      "predecessor": "B4-CURE",
+      "successor": "B4-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "B4-STRIKE",
+      "successor": "B4-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "strength release"
+    },
+    {
+      "predecessor": "S-W-FORM",
+      "successor": "S-W-REBAR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "formwork_first"
+    },
+    {
+      "predecessor": "S-W-REBAR",
+      "successor": "S-W-INSP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "S-W-INSP",
+      "successor": "S-W-POUR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "inspection pass"
+    },
+    {
+      "predecessor": "S-W-POUR",
+      "successor": "S-W-CURE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR07",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "S-W-POUR",
+      "successor": "S-W-STRIKE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "striking minimum from pour finish"
+    },
+    {
+      "predecessor": "S-W-CURE",
+      "successor": "S-W-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "S-W-STRIKE",
+      "successor": "S-W-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "strength release"
+    },
+    {
+      "predecessor": "S-E-FORM",
+      "successor": "S-E-REBAR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "formwork_first"
+    },
+    {
+      "predecessor": "S-E-REBAR",
+      "successor": "S-E-INSP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "S-E-INSP",
+      "successor": "S-E-POUR",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR06",
+      "source": "element method",
+      "condition": "inspection pass"
+    },
+    {
+      "predecessor": "S-E-POUR",
+      "successor": "S-E-CURE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR07",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "S-E-POUR",
+      "successor": "S-E-STRIKE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "striking minimum from pour finish"
+    },
+    {
+      "predecessor": "S-E-CURE",
+      "successor": "S-E-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": ""
+    },
+    {
+      "predecessor": "S-E-STRIKE",
+      "successor": "S-E-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR08",
+      "source": "element method",
+      "condition": "strength release"
+    },
+    {
+      "predecessor": "C1-CURE",
+      "successor": "B1-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "beam formwork bears on cured column"
+    },
+    {
+      "predecessor": "C1-STRIP",
+      "successor": "B1-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "column forms off before beam forms (fixture rule)"
+    },
+    {
+      "predecessor": "C2-CURE",
+      "successor": "B1-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "beam formwork bears on cured column"
+    },
+    {
+      "predecessor": "C2-STRIP",
+      "successor": "B1-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "column forms off before beam forms (fixture rule)"
+    },
+    {
+      "predecessor": "C3-CURE",
+      "successor": "B2-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "beam formwork bears on cured column"
+    },
+    {
+      "predecessor": "C3-STRIP",
+      "successor": "B2-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "column forms off before beam forms (fixture rule)"
+    },
+    {
+      "predecessor": "C4-CURE",
+      "successor": "B2-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "beam formwork bears on cured column"
+    },
+    {
+      "predecessor": "C4-STRIP",
+      "successor": "B2-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "column forms off before beam forms (fixture rule)"
+    },
+    {
+      "predecessor": "C1-CURE",
+      "successor": "B3-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "beam formwork bears on cured column"
+    },
+    {
+      "predecessor": "C1-STRIP",
+      "successor": "B3-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "column forms off before beam forms (fixture rule)"
+    },
+    {
+      "predecessor": "C3-CURE",
+      "successor": "B3-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "beam formwork bears on cured column"
+    },
+    {
+      "predecessor": "C3-STRIP",
+      "successor": "B3-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "column forms off before beam forms (fixture rule)"
+    },
+    {
+      "predecessor": "C2-CURE",
+      "successor": "B4-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "beam formwork bears on cured column"
+    },
+    {
+      "predecessor": "C2-STRIP",
+      "successor": "B4-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "column forms off before beam forms (fixture rule)"
+    },
+    {
+      "predecessor": "C4-CURE",
+      "successor": "B4-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "beam formwork bears on cured column"
+    },
+    {
+      "predecessor": "C4-STRIP",
+      "successor": "B4-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "column forms off before beam forms (fixture rule)"
+    },
+    {
+      "predecessor": "B1-CURE",
+      "successor": "S-W-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "slab soffit forms after supporting beam curing gate"
+    },
+    {
+      "predecessor": "S-W-STRIP",
+      "successor": "B1-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "beam soffit and props retained until every supported slab section is stripped"
+    },
+    {
+      "predecessor": "B2-CURE",
+      "successor": "S-W-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "slab soffit forms after supporting beam curing gate"
+    },
+    {
+      "predecessor": "S-W-STRIP",
+      "successor": "B2-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "beam soffit and props retained until every supported slab section is stripped"
+    },
+    {
+      "predecessor": "B3-CURE",
+      "successor": "S-W-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "slab soffit forms after supporting beam curing gate"
+    },
+    {
+      "predecessor": "S-W-STRIP",
+      "successor": "B3-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "beam soffit and props retained until every supported slab section is stripped"
+    },
+    {
+      "predecessor": "B1-CURE",
+      "successor": "S-E-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "slab soffit forms after supporting beam curing gate"
+    },
+    {
+      "predecessor": "S-E-STRIP",
+      "successor": "B1-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "beam soffit and props retained until every supported slab section is stripped"
+    },
+    {
+      "predecessor": "B2-CURE",
+      "successor": "S-E-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "slab soffit forms after supporting beam curing gate"
+    },
+    {
+      "predecessor": "S-E-STRIP",
+      "successor": "B2-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "beam soffit and props retained until every supported slab section is stripped"
+    },
+    {
+      "predecessor": "B4-CURE",
+      "successor": "S-E-FORM",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "slab soffit forms after supporting beam curing gate"
+    },
+    {
+      "predecessor": "S-E-STRIP",
+      "successor": "B4-STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed",
+      "rule_id": "AP-DR09",
+      "source": "support",
+      "condition": "beam soffit and props retained until every supported slab section is stripped"
+    }
+  ],
+  "reservations": [
+    {
+      "reservation_id": "R-COLSET-C1",
+      "resource_id": "COL_FORM_SET",
+      "quantity": 1,
+      "element_ids": [
+        "HYP-C1"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "C1-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "C1-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "C1-FORM",
+        "C1-REBAR",
+        "C1-INSP",
+        "C1-POUR",
+        "C1-CURE",
+        "C1-STRIKE",
+        "C1-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    },
+    {
+      "reservation_id": "R-COLSET-C2",
+      "resource_id": "COL_FORM_SET",
+      "quantity": 1,
+      "element_ids": [
+        "HYP-C2"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "C2-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "C2-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "C2-FORM",
+        "C2-REBAR",
+        "C2-INSP",
+        "C2-POUR",
+        "C2-CURE",
+        "C2-STRIKE",
+        "C2-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    },
+    {
+      "reservation_id": "R-COLSET-C3",
+      "resource_id": "COL_FORM_SET",
+      "quantity": 1,
+      "element_ids": [
+        "HYP-C3"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "C3-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "C3-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "C3-FORM",
+        "C3-REBAR",
+        "C3-INSP",
+        "C3-POUR",
+        "C3-CURE",
+        "C3-STRIKE",
+        "C3-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    },
+    {
+      "reservation_id": "R-COLSET-C4",
+      "resource_id": "COL_FORM_SET",
+      "quantity": 1,
+      "element_ids": [
+        "HYP-C4"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "C4-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "C4-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "C4-FORM",
+        "C4-REBAR",
+        "C4-INSP",
+        "C4-POUR",
+        "C4-CURE",
+        "C4-STRIKE",
+        "C4-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    },
+    {
+      "reservation_id": "R-BEAMSET-B1",
+      "resource_id": "BEAM_FORM_SET",
+      "quantity": 1,
+      "element_ids": [
+        "HYP-B1"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "B1-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "B1-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "B1-FORM",
+        "B1-REBAR",
+        "B1-INSP",
+        "B1-POUR",
+        "B1-CURE",
+        "B1-STRIKE",
+        "B1-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    },
+    {
+      "reservation_id": "R-BEAMPROP-B1",
+      "resource_id": "BEAM_PROP",
+      "quantity": 3,
+      "element_ids": [
+        "HYP-B1"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "B1-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "B1-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "B1-FORM",
+        "B1-REBAR",
+        "B1-INSP",
+        "B1-POUR",
+        "B1-CURE",
+        "B1-STRIKE",
+        "B1-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    },
+    {
+      "reservation_id": "R-BEAMSET-B2",
+      "resource_id": "BEAM_FORM_SET",
+      "quantity": 1,
+      "element_ids": [
+        "HYP-B2"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "B2-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "B2-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "B2-FORM",
+        "B2-REBAR",
+        "B2-INSP",
+        "B2-POUR",
+        "B2-CURE",
+        "B2-STRIKE",
+        "B2-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    },
+    {
+      "reservation_id": "R-BEAMPROP-B2",
+      "resource_id": "BEAM_PROP",
+      "quantity": 3,
+      "element_ids": [
+        "HYP-B2"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "B2-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "B2-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "B2-FORM",
+        "B2-REBAR",
+        "B2-INSP",
+        "B2-POUR",
+        "B2-CURE",
+        "B2-STRIKE",
+        "B2-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    },
+    {
+      "reservation_id": "R-BEAMSET-B3",
+      "resource_id": "BEAM_FORM_SET",
+      "quantity": 1,
+      "element_ids": [
+        "HYP-B3"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "B3-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "B3-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "B3-FORM",
+        "B3-REBAR",
+        "B3-INSP",
+        "B3-POUR",
+        "B3-CURE",
+        "B3-STRIKE",
+        "B3-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    },
+    {
+      "reservation_id": "R-BEAMPROP-B3",
+      "resource_id": "BEAM_PROP",
+      "quantity": 2,
+      "element_ids": [
+        "HYP-B3"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "B3-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "B3-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "B3-FORM",
+        "B3-REBAR",
+        "B3-INSP",
+        "B3-POUR",
+        "B3-CURE",
+        "B3-STRIKE",
+        "B3-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    },
+    {
+      "reservation_id": "R-BEAMSET-B4",
+      "resource_id": "BEAM_FORM_SET",
+      "quantity": 1,
+      "element_ids": [
+        "HYP-B4"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "B4-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "B4-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "B4-FORM",
+        "B4-REBAR",
+        "B4-INSP",
+        "B4-POUR",
+        "B4-CURE",
+        "B4-STRIKE",
+        "B4-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    },
+    {
+      "reservation_id": "R-BEAMPROP-B4",
+      "resource_id": "BEAM_PROP",
+      "quantity": 2,
+      "element_ids": [
+        "HYP-B4"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "B4-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "B4-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "B4-FORM",
+        "B4-REBAR",
+        "B4-INSP",
+        "B4-POUR",
+        "B4-CURE",
+        "B4-STRIKE",
+        "B4-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    },
+    {
+      "reservation_id": "R-SLABSET-S-W",
+      "resource_id": "SLAB_PANEL_SET",
+      "quantity": 1,
+      "element_ids": [
+        "HYP-S-W"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "S-W-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "S-W-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "S-W-FORM",
+        "S-W-REBAR",
+        "S-W-INSP",
+        "S-W-POUR",
+        "S-W-CURE",
+        "S-W-STRIKE",
+        "S-W-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    },
+    {
+      "reservation_id": "R-SLABPROP-S-W",
+      "resource_id": "SLAB_PROP",
+      "quantity": 6,
+      "element_ids": [
+        "HYP-S-W"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "S-W-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "S-W-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "S-W-FORM",
+        "S-W-REBAR",
+        "S-W-INSP",
+        "S-W-POUR",
+        "S-W-CURE",
+        "S-W-STRIKE",
+        "S-W-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    },
+    {
+      "reservation_id": "R-SLABSET-S-E",
+      "resource_id": "SLAB_PANEL_SET",
+      "quantity": 1,
+      "element_ids": [
+        "HYP-S-E"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "S-E-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "S-E-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "S-E-FORM",
+        "S-E-REBAR",
+        "S-E-INSP",
+        "S-E-POUR",
+        "S-E-CURE",
+        "S-E-STRIKE",
+        "S-E-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    },
+    {
+      "reservation_id": "R-SLABPROP-S-E",
+      "resource_id": "SLAB_PROP",
+      "quantity": 6,
+      "element_ids": [
+        "HYP-S-E"
+      ],
+      "start_event": {
+        "kind": "activity_start",
+        "activity_id": "S-E-FORM"
+      },
+      "release_condition": {
+        "all_of": [
+          {
+            "kind": "activity_finish",
+            "activity_id": "S-E-STRIP"
+          }
+        ],
+        "return_lead_minutes": 0,
+        "reshoring": "not_permitted",
+        "input_state": "hypothetical_fixture"
+      },
+      "occupancy_basis": "continuous_elapsed",
+      "covers_activities": [
+        "S-E-FORM",
+        "S-E-REBAR",
+        "S-E-INSP",
+        "S-E-POUR",
+        "S-E-CURE",
+        "S-E-STRIKE",
+        "S-E-STRIP"
+      ],
+      "input_state": "hypothetical_fixture",
+      "approval_required": true
+    }
+  ],
+  "split_policy": "All activities non_interruptible.",
+  "holds": {
+    "curing_hours": {
+      "COL": 24,
+      "BEAM": 24,
+      "SLAB": 24
+    },
+    "striking_hours_from_pour": {
+      "COL": 24,
+      "BEAM": 168,
+      "SLAB": 168
+    },
+    "release_events": "hypothetical_pass_at_minimum (explicit, test only)"
+  }
+}

@@ -1,0 +1,99 @@
+﻿predecessor,successor,relation,lag_minutes,lag_basis,rule_id,source,condition
+C1-REBAR,C1-FORM,FS,0,elapsed,AP-DR05,element method,cage_first
+C1-FORM,C1-INSP,FS,0,elapsed,AP-DR06,element method,
+C1-INSP,C1-POUR,FS,0,elapsed,AP-DR06,element method,inspection pass
+C1-POUR,C1-CURE,FS,0,elapsed,AP-DR07,element method,
+C1-POUR,C1-STRIKE,FS,0,elapsed,AP-DR08,element method,striking minimum from pour finish
+C1-CURE,C1-STRIP,FS,0,elapsed,AP-DR08,element method,
+C1-STRIKE,C1-STRIP,FS,0,elapsed,AP-DR08,element method,strength release
+C3-REBAR,C3-FORM,FS,0,elapsed,AP-DR05,element method,cage_first
+C3-FORM,C3-INSP,FS,0,elapsed,AP-DR06,element method,
+C3-INSP,C3-POUR,FS,0,elapsed,AP-DR06,element method,inspection pass
+C3-POUR,C3-CURE,FS,0,elapsed,AP-DR07,element method,
+C3-POUR,C3-STRIKE,FS,0,elapsed,AP-DR08,element method,striking minimum from pour finish
+C3-CURE,C3-STRIP,FS,0,elapsed,AP-DR08,element method,
+C3-STRIKE,C3-STRIP,FS,0,elapsed,AP-DR08,element method,strength release
+C2-REBAR,C2-FORM,FS,0,elapsed,AP-DR05,element method,cage_first
+C2-FORM,C2-INSP,FS,0,elapsed,AP-DR06,element method,
+C2-INSP,C2-POUR,FS,0,elapsed,AP-DR06,element method,inspection pass
+C2-POUR,C2-CURE,FS,0,elapsed,AP-DR07,element method,
+C2-POUR,C2-STRIKE,FS,0,elapsed,AP-DR08,element method,striking minimum from pour finish
+C2-CURE,C2-STRIP,FS,0,elapsed,AP-DR08,element method,
+C2-STRIKE,C2-STRIP,FS,0,elapsed,AP-DR08,element method,strength release
+C4-REBAR,C4-FORM,FS,0,elapsed,AP-DR05,element method,cage_first
+C4-FORM,C4-INSP,FS,0,elapsed,AP-DR06,element method,
+C4-INSP,C4-POUR,FS,0,elapsed,AP-DR06,element method,inspection pass
+C4-POUR,C4-CURE,FS,0,elapsed,AP-DR07,element method,
+C4-POUR,C4-STRIKE,FS,0,elapsed,AP-DR08,element method,striking minimum from pour finish
+C4-CURE,C4-STRIP,FS,0,elapsed,AP-DR08,element method,
+C4-STRIKE,C4-STRIP,FS,0,elapsed,AP-DR08,element method,strength release
+B1-FORM,B1-REBAR,FS,0,elapsed,AP-DR06,element method,formwork_first
+B1-REBAR,B1-INSP,FS,0,elapsed,AP-DR06,element method,
+B1-INSP,B1-POUR,FS,0,elapsed,AP-DR06,element method,inspection pass
+B1-POUR,B1-CURE,FS,0,elapsed,AP-DR07,element method,
+B1-POUR,B1-STRIKE,FS,0,elapsed,AP-DR08,element method,striking minimum from pour finish
+B1-CURE,B1-STRIP,FS,0,elapsed,AP-DR08,element method,
+B1-STRIKE,B1-STRIP,FS,0,elapsed,AP-DR08,element method,strength release
+B2-FORM,B2-REBAR,FS,0,elapsed,AP-DR06,element method,formwork_first
+B2-REBAR,B2-INSP,FS,0,elapsed,AP-DR06,element method,
+B2-INSP,B2-POUR,FS,0,elapsed,AP-DR06,element method,inspection pass
+B2-POUR,B2-CURE,FS,0,elapsed,AP-DR07,element method,
+B2-POUR,B2-STRIKE,FS,0,elapsed,AP-DR08,element method,striking minimum from pour finish
+B2-CURE,B2-STRIP,FS,0,elapsed,AP-DR08,element method,
+B2-STRIKE,B2-STRIP,FS,0,elapsed,AP-DR08,element method,strength release
+B3-FORM,B3-REBAR,FS,0,elapsed,AP-DR06,element method,formwork_first
+B3-REBAR,B3-INSP,FS,0,elapsed,AP-DR06,element method,
+B3-INSP,B3-POUR,FS,0,elapsed,AP-DR06,element method,inspection pass
+B3-POUR,B3-CURE,FS,0,elapsed,AP-DR07,element method,
+B3-POUR,B3-STRIKE,FS,0,elapsed,AP-DR08,element method,striking minimum from pour finish
+B3-CURE,B3-STRIP,FS,0,elapsed,AP-DR08,element method,
+B3-STRIKE,B3-STRIP,FS,0,elapsed,AP-DR08,element method,strength release
+B4-FORM,B4-REBAR,FS,0,elapsed,AP-DR06,element method,formwork_first
+B4-REBAR,B4-INSP,FS,0,elapsed,AP-DR06,element method,
+B4-INSP,B4-POUR,FS,0,elapsed,AP-DR06,element method,inspection pass
+B4-POUR,B4-CURE,FS,0,elapsed,AP-DR07,element method,
+B4-POUR,B4-STRIKE,FS,0,elapsed,AP-DR08,element method,striking minimum from pour finish
+B4-CURE,B4-STRIP,FS,0,elapsed,AP-DR08,element method,
+B4-STRIKE,B4-STRIP,FS,0,elapsed,AP-DR08,element method,strength release
+S-W-FORM,S-W-REBAR,FS,0,elapsed,AP-DR06,element method,formwork_first
+S-W-REBAR,S-W-INSP,FS,0,elapsed,AP-DR06,element method,
+S-W-INSP,S-W-POUR,FS,0,elapsed,AP-DR06,element method,inspection pass
+S-W-POUR,S-W-CURE,FS,0,elapsed,AP-DR07,element method,
+S-W-POUR,S-W-STRIKE,FS,0,elapsed,AP-DR08,element method,striking minimum from pour finish
+S-W-CURE,S-W-STRIP,FS,0,elapsed,AP-DR08,element method,
+S-W-STRIKE,S-W-STRIP,FS,0,elapsed,AP-DR08,element method,strength release
+S-E-FORM,S-E-REBAR,FS,0,elapsed,AP-DR06,element method,formwork_first
+S-E-REBAR,S-E-INSP,FS,0,elapsed,AP-DR06,element method,
+S-E-INSP,S-E-POUR,FS,0,elapsed,AP-DR06,element method,inspection pass
+S-E-POUR,S-E-CURE,FS,0,elapsed,AP-DR07,element method,
+S-E-POUR,S-E-STRIKE,FS,0,elapsed,AP-DR08,element method,striking minimum from pour finish
+S-E-CURE,S-E-STRIP,FS,0,elapsed,AP-DR08,element method,
+S-E-STRIKE,S-E-STRIP,FS,0,elapsed,AP-DR08,element method,strength release
+C1-CURE,B1-FORM,FS,0,elapsed,AP-DR09,support,beam formwork bears on cured column
+C1-STRIP,B1-FORM,FS,0,elapsed,AP-DR09,support,column forms off before beam forms (fixture rule)
+C2-CURE,B1-FORM,FS,0,elapsed,AP-DR09,support,beam formwork bears on cured column
+C2-STRIP,B1-FORM,FS,0,elapsed,AP-DR09,support,column forms off before beam forms (fixture rule)
+C3-CURE,B2-FORM,FS,0,elapsed,AP-DR09,support,beam formwork bears on cured column
+C3-STRIP,B2-FORM,FS,0,elapsed,AP-DR09,support,column forms off before beam forms (fixture rule)
+C4-CURE,B2-FORM,FS,0,elapsed,AP-DR09,support,beam formwork bears on cured column
+C4-STRIP,B2-FORM,FS,0,elapsed,AP-DR09,support,column forms off before beam forms (fixture rule)
+C1-CURE,B3-FORM,FS,0,elapsed,AP-DR09,support,beam formwork bears on cured column
+C1-STRIP,B3-FORM,FS,0,elapsed,AP-DR09,support,column forms off before beam forms (fixture rule)
+C3-CURE,B3-FORM,FS,0,elapsed,AP-DR09,support,beam formwork bears on cured column
+C3-STRIP,B3-FORM,FS,0,elapsed,AP-DR09,support,column forms off before beam forms (fixture rule)
+C2-CURE,B4-FORM,FS,0,elapsed,AP-DR09,support,beam formwork bears on cured column
+C2-STRIP,B4-FORM,FS,0,elapsed,AP-DR09,support,column forms off before beam forms (fixture rule)
+C4-CURE,B4-FORM,FS,0,elapsed,AP-DR09,support,beam formwork bears on cured column
+C4-STRIP,B4-FORM,FS,0,elapsed,AP-DR09,support,column forms off before beam forms (fixture rule)
+B1-CURE,S-W-FORM,FS,0,elapsed,AP-DR09,support,slab soffit forms after supporting beam curing gate
+S-W-STRIP,B1-STRIP,FS,0,elapsed,AP-DR09,support,beam soffit and props retained until every supported slab section is stripped
+B2-CURE,S-W-FORM,FS,0,elapsed,AP-DR09,support,slab soffit forms after supporting beam curing gate
+S-W-STRIP,B2-STRIP,FS,0,elapsed,AP-DR09,support,beam soffit and props retained until every supported slab section is stripped
+B3-CURE,S-W-FORM,FS,0,elapsed,AP-DR09,support,slab soffit forms after supporting beam curing gate
+S-W-STRIP,B3-STRIP,FS,0,elapsed,AP-DR09,support,beam soffit and props retained until every supported slab section is stripped
+B1-CURE,S-E-FORM,FS,0,elapsed,AP-DR09,support,slab soffit forms after supporting beam curing gate
+S-E-STRIP,B1-STRIP,FS,0,elapsed,AP-DR09,support,beam soffit and props retained until every supported slab section is stripped
+B2-CURE,S-E-FORM,FS,0,elapsed,AP-DR09,support,slab soffit forms after supporting beam curing gate
+S-E-STRIP,B2-STRIP,FS,0,elapsed,AP-DR09,support,beam soffit and props retained until every supported slab section is stripped
+B4-CURE,S-E-FORM,FS,0,elapsed,AP-DR09,support,slab soffit forms after supporting beam curing gate
+S-E-STRIP,B4-STRIP,FS,0,elapsed,AP-DR09,support,beam soffit and props retained until every supported slab section is stripped

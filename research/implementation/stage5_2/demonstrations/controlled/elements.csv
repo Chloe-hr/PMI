@@ -1,0 +1,4 @@
+id,evidence_ids,model_version_id,global_id,ifc_class,source_step_id,container_id,classification,name,object_type,predefined_type
+b9088700-27e9-5011-82a6-fcfe7d50da04,"[""7e3e4cbf-66e9-5063-aaf7-002e17d8991c"", ""03a04abc-7b3c-5bef-a621-d1cb9f60abf0""]",8d21c70a-a957-58f3-88c4-123b7ac4f14b,24tlOXIsvMQfyRLiqh6fZt,IfcColumn,15,b80f4aba-7717-59f4-b234-51b7bdf79425,,Column,,
+38c0e562-d472-5939-a938-fb0891408b61,"[""c8194e91-242b-5a4d-be66-45481069a442"", ""03a04abc-7b3c-5bef-a621-d1cb9f60abf0""]",8d21c70a-a957-58f3-88c4-123b7ac4f14b,1jDfy2_jTRueAw6f5fc3Ev,IfcBeam,36,b80f4aba-7717-59f4-b234-51b7bdf79425,,Beam,,
+eb9257d4-8531-5b83-81be-350df71a5314,"[""1a3f64e1-f1dc-5621-8b86-ebc3d4efa9dd"", ""03a04abc-7b3c-5bef-a621-d1cb9f60abf0""]",8d21c70a-a957-58f3-88c4-123b7ac4f14b,3wOB$MtWLSz8SJNgW3VJvy,IfcSlab,55,b80f4aba-7717-59f4-b234-51b7bdf79425,,Slab,,

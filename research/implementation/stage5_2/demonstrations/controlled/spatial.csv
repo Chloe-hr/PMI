@@ -1,0 +1,2 @@
+id,evidence_ids,model_version_id,global_id,ifc_class,source_step_id,container_id,classification,name,object_type,predefined_type
+b80f4aba-7717-59f4-b234-51b7bdf79425,"[""03a04abc-7b3c-5bef-a621-d1cb9f60abf0""]",8d21c70a-a957-58f3-88c4-123b7ac4f14b,00rfZ_aHHN6RBygZ7Zk1fp,IfcBuildingStorey,12,,,Frame level,,

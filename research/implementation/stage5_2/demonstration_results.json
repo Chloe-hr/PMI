@@ -1,0 +1,96 @@
+[
+  {
+    "model": "controlled",
+    "sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+    "schema": "IFC4",
+    "elements": 3,
+    "classifications": {
+      "cast_in_place_concrete": 3
+    },
+    "packages": {
+      "COL": 1,
+      "BEAM": 1,
+      "SLAB": 1
+    },
+    "activities": 15,
+    "dependencies": {
+      "conditional": 6,
+      "proposed": 10
+    },
+    "graph_issues": 0,
+    "quantity_coverage": {
+      "missing": 9,
+      "available": 3,
+      "not_required": 3
+    },
+    "catalogue_options": 28,
+    "schedulable": 0,
+    "seconds": 0.08
+  },
+  {
+    "model": "SCH-design",
+    "sha256": "03c2a13b37e24fccd925ba251a9a1f7703f10a959e73f3728fd9e1d944d7cada",
+    "schema": "IFC2X3",
+    "elements": 1419,
+    "classifications": {
+      "masonry": 549,
+      "cast_in_place_concrete": 89,
+      "precast_concrete": 106,
+      "concrete_method_unstated": 6,
+      "steel": 120,
+      "timber": 51,
+      "other_material": 487,
+      "finish_or_tile_layer": 1,
+      "aerated_concrete_block": 6,
+      "no_material": 4
+    },
+    "packages": {
+      "SLAB": 6
+    },
+    "activities": 30,
+    "dependencies": {
+      "conditional": 18,
+      "proposed": 12
+    },
+    "graph_issues": 0,
+    "quantity_coverage": {
+      "missing": 18,
+      "review_required": 6,
+      "not_required": 6
+    },
+    "catalogue_options": 54,
+    "schedulable": 0,
+    "seconds": 16.559
+  },
+  {
+    "model": "MEN-RES",
+    "sha256": "9c5bfc05886e869674fffd141c97a8ad83d3d37e699e862e7e40eebb859bce89",
+    "schema": "IFC2X3",
+    "elements": 4272,
+    "classifications": {
+      "cast_in_place_concrete": 1889,
+      "other_material": 1509,
+      "aerated_concrete_block": 534,
+      "timber": 120,
+      "finish_or_tile_layer": 220
+    },
+    "packages": {
+      "COL": 766,
+      "BEAM": 355,
+      "SLAB": 231
+    },
+    "activities": 6760,
+    "dependencies": {
+      "conditional": 2580,
+      "proposed": 4946
+    },
+    "graph_issues": 0,
+    "quantity_coverage": {
+      "missing": 5408,
+      "not_required": 1352
+    },
+    "catalogue_options": 12934,
+    "schedulable": 0,
+    "seconds": 12.531
+  }
+]

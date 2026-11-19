@@ -1,0 +1,17 @@
+{
+  "head": "c1dd5e4b517bce6e1d42713247b66983747fbc15",
+  "starting_and_ending_head_match": true,
+  "byte_hashes_verified": 1254,
+  "intentional_tracked_change": "pmi_core/construction/engine.py",
+  "engine_sha256": "3ddb2dd8f02afa281757c8c018e9d6527abb9d8a8599067cad53195f57e98b4a",
+  "excluded_office_locks": [
+    "research/validation/stage5_1_manual/~$manual_quantity_validation.xlsx"
+  ],
+  "preexisting_status": [
+    " M research/validation/engineering_approval_review/controlled_demo_input_template.json",
+    " M research/validation/engineering_approval_review/duration_and_cost_calculation_examples.md",
+    " M research/validation/engineering_approval_review/measurement_instructions.md",
+    " M research/validation/engineering_approval_review/preservation_verification.json",
+    " M research/validation/engineering_approval_review/stage5_3_readiness_report.md"
+  ]
+}

@@ -1,6 +1,7 @@
 """Generate evidence-linked construction candidates from one IFC model version."""
 
 from collections import defaultdict
+from dataclasses import asdict
 from math import isfinite
 
 from pmi_core.construction.classification import classify
@@ -60,7 +61,24 @@ def catalogue_selection(activity_codes, references):
     return problems
 
 
-def build_construction(result, library, *, sequences=None, slab_on_grade=None, provided_quantities=()):
+def validate_catalogue_choices(choices, offered):
+    """Flag compatible reference choices for review without creating cost allocations."""
+    selected = []
+    for item, code in choices.items():
+        if item == "CURE":
+            raise ValueError("DC03: Curing is included in placement and has no standalone price.")
+        if code not in offered.get(item, {}):
+            raise ValueError(f"Catalogue reference {code} is unavailable for {item}.")
+        selected.append((item, offered[item][code]))
+    conflicts = catalogue_selection(choices, selected)
+    if conflicts:
+        raise ValueError("Conflicting catalogue choices: " + ", ".join(conflicts))
+    for _, row in selected:
+        row["allocation_status"] = "selected_for_review"
+
+
+def build_construction(result, library, *, sequences=None, slab_on_grade=None, provided_quantities=(),
+                       catalogue_choices=None):
     """Return candidate records. The source approvals are pending for every project."""
     sequences, slab_on_grade = sequences or {}, slab_on_grade or {}
     data = {
@@ -79,7 +97,7 @@ def build_construction(result, library, *, sequences=None, slab_on_grade=None, p
     if not result.is_valid:
         return data
 
-    from dataclasses import asdict
+    remaining_choices = dict(catalogue_choices or {})
 
     materials, quantities, refs, approvals = (defaultdict(list) for _ in range(4))
     spatial = {element.id: element for element in result.spatial_elements}
@@ -124,6 +142,7 @@ def build_construction(result, library, *, sequences=None, slab_on_grade=None, p
         if classification["scope"] != "candidate":
             continue
         family = classification["family"]
+        choices = remaining_choices.pop(element.id, {})
         package_id = stable_id(element.id, "stage5.2", family)
         on_grade = slab_on_grade.get(element.id) if family == "SLAB" else False
         active = [op for op in OPERATIONS if on_grade is not True or op not in {"form", "strip"}]
@@ -135,6 +154,7 @@ def build_construction(result, library, *, sequences=None, slab_on_grade=None, p
         })
         edges = package_dependencies(activity_ids, family, library, sequences.get(element.id), on_grade)
         data["dependencies"].extend(edges)
+        offered = {}
         for op in active:
             suffix, kind, basis, unit, input_ids = OPERATIONS[op]
             work_id = suffix if op in {"cure", "strip"} else f"{family}-{suffix}"
@@ -191,11 +211,19 @@ def build_construction(result, library, *, sequences=None, slab_on_grade=None, p
                 "schedulable": False, "blockers": blockers, "duration": None,
                 "cost_treatment": "included_in_placement" if op == "cure" else "reference_candidates_only",
             })
-            data["catalogue_options"].extend({
+            options = [{
                 **dict(row), "activity_id": activity_id, "work_item": work_id,
                 "edition": "BCCA2023_V02", "region": "Andalucia", "currency": "EUR",
                 "allocation_status": "pending_variant_and_measurement_approval",
-            } for row in refs[work_id] if row["bcca_unit"].replace("²", "2") == unit)
+            } for row in refs[work_id] if row["bcca_unit"].replace("²", "2") == unit]
+            offered[work_id] = {row["bcca_code"]: row for row in options}
+            data["catalogue_options"].extend(options)
+
+        if choices:
+            validate_catalogue_choices(choices, offered)
+
+    if remaining_choices:
+        raise ValueError("Catalogue choice refers to an element without a candidate package.")
 
     data["graph_issues"] = dependency_issues(
         (row["id"] for row in data["activities"]), data["dependencies"])

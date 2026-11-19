@@ -1,0 +1,803 @@
+{
+  "contract_version": "5.1.0",
+  "is_valid": true,
+  "model_version": {
+    "id": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+    "evidence_ids": [
+      "c6dfa0d0-9ef5-50de-92f3-74af3215690c",
+      "f61770e2-9d31-5c99-acc7-08e1852ffd23"
+    ],
+    "project_id": "PMI-CONTROLLED",
+    "sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+    "source_uri": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc",
+    "namespace": "01CR2vYmDSXh5NCTc4WQQL",
+    "ifc_schema": "IFC4",
+    "parent_id": null
+  },
+  "elements": [
+    {
+      "id": "b9088700-27e9-5011-82a6-fcfe7d50da04",
+      "evidence_ids": [
+        "7e3e4cbf-66e9-5063-aaf7-002e17d8991c",
+        "03a04abc-7b3c-5bef-a621-d1cb9f60abf0"
+      ],
+      "model_version_id": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+      "global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "ifc_class": "IfcColumn",
+      "source_step_id": 15,
+      "container_id": "b80f4aba-7717-59f4-b234-51b7bdf79425",
+      "classification": null,
+      "name": "Column",
+      "object_type": null,
+      "predefined_type": null
+    },
+    {
+      "id": "38c0e562-d472-5939-a938-fb0891408b61",
+      "evidence_ids": [
+        "c8194e91-242b-5a4d-be66-45481069a442",
+        "03a04abc-7b3c-5bef-a621-d1cb9f60abf0"
+      ],
+      "model_version_id": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+      "global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "ifc_class": "IfcBeam",
+      "source_step_id": 36,
+      "container_id": "b80f4aba-7717-59f4-b234-51b7bdf79425",
+      "classification": null,
+      "name": "Beam",
+      "object_type": null,
+      "predefined_type": null
+    },
+    {
+      "id": "eb9257d4-8531-5b83-81be-350df71a5314",
+      "evidence_ids": [
+        "1a3f64e1-f1dc-5621-8b86-ebc3d4efa9dd",
+        "03a04abc-7b3c-5bef-a621-d1cb9f60abf0"
+      ],
+      "model_version_id": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+      "global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "ifc_class": "IfcSlab",
+      "source_step_id": 55,
+      "container_id": "b80f4aba-7717-59f4-b234-51b7bdf79425",
+      "classification": null,
+      "name": "Slab",
+      "object_type": null,
+      "predefined_type": null
+    }
+  ],
+  "spatial_elements": [
+    {
+      "id": "b80f4aba-7717-59f4-b234-51b7bdf79425",
+      "evidence_ids": [
+        "03a04abc-7b3c-5bef-a621-d1cb9f60abf0"
+      ],
+      "model_version_id": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+      "global_id": "00rfZ_aHHN6RBygZ7Zk1fp",
+      "ifc_class": "IfcBuildingStorey",
+      "source_step_id": 12,
+      "container_id": null,
+      "classification": null,
+      "name": "Frame level",
+      "object_type": null,
+      "predefined_type": null
+    }
+  ],
+  "quantities": [
+    {
+      "id": "a315f36b-5e0c-586e-bed3-49f388f2927f",
+      "evidence_ids": [
+        "8f7d8aa0-3c26-5415-8b4e-0813aeb3cf2a"
+      ],
+      "element_id": "b9088700-27e9-5011-82a6-fcfe7d50da04",
+      "kind": "area",
+      "basis": "gross_surface_area",
+      "method": "ifc_quantity",
+      "status": "accepted",
+      "value": 5.120000000000001,
+      "unit": "m2",
+      "raw_value": 5.120000000000001,
+      "raw_unit": "SQUARE_METRE",
+      "reason": null,
+      "measurement_method": "BaseQuantities"
+    },
+    {
+      "id": "c2db47ae-15d2-5f60-8290-7bedc4ca5623",
+      "evidence_ids": [
+        "95c748a0-05c8-5f06-97c4-f0bf741d2a6e"
+      ],
+      "element_id": "b9088700-27e9-5011-82a6-fcfe7d50da04",
+      "kind": "volume",
+      "basis": "net_volume",
+      "method": "ifc_quantity",
+      "status": "accepted",
+      "value": 0.4800000000000001,
+      "unit": "m3",
+      "raw_value": 0.4800000000000001,
+      "raw_unit": "CUBIC_METRE",
+      "reason": null,
+      "measurement_method": "BaseQuantities"
+    },
+    {
+      "id": "0c07fccc-9bdb-53ad-96bf-9ad3e5410dfe",
+      "evidence_ids": [
+        "db2ddada-71c9-5afc-8eee-5a062bb87056"
+      ],
+      "element_id": "b9088700-27e9-5011-82a6-fcfe7d50da04",
+      "kind": "volume",
+      "basis": "represented_body_volume",
+      "method": "geometry",
+      "status": "accepted",
+      "value": 0.48000000000000015,
+      "unit": "m3",
+      "raw_value": null,
+      "raw_unit": null,
+      "reason": null,
+      "measurement_method": null
+    },
+    {
+      "id": "03e65297-2b2c-5802-80ed-16f642ac43a5",
+      "evidence_ids": [
+        "e8112feb-75c4-5bc5-9017-b8db7a930b00"
+      ],
+      "element_id": "38c0e562-d472-5939-a938-fb0891408b61",
+      "kind": "area",
+      "basis": "gross_surface_area",
+      "method": "ifc_quantity",
+      "status": "accepted",
+      "value": 7.6000000000000005,
+      "unit": "m2",
+      "raw_value": 7.6000000000000005,
+      "raw_unit": "SQUARE_METRE",
+      "reason": null,
+      "measurement_method": "BaseQuantities"
+    },
+    {
+      "id": "5f6eaa80-527c-579f-b165-b8ef9170e17c",
+      "evidence_ids": [
+        "99987bb6-1b07-5424-ab5d-46f30ae41ab5"
+      ],
+      "element_id": "38c0e562-d472-5939-a938-fb0891408b61",
+      "kind": "volume",
+      "basis": "net_volume",
+      "method": "ifc_quantity",
+      "status": "accepted",
+      "value": 0.8,
+      "unit": "m3",
+      "raw_value": 0.8,
+      "raw_unit": "CUBIC_METRE",
+      "reason": null,
+      "measurement_method": "BaseQuantities"
+    },
+    {
+      "id": "8778a92d-99bc-54e7-8133-3f382511ee93",
+      "evidence_ids": [
+        "308c429b-fb2d-5178-96e0-266b6e9d16a7"
+      ],
+      "element_id": "38c0e562-d472-5939-a938-fb0891408b61",
+      "kind": "volume",
+      "basis": "represented_body_volume",
+      "method": "geometry",
+      "status": "accepted",
+      "value": 0.7999999999999999,
+      "unit": "m3",
+      "raw_value": null,
+      "raw_unit": null,
+      "reason": null,
+      "measurement_method": null
+    },
+    {
+      "id": "8228ac9a-1810-53dc-95a1-397c32aae9f3",
+      "evidence_ids": [
+        "2affef51-d350-5221-a6c5-1566b96ee703"
+      ],
+      "element_id": "eb9257d4-8531-5b83-81be-350df71a5314",
+      "kind": "area",
+      "basis": "gross_surface_area",
+      "method": "ifc_quantity",
+      "status": "accepted",
+      "value": 26.8,
+      "unit": "m2",
+      "raw_value": 26.8,
+      "raw_unit": "SQUARE_METRE",
+      "reason": null,
+      "measurement_method": "BaseQuantities"
+    },
+    {
+      "id": "17dbbe2e-ae26-54d6-9f68-c67b70eb3f63",
+      "evidence_ids": [
+        "fd90d62c-1d76-5c29-905f-54304a8c37a8"
+      ],
+      "element_id": "eb9257d4-8531-5b83-81be-350df71a5314",
+      "kind": "volume",
+      "basis": "net_volume",
+      "method": "ifc_quantity",
+      "status": "accepted",
+      "value": 2.4000000000000004,
+      "unit": "m3",
+      "raw_value": 2.4000000000000004,
+      "raw_unit": "CUBIC_METRE",
+      "reason": null,
+      "measurement_method": "BaseQuantities"
+    },
+    {
+      "id": "b0c5ef0a-96c4-5be1-b863-23536e62047f",
+      "evidence_ids": [
+        "b1027942-958d-54f6-997e-c9032e46868e"
+      ],
+      "element_id": "eb9257d4-8531-5b83-81be-350df71a5314",
+      "kind": "volume",
+      "basis": "represented_body_volume",
+      "method": "geometry",
+      "status": "accepted",
+      "value": 2.4,
+      "unit": "m3",
+      "raw_value": null,
+      "raw_unit": null,
+      "reason": null,
+      "measurement_method": null
+    }
+  ],
+  "materials": [
+    {
+      "id": "afa30f83-b743-5a14-a7b1-abb396eca1fe",
+      "evidence_ids": [
+        "f6cbbef2-83cd-5960-91eb-39b9f8790dd1",
+        "6ca4bfa9-a0ca-5d7b-8b09-f7b67c276174"
+      ],
+      "element_id": "b9088700-27e9-5011-82a6-fcfe7d50da04",
+      "name": "Cast-in-place concrete",
+      "basis": "occurrence_single",
+      "grade": null,
+      "fraction": null,
+      "classification": "cast_in_place_label"
+    },
+    {
+      "id": "f92ed642-b5f5-53da-9c8b-3384bb1ebeeb",
+      "evidence_ids": [
+        "f6cbbef2-83cd-5960-91eb-39b9f8790dd1",
+        "6ca4bfa9-a0ca-5d7b-8b09-f7b67c276174"
+      ],
+      "element_id": "38c0e562-d472-5939-a938-fb0891408b61",
+      "name": "Cast-in-place concrete",
+      "basis": "occurrence_single",
+      "grade": null,
+      "fraction": null,
+      "classification": "cast_in_place_label"
+    },
+    {
+      "id": "4b9f65d6-86c7-5181-9065-c178cb31e4c4",
+      "evidence_ids": [
+        "f6cbbef2-83cd-5960-91eb-39b9f8790dd1",
+        "6ca4bfa9-a0ca-5d7b-8b09-f7b67c276174"
+      ],
+      "element_id": "eb9257d4-8531-5b83-81be-350df71a5314",
+      "name": "Cast-in-place concrete",
+      "basis": "occurrence_single",
+      "grade": null,
+      "fraction": null,
+      "classification": "cast_in_place_label"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "c6dfa0d0-9ef5-50de-92f3-74af3215690c",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [],
+      "sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+      "formula": null
+    },
+    {
+      "id": "f61770e2-9d31-5c99-acc7-08e1852ffd23",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-1",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "7e3e4cbf-66e9-5063-aaf7-002e17d8991c",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-15",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "03a04abc-7b3c-5bef-a621-d1cb9f60abf0",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-12",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "c8194e91-242b-5a4d-be66-45481069a442",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-36",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "1a3f64e1-f1dc-5621-8b86-ebc3d4efa9dd",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-55",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "b6e9d6ef-f2b9-52a0-a95a-747d66275fe2",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-33",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "7d03d229-a467-5c0f-b64c-25a2c6fd580f",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-32",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "176d6d42-3191-5806-9084-a0ca1ae2dd45",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-34",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "4e6de5db-5734-503a-b6e8-1e8217022a79",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-5",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "23897d3f-e102-5190-ad10-e647d1e7e980",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-4",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "7943b634-c3e0-5556-a04e-caaa8dc6d28f",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-35",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "92bfadbe-416a-538a-9002-9b8449552951",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-3",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "8f7d8aa0-3c26-5415-8b4e-0813aeb3cf2a",
+      "kind": "derivation",
+      "locator": "pmi:a315f36b-5e0c-586e-bed3-49f388f2927f",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "b6e9d6ef-f2b9-52a0-a95a-747d66275fe2",
+        "7d03d229-a467-5c0f-b64c-25a2c6fd580f",
+        "7943b634-c3e0-5556-a04e-caaa8dc6d28f",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "92bfadbe-416a-538a-9002-9b8449552951"
+      ],
+      "sha256": null,
+      "formula": "First equivalent authored candidate \u00d7 1; basis=gross_surface_area; measurement method=BaseQuantities"
+    },
+    {
+      "id": "95c748a0-05c8-5f06-97c4-f0bf741d2a6e",
+      "kind": "derivation",
+      "locator": "pmi:c2db47ae-15d2-5f60-8290-7bedc4ca5623",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "b6e9d6ef-f2b9-52a0-a95a-747d66275fe2",
+        "7d03d229-a467-5c0f-b64c-25a2c6fd580f",
+        "176d6d42-3191-5806-9084-a0ca1ae2dd45",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "23897d3f-e102-5190-ad10-e647d1e7e980"
+      ],
+      "sha256": null,
+      "formula": "First equivalent authored candidate \u00d7 1; basis=net_volume; measurement method=BaseQuantities"
+    },
+    {
+      "id": "5b9bfba0-2a2e-59ea-8da8-37a1dffd18cc",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-27",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "3df29ed0-3f6d-5313-9b09-81e9064a06fe",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-26",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "2ed7fa48-afcc-5f06-aa4a-c2793857ebd1",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-2",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "db2ddada-71c9-5afc-8eee-5a062bb87056",
+      "kind": "derivation",
+      "locator": "pmi:0c07fccc-9bdb-53ad-96bf-9ad3e5410dfe",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "7e3e4cbf-66e9-5063-aaf7-002e17d8991c",
+        "5b9bfba0-2a2e-59ea-8da8-37a1dffd18cc",
+        "3df29ed0-3f6d-5313-9b09-81e9064a06fe",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "2ed7fa48-afcc-5f06-aa4a-c2793857ebd1"
+      ],
+      "sha256": null,
+      "formula": "Oriented triangle volume of the convex IFC Body in SI metres"
+    },
+    {
+      "id": "f6cbbef2-83cd-5960-91eb-39b9f8790dd1",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-17",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "6ca4bfa9-a0ca-5d7b-8b09-f7b67c276174",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-14",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "01c1b235-4cc3-5427-9dce-74d308251205",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-52",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "ea6fd952-bb9c-58de-9078-77b6b75d8dba",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-51",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "3b4c4c66-07f0-549c-99da-04e9a125e974",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-53",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "f101034c-e197-5b47-899e-a3cd47ec1c12",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-54",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "e8112feb-75c4-5bc5-9017-b8db7a930b00",
+      "kind": "derivation",
+      "locator": "pmi:03e65297-2b2c-5802-80ed-16f642ac43a5",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "01c1b235-4cc3-5427-9dce-74d308251205",
+        "ea6fd952-bb9c-58de-9078-77b6b75d8dba",
+        "f101034c-e197-5b47-899e-a3cd47ec1c12",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "92bfadbe-416a-538a-9002-9b8449552951"
+      ],
+      "sha256": null,
+      "formula": "First equivalent authored candidate \u00d7 1; basis=gross_surface_area; measurement method=BaseQuantities"
+    },
+    {
+      "id": "99987bb6-1b07-5424-ab5d-46f30ae41ab5",
+      "kind": "derivation",
+      "locator": "pmi:5f6eaa80-527c-579f-b165-b8ef9170e17c",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "01c1b235-4cc3-5427-9dce-74d308251205",
+        "ea6fd952-bb9c-58de-9078-77b6b75d8dba",
+        "3b4c4c66-07f0-549c-99da-04e9a125e974",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "23897d3f-e102-5190-ad10-e647d1e7e980"
+      ],
+      "sha256": null,
+      "formula": "First equivalent authored candidate \u00d7 1; basis=net_volume; measurement method=BaseQuantities"
+    },
+    {
+      "id": "4341fdcc-cd6e-5717-b7af-2ac5991b8f4c",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-46",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "bee6a340-0aa8-5277-abeb-ed0a5fce6026",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-45",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "308c429b-fb2d-5178-96e0-266b6e9d16a7",
+      "kind": "derivation",
+      "locator": "pmi:8778a92d-99bc-54e7-8133-3f382511ee93",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c8194e91-242b-5a4d-be66-45481069a442",
+        "4341fdcc-cd6e-5717-b7af-2ac5991b8f4c",
+        "bee6a340-0aa8-5277-abeb-ed0a5fce6026",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "2ed7fa48-afcc-5f06-aa4a-c2793857ebd1"
+      ],
+      "sha256": null,
+      "formula": "Oriented triangle volume of the convex IFC Body in SI metres"
+    },
+    {
+      "id": "09582ca4-0511-54dd-b5c6-bbf56f69d5d5",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-71",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "2193f7a0-212b-5f2b-85a9-76480063a79a",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-70",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "d13838c7-084e-5abd-8a2c-d6e31a91fe27",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-72",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "633d30f3-dcdb-53a0-a671-61af0bd66d57",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-73",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "2affef51-d350-5221-a6c5-1566b96ee703",
+      "kind": "derivation",
+      "locator": "pmi:8228ac9a-1810-53dc-95a1-397c32aae9f3",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "09582ca4-0511-54dd-b5c6-bbf56f69d5d5",
+        "2193f7a0-212b-5f2b-85a9-76480063a79a",
+        "633d30f3-dcdb-53a0-a671-61af0bd66d57",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "92bfadbe-416a-538a-9002-9b8449552951"
+      ],
+      "sha256": null,
+      "formula": "First equivalent authored candidate \u00d7 1; basis=gross_surface_area; measurement method=BaseQuantities"
+    },
+    {
+      "id": "fd90d62c-1d76-5c29-905f-54304a8c37a8",
+      "kind": "derivation",
+      "locator": "pmi:17dbbe2e-ae26-54d6-9f68-c67b70eb3f63",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "09582ca4-0511-54dd-b5c6-bbf56f69d5d5",
+        "2193f7a0-212b-5f2b-85a9-76480063a79a",
+        "d13838c7-084e-5abd-8a2c-d6e31a91fe27",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "23897d3f-e102-5190-ad10-e647d1e7e980"
+      ],
+      "sha256": null,
+      "formula": "First equivalent authored candidate \u00d7 1; basis=net_volume; measurement method=BaseQuantities"
+    },
+    {
+      "id": "fdd1f69a-37b3-5a7a-8296-b5b66d0c90f1",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-65",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "1b89862a-6a70-5f70-a0dd-29f0c21c0248",
+      "kind": "source",
+      "locator": "file:///C:/Users/Chloe/PMI/PMI/research/implementation/stage5_2/controlled_frame.ifc#step-64",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "c6dfa0d0-9ef5-50de-92f3-74af3215690c"
+      ],
+      "sha256": null,
+      "formula": null
+    },
+    {
+      "id": "b1027942-958d-54f6-997e-c9032e46868e",
+      "kind": "derivation",
+      "locator": "pmi:b0c5ef0a-96c4-5be1-b863-23536e62047f",
+      "version": "pmi-ifc-extraction-5.1",
+      "input_ids": [
+        "1a3f64e1-f1dc-5621-8b86-ebc3d4efa9dd",
+        "fdd1f69a-37b3-5a7a-8296-b5b66d0c90f1",
+        "1b89862a-6a70-5f70-a0dd-29f0c21c0248",
+        "4e6de5db-5734-503a-b6e8-1e8217022a79",
+        "2ed7fa48-afcc-5f06-aa4a-c2793857ebd1"
+      ],
+      "sha256": null,
+      "formula": "Oriented triangle volume of the convex IFC Body in SI metres"
+    }
+  ],
+  "issues": [],
+  "source_project_global_id": "01CR2vYmDSXh5NCTc4WQQL",
+  "policy": "strict",
+  "geometry": [
+    {
+      "element_id": "b9088700-27e9-5011-82a6-fcfe7d50da04",
+      "status": "valid",
+      "reason": null
+    },
+    {
+      "element_id": "38c0e562-d472-5939-a938-fb0891408b61",
+      "status": "valid",
+      "reason": null
+    },
+    {
+      "element_id": "eb9257d4-8531-5b83-81be-350df71a5314",
+      "status": "valid",
+      "reason": null
+    }
+  ],
+  "readiness": [
+    {
+      "element_id": "b9088700-27e9-5011-82a6-fcfe7d50da04",
+      "import_valid": true,
+      "identity_eligible": true,
+      "containment_resolved": true,
+      "geometry_status": "valid",
+      "quantity_status": "available",
+      "material_evidence_available": true,
+      "material_classification_status": "source_label_available",
+      "engineering_validation": "pending",
+      "work_item_eligible": false
+    },
+    {
+      "element_id": "38c0e562-d472-5939-a938-fb0891408b61",
+      "import_valid": true,
+      "identity_eligible": true,
+      "containment_resolved": true,
+      "geometry_status": "valid",
+      "quantity_status": "available",
+      "material_evidence_available": true,
+      "material_classification_status": "source_label_available",
+      "engineering_validation": "pending",
+      "work_item_eligible": false
+    },
+    {
+      "element_id": "eb9257d4-8531-5b83-81be-350df71a5314",
+      "import_valid": true,
+      "identity_eligible": true,
+      "containment_resolved": true,
+      "geometry_status": "valid",
+      "quantity_status": "available",
+      "material_evidence_available": true,
+      "material_classification_status": "source_label_available",
+      "engineering_validation": "pending",
+      "work_item_eligible": false
+    }
+  ]
+}

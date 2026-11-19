@@ -1,6 +1,6 @@
 # Measurement instructions - initial validation subset (11 elements)
 
-Generated 2026-11-19 17:58 UTC. Research only. **No measured values are filled in.** Record results in `research/validation/stage5_1_manual/manual_quantity_validation.xlsx` (sheet Validation_40) - this file does not modify it. Store evidence in `research/validation/stage5_1_manual/evidence/<check_id>/`.
+Generated 2026-11-19 17:59 UTC. Research only. **No measured values are filled in.** Record results in `research/validation/stage5_1_manual/manual_quantity_validation.xlsx` (sheet Validation_40) - this file does not modify it. Store evidence in `research/validation/stage5_1_manual/evidence/<check_id>/`.
 
 **Independence rule:** measure dimensions yourself and compute the volume; the grey workbook values (authored, DERIVED) must not be copied. Bonsai/FreeCAD share IfcOpenShell geometry and do not count as independent.
 

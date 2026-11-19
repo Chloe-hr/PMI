@@ -1,0 +1,10 @@
+id,evidence_ids,element_id,kind,basis,method,status,value,unit,raw_value,raw_unit,reason,measurement_method
+a315f36b-5e0c-586e-bed3-49f388f2927f,"[""8f7d8aa0-3c26-5415-8b4e-0813aeb3cf2a""]",b9088700-27e9-5011-82a6-fcfe7d50da04,area,gross_surface_area,ifc_quantity,accepted,5.120000000000001,m2,5.120000000000001,SQUARE_METRE,,BaseQuantities
+c2db47ae-15d2-5f60-8290-7bedc4ca5623,"[""95c748a0-05c8-5f06-97c4-f0bf741d2a6e""]",b9088700-27e9-5011-82a6-fcfe7d50da04,volume,net_volume,ifc_quantity,accepted,0.4800000000000001,m3,0.4800000000000001,CUBIC_METRE,,BaseQuantities
+0c07fccc-9bdb-53ad-96bf-9ad3e5410dfe,"[""db2ddada-71c9-5afc-8eee-5a062bb87056""]",b9088700-27e9-5011-82a6-fcfe7d50da04,volume,represented_body_volume,geometry,accepted,0.48000000000000015,m3,,,,
+03e65297-2b2c-5802-80ed-16f642ac43a5,"[""e8112feb-75c4-5bc5-9017-b8db7a930b00""]",38c0e562-d472-5939-a938-fb0891408b61,area,gross_surface_area,ifc_quantity,accepted,7.6000000000000005,m2,7.6000000000000005,SQUARE_METRE,,BaseQuantities
+5f6eaa80-527c-579f-b165-b8ef9170e17c,"[""99987bb6-1b07-5424-ab5d-46f30ae41ab5""]",38c0e562-d472-5939-a938-fb0891408b61,volume,net_volume,ifc_quantity,accepted,0.8,m3,0.8,CUBIC_METRE,,BaseQuantities
+8778a92d-99bc-54e7-8133-3f382511ee93,"[""308c429b-fb2d-5178-96e0-266b6e9d16a7""]",38c0e562-d472-5939-a938-fb0891408b61,volume,represented_body_volume,geometry,accepted,0.7999999999999999,m3,,,,
+8228ac9a-1810-53dc-95a1-397c32aae9f3,"[""2affef51-d350-5221-a6c5-1566b96ee703""]",eb9257d4-8531-5b83-81be-350df71a5314,area,gross_surface_area,ifc_quantity,accepted,26.8,m2,26.8,SQUARE_METRE,,BaseQuantities
+17dbbe2e-ae26-54d6-9f68-c67b70eb3f63,"[""fd90d62c-1d76-5c29-905f-54304a8c37a8""]",eb9257d4-8531-5b83-81be-350df71a5314,volume,net_volume,ifc_quantity,accepted,2.4000000000000004,m3,2.4000000000000004,CUBIC_METRE,,BaseQuantities
+b0c5ef0a-96c4-5be1-b863-23536e62047f,"[""b1027942-958d-54f6-997e-c9032e46868e""]",eb9257d4-8531-5b83-81be-350df71a5314,volume,represented_body_volume,geometry,accepted,2.4,m3,,,,

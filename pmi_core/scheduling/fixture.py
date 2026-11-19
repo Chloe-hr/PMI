@@ -78,6 +78,15 @@ def adapt(handover, prepared, config):
             or len(approvals) != 75 or any(row["status"] != "PENDING" for row in approvals)):
         raise ValueError("Scheduling is restricted to the controlled Stage 5.3A fixture with pending approvals.")
     calendar = prepared["calendar"]
+    engineering_calendar = handover["calendar"]
+    # The controlled schedule deliberately substitutes Madrid and adds its holiday
+    # exception. It must retain the engineering estimate's recurring work windows.
+    if (engineering_calendar["timezone"] != "Europe/Paris"
+            or calendar["timezone"] != "Europe/Madrid"
+            or prepared["project"]["timezone"] != calendar["timezone"]
+            or sorted((r["weekday"], r["start"], r["end"]) for r in calendar["working_windows"])
+            != sorted((r["weekday"], r["start"], r["end"]) for r in engineering_calendar["working_windows"])):
+        raise ValueError("Unexpected fixture calendar override or different recurring working windows.")
     baselines = {row["id"]: row for row in prepared["activities"]}
     inspectors = {row["id"]: row for row in prepared["inspection_milestones"]}
     elements = {row["global_id"]: row for row in handover["model_elements"]}

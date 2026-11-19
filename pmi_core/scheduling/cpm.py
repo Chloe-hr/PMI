@@ -147,11 +147,17 @@ def calculate(tasks, dependencies, calendar, *, start, horizon, tick=15,
         release_minute = None
         event_id = row.get("release_event_id")
         if event_id:
+            if row["kind"] != "strength_release":
+                raise ValueError(f"Only a strength-release activity can use release_event_id: {key}.")
             event = release_events.get(event_id, {})
             event_status = event.get("status")
             if event_status == "hypothetical_pass_at_minimum":
                 conditions[key] = event_status
             elif event_status in {"recorded_pass", "hypothetical_recorded_pass"} and event.get("at"):
+                # The recorded check is a fixed absolute not-before on finish.
+                # The elapsed minimum remains movable from its predecessor. The
+                # backward pass can use that minimum because any feasible finish
+                # bound is already at or after this fixed event.
                 release_minute = parse_minute(event["at"], zone, tick)
                 conditions[key] = event_status
             elif event_status == "failed":

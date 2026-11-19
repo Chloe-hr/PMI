@@ -15,8 +15,10 @@ class SchedulingError(ValueError):
 
 
 def round_duration(minutes, tick):
-    if type(tick) is not int or not 1 <= tick <= 1440:
-        raise ValueError("Tick must be an integer between 1 and 1440 minutes.")
+    if type(tick) is not int or tick <= 0:
+        raise ValueError("Tick must be a positive integer.")
+    if 60 % tick:
+        raise SchedulingError("TICK_MISALIGNED", "The tick must divide 60 minutes.", tick_minutes=tick)
     if type(minutes) not in (int, float) or not isfinite(minutes) or minutes < 0:
         raise ValueError("Duration or lag must be a finite nonnegative minute value.")
     return ceil(round(minutes / tick, 10)) * tick
@@ -67,6 +69,14 @@ def build_windows(calendar, start, horizon, tick, allowed_hours=None):
     for day in overrides:
         datetime.fromisoformat(day).date()
     restriction = [tuple(_wall(v) for v in pair) for pair in allowed_hours] if allowed_hours is not None else None
+    for pair in [*(pair for group in weekly.values() for pair in group),
+                 *((_wall(row["start"]), _wall(row["end"])) for group in overrides.values() for row in group),
+                 *(restriction or ())]:
+        if len(pair) != 2 or pair[0] >= pair[1]:
+            raise ValueError("Working windows must end later on the same local date.")
+        if any((boundary.hour * 60 + boundary.minute) % tick for boundary in pair):
+            raise SchedulingError("TICK_MISALIGNED", "A local calendar boundary is off the tick grid.",
+                                  tick_minutes=tick, window=[v.isoformat(timespec="minutes") for v in pair])
     ranges = []
     start_day = datetime.fromtimestamp(start * 60, zone).date()
     end_day = datetime.fromtimestamp(horizon * 60, zone).date()
@@ -75,16 +85,17 @@ def build_windows(calendar, start, horizon, tick, allowed_hours=None):
         pattern = ([( _wall(row["start"]), _wall(row["end"])) for row in overrides[day.isoformat()]]
                    if day.isoformat() in overrides else weekly[day.isoweekday()])
         for a, b in pattern:
-            if a >= b:
-                raise ValueError("Working windows must end later on the same local date.")
-            if restriction is not None and any(c >= d for c, d in restriction):
-                raise ValueError("Invalid activity-specific working window.")
             for left, right in ([(max(a, c), min(b, d)) for c, d in restriction]
                                 if restriction is not None else [(a, b)]):
                 if left >= right:
                     continue
-                first = max(start, parse_minute(datetime.combine(day, left).isoformat(), zone, tick))
-                last = min(horizon, parse_minute(datetime.combine(day, right).isoformat(), zone, tick, upper=True))
+                open_minute = parse_minute(datetime.combine(day, left).isoformat(), zone)
+                close_minute = parse_minute(datetime.combine(day, right).isoformat(), zone)
+                if open_minute % tick or close_minute % tick:
+                    raise SchedulingError("TICK_MISALIGNED", "A calendar boundary is off the UTC tick grid.",
+                                          tick_minutes=tick, date=day.isoformat(), timezone=zone.key)
+                first = max(start, open_minute)
+                last = min(horizon, close_minute)
                 if first < last:
                     ranges.append((first, last))
     merged = []

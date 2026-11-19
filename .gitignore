@@ -31,3 +31,5 @@ models/**/*.joblib
 
 # Trained model files stay on this computer
 *.joblib
+# PMI planning environment
+.venv-planning/

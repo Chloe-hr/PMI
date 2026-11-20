@@ -1,0 +1,562 @@
+{
+  "package": "research/validation/stage5_4a_independent_verification",
+  "git_head": "b3e4acc35eca25e9bdd35dc9fe87b2fe7462e8b1",
+  "decision": "CONDITIONAL GO for controlled CP-SAT implementation; NO-GO for real-project scheduling",
+  "exact_input_files": {
+    "acceptance_cases": [
+      "research/validation/stage5_4a_independent_verification/cpsat_reference_cases.json",
+      "research/validation/stage5_4a_independent_verification/task7_reference_cases.json"
+    ],
+    "contract": [
+      "research/validation/stage5_4a_independent_verification/resource_contract.json",
+      "research/validation/stage5_4a_independent_verification/resource_contract_R2_addendum.json"
+    ],
+    "larger_benchmark": [
+      "research/validation/stage5_4a_independent_verification/controlled_resource_demo/fixture_inputs.json",
+      "research/validation/stage5_4a_independent_verification/controlled_resource_demo/expected_results.json"
+    ],
+    "holiday_sensitivity": [
+      "research/validation/stage5_4a_independent_verification/controlled_resource_demo_holiday_sensitivity/fixture_inputs.json",
+      "research/validation/stage5_4a_independent_verification/controlled_resource_demo_holiday_sensitivity/expected_results.json"
+    ],
+    "r0_regression": [
+      "research/implementation/stage5_4a/controlled_schedule_inputs.json",
+      "research/implementation/stage5_3/scheduling_handover.json",
+      "research/implementation/stage5_3/fixture_inputs.json",
+      "research/planning/stage5_4_preparation/controlled_scheduling_inputs.json"
+    ],
+    "acceptance_criteria": [
+      "research/validation/stage5_4a_independent_verification/acceptance_criteria.csv"
+    ]
+  },
+  "files": [
+    {
+      "path": "acceptance_criteria.csv",
+      "task": "Task 7",
+      "role": "consolidated acceptance criteria",
+      "bytes": 20068,
+      "sha256": "ca90b852790977dbb014b7bb8b80ad3ecfb97e3e4fc662c93e857ad321ba1a70",
+      "tracked_in_head": false
+    },
+    {
+      "path": "activity_verification.csv",
+      "task": "Task 1-3",
+      "role": "evidence",
+      "bytes": 4435,
+      "sha256": "48bc503eb1a46172b1305d9f452a7dcb6e47d32a750bc00aa41feb91879c9ec1",
+      "tracked_in_head": true
+    },
+    {
+      "path": "calendar_constraint_verification.csv",
+      "task": "Task 1-3",
+      "role": "evidence",
+      "bytes": 2462,
+      "sha256": "b84ea233a51e7979c3128b442fb6332c38a049ff9a3d3329bc000ed9b442100e",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/activities.csv",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 18832,
+      "sha256": "58ecaa6a7a7417fe99214b220943c4017e1f2ad0b8415246012ab45c4182e959",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/cpm_resource_conflicts.csv",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 2808,
+      "sha256": "8ee05217fa932ce0d502766de4a70e1c410e1db3818ce00726a0de7e8da04482",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/cpm_schedule.csv",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 9454,
+      "sha256": "e629dd738d18aff73d2d619ffdd74b8dc7b8f6716823f1f88b3abbb796d26e9b",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/demo_report.md",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 12160,
+      "sha256": "8f86c0ff77e444488b95f3561b98fffd3a4a3621fc26cd465c8f985078bd3e89",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/dependencies.csv",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 7518,
+      "sha256": "d33aae15c6e6b315911fd2580f685d4919a2c43e11413e83d64314070f923e44",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/element_quantities.csv",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 2671,
+      "sha256": "1f34ac6e892fafdfdc6039657f16ea0038100c8d40589ce97aee70db5b4ed6db",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/expected_results.json",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 3160,
+      "sha256": "05482146cc4cf2cad50ae35fe67f1b98e529ae3e3ff19446a15e670722bb45f7",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/feasibility_checks.csv",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 16523,
+      "sha256": "a54302e13d7b0a3de6c67d6ab84351f622ceff63d18d652a390c49d0122b82c6",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/fixture_inputs.json",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 131526,
+      "sha256": "1b9df094b09ba7236b76f1566f3fdf2ece3c30c28d64e5c696eb01cba5b47234",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/lower_bound_proof.json",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 1694,
+      "sha256": "834047bc93b4e5da392cbc2f19f98d93a12f728306bb824e37714f2e445c3254",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/report.html",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 79198,
+      "sha256": "6b27724bdd8ed981cdcd186878d9370f2d0731b944872a5127b02f627b3896cd",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/reservations.csv",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 1870,
+      "sha256": "a377592d255e85cb7bfed4fec67b4d8128926fecf67ddd5875df2955e088d183",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/resource_feasible_schedule.csv",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 8614,
+      "sha256": "65ab25cb79da09bb13ee8f86d39cd326852e74c572038dbc02f36fd4a3b00f36",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/resource_occupancy.csv",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 9925,
+      "sha256": "142773bba1bbea2e9ba447d76d21e5ee55d82050eeafcde0b47df2c461b9fdfc",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/resource_utilization.csv",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 2140,
+      "sha256": "c400b5ba297fa14237a8e197cf534ab1c288e4650dd5c850fccfac265557b963",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/scripts/build_controlled_resource_demo.py",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 56570,
+      "sha256": "d34814a629bdff17ef3282a509f79b0c813a26444c789d432204dd65273d467b",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo/work_packages.csv",
+      "task": "Task 6",
+      "role": "benchmark (preserved)",
+      "bytes": 980,
+      "sha256": "3b79c36fc799c32331b1b6180b3d76ed3f3b31292e96fe460c338932043879a2",
+      "tracked_in_head": true
+    },
+    {
+      "path": "controlled_resource_demo_holiday_sensitivity/activities.csv",
+      "task": "Task 7",
+      "role": "sensitivity case DEMO-H1",
+      "bytes": 18832,
+      "sha256": "58ecaa6a7a7417fe99214b220943c4017e1f2ad0b8415246012ab45c4182e959",
+      "tracked_in_head": false
+    },
+    {
+      "path": "controlled_resource_demo_holiday_sensitivity/cpm_resource_conflicts.csv",
+      "task": "Task 7",
+      "role": "sensitivity case DEMO-H1",
+      "bytes": 2808,
+      "sha256": "8ee05217fa932ce0d502766de4a70e1c410e1db3818ce00726a0de7e8da04482",
+      "tracked_in_head": false
+    },
+    {
+      "path": "controlled_resource_demo_holiday_sensitivity/cpm_schedule.csv",
+      "task": "Task 7",
+      "role": "sensitivity case DEMO-H1",
+      "bytes": 9454,
+      "sha256": "e629dd738d18aff73d2d619ffdd74b8dc7b8f6716823f1f88b3abbb796d26e9b",
+      "tracked_in_head": false
+    },
+    {
+      "path": "controlled_resource_demo_holiday_sensitivity/dependencies.csv",
+      "task": "Task 7",
+      "role": "sensitivity case DEMO-H1",
+      "bytes": 7518,
+      "sha256": "d33aae15c6e6b315911fd2580f685d4919a2c43e11413e83d64314070f923e44",
+      "tracked_in_head": false
+    },
+    {
+      "path": "controlled_resource_demo_holiday_sensitivity/element_quantities.csv",
+      "task": "Task 7",
+      "role": "sensitivity case DEMO-H1",
+      "bytes": 2671,
+      "sha256": "1f34ac6e892fafdfdc6039657f16ea0038100c8d40589ce97aee70db5b4ed6db",
+      "tracked_in_head": false
+    },
+    {
+      "path": "controlled_resource_demo_holiday_sensitivity/expected_results.json",
+      "task": "Task 7",
+      "role": "sensitivity case DEMO-H1",
+      "bytes": 3166,
+      "sha256": "9272b19588e86fe99f6219fc31eed8f297d613a9a7ca7a72bc61045e70054bed",
+      "tracked_in_head": false
+    },
+    {
+      "path": "controlled_resource_demo_holiday_sensitivity/feasibility_checks.csv",
+      "task": "Task 7",
+      "role": "sensitivity case DEMO-H1",
+      "bytes": 16523,
+      "sha256": "a54302e13d7b0a3de6c67d6ab84351f622ceff63d18d652a390c49d0122b82c6",
+      "tracked_in_head": false
+    },
+    {
+      "path": "controlled_resource_demo_holiday_sensitivity/fixture_inputs.json",
+      "task": "Task 7",
+      "role": "sensitivity case DEMO-H1",
+      "bytes": 131828,
+      "sha256": "4b166b4259f36701039ba76ef7d09d5e5c0909fabaf26c191877182b451aa100",
+      "tracked_in_head": false
+    },
+    {
+      "path": "controlled_resource_demo_holiday_sensitivity/lower_bound_proof.json",
+      "task": "Task 7",
+      "role": "sensitivity case DEMO-H1",
+      "bytes": 1694,
+      "sha256": "d67a37a0263d564524595eaa3921c76e1f0f4e9ed23f48f1f37e09c2cc2bdc0c",
+      "tracked_in_head": false
+    },
+    {
+      "path": "controlled_resource_demo_holiday_sensitivity/report.html",
+      "task": "Task 7",
+      "role": "sensitivity case DEMO-H1",
+      "bytes": 79458,
+      "sha256": "ec341b88f70bb18be2f962fcdf9221b0f3b6ec0d18a8ad25c5610d8807bfdfe5",
+      "tracked_in_head": false
+    },
+    {
+      "path": "controlled_resource_demo_holiday_sensitivity/reservations.csv",
+      "task": "Task 7",
+      "role": "sensitivity case DEMO-H1",
+      "bytes": 1870,
+      "sha256": "a377592d255e85cb7bfed4fec67b4d8128926fecf67ddd5875df2955e088d183",
+      "tracked_in_head": false
+    },
+    {
+      "path": "controlled_resource_demo_holiday_sensitivity/resource_feasible_schedule.csv",
+      "task": "Task 7",
+      "role": "sensitivity case DEMO-H1",
+      "bytes": 8614,
+      "sha256": "83984c50cd246f1f552bd2d67e946727bdb4ab65e0e26d1789f269d03b259ea7",
+      "tracked_in_head": false
+    },
+    {
+      "path": "controlled_resource_demo_holiday_sensitivity/resource_occupancy.csv",
+      "task": "Task 7",
+      "role": "sensitivity case DEMO-H1",
+      "bytes": 9925,
+      "sha256": "306a324966700614cbaa1b3b0483ab019ff1f454bfccbb8e78dd1b27966a90d3",
+      "tracked_in_head": false
+    },
+    {
+      "path": "controlled_resource_demo_holiday_sensitivity/resource_utilization.csv",
+      "task": "Task 7",
+      "role": "sensitivity case DEMO-H1",
+      "bytes": 2140,
+      "sha256": "5568094b6991d82a4c08cc3c3ce37a61b47f7ff306d630d735c0f125de839f09",
+      "tracked_in_head": false
+    },
+    {
+      "path": "controlled_resource_demo_holiday_sensitivity/work_packages.csv",
+      "task": "Task 7",
+      "role": "sensitivity case DEMO-H1",
+      "bytes": 980,
+      "sha256": "3b79c36fc799c32331b1b6180b3d76ed3f3b31292e96fe460c338932043879a2",
+      "tracked_in_head": false
+    },
+    {
+      "path": "cpsat_expected_results.csv",
+      "task": "Task 4",
+      "role": "acceptance summary",
+      "bytes": 6032,
+      "sha256": "bab187bf614eb2ee5fee478c1bbf71dd4d0d5efa813f99f173f9e1465923c5fe",
+      "tracked_in_head": true
+    },
+    {
+      "path": "cpsat_reference_cases.json",
+      "task": "Task 4",
+      "role": "acceptance input (22 cases)",
+      "bytes": 183296,
+      "sha256": "236bbeca1426c3bbb8609a0e7310d29cacd091f3baed769375ecb47b5ddf78a4",
+      "tracked_in_head": true
+    },
+    {
+      "path": "cpsat_reference_report.md",
+      "task": "Task 4",
+      "role": "report",
+      "bytes": 10881,
+      "sha256": "8128b11a79ef0bb2b7461ded7fe04d4da39ba509737dd29681ad190daf178fd7",
+      "tracked_in_head": true
+    },
+    {
+      "path": "deficiency_resolution_verification.csv",
+      "task": "Task 1-3",
+      "role": "evidence",
+      "bytes": 3166,
+      "sha256": "044e6f49e6fa3428540f27fcfe40c5cd741b5b23d1a6b82fb651748ddfa71794",
+      "tracked_in_head": true
+    },
+    {
+      "path": "dependency_verification.csv",
+      "task": "Task 1-3",
+      "role": "evidence",
+      "bytes": 2114,
+      "sha256": "ef3e86b9ef552a01b56c8bce3d14193de0a9107c195a0d2b4a463fdcb00fb644",
+      "tracked_in_head": true
+    },
+    {
+      "path": "discrepancy_register.csv",
+      "task": "Task 1-3",
+      "role": "findings",
+      "bytes": 2823,
+      "sha256": "428e375f7f722a4cb93e508d6ffc108b841094cc94d845fa979f1ae07a666387",
+      "tracked_in_head": true
+    },
+    {
+      "path": "engineering_approval_addendum.csv",
+      "task": "Task 7",
+      "role": "pending approval addendum",
+      "bytes": 4369,
+      "sha256": "fdc1e1ceac93b45adbf74ad06c724abcc83cffed8dc6812a6bbf71e81df92a90",
+      "tracked_in_head": false
+    },
+    {
+      "path": "preservation_verification.json",
+      "task": "Task 7",
+      "role": "preservation record",
+      "bytes": 2649,
+      "sha256": "be1268c179dbd8252b178c464a031f5add1fb39bf954f67c3d5e059f6136d158",
+      "tracked_in_head": false
+    },
+    {
+      "path": "remaining_deficiencies.csv",
+      "task": "Task 7",
+      "role": "deficiency register",
+      "bytes": 3616,
+      "sha256": "9eab477ef73b63585145c895faae45e26d9de46bcda78dd4cf3090d2d2524fef",
+      "tracked_in_head": false
+    },
+    {
+      "path": "resolution_sensitivity.csv",
+      "task": "Task 1-3",
+      "role": "evidence",
+      "bytes": 1181,
+      "sha256": "5fb7f010596d21df7fdb40215d64a70f95b3c43b6c4bc850737ea6a72a661ea5",
+      "tracked_in_head": true
+    },
+    {
+      "path": "resource_contract.json",
+      "task": "Task 5",
+      "role": "contract R1 (amended by R2 addendum)",
+      "bytes": 30786,
+      "sha256": "b6bca6b47281cd62515ef85046c6035305984621e5129390eaf02725c6420b69",
+      "tracked_in_head": true
+    },
+    {
+      "path": "resource_contract_mapping.csv",
+      "task": "Task 5",
+      "role": "contract mapping",
+      "bytes": 13826,
+      "sha256": "01a741c6c63695209fef6ea05b5b00378143e7d5aa69337aaa56f95007382c68",
+      "tracked_in_head": true
+    },
+    {
+      "path": "resource_contract_R2_addendum.json",
+      "task": "Task 7",
+      "role": "contract R2 addendum",
+      "bytes": 6459,
+      "sha256": "9c2fdefb0f961b193b40f9fdbd01ad06b670bef2227b2d994f95992e3a157164",
+      "tracked_in_head": false
+    },
+    {
+      "path": "resource_contract_report.md",
+      "task": "Task 5",
+      "role": "report",
+      "bytes": 8790,
+      "sha256": "9b66ff2382511fdf9a88ee87cfee3fc3001c033149fef51cd18b518d932ff1ba",
+      "tracked_in_head": true
+    },
+    {
+      "path": "resource_profile_verification.csv",
+      "task": "Task 1-3",
+      "role": "evidence",
+      "bytes": 198,
+      "sha256": "6c06590c1f415e08940c2243d72e35b5bc76991fe1617b95e3c61c42ac074eda",
+      "tracked_in_head": true
+    },
+    {
+      "path": "scripts/build_cpsat_reference_cases.py",
+      "task": "scripts",
+      "role": "generator",
+      "bytes": 42107,
+      "sha256": "53ea090c7007ad7bc884a4ff11c8ebf7387b11336e4e7268c33f9d5d6c79c818",
+      "tracked_in_head": true
+    },
+    {
+      "path": "scripts/build_task7_cases.py",
+      "task": "Task 7",
+      "role": "generator",
+      "bytes": 11514,
+      "sha256": "e32a3c460aa24ff6b3b20c16d39e50d88ac8b76f0ab9571f1dcb344b04579eaa",
+      "tracked_in_head": false
+    },
+    {
+      "path": "scripts/build_task7_package.py",
+      "task": "Task 7",
+      "role": "generator",
+      "bytes": 29599,
+      "sha256": "6cd1efd9e68bfbb06f6925e7fcdb5227c09ba260ba79e53e1772ab211c9cbe36",
+      "tracked_in_head": false
+    },
+    {
+      "path": "scripts/check_resource_mapping.py",
+      "task": "scripts",
+      "role": "generator",
+      "bytes": 3887,
+      "sha256": "21bcde3b59bae3093c20946f7ed6e71dfa2cbf82319ade369eef70e55e31068f",
+      "tracked_in_head": true
+    },
+    {
+      "path": "scripts/compare_and_sensitivity.py",
+      "task": "scripts",
+      "role": "generator",
+      "bytes": 11182,
+      "sha256": "ecc6a05d20cb624e9a96bebeddca38392fea60a2c04e75893e30fe187d271398",
+      "tracked_in_head": true
+    },
+    {
+      "path": "scripts/independent_cpm.py",
+      "task": "scripts",
+      "role": "generator",
+      "bytes": 7545,
+      "sha256": "e4be5a96e3e1cfdc92e73a3651043112a214f80ed3e39b9bc7868ca20225f409",
+      "tracked_in_head": true
+    },
+    {
+      "path": "scripts/out/activity_verification.csv",
+      "task": "Task 1-3",
+      "role": "superseded duplicate (RD02)",
+      "bytes": 4435,
+      "sha256": "48bc503eb1a46172b1305d9f452a7dcb6e47d32a750bc00aa41feb91879c9ec1",
+      "tracked_in_head": true
+    },
+    {
+      "path": "scripts/out/calendar_constraint_verification.csv",
+      "task": "Task 1-3",
+      "role": "superseded duplicate (RD02)",
+      "bytes": 2462,
+      "sha256": "b84ea233a51e7979c3128b442fb6332c38a049ff9a3d3329bc000ed9b442100e",
+      "tracked_in_head": true
+    },
+    {
+      "path": "scripts/out/dependency_verification.csv",
+      "task": "Task 1-3",
+      "role": "superseded duplicate (RD02)",
+      "bytes": 2114,
+      "sha256": "ef3e86b9ef552a01b56c8bce3d14193de0a9107c195a0d2b4a463fdcb00fb644",
+      "tracked_in_head": true
+    },
+    {
+      "path": "scripts/out/resolution_sensitivity.csv",
+      "task": "Task 1-3",
+      "role": "superseded duplicate (RD02)",
+      "bytes": 1180,
+      "sha256": "2ed0756910d49c259f928570e127bbb5606f0e02ad508a8dbf51ea419c1b93e7",
+      "tracked_in_head": true
+    },
+    {
+      "path": "scripts/out/resource_profile_verification.csv",
+      "task": "Task 1-3",
+      "role": "superseded duplicate (RD02)",
+      "bytes": 198,
+      "sha256": "6c06590c1f415e08940c2243d72e35b5bc76991fe1617b95e3c61c42ac074eda",
+      "tracked_in_head": true
+    },
+    {
+      "path": "scripts/out/summary.json",
+      "task": "Task 1-3",
+      "role": "superseded duplicate (RD02)",
+      "bytes": 1286,
+      "sha256": "c5541582fc372cd60d426d566b2a7597c957e32e0a017956aba06552c2bcff49",
+      "tracked_in_head": true
+    },
+    {
+      "path": "stage5_4b_readiness.md",
+      "task": "Task 7",
+      "role": "authorization decision",
+      "bytes": 11576,
+      "sha256": "a32832ba45317e9ffaa8eded3a77aa33f22ac502e876065d73148c6df0f24960",
+      "tracked_in_head": false
+    },
+    {
+      "path": "task7_reference_cases.json",
+      "task": "Task 7",
+      "role": "acceptance input addendum",
+      "bytes": 38267,
+      "sha256": "d8416ac28f5e8faf1b03383b0f4cde2bd6bb2e83c6e49ccaf3b382697c2cbb7a",
+      "tracked_in_head": false
+    },
+    {
+      "path": "verification_report.md",
+      "task": "Task 1-3",
+      "role": "report",
+      "bytes": 8157,
+      "sha256": "13abb1b23d5e5dc18e8dd5ccce7b09c22fe29f92dbad040c33637040405fab68",
+      "tracked_in_head": true
+    },
+    {
+      "path": "verification_summary.json",
+      "task": "Task 1-3",
+      "role": "evidence",
+      "bytes": 1286,
+      "sha256": "c5541582fc372cd60d426d566b2a7597c957e32e0a017956aba06552c2bcff49",
+      "tracked_in_head": true
+    }
+  ]
+}

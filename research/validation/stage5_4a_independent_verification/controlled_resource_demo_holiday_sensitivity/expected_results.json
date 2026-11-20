@@ -1,0 +1,84 @@
+{
+  "fixture": "HYPOTHETICAL SCHEDULING FIXTURE - not IFC-validated",
+  "tick_minutes": 5,
+  "activities": 70,
+  "dependencies": 98,
+  "reservations": 16,
+  "work_packages": 10,
+  "direct_reference_cost_eur": 5103.32664,
+  "cost_identical_cpm_vs_capacity_feasible": true,
+  "cpm": {
+    "completion_local": "2027-02-12T15:50+01:00",
+    "makespan_minutes": 16310,
+    "resource_conflicts": 29,
+    "resources_over_capacity": [
+      "BEAM_FORM_SET",
+      "BEAM_PROP",
+      "COL_FORM_SET",
+      "CONCRETE_SUPPLY",
+      "INSPECTOR",
+      "OF1_ENCOFRADOR",
+      "OF1_FERRALLISTA",
+      "OFICIAL_1",
+      "PEON_ESPECIAL",
+      "SLAB_PROP",
+      "VIBRADOR"
+    ],
+    "status": "precedence-and-calendar bound only; infeasible for declared capacities"
+  },
+  "capacity_feasible": {
+    "completion_local": "2027-03-02T10:05+01:00",
+    "makespan_minutes": 41885,
+    "status": "OPTIMAL (proven: equals lower bound)",
+    "scheduler": "serial schedule generation, 1200 runs (earliest-start and latest-start priority rules, seeded noise)",
+    "best_rule": "latest_start",
+    "runs": 1200,
+    "deadlocked_runs": 311,
+    "best_seed": 1,
+    "independent_checks_passed": "242/242"
+  },
+  "lower_bound": {
+    "completion_local": "2027-03-02T10:05+01:00",
+    "makespan_minutes": 41885,
+    "components_minutes": {
+      "precedence + calendars + reservation choice (CPM)": 36470,
+      "formwork crew (HYP-FORM uses both encofradores)": 41885,
+      "reinforcement crew (HYP-REBAR uses both ferrallistas)": 26095,
+      "inspector (capacity 1)": 26125
+    },
+    "binding_reservation_choice": [
+      [
+        "B3-STRIP",
+        "B4-FORM"
+      ],
+      [
+        "C2-STRIP",
+        "C3-FORM"
+      ],
+      [
+        "C4-STRIP",
+        "C1-FORM"
+      ],
+      [
+        "S-W-STRIP",
+        "S-E-FORM"
+      ]
+    ],
+    "choices_evaluated": 1440,
+    "choices_cyclic_or_infeasible": 1320,
+    "column_chain_structures": 60,
+    "beam_ordered_pairs": 12,
+    "slab_orders": 2,
+    "gap_minutes": 0
+  },
+  "acceptance_criteria": [
+    "Inputs: a solver consumes fixture_inputs.json unchanged; durations are ceil(duration_minutes / 5) ticks.",
+    "Feasibility: the returned schedule passes every check in feasibility_checks.csv semantics: calendars (PROJECT intersected with each resource calendar), FS precedence, strike from pour finish, per-minute capacity for working-time resources, continuous reservations from FORM start to STRIP finish.",
+    "Objective: makespan <= 41885 min (completion <= 2027-03-02T10:05+01:00) and >= the lower bound 41885 min.",
+    "The makespan must equal 41885 min; a solver must report OPTIMAL.",
+    "CPM baseline: completion 2027-02-12T15:50+01:00 with conflicts on BEAM_FORM_SET, BEAM_PROP, COL_FORM_SET, CONCRETE_SUPPLY, INSPECTOR, OF1_ENCOFRADOR, OF1_FERRALLISTA, OFICIAL_1, PEON_ESPECIAL, SLAB_PROP, VIBRADOR.",
+    "Cost: total direct reference cost 5103.32664 EUR is identical for CPM and capacity-feasible schedules.",
+    "Approvals: every approval stays PENDING; real_project_eligible = false."
+  ],
+  "runtime_seconds": 3.58
+}

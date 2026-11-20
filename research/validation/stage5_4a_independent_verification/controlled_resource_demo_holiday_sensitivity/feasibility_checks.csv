@@ -1,0 +1,257 @@
+﻿check,subject,passed,detail,schedule
+duration_exact_ticks,C1-REBAR,True,45 vs 45,capacity-feasible
+inside_project_and_resource_calendars,C1-REBAR,True,PROJECT,capacity-feasible
+duration_exact_ticks,C1-FORM,True,40 vs 40,capacity-feasible
+inside_project_and_resource_calendars,C1-FORM,True,PROJECT,capacity-feasible
+duration_exact_ticks,C1-POUR,True,15 vs 15,capacity-feasible
+inside_project_and_resource_calendars,C1-POUR,True,DELIVERY+PROJECT,capacity-feasible
+duration_exact_ticks,C1-STRIP,True,45 vs 45,capacity-feasible
+inside_project_and_resource_calendars,C1-STRIP,True,PROJECT,capacity-feasible
+duration_exact_ticks,C1-INSP,True,30 vs 30,capacity-feasible
+inside_project_and_resource_calendars,C1-INSP,True,INSPECTOR+PROJECT,capacity-feasible
+duration_exact_ticks,C1-CURE,True,1440 vs 1440,capacity-feasible
+duration_exact_ticks,C1-STRIKE,True,1440 vs 1440,capacity-feasible
+duration_exact_ticks,C3-REBAR,True,45 vs 45,capacity-feasible
+inside_project_and_resource_calendars,C3-REBAR,True,PROJECT,capacity-feasible
+duration_exact_ticks,C3-FORM,True,40 vs 40,capacity-feasible
+inside_project_and_resource_calendars,C3-FORM,True,PROJECT,capacity-feasible
+duration_exact_ticks,C3-POUR,True,15 vs 15,capacity-feasible
+inside_project_and_resource_calendars,C3-POUR,True,DELIVERY+PROJECT,capacity-feasible
+duration_exact_ticks,C3-STRIP,True,45 vs 45,capacity-feasible
+inside_project_and_resource_calendars,C3-STRIP,True,PROJECT,capacity-feasible
+duration_exact_ticks,C3-INSP,True,30 vs 30,capacity-feasible
+inside_project_and_resource_calendars,C3-INSP,True,INSPECTOR+PROJECT,capacity-feasible
+duration_exact_ticks,C3-CURE,True,1440 vs 1440,capacity-feasible
+duration_exact_ticks,C3-STRIKE,True,1440 vs 1440,capacity-feasible
+duration_exact_ticks,C2-REBAR,True,45 vs 45,capacity-feasible
+inside_project_and_resource_calendars,C2-REBAR,True,PROJECT,capacity-feasible
+duration_exact_ticks,C2-FORM,True,40 vs 40,capacity-feasible
+inside_project_and_resource_calendars,C2-FORM,True,PROJECT,capacity-feasible
+duration_exact_ticks,C2-POUR,True,15 vs 15,capacity-feasible
+inside_project_and_resource_calendars,C2-POUR,True,DELIVERY+PROJECT,capacity-feasible
+duration_exact_ticks,C2-STRIP,True,45 vs 45,capacity-feasible
+inside_project_and_resource_calendars,C2-STRIP,True,PROJECT,capacity-feasible
+duration_exact_ticks,C2-INSP,True,30 vs 30,capacity-feasible
+inside_project_and_resource_calendars,C2-INSP,True,INSPECTOR+PROJECT,capacity-feasible
+duration_exact_ticks,C2-CURE,True,1440 vs 1440,capacity-feasible
+duration_exact_ticks,C2-STRIKE,True,1440 vs 1440,capacity-feasible
+duration_exact_ticks,C4-REBAR,True,45 vs 45,capacity-feasible
+inside_project_and_resource_calendars,C4-REBAR,True,PROJECT,capacity-feasible
+duration_exact_ticks,C4-FORM,True,40 vs 40,capacity-feasible
+inside_project_and_resource_calendars,C4-FORM,True,PROJECT,capacity-feasible
+duration_exact_ticks,C4-POUR,True,15 vs 15,capacity-feasible
+inside_project_and_resource_calendars,C4-POUR,True,DELIVERY+PROJECT,capacity-feasible
+duration_exact_ticks,C4-STRIP,True,45 vs 45,capacity-feasible
+inside_project_and_resource_calendars,C4-STRIP,True,PROJECT,capacity-feasible
+duration_exact_ticks,C4-INSP,True,30 vs 30,capacity-feasible
+inside_project_and_resource_calendars,C4-INSP,True,INSPECTOR+PROJECT,capacity-feasible
+duration_exact_ticks,C4-CURE,True,1440 vs 1440,capacity-feasible
+duration_exact_ticks,C4-STRIKE,True,1440 vs 1440,capacity-feasible
+duration_exact_ticks,B1-REBAR,True,75 vs 75,capacity-feasible
+inside_project_and_resource_calendars,B1-REBAR,True,PROJECT,capacity-feasible
+duration_exact_ticks,B1-FORM,True,80 vs 80,capacity-feasible
+inside_project_and_resource_calendars,B1-FORM,True,PROJECT,capacity-feasible
+duration_exact_ticks,B1-POUR,True,20 vs 20,capacity-feasible
+inside_project_and_resource_calendars,B1-POUR,True,DELIVERY+PROJECT,capacity-feasible
+duration_exact_ticks,B1-STRIP,True,70 vs 70,capacity-feasible
+inside_project_and_resource_calendars,B1-STRIP,True,PROJECT,capacity-feasible
+duration_exact_ticks,B1-INSP,True,30 vs 30,capacity-feasible
+inside_project_and_resource_calendars,B1-INSP,True,INSPECTOR+PROJECT,capacity-feasible
+duration_exact_ticks,B1-CURE,True,1440 vs 1440,capacity-feasible
+duration_exact_ticks,B1-STRIKE,True,10080 vs 10080,capacity-feasible
+duration_exact_ticks,B2-REBAR,True,75 vs 75,capacity-feasible
+inside_project_and_resource_calendars,B2-REBAR,True,PROJECT,capacity-feasible
+duration_exact_ticks,B2-FORM,True,80 vs 80,capacity-feasible
+inside_project_and_resource_calendars,B2-FORM,True,PROJECT,capacity-feasible
+duration_exact_ticks,B2-POUR,True,20 vs 20,capacity-feasible
+inside_project_and_resource_calendars,B2-POUR,True,DELIVERY+PROJECT,capacity-feasible
+duration_exact_ticks,B2-STRIP,True,70 vs 70,capacity-feasible
+inside_project_and_resource_calendars,B2-STRIP,True,PROJECT,capacity-feasible
+duration_exact_ticks,B2-INSP,True,30 vs 30,capacity-feasible
+inside_project_and_resource_calendars,B2-INSP,True,INSPECTOR+PROJECT,capacity-feasible
+duration_exact_ticks,B2-CURE,True,1440 vs 1440,capacity-feasible
+duration_exact_ticks,B2-STRIKE,True,10080 vs 10080,capacity-feasible
+duration_exact_ticks,B3-REBAR,True,65 vs 65,capacity-feasible
+inside_project_and_resource_calendars,B3-REBAR,True,PROJECT,capacity-feasible
+duration_exact_ticks,B3-FORM,True,65 vs 65,capacity-feasible
+inside_project_and_resource_calendars,B3-FORM,True,PROJECT,capacity-feasible
+duration_exact_ticks,B3-POUR,True,15 vs 15,capacity-feasible
+inside_project_and_resource_calendars,B3-POUR,True,DELIVERY+PROJECT,capacity-feasible
+duration_exact_ticks,B3-STRIP,True,55 vs 55,capacity-feasible
+inside_project_and_resource_calendars,B3-STRIP,True,PROJECT,capacity-feasible
+duration_exact_ticks,B3-INSP,True,30 vs 30,capacity-feasible
+inside_project_and_resource_calendars,B3-INSP,True,INSPECTOR+PROJECT,capacity-feasible
+duration_exact_ticks,B3-CURE,True,1440 vs 1440,capacity-feasible
+duration_exact_ticks,B3-STRIKE,True,10080 vs 10080,capacity-feasible
+duration_exact_ticks,B4-REBAR,True,65 vs 65,capacity-feasible
+inside_project_and_resource_calendars,B4-REBAR,True,PROJECT,capacity-feasible
+duration_exact_ticks,B4-FORM,True,65 vs 65,capacity-feasible
+inside_project_and_resource_calendars,B4-FORM,True,PROJECT,capacity-feasible
+duration_exact_ticks,B4-POUR,True,15 vs 15,capacity-feasible
+inside_project_and_resource_calendars,B4-POUR,True,DELIVERY+PROJECT,capacity-feasible
+duration_exact_ticks,B4-STRIP,True,55 vs 55,capacity-feasible
+inside_project_and_resource_calendars,B4-STRIP,True,PROJECT,capacity-feasible
+duration_exact_ticks,B4-INSP,True,30 vs 30,capacity-feasible
+inside_project_and_resource_calendars,B4-INSP,True,INSPECTOR+PROJECT,capacity-feasible
+duration_exact_ticks,B4-CURE,True,1440 vs 1440,capacity-feasible
+duration_exact_ticks,B4-STRIKE,True,10080 vs 10080,capacity-feasible
+duration_exact_ticks,S-W-REBAR,True,175 vs 175,capacity-feasible
+inside_project_and_resource_calendars,S-W-REBAR,True,PROJECT,capacity-feasible
+duration_exact_ticks,S-W-FORM,True,230 vs 230,capacity-feasible
+inside_project_and_resource_calendars,S-W-FORM,True,PROJECT,capacity-feasible
+duration_exact_ticks,S-W-POUR,True,65 vs 65,capacity-feasible
+inside_project_and_resource_calendars,S-W-POUR,True,DELIVERY+PROJECT,capacity-feasible
+duration_exact_ticks,S-W-STRIP,True,130 vs 130,capacity-feasible
+inside_project_and_resource_calendars,S-W-STRIP,True,PROJECT,capacity-feasible
+duration_exact_ticks,S-W-INSP,True,30 vs 30,capacity-feasible
+inside_project_and_resource_calendars,S-W-INSP,True,INSPECTOR+PROJECT,capacity-feasible
+duration_exact_ticks,S-W-CURE,True,1440 vs 1440,capacity-feasible
+duration_exact_ticks,S-W-STRIKE,True,10080 vs 10080,capacity-feasible
+duration_exact_ticks,S-E-REBAR,True,175 vs 175,capacity-feasible
+inside_project_and_resource_calendars,S-E-REBAR,True,PROJECT,capacity-feasible
+duration_exact_ticks,S-E-FORM,True,230 vs 230,capacity-feasible
+inside_project_and_resource_calendars,S-E-FORM,True,PROJECT,capacity-feasible
+duration_exact_ticks,S-E-POUR,True,65 vs 65,capacity-feasible
+inside_project_and_resource_calendars,S-E-POUR,True,DELIVERY+PROJECT,capacity-feasible
+duration_exact_ticks,S-E-STRIP,True,130 vs 130,capacity-feasible
+inside_project_and_resource_calendars,S-E-STRIP,True,PROJECT,capacity-feasible
+duration_exact_ticks,S-E-INSP,True,30 vs 30,capacity-feasible
+inside_project_and_resource_calendars,S-E-INSP,True,INSPECTOR+PROJECT,capacity-feasible
+duration_exact_ticks,S-E-CURE,True,1440 vs 1440,capacity-feasible
+duration_exact_ticks,S-E-STRIKE,True,10080 vs 10080,capacity-feasible
+precedence_FS,C1-REBAR->C1-FORM,True,,capacity-feasible
+precedence_FS,C1-FORM->C1-INSP,True,,capacity-feasible
+precedence_FS,C1-INSP->C1-POUR,True,,capacity-feasible
+precedence_FS,C1-POUR->C1-CURE,True,,capacity-feasible
+precedence_FS,C1-POUR->C1-STRIKE,True,,capacity-feasible
+precedence_FS,C1-CURE->C1-STRIP,True,,capacity-feasible
+precedence_FS,C1-STRIKE->C1-STRIP,True,,capacity-feasible
+precedence_FS,C3-REBAR->C3-FORM,True,,capacity-feasible
+precedence_FS,C3-FORM->C3-INSP,True,,capacity-feasible
+precedence_FS,C3-INSP->C3-POUR,True,,capacity-feasible
+precedence_FS,C3-POUR->C3-CURE,True,,capacity-feasible
+precedence_FS,C3-POUR->C3-STRIKE,True,,capacity-feasible
+precedence_FS,C3-CURE->C3-STRIP,True,,capacity-feasible
+precedence_FS,C3-STRIKE->C3-STRIP,True,,capacity-feasible
+precedence_FS,C2-REBAR->C2-FORM,True,,capacity-feasible
+precedence_FS,C2-FORM->C2-INSP,True,,capacity-feasible
+precedence_FS,C2-INSP->C2-POUR,True,,capacity-feasible
+precedence_FS,C2-POUR->C2-CURE,True,,capacity-feasible
+precedence_FS,C2-POUR->C2-STRIKE,True,,capacity-feasible
+precedence_FS,C2-CURE->C2-STRIP,True,,capacity-feasible
+precedence_FS,C2-STRIKE->C2-STRIP,True,,capacity-feasible
+precedence_FS,C4-REBAR->C4-FORM,True,,capacity-feasible
+precedence_FS,C4-FORM->C4-INSP,True,,capacity-feasible
+precedence_FS,C4-INSP->C4-POUR,True,,capacity-feasible
+precedence_FS,C4-POUR->C4-CURE,True,,capacity-feasible
+precedence_FS,C4-POUR->C4-STRIKE,True,,capacity-feasible
+precedence_FS,C4-CURE->C4-STRIP,True,,capacity-feasible
+precedence_FS,C4-STRIKE->C4-STRIP,True,,capacity-feasible
+precedence_FS,B1-FORM->B1-REBAR,True,,capacity-feasible
+precedence_FS,B1-REBAR->B1-INSP,True,,capacity-feasible
+precedence_FS,B1-INSP->B1-POUR,True,,capacity-feasible
+precedence_FS,B1-POUR->B1-CURE,True,,capacity-feasible
+precedence_FS,B1-POUR->B1-STRIKE,True,,capacity-feasible
+precedence_FS,B1-CURE->B1-STRIP,True,,capacity-feasible
+precedence_FS,B1-STRIKE->B1-STRIP,True,,capacity-feasible
+precedence_FS,B2-FORM->B2-REBAR,True,,capacity-feasible
+precedence_FS,B2-REBAR->B2-INSP,True,,capacity-feasible
+precedence_FS,B2-INSP->B2-POUR,True,,capacity-feasible
+precedence_FS,B2-POUR->B2-CURE,True,,capacity-feasible
+precedence_FS,B2-POUR->B2-STRIKE,True,,capacity-feasible
+precedence_FS,B2-CURE->B2-STRIP,True,,capacity-feasible
+precedence_FS,B2-STRIKE->B2-STRIP,True,,capacity-feasible
+precedence_FS,B3-FORM->B3-REBAR,True,,capacity-feasible
+precedence_FS,B3-REBAR->B3-INSP,True,,capacity-feasible
+precedence_FS,B3-INSP->B3-POUR,True,,capacity-feasible
+precedence_FS,B3-POUR->B3-CURE,True,,capacity-feasible
+precedence_FS,B3-POUR->B3-STRIKE,True,,capacity-feasible
+precedence_FS,B3-CURE->B3-STRIP,True,,capacity-feasible
+precedence_FS,B3-STRIKE->B3-STRIP,True,,capacity-feasible
+precedence_FS,B4-FORM->B4-REBAR,True,,capacity-feasible
+precedence_FS,B4-REBAR->B4-INSP,True,,capacity-feasible
+precedence_FS,B4-INSP->B4-POUR,True,,capacity-feasible
+precedence_FS,B4-POUR->B4-CURE,True,,capacity-feasible
+precedence_FS,B4-POUR->B4-STRIKE,True,,capacity-feasible
+precedence_FS,B4-CURE->B4-STRIP,True,,capacity-feasible
+precedence_FS,B4-STRIKE->B4-STRIP,True,,capacity-feasible
+precedence_FS,S-W-FORM->S-W-REBAR,True,,capacity-feasible
+precedence_FS,S-W-REBAR->S-W-INSP,True,,capacity-feasible
+precedence_FS,S-W-INSP->S-W-POUR,True,,capacity-feasible
+precedence_FS,S-W-POUR->S-W-CURE,True,,capacity-feasible
+precedence_FS,S-W-POUR->S-W-STRIKE,True,,capacity-feasible
+precedence_FS,S-W-CURE->S-W-STRIP,True,,capacity-feasible
+precedence_FS,S-W-STRIKE->S-W-STRIP,True,,capacity-feasible
+precedence_FS,S-E-FORM->S-E-REBAR,True,,capacity-feasible
+precedence_FS,S-E-REBAR->S-E-INSP,True,,capacity-feasible
+precedence_FS,S-E-INSP->S-E-POUR,True,,capacity-feasible
+precedence_FS,S-E-POUR->S-E-CURE,True,,capacity-feasible
+precedence_FS,S-E-POUR->S-E-STRIKE,True,,capacity-feasible
+precedence_FS,S-E-CURE->S-E-STRIP,True,,capacity-feasible
+precedence_FS,S-E-STRIKE->S-E-STRIP,True,,capacity-feasible
+precedence_FS,C1-CURE->B1-FORM,True,,capacity-feasible
+precedence_FS,C1-STRIP->B1-FORM,True,,capacity-feasible
+precedence_FS,C2-CURE->B1-FORM,True,,capacity-feasible
+precedence_FS,C2-STRIP->B1-FORM,True,,capacity-feasible
+precedence_FS,C3-CURE->B2-FORM,True,,capacity-feasible
+precedence_FS,C3-STRIP->B2-FORM,True,,capacity-feasible
+precedence_FS,C4-CURE->B2-FORM,True,,capacity-feasible
+precedence_FS,C4-STRIP->B2-FORM,True,,capacity-feasible
+precedence_FS,C1-CURE->B3-FORM,True,,capacity-feasible
+precedence_FS,C1-STRIP->B3-FORM,True,,capacity-feasible
+precedence_FS,C3-CURE->B3-FORM,True,,capacity-feasible
+precedence_FS,C3-STRIP->B3-FORM,True,,capacity-feasible
+precedence_FS,C2-CURE->B4-FORM,True,,capacity-feasible
+precedence_FS,C2-STRIP->B4-FORM,True,,capacity-feasible
+precedence_FS,C4-CURE->B4-FORM,True,,capacity-feasible
+precedence_FS,C4-STRIP->B4-FORM,True,,capacity-feasible
+precedence_FS,B1-CURE->S-W-FORM,True,,capacity-feasible
+precedence_FS,S-W-STRIP->B1-STRIP,True,,capacity-feasible
+precedence_FS,B2-CURE->S-W-FORM,True,,capacity-feasible
+precedence_FS,S-W-STRIP->B2-STRIP,True,,capacity-feasible
+precedence_FS,B3-CURE->S-W-FORM,True,,capacity-feasible
+precedence_FS,S-W-STRIP->B3-STRIP,True,,capacity-feasible
+precedence_FS,B1-CURE->S-E-FORM,True,,capacity-feasible
+precedence_FS,S-E-STRIP->B1-STRIP,True,,capacity-feasible
+precedence_FS,B2-CURE->S-E-FORM,True,,capacity-feasible
+precedence_FS,S-E-STRIP->B2-STRIP,True,,capacity-feasible
+precedence_FS,B4-CURE->S-E-FORM,True,,capacity-feasible
+precedence_FS,S-E-STRIP->B4-STRIP,True,,capacity-feasible
+strike_from_pour_finish,C1-STRIKE,True,,capacity-feasible
+strike_from_pour_finish,C3-STRIKE,True,,capacity-feasible
+strike_from_pour_finish,C2-STRIKE,True,,capacity-feasible
+strike_from_pour_finish,C4-STRIKE,True,,capacity-feasible
+strike_from_pour_finish,B1-STRIKE,True,,capacity-feasible
+strike_from_pour_finish,B2-STRIKE,True,,capacity-feasible
+strike_from_pour_finish,B3-STRIKE,True,,capacity-feasible
+strike_from_pour_finish,B4-STRIKE,True,,capacity-feasible
+strike_from_pour_finish,S-W-STRIKE,True,,capacity-feasible
+strike_from_pour_finish,S-E-STRIKE,True,,capacity-feasible
+capacity,OF1_ENCOFRADOR,True,peak 2 / capacity 2,capacity-feasible
+capacity,OF1_FERRALLISTA,True,peak 2 / capacity 2,capacity-feasible
+capacity,PEON_ESPECIAL,True,peak 2 / capacity 5,capacity-feasible
+capacity,OFICIAL_1,True,peak 1 / capacity 2,capacity-feasible
+capacity,VIBRADOR,True,peak 1 / capacity 2,capacity-feasible
+capacity,CRANE,True,peak 0 / capacity 0,capacity-feasible
+capacity,CONCRETE_PUMP,True,peak 0 / capacity 0,capacity-feasible
+capacity,INSPECTOR,True,peak 1 / capacity 1,capacity-feasible
+capacity,CONCRETE_SUPPLY,True,peak 6 / capacity 6,capacity-feasible
+capacity,COL_FORM_SET,True,peak 2 / capacity 2,capacity-feasible
+capacity,BEAM_FORM_SET,True,peak 3 / capacity 3,capacity-feasible
+capacity,SLAB_PANEL_SET,True,peak 1 / capacity 2,capacity-feasible
+capacity,BEAM_PROP,True,peak 8 / capacity 9,capacity-feasible
+capacity,SLAB_PROP,True,peak 6 / capacity 10,capacity-feasible
+capacity,OF1_ENCOFRADOR,False,peak 8 / capacity 2,CPM
+capacity,OF1_FERRALLISTA,False,peak 8 / capacity 2,CPM
+capacity,PEON_ESPECIAL,False,peak 8 / capacity 5,CPM
+capacity,OFICIAL_1,False,peak 4 / capacity 2,CPM
+capacity,VIBRADOR,False,peak 4 / capacity 2,CPM
+capacity,CRANE,True,peak 0 / capacity 0,CPM
+capacity,CONCRETE_PUMP,True,peak 0 / capacity 0,CPM
+capacity,INSPECTOR,False,peak 4 / capacity 1,CPM
+capacity,CONCRETE_SUPPLY,False,peak 12 / capacity 6,CPM
+capacity,COL_FORM_SET,False,peak 4 / capacity 2,CPM
+capacity,BEAM_FORM_SET,False,peak 4 / capacity 3,CPM
+capacity,SLAB_PANEL_SET,True,peak 2 / capacity 2,CPM
+capacity,BEAM_PROP,False,peak 10 / capacity 9,CPM
+capacity,SLAB_PROP,False,peak 12 / capacity 10,CPM

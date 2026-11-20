@@ -1,0 +1,163 @@
+{
+  "_meta": {
+    "contract": "PMI Stage 5.4B resource contract",
+    "version": "5.4B-R2-addendum",
+    "amends": "resource_contract.json 5.4B-R1-draft (file unchanged; this addendum takes precedence for the sections it names)",
+    "status": "PROPOSED; not an engineering approval"
+  },
+  "R2-1_calendar_policy": {
+    "default": "intersect_project_activity_resources",
+    "rule": "An activity may occupy a tick only if the tick is inside (a) the project calendar, (b) the activity's allowed_hours when declared, and (c) the calendar of every working-time resource it demands. Elapsed holds and continuous reservations ignore calendars.",
+    "exception": {
+      "field": "calendar_exceptions[]",
+      "required_fields": [
+        "exception_id",
+        "activity_ids or resource_id",
+        "replaces: project_calendar",
+        "authorization_ref",
+        "input_state"
+      ],
+      "effect": "For the named activities, (a) is replaced by the calendars named in the exception; (b) and (c) still apply.",
+      "registered": [
+        {
+          "exception_id": "CAL-EXC-RC06",
+          "case": "RC06",
+          "activity_ids": [
+            "N"
+          ],
+          "replaces": "project_calendar",
+          "with": "FERRALLISTA calendar 07:00-15:00",
+          "authorization_ref": "HYPOTHETICAL test authorisation; AP-X-CAL-01 PENDING"
+        }
+      ],
+      "on_missing_authorization": "Apply the default policy; never infer an exception from a resource calendar."
+    },
+    "cases": [
+      "RC06 (exception, unchanged)",
+      "RC06-D (default policy)"
+    ],
+    "supersedes": "R1 ActivityResourceRequirement.allowed_hours note and Task 4 convention 'activity_calendar'"
+  },
+  "R2-2_mode_occupancy": {
+    "rule": "The selected crew mode is occupied in full for every working segment. Units without positive Stage 5.3A demand are kept as declared reservations; they are never removed silently.",
+    "fields": {
+      "reserved_without_bcca_demand": "object resource_id -> units, required whenever a mode unit has zero worker_hours_by_trade / machine_hours_by_class",
+      "reason": "string, required",
+      "approval_ref": "AP-X-CREW-01 (PENDING)"
+    },
+    "duration": "Unchanged: Stage 5.3A productive_hours from positive-demand bounds only.",
+    "cost": "Unchanged: no cost line for reserved-without-demand units (BCCA price governs).",
+    "validation_V5_R2": "mode units == worker_capacity_by_trade + equipment_capacity_by_class + reserved_without_bcca_demand, exactly; anything else is MODEL_INVALID (MODE_MISMATCH).",
+    "known_instances": [
+      "R0 COL-CONC: OFICIAL 1ª x1 (HYP-CONC)",
+      "Larger demo C1-POUR..C4-POUR: OFICIAL_1 x1 (HYP-CONC)"
+    ]
+  },
+  "R2-3_strength_release": {
+    "fixed_timestamp": {
+      "status": [
+        "recorded_pass",
+        "hypothetical_recorded_pass"
+      ],
+      "requires": "at",
+      "semantics": "Release finish = max(pour finish + elapsed minimum, at). 'at' is an absolute bound that does not move with the pour (Agent 1 N2).",
+      "case": "RC13a"
+    },
+    "at_minimum": {
+      "status": "hypothetical_pass_at_minimum",
+      "semantics": "Release finish = pour finish + elapsed minimum (fixture only)."
+    },
+    "activity_dependent_test": {
+      "status": [
+        "planned",
+        "pending_result"
+      ],
+      "requires": [
+        "test_age_hours_after_pour",
+        "acceptance_criterion_ref"
+      ],
+      "semantics": "Projection only: max(minimum, test age) measured from the pour, moving with the pour. Schedule status CONDITIONAL; never OPTIMAL, never releasable, never converted to a timestamp.",
+      "case": "RC13b"
+    },
+    "failed": "Successors blocked (RELEASE_FAILED).",
+    "missing": "CONDITIONAL (RELEASE_CONDITIONAL)."
+  },
+  "R2-4_inspection_pass": {
+    "event": {
+      "event_id": "string",
+      "inspection_activity": "activity_id",
+      "gates": "successor activity_ids",
+      "status": [
+        "hypothetical_pass",
+        "recorded_pass",
+        "failed",
+        "missing"
+      ],
+      "at": "required for recorded_pass",
+      "input_state": "enum"
+    },
+    "semantics": {
+      "hypothetical_pass": "Pass at inspection finish (fixture only).",
+      "recorded_pass": "Fixed not-before on every gated successor; at < inspection earliest finish is MODEL_INVALID (EVENT_BEFORE_ACTIVITY_FINISH).",
+      "missing": "Projected as at finish; gated successors CONDITIONAL.",
+      "failed": "Gated successors and descendants BLOCKED (INSPECTION_FAILED)."
+    },
+    "cases": [
+      "RC12a",
+      "RC12b",
+      "RC12c",
+      "RC12d",
+      "RC12e"
+    ]
+  },
+  "R2-5_controlled_fixture_exceptions": [
+    {
+      "id": "FX-R0-01",
+      "fixture": "R0 (Stage 5.4A three-element)",
+      "item": "Formwork panel and prop reservations",
+      "treatment": "Excluded and reported unenforced; no counts introduced."
+    },
+    {
+      "id": "FX-R0-02",
+      "fixture": "R0",
+      "item": "Inspection pass events absent in Stage 5.3A/5.4A sources",
+      "treatment": "Declared hypothetical_pass for C/B/S-INSP (test only)."
+    },
+    {
+      "id": "FX-R0-03",
+      "fixture": "R0",
+      "item": "Inspector calendar not declared",
+      "treatment": "PROJECT calendar declared explicitly, as applied by Stage 5.4A."
+    },
+    {
+      "id": "FX-R0-04",
+      "fixture": "R0",
+      "item": "Shared concrete supply rate",
+      "treatment": "Not modelled: CONCRETE_DELIVERY explicit none; 08:00-14:00 window only."
+    },
+    {
+      "id": "FX-R0-05",
+      "fixture": "R0",
+      "item": "Strength releases",
+      "treatment": "hypothetical_pass_at_minimum (unchanged)."
+    },
+    {
+      "id": "FX-R0-06",
+      "fixture": "R0",
+      "item": "Europe/Paris to Europe/Madrid calendar and 2027-01-06 holiday",
+      "treatment": "Deliberate override verified by Agent 1 (equal recurring windows)."
+    },
+    {
+      "id": "FX-DEMO-01",
+      "fixture": "Larger demo",
+      "item": "No date exceptions declared",
+      "treatment": "Benchmark keeps none (40,445 min); DEMO-H1 tests 2027-03-01 non-working (41,885 min)."
+    },
+    {
+      "id": "FX-DEMO-02",
+      "fixture": "Larger demo",
+      "item": "return_lead_minutes = 0, reshoring not permitted",
+      "treatment": "Explicit hypothetical inputs; AP-X-FW-03/04 PENDING."
+    }
+  ]
+}

@@ -1,0 +1,1393 @@
+{
+  "_meta": {
+    "task": "Stage 5.4B Task 7 addendum to cpsat_reference_cases.json (22 cases, unchanged)",
+    "default_calendar_policy": "intersect_project_activity_resources",
+    "generator": "scripts/build_task7_cases.py",
+    "status": "HYPOTHETICAL software test inputs"
+  },
+  "cases": [
+    {
+      "case_id": "RC06",
+      "status": "UNCHANGED - reclassified as authorised calendar exception",
+      "calendar_policy": "resource_calendars_only (authorised exception)",
+      "exception": {
+        "id": "CAL-EXC-RC06",
+        "scope": "FERRALLISTA activity N may work on the ferrallista calendar (07:00-15:00) outside the project shift",
+        "authorisation": "HYPOTHETICAL test authorisation; engineering approval AP-X-CAL-01 PENDING"
+      },
+      "expected": {
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 4520,
+        "completion_local": "2027-01-14T11:20+01:00",
+        "unique_optimal_schedule": true,
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 4515,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": "by Method A (attainment search above limit)"
+        },
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "schedule": [
+          {
+            "id": "P",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T13:00+01:00"
+          },
+          {
+            "id": "N",
+            "start": "2027-01-12T07:00+01:00",
+            "finish": "2027-01-12T09:30+01:00"
+          },
+          {
+            "id": "L",
+            "start": "2027-01-12T08:00+01:00",
+            "finish": "2027-01-12T10:30+01:00"
+          },
+          {
+            "id": "M",
+            "start": "2027-01-14T08:00+01:00",
+            "finish": "2027-01-14T11:20+01:00"
+          }
+        ]
+      },
+      "source": "cpsat_reference_cases.json#RC06 (not modified)"
+    },
+    {
+      "case_id": "RC06-D",
+      "category": 6,
+      "title": "RC06 inputs under the default policy: project AND activity AND resource calendars",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_F": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CRANE": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": {
+            "working_windows": [
+              {
+                "weekday": 2,
+                "start": "08:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 4,
+                "start": "08:00",
+                "end": "12:00"
+              }
+            ]
+          }
+        },
+        "FERRALLISTA": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": {
+            "working_windows": [
+              {
+                "weekday": 1,
+                "start": "07:00",
+                "end": "15:00"
+              },
+              {
+                "weekday": 2,
+                "start": "07:00",
+                "end": "15:00"
+              },
+              {
+                "weekday": 3,
+                "start": "07:00",
+                "end": "15:00"
+              },
+              {
+                "weekday": 4,
+                "start": "07:00",
+                "end": "15:00"
+              },
+              {
+                "weekday": 5,
+                "start": "07:00",
+                "end": "15:00"
+              }
+            ]
+          }
+        }
+      },
+      "activities": [
+        {
+          "id": "P",
+          "kind": "productive",
+          "duration_minutes": 297,
+          "resources": {
+            "CREW_F": 1
+          }
+        },
+        {
+          "id": "L",
+          "kind": "productive",
+          "duration_minutes": 148,
+          "resources": {
+            "CREW_F": 1,
+            "CRANE": 1
+          }
+        },
+        {
+          "id": "M",
+          "kind": "productive",
+          "duration_minutes": 197,
+          "resources": {
+            "CRANE": 1
+          }
+        },
+        {
+          "id": "N",
+          "kind": "productive",
+          "duration_minutes": 148,
+          "resources": {
+            "FERRALLISTA": 1
+          }
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "P",
+          "successor": "L",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "L",
+          "successor": "M",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "P",
+          "successor": "N",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "notes": "N (150 min) cannot use 07:00-08:00 or 15:00-16:00; after P ends Mon 13:00 only 120 min remain to 15:00, so N moves to Tue 08:00-10:30. Makespan is still set by M.",
+      "calendar_policy": "intersect_project_activity_resources",
+      "expected": {
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 4520,
+        "completion_local": "2027-01-14T11:20+01:00",
+        "unique_optimal_schedule": true,
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 4515,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": true
+        },
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "schedule": [
+          {
+            "id": "P",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T13:00+01:00"
+          },
+          {
+            "id": "L",
+            "start": "2027-01-12T08:00+01:00",
+            "finish": "2027-01-12T10:30+01:00"
+          },
+          {
+            "id": "N",
+            "start": "2027-01-12T08:00+01:00",
+            "finish": "2027-01-12T10:30+01:00"
+          },
+          {
+            "id": "M",
+            "start": "2027-01-14T08:00+01:00",
+            "finish": "2027-01-14T11:20+01:00"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "RC12a",
+      "category": 4,
+      "title": "Inspection pass event: hypothetical_pass",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CREW_C": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "INSPECTOR": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": {
+            "working_windows": [
+              {
+                "weekday": 1,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 2,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 3,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 4,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 5,
+                "start": "10:00",
+                "end": "12:00"
+              }
+            ]
+          }
+        }
+      },
+      "activities": [
+        {
+          "id": "R",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "CREW": 1
+          }
+        },
+        {
+          "id": "I",
+          "kind": "inspection",
+          "duration_minutes": 30,
+          "resources": {
+            "INSPECTOR": 1
+          }
+        },
+        {
+          "id": "P",
+          "kind": "productive",
+          "duration_minutes": 43,
+          "resources": {
+            "CREW_C": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "R",
+          "successor": "I",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "I",
+          "successor": "P",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "calendar_policy": "intersect_project_activity_resources",
+      "inspection_pass_events": [
+        {
+          "event_id": "EV-I",
+          "inspection_activity": "I",
+          "status": "hypothetical_pass",
+          "gates": [
+            "P"
+          ]
+        }
+      ],
+      "expected": {
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 195,
+        "completion_local": "2027-01-11T11:15+01:00",
+        "unique_optimal_schedule": true,
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 190,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": true
+        },
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "schedule": [
+          {
+            "id": "R",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:00+01:00"
+          },
+          {
+            "id": "I",
+            "start": "2027-01-11T10:00+01:00",
+            "finish": "2027-01-11T10:30+01:00"
+          },
+          {
+            "id": "P",
+            "start": "2027-01-11T10:30+01:00",
+            "finish": "2027-01-11T11:15+01:00"
+          }
+        ],
+        "note": "Pass at inspection finish; P follows immediately.",
+        "required_solver_status": "OPTIMAL"
+      }
+    },
+    {
+      "case_id": "RC12b",
+      "category": 4,
+      "title": "Inspection pass event: missing",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CREW_C": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "INSPECTOR": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": {
+            "working_windows": [
+              {
+                "weekday": 1,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 2,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 3,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 4,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 5,
+                "start": "10:00",
+                "end": "12:00"
+              }
+            ]
+          }
+        }
+      },
+      "activities": [
+        {
+          "id": "R",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "CREW": 1
+          }
+        },
+        {
+          "id": "I",
+          "kind": "inspection",
+          "duration_minutes": 30,
+          "resources": {
+            "INSPECTOR": 1
+          }
+        },
+        {
+          "id": "P",
+          "kind": "productive",
+          "duration_minutes": 43,
+          "resources": {
+            "CREW_C": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "R",
+          "successor": "I",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "I",
+          "successor": "P",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "calendar_policy": "intersect_project_activity_resources",
+      "inspection_pass_events": [
+        {
+          "event_id": "EV-I",
+          "inspection_activity": "I",
+          "status": "missing",
+          "gates": [
+            "P"
+          ]
+        }
+      ],
+      "expected": {
+        "expected_status": "CONDITIONAL",
+        "optimal_makespan_minutes": 195,
+        "completion_local": "2027-01-11T11:15+01:00",
+        "unique_optimal_schedule": true,
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 190,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": true
+        },
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "schedule": [
+          {
+            "id": "R",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:00+01:00"
+          },
+          {
+            "id": "I",
+            "start": "2027-01-11T10:00+01:00",
+            "finish": "2027-01-11T10:30+01:00"
+          },
+          {
+            "id": "P",
+            "start": "2027-01-11T10:30+01:00",
+            "finish": "2027-01-11T11:15+01:00"
+          }
+        ],
+        "conditional_activities": [
+          "P"
+        ],
+        "note": "Projected dates equal RC12a but P is flagged conditional and not releasable.",
+        "required_solver_status": "CONDITIONAL"
+      }
+    },
+    {
+      "case_id": "RC12c",
+      "category": 4,
+      "title": "Inspection pass event: failed",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CREW_C": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "INSPECTOR": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": {
+            "working_windows": [
+              {
+                "weekday": 1,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 2,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 3,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 4,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 5,
+                "start": "10:00",
+                "end": "12:00"
+              }
+            ]
+          }
+        }
+      },
+      "activities": [
+        {
+          "id": "R",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "CREW": 1
+          }
+        },
+        {
+          "id": "I",
+          "kind": "inspection",
+          "duration_minutes": 30,
+          "resources": {
+            "INSPECTOR": 1
+          }
+        },
+        {
+          "id": "P",
+          "kind": "productive",
+          "duration_minutes": 43,
+          "resources": {
+            "CREW_C": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "R",
+          "successor": "I",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "I",
+          "successor": "P",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "calendar_policy": "intersect_project_activity_resources",
+      "inspection_pass_events": [
+        {
+          "event_id": "EV-I",
+          "inspection_activity": "I",
+          "status": "failed",
+          "gates": [
+            "P"
+          ]
+        }
+      ],
+      "expected": {
+        "expected_status": "BLOCKED",
+        "preflight_code": "INSPECTION_FAILED",
+        "schedule": [
+          {
+            "id": "R",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:00+01:00"
+          },
+          {
+            "id": "I",
+            "start": "2027-01-11T10:00+01:00",
+            "finish": "2027-01-11T10:30+01:00"
+          }
+        ],
+        "blocked_activities": [
+          "P"
+        ],
+        "note": "P and every successor are blocked (INSPECTION_FAILED); R and I keep their dates.",
+        "required_solver_status": "BLOCKED"
+      }
+    },
+    {
+      "case_id": "RC12d",
+      "category": 4,
+      "title": "Inspection pass event: recorded_pass",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CREW_C": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "INSPECTOR": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": {
+            "working_windows": [
+              {
+                "weekday": 1,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 2,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 3,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 4,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 5,
+                "start": "10:00",
+                "end": "12:00"
+              }
+            ]
+          }
+        }
+      },
+      "activities": [
+        {
+          "id": "R",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "CREW": 1
+          }
+        },
+        {
+          "id": "I",
+          "kind": "inspection",
+          "duration_minutes": 30,
+          "resources": {
+            "INSPECTOR": 1
+          }
+        },
+        {
+          "id": "P",
+          "kind": "productive",
+          "duration_minutes": 43,
+          "resources": {
+            "CREW_C": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ],
+          "not_before": "2027-01-11T11:40"
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "R",
+          "successor": "I",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "I",
+          "successor": "P",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "calendar_policy": "intersect_project_activity_resources",
+      "inspection_pass_events": [
+        {
+          "event_id": "EV-I",
+          "inspection_activity": "I",
+          "status": "recorded_pass",
+          "at": "2027-01-11T11:40",
+          "gates": [
+            "P"
+          ]
+        }
+      ],
+      "expected": {
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 265,
+        "completion_local": "2027-01-11T12:25+01:00",
+        "unique_optimal_schedule": true,
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 260,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": true
+        },
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "schedule": [
+          {
+            "id": "R",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:00+01:00"
+          },
+          {
+            "id": "I",
+            "start": "2027-01-11T10:00+01:00",
+            "finish": "2027-01-11T10:30+01:00"
+          },
+          {
+            "id": "P",
+            "start": "2027-01-11T11:40+01:00",
+            "finish": "2027-01-11T12:25+01:00"
+          }
+        ],
+        "note": "Recorded pass after inspection finish is a fixed not-before on P.",
+        "required_solver_status": "OPTIMAL"
+      }
+    },
+    {
+      "case_id": "RC12e",
+      "category": 4,
+      "title": "Recorded pass timestamp before inspection finish",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CREW_C": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "INSPECTOR": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": {
+            "working_windows": [
+              {
+                "weekday": 1,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 2,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 3,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 4,
+                "start": "10:00",
+                "end": "12:00"
+              },
+              {
+                "weekday": 5,
+                "start": "10:00",
+                "end": "12:00"
+              }
+            ]
+          }
+        }
+      },
+      "activities": [
+        {
+          "id": "R",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "CREW": 1
+          }
+        },
+        {
+          "id": "I",
+          "kind": "inspection",
+          "duration_minutes": 30,
+          "resources": {
+            "INSPECTOR": 1
+          }
+        },
+        {
+          "id": "P",
+          "kind": "productive",
+          "duration_minutes": 43,
+          "resources": {
+            "CREW_C": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "R",
+          "successor": "I",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "I",
+          "successor": "P",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "calendar_policy": "intersect_project_activity_resources",
+      "inspection_pass_events": [
+        {
+          "event_id": "EV-I",
+          "inspection_activity": "I",
+          "status": "recorded_pass",
+          "at": "2027-01-11T09:30",
+          "gates": [
+            "P"
+          ]
+        }
+      ],
+      "expected": {
+        "expected_status": "MODEL_INVALID",
+        "preflight_code": "EVENT_BEFORE_ACTIVITY_FINISH",
+        "note": "A pass cannot be recorded before the inspection can finish (10:30 at the earliest)."
+      }
+    },
+    {
+      "case_id": "RC13a",
+      "category": 9,
+      "title": "Timestamped fixed strength pass after the elapsed minimum",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_C": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CREW_F": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "POUR",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "CREW_C": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        },
+        {
+          "id": "RELEASE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 4320,
+          "resources": {}
+        },
+        {
+          "id": "STRIP",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "CREW_F": 1
+          },
+          "not_before": "2027-01-15T10:30"
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "POUR",
+          "successor": "RELEASE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "RELEASE",
+          "successor": "STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "calendar_policy": "intersect_project_activity_resources",
+      "strength_events": [
+        {
+          "event_id": "EV-S",
+          "kind": "fixed_timestamp",
+          "status": "recorded_pass",
+          "at": "2027-01-15T10:30",
+          "release_activity": "RELEASE"
+        }
+      ],
+      "expected": {
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 5970,
+        "completion_local": "2027-01-15T11:30+01:00",
+        "unique_optimal_schedule": true,
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 5965,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": true
+        },
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "schedule": [
+          {
+            "id": "POUR",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:00+01:00"
+          },
+          {
+            "id": "RELEASE",
+            "start": "2027-01-11T09:00+01:00",
+            "finish": "2027-01-14T09:00+01:00"
+          },
+          {
+            "id": "STRIP",
+            "start": "2027-01-15T10:30+01:00",
+            "finish": "2027-01-15T11:30+01:00"
+          }
+        ],
+        "note": "Release finish = max(pour finish + 72 h, recorded timestamp) = Fri 10:30. The timestamp is a fixed absolute bound; it does not move with the pour (Agent 1 N2 semantics)."
+      }
+    },
+    {
+      "case_id": "RC13b",
+      "category": 9,
+      "title": "Future activity-dependent strength test (planned, not recorded)",
+      "tick_minutes": 5,
+      "timezone": "Europe/Madrid",
+      "project_start": "2027-01-11T08:00",
+      "horizon_end": "2027-01-22T16:00",
+      "project_calendar": {
+        "timezone": "Europe/Madrid",
+        "working_windows": [
+          {
+            "weekday": 1,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 2,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 3,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 4,
+            "start": "08:00",
+            "end": "16:00"
+          },
+          {
+            "weekday": 5,
+            "start": "08:00",
+            "end": "16:00"
+          }
+        ],
+        "date_exceptions": []
+      },
+      "resources": {
+        "CREW_C": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        },
+        "CREW_F": {
+          "capacity": 1,
+          "kind": "renewable",
+          "calendar": "project"
+        }
+      },
+      "activities": [
+        {
+          "id": "POUR",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "CREW_C": 1
+          },
+          "allowed_hours": [
+            [
+              "08:00",
+              "14:00"
+            ]
+          ]
+        },
+        {
+          "id": "RELEASE",
+          "kind": "elapsed_hold",
+          "duration_minutes": 5760,
+          "resources": {}
+        },
+        {
+          "id": "STRIP",
+          "kind": "productive",
+          "duration_minutes": 57,
+          "resources": {
+            "CREW_F": 1
+          }
+        }
+      ],
+      "dependencies": [
+        {
+          "predecessor": "POUR",
+          "successor": "RELEASE",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        },
+        {
+          "predecessor": "RELEASE",
+          "successor": "STRIP",
+          "relation": "FS",
+          "lag_minutes": 0,
+          "lag_basis": "elapsed"
+        }
+      ],
+      "objective": "minimize_makespan",
+      "calendar_policy": "intersect_project_activity_resources",
+      "strength_events": [
+        {
+          "event_id": "EV-T",
+          "kind": "activity_dependent_test",
+          "status": "planned",
+          "test_age_hours_after_pour": 96,
+          "release_activity": "RELEASE"
+        }
+      ],
+      "expected": {
+        "expected_status": "CONDITIONAL",
+        "optimal_makespan_minutes": 5880,
+        "completion_local": "2027-01-15T10:00+01:00",
+        "unique_optimal_schedule": true,
+        "brute_force_check": {
+          "no_schedule_with_makespan_minutes_at_most": 5875,
+          "schedules_found_below_optimum": 0,
+          "optimum_attained": true
+        },
+        "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+        "schedule": [
+          {
+            "id": "POUR",
+            "start": "2027-01-11T08:00+01:00",
+            "finish": "2027-01-11T09:00+01:00"
+          },
+          {
+            "id": "RELEASE",
+            "start": "2027-01-11T09:00+01:00",
+            "finish": "2027-01-15T09:00+01:00"
+          },
+          {
+            "id": "STRIP",
+            "start": "2027-01-15T09:00+01:00",
+            "finish": "2027-01-15T10:00+01:00"
+          }
+        ],
+        "required_solver_status": "CONDITIONAL (projection only)",
+        "note": "Projection uses max(72 h minimum, 96 h test age) measured from the pour finish, so it moves with the pour. It must never be reported as OPTIMAL or releasable and must not be converted into a fixed timestamp."
+      }
+    },
+    {
+      "case_id": "DEMO-H1",
+      "title": "Larger benchmark with 2027-03-01 non-working (sensitivity)",
+      "inputs": "controlled_resource_demo_holiday_sensitivity/fixture_inputs.json",
+      "builder": "controlled_resource_demo/scripts/build_controlled_resource_demo.py (unchanged), DATE_EXCEPTIONS=['2027-03-01'], PYTHONHASHSEED=0",
+      "expected": {
+        "expected_status": "OPTIMAL",
+        "optimal_makespan_minutes": 41885,
+        "completion_local": "2027-03-02T10:05+01:00",
+        "lower_bound_minutes": 41885,
+        "cpm_completion_local": "2027-02-12T15:50+01:00",
+        "direct_reference_cost_eur": 5103.32664,
+        "independent_checks_passed": "242/242"
+      }
+    }
+  ]
+}

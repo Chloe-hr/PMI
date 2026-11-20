@@ -1,0 +1,47 @@
+{
+  "verified_utc": "2026-11-20T11:52:25+00:00",
+  "git_head": "b3e4acc35eca25e9bdd35dc9fe87b2fe7462e8b1",
+  "tracked_files_modified": [],
+  "untracked_new_files": [
+    "research/validation/stage5_4a_independent_verification/acceptance_criteria.csv",
+    "research/validation/stage5_4a_independent_verification/controlled_resource_demo_holiday_sensitivity/",
+    "research/validation/stage5_4a_independent_verification/deliverable_manifest.json",
+    "research/validation/stage5_4a_independent_verification/engineering_approval_addendum.csv",
+    "research/validation/stage5_4a_independent_verification/preservation_verification.json",
+    "research/validation/stage5_4a_independent_verification/remaining_deficiencies.csv",
+    "research/validation/stage5_4a_independent_verification/resource_contract_R2_addendum.json",
+    "research/validation/stage5_4a_independent_verification/scripts/build_task7_cases.py",
+    "research/validation/stage5_4a_independent_verification/scripts/build_task7_package.py",
+    "research/validation/stage5_4a_independent_verification/stage5_4b_readiness.md",
+    "research/validation/stage5_4a_independent_verification/task7_reference_cases.json"
+  ],
+  "original_approvals": {
+    "rows": 75,
+    "pending": 75,
+    "sha256": "d86a26cea516c10a38d97c5d82b5ca03d4af940f01a9bdcdd359bdac3111ab23"
+  },
+  "protected_file_sha256": {
+    "engineering register": "d86a26cea516c10a38d97c5d82b5ca03d4af940f01a9bdcdd359bdac3111ab23",
+    "Stage 5.3A handover": "77ebcee21666608a16ef8273aa0d1bae9dfb90d0fda05e6800edb6ba80c72808",
+    "Stage 5.4A schedule": "53849aa9f24aa16f4482449cac10cdc33a07a32a088a000df6b7838e0a4a51ed",
+    "Task 4 reference cases": "236bbeca1426c3bbb8609a0e7310d29cacd091f3baed769375ecb47b5ddf78a4",
+    "Task 5 resource contract": "b6bca6b47281cd62515ef85046c6035305984621e5129390eaf02725c6420b69",
+    "Task 6 benchmark inputs": "1b9df094b09ba7236b76f1566f3fdf2ece3c30c28d64e5c696eb01cba5b47234",
+    "Task 6 benchmark results": "05482146cc4cf2cad50ae35fe67f1b98e529ae3e3ff19446a15e670722bb45f7"
+  },
+  "protected_files_equal_head": true,
+  "tests_ran": 43,
+  "tests_ok": true,
+  "cpm_reproduction_exit": 0,
+  "cpm_exports": 8,
+  "cpm_exports_byte_identical": 8,
+  "benchmark": {
+    "makespan_minutes": 40445,
+    "status": "unchanged (40,445 min proven); holiday variant written to a separate folder"
+  },
+  "production_code_modified": false,
+  "notes": [
+    "No dependencies installed; no commit or push.",
+    "Agent 1 claims verified: 43 tests, 8 byte-identical exports, tick alignment, timestamped release regression, Paris-to-Madrid check."
+  ]
+}
